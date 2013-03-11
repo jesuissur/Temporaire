@@ -1,0 +1,11 @@
+C:\MyDocs\Dev\Temp\Test_Thread_Safe\Test_Thread_Safe\bin\Debug\Test_Thread_Safe.dll
+C:\MyDocs\Dev\Temp\Test_Thread_Safe\Test_Thread_Safe\bin\Debug\Test_Thread_Safe.pdb
+C:\MyDocs\Dev\Temp\Test_Thread_Safe\Test_Thread_Safe\bin\Debug\FluentAssertions.dll
+C:\MyDocs\Dev\Temp\Test_Thread_Safe\Test_Thread_Safe\bin\Debug\nunit.framework.dll
+C:\MyDocs\Dev\Temp\Test_Thread_Safe\Test_Thread_Safe\bin\Debug\PGK.Extensions.dll
+C:\MyDocs\Dev\Temp\Test_Thread_Safe\Test_Thread_Safe\bin\Debug\FluentAssertions.pdb
+C:\MyDocs\Dev\Temp\Test_Thread_Safe\Test_Thread_Safe\bin\Debug\FluentAssertions.xml
+C:\MyDocs\Dev\Temp\Test_Thread_Safe\Test_Thread_Safe\bin\Debug\nunit.framework.xml
+C:\MyDocs\Dev\Temp\Test_Thread_Safe\Test_Thread_Safe\obj\Debug\Test_Thread_Safe.csprojResolveAssemblyReference.cache
+C:\MyDocs\Dev\Temp\Test_Thread_Safe\Test_Thread_Safe\obj\Debug\Test_Thread_Safe.dll
+C:\MyDocs\Dev\Temp\Test_Thread_Safe\Test_Thread_Safe\obj\Debug\Test_Thread_Safe.pdb
