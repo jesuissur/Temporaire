@@ -33,7 +33,6 @@ namespace Test_Thread_Safe
                     if (instance == null)
                     {
                         instance = createNew();
-                        Console.WriteLine("NEW");
                     }
                 }
             }
@@ -53,23 +52,35 @@ namespace Test_Thread_Safe
         [Test]
         public void IsItThreadSafe()
         {
+            var failed = false;
+
             var threadList = new List<Thread>();
             for (int i = 0; i < 300; i++)
             {
-                var thread = new Thread(DoSomeNotThreadSafeOperation);
+                var thread = new Thread(() => DoSomeNotThreadSafeOperation(ref failed));
                 threadList.Add(thread);
             }
+            failed = false;
             threadList.ForEach(x => x.Start());
             threadList.ForEach(x => x.Join());
-            
+            failed.Should().BeFalse();
         }
 
-        private void DoSomeNotThreadSafeOperation()
+        private void DoSomeNotThreadSafeOperation(ref bool failed)
         {
             for (int i = 0; i < 300; i++)
             {
                 var previousInstance = Class1.Instance;
-                previousInstance.Should().Be(Class1.Instance);
+
+                try
+                {
+                    previousInstance.Should().Be(Class1.Instance);
+
+                }
+                catch (Exception)
+                {
+                    failed = true;                    
+                }
             }
         }
     }
