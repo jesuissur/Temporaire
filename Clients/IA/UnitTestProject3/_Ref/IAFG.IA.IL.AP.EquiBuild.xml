@@ -1,0 +1,1465 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.IL.AP.EquiBuild
+</name>
+</assembly>
+<members>
+<member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.DataWindow6_Click(System.Object,IAFG.IA.VI.AP.Commun.CtrlIU.DataWindow.ItemClickEventArgs)">
+	<summary>
+ Méthode qui gère l'évènement click de la DataWindow6
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.DataWindow6_ItemError_Handler(System.Object,Sybase.DataWindow.ItemErrorEventArgs)">
+	<summary>
+ Méthode appelée lorsque qu'il y a une erreur de donnée dans un des champs de la DW4
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.DataWindow6_ItemChanged(System.Object,Sybase.DataWindow.ItemChangedEventArgs)">
+	<summary>
+ Méthode qui gère les événements sur la DW6
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.DataWindow6_PostItemChanged(System.Object,Sybase.DataWindow.ItemChangedEventArgs)">
+	<summary>
+ Méthode qui gère les événements sur la DW6
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.AjusterInfoPrestDeces(System.Int32,System.String)">
+	<summary>
+ Cette fonction permet d'ajuster les informations pour la prestation de décès dans l'entête du formulaire.
+ Pour Heap, la prestation de décès sera toujours "Capital + fonds"
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.ValidationValeurNonDefini(System.String@)">
+	<summary>
+ Cette fonction permet de valider que le champs d'ASL est bien rempli.
+ </summary>
+	<param name="parametreMessage">Les paramètres à mettre dans le message d'erreur.</param>
+	<returns>
+    True = Passe la validation
+	   False = Ne passe pas la validation
+ </returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.InitSectionBoniInvestissement(IAFG.IA.VI.AF.Proposition.ENUMs.TypeBoni,System.String)">
+	<summary>
+ Sert à initialiser la section boni,taux et investissement, propre à EquiBuild
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.LoadData(System.Object)">
+	<summary>
+ Méthode de chargement des données
+ </summary>
+	<param name="sender"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.AppliquerCouleurMouseMoveDW4(System.String)">
+	<summary>
+ Méthode qui applique la bonne couleur aux champs de l'écran, selon s'il reçoit le focus ou non.
+ </summary>
+	<param name="champ">le nom du champ qui reçoit le focus. "" lorsque l'appelle provient d'InfoProtections</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.InitialiserResize">
+	<summary>
+ Méthode qui permet de redimmensionner les DataWindows et de conserver les contrôles aux bons endroits
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.RefreshDataDW4(System.Double)">
+	<summary>
+ Rafraichissement de la DataWindow4
+ </summary>
+	<param name="fondPayableDeces"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.DispoFondDeces">
+	<summary>
+ Gere la disponibilité du fond de décès
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.DataWindow4_ItemError_Handler(System.Object,Sybase.DataWindow.ItemErrorEventArgs)">
+	<summary>
+ Méthode appelée lorsque qu'il y a une erreur de donnée dans un des champs de la DW4
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.DataWindow4_PostItemChanged(System.Object,Sybase.DataWindow.ItemChangedEventArgs)">
+	<summary>
+ Évènement déclanché lorsque l'utilisateur change une valeur dans la DW4 et que la valeur a été validé dans l'ItemChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.DataWindow4_ItemChanged_Handler(System.Object,Sybase.DataWindow.ItemChangedEventArgs)">
+	<summary>
+ Méthode appelée lorsque l'utilisateur change une valeur dans la DW4
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.Datawindow3_PostItemChanged_Handler(System.Object,Sybase.DataWindow.ItemChangedEventArgs)">
+	<summary>
+ Évènement déclanché lorsque l'utilisateur clique sur la DW3
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.DataWindow4_Click_Handler(System.Object,IAFG.IA.VI.AP.Commun.CtrlIU.DataWindow.ItemClickEventArgs)">
+	<summary>
+ Méthode appelée lorsque l'utilisateur clique sur la DW4
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.DataWindow1_PostItemChanged(System.Object,Sybase.DataWindow.ItemChangedEventArgs)">
+	<summary>
+ Évènement déclanché lorsque l'utilisateur change une valeur dans la DW1
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.DataWindow2_PostItemChanged_iga_age(System.Int32,System.Int32)">
+	<summary>
+ Gère le changement d'âge dans la DataWindow contenant les infos des assurés.
+ </summary>
+	<param name="age"></param>
+	<param name="rowNumber"></param>
+	<returns>
+ True si l'opération s'est passé avec succès, False si une erreur est survenue
+ </returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.DataWindow2_Click_p_supprime_assure_cj(System.Object,IAFG.IA.VI.AP.Commun.CtrlIU.DataWindow.ItemClickEventArgs)">
+	<summary>
+ Évènement déclanché lorsque l'utilisateur clique sur la DW2
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.changementStatut_PostItemChanged(System.Object,Sybase.DataWindow.ItemChangedEventArgs,IAFG.IA.VI.AF.Proposition.Individu)">
+	<summary>
+ Méthode appelée lors du PostItemChanged du statut
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<param name="oIndividu"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.ChangementSexe_PostItemChanged(Sybase.DataWindow.ItemChangedEventArgs,IAFG.IA.VI.AF.Proposition.Individu)">
+	<summary>
+ Méthode appelée lors du PostItemChanged du sexe
+ </summary>
+	<param name="e"></param>
+	<param name="oIndividu"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.changementFrequence_PostItemChanged(System.Object,Sybase.DataWindow.ItemChangedEventArgs)">
+	<summary>
+ Méthode appelée lors du PostItemChanged de la fréquence
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.ChangementProvince_PostItemChanged(System.Object,Sybase.DataWindow.ItemChangedEventArgs)">
+	<summary>
+ Méthode appelée lors du PostItemChanged de la province
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.SetVisibiliteFondPayableDeces(System.Int32)">
+	<summary>
+ Méthode qui sera overridé pour déterminer la visibilité du champ "Fond payable au décès"
+ </summary>
+	<param name="typeAssurance"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.FormulaireAssure_SwitchLang_Handler(System.Object)">
+	<summary>
+ Méthode pour gérer le changement de langue
+ </summary>
+	<param name="sender"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.GererListeProtectionsMethode(System.Collections.Generic.List{IAFG.IA.IL.AP.IllusVie.Utils.ItemListeProtectionDisponible}@,System.String[]@,System.Int32,System.Boolean)">
+	<summary>
+ Methode qui permet de manipuler la liste de protections avant d'afficher la fenêtre secondaire
+ </summary>
+	<param name="itemsListeProtection"></param>
+	<param name="descriptions"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+	<summary>
+ Traite une touche de commande.
+ </summary>
+	<param name="msg">System.Windows.Forms.Message, passé par référence, qui représente le message de fenêtre à traiter.</param>
+	<param name="keyData">Une des valeurs System.Windows.Forms.Keys qui représente la touche à traiter. </param>
+	<returns>True si le caractère a été traité par cette méthode; sinon False.</returns>
+	<remarks>Cette méthode est nécessaire pour contourner un bogue de tabulation dans datawindow .Net 2.0</remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.ObtenirConceptCourant">
+	<summary>
+ Fonction qui retourne le concept courant pour l'illustration
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.RegisterHypInvest">
+	<summary>
+ Méthode pour faire le resize des contrôles des hypothèses d'investissement
+ Ces contrôles ne sont pas disponibles pour CapitalValeur. On doit laisser la 
+ méthode vide pour ne rien faire
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.SetValeurHypInvest(System.String)">
+	<summary>
+ Méthode qui affecte la valeu au contrôle inv_hyp_invest
+ Peut être overridé dans les illustrations
+ Ces contrôles ne sont pas disponibles pour CapitalValeur. On doit laisser la 
+ méthode vide pour ne rien faire''' </summary>
+	<param name="taux"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.SetFocusDataWindow4">
+	<summary>
+ Méthode pour mettre le focus sur le bon champ de la DataWindow4
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.CalculerPrimesMinimalePlusAuChoix(System.Decimal)">
+	<summary>
+ Méthode qui fait le calcul de la prime minimale + au choix.
+ Pour EquiBuild, on retourne la prime minimale plus le montant d'ASL de l'année 1
+ </summary>
+	<param name="montantPrimeMinimale"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.GestionVisibiliteChampsPUA">
+	<summary>
+ Méthode qui gère la visibilité des champs reliés au PUA/ASL
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.InitialiserCapitalMax">
+	<summary>
+ Méthode pour initialiser le capital maximum pour le PUA/ASL
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.AfficherPersoASL(System.String)">
+	<summary>
+ Méthode pour afficher la fenêtre de la personnalisation de l'ASL
+ </summary>
+	<param name="colonneName"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.AfficherPersoASL(System.String,System.Boolean,System.Decimal)">
+	<summary>
+ Méthode qui prépare et affiche la fenêtre de personnalisation des montants de PUA/ASL
+ </summary>
+	<param name="colonneName"></param>
+	<param name="bloquerAnnuler"></param>
+	<param name="aslDispo"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.ObtenirEnumVecteurASL">
+	<summary>
+ Méthode qui détermine la valeur d'Enum du champ alloc_desiree
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.MAJMontantASLMaximal">
+	<summary>
+ Méthode qui met à jour le montant maximal de PUA/ASL
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.ChargerInfosPUA">
+	<summary>
+ Méthode qui gère les champs relatifs à la Paid-Up
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.MAJMontantASLDesire">
+	<summary>
+ Méthode qui met à jour le montant de Paid-Up désiré
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.MAJCapitalAssMax">
+	<summary>
+ Méthode qui met à jour le capital assuré max de Paid-Up
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.MAJVecteurASLMaximum">
+	<summary>
+ Méthode pour mettre à jour le vecteur d'ASL suite à une changement du maximum
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.allocationASLDesiree_ItemChanged(System.Object,Sybase.DataWindow.ItemChangedEventArgs)">
+	<summary>
+ Méthode qui gère le changement du montant de Paid-Up désiré
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.EstValideMontantASLDesire(Sybase.DataWindow.ItemChangedEventArgs)">
+	<summary>
+ Fonction qui valide le montant de Paid-Up
+ </summary>
+	<param name="e"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.capitalAssureMaxASL_ItemChanged(System.Object,Sybase.DataWindow.ItemChangedEventArgs)">
+	<summary>
+ Méthode qui gère le capital assuré max 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.MAJMontantASLSurprimeDollars">
+	<summary>
+ Méthode qui corrige les montants d'ASL suit à l'ajout d'une surprime en dollars
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.InitialiserInfosPUA">
+	<summary>
+ Méthode qui initialise les informations de PUA/ASL
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.AjusterVecteurMontantsASL">
+	<summary>
+ Méthode pour ajuster le vecteur des montants d'ASL
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.AffecterValeurVecteurASL(System.Double)">
+	<summary>
+ Méthode qui affecte le nouveau montant d'ASL dans le vecteur
+ </summary>
+	<param name="montant"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.GererDispoChamps">
+	<summary>
+ Méthode qui gère la disponibilités des champs pour le PUA/ASL
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.AssignerTauxFondsCapitalValeur(System.Double)">
+	<summary>
+ Méthode qui sert à mettre à jour le vecteur de taux de boni valeur
+ </summary>
+	<param name="taux"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.InitialiserVecteurTauxFondsCapitalValeur">
+	<summary>
+ Méthode d'initialisation du vecteur de taux de boni valeur
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.OuvrirPersonnalisationTaux">
+	<summary>
+ Méthode qui prépare et ouvre la fenêtre de personnalisation du taux de boni valeur
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.MAJTAICapitalValeur">
+	<summary>
+ Mettre à jour le taux d'intéret du fond Capital Valeur
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.PopulateDdlbTypeBoni(System.String)">
+	<summary>
+ Méthode permettant de populer la liste déroulante Type de boni
+ On ne fait rien pour cet illustration
+ </summary>
+	<param name="SiegeSocial"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.DeterminerTauxFondsCapitalValeur">
+	<summary>
+ Méthode qui permet de déterminer la valeur du taux de boni à afficher
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.EstCDCDisponible">
+	<summary>
+ Fonction qui retourne la disponibilité du CDC 
+ Le PDF tient compte de la présence de l'assuré 2 afin de déterminer la disponibilité de cette protection. Dans notre cas,
+ nous ne devons pas tenir compte de l'assuré 2
+ Il faut que le contractant soit différent de l'assuré 1
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.EstCIADisponibleAssure1">
+	<summary>
+ Fonction qui retourne la disponibilité du CIA pour l'assuré 1
+ Le PDF tient compte de l'âge de l'assuré 2 afin de déterminer la disponibilité de cette protection. Dans notre cas,
+ nous ne devons pas tenir compte de l'assuré 2
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.EstAgePermisAssure1(IAFG.IA.IL.AP.Illustration.ENUMs.PlanIllustration)">
+	<summary>
+ Méthode qui vérifie si l'assuré 1 est dans la tranche d'âge permise pour un plan donné
+ </summary>
+	<param name="planIllus"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.AfficherSurchargePermisMethode">
+	<summary>
+ Cette méthode est appelée afin de vérifier si on peut afficher la fenêtre de modification de la prime
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.GererDisponibiliteProtectionQuickListMethode(IAFG.IA.VI.AP.Commun.CtrlIU.DataWindow)">
+	<summary>
+ Methode qui permet de déterminer la disponibilité de chaque protections dans la Quick Liste
+ </summary>
+	<param name="dataWindow"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.ObtenirListeAssuresMethode(IAFG.IA.VI.AF.Proposition.Protection)">
+	<summary>
+ Methode qui permet d'obtenir la liste des assurés. 
+ Pour le besoin de cette illustation, on veux seulement l'assuré 1
+ </summary>
+	<param name="objProtection"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.MAJFrequence">
+	<summary>
+ Méthode qui gère le changement de fréquence (mensuel/annuel)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.ObtenirTypeAssurance">
+	<summary>
+ Fonction qui détermine le type d'assurance de l'illustration
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAssure.AfficherSectionAvenantMethode">
+	<summary>
+ Méthode pour déterminer si on affiche la section de l'avenant dans la fenêtre de modification de prime
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Affaires.ReglesAffaireCommission.ValiderValeur(System.String,System.Decimal,System.Boolean)">
+	<summary>
+ Cette fonction permet de valider une valeur de type Decimal passée en paramètre pour
+ un item donc l'identifiant est également passé en paramètre
+ </summary>
+	<param name="idItem">Le nom de l'item pour lequel nous devons valider la valeur</param>
+	<param name="valeurItem">La valeur qui doit être validée</param>
+	<param name="isInForce">Indique si le traitement est fait pour une protection en vigueur</param>
+	<returns>Valeur de l'énumération Statut</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.EquiBuild.Affaires.ReglesAffaireCommission">
+	<summary>
+ Regles d'affaire des commissions.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.My.Resources.Resources.Consult">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.My.Resources.Resources.Consult_down">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.My.Resources.Resources.EquiBuild">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.My.Resources.Resources.EquiBuild_A">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.My.Resources.Resources.fleche_droite_jauneOFF">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.My.Resources.Resources.fleche_droite_jauneON">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.My.Resources.Resources.fleche_gauche_jauneOFF">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.My.Resources.Resources.fleche_gauche_jauneON">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.My.Resources.Resources.icone_Medical">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.My.Resources.Resources.icone_MedicalOFF">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.My.Resources.Resources.MD">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.My.Resources.Resources.SplashEquiBuild_IA_an">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.My.Resources.Resources.SplashEquiBuild_IA_fr">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:IAFG.IA.IL.AP.EquiBuild.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireInvestissements.InitialiserControles_AVM">
+	<summary>
+ Initialise la disponibilite de AVM
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireInvestissements.ModifierTauxInteretsPersonnalisesPlacement(System.Int32)">
+	<summary>
+ Modifie les taux d'intérêts du placement par le 
+ bais de la boite de dialogue de taux personnalisé
+ </summary>
+	<param name="row"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireInvestissements.ObtenirTauxPlacementAAfficher(System.Decimal[],System.String)">
+	<summary>
+ Renvoit une valeur représentant le taux à afficher dans la liste de taux d'un placement soit
+ le taux utilisé pour toute la durée de la projection ou IAFG.IA.IL.AP.Illustration.ENUMs.ChoixListeVariable.Personnalise
+ si ce dernier est variable d'un année à l'autre.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireInvestissements.MAJTauxInteretFonds">
+	<summary>
+ Méthode pour mettre à jour le taux d'intéret du fonds
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireInvestissements.GererDisponibiliteTauxInteret(System.Int32,System.String)">
+	<summary>
+ Méthode qui gère la disponibilité du champs Taux interet
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireInvestissements.InitialiserControles_LibelleFondsTransitoire">
+	<summary>
+ Affichage du compte transitoire selon les TAI choisi
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireInvestissements.Dossier_FondsCapitalisation_ModifierTauxInteretsDirective(System.Int32,System.Decimal[])">
+	<summary>
+ Modifie les taux d'intérêts de la directive d'investisssement du fonds transitoire spécifiée
+ </summary>
+	<param name="row"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireInvestissements.ObtenirVecteurTauxPlacement(System.Int32,System.String,System.Decimal)">
+	<summary>
+ Méthode qui retourne un vecteur pour les taux de placement
+ </summary>
+	<param name="row"></param>
+	<param name="vehicule"></param>
+	<param name="taux"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.GestionFormulaireAssure.#ctor(IAFG.IA.IL.AP.IllusVie.NonTrad.CtrlIU.FormulaireAssure)">
+	<summary>
+ Constructeur de cette classe. Elle reçoit l'instance de l'objet visuel auquel 
+ elle sera associé
+ </summary>
+	<param name="parent">Instance de l'objet visuel auquel cette classe est associé</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.GestionFormulaireAssure.ObtenirCapitalAssurePlafondASL">
+	<summary>
+ Sert à avoir la valeur maximal du capital assuré
+ </summary>
+	<returns>La valeur maximal du capital assuré</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.GestionFormulaireAssure.AffecterCapitalAssureASLMax(System.Double)">
+	<summary>
+ Mets à jour le montant d'assurance supplémentaire libérée dans l'objet propo
+ </summary>
+	<param name="capitalAssureASLMax">valeur saisie</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.GestionFormulaireAssure.ObtenirASLDesireParFrequence">
+	<summary>
+ Sert à avoir la valeur désirée d'allocation d'ASL selon la fréquence de paiement
+ </summary>
+	<returns>La valeur désirée d'allocation d'ASL selon la fréquence de paiement</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.EquiBuild.Utils.GestionFormulaireAssure">
+	<summary>
+ Classe qui contient la logigue d'affaire du formulaire de la section "Illustration"
+ représenté par la classe "FormulaireAssure"
+ </summary>
+	<remarks>Cette classe sert à séparer la logique d'affaire de la classe visuelle 
+ auquel elle est associée.Cette classe est instancié au niveau applicatif par la
+ classe "FormulaireAssure".</remarks>
+	<history>
+		<pre>
+ Auteur               Date       Description
+ ==============================================================
+ Robert Bastien    2007-10-02    Création
+ </pre>
+	</history>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.DialogueConfigDefaut.ObtenirValeurTauxInteret">
+	<summary>
+ Obtenir les valeurs minimum et maximum pour le champ taux d'intérêt
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.ProjContrat.obtenirLibelleEsperanceVie">
+	<summary>
+ Permet d'obtenir la note de bas de page des tableaux quand lé spérance de vie est affichée
+ </summary>
+	<returns>la note qui sera affiché sur le tableau</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.ProjContrat.ObtenirAnneeMax">
+	<summary>
+ Permet de nous donner le nombre d'année maximum pour notre application, 100 par défaut.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.BarreApplicative.ButtonExigences_Click(System.Object,System.EventArgs)">
+	<summary>
+ Apelle le code nécessaire à l'ouverture de l'écran des exgiences médicales.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.EquiBuild.CtrlIU.BarreApplicative">
+	<summary>
+ Barre applicative pour l'application Heap.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.GestionInfoProtection.#ctor(IAFG.IA.IL.AP.IllusVie.NonTrad.CtrlIU.InfoProtections)">
+	<summary>
+ Constructeur de cette classe. Elle reçoit l'instance de l'objet visuel auquel 
+ elle sera associé
+ </summary>
+	<param name="parent">Instance de l'objet visuel auquel cette classe est associé</param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.EquiBuild.Utils.GestionInfoProtection">
+	<summary>
+ Classe qui contient la logigue d'affaire du contrôle visuel des protections de la
+ section "Illustration" représenté par la classe "InfoProtectionTrad" de couche
+ IllusVie.Trad
+ </summary>
+	<remarks>Cette classe sert à séparer la logique d'affaire de la classe visuelle 
+ auquel elle est associée. Elle hérite de la classe GestionInfoProtectionTrad qui
+ contient la logique de base de la gestion des protection. Cette classe est instancié
+ au niveau applicatif par la classe "FormulaireAssure".</remarks>
+	<history>
+		<pre>
+ Auteur               Date       Description
+ ==============================================================
+ Robert Bastien    2007-10-02    Création
+ </pre>
+	</history>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Affaires.GestionProduit.Initialiser">
+	<summary>
+ Cette fonction permet d'initialiser les différents objets de règles d'affaire
+ utilisé par l'application standard Heap.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Affaires.GestionProduit.GetCompteTransitoire">
+	<summary>
+ Permet d'obtenir le compte transitoire
+ </summary>
+	<returns>String qui indique le compte transitoire</returns>
+	<remarks>Va être overridé dans un desçandant</remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Affaires.GestionProduit.ObtenirAllocMaxASL">
+	<summary>
+ Sert à avoir la valeur maximal d'allocation d'ASL selon la fréquence de paiement
+ </summary>
+	<returns>La valeur maximal d'allocation d'ASL selon la fréquence de paiement</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Affaires.GestionProduit.ObtenirAllocMaxASL(IAFG.IA.VI.AF.Proposition.ENUMs.ModePaiement)">
+	<summary>
+ Sert à avoir la valeur maximal d'allocation d'ASL selon la fréquence de paiement
+ </summary>
+	<returns>La valeur maximal d'allocation d'ASL selon la fréquence de paiement</returns>
+	<remarks></remarks>
+</member><member name="F:IAFG.IA.IL.AP.EquiBuild.Donnees.TemplateTA._illus">
+	<summary>
+ Membre interne qui représente l'objet d'illustration
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.Donnees.TemplateTA.Proposition">
+	<summary>
+ Retourne la proposition
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.Donnees.TemplateTA.Illustration">
+	<summary>
+ Retourne l'illustration
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.Donnees.TemplateTA.Scenario">
+	<summary>
+ Retourne le scénario
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.Donnees.TemplateTA.TableauDecimal">
+	<summary>
+ Propriété qui retourne un tableau de décimal(99) vide
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.Donnees.TemplateTA.TableauDecimalTxCPF">
+	<summary>
+ Propriété qui retourne un tableau de décimal(99) vide
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.Donnees.TemplateTA.TableauDecimalInvestissement">
+	<summary>
+ Propriété qui retourne un tableau de décimal(99) vide
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Donnees.TemplateTA.InitialiserPilotage">
+	<summary>
+ On initialise les pilotages nécessaire à la création du template
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Donnees.TemplateTA.AjouterProtection(System.String)">
+	<summary>
+ Affecte l'information minimum pour une protection
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Donnees.TemplateTA.AjouterGarantie(System.String)">
+	<summary>
+ Affecte l'info minimum pour une garantie
+ </summary>
+	<param name="codeplan"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Donnees.TemplateTA.TAICapitalisation">
+	<summary>
+ Affecte l'information minimum des Tai du fonds de capitalisation
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Donnees.TemplateTA.TAITransitoire">
+	<summary>
+ Affecte l'information minimum des Tai du fonds transitoire
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Donnees.TemplateTA.ComptesCapitalisation">
+	<summary>
+ Affecte l'information minimum des comptes du fonds de capitalisation
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Donnees.TemplateTA.ComptesTransitoire">
+	<summary>
+ Affecte l'information minimum des comptes du fonds transitoire
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Donnees.TemplateTA.Primes">
+	<summary>
+ Affecte l'information minimum des Primes
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Donnees.TemplateTA.InformationsNecessaires">
+	<summary>
+ Affecte l'information minimum des InfosPU
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Donnees.TemplateTA.TerminerCreation(System.String)">
+	<summary>
+ Termine la création du template
+ </summary>
+	<param name="filename">le nom du template</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Donnees.TemplateTA.InitialiserVecteur">
+	<summary>
+ Méthode qui initialise les vecteurs de type Décimal, Integer et String (les 3 seuls possibles)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Donnees.TemplateTA.CreerTemplate(System.String)">
+	<summary>
+ Méthode qui crée un template de temps d'arrêt pour Genesis. 
+ On retourne le nom du template à utiliser
+ </summary>
+	<param name="extension">l'extension que le template doit avoir.</param>
+	<returns></returns>
+	<remarks>Est l'appel interne</remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Donnees.TemplateTA.CreerTemplateTempsArret(System.String,System.String,System.String)">
+	<summary>
+ Méthode qui crée un template de temps d'arrêt pour Genesis. 
+ On retourne le nom du template à utiliser
+ </summary>
+	<param name="extension">l'extension que le template doit avoir.</param>
+	<returns></returns>
+	<remarks>Est appelé par le constructeur</remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.PrestationDeces.obtenirLibelleEsperanceVie">
+	<summary>
+ Permet d'obtenir la note de bas de page des tableaux quand lé spérance de vie est affichée
+ </summary>
+	<returns>la note qui sera affiché sur le tableau</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Affaires.ReglesAffaireASL.ObtenirValeurDefautDecimal(System.String,System.Boolean)">
+	<summary>
+ Cette fonction permet d'obtenir la valeur par defaut pour un
+ un item donc l'identifiant est passé en paramêtre.
+ </summary>
+	<param name="itemId">Le nom de l'item pour lequel nous devons obtenir la 
+                      valeur par defaut </param>
+	<param name="isInForce">Indique si le traitement est fait pour une protection en 
+                         vigueur</param>
+	<returns>Valeur par defaut de l'item</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.DialoguePersoASL.DialoguePersoASL_Load(System.Object,System.EventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement Load de DialoguePersoASL
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.DialoguePersoASL.DataWindowPrincipale_Click(System.Object,IAFG.IA.VI.AP.Commun.CtrlIU.DataWindow.ItemClickEventArgs)">
+	<summary>
+ Évènement déclanché lorsque qu'il y a un click dans la DataWindowPrincipale
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.DialoguePersoASL.DataWindowPrincipale_ItemError(System.Object,Sybase.DataWindow.ItemErrorEventArgs)">
+	<summary>
+ Évènement déclanché lorsque qu'il y a une erreur de donnée dans un des champs de la DW1
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.DialoguePersoASL.DataWindow2_ItemChanged(System.Object,Sybase.DataWindow.ItemChangedEventArgs)">
+	<summary>
+ Évènement déclanché lorsque la valeur d'un champ change dans la DataWindow2
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.DialoguePersoASL.DataWindow2_ItemError(System.Object,Sybase.DataWindow.ItemErrorEventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement ItemError de la DataWindow2
+ </summary>
+	<param name="sender">Objet ayant levé l'évènement</param>
+	<param name="e">Arguments</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.DialoguePersoASL.DataWindow2_DataWindowKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement KeyDown de la DataWindow2
+ </summary>
+	<param name="sender">Objet ayant levé l'évènement</param>
+	<param name="e">Arguments</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.DialoguePersoASL.DataWindow2_RowFocusChanged(System.Object,Sybase.DataWindow.RowFocusChangedEventArgs)">
+	<summary>
+ Méthode pour conserver l'index de la rangè courante
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.DialoguePersoASL.InitValeurs">
+	<summary>
+ Cette méthode permet d'initialiser les valeurs au chargement
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.DialoguePersoASL.MettreAJourValeurs(System.Double,System.Int32,System.Int32)">
+	<summary>
+ Méthode pour mettre à jour les valeurs dans le tableau de la DataWindow2
+ </summary>
+	<param name="montantASL"></param>
+	<param name="anneeDe"></param>
+	<param name="anneeA"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.DialoguePersoASL.AjusterMontants">
+	<summary>
+ Méthode pour mettre à jour les montants selon les valeurs des années précédented
+ </summary>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.DialoguePersoASL.ValiderAnnees">
+	<summary>
+ Méthode pour valider la valeur des années pour la copie
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.DialoguePersoASL.UnloadData(System.Object)">
+	<summary>
+ Cette méthode est utilisée pour la gestion de la fermeture du formulaire
+ </summary>
+	<param name="sender">Objet ayant levé l'évènement</param>
+	<returns>True ou False</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.DialoguePersoASL.DeterminerMontantMaximum(System.Int32)">
+	<summary>
+ Méthode pour déterminer le montant maximum pour une année donnée
+ </summary>
+	<param name="anneeDe"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.GenererRapport.GenererRapportStandard(System.String)">
+	<summary>
+ Générer la section à imprimer selon celle passé en paramètre 
+ </summary>
+	<param name="section">Nom de la section.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionHypothesesInvestissement.SetHypotheseInvest">
+	<summary>
+ Chargement des hypothèses d'investissement.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionHypothesesInvestissement.PeuplerSectionComptes(Sybase.DataWindow.DataWindowChild)">
+	<summary>
+ Méthode qui peuple la section des comptes/TAIs
+ </summary>
+	<param name="section"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionHypothesesInvestissement.ObtenirListeDIA">
+	<summary>
+ Permet d'obtenir les DIA selon le statut passé en paramètre
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionHypothesesInvestissement.PrepareListeDIA(System.String)">
+	<summary>Retourne une string contenant la liste des TAI
+ </summary>
+	<param name="nom"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionHypothesesInvestissement.AffecterVisibiliteSoldeSectionComptes(Sybase.DataWindow.DataWindowChild)">
+	<summary>
+ Méthode qui fait la gestion de la visibilité du champ solde de la section des comptes
+ </summary>
+	<param name="section"></param>
+	<remarks>Est overridé dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionHypothesesInvestissement.AffecterVisibiliteSoldeSectionComptes(Sybase.DataWindow.DataWindowChild,System.Boolean)">
+	<summary>
+ Méthode qui fait la gestion de la visibilité du champ solde de la section des comptes
+ </summary>
+	<param name="section">La section du rapport</param>
+	<param name="visible">Si les champs du solde sont visibles</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionHypothesesInvestissement.AjouterLigneHypotheseInvestissement(Sybase.DataWindow.DataWindowChild,System.String,System.Double,System.Double,System.Boolean,System.Double,System.Int32,System.Int32,System.Double,System.Double,System.Boolean)">
+	<summary>
+ Méthode qui ajoute une ligne dans la DW Hypothèses d'Investissements
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionHypothesesInvestissement.PeuplerSectionComptesPreDIA(Sybase.DataWindow.DataWindowChild,IAFG.IA.VI.AF.Proposition.Fonds)">
+	<summary>
+ TODO EVIA
+ Méthode qui ajoute le CPF avant les DIA
+ </summary>
+	<param name="section">La section</param>
+	<remarks>Ne fait rien dans NONTRAD est overridé dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionHypothesesInvestissement.ObtenirSoldeDIA(IAFG.IA.VI.AF.Proposition.Fonds,System.String)">
+	<summary>
+ TODO EVIA
+ Méthode qui obtient le solde du DIA passé en paramètre
+ </summary>
+	<param name="DIA">le DIA</param>
+	<returns>0 pour le mode à l'émission</returns>
+	<remarks>est overridé dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionHypothesesInvestissement.PeuplerSectionComptesAutres(Sybase.DataWindow.DataWindowChild)">
+	<summary>
+ TODO EVIA
+ Méthode qui ajoute les autres comptes qui ne sont pas dans les DIA
+ </summary>
+	<param name="section">La section</param>
+	<remarks>Ne fait rien dans NONTRAD est overridé dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionUsageDuConseiller.IsCasSurprime">
+	<summary>
+ Indique s'il y a au moins une surprime sur le contrat
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionUsageDuConseiller.ObtenirSurprimes">
+	<summary>
+ Retourne la liste des surprimes par individu
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.ComparPlacAlt.ObtenirListeAge(System.Int32,System.Int32,System.Boolean)">
+	<summary>
+ Retourne la liste des âges pour certains rappports selon l'âge passé en paramètre.
+ </summary>
+	<param name="age">Age passé en paramètre</param>
+	<param name="ageEspVie">L'âge de l'espérence de vie s'il y a lieu</param>
+	<param name="listeSelonAge">Liste selon l'age (true) ou selon la duree (false)</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.AccesServices.#ctor">
+	<summary>
+ Uniquement déclarer pour faire en sorte que FXCop ne souligne l'erreur 
+ "Static holder types should not have constructors"
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionSensibiliteFondCap.SetTestSensibilite">
+	<summary>
+ Chargement du test de sensibilité pour rapport standard.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionSensibiliteFondCap.ObtenirListeAge(System.Int32,System.Int32,System.Boolean)">
+	<summary>
+ Retourne la liste des âges pour certains rappports selon l'âge passé en paramètre.
+ </summary>
+	<param name="age">Age passé en paramètre</param>
+	<param name="ageEspVie">L'âge de l'espérence de vie s'il y a lieu</param>
+	<param name="listeSelonAge">Liste selon l'age (true) ou selon la duree (false)</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionSensibiliteFondCap.GetLastYear(System.Collections.Generic.List{System.Double})">
+	<summary>
+ Retourne l'année lorsque le vecteur = 0
+ </summary>
+	<param name="tableau">un vecteur de donnée</param>
+	<returns>La dernière année du vecteur</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Calculs.GestionCalculs.CorrigerMontantsPrimes(System.Int32[],System.Double[])">
+	<summary>
+ Méthode qui permet de corriger les montants de primes.
+ </summary>
+	<param name="listeTypePrimes"></param>
+	<param name="listeMontantsPrimes"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Calculs.GestionCalculs.UpdateDossierPrimeMinimalePlusAuChoix">
+	<summary>
+ Met à jour le vecteur de primes minimales + ASL.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Calculs.GestionCalculs.AjoutEcartTestSensAuBoni">
+	<summary>
+ fonction qui modifie le boni selon l'écart du test de sensibilité
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Donnees.GestionDossier.TauxFondsCapitalValeurGetTab(System.Double[]@,System.Int32@)">
+	<summary>
+ Permet d'aller chercher un vecteur de valeurs de la classe Dépot
+ </summary>
+	<param name="valeurPropriete">Vecteur de données</param>
+	<param name="nbrElement">Nombre d'items dans le vecteur</param>
+	<returns>1 - L'action s'est effectuée avec succès
+	-1 - Une erreur s'est produite durant le traitement
+	-2 - Le dataname n'est pas valide
+ -3 - Autre</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Donnees.GestionDossier.ASLGetTab(System.Double[]@,System.Int32@)">
+	<summary>
+ Permet d'aller chercher un vecteur de valeurs de la classe Dépot
+ </summary>
+	<param name="valeurPropriete">Vecteur de données</param>
+	<param name="nbrElement">Nombre d'items dans le vecteur</param>
+	<returns>1 - L'action s'est effectuée avec succès
+	-1 - Une erreur s'est produite durant le traitement
+	-2 - Le dataname n'est pas valide
+ -3 - Autre</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.InitialiseParamApplicatif(System.Collections.ObjectModel.ReadOnlyCollection{System.String})">
+	<summary>
+ Méthode qui est exécuter au tout début de l'exécution de l'application
+ </summary>
+	<param name="commandLineArgs">la ligne de commande passée en paramètre à App</param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.Utils.Application.BarreApplicative">
+	<summary>
+ Pointeur sur la barre applicative de l'application Heap.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.InitialisePilotage">
+	<summary>
+ Initialise le service de pilotage pour l'application.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.InitialiseMessages">
+	<summary>
+ Charge le xml de message dans le service.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.InitialiseListesChoix">
+	<summary>
+ Charge le xml des listes de choix dans le service.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.InitialiseColonnes">
+	<summary>
+ Charge le xml des colonnes dans le service.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.InitialiseGraphiques">
+	<summary>
+ Charge les fichiers de graphique dans le service.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.InitialiseAideContextuelle">
+	<summary>
+ Charge le fichier d'aide contextuelle dans le service.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.InitialiseTableaux">
+	<summary>
+ Charge les ficheirs de tableau dans le service.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.InitialiseStyles">
+	<summary>
+ Charge le xml de style dans le service.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.InitialiseResources">
+	<summary>
+ Charge le fichier de ressource de l'application.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.InitialiseBoni">
+	<summary>
+ Initialise les bonis.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.CreerGestionFormulaires">
+	<summary>
+ Creer un nouveau gestionnaire de formulaire pour l'application Heap.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.CreerGestionnaireDossier">
+	<summary>
+ Creer un nouveau gestionnaire de dossier pour l'application Heap.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.CreerUtilsDossier">
+	<summary>
+ Creer un nouveau utils de dossier pour l'application Heap.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.CreerGestionCalculs">
+	<summary>
+ Creer un nouveau gestionnaire de calcul pour l'application Heap.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.CreerGestionRegleAffaires">
+	<summary>
+ Creer l'objet de regle d'affaire pour Heap selon la banniere.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.CreateBarreApplicative">
+	<summary>
+ Creer une nouvelle barre applicative pour l'application Heap.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.CreerGestionPilotage">
+	<summary>
+ Méthode qui fait l'instanciation de l'objet servant à la gestion des informations
+ de pilotage pour l'application 
+ </summary>
+	<returns>Pointeur à l'instance de l'objet de gestion du pilotage</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.InitialisePerfoPdf">
+	<summary>
+ Overrides pour modifier la cache de certain plans.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.Initialise(IAFG.IA.VI.AP.Commun.CtrlIU.WindowsFormBase,IAFG.IA.VI.AP.Commun.CtrlIU.MenuPrincipalBase,System.String,System.String)">
+	<summary>
+ Fait tout le traitement nécessaire à l'initialisation de l'application.
+ </summary>
+	<param name="mainForm">Pointeur vers la form principale de l'application.</param>
+	<param name="mainMenu">Pointeur vers le menu principal de l'application.</param>
+	<param name="GestionFormulairesPath">Path vers le fichier xml des formulaires.</param>
+	<param name="GestionMenuContextuelPath">Path vers le ficheir xml ds menus.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.ConfigIllus(System.Object)">
+	<summary>
+ Affiche la fenêtre des configurations par défaut.
+ </summary>
+	<param name="sender"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.RefreshMenu(System.Boolean)">
+	<summary>
+ Function qui gère les menus disponibles selon les conditions.
+ </summary>
+	<param name="reset">Si l'on vient de resetter le cas.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.IsConceptPreInitialisedOnly">
+	<summary>
+ Permet de savoir s'il y a un concept non initialisé de sélectionné.
+ </summary>
+	<returns>Vrai -  Il y a un concept non initialisé, Faux - Il n'y a pass de concept non initialisé</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.DeleteReportFiles">
+	<summary>
+ Suprime les fichiers temporaires de rapport pour Genesis.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.Statistiques">
+	<summary>
+ Initialise différents compteurs Sous IA Stats pour fin de statistiques.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.GetConfigDefaut">
+	<summary>
+ Permet d'obtenir les clé qu'il faut conserver lorsque l'on transfère d'une version à l'autre.
+ </summary>
+	<returns>Retourne la liste des clés à prendre en sauvegarde.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.CopieCleConfigDefaut(System.String,System.String,System.Int32)">
+	<summary>
+ Valider si la clé doit être copier ou non pour les configues par défaut.
+ À noter que en PB le "\" était inclus dans le nom des clés, ce n'est plus le cas en .NET.
+ </summary>
+	<param name="branche">Le nom de la brache dans le regsitre</param>
+	<param name="cle">Le nom de la clé dans le regsitre</param>
+	<param name="produitVersion">Le no version de l'application courant</param>
+	<returns>True si l'on doit copier la clé, false sinon.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.GererMsgPresave">
+	<summary>
+ Afficher le message demandant si l'on veut ajouter le cic si il est non présent.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.ValidationPropos">
+	<summary>
+ Fait les validations avant de passer à la propo.
+ </summary>
+	<returns>True - on peut aller à la propo, false - il y a un problème.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.ShowSplashScreen">
+	<summary>
+ Méthode qui fait l'affichage de la fenêtre d'introduction (splashscreen)
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.EquiBuild.Utils.Application.LibraryList">
+	<summary>
+ Permet d'avoir le path des library power builder pour l'application courante.
+ </summary>
+	<returns>Le path des library power builder pour l'application courante.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.ObtenirObjetRapport">
+	<summary>
+ Permet d'obtenir un objet de rapport avec le bon type pour l'application en cours.
+ </summary>
+	<returns>Retourne l'objet de rapport utilisé par l'application courante.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Application.IsPropoElectroniqueDisponible">
+	<summary>
+ Determiner si l'application proposition électronique est disponible
+ </summary>
+	<returns>Vrai si la propo est disponible, faux sinon</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.EquiBuild.Utils.Application">
+	<summary>
+  Gère les initialisatione et les traitements de l'application Heap.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAccueil.FormulaireAccueil_Load(System.Object,System.EventArgs)">
+	<summary>
+ Fait les initialisations nécessaires au traitement du formluare.
+ Beaucoup d'enregistrement d'objet pour le resize.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAccueil.DataWindowPrincipale_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ Tranforme les liens d'aide en rouge lorsque l'on apss la souris par dessus.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAccueil.DataWindowPrincipale_Click(System.Object,IAFG.IA.VI.AP.Commun.CtrlIU.DataWindow.ItemClickEventArgs)">
+	<summary>
+ Gère les clicks sur la page. Principalement pour ouvrir des documents de référence.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAccueil.DataWindowPrincipale_PostItemChanged(System.Object,Sybase.DataWindow.ItemChangedEventArgs)">
+	<summary>
+ Gère le changement des concepts dans la page d'acceuil.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAccueil.cbx_deactivate_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ Sauvegarde l'information à savoir si oui ou non on affiche l'acceuil.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAccueil.LoadData(System.Object)">
+	<summary>
+ Fonction qui permet de recharger les données du formulaire d'acceuil
+ </summary>
+	<param name="sender"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAccueil.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+	<summary>
+ Traite une touche de commande.
+ </summary>
+	<param name="msg">System.Windows.Forms.Message, passé par référence, qui représente le message de fenêtre à traiter.</param>
+	<param name="keyData">Une des valeurs System.Windows.Forms.Keys qui représente la touche à traiter. </param>
+	<returns>True si le caractère a été traité par cette méthode; sinon Talse.</returns>
+	<remarks>Cette méthode est nécessaire pour contourner un bogue de tabulation dans datawindow .Net 2.0</remarks>
+</member><member name="T:IAFG.IA.IL.AP.EquiBuild.CtrlIU.FormulaireAccueil">
+	<summary>
+ Formaire représentant la page d'accueil de l'application Heap.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Donnees.UtilsDossier.ObtenirRapportId(System.Int32@,System.String@,System.String@)">
+	<summary>
+ Permet d'obtenir le type de rapport à produire.
+ </summary>
+	<param name="numeroConcept">Type de concept choisit</param>
+	<param name="idRapport">Le type de rapport à produire</param>
+	<param name="codeRapport">Code du rapport</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.FonctionsCommunes.ObtenirAge">
+	<summary>
+ Méthode pour obtenir l'âge à utiliser pour la personalisation de l'ASL
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.FonctionsCommunes.ObtenirNombreAnnees">
+	<summary>
+ Méthode qui retourne le nombre d'années pour le tableau de montants d'ASL
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.FonctionsCommunes.ObtenirNombreAnnees(System.Int32)">
+	<summary>
+ Méthode qui retourne le nombre d'années pour le tableau de montants d'ASL
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionDetailsPrimes.ObtenirCoutTotal">
+	<summary>
+ Fonction qui permet d'obtenir la valeur à mettre dans le champ coutTotal de la
+ DW du rapports des primes
+ </summary>
+	<returns></returns>
+	<remarks>Est overrider dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionDetailsPrimes.ObtenirPrimeMax">
+	<summary>
+ Fonction qui permet d'obtenir la valeur à mettre dans le champ prime_max de la
+ DW du rapports des primes
+ </summary>
+	<returns></returns>
+	<remarks>Est overrider dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionHypotheseCompteTransitoire.SetHypotheseCompteTransitoire">
+	<summary>
+ Chargement des hypothèses du compte transitoire
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionHypotheseCompteTransitoire.AffecterFormatSectionHypotheseFondsTransitoire(Sybase.DataWindow.DataWindowChild)">
+	<summary>
+ Méthode qui affecte les formats appropriés aux champs nécessaires
+ </summary>
+	<param name="section">la dw du rapport</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionHypotheseCompteTransitoire.ObtenirSoldeComptesFondsTransitoire">
+	<summary>
+ fonction qui retourne le solde des comptes du fonds transitoire
+ </summary>
+	<returns>retourne 0</returns>
+	<remarks>est overridé dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionHypotheseCompteTransitoire.AffecterLibelleSectionHypotheseFondsTransitoire(Sybase.DataWindow.DataWindowChild)">
+	<summary>
+ Méthode qui affecte les libellés de la section Hypothèse du fonds transitoire
+ </summary>
+	<remarks>Est overrider dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionHypotheseCompteTransitoire.AffecterVisibiliteSoldeHypotheseCompteTransitoire(Sybase.DataWindow.DataWindowChild)">
+	<summary>
+ Méthode qui affiche ou cache la colonne solde de la section hypothese compte transitoire
+ </summary>
+	<param name="section">la section du rapport</param>
+	<remarks>Cache la colonne pour le nontrad, est overridé dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionHypotheseCompteTransitoire.AffecterVisibiliteSoldeHypotheseCompteTransitoire(Sybase.DataWindow.DataWindowChild,System.Boolean)">
+	<summary>
+ Méthode qui affiche ou cache la colonne solde de la section hypothese compte transitoire
+ </summary>
+	<param name="section">la section du rapport</param>
+	<param name="visible">visible ou non</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionProtections.FormaterCouvertureAssure(IAFG.IA.VI.AF.Proposition.Protection)">
+	<summary>
+ Formater l''information pour la section couverture des assurés.
+ </summary>
+	<param name="objprotection">Protection a formater</param>
+	<returns>Le importstring pour la datawindow.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionProtections.AjouterLigneDetailsProtection(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Formate les paramètres pour s'adapter à la DW
+ </summary>
+	<param name="info_protection">Le champs de la DW</param>
+	<param name="info_prime_min">Le champs de la DW</param>
+	<param name="desc_total">Le champs de la DW</param>
+	<param name="montant_total">Le champs de la DW</param>
+	<param name="prest_deces">Le champs de la DW</param>
+	<param name="date_emission">Le champs de la DW</param>
+	<returns></returns>
+	<remarks>Désolé pour le nom des variables, elle représente les champs de la datawindow</remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionProtections.AssureNonAssurablePresent(System.String[])">
+	<summary>
+ Cette fonction determine si un des individus est contractant et non-assurable.
+ </summary>
+	<param name="idIndividus">Les id des individus pour lesquels nous voulons les informations</param>
+	<returns>1 - Le traitement s'est déroulé sans problème
+ -1 - Une erreur est survenue durant le traitement</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionProtections.AjouterAnnotationMaladieGrave4(IAFG.IA.VI.AF.Proposition.Protection)">
+	<summary>
+ On valide dans cette méthode si on doit ajouter l'annotation pour les maladies grave 4
+ </summary>
+	<param name="oProt">la protection</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionProtections.ObtenirDureePaiement(IAFG.IA.VI.AF.Proposition.Protection)">
+	<summary>
+ Renvoit la durée de paiement de la prime.
+ </summary>
+	<param name="prot">Référence un <see cref="T:IAFG.IA.VI.AF.Proposition.Protection">Protection</see> contenant les informations de la protection.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionProtections.GetDureeProt(System.String)">
+	<summary>
+ Donne la durée de protection d'une protection.
+ </summary>
+	<param name="idProtection">l'ID de la protection</param>
+	<returns> la durée 
+</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionProtections.ObtenirInfoDateEmissionExpiration(IAFG.IA.VI.AF.Proposition.Protection)">
+	<summary>
+ Méthode qui obtient les informations de la date d'émission et d'expiration de la 
+ protection passée en paramètre
+ </summary>
+	<param name="objProtection"></param>
+	<returns></returns>
+	<remarks>Ne retourne rien en contexte émission</remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionProtections.ObtenirInfoTauxProtection(IAFG.IA.VI.AF.Proposition.Protection)">
+	<summary>
+ Méthode qui obtient les informations du taux de la protection
+ </summary>
+	<param name="objProtection">la protection</param>
+	<returns></returns>
+	<remarks>Ne retourne rien en contexte émission. Voir dans EVIA pour le code</remarks>
+</member><member name="M:IAFG.IA.IL.AP.EquiBuild.Utils.Rapport.SectionProtections.GestionNotescouverture(System.String)">
+	<summary>
+ Vérifie si la note existe déjà dans le vecteur des notes,si oui retourne la position du vecteur sinon l'ajoute dans
+ le vecteur des notes de couverture.
+ </summary>
+	<param name="idNote">Ajouter le id de la note au vecteur de note.</param>
+	<returns>L'index représentant l'emplacement de notre note dans le vecteur en string.</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

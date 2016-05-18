@@ -1,0 +1,348 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.VI.AF.ObjetsPartages.Pilotage
+</name>
+</assembly>
+<members>
+<member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Requetes.SCDAgent.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="PremiereLettreCodeAgent">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Requetes.SCDAgent">
+	<summary>
+ Classe de requete pour la requête SCDAgent.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.KeyAccessor.ApplyCriteriaMatchEqualOrDefault(IAFG.IA.VI.AF.Base.KeyAccessor)">
+	<summary>
+  Subfunction use by ApplyCriteria that tries to match criteria value by equality or match the default value define for the criteria.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.KeyAccessor.ApplyCriteriaMatchGreatestValueLessOrEqual(IAFG.IA.VI.AF.Base.KeyAccessor)">
+	<summary>
+  Subfunction use by ApplyCriteria that trys to select the value whose key matches the greatest value less than or equal to the criterisValue parameter
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.KeyAccessor.ApplyCriteriaMatchEqual(IAFG.IA.VI.AF.Base.KeyAccessor)">
+	<summary>
+  Subfunction use by ApplyCriteria that tries to match criteria value by equality.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.PDFException.#ctor">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.PDFException.#ctor(System.String)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.PDFException.#ctor(System.String,System.Exception)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<param name="inner"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.PDFException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+	<summary>
+	</summary>
+	<param name="info"></param>
+	<param name="context"></param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Base.PDFException">
+	<summary>
+ Exception qui est levee par les objets du PDF.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Requetes.InfoAgenceFromCodeAgence.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="CodeAgence">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Requetes.InfoAgenceFromCodeAgence">
+	<summary>
+ Classe de requete pour la requête InfoAgenceFromCodeAgence.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Donnees.SCDAgent.#ctor(IAFG.IA.VI.AF.ObjetsPartages.Pilotage.PDFDataRow,IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Requetes.SCDAgent)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.SCDAgent à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetSCDAgent.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="T:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.AccesPilotage.Schemas">
+	<summary>
+ enumeration contenant les differents schemas a charger
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.AccesPilotage.DescriptionTable.NomTable">
+	<summary>
+ Nom de la table
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.AccesPilotage.DescriptionTable.NomAttache">
+	<summary>
+ Nom de l'attache (Link Table)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.AccesPilotage.DescriptionTable.#ctor(System.String,System.String)">
+	<summary>
+ Constructeur de la structure
+ </summary>
+	<param name="nomTable">Nom de la table</param>
+	<param name="nomAttache">Nom de l'attache (Link Table)</param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.AccesPilotage.Langue">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.AccesPilotage.Banniere">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.AccesPilotage.ContexteApplicatif">
+	<summary>
+ Indique le context applicatif qui sera utilise lors de l'excution d'une requete sql.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.AccesPilotage.ObtenirListesChoix">
+	<summary>
+ Permet d'acceder les listes de choix autres que XML a travers le PDF via l'interface IListesChoix
+ </summary>
+	<returns>Interface des listes de choix</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.AccesPilotage">
+	<summary>
+ Classe servant a etablir les connexions aux bases de donnees necessaires au
+ fonctionnement d'une application
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.DictionnaireDonnees">
+	<summary>
+ Dictionnaire de donnees contenant des objets qui implements l'interface IPDFDataTable.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.PDFException.#ctor">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.PDFException.#ctor(System.String)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.PDFException.#ctor(System.String,System.Exception)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<param name="inner"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.PDFException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+	<summary>
+	</summary>
+	<param name="info"></param>
+	<param name="context"></param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.PDFException">
+	<summary>
+ Exception qui est levee par les objets du PDF.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.ListesChoix">
+	<summary>
+ Permet d'instancier les interfaces de listes de choix et sert de point d'entree pour avoir acces a une instance de IListesChoix 
+ </summary>
+	<remarks>Subterfuge pour pouvoir utiliser des listes de choix generees par le PDF a travers une interface</remarks>
+</member><member name="T:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.IPDFDataTable">
+	<summary>
+ Interface qui permet aux methodes de passer un instance qui implemente cette interface.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.IListesChoix">
+	<summary>
+ Interface qui permet aux methodes de passer un instance qui implemente cette interface.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.PDFDataRows">
+	<summary>
+ Represente une collection de lignes de donnees.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.PDFDataRow">
+	<summary>
+ Represente une ligne de donnees
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.RegistreRacine">
+	<summary>
+ enumeration des racines de la base de registre.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.EstCeClefExiste(IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.RegistreRacine,System.String)">
+	<summary>
+ Valide l'existance de la clef passee en parametre.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit valider l'existance de la clef.</param>
+	<param name="clef">La clef dont on veut valider son existance.</param>
+	<returns>Retourne la valeur True si la clef existe. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.CreerClef(IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.RegistreRacine,System.String)">
+	<summary>
+ Cree la clef dans la racine passee en parametre.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veut creer la clef.</param>
+	<param name="clef">La clef a creer.</param>
+	<returns>Retourne la valeur True si la clef a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.SupprimerClef(IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.RegistreRacine,System.String)">
+	<summary>
+ Supprime la clef a partir de la racine passee en parametre
+ </summary>
+	<param name="registreRacine">La racine a partir de laquelle la clef sera supprimee.</param>
+	<param name="clef">La clef que l'on veut supprimer.</param>
+	<returns>Retourne la valeur True si la clef a ete supprimee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.SupprimerClef(IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.RegistreRacine,System.String,System.Boolean)">
+	<summary>
+ Supprime la clef a partir de la racine passee en parametre.. Si la clef contient des sous-clefs, en fonction du parametre recursive, l'ensemble de l'arbre sera supprime.
+ </summary>
+	<param name="registreRacine">La racine a partir de lqeuelle la clef sera supprimee.</param>
+	<param name="clef">La clef que l'on veut supprimer.</param>
+	<param name="recursive">Indique s'il faut supprimer les sous-clefs de la clef.</param>
+	<returns>Retourne la valeur True si la clef a ete supprimee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.ObtenirValeur(IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.RegistreRacine,System.String,System.String,System.String)">
+	<summary>
+ Obtenir la valeur de la clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit lire la valeur de la clef.</param>
+	<param name="clef">La clef d'ou l'on veut lire la valeur.</param>
+	<param name="nomValeur">le nom de la valeur.</param>
+	<param name="valeurDefaut">Si la valeur n'existe pas, cette valeur sera utilisee.</param>
+	<returns>La valeur de type String.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.ObtenirValeur(IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.RegistreRacine,System.String,System.String,System.Byte[])">
+	<summary>
+ Obtenir la valeur de la clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit lire la valeur de la clef.</param>
+	<param name="clef">La clef d'ou l'on veut lire la valeur.</param>
+	<param name="nomValeur">le nom de la valeur.</param>
+	<param name="valeurDefaut">Si la valeur n'existe pas, cette valeur sera utilisee.</param>
+	<returns>La valeur de type Byte().</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.ObtenirValeur(IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.RegistreRacine,System.String,System.String,System.Int32)">
+	<summary>
+ Obtenir la valeur de la clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit lire la valeur de la clef.</param>
+	<param name="clef">La clef d'ou l'on veut lire la valeur.</param>
+	<param name="nomValeur">le nom de la valeur.</param>
+	<param name="valeurDefaut">Si la valeur n'existe pas, cette valeur sera utilisee.</param>
+	<returns>La valeur de type Integer.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.ObtenirValeurs(IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.RegistreRacine,System.String)">
+	<summary>
+	</summary>
+	<param name="registreRacine"></param>
+	<param name="clef"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.CreerValeur(IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.RegistreRacine,System.String,System.String,System.String)">
+	<summary>
+ Creer une valeur pour une clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veyt creer une valeur.</param>
+	<param name="clef">La clef ou la valeur sera creee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<param name="valeur">La valeur a conserver.</param>
+	<returns>Retourne la valeur True si la valeur a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.CreerValeur(IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.RegistreRacine,System.String,System.String,System.Byte[])">
+	<summary>
+ Creer une valeur pour une clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veyt creer une valeur.</param>
+	<param name="clef">La clef ou la valeur sera creee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<param name="valeur">La valeur a conserver.</param>
+	<returns>Retourne la valeur True si la valeur a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.CreerValeur(IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.RegistreRacine,System.String,System.String,System.Int32)">
+	<summary>
+ Creer une valeur pour une clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veyt creer une valeur.</param>
+	<param name="clef">La clef ou la valeur sera creee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<param name="valeur">La valeur a conserver.</param>
+	<returns>Retourne la valeur True si la valeur a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.SupprimerValeur(IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.RegistreRacine,System.String,System.String)">
+	<summary>
+ Supprimer une valeur a partir de la clef pour la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine d'ou l'on veut supprimer une valeur.</param>
+	<param name="clef">La clef d'ou la valeur sera supprimee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<returns>Retourne la valeur True si la valeur a ete supprimee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.ObtenirClefRegistre(IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.RegistreRacine)">
+	<summary>
+ Permet d'obtenir un objet RegistryKey representant la racine demandee par le parametre registreRacine.
+ </summary>
+	<param name="registreRacine">La racine de la base de regsitre demandee.</param>
+	<returns>Une instance de RegistryKey</returns>
+	<remarks>Si la valeur de l'enumeration n'existe pas, la valeur nul (Nothing) est retournee.</remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre.EffacerRegistryKey(Microsoft.Win32.RegistryKey@)">
+	<summary>
+ Effacer l'instance a l'objet RegistryKey.
+ </summary>
+	<param name="registryKey">L'instance de l'objet RegistryKey.</param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Registre">
+	<summary>
+ Cette classe est une classe de facade pour l'utilisation de la base de registre.
+ </summary>
+	<remarks>Cette classe est statique(Shared). Cette classe est non heritable(NotInheritable).</remarks>
+</member><member name="P:IAFG.IA.VI.AF.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisee par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.VI.AF.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriete CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources � l'aide de cette classe de ressource fortement typee.
+</summary>
+</member><member name="T:IAFG.IA.VI.AF.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typee destinee, entre autres, a� la consultation des chaines localisees.
+</summary>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Donnees.InfoAgenceFromCodeAgence.#ctor(IAFG.IA.VI.AF.ObjetsPartages.Pilotage.PDFDataRow,IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Requetes.InfoAgenceFromCodeAgence)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.InfoAgenceFromCodeAgence à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetInfoAgenceFromCodeAgence.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member>
+</members>
+</doc>

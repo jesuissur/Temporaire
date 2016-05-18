@@ -1,0 +1,1894 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.VI.AF.Illustration
+</name>
+</assembly>
+<members>
+<member name="P:IAFG.IA.VI.AF.Illustration.Bien.AgeRetrait">
+	<summary>
+ Âge de retrait
+ Permet de spécifier à quel âge les retraits minimums pour les régimes enregistrés sont débutés.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Bien.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Bien.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Concept.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Concept.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Rapport.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Rapport.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtections.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtections.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtections.RemoveAll">
+	<summary>
+ Méthode qui vide la collection interne
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtections.GetItemParIdProtection(System.String)">
+	<summary>
+ Permet d'obtenir un item "DonneesCalculeesProtection" au moyen du Id d'une protection
+ </summary>
+	<param name="id">Le id de la protection</param>
+	<returns>Le "DonneesCalculeesProtection" recherché</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtections.Add">
+	<summary>
+ Ajoute un item du type courant à la collection.
+ </summary>
+	<returns>L'item ajouté à la collection.</returns>
+	<remarks>Non-supporté par la classe courante.</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtections.Add(System.Type)">
+	<summary>
+ Ajoute un item d'un type précis à la collection.
+ </summary>
+	<param name="typeAInstancier">Type de l'item à instacnier et ajouter à la collection.</param>
+	<returns>L'item ajouté à la collection.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtections.ChangeKey(System.String,System.String)">
+	<summary>
+ Change la clé avec laquelle est indexé un item de la collection. Le même item demeure dans la collection mais sa clé d'indexation change.
+ </summary>
+	<param name="oldkey">La clé sous laquelle l'item est actuellement indexé.</param>
+	<param name="newKey">La nouvelle clé sous laquelle l'item doit être indexé.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtections.Count">
+	<summary>
+ Retourne le nombre d'élément dans la collection interne
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtections.Existe(System.String)">
+	<summary>
+ Indique s'il existe un item dans la collection correspondant à la clé passée en paramètre.
+ </summary>
+	<param name="Cle">La clé de l'item à trouver.</param>
+	<returns>TRUE ou FALSE selon si l'item existe ou non.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtections.IndexOf(System.String)">
+	<summary>
+ Retourne l'index d'un item dans la collection en fonction de sa clé.
+ </summary>
+	<param name="cle">La clé de l'item dans la collection pour lequelle on recherche l'index.</param>
+	<returns>
+ L'index de l'item s'il existe dans la collection. -1, sinon.
+ </returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtections.Item(System.Int32)">
+	<summary>
+ Accéde à un item par son index i.e. sa position dans la collection.
+ </summary>
+	<param name="index">Position de l'item dans la collection.</param>
+	<returns>L'item de type "Base" correspondant à l'index.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtections.Item(System.String)">
+	<summary>
+ Accéde à un item par sa clé.
+ </summary>
+	<param name="Cle">Clé de l'item dans la collection.</param>
+	<returns>L'item de type "Base" correspondant à l'index.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtections.Remove(System.String)">
+	<summary>
+ Supprime un item de la collection en fonction de sa clé.
+ </summary>
+	<param name="Cle">La clé de l'item à supprimer.</param>
+	<returns>TRUE ou FALSE selon le succès de l'opération.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Illustration.#ctor">
+	<summary>
+ Constructeur permettant d'instancier l'objet dans un mode d'exécution de pilotage par défaut.
+ Par défaut, le mode d'exécution est déterminé en fonction du niveau de compilation i.e. "Release" = "Production" et "Debug" = "Developpement".
+ </summary>
+	<remarks>Utilisé pour instancier un objet "Illustration" vide.</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Illustration.#ctor(System.String)">
+	<summary>
+ Constructeur
+ </summary>
+	<param name="Xml">Une string XML ou un nom de fichier XML.</param>
+	<remarks>Utilisé pour réinstancier un objet "Illustration" préalablement sauvegardé dans une string XML.</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Illustration.IANew">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Illustration.InitialiserValeurs">
+	<summary>
+ Methode centralisant la création des membres de la classe.
+ </summary>
+	<remarks>Cette même méthode est utilisée au niveau du constructeur et au niveau du Reset.</remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ObjetSeulIllustration.Illustration">
+	<summary>
+ Contient une référence à l'objet de tête Tarification
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.ConceptTransfertPatrimoine2.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.NivellementVMAXEnVigueurTest.SetUp">
+	<summary>
+ Utilisé pour ajouter du code à exécuter AVANT chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.NivellementVMAXEnVigueurTest.TearDown">
+	<summary>
+ Utilisé pour ajouter du code à exécuter APRÈS chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.NivellementVMAXEnVigueurTest.TesterNivellementVMAX">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.NivellementVMAXEnVigueurTest.TesterNivellementVMAXMinimisationDebutee">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.NivellementVMAXEnVigueurTest.TesterNivellementCF_VMAX">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.NivellementVMAXEnVigueurTest.TesterNivellementCF_VMAXMinimisationDebutee">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.PropositionListeProtectionsTest.SetUp">
+	<summary>
+ Utilisé pour ajouter du code à exécuter AVANT chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.PropositionListeProtectionsTest.TearDown">
+	<summary>
+ Utilisé pour ajouter du code à exécuter APRÈS chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.PropositionListeProtectionsTest.TesterListeProtectionBase">
+	<summary>
+ Teste la liste de protections avec un protection de base
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.PropositionListeProtectionsTest.TesterListeProtectionAvecOption">
+	<summary>
+ Teste la liste des protections avec une protection de base avec une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.PropositionListeProtectionsTest.TesterListeProtectionAvecOACA">
+	<summary>
+ Teste la liste des protections avec une protection de base avec une OACA
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.PropositionListeProtectionsTest.TesterListeProtectionAvecIndexation">
+	<summary>
+ Teste la liste des protections avec une protection de base avec une indexation
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.PropositionListeProtectionsTest.TesterListeProtectionAvecOptionProtectionBase">
+	<summary>
+ Teste la liste de protections avec un protection de base
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.PropositionListeProtectionsTest.TesterListeProtectionOrdreTri">
+	<summary>
+ Teste l'odre de tri de la liste de protections
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationOptionTest.SetUp">
+	<summary>
+ Utilisé pour ajouter du code à exécuter AVANT chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationOptionTest.TearDown">
+	<summary>
+ Utilisé pour ajouter du code à exécuter APRÈS chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationOptionTest.TesterTrResiliationOptionSimpleRemove">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationOptionTest.TesterTrResiliationOptionSimpleRemove_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationOptionTest.TesterTrResiliationOptionSimpleRemove_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationOptionTest.TesterTrResiliationOptionSimpleRemove_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationOptionTest.TesterTrResiliationOptionSimpleReinit">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationOptionTest.TesterTrResiliationOptionSimpleReinit_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationOptionTest.TesterTrResiliationOptionSimpleReinit_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationOptionTest.TesterTrResiliationOptionSimpleReinit_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationOptionTest.TesterTrResiliationOptionEtProtectionReinit">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationOptionTest.TesterTrResiliationOptionEtProtectionReinit_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationOptionTest.TesterTrResiliationOptionEtProtectionReinit_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationOptionTest.TesterTrResiliationOptionEtProtectionReinit_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationOptionTest.TesterTrResiliationOptionEtProtectionRemove">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationOptionTest.TesterTrResiliationOptionEtProtectionRemove_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationOptionTest.TesterTrResiliationOptionEtProtectionRemove_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationOptionTest.TesterTrResiliationOptionEtProtectionRemove_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtection.MontantMinimum">
+	<summary>
+ Seul le moteur de calcul est capable de calculer ces chiffres 
+ et il nous les faut pour la validation 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtection.MontantMaximum">
+	<summary>
+ Seul le moteur de calcul est capable de calculer ces chiffres 
+ et il nous les faut pour la validation 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtection.Protection">
+	<summary>
+ Protection liée aux calculs
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtection.DeductionMensuelle">
+	<summary>
+ Propriété qui retourne/affecte la prochaine déduction mensuelle pour la protection.
+ La déduction mensuelle = Coût d'assurance + Frais
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>On n'affiche pas cette propriété car elle ne sert qu'à faire des tests entre les
+ résultats du MainFrame et ceux calculés par le moteur</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtection.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtection.#ctor(IAFG.IA.VI.AF.Base.Base,System.String)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtection.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtection.AvantSauvegarde(IAFG.IA.VI.AF.Base.ProprietesXml)">
+	<summary>
+ Surcharge de la méthode AvantSauvegarde de la classe de base
+ </summary>
+	<param name="listeProprietes">Liste des propriétés</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DonneesCalculeesProtection.InitialiserPropriete(System.String,System.Object)">
+	<summary>
+ Surcharge de la méthode InitialiserPropriete de la classe de base
+ </summary>
+	<param name="nomPropriete">Nom de la propriété</param>
+	<param name="valeur">Valeur</param>
+	<returns>True si la propriété a été initialisée</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.ElementRapport.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.ElementRapport.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.IllustrationTauxAVMTest.SetUp">
+	<summary>
+ Utilisé pour ajouter du code à exécuter AVANT chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.IllustrationTauxAVMTest.TearDown">
+	<summary>
+ Utilisé pour ajouter du code à exécuter APRÈS chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.IllustrationTauxAVMTest.Test_AVM_IRIS2_IllustrationReguliere">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrNivellementTest.SetUp">
+	<summary>
+ Utilisé pour ajouter du code à exécuter AVANT chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrNivellementTest.TearDown">
+	<summary>
+ Utilisé pour ajouter du code à exécuter APRÈS chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrNivellementTest.TesterTrNivellementSimpleRemove">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrNivellementTest.TesterTrNivellementSimpleRemove_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrNivellementTest.TesterTrNivellementSimpleRemove_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrNivellementTest.TesterTrNivellementSimpleRemove_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrNivellementTest.TesterTrNivellementSimpleReinit">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrNivellementTest.TesterTrNivellementSimpleReinit_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrNivellementTest.TesterTrNivellementSimpleReinit_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrNivellementTest.TesterTrNivellementSimpleReinit_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrNivellementTest.TesterTrNivellementOptionRemove">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrNivellementTest.TesterTrNivellementOptionRemove_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrNivellementTest.TesterTrNivellementOptionRemove_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrNivellementTest.TesterTrNivellementOptionRemove_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrNivellementTest.TesterTrNivellementOptionReinit">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrNivellementTest.TesterTrNivellementOptionReinit_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrNivellementTest.TesterTrNivellementOptionReinit_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrNivellementTest.TesterTrNivellementOptionReinit_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Prestation.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Prestation.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptAssuranceRetraite.DeductionCnap">
+	<summary>
+ Indique si le CNAP jusqu'à la prime est déductible d’impôt.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptAssuranceRetraite.RespectRatioPretVsValeurRachat">
+	<summary>
+ Spécifie jusqu’à quel âge le ratio prêt/valeur de rachat spécifié ici doit être respecté.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptAssuranceRetraite.RespectRatioPretVsValeurRachatPerso">
+	<summary>
+ Permet de spécifier un âge personnalisé pour le ratio prêt/valeur de rachat.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>La propriété n'est accessible que lorsque la valeur de la propriété "RespectRatioPretVsValeurRachat" est "Personnalise".</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.ConceptAssuranceRetraite.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptInvestorPlus.DesiredLoanDesactivated">
+	<summary>
+ Force les prêts désirés à Zero !
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptInvestorPlus.TaxePrimeExcedentaire">
+	<summary>
+ Spécifie si les Taxe sur les primes excédentaires sont incluse dans les coûts
+ En d'autres mots, détermine si on est en IRIS Plus
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>On peut avoir un mixe de IRIS Plus ET IRIS Extra</remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptInvestorPlus.IrisExtra">
+	<summary>
+ Spécifie si le concept est Iris Extra
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>On peut avoir un mixe de IRIS Plus ET IRIS Extra</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.ConceptInvestorPlus.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.ConceptInvestorPlus.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptIRIS.DesiredLoanDesactivated">
+	<summary>
+ Force les prêts désirés à Zero !
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptIRIS.TypeEmprunteur">
+	<summary>
+ Indique l’emprunteur lorsque le contractant est une corporation.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptIRIS.FraisGarantie">
+	<summary>
+ Permet de spécifier le pourcentage de frais de garantie à débourser par l’emprunteur.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptIRIS.OptionInterets">
+	<summary>
+ Permet de choisir ce qui adviendra des intérêts du prêt pour investissement.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptIRIS.SoldeAAtteindre">
+	<summary>
+ Permet de spécifier le solde du prêt à atteindre avant de figer le prêt.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptIRIS.TaxePrimeExcedentaire">
+	<summary>
+ Spécifie si les Taxe sur les primes excédentaires sont incluse dans les coûts
+ En d'autres mots, détermine si on est en IRIS Plus
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>On peut avoir un mixe de IRIS Plus ET IRIS Extra</remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptIRIS.IrisExtra">
+	<summary>
+ Spécifie si le concept est Iris Extra
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.ConceptIRIS.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.DonneeCalculeeMoteur.DonneesCalculeesProtections">
+	<summary>
+ Collection de données calculées par le moteur
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.DonneeCalculeeMoteur.DeductionMensuelle">
+	<summary>
+ Propriété qui retourne/affecte la prochaine déduction mensuelle pour l'ensemble des protections.
+ La déduction mensuelle = Coût d'assurance + Frais
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>On n'affiche pas cette propriété car elle ne sert qu'à faire des tests entre les
+ résultats du MainFrame et ceux calculés par le moteur</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DonneeCalculeeMoteur.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DonneeCalculeeMoteur.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.InfoTrad.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.InfoTrad.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.Utilitaires.InitialiserNomFichierSauvegarde">
+	<summary>
+ Méthode qui initialise le GUID du nom de fichier à sauvegarder
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.Utilitaires.DetruireFichiersSauvegarde">
+	<summary>
+ Méthode qui détruit les fichiers de sauvegarde
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.Utilitaires.InitialiserContexte(IAFG.IA.VI.ENUMs.Banniere)">
+	<summary>
+ Initialise l'objet de contexte en début de traitement.
+ </summary>
+	<remarks>
+ L'initilisation doit être TOUJOURS faite dans le SetUp d'une classe!!!!
+ </remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.Utilitaires.RelacherContexte">
+	<summary>
+ Destruction de l'objet de contexte en fin de traitement.
+ </summary>
+	<remarks>
+ La destruction doit être TOUJOURS faite dans le TearDown d'une classe!!!!
+ </remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.Utilitaires.SauvegarderEtRecharger(IAFG.IA.VI.AF.Illustration.Illustration)">
+	<summary>
+ Applique deux sauvegardes/rechargements consécutif et s'assure que la structure XML du fichier de sauvegarde n'a pas changé durant le traitement.
+ </summary>
+	<param name="illus">L'objet TempsArret sur lequel on doit appliquer le test.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.Utilitaires.SupprimerNoeudXML(System.String,System.String[])">
+	<summary>
+ Supprime une liste de noeuds dans une chaîne XML et retourne la nouvelle chaîne XML.
+ </summary>
+	<param name="chaineXML">Chaîne XML à modifier.</param>
+	<param name="noeudsASupprimer">Liste des noms de noeuds à supprimer.</param>
+	<returns>La nouvelle chaîne avec les modifications appliquées.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.ConceptProprietePartagee.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.NivellementCapitalSeulementTest.SetUp">
+	<summary>
+ Utilisé pour ajouter du code à exécuter AVANT chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.NivellementCapitalSeulementTest.TearDown">
+	<summary>
+ Utilisé pour ajouter du code à exécuter APRÈS chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.NivellementCapitalSeulementTest.TesterNivellementCapitalSeulement">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.PropoInfoGenerale.NoScenario">
+	<summary>
+ Représente le numéro du scenario selectionné par l'illustration avant le passage à 
+ la proposition électronique
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+ Seul le contexte d'illustration doit définir le NoScenario dans le but
+ que la proposition électronique retrouve facilement celui-ci
+ </remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.PropoInfoGenerale.Scenario">
+	<summary>
+ Représente le scenario selectionné par l'illustration avant le passage 
+ à la proposition électronique
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.PropoInfoGenerale.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.PropoInfoGenerale.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Scenarios.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Scenarios.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Scenarios.GetScenarioParNumero(System.Int32)">
+	<summary>
+ Retourne le scénario pour lequel on reçoi le numero
+ </summary>
+	<param name="numeroScenario">Numero du scenario(de 1 à 5)</param>
+	<returns>Le scénario, nothing si pas trouvé</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.CollectionIllustration`1.Illustration">
+	<summary>
+ Contient une référence à l'objet de tête Tarification
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.CollectionIllustration`1.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ItemIllustration.Illustration">
+	<summary>
+ Contient une référence à l'objet de tête Tarification
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.ItemIllustration.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="Parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.SetUp">
+	<summary>
+ Utilisé pour ajouter du code à exécuter AVANT chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TearDown">
+	<summary>
+ Utilisé pour ajouter du code à exécuter APRÈS chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEmission">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEmission_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEmission_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEmission_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_Nivele">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_NiveleAvecOption">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_NiveleEpargne">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_TRA">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_TRANivele">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_TRANiveleOption">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_Nivele_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_NiveleAvecOption_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_NiveleEpargne_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_TRA_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_TRANivele_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_TRANiveleOption_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_Nivele_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_NiveleAvecOption_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_NiveleEpargne_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_TRA_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_TRANivele_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_TRANiveleOption_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_Nivele_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_NiveleAvecOption_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_NiveleEpargne_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_TRA_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_TRANivele_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.AgeEtDateNivellementTest.TesterAgeEtDateNivellementEnVigueur_TRANiveleOption_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptProtectionPatrimoine.CouvertureImpotsAuDeces">
+	<summary>
+ Indique jusqu’à quel âge les impôts au décès doivent être couverts
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.ConceptProtectionPatrimoine.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptInvestorPlus2.DesiredLoanDesactivated">
+	<summary>
+ Force les prêts désirés à Zero !
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptInvestorPlus2.TaxePrimeExcedentaire">
+	<summary>
+ Spécifie si les Taxe sur les primes excédentaires sont incluse dans les coûts
+ En d'autres mots, détermine si on est en IRIS Plus
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>On peut avoir un mixe de IRIS Plus ET IRIS Extra</remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptInvestorPlus2.IrisExtra">
+	<summary>
+ Spécifie si le concept est Iris Extra
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>On peut avoir un mixe de IRIS Plus ET IRIS Extra</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.ConceptInvestorPlus2.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.ConceptInvestorPlus2.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrConversion10_8IrisTest.SetUp">
+	<summary>
+ Utilisé pour ajouter du code à exécuter AVANT chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrConversion10_8IrisTest.TearDown">
+	<summary>
+ Utilisé pour ajouter du code à exécuter APRÈS chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptIRIS2IllusReguliere.IrisExtra">
+	<summary>
+ Spécifie si le concept est Iris Extra
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptIRIS2IllusReguliere.TaxePrimeExcedentaire">
+	<summary>
+ Spécifie si les Taxe sur les primes excédentaires sont incluse dans les coûts
+ En d'autres mots, détermine si on est en IRIS Plus
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>On peut avoir un mixe de IRIS Plus ET IRIS Extra</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.ConceptIRIS2IllusReguliere.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptZerocashflow.TypeEmprunteur">
+	<summary>
+ Indique l’emprunteur lorsque le contractant est une corporation.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptZerocashflow.FraisGarantie">
+	<summary>
+ Permet de spécifier le pourcentage de frais de garantie à débourser par l’emprunteur.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptZerocashflow.OptionInterets">
+	<summary>
+ Permet de choisir ce qui adviendra des intérêts du prêt pour investissement.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptZerocashflow.SoldeAAtteindre">
+	<summary>
+ Permet de spécifier le solde du prêt à atteindre avant de figer le prêt.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptZerocashflow.TaxePrimeExcedentaire">
+	<summary>
+ Spécifie si les Taxe sur les primes excédentaires sont incluse dans les coûts
+ En d'autres mots, détermine si on est en IRIS Plus
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>On peut avoir un mixe de IRIS Plus ET IRIS Extra</remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptZerocashflow.IrisExtra">
+	<summary>
+ Spécifie si le concept est Iris Extra
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.ConceptZerocashflow.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.ProprieteSimpleTest.SetUp">
+	<summary>
+ Utilisé pour ajouter du code à exécuter AVANT chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.ProprieteSimpleTest.TearDown">
+	<summary>
+ Utilisé pour ajouter du code à exécuter APRÈS chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.ProprieteSimpleTest.TesterFacteurAugmentationPrimeFutur">
+	<summary>
+ Teste les TypeAssures des individus
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.ProprieteSimpleTest.TesteDateTransformationIndACjt">
+	<summary>
+ Teste les TypeAssures des individus
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Taxation.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Taxation.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.DeductionMensuelleTest.SetUp">
+	<summary>
+ Utilisé pour ajouter du code à exécuter AVANT chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.DeductionMensuelleTest.TearDown">
+	<summary>
+ Utilisé pour ajouter du code à exécuter APRÈS chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.DeductionMensuelleTest.TesterBase">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutOptionTest.SetUp">
+	<summary>
+ Utilisé pour ajouter du code à exécuter AVANT chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutOptionTest.TearDown">
+	<summary>
+ Utilisé pour ajouter du code à exécuter APRÈS chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutOptionTest.TesterTrAjoutOptionSimpleRemove">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutOptionTest.TesterTrAjoutOptionSimpleRemove_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutOptionTest.TesterTrAjoutOptionSimpleRemove_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutOptionTest.TesterTrAjoutOptionSimpleRemove_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutOptionTest.TesterTrAjoutOptionSimpleReinit">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutOptionTest.TesterTrAjoutOptionSimpleReinit_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutOptionTest.TesterTrAjoutOptionSimpleReinit_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutOptionTest.TesterTrAjoutOptionSimpleReinit_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutOptionTest.TesterTrAjoutOptionNiveleRemove">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutOptionTest.TesterTrAjoutOptionNiveleRemove_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutOptionTest.TesterTrAjoutOptionNiveleRemove_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutOptionTest.TesterTrAjoutOptionNiveleRemove_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutOptionTest.TesterTrAjoutOptionNiveleReinit">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutOptionTest.TesterTrAjoutOptionNiveleReinit_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutOptionTest.TesterTrAjoutOptionNiveleReinit_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutOptionTest.TesterTrAjoutOptionNiveleReinit_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutProtectionTest.SetUp">
+	<summary>
+ Utilisé pour ajouter du code à exécuter AVANT chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutProtectionTest.TearDown">
+	<summary>
+ Utilisé pour ajouter du code à exécuter APRÈS chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutProtectionTest.TesterTrAjoutProtectionSimpleRemove">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutProtectionTest.TesterTrAjoutProtectionSimpleRemove_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutProtectionTest.TesterTrAjoutProtectionSimpleRemove_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutProtectionTest.TesterTrAjoutProtectionSimpleRemove_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutProtectionTest.TesterTrAjoutProtectionSimpleReinit">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutProtectionTest.TesterTrAjoutProtectionSimpleReinit_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutProtectionTest.TesterTrAjoutProtectionSimpleReinit_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutProtectionTest.TesterTrAjoutProtectionSimpleReinit_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutProtectionTest.TesterTrAjoutProtectionNouvelAssureSimpleRemove">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutProtectionTest.TesterTrAjoutProtectionNouvelAssureSimpleRemove_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutProtectionTest.TesterTrAjoutProtectionNouvelAssureSimpleRemove_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutProtectionTest.TesterTrAjoutProtectionNouvelAssureSimpleRemove_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutProtectionTest.TesterTrAjoutProtectionNouvelAssureSimpleReinit">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutProtectionTest.TesterTrAjoutProtectionNouvelAssureSimpleReinit_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutProtectionTest.TesterTrAjoutProtectionNouvelAssureSimpleReinit_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrAjoutProtectionTest.TesterTrAjoutProtectionNouvelAssureSimpleReinit_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptTransfertPatrimoine.DeductionCnap">
+	<summary>
+ Indique si le CNAP jusqu'à la prime est déductible d’impôt.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptTransfertPatrimoine.RespectRatioPretVsValeurRachat">
+	<summary>
+ Spécifie jusqu’à quel âge le ratio prêt/valeur de rachat spécifié ici doit être respecté.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptTransfertPatrimoine.RespectRatioPretVsValeurRachatPerso">
+	<summary>
+ Permet de spécifier un âge personnalisé pour le ratio prêt/valeur de rachat.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>La propriété n'est accessible que lorsque la valeur de la propriété "RespectRatioPretVsValeurRachat" est "Personnalise".</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.ConceptTransfertPatrimoine.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.SetUp">
+	<summary>
+ Utilisé pour ajouter du code à exécuter AVANT chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TearDown">
+	<summary>
+ Utilisé pour ajouter du code à exécuter APRÈS chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCASimple">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCADesactivationOACA">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAChgOptionDeces_VMAX">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAChgOptionDeces_CFValMax">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAChgOptionDecesOACA_CFValMax">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAChgOptionDecesOACA_VMAX">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAResilierGaranties">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAT10_VMAX">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAT10_CFValMax">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCASimple_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCADesactivationOACA_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAChgOptionDeces_VMAX_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAChgOptionDeces_CFValMax_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAChgOptionDecesOACA_CFValMax_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAChgOptionDecesOACA_VMAX_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAResilierGaranties_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAT10_VMAX_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAT10_CFValMax_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCASimple_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCADesactivationOACA_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAChgOptionDeces_VMAX_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAChgOptionDeces_CFValMax_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAChgOptionDecesOACA_CFValMax_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAChgOptionDecesOACA_VMAX_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAResilierGaranties_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAT10_VMAX_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAT10_CFValMax_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCASimple_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCADesactivationOACA_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAChgOptionDeces_VMAX_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAChgOptionDeces_CFValMax_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAChgOptionDecesOACA_CFValMax_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAChgOptionDecesOACA_VMAX_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAResilierGaranties_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAT10_VMAX_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TransactionEnCascadeTest.TesterTrsEnCascadeReductionCAT10_CFValMax_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptIRIS2.DesiredLoanDesactivated">
+	<summary>
+ Force les prêts désirés à Zero !
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptIRIS2.TypeEmprunteur">
+	<summary>
+ Indique l’emprunteur lorsque le contractant est une corporation.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptIRIS2.FraisGarantie">
+	<summary>
+ Permet de spécifier le pourcentage de frais de garantie à débourser par l’emprunteur.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptIRIS2.FigerSoldePret">
+	<summary>
+ Permet de choisir s'il faut figer le solde du prêt.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptIRIS2.SoldeAAtteindre">
+	<summary>
+ Permet de spécifier le solde du prêt à atteindre avant de figer le prêt.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptIRIS2.TaxePrimeExcedentaire">
+	<summary>
+ Spécifie si les Taxe sur les primes excédentaires sont incluse dans les coûts
+ En d'autres mots, détermine si on est en IRIS Plus
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>On peut avoir un mixe de IRIS Plus ET IRIS Extra</remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptIRIS2.IrisExtra">
+	<summary>
+ Spécifie si le concept est Iris Extra
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.ConceptIRIS2.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.EmpruntBancaire.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.EmpruntBancaire.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationProtectionTest.SetUp">
+	<summary>
+ Utilisé pour ajouter du code à exécuter AVANT chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationProtectionTest.TearDown">
+	<summary>
+ Utilisé pour ajouter du code à exécuter APRÈS chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationProtectionTest.TesterTrResiliationProtectionSimpleRemove">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationProtectionTest.TesterTrResiliationProtectionSimpleRemove_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationProtectionTest.TesterTrResiliationProtectionSimpleRemove_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationProtectionTest.TesterTrResiliationProtectionSimpleRemove_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationProtectionTest.TesterTrResiliationProtectionSimpleReinit">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationProtectionTest.TesterTrResiliationProtectionSimpleReinit_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationProtectionTest.TesterTrResiliationProtectionSimpleReinit_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationProtectionTest.TesterTrResiliationProtectionSimpleReinit_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationProtectionTest.TesterTrResiliationProtectionAutreReinit">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationProtectionTest.TesterTrResiliationProtectionAutreReinit_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationProtectionTest.TesterTrResiliationProtectionAutreReinit_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationProtectionTest.TesterTrResiliationProtectionAutreReinit_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationProtectionTest.TesterTrResiliationProtectionAutreRemove">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationProtectionTest.TesterTrResiliationProtectionAutreRemove_1st">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationProtectionTest.TesterTrResiliationProtectionAutreRemove_2nd">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.NUnit.TrResiliationProtectionTest.TesterTrResiliationProtectionAutreRemove_2L1">
+	<summary>
+ Teste les transactions en cascades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Primes.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Primes.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DictionnaireVecteurs.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DictionnaireVecteurs.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DictionnaireVecteurs.AvantRecherche(IAFG.IA.VI.AF.Base.ProprietesXml)">
+	<summary>
+ Méthode implémentée permettant de réorganiser l'objet avant une recherche avec Obj2XML
+ </summary>
+	<param name="listeProprietes"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DictionnaireVecteurs.GetByIdLien(System.String,System.String)">
+	<summary>
+ Obtenir l'objet TauxProjete lié au IdLien
+ </summary>
+	<param name="requestID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DictionnaireVecteurs.ItemVecteur.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DictionnaireVecteurs.ItemVecteur.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.DictionnaireVecteurs.ItemVecteur.Cle">
+	<summary>
+ Id de l'objet lier au vecteur
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.DictionnaireVecteurs.ItemVecteur.Donnees">
+	<summary>
+ Vecteur Taux projetés
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DictionnaireVecteurs.ItemVecteur.CreerPropriete(System.String)">
+	<summary>
+ Surcharge de la méthode CreerPropriete de la classe de base
+ </summary>
+	<param name="nomPropriete">Nom de la propriété</param>
+	<returns>Valeur de la propriété</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DictionnaireVecteurs.CollectionVecteur.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.DictionnaireVecteurs.CollectionVecteur.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Presentation.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Presentation.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.Scenario.Presentation">
+	<summary>
+ Objet contenant l'information relative aux documents de présentation
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.Scenario.ListeIndicateursModification">
+	<summary>
+ Obtient la liste d'indicateurs de modification. Cette liste permet de garder 
+ un historique des actions ou modifications survenues durant l'exécution de l'application.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.Scenario.DonneeCalculeeMoteur">
+	<summary>
+ Seul le moteur de calcul est capable de calculer ces chiffres 
+ et il nous les faut pour la validation 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Scenario.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Scenario.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Scenario.ObtenirPremiereAnneeIllustree">
+	<summary>
+ Obtient la première de projection du contrat en fonction de la date 
+ d'émission de ce dernier et la date de projection.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Scenario.ObtenirNombreAnneesIllustrees">
+	<summary>
+ fonction qui retourne l'âge utilisé pour compter le nombre d'années illustrées
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Scenario.GetVecteurDictionnaire``1(System.String,System.String,System.Boolean)">
+	<summary>
+ Obtenir le vecteur de taux de projections lié à un ID
+ </summary>
+	<param name="id"></param>
+	<param name="creerObjet"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptIRISIllusReguliere.IrisExtra">
+	<summary>
+ Spécifie si le concept est Iris Extra
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.ConceptIRISIllusReguliere.TaxePrimeExcedentaire">
+	<summary>
+ Spécifie si les Taxe sur les primes excédentaires sont incluse dans les coûts
+ En d'autres mots, détermine si on est en IRIS Plus
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>On peut avoir un mixe de IRIS Plus ET IRIS Extra</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.ConceptIRISIllusReguliere.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

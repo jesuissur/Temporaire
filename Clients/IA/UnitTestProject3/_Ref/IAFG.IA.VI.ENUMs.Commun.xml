@@ -1,0 +1,430 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.VI.ENUMs.Commun
+</name>
+</assembly>
+<members>
+<member name="P:IAFG.IA.VI.ENUMs.Commun.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.VI.ENUMs.Commun.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:IAFG.IA.VI.ENUMs.Commun.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.ValeurTexteAttribute.#ctor(System.String)">
+	<summary>
+ Constructeur de la classe.
+ </summary>
+	<param name="valeurtexte">Valeur texte que l'attribut va contenir.</param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.ENUMs.Commun.ValeurTexteAttribute.ValeurTexte">
+	<summary>
+ Permet de liste la valeur de la propriété ValeurTexte
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.ENUMs.Commun.ValeurTexteAttribute">
+	<summary>
+ Cette classe représente un des éléments de l'attribut NomVB de l'élément Attribut du fichier XSD.
+ Cette attribut permet d'ajouter une description de type String à un élément de l'énumération.
+ </summary>
+</member><member name="P:IAFG.IA.VI.ENUMs.Commun.ValeurChampAttribute.NomChamp">
+	<summary>
+ Représente le nom du champ.
+ </summary>
+	<value></value>
+	<returns>Le nom du champ.</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.ENUMs.Commun.ValeurChampAttribute.Valeur">
+	<summary>
+ Représente la valeur du champ.
+ </summary>
+	<value></value>
+	<returns>La valeur du champ.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.ValeurChampAttribute.#ctor(System.String,System.Object)">
+	<summary>
+ Constructeur de la classe.
+ </summary>
+	<param name="nomChamp">Le nom du champ.</param>
+	<param name="valeur">La valeur du champ.</param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.ENUMs.Commun.ValeurChampAttribute">
+	<summary>
+ Représente la valeur d'un ChampTable.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.PrefixTableAttribute.#ctor(System.String)">
+	<summary>
+Constructeur de la classe.
+</summary>
+	<param name="prefixTable">Nom du préfix de la table.</param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.ENUMs.Commun.PrefixTableAttribute.PrefixTable">
+	<summary>
+Représente le nom du préfix de la table.
+</summary>
+	<value></value>
+	<returns>Nom du préfix de la table.</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.ENUMs.Commun.PrefixTableAttribute">
+	<summary>
+Sert à identifier le préfix du nom de la table.
+</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.MessageFrancaisAttribute.#ctor(System.String)">
+	<summary>
+ Constructeur de la classe.
+ </summary>
+	<param name="messagefrancais">Message en français que l'attribut va contenir.</param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.ENUMs.Commun.MessageFrancaisAttribute.MessageFrancais">
+	<summary>
+ Permet de liste la valeur de la propriété MessageFrancais
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.ENUMs.Commun.MessageFrancaisAttribute">
+	<summary>
+ Cette classe représente un des éléments de l'attribut NomVB de l'élément Attribut du fichier XSD.
+ Cette attribut permet d'ajouter une description de type String à un élément de l'énumération.
+ </summary>
+	<remarks>Utilisé pour associer un message en français à une valeur d'énumération. Particulièrement pertinent lorsque les énumérations en question sont utilisées pour lever des erreurs.</remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.MessageAnglaisAttribute.#ctor(System.String)">
+	<summary>
+ Constructeur de la classe.
+ </summary>
+	<param name="messageanglais">Message en anglais que l'attribut va contenir.</param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.ENUMs.Commun.MessageAnglaisAttribute.MessageAnglais">
+	<summary>
+ Permet de liste la valeur de la propriété MessageAnglais
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.ENUMs.Commun.MessageAnglaisAttribute">
+	<summary>
+ Cette classe représente un des éléments de l'attribut NomVB de l'élément Attribut du fichier XSD.
+ Cette attribut permet d'ajouter une description de type String à un élément de l'énumération.
+ </summary>
+	<remarks>Utilisé pour associer un message en anglais à une valeur d'énumération. Particulièrement pertinent lorsque les énumérations en question sont utilisées pour lever des erreurs.</remarks>
+</member><member name="T:IAFG.IA.VI.ENUMs.Commun.Enumeration.TypeAttribute">
+	<summary>
+ Contient la liste des attributs qu'il est possible de questionner 
+ pour obtenir sa valeur.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.Enumeration.ObtenirTexteAttribut(System.Enum,IAFG.IA.VI.ENUMs.Commun.Enumeration.TypeAttribute)">
+	<summary>
+ Cette fonction donne la valeur selon l'attribut typeAttributd'un item d'un énumération.
+ </summary>
+	<param name="item">Ce paramètre est de type System.Enum. L'item de l'énumération duquel on désire avoir la valeur de l'attribut typeAttribut. 
+ Si l'item de l'énumération n'a pas l'attribut demandé, c'est le nom de l'item qui est donné.</param>
+	<param name="typeAttribute">Ce paramètre est de type TypeAttributePermet de spécifier de quel attribut l'on veut la valeur.</param>
+	<remarks>
+ Si l'item n'a pas l'attribut typeAttribut demandé, c'est le nom de l'item qui est donné.
+ </remarks>
+	<returns>Valeur chaîne de caractères.</returns>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.Enumeration.EstDefinie(System.Enum)">
+	<summary>
+ Cette méthode valide si la valeur item fait partie des valeurs d'une énumération.
+ </summary>
+	<param name="item">Ce paramètre est de type System.Enum.Valeur de l'item de l'énumération</param>
+	<remarks>
+ Cette méthode ne tient pas compte que l'énumération peut avoir l'attribut FlagAttribute. La valeur de retour peut être erronée.
+ </remarks>
+	<returns>Retourne Vrai si la valeur de l'item fait partie de l'énumération.</returns>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.Enumeration.EstValide(System.Enum)">
+	<summary>
+ Cette méthode valide si la valeur item fait partie de l'énumération.
+ </summary>
+	<param name="item">Ce paramètre est de type System.Enum.Valeur de l'item de l'énumération</param>
+	<remarks>
+ Cette méthode tient compte que l'énumération peut avoir l'attribut FlagAttribute.
+ </remarks>
+	<returns>Retourne Vrai si la valeur de l'item fait partie de l'énumération.</returns>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.Enumeration.PossedeAttributFlag(System.Enum)">
+	<summary>
+ Cette méthode valide si l'énumération a l'attribut Flag.
+ </summary>
+	<param name="item">Ce paramètre est de type System.Enum.Valeur de l'item de l'énumération</param>
+	<returns>Retourne Vrai si l'énumération a l'attribut FlagAttribute.</returns>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.Enumeration.ToString(System.Enum)">
+	<summary>
+ Retourne la valeur de l'item sous la forme d'une chaîne de caractères.
+ </summary>
+	<param name="item">L'Item avec lequel on désire avoir sa valeur sous forme de chaîne de caractères.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.Enumeration.ValeurChaineVersEntierLong(System.String)">
+	<summary>
+ Transforme une chaîne de caractères dans son équivalent entière.
+ </summary>
+	<param name="ValeurChaine">Valeur sous forme de chaîne de caractères à transformer.</param>
+	<returns>Valeur de type entier.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.Enumeration.ValeurEntierLongVersChaine(System.Int64)">
+	<summary>
+ Tranforme une valeur entière dans son équivalent de type chaîne de caractères.
+ </summary>
+	<param name="valeurLong">Valeur entière à transformer.</param>
+	<returns>Valeur de type chaîne de caractères.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.Enumeration.ValeurEntierLongVersChaine(System.Int64,System.Int32,System.Char)">
+	<summary>
+ Tranforme une valeur entière dans son équivalent de type chaîne de caractères.
+ </summary>
+	<param name="valeurLong">Valeur entière à transformer.</param>
+	<param name="longueur">Longueur de la chaîne de caratères doit avoir une fois la tranformation terminée.</param>
+	<param name="carTampon">Caractère à insérer dans la chaîne si la valeur du paramètre longueur excede la longueur de la valeur transformé.</param>
+	<returns>Valeur de type chaîne de caractères.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.Enumeration.EstValideEnumFlag(System.Enum)">
+	<summary>
+ Cette méthode valide si la valeur item fait partie de l'énumération.
+ </summary>
+	<param name="item">Item dont que l'on veut valider.</param>
+	<returns>Si l'item fait partie de l'énumération la méthode revoie True et False dans tous les autres cas.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.Enumeration.DoubleToInteger(System.Double)">
+	<summary>
+ Transforme une valeur de type réel en un type entier.
+ </summary>
+	<param name="Valeur">Valeur de type réel à transformer.</param>
+	<returns>Valeur de type entier.</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.ENUMs.Commun.Enumeration">
+	<summary>
+ Cette classe Shared permet d'obtenir différentes informations des énumérations
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.EnumerationException.#ctor">
+	<summary>
+ Initialise une nouvelle instance de la classe.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.EnumerationException.#ctor(System.String)">
+	<summary>
+ Initialise une nouvelle instance de la classe.
+ </summary>
+	<param name="message">Message décrivant l'erreur.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.EnumerationException.#ctor(System.String,System.Exception)">
+	<summary>
+ Initialise une nouvelle instance de la classe.
+ </summary>
+	<param name="message">Message décrivant l'erreur.</param>
+	<param name="inner">Exception qui est à l'origine de l'exception actuelle, ou référence null (Nothing) si aucune exception interne n'est spécifiée.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.EnumerationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+	<summary>
+ Initialise une nouvelle instance de la classe.
+ </summary>
+	<param name="info">System.Runtime.Serialization.SerializationInfo qui contient les données d'objet sérialisées sur l'exception levée.</param>
+	<param name="context">System.Runtime.Serialization.StreamingContext qui contient des informations contextuelles sur la source ou la destination.</param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.ENUMs.Commun.EnumerationException">
+	<summary>
+ Exception levée lorsque l'item de l'énumération n'a pas l'attribut demandé.
+ </summary>
+	<remarks>
+ Les constructeurs sont tous Friend
+ </remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.ChampTableListAttribute.#ctor(System.String[])">
+	<summary>
+Constructeur de la classe.
+</summary>
+	<param name="champTable">Liste des champs.</param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.ENUMs.Commun.ChampTableListAttribute.ChampTableList">
+	<summary>
+Représente liste de champs.
+</summary>
+	<value></value>
+	<returns>Liste de champs.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.ChampTableListAttribute.Contains(System.String)">
+	<summary>
+Indique si la valeur nomChamp existe déjà dans la liste
+</summary>
+	<param name="nomChamp"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.ENUMs.Commun.ChampTableListAttribute">
+	<summary>
+Représente le liste de champs additionnels
+</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.ChampTable.#ctor(System.String,System.String)">
+	<summary>
+Constructeur de la classe
+</summary>
+	<param name="nomChamp">Nom du champ.</param>
+	<param name="typeChamp">Type de champ.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.ChampTable.#ctor(System.String,System.String,System.String)">
+	<summary>
+Constructeur de la classe.
+</summary>
+	<param name="nomChamp">Nom du champ.</param>
+	<param name="typeChamp">Type de champ.</param>
+	<param name="longueurTexte">Longueur du champ.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.ChampTable.ValiderValeurs(System.String,System.String)">
+	<summary>
+Valide les valeurs passées au constructeur.
+</summary>
+	<param name="nomChamp">Nom du champ.</param>
+	<param name="typeChamp">Type de champ.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.ChampTable.ValiderValeurs(System.String,System.String,System.String)">
+	<summary>
+Valide les valeurs passées au constructeur.
+</summary>
+	<param name="nomChamp">Nom du champ.</param>
+	<param name="typeChamp">Type du champ.</param>
+	<param name="longueurTest">Longueur du champ.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.ENUMs.Commun.ChampTable.NomChamp">
+	<summary>
+Représente le nom du champ.
+</summary>
+	<value></value>
+	<returns>Le nom du champ.</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.ENUMs.Commun.ChampTable.TypeChamp">
+	<summary>
+Représente le type du champ.
+</summary>
+	<value></value>
+	<returns>Le type du champ.</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.ENUMs.Commun.ChampTable.LongueurTexte">
+	<summary>
+Indique la longueur de champ.
+</summary>
+	<value></value>
+	<returns>Longueur du champ.</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.ENUMs.Commun.ChampTable.ChampType">
+	<summary>
+Type de champs disponibles.
+</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.ChampTable.ValiderTypeChamp(System.String)">
+	<summary>
+Valide le type de champ.
+</summary>
+	<param name="valeur"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.ENUMs.Commun.ChampTable">
+	<summary>
+Représente un champ additionnel.
+</summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.ENUMs.Commun.BitsAttribute.TypeBitsSignificatifs">
+	<summary>
+Type de bits significatifs.
+</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.BitsAttribute.#ctor(IAFG.IA.VI.ENUMs.Commun.BitsAttribute.TypeBitsSignificatifs,System.String[])">
+	<summary>
+Constructeur de la classe.
+</summary>
+	<param name="bitsSignificatifs"></param>
+	<param name="nomBit"></param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.ENUMs.Commun.BitsAttribute.BitsSignificatifs">
+	<summary>
+Représente le type de bits significatifs.
+</summary>
+	<value></value>
+	<returns>Le type de bits significatifs.</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.ENUMs.Commun.BitsAttribute.BitList">
+	<summary>
+Représente la liste des bits
+</summary>
+	<value></value>
+	<returns>Liste de bits</returns>
+	<remarks>Selon le type de bits significatifs sélectionné, il y aura entre 1 à 32 bits disponibles dans la liste.</remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.BitsAttribute.CreerBitListTout">
+	<summary>
+Crée la liste de bits si le type de bits significatifs est Tout et lui assigne un nom de base.
+</summary>
+	<remarks>L</remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.BitsAttribute.MAJBits(System.String[])">
+	<summary>
+Met à jour la liste des bits.
+</summary>
+	<param name="nomBit">Liste de bits.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.BitsAttribute.ValiderNomBit(System.Int32,System.String)">
+	<summary>
+Valide si le nom existe déjà dans la liste de bits
+</summary>
+	<param name="position">Position du bit ou sera conserver le paramètre nomBit si la validation est positive.</param>
+	<param name="nomBit">Nom du bit.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.BitsAttribute.ValiderPosition(System.Int32)">
+	<summary>
+Valide si la position est utilisée plus d'une fois.
+</summary>
+	<param name="position">Position du bit.</param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.ENUMs.Commun.BitsAttribute">
+	<summary>
+Représente la liste des bits.
+</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.Bit.#ctor(System.String,System.String)">
+	<summary>
+Constructeur de la classe
+</summary>
+	<param name="position">Position du bit</param>
+	<param name="nomBit"></param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.ENUMs.Commun.Bit.Position">
+	<summary>
+Représente la position du bit.
+</summary>
+	<value></value>
+	<returns>La position du bit.</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.ENUMs.Commun.Bit.NomBit">
+	<summary>
+Représente le nom du bit.
+</summary>
+	<value></value>
+	<returns>Le nom du bit.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.ENUMs.Commun.Bit.Valider(System.String,System.String)">
+	<summary>
+Valide les valeurs des paramètres passées au constructeur.
+</summary>
+	<param name="position">La position du bit.</param>
+	<param name="nomBit">Le nom du bit</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.ENUMs.Commun.Bit">
+	<summary>
+Représente un bit
+</summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

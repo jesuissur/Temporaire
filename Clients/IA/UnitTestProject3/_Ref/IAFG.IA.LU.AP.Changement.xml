@@ -1,0 +1,722 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.LU.AP.Changement
+</name>
+</assembly>
+<members>
+<member name="M:IAFG.IA.LU.AP.Changement.LUU1243.ResiliationProtectionView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.LUU1243.ResiliationProtectionView">
+	<summary>
+ResiliationProtectionView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.LUU12F0.InfoPoliceView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.LUU12F0.InfoPoliceView">
+	<summary>
+InfoPoliceView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.LUU124D.SurprimeView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.LUU124D.SurprimeView">
+	<summary>
+SurprimeView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.LUU1244.RemiseVigueurView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.LUU1244.RemiseVigueurView">
+	<summary>
+RemiseVigueurView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.LUU1249.ClasseRisqueView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.LUU1249.ClasseRisqueView">
+	<summary>
+ClasseRisqueView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.LUU12G0.InfoGeneraleView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.LUU12G0.InfoGeneraleView">
+	<summary>
+InfoGeneraleView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.LUU1280.InstructionSpecialeView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.LUU1280.InstructionSpecialeView">
+	<summary>
+InstructionSpecialeView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.LUU124C.DateNaissanceView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.LUU124C.DateNaissanceView">
+	<summary>
+DateNaissanceView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.LUU12A0.IdentificationView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.LUU12A0.IdentificationView">
+	<summary>
+IdentificationView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.TransactionSimplifie.TransactionSimplifieView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.TransactionSimplifie.TransactionSimplifieView">
+	<summary>
+TransactionSimplifieView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.TestView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.TestView">
+	<summary>
+TestView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.GabaritProto.ProtoView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.GabaritProto.ProtoView">
+	<summary>
+ProtoView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.Sablier.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.Sablier">
+	<summary>
+Sablier
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.App.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.App.OnStartup(System.Windows.StartupEventArgs)">
+	<summary>
+ Surcharge l'événement au lancement de l'application
+ </summary>
+	<param name="e">les arguments de l'événement</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.App.DatePicker_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+	<summary>
+ Au chargement d'un DatePicker, on personnalise son watermark
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.App.#ctor">
+	<summary>
+ Constructeur par défaut.
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.App.ObtenirPremierEnfantDeType``1(System.Windows.DependencyObject)">
+	<summary>
+ Parcourt un objet de dépendance pour en extraire le premier objet du type T attendu
+ </summary>
+	<typeparam name="T">le type recherché dans l'arbre visuel de l'objet de dépendance</typeparam>
+	<param name="objetDependance">l'objet à parcourir</param>
+	<returns>l'objet de type recherché s'il existe dans l'arbre visuel</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.App.ObtenirRessource(System.String)">
+	<summary>
+ Obtenir la ressource selon le nom de la ressource en paramètre
+ </summary>
+	<param name="nom">Nom de la ressource recherchée</param>
+	<returns>La ressource si trouvée, une chaîne vide sinon</returns>
+</member><member name="T:IAFG.IA.LU.AP.Changement.App">
+	<summary>
+ Classe d'application pour Changements Électroniques
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.GENERAL_ANNULER_LABEL_BOUTON">
+	<summary>
+  Recherche une chaîne localisée semblable à _Annuler.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.GENERAL_CARACTERE_CLE_NON">
+	<summary>
+  Recherche une chaîne localisée semblable à N.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.GENERAL_CARACTERE_CLE_OUI">
+	<summary>
+  Recherche une chaîne localisée semblable à O.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.GENERAL_FORMAT_DATE">
+	<summary>
+  Recherche une chaîne localisée semblable à jj-MM-aaaa.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.GENERAL_OK_LABEL_BOUTON">
+	<summary>
+  Recherche une chaîne localisée semblable à _Ok.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1243_AJOUTER_PROTECTION">
+	<summary>
+  Recherche une chaîne localisée semblable à Ajouter une protection/garantie.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1243_ASSURE">
+	<summary>
+  Recherche une chaîne localisée semblable à Assuré.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1243_CAPITAL_ACTUEL">
+	<summary>
+  Recherche une chaîne localisée semblable à Capital actuel.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1243_CAPITAL_RESILIER">
+	<summary>
+  Recherche une chaîne localisée semblable à Capital à résilier.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1243_E">
+	<summary>
+  Recherche une chaîne localisée semblable à E.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1243_INSCRIRE_MONTANT">
+	<summary>
+  Recherche une chaîne localisée semblable à Inscrire le montant de capital à résilier.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1243_NUMERO_POLICE">
+	<summary>
+  Recherche une chaîne localisée semblable à Numéro de police: .
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1243_NUMERO_PROPOSITION">
+	<summary>
+  Recherche une chaîne localisée semblable à Numéro de proposition.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1243_PRIME">
+	<summary>
+  Recherche une chaîne localisée semblable à Prime annuelle.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1243_PROTECTION">
+	<summary>
+  Recherche une chaîne localisée semblable à Protection.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1243_RESILIATION_PROTECTION_A">
+	<summary>
+  Recherche une chaîne localisée semblable à doit  être traitée immédiatement..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1243_RESILIATION_PROTECTION_B">
+	<summary>
+  Recherche une chaîne localisée semblable à est conditionnelle à l'acceptation d'un ajout de protections sur la police ....
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1243_RESILIATION_PROTECTION_C">
+	<summary>
+  Recherche une chaîne localisée semblable à est conditionnelle à l'acceptation de la proposition.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1243_RESILIATION_PROTECTION_Q">
+	<summary>
+  Recherche une chaîne localisée semblable à La résiliation de protections ....
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1243_VALEUR_RACHAT_A">
+	<summary>
+  Recherche une chaîne localisée semblable à faire un chèque au nom du client..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1243_VALEUR_RACHAT_B">
+	<summary>
+  Recherche une chaîne localisée semblable à déposer sur la police ....
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1243_VALEUR_RACHAT_C">
+	<summary>
+  Recherche une chaîne localisée semblable à déposer sur la proposition ....
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1243_VALEUR_RACHAT_Q">
+	<summary>
+  Recherche une chaîne localisée semblable à Si jamais une valeur de rachat est payable....
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_120_JOURS_OU_PLUS">
+	<summary>
+  Recherche une chaîne localisée semblable à 120 jours ou plus.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_AJOUTER_ASSURE">
+	<summary>
+  Recherche une chaîne localisée semblable à Ajouter un assuré.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_DERNIERE_ANNEE">
+	<summary>
+  Recherche une chaîne localisée semblable à Au cours de la dernière année, est-ce que cette personne.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_DERNIERE_ANNEE_A">
+	<summary>
+  Recherche une chaîne localisée semblable à a) a souffert de maladies ou de problèmes de santé ou a consulté un médecin ?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_DERNIERE_ANNEE_B">
+	<summary>
+  Recherche une chaîne localisée semblable à b) a eu un résultat positif à un test de dépistage du SIDA ou pour l'hépatite B ou C ?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_DERNIERE_ANNEE_C">
+	<summary>
+  Recherche une chaîne localisée semblable à c) a été invalide ou s'est absentée de son travail plus de 2 semaines pour des raisons de santé ?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_DERNIERE_ANNEE_D">
+	<summary>
+  Recherche une chaîne localisée semblable à d) A eu un parent de premier degré (père, mère, frère, soeur) souffrant ou ayant souffert de cancer, de maladie du coeur, de maladie vasculaire cérébrale, de diabète, de maladie chronique des reins, de maladie neurologique, de porphyrie, de polypose familiale ou de lupus érythémateux ?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_DERNIERE_ANNEE_E">
+	<summary>
+  Recherche une chaîne localisée semblable à e) Au cours des 5 dernières années, avez-vous souffert de troubles nerveux (fatigue, anxiété, dépression, angoisse, surmenage, épuisement professionnel ou autre) ou de troubles musculo squelettiques (hernie discale, troubles aux vertèbres, au cou, au dos, aux épaules, aux coudes, aux genoux ou à d'autres articulations), d'arthrose ou d'arthrite ?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_IDENTIFIER_ASSURES">
+	<summary>
+  Recherche une chaîne localisée semblable à Identifier les assurés à remettre en vigueur.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_MOINS_120_JOURS">
+	<summary>
+  Recherche une chaîne localisée semblable à Moins de 120 jours.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_NOM_ASSURE">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_NON">
+	<summary>
+  Recherche une chaîne localisée semblable à Non.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_NOUVEAU_CONTRACTANT">
+	<summary>
+  Recherche une chaîne localisée semblable à AJOUTER UN CONTRACTANT.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_OUI">
+	<summary>
+  Recherche une chaîne localisée semblable à Oui.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_POLICE_RESILIEE">
+	<summary>
+  Recherche une chaîne localisée semblable à Cette police est résiliée depuis ?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_PROT_MALADIE_GRAVE">
+	<summary>
+  Recherche une chaîne localisée semblable à Cet assuré a-t-il une protection "Maladie grave" ?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_PROTECTION_ASSURE1">
+	<summary>
+  Recherche une chaîne localisée semblable à Cet assuré a -t-il une protection "Maladie grave" ?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_PROTECTION_ASSURE2">
+	<summary>
+  Recherche une chaîne localisée semblable à Cet assuré a-t-il une protection "Revenu d'appoint ou autre produit d'invalidité" ? .
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_PROTECTION_VIE_SÉRÉNITÉ">
+	<summary>
+  Recherche une chaîne localisée semblable à Cet assuré a-t-il une protection "Vie et Sérénité".
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_PROTECTIONS_LABEL_BOUTON">
+	<summary>
+  Recherche une chaîne localisée semblable à _Voir protections.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_REDATER_POLICE">
+	<summary>
+  Recherche une chaîne localisée semblable à redater la police ?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1244_REVENU_APPOINT">
+	<summary>
+  Recherche une chaîne localisée semblable à Cet assuré a-t-il une protection « Revenu d'appoint ou autre produit d'invalidité » ?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1249_CHANGER_CLASSE_RISQUE">
+	<summary>
+  Recherche une chaîne localisée semblable à Changer la classe de risque des personnes identifiées ci-dessous..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU1249_CLASSE_DE_RISQUE">
+	<summary>
+  Recherche une chaîne localisée semblable à Classe de risque.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU124C_CORRIGER_DATE_NAISSANCE">
+	<summary>
+  Recherche une chaîne localisée semblable à Corriger la date de naissance des pertsonnes identifiées ci-dessous..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU124C_DATE_NAISSANCE_ACTUELLE">
+	<summary>
+  Recherche une chaîne localisée semblable à Date de naissance actuelle.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU124C_DATE_NAISSANCE_CORRIGEE">
+	<summary>
+  Recherche une chaîne localisée semblable à Date de naissance corrigée.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU124D_REVISER_SURPIME">
+	<summary>
+  Recherche une chaîne localisée semblable à Réviser la surpime des personnes identifiées ci-dessous..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12A0_DATE_NAISSANCE">
+	<summary>
+  Recherche une chaîne localisée semblable à Date de naissance.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12A0_IDENTIFIER_ASSURE">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez identifier l'assuré..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12A0_INITIALE">
+	<summary>
+  Recherche une chaîne localisée semblable à Initiale.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12A0_NOM">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12A0_PRENOM">
+	<summary>
+  Recherche une chaîne localisée semblable à Prénom.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12A0_SEXE">
+	<summary>
+  Recherche une chaîne localisée semblable à Sexe.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12F0_AJOUT_CONTR">
+	<summary>
+  Recherche une chaîne localisée semblable à Ajouter un contractant.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12F0_CARACTERE_CLE_TYPE_CON_CIE">
+	<summary>
+  Recherche une chaîne localisée semblable à C.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12F0_CARACTERE_CLE_TYPE_CON_IND">
+	<summary>
+  Recherche une chaîne localisée semblable à I.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12F0_CIE">
+	<summary>
+  Recherche une chaîne localisée semblable à Compagnie.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12F0_DETAIL_CONTR">
+	<summary>
+  Recherche une chaîne localisée semblable à Détail sur le contractant.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12F0_ENTREZ_NOM_CIE">
+	<summary>
+  Recherche une chaîne localisée semblable à Entrez le nom de la compagnie.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12F0_ERREUR">
+	<summary>
+  Recherche une chaîne localisée semblable à Erreur.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12F0_ID_POLICE">
+	<summary>
+  Recherche une chaîne localisée semblable à Identification de la police.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12F0_INDIV">
+	<summary>
+  Recherche une chaîne localisée semblable à Individu(s).
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12F0_NO_POLICE">
+	<summary>
+  Recherche une chaîne localisée semblable à Numéro de police.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12F0_NOM_PROP">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12F0_NOUVEAU_CONTRACTANT">
+	<summary>
+  Recherche une chaîne localisée semblable à AJOUTER UN CONTRACTANT.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12F0_REC_POLICE">
+	<summary>
+  Recherche une chaîne localisée semblable à Rechercher la police.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12F0_TYPE_CONTR">
+	<summary>
+  Recherche une chaîne localisée semblable à Type de contractant.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12G0_COMPAGNIE">
+	<summary>
+  Recherche une chaîne localisée semblable à Compagnie.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12G0_DATE_NAISSANCE">
+	<summary>
+  Recherche une chaîne localisée semblable à Date de naissance.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12G0_DERNIER_DECES">
+	<summary>
+  Recherche une chaîne localisée semblable à Dernier décès.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12G0_DERNIER_DECES_LIBERE">
+	<summary>
+  Recherche une chaîne localisée semblable à Dernier décès libéré au 1er décès.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12G0_DETAIL_CONTRACTANT">
+	<summary>
+  Recherche une chaîne localisée semblable à Détail sur le contractant.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12G0_DETAIL_PLAN_ASSURANCE">
+	<summary>
+  Recherche une chaîne localisée semblable à Détail sur le plan d'assurance.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12G0_FOURNIR_DETAILS">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez fournir les détails suivants pour nous aider à valider votre demande de changements..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12G0_INDIVIDUELLE">
+	<summary>
+  Recherche une chaîne localisée semblable à Individuelle.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12G0_INDIVIDUS">
+	<summary>
+  Recherche une chaîne localisée semblable à Individu(s).
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12G0_NOM">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12G0_NON">
+	<summary>
+  Recherche une chaîne localisée semblable à Non.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12G0_NOUVEAU_CONTRACTANT">
+	<summary>
+  Recherche une chaîne localisée semblable à Ajouter un contractant.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12G0_OUI">
+	<summary>
+  Recherche une chaîne localisée semblable à Oui.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12G0_PREMIER_DECES">
+	<summary>
+  Recherche une chaîne localisée semblable à 1er décès.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12G0_Q_GARANTIE_INVALIDITE">
+	<summary>
+  Recherche une chaîne localisée semblable à Le contractant possède-t-il une garantie d'invalidité ou de décès ?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12G0_SELECTIONNER_PLAN">
+	<summary>
+  Recherche une chaîne localisée semblable à Sélectionner le plan de base.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12G0_SEXE">
+	<summary>
+  Recherche une chaîne localisée semblable à Sexe.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12G0_TYPE_ASSURANCE">
+	<summary>
+  Recherche une chaîne localisée semblable à Type d'assurance.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.LUU12G0_TYPE_CONTRACTANT">
+	<summary>
+  Recherche une chaîne localisée semblable à Type de contractant.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.My.Resources.Ressources.PROTO_FAKE">
+	<summary>
+  Recherche une chaîne localisée semblable à Titre1.
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.My.Resources.Ressources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.Commun.CodeAideContextuelle">
+	<summary>
+ Regroupe les codes d'aide contextuelle utiles pour afficher les messages dans la barre de statut sur le focus dans les contrôles
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.Langue">
+	<summary>
+ Langue d'affichage des formulaire (Français par défaut)
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.EstPretPourAffichage">
+	<summary>
+ Identifier le naviguateur comme prêt pour se mettre à jour.
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.EstPretPourSauvegarde">
+	<summary>
+ Identifier le naviguateur comme prêt pour se mettre à jour.
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.FormatDate">
+	<summary>
+ Nom du formulaire à afficher
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.FichierHTML">
+	<summary>
+ Nom du formulaire à afficher
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.DossierTravail">
+	<summary>
+ Répertoire de travail
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.Banniere">
+	<summary>
+ Détermine la banniere (Ia par défaut)
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.Compagnie">
+	<summary>
+ Détermine la compagnie
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.EtapeComplete">
+	<summary>
+ Détermine le statut du changement
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.DataXml">
+	<summary>
+ String xml qui contient les champs et les valeurs associées
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.DataXmlReponses">
+	<summary>
+ String xml qui contient les champs et les valeurs associées
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.NomContractant">
+	<summary>
+ String qui contient le nom du contractant
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.NoPolice">
+	<summary>
+ String qui contient le numéro de police
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.NoPropo">
+	<summary>
+ String qui contient le numéro de proposition
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.Agent">
+	<summary>
+ String qui contient le nom de l'agent
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.Agence">
+	<summary>
+ String qui contient le nom de l'agence
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.NoPage">
+	<summary>
+ String qui contient le no de page début de la premiere page
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.getNombrePage">
+	<summary>
+ Retourne le nombre de page
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.Mode">
+	<summary>
+ String qui contient si mode assisté ou mode non-assisté
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.IndividuAssocie">
+	<summary>
+ Permet d'associer un individu au html
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.#ctor">
+	<summary>
+ Constructeur par défaut
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.Imprimer">
+	<summary> 
+ Permet d'imprimer le docuement html charger dans le webBrowser
+ </summary>
+	<remarks>
+ N'est pas appelé pour le moment par le vb6.  C'est le composant vb6 qui fait le sale boulot!
+ </remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.Afficher">
+	<summary>
+ Permet d'afficher le questionnaire html dans le controle
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.GetHtml(System.Boolean,System.Boolean)">
+	<summary>
+ Retourne le questionnaire sous la forme d'une string html
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.GetReponse">
+	<summary>
+ Retourne une string xml contenant les champs répondus et les réponses associées
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.ImportXML(System.String,System.Boolean)">
+	<summary>
+ Analyse les données reçues et rempli les champs déja saisis
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.MajXML(System.String)">
+	<summary>
+ Mise à jour des informations de base dans la string xml contenant les données du formulaire
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.MajNodeXML(System.Xml.XmlDocument,System.Xml.XmlElement,System.String,System.String)">
+	<summary>
+ Mise à jour de l'information contenu dans un noeud xml
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.Mois(System.Int32,System.Int32)">
+	<summary>
+ Format le mois selon la langue
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.SurDemandeReponsesFormulaires(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+	<summary>
+ Au changement des valeures de propriétés liés, afficher le rapport au besoin
+ </summary>
+	<param name="obj"></param>
+	<param name="args"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.OnValueChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+	<summary>
+ Au changement des valeures de propriétés liés, afficher le rapport au besoin
+ </summary>
+	<param name="obj"></param>
+	<param name="args"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml._innerBrowser_LoadCompleted(System.Object,System.Windows.Navigation.NavigationEventArgs)">
+	<summary>
+ Remplir le formulaire avec les données de la transaction
+ </summary>
+	<remarks>Le document doit être complètement chargé avec les includes.  C'est le moment pour remplir les données du formulaires.</remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml._innerBrowser_GotFocus(System.Object,System.EventArgs)">
+	<summary>
+ Ça sert a gérer le problème de focus lors du form_load lorsque le focus est ou n'est pas dans le WebBroswer et du premier GotFocus
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.ObtenirRepertoireFormulaire">
+	<summary>
+ Obtenir le répertoire où sont situés les formulaires html
+ </summary>
+	<returns>le répertoire où sont situés les formulaires html</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.ObtenirRepertoireFeuilleStyle">
+	<summary>
+ Obtenir le répertoire où sont situés les feuilles de style
+ </summary>
+	<returns>le répertoire où sont situés les feuilles de style</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.ObtenirDocumentHtml">
+	<summary>
+ Obtient le document html
+ </summary>
+	<returns>le document html</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.GererNoPage">
+	<summary>
+ Permet de faire la séquence des No de Page dans chaque section visible
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml.IsParentVisible(mshtml.IHTMLElement)">
+	<summary>
+ vérifier si au moins un élément parent n'est pas afficher
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.LU.AP.Changement.Controle.FormulaireHtml">
+	<summary>
+ Classe de section visuelle
+ </summary>
+</member>
+</members>
+</doc>

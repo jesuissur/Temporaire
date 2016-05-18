@@ -1,0 +1,27 @@
+﻿<ProjectConfiguration>
+  <AutoDetectNugetBuildDependencies>true</AutoDetectNugetBuildDependencies>
+  <BuildPriority>1000</BuildPriority>
+  <CopyReferencedAssembliesToWorkspace>false</CopyReferencedAssembliesToWorkspace>
+  <ConsiderInconclusiveTestsAsPassing>false</ConsiderInconclusiveTestsAsPassing>
+  <PreloadReferencedAssemblies>false</PreloadReferencedAssemblies>
+  <AllowDynamicCodeContractChecking>true</AllowDynamicCodeContractChecking>
+  <AllowStaticCodeContractChecking>false</AllowStaticCodeContractChecking>
+  <AllowCodeAnalysis>false</AllowCodeAnalysis>
+  <IgnoreThisComponentCompletely>false</IgnoreThisComponentCompletely>
+  <RunPreBuildEvents>false</RunPreBuildEvents>
+  <RunPostBuildEvents>false</RunPostBuildEvents>
+  <PreviouslyBuiltSuccessfully>true</PreviouslyBuiltSuccessfully>
+  <InstrumentAssembly>true</InstrumentAssembly>
+  <PreventSigningOfAssembly>false</PreventSigningOfAssembly>
+  <AnalyseExecutionTimes>true</AnalyseExecutionTimes>
+  <DetectStackOverflow>true</DetectStackOverflow>
+  <IncludeStaticReferencesInWorkspace>true</IncludeStaticReferencesInWorkspace>
+  <DefaultTestTimeout>60000</DefaultTestTimeout>
+  <UseBuildConfiguration></UseBuildConfiguration>
+  <UseBuildPlatform></UseBuildPlatform>
+  <ProxyProcessPath></ProxyProcessPath>
+  <UseCPUArchitecture>AutoDetect</UseCPUArchitecture>
+  <MSTestThreadApartmentState>STA</MSTestThreadApartmentState>
+  <BuildProcessArchitecture>x86</BuildProcessArchitecture>
+  <AdditionalFilesToInclude>_Ref\**.*;_Ref\Caliburn.Micro.dll;_Ref\CGMLPC01.DLL;_Ref\DataWindow.dll;_Ref\DataWindowInterop.dll;_Ref\DDVFonctions.dll;_Ref\IAFG.IA.SE.SEMLSV00.dll;_Ref\IAFG.IA.SE.SEMLSV01.dll;_Ref\IAFG.IA.SE.SEMLSV01_Wrapper.dll;_Ref\IAFG.IA.SE.SEMLSV01_Wrapper.manifest;_Ref\IAFG.IA.SE.SEMLSV01_Wrapper.tlb;_Ref\IAFG.IA.VI.AP.AdvancedDataGridView.dll;_Ref\IAFG.IA.VI.Utilitaires.LectureContratsAlisVLn.dll;_Ref\IAFG.IA.VI.Utilitaires.TransformationObjet.dll;_Ref\Infralution.Localization.Wpf.dll;_Ref\Infralution.Localization.Wpf.XML;_Ref\Interop.ADOX.dll;_Ref\Interop.AmyUni.dll;_Ref\Interop.iagcgmlpc01.dll;_Ref\Interop.IWshRuntimeLibrary.dll;_Ref\Interop.Shell32.dll;_Ref\Interop.VBIDE.dll;_Ref\ManagedSpyLib.dll;_Ref\Microsoft.InteropFormTools.dll;_Ref\Microsoft.Practices.EnterpriseLibrary.Common.dll;_Ref\Microsoft.Practices.EnterpriseLibrary.Common.xml;_Ref\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll;_Ref\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll;_Ref\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.xml;_Ref\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml;_Ref\Microsoft.Practices.EnterpriseLibrary.Logging.dll;_Ref\Microsoft.Practices.EnterpriseLibrary.Logging.xml;_Ref\Microsoft.Practices.ObjectBuilder.dll;_Ref\Microsoft.Practices.ObjectBuilder.xml;_Ref\Microsoft.Practices.Unity.dll;_Ref\nunit.framework.dll;_Ref\orcascr105.exe;_Ref\PBCMP105.DLL;_Ref\PBDWE105.DLL;_Ref\PBDWN105.DLL;_Ref\PBORC105.DLL;_Ref\PBSHR105.DLL;_Ref\PBVM105.DLL;_Ref\PBXerces105.dll;_Ref\Sybase.PowerBuilder.Db.dll;_Ref\Sybase.PowerBuilder.DbExt.dll;_Ref\System.Windows.Forms.DataVisualization.Design.dll;_Ref\System.Windows.Forms.DataVisualization.dll;_Ref\Xceed.Wpf.Toolkit.dll;_Ref\xerces-c_2_6.dll;_Ref\xerces-depdom_2_6.dll</AdditionalFilesToInclude>
+</ProjectConfiguration>

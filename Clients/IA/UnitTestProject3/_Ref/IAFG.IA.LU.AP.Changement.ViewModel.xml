@@ -1,0 +1,2084 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.LU.AP.Changement.ViewModel
+</name>
+</assembly>
+<members>
+<member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurGestionListeAssure.InitialiserListeAssure">
+	<summary>
+ Retourne la liste des assurés à remettre en vigueur depuis les transactions existantes.
+ </summary>
+	<returns>Liste d'assurés</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurGestionListeAssure.CreerInstanceNouvelAssure">
+	<summary>
+ Ajoute un ligne vide dans la liste des assurée.  Les réponses ne sont pas remplies puis aucun individu n'est sélectionné
+ </summary>
+	<returns>Une RemiseVigueurAssure</returns>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurGestionListeAssure">
+	<summary>
+ Classe de gestion des liste d'assurés de la transaction de remise en vigueur
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceAssure.DateNaissanceOriginaleAssure">
+	<summary>
+ La date de naissance originale sélectionné dans la grille 
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceAssure.DateNaissanceCorrigeeAssure">
+	<summary>
+ La date de naissance corrigée sélectionné dans la grille 
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.AjoutIndividuSimple">
+	<summary>
+ Classe qui fait le traitement pour les modes d'ajouts d'individus en mode simplifié
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124D.SurprimeGestionListeAssure.#ctor(IAFG.IA.LU.AP.Changement.ViewModel.Commun.IFournisseurChangement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement,IAFG.IA.VI.AF.Changements.ENUMs.TypeTransaction)">
+	<summary>
+ Constructeur de la liste de surprimes
+ </summary>
+	<param name="viewModelParent">le viewmodel parent</param>
+	<param name="serviceFenetre">Le service de fenêtre</param>
+	<param name="typeTransaction">Le type de transaction</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124D.SurprimeGestionListeAssure.InitialiserListeAssure">
+	<summary>
+ Fonction qui initialise la liste des assurés de surprime
+ </summary>
+	<returns>la liste des assurés de surprime initialisé</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124D.SurprimeGestionListeAssure.CreerInstanceNouvelAssure">
+	<summary>
+ Fonction qui crée un nouvel assuré de surprime
+ </summary>
+	<returns>le nouvel assuré de surprime</returns>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU124D.SurprimeGestionListeAssure">
+	<summary>
+ Classe de gestion des liste d'assurés de la transaction de surprime
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ServiceFenetreChangement.ListeMessage">
+	<summary>
+ La liste des messages à afficher à l'utilisateur
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ServiceFenetreChangement.AfficherQuestionLangue">
+	<summary>
+ Appel à la popup de configuration de langue du changement en cours
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ServiceFenetreChangement.AfficherIdentification(IAFG.IA.LU.AP.Changement.ViewModel.Commun.EnumTypeModeIdentification,System.String,System.Int32,IAFG.IA.VI.AF.Changements.ChangementAssVie)">
+	<summary>
+ Appel à la fenêtre de mise à jour d'un assuré/contractant
+ </summary>
+	<param name="mode">le mode de mise à jour désiré</param>
+	<param name="tagId">le GUID de l'assuré</param>
+	<param name="index">l'index de l'assuré</param>
+	<returns>le GUID retourné en résultat</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ServiceFenetreChangement.ConfigurerBarreTitre(IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ParametreBarreTitre)">
+	<summary>
+ Modifier les propriétés d'affichage du popup
+ </summary>
+	<param name="parametre">les paramètres de conficguration de la barre de titre de la popup (titre, libellé)</param>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ServiceFenetreChangement">
+	<summary>
+ Classe d'appel aux fenêtres popup spécifique à Changements
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.ParametreBarrePrimaire.Usager">
+	<summary>
+ Obtient ou définit l'usager
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Services.ParametreBarrePrimaire">
+	<summary>
+ Classe de transport des paramètres à passer à la barre primaire
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1249.ClasseRisqueAssure.ClasseDeRisqueSelectionne">
+	<summary>
+ La classe de risque sélectionné dans la grille 
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.AjoutIndividu">
+	<summary>
+ Classe qui fait le traitement pour les modes d'ajouts d'individus
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.ModifierIndividuExistant">
+	<summary>
+ Classe qui fait le traitement pour les modes de modification d'individus existants
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Services.EnumActionAgent">
+	<summary>
+ Énumération des appels d'action sur agent
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement">
+	<summary>
+ Interface de service spécifique à Changements pour les appels aux fenêtres popup
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.IGestionListeAssure`1.ListeAssure">
+	<summary>
+ Liste des assurés de l'écran courant.  
+ </summary>
+	<remarks>On peut faire un set sur la collection pour pouvoir la vider au besoin</remarks>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Commun.IGestionListeAssure`1">
+	<summary>
+ Interface offrant les fonctionnalités communes à tout gestionnaire de liste d'assurés
+ </summary>
+	<typeparam name="T">le type d'assuré correspondant aux besoins de l'unité de traitement et dérivant d'AssureBase</typeparam>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelTransactionBase.TransactionFocus">
+	<summary>
+ Obtient ou définit la propriété _viewModelFocus. Détermine si le focus est donné au viewModel
+ </summary>
+	<remarks>En se "bindant" sur cette propriété dans un viewModel enfant, on peut gérer son focus</remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelTransactionBase.#ctor(IAFG.IA.VI.AF.Changements.ChangementAssVie,IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.IServiceConfiguration)">
+	<summary>
+ Constructeur du View Model
+ </summary>
+	<param name="changement">l'objet de changement de travail</param>
+	<param name="serviceFenetre">le service d'appel aux fenêtres</param>
+	<param name="serviceConfiguration">le service de configuration</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelTransactionBase.CanClose(System.Action{System.Boolean})">
+	<summary>
+ Regroupe les validations et autres opérations à exécuter avant d'autoriser la fermeture et la sortie de l'écran courant
+ </summary>
+	<param name="callback">l'action à laquelle retourner le résultat</param>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.TitreSection">
+	<summary>
+ Le titre de la section
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.EstModeAffichageComplet">
+	<summary>
+ Détermine si on affiche seulement le nom, prénom et initiale
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.IndividuIndex">
+	<summary>
+ L'index de l'individu sur lequel on effectue la modification/ajout
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.IndividuId">
+	<summary>
+ L'ID de l'individu sur lequel on effectue la modification/ajout
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.ResultatExecution">
+	<summary>
+ Résultat de l'éxécution de la fenêtre Identification
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.ModeIdentification">
+	<summary>
+ Le modeIdentification passé en paramètres pour ouvrir la fenêtre
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.EstModeAjoutAssureSimple">
+	<summary>
+ Mode résumé pour ajout d'assuré simple
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.EstModeAjoutContractantSimple">
+	<summary>
+ Mode résumé pour ajout de contractant simple
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.EstModeAjoutContractant">
+	<summary>
+ Mode résumé pour ajout de contractant
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.Nom">
+	<summary>
+ Le nom de l'assuré
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.SexeSelectionne">
+	<summary>
+ Le sexe de l'assuré sélectionné
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.ListeSexes">
+	<summary>
+ La liste des sexes à afficher à l'écran
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.Prenom">
+	<summary>
+ Le prénom de l'assuré
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.Initiale">
+	<summary>
+ Les initiales de l'assuré
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.DateNaissance">
+	<summary>
+ La date de naissance  de l'assuré
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.#ctor(IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.ParametreIdentification,IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.IServiceConfiguration)">
+	<summary>
+ Constructeur du ViewModel pour piloter l'écran d'identification
+ </summary>
+	<param name="parametre">Les parametres pour procéder à l'identification</param>
+	<param name="serviceFenetre">Le service qui permet de naviguer et appeler le vb6</param>
+	<param name="serviceConfiguration">Le service qui contient les données partagées dans l'application</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.GererAffichage">
+	<summary>
+ Désactive le mode affichage réduit selon certains types de modification
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.EffectuerTache">
+	<summary>
+ Méthode qui éffectue les tâches pour un mode de modification donné
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.MettreAJourAvantFermeture">
+	<summary>
+ Méthode qui effectue toutes les modifications avant de fermer
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.TrouverIndividu">
+	<summary>
+ Cette méthode vérifie si un individu existe déjà dans la proposition
+ </summary>
+	<returns>Vrai si on a trouvé l'individu, faux sinon</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.AfficherMessageParCode(System.Collections.Generic.IEnumerable{IAFG.IA.VI.AF.Changements.Pilotage.Donnees.ListeMessage},System.String)">
+	<summary>
+ Méthode qui permet l'affichage d'un message en fonction d'une liste et d'un code de message
+ </summary>
+	<param name="listeMessage">La liste des messages</param>
+	<param name="codeMessage">Le code du message à afficher</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.InitialiserChamps">
+	<summary>
+ Méthode qui rempli tous les champs de la fenêtre
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.RemplirChampsAvecIndividu(IAFG.IA.VI.AF.Proposition.Individu)">
+	<summary>
+ Fonction qui rempli les champs de l'interface en fonction d'un individu
+ </summary>
+	<param name="individuAModifier">L'individu à partir duquel on rempli les champs</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.DeterminerTitreSection">
+	<summary>
+ Méthode qui détermine le texte dy bandeau de section
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.RemplirChampsSexe">
+	<summary>
+ Méthode qui rempli le champs sexe
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.EnregistrerInformations(IAFG.IA.VI.AF.Proposition.Individu)">
+	<summary>
+ Méthode qui enregistre nom,prenom,initiales,sexe et date de naissance pour un assuré en paramètre
+ </summary>
+	<param name="assure">L'assuré pour lequel on veut enregistrer des modifications</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.ValiderDateNaissance(System.Nullable{System.DateTime})">
+	<summary>
+ Fonction qui valide la date de naissance et affiche les messages d'erreur
+ </summary>
+	<param name="dateNaissance">La date de naissance de l'assuré</param>
+	<returns>Vrai si la date est valide , faux sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.CalculerAge(System.DateTime)">
+	<summary>
+ Fonction utilitaire pour calculer l'age de l'assuré
+ </summary>
+	<param name="dateNaissance">la date de naissance</param>
+	<returns>L'âge en années de l'assuré</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.GererModeIdentification">
+	<summary>
+ Méthode qui permet de trouve le bon mode d'ajout résumé
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.CanClose(System.Action{System.Boolean})">
+	<summary>
+ Méthode lancé lorsqu'on sauvegarde en fermant la fenêtre, valide et sauvegarde la transaction
+ </summary>
+	<param name="callback"></param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.AjouterIndividu">
+	<summary>
+ Fonction qui permet d'ajouter un nouvel individu
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.ModifierNouvelIndividu(System.String)">
+	<summary>
+ Fonction qui permet de modifier un individu nouvellement créé
+ </summary>
+	<param name="idIndividu">L'identifiant de l'individu</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel.ModifierIndividuExistant(System.String)">
+	<summary>
+ Fonction qui permet de modifier un individu qui existe déjà dans la proposition
+ </summary>
+	<param name="idIndividu">L'identifiant de l'individu</param>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.IdentificationViewModel">
+	<summary>
+ Classe de ViewModel de la fenêtre d'identification
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceAssure.EstActifBoutonModifier">
+	<summary>
+ Détermine si le bouton "Modifier" est activé ou non
+ </summary>
+	<returns>True si le bouton "Modifier" est activé, false sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceAssure.#ctor(IAFG.IA.LU.AP.Changement.ViewModel.Commun.IGestionListeAssure{IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceAssure},IAFG.IA.VI.AF.Proposition.Individu)">
+	<summary>
+ Initialiser un individu avec des valeurs par défaut
+ </summary>
+	<param name="gestionnaireParent">Vue de la liste des polices d'assurances</param>
+	<param name="propositionIndividu">L'individu de la proposition</param>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceAssure">
+	<summary>
+ Représente un individu de la police d'assurance
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Services.EnumActionChangement">
+	<summary>
+ Énumération des appels d'action sur le changement
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Commun.Constante">
+	<summary>
+ Constantes communes au composant
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel.EstActifModifier">
+	<summary>
+ Détermine si le bouton modifier est activé ou non
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel.EstBoutonAjouterTransactionIndividuActif">
+	<summary>
+ État du bouton d'ajout d'une ResilationProtection a la liste de ResilationProtections
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel.CommandeAjouterTransactionResilationProtection">
+	<summary>
+ Commande à exécuter lors du clic du bouton 'ajouter représentant'
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel.EstModeAssiste">
+	<summary>
+ Mode actuel de saisi, assisté ou non
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel.AffichageModeNonAssiste">
+	<summary>
+ Mode actuel de saisi, assisté ou non
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel.EstNoPoliceResiliationVisible">
+	<summary>
+ Propriété qui gère l'afichage du champs "Numéro de police" de la section "La résiliation de protection"
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel.EstNoPropositionResiliationVisible">
+	<summary>
+ Propriété qui gère l'afichage du champs "Numéro de proposition" de la section "La résiliation de protection"
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel.EstNoPoliceRachatVisible">
+	<summary>
+ Propriété qui gère l'afichage du champs "Numéro de police" de la section "Valeur de rachat"
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel.EstNoPropositionRachatVisible">
+	<summary>
+ Propriété qui gère l'afichage du champs "Numéro de proposition" de la section "Valeur de rachat"
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel.ReponseResiliationA">
+	<summary>
+ Réponse A de la question de résiliation de protection
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel.ReponseResiliationB">
+	<summary>
+ Réponse B de la question de résiliation de protection
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel.ReponseResiliationC">
+	<summary>
+ Réponse C de la question de résiliation de protection
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel.ReponseRachatA">
+	<summary>
+ Réponse A de la question de résiliation de protection
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel.ReponseRachatB">
+	<summary>
+ Réponse B de la question de résiliation de protection
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel.ReponseRachatC">
+	<summary>
+ Réponse C de la question de résiliation de protection
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel.NoProposition">
+	<summary>
+ Le no de proposition a résilier
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel.#ctor(IAFG.IA.VI.AF.Changements.ChangementAssVie,IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.IServiceConfiguration)">
+	<summary>
+ Initialiser l'objet avec des valeurs par défaut
+ </summary>
+	<param name="changement">Le changement initié sur la police d'assurance</param>
+	<param name="serviceFenetre">Le service qui permet de naviguer et appeler le vb6</param>
+	<param name="serviceConfiguration">Le service qui contient les données partagées dans l'application</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel.MettreAJourAvantFermeture">
+	<summary>
+ Appellé lors d'une sauvegarde qui cause la fermeture du popup
+ </summary>
+	<returns></returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel.SupprimerTransactionExistante">
+	<summary>
+ Méthode qui supprime toutes les transactions existantes. On ajoute les existantes à partir de la grille au lieu de les modifier
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel.EvaluerGraviterErreur(IAFG.IA.VI.AF.Changements.ENUMs.TypeExecuter,IAFG.IA.VI.AF.Changements.ENUMs.TypeExecuter)">
+	<summary>
+ Gestion des priorités d'erreur.  Si la dernière exécution de la transaction  
+ retourne une erreur supérieure aux précédentes, on doit alors la changer, 
+ sinon on ne fait rien, pour conserver l'erreur la plus importante
+ </summary>
+	<param name="nouvelleErreur">La nouvelle erreur a évaluer</param>
+	<param name="erreurLaPlusgrave">L'erreur la plus grave</param>
+	<returns>la nouvelle erreur la plus grave</returns>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionViewModel">
+	<summary>
+ Classe de ViewModel de la transaction de résiliation de protection
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124D.SurprimeAssure.#ctor(IAFG.IA.LU.AP.Changement.ViewModel.Commun.IGestionListeAssure{IAFG.IA.LU.AP.Changement.ViewModel.LUU124D.SurprimeAssure})">
+	<summary>
+ Le constructeur de surprime
+ </summary>
+	<param name="gestionnaireParent">le gestionnaire de parent</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124D.SurprimeAssure.#ctor(IAFG.IA.LU.AP.Changement.ViewModel.Commun.IGestionListeAssure{IAFG.IA.LU.AP.Changement.ViewModel.LUU124D.SurprimeAssure},IAFG.IA.VI.AF.Changements.TrReviserSurprime)">
+	<summary>
+ Constructeur de l'assuré de surprime basé sur une surprime existante
+ </summary>
+	<param name="gestionnaireParent">le gestionnaire de parent</param>
+	<param name="reviseSurprime">La surprime existante</param>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU124D.SurprimeViewModel.EstActifModifier">
+	<summary>
+ Détermine si le bouton modifier est activé ou non
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU124D.SurprimeViewModel.ListeAssure">
+	<summary>
+ Obtient la liste d'assurés de la transaction courante
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU124D.SurprimeViewModel.EstBoutonAjouterTransactionIndividuActif">
+	<summary>
+ État du bouton d'ajout d'une surprime a la liste de surprimes
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU124D.SurprimeViewModel.CommandeAjouterTransactionSurprime">
+	<summary>
+ Commande à exécuter lors du clic du bouton 'ajouter représentant'
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU124D.SurprimeViewModel.EstModeAssiste">
+	<summary>
+ Mode actuel de saisi, assisté ou non
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124D.SurprimeViewModel.#ctor(IAFG.IA.VI.AF.Changements.ChangementAssVie,IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.IServiceConfiguration)">
+	<summary>
+ Initialiser l'objet avec des valeurs par défaut
+ </summary>
+	<param name="changement">Le changement initié sur la police d'assurance</param>
+	<param name="serviceFenetre">Le service qui permet de naviguer et appeler le vb6</param>
+	<param name="serviceConfiguration">Le service qui contient les données partagées dans l'application</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124D.SurprimeViewModel.ValiderSiOnPeutAjouter">
+	<summary>
+ Vérifie puis affiche un message si l'ajout est impossible 
+ </summary>
+	<returns>Vrai si on peut en ajouter un nouveau, faux sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124D.SurprimeViewModel.VerifierRemplissageDerniereLigne">
+	<summary>
+ Fonction qui valide que la dernière ligne du tableau soit rempli
+ </summary>
+	<returns>Vrai si la dernière ligne est rempli, faux sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124D.SurprimeViewModel.MettreAJourAvantFermeture">
+	<summary>
+ Appellé lors d'une sauvegarde qui cause la fermeture du popup
+ </summary>
+	<returns></returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124D.SurprimeViewModel.SupprimerTransactionExistante">
+	<summary>
+ Méthode qui supprime toutes les transactions existantes. On ajoute les existantes à partir de la grille au lieu de les modifier
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124D.SurprimeViewModel.EvaluerGraviterErreur(IAFG.IA.VI.AF.Changements.ENUMs.TypeExecuter,IAFG.IA.VI.AF.Changements.ENUMs.TypeExecuter)">
+	<summary>
+ Gestion des priorités d'erreur.  Si la dernière exécution de la transaction  
+ retourne une erreur supérieure aux précédentes, on doit alors la changer, 
+ sinon on ne fait rien, pour conserver l'erreur la plus importante
+ </summary>
+	<param name="nouvelleErreur">La nouvelle erreur a évaluer</param>
+	<param name="erreurLaPlusgrave">L'erreur la plus grave</param>
+	<returns>la nouvelle erreur la plus grave</returns>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU124D.SurprimeViewModel">
+	<summary>
+ Classe de ViewModel de la transaction de surprime
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelModalBase.ViewModelFocus">
+	<summary>
+ Obtient ou définit la propriété _viewModelFocus. Détermine si le focus est donné au viewModel
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelModalBase.ServiceChargement">
+	<summary>
+ Obtient l'instance du service de chargement
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelModalBase.ServiceFenetre">
+	<summary>
+ Obtient l'instance du service d'appel aux fenêtres
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelModalBase.ServiceConfiguration">
+	<summary>
+ Obtient l'instance du service de configuration
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelModalBase.Changement">
+	<summary>
+ Obtenir le changement s'il existe, sinon le créer
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelModalBase.#ctor">
+	<summary>
+ Constructeur de base
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelModalBase.#ctor(IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement)">
+	<summary>
+ Constructeur du View Model
+ </summary>
+	<param name="serviceFenetre">le service d'appel aux fenêtres</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelModalBase.#ctor(IAFG.IA.VI.AF.Changements.ChangementAssVie,IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.IServiceConfiguration)">
+	<summary>
+ Constructeur du View Model
+ </summary>
+	<param name="changement">l'objet de changement de travail</param>
+	<param name="serviceFenetre">le service d'appel aux fenêtres</param>
+	<param name="serviceConfiguration">le service de configuration</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelModalBase.#ctor(IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.IServiceConfiguration)">
+	<summary>
+ Constructeur du View Model
+ </summary>
+	<param name="serviceFenetre">le service d'appel aux fenêtres</param>
+	<param name="serviceConfiguration">le service de configuration</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelModalBase.#ctor(IAFG.IA.VI.AF.Changements.Services.Chargement.IServiceChargement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.IServiceConfiguration)">
+	<summary>
+ Constructeur du View Model
+ </summary>
+	<param name="serviceChargement">le service de création/chargement de changement</param>
+	<param name="serviceFenetre">le service d'appel aux fenêtres</param>
+	<param name="serviceConfiguration">le service de configuration</param>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelModalBase">
+	<summary>
+ Classe de base de tous les ViewModels contenu dans une fenêtre modale.
+ </summary>
+	<remarks>Regroupe les fonctionnalités communes à tous les ViewModels de l'application, qui doivent tous en dériver</remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.Utilitaire.ContexteApplicatifChangement">
+	<summary>
+ Obtient le contexte courant de l'application
+ </summary>
+	<returns>Indicateur de bonne résolution de l'appel</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.Utilitaire.FormaterNomComplet(System.String,System.String,System.String,System.String)">
+	<summary>
+ Fonction de mise en forme d'un nom d'individu pour affichage à l'écran
+ </summary>
+	<param name="nom">le nom de famille</param>
+	<param name="prenom">le prénom</param>
+	<param name="initiale">l'initiale</param>
+	<param name="rang">le rang dans l'ordre familial</param>
+	<returns>le nom complet mis en forme</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.Utilitaire.ObtenirRessource(System.String)">
+	<summary>
+ Obtenir la ressource selon le nom de la ressource en paramètre
+ </summary>
+	<param name="nom">Nom de la ressource recherchée</param>
+	<returns>La ressource si trouvée, une chaîne vide sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.Utilitaire.ValiderPolice(System.String)">
+	<summary>
+ Valider le numéro de police et calcule son chiffre vérificateur selon la méthode préconisée pour les numéros de polices.
+ </summary>
+	<returns>true si le numéro de la police est valide, false sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.Utilitaire.DefinirLangueTravail(IAFG.IA.VI.ENUMs.Langue)">
+	<summary>
+ Affecte la bonne culture au thread d'affichage en fonction de la langue demanée
+ </summary>
+	<param name="langue">la langue actuellement utilisée</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.Utilitaire.ObtenirValeurLangue">
+	<summary>
+ Retourne la valeur d'enumération de langue en fonction de la culture du thread graphique courant
+ </summary>
+	<returns>la langue courante</returns>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Commun.Utilitaire">
+	<summary>
+ Classe de fonctions partagées
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.GestionnaireMessages.ListeMessage">
+	<summary>
+ La liste des valeurs de classes de risques de la combobox
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.GestionnaireMessages.ObtenirMessageParCode(System.String)">
+	<summary>
+ Permet d'obtenir un message en fonction d'un code de message
+ </summary>
+	<param name="codemessage">Le code de message</param>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.GestionnaireMessages">
+	<summary>
+ Classe qui contient la liste des messages à afficher aux utilisateurs
+ </summary>
+	<remarks>Todo: Il faudra gérer la création du message dans cette classe et la retourner dans un objet affichable</remarks>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Commun.EnumResultatChargementContrat">
+	<summary>
+ Énumération contenant l'état du numéro de police saisie
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.IServiceConfiguration">
+	<summary>
+ Interface de service pour obtenir les valeurs de configuration de l'application (clés de registre, paramétrage initial)
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieGestionListeAssure.TransactionSimplifieCourante">
+	<summary>
+ Obtient ou définit la transaction spéciale courante
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieGestionListeAssure.#ctor(IAFG.IA.LU.AP.Changement.ViewModel.Commun.IFournisseurChangement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement,IAFG.IA.VI.AF.Changements.ENUMs.TypeTransaction,IAFG.IA.VI.AF.Changements.TrSimplifiee)">
+	<summary>
+ Constrcuteur du gestionnaire
+ </summary>
+	<param name="viewModelParent">view modèle qui contient la liste d'assurés</param>
+	<param name="serviceFenetre">service de fenêtre</param>
+	<param name="typeTransaction">le type de transaction, toujours une transaction simplifiée</param>
+	<param name="transactionSimplifieCourante">la transaction simplifiée courante</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieGestionListeAssure.InitialiserListeAssure">
+	<summary>
+ La liste des assurées pour une transaction simplifiée contient un et un seul assuré
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieGestionListeAssure.CreerInstanceNouvelAssure">
+	<summary>
+	</summary>
+	<remarks>Inutile pour une transaction simplifiée, nous devons avoir une ligne en tout temps q</remarks>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1249.ClasseRisqueViewModel.EstActifModifier">
+	<summary>
+ Détermine si le bouton modifier est activé ou non
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1249.ClasseRisqueViewModel.EstModeAssiste">
+	<summary>
+ Mode actuel de saisi, assisté ou non
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1249.ClasseRisqueViewModel.CommandeAjouter">
+	<summary>
+ Expose la commande d'ajout du gestionnaire de liste pour binding
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1249.ClasseRisqueViewModel.ListeAssure">
+	<summary>
+ Obtient la liste d'assurés de la transaction courante
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1249.ClasseRisqueViewModel.ListIndividuCommune">
+	<summary>
+ Expose la liste d'individus du gestionnaire et commune au changement pour binding
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1249.ClasseRisqueViewModel.ListeClasseDeRisque">
+	<summary>
+ Obtient la liste des classes de risques pour remplir le contrôle ad hoc
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1249.ClasseRisqueViewModel.#ctor(IAFG.IA.VI.AF.Changements.ChangementAssVie,IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.IServiceConfiguration)">
+	<summary>
+ Constructeur du ViewModel pour piloter l'écran des instructions spéciales
+ </summary>
+	<param name="changement">Le changement initié sur la police d'assurance</param>
+	<param name="serviceFenetre">Le service qui permet de naviguer et appeler le vb6</param>
+	<param name="serviceConfiguration">Le service qui contient les données partagées dans l'application</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1249.ClasseRisqueViewModel.ValiderSiOnPeutAjouter">
+	<summary>
+ Vérifie puis affiche un message si l'ajout est impossible 
+ </summary>
+	<returns>Vrai si on peut en ajouter un nouveau, faux sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1249.ClasseRisqueViewModel.VerifierRemplissageDerniereLigne">
+	<summary>
+ Fonction qui valide que la dernière ligne du tableau soit rempli
+ </summary>
+	<returns>Vrai si la dernière ligne est rempli, faux sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1249.ClasseRisqueViewModel.SupprimerTransactionExistante">
+	<summary>
+ Méthode qui supprime toutes les transactions existantes. On ajoute les existantes à partir de la grille au lieu de les modifier
+ De plus, on supprime les anciens messages d'erreur
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1249.ClasseRisqueViewModel.EvaluerGraviteErreur(IAFG.IA.VI.AF.Changements.ENUMs.TypeExecuter,IAFG.IA.VI.AF.Changements.ENUMs.TypeExecuter)">
+	<summary>
+ Gestion des priorités d'erreur.  Si la dernière exécution de la transaction  
+ retourne une erreur supérieure aux précédentes, on doit alors la changer, 
+ sinon on ne fait rien, pour conserver l'erreur la plus importante
+ </summary>
+	<param name="nouvelleErreur">La nouvelle erreur a évaluer</param>
+	<param name="erreurLaPlusgrave">L'erreur la plus grave</param>
+	<returns>la nouvelle erreur la plus grave</returns>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU1249.ClasseRisqueViewModel">
+	<summary>
+ Classe de ViewModel de la transaction de classe de risque
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Commun.EnumStatutChangement">
+	<summary>
+ 1 = Changement existe mais avec un statut à 1 (Prêt à être transféré)
+ 2 = Changement existe mais avec un statut à 2 (Transféré) et la date de création
+     est la même que la date du jour.  On doit gérer cela car sinon il y aura une violation de la clé primaire.
+ 3 = Le Changement est inexistant ou il existe avec un statut 2 et le date de création est différente de la date du jour
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.AccessFichierClient.ServiceChargement">
+	<summary>
+ Obtient l'instance du service de chargement
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.AccessFichierClient">
+	<summary>
+ Classe reponsable de faire le pont vers ficcli.
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.CommandeAjouter">
+	<summary>
+ Permet de faire le lien vers la fonction depuis le XAML 
+ </summary>
+	<returns>Adresse de la fonction cible</returns>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.CommandeRechercher">
+	<summary>
+  Permet de faire le lien vers la fonction depuis le XAML 
+ </summary>
+	<returns>Adresse de la fonction cible</returns>
+	<remarks>Voir fonction <see cref="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.RechercherPolice"/></remarks>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.CommandeSauvegarder">
+	<summary>
+  Permet de faire le lien vers la fonction depuis le XAML 
+ </summary>
+	<returns>Adresse de la fonction cible</returns>
+	<remarks>Voir fonction <see cref="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.PersisterAvantFermeture"/></remarks>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.EstActifBoutonSupprimer">
+	<summary>
+ Détermine si le bouton "Supprimer" est activé ou non
+ </summary>
+	<returns>True si le bouton "Supprimer" est activé, false sinon</returns>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.EstCompagnieLogiciel">
+	<summary>
+ Indiquer si la compagnie de la proposition est la même que la compagnie associée à l'installation de l'application
+ </summary>
+	<returns>true si la compagnie de la proposition est la même que la compagnie associée à l'installation de l'application, false sinon</returns>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.EstVisibleNaviguerSuivant">
+	<summary>
+ Permet d'afficher ou non le bouton "Suivant"
+ </summary>
+	<returns>True si le bouton est affiché, false sinon</returns>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.EstVisibleNaviguerPrecedent">
+	<summary>
+ Permet d'afficher ou non le bouton "Précédent"
+ </summary>
+	<returns>False car dans InfoPolice, le bouton est toujours caché</returns>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.EstVisibleCompagnie">
+	<summary>
+ Indique s'il faut affiche ou non la section "Compagnie". Cette section apparaît quand le type de contractant "Compagnie" est coché.
+ </summary>
+	<returns>true si la section est visible, false sinon</returns>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.EstVisibleProprietaire">
+	<summary>
+ Indique s'il faut afficher ou non la section "Propriétaire". Cette section apparaît quand le type de contractant "Individu(s)" est coché.
+ </summary>
+	<returns>true si la section est visible, false sinon</returns>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.EstVisibleSectionDetail">
+	<summary>
+ Indique s'il faut afficher ou non la section "Détail sur le contractant" qui comprends le choix du type de contractant avec les boutons radios.
+ </summary>
+	<returns>true si la section est visible, false sinon</returns>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.ListeAssure">
+	<summary>
+ Liste des assurés dont ont doit remettre la police en vigueur
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.NomCompagnie">
+	<summary>
+ Nom de la compagnie contractante
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.NomFichierChangement">
+	<summary>
+ Nom du fichier contenant le changement
+ </summary>
+	<returns>Le nom du fichier</returns>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.NumeroPoliceSaisie">
+	<summary>
+ No de police d'assurance saisie par l'utilisateur 
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.ObtenirNomDomaine">
+	<summary>
+ Obtenir la fenêtre en contexte
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.PeutNaviguerPrecedent">
+	<summary>
+ Permet d'activer ou de désactiver le bouton "Précédent"
+ </summary>
+	<returns>false car dans InfoPolice, le bouton est toujours désactivé</returns>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.PeutNaviguerSuivant">
+	<summary>
+ Permet d'activer ou de désactiver le bouton "Suivant"
+ </summary>
+	<returns>true si le bouton est activé, false si le bouton est désactivé</returns>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.ReponseMessageModeNonAssiste">
+	<summary>
+ Réponse au message demandant si l'usager veut entrer en mode Non-Assisté
+ </summary>
+	<returns>La réponse de l'utilisateur</returns>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.StatutChangementObtenu">
+	<summary>
+ Le statut du changement
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.TypeContractant">
+	<summary>
+ Type de contractant : individu ou compagnie ou aucun
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.EstEnOuvertureAutomatiquePolice">
+	<summary>
+ Si vrai c'est que nous avons à ouvrir une police suite à un retour arrière
+ avec le bouton précédant ou toute autre raison qui fera que la police doit
+ être ouverte mais ce n'est pas suite à la recherche
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.#ctor(IAFG.IA.VI.AF.Changements.Services.Chargement.IServiceChargement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.IServiceConfiguration)">
+	<summary>
+ Constructeur du ViewModel pour piloter l'écran d'information de police
+ </summary>
+	<param name="serviceChargement">service de chargement</param>
+	<param name="serviceFenetre">service de fenetre</param>
+	<param name="serviceConfiguration">service de configuration</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.SurChangementEnCoursVide(System.Object,System.EventArgs)">
+	<summary>
+ Traitement l'événement lancé lorsque le contexte du changement en cours est vidé.
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.ObtenirListeChangements">
+	<summary>
+ Propriété partagée à travers les différentes instances contenant l'ensemble des changements de la bd.
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.AjouterLigneVideListeIndividusSiCompagnie">
+	<summary>
+si une compagnie, la liste des contractants est vide.  Il faut ajouter un élément
+vide au cas où on change de type
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.AfficherMenuDetail">
+	<summary>
+ Afficher des informations dans la barre secondaire
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.ValiderSiOnPeutAjouter">
+	<summary>
+ Vérifie puis affiche un message si l'ajout est impossible 
+ </summary>
+	<returns>Vrai si on peut en ajouter un nouveau, faux sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.ObtenirNomFichierChangement(System.String)">
+	<summary>
+ Obtenir le nom du fichier de changement associé à une police selon le statut 0 
+ </summary>
+	<param name="NoPolice">Le numéro de police</param>
+	<returns>Le nom du fichier si trouvé, une chaîne vide sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.ObtenirNomFichierChangement(System.String,IAFG.IA.LU.AP.Changement.ViewModel.Commun.EnumStatutChangement)">
+	<summary>
+ Obtenir le nom du fichier de changement associé à une police selon un certain statut
+ </summary>
+	<param name="NoPolice">Le numéro de police</param>
+	<param name="StatutChangement">Le statut du changement</param>
+	<returns>Le nom du fichier si trouvé, une chaîne vide sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.ObtenirStatutChangement(System.String)">
+	<summary>
+ Fonction qui détermine si le contrat recherché existe dans la BD LUDUSER et si il peut être chargé par l'application
+ Les codes de retour sont les suivants:
+ "1" = Changement existe mais avec un statut à 1 (Prêt à être transféré)
+ "2" = Changement existe mais avec un statut à 2 (Transféré) et la date de création
+       est la même que la date du jour.  On doit gérer cela car sinon il y aura une violation de la clé primaire.
+ "3" = Le Changement est inexistant ou il existe avec un statut 2 et le date de création est différente de la date du jour
+ Autre chaine de caractère (le chemin d'accès au changement) = Le changement existe et peut-être chargé.
+ </summary>
+	<returns>un code de retour</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.DateFinVersionEstDepassee">
+	<summary>
+ Permet de déterminer si la date de fin de version est dépassée
+ </summary>
+	<returns>true si la date de fin de version est dépassée, false sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.VerifierSiModeNonAgent">
+	<summary>
+ Permet de vérifier si l'usager n'est pas en mode agent
+ </summary>
+	<returns>True si on est pas en mode Agent, false sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.VerifierNoPoliceVsCompagnie">
+	<summary>
+ Vérifie que la police est correcte par rapport à la compagnie courante, en fonction du premier caractère du no de police
+ </summary>
+	<returns>l'indicateur de validité</returns>
+	<remarks>Si la compagnie est IAP, le no de police comnmence par 9</remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.InitialiserTypeSaisieVersion">
+	<summary>
+ Initialiser un changement
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.InitPropoOrigNoPolLangueChangement(IAFG.IA.VI.ENUMs.Langue)">
+	<summary>
+ Initialiser un changement avec la proposition originale, le numéro de police et la langue.
+ </summary>
+	<param name="langue">La langue</param>
+	<remarks>Commentaires du vb6 : On passe par Protections.Proposition pour avoir le bon type car on ne peut pas instancier de "Proposition"
+ car ca plante lorsque l'on passe un object déclaré ou initialise "COM_Proposition"</remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.ValiderNumeroPoliceSaisie">
+	<summary>
+ Valider le numéro de police saisie
+ </summary>
+	<returns>L'état de la validation</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.RechercherPolice">
+	<summary>
+ Rechercher une police d'assurance
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.TraiterResultatChargementPolice(IAFG.IA.LU.AP.Changement.ViewModel.Commun.EnumResultatChargementContrat)">
+	<summary>
+ Charger la police depuis le fichier xml ou depuis la base de données ficcli
+ </summary>
+	<param name="resultatChargement">Les différents cas possible lorsque l'on ouvre tente d'ouvrir un changement</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.DefinirTypeContractantNomCompagnie">
+	<summary>
+ Le type de contractant est déduit à partir de la liste d'individus
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.DefinirNumeroPoliceSelonChangement">
+	<summary>
+ Défini le numéro de police courant à partir de la proposition
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.ViderEtatAffichage">
+	<summary>
+ Vider l'état d'affichage lorsque l'on change de police
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.ChargerPoliceSelonNumeroSaisi">
+	<summary>
+ Charger la police depuis les fichier ou depuis ficcli.  Afficher 
+ </summary>
+	<returns>Retourne le type de chargement effectué.</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.ObtenirNumeroPoliceFiccli(System.String,IAFG.IA.VI.AF.Changements.Services.Chargement.ParametreRechercheContrat)">
+	<summary>
+ Fonction qui permet de retourner le numéro de police trouvé par une recherche dans ficcli
+ </summary>
+	<param name="numeroPolice">Le numéro de police qu'on veut trouver, s'il est vide, on ouvre la recherche par nom</param>
+	<returns>Le numéro de police</returns>
+	<remarks>Cette fonction sera principalement utilisée pour la recherche par nom (numéro de police vide)</remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.RechercherFiccli(System.String)">
+	<summary>
+ Fonction qui fait une recherche dans Ficcli
+ </summary>
+	<param name="numeroPolice">Le numéro de police à rechercher</param>
+	<returns>Informations sur la police</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.CreerContratFiccli(System.String)">
+	<summary>
+ Fonction qui fait une création de police ficcli
+ </summary>
+	<param name="numeroPolice">Le numéro de la police à créer</param>
+	<returns>Les informations sur la police</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.AfficherQuestionLangueInitPropo">
+	<summary>
+ Entrer en mode création d'un changement.
+ Demander dans quelle langue l'usager veut définir le changement. S'il ne répond pas à la question on initialise rien.
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.RemplirContexteDistribution">
+	<summary>
+ Déterminer la distribution
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.VerifierSiDateFinVersionExpiree">
+	<summary>
+ Vérifier si la date de fin de version est expirée.  On ne permet pas de faire des nouveaux changements si la date de fin de version est dépassé
+ </summary>
+	<returns>vrai si la date de fin de version est expirée, false sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.ChangerMenuHierarchiqueBarreSecondaire">
+	<summary>
+ Appeller un service qui affiche ou cache, active ou désactive les boutons de la barre secondaire et gère le menu hiérarchique.
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.AfficherMessageCompagnieInvalide">
+	<summary>
+ Afficher un message d'erreur selon le cas lorsque la compagnie de la police est invalide
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.OuvrirFichierChangement(System.String)">
+	<summary>
+ Essayer d'ouvrir les fichier de changement selon le numéro de police
+ puis afficher un message si on tente de réouvrir le police déjà ouverte par l'application
+ </summary>
+	<returns>Vrai si le fichier est ouvert ou si la police est déjà ouverte, false sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.ValiderNotifierStatutChangement(System.String)">
+	<summary>
+ Selon le statut du changement, afficher les messages appropriés à l'usager
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.ValiderTableauContractant">
+	<summary>
+ Valide les informations des contractants de la grille
+ </summary>
+	<returns>true si le contractant est valide, false sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.ValiderInformationsPolice">
+	<summary>
+ Valider la saisie des contractants
+ </summary>
+	<returns>Vrai si la saisie des contractants est valide faux sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.AfficherMessageErreur(IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.EnumValidationInformationsPolice)">
+	<summary>
+ Afficher le message erreur approprié selon le résultat passé en paramètre
+ </summary>
+	<param name="resultat">Resultat de la validation faite au préalable</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.MettreAJourChangement">
+	<summary>
+ Mettre à jour l'objet changement
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.HandleModifierLangue(IAFG.IA.VI.ENUMs.Langue)">
+	<summary>
+ Gère la demande de modification de langue envoyée par l'agrégateur d'événements
+ </summary>
+	<param name="langue">la langue demandée</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.PersisterAvantFermeture">
+	<summary>
+ Effectuer la sauvegarde lors du clique sur la disquette ou du x avec oui à la question de sauvegarde
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.PeutSauvegarder">
+	<summary>
+ Effectue les traitements et validations propres à InfoPolice avant d'autoriser la sauvegarde du fichier
+ </summary>
+	<returns>l'indicateur autorisant la sauvegarde</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel.CanClose(System.Action{System.Boolean})">
+	<summary>
+ Regroupe les validations et autres opérations à exécuter avant d'autoriser la fermeture et la sortie de l'écran courant
+ </summary>
+	<param name="callback">l'action à laquelle retourner le résultat</param>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceViewModel">
+	<summary>
+ Classe de ViewModel du contrôle Info Police
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Commun.MessageUtilisateur">
+	<summary>
+ Classe conteneur des codes de messages utilisés dans l'application
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Commun.IViewModel">
+	<summary>
+ Gère le contenu et l'affichage de la liste déroulante des individus.
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.ListeAssure">
+	<summary>
+ Liste des assurés dont on doit remettre la police en vigueur
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.ResilieeDepuis">
+	<summary>
+ L'état de la résiliation de la police
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.EstBoutonAjouterTransactionIndividuActif">
+	<summary>
+ État du bouton d'ajout d'une remise en vigueur a la liste de remises en vigueur
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.EstVisibleTableauRemiseEnVigueur">
+	<summary>
+ État de visibilité du tableau principal
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.EstVisibleBoutonAfficherProtections">
+	<summary>
+ État visible ou non du bouton qui affiche les protections
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.RedaterPolice">
+	<summary>
+ Option pour redater la police
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.EstModeAssiste">
+	<summary>
+ Mode actuel de saisi, assisté ou non
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.OptionRedaterPoliceVisible">
+	<summary>
+État visible ou non de l'option de redater une police
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.EstVisibleOk">
+	<summary>
+ État visible ou non du bouton ok du conteneur
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.EstVisibleAnnuler">
+	<summary>
+ État visible ou non du bouton annuler du conteneur
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.EstActifOk">
+	<summary>
+ État actif ou non du bouton ok du conteneur
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.EstActifAnnuler">
+	<summary>
+ État actif ou non du bouton annuler du conteneur
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.#ctor(IAFG.IA.VI.AF.Changements.ChangementAssVie,IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.IServiceConfiguration)">
+	<summary>
+ Initialiser l'objet avec des valeurs par défaut
+ </summary>
+	<param name="changement">Le changement initié sur la police d'assurance</param>
+	<param name="serviceFenetre">Le service qui permet de naviguer et appeler le vb6</param>
+	<param name="serviceConfiguration">Le service qui contient les données partagées dans l'application</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.TraiterAjout">
+	<summary>
+ Effectuer les traiements nécessaires lors de l'ajout d'un individu
+ </summary>
+	<remarks>Méthode déléguée pour le gestionnaire de liste voir le constructeur</remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.TraiterSuppresion">
+	<summary>
+ Effectuer les traiements nécessaires lors de la suppression d'un individu
+ </summary>
+	<remarks>Méthode déléguée pour le gestionnaire de liste voir le constructeur</remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.TraiterChangementSelection(System.String,System.String,IAFG.IA.LU.AP.Changement.ViewModel.Commun.AssureBase{IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure})">
+	<summary>
+ Effectuer les traiements nécessaires lorsque la sélection d'un individu change
+ </summary>
+	<param name="ancienIdIndividu">id de l'ancien individu sélectionné</param>
+	<param name="nouvelIdIndividu">id du nouvel individu sélectionné</param>
+	<param name="assureBase">l'assuré avec la sélection modifié</param>
+	<remarks>Méthode déléguée pour le gestionnaire de liste voir le constructeur</remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.RemplirDetailRemiseEnVigueur(IAFG.IA.VI.AF.Changements.TrRemiseVigueur)">
+	<summary>
+ Rempli le détail de la remise en vigueur
+ </summary>
+	<param name="transaction">Une transaction de remise en vigueur</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.AfficherProtections">
+	<summary>
+ Afficher le popup de protections
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.OuvrirChargementEnCours">
+	<summary>
+ Ouvre la fenêtre de chargement en cours
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.SupprimerTransactionExistante">
+	<summary>
+ Supprimer la transaction existante. On ajoute les existantes à partir de la grille au lieu de les modifier
+ De plus, on supprime les anciens messages d'erreur
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.RafraichirBoutonAjouter">
+	<summary>
+ Méthode qui vérifie la liste des individus et active le bouon ajouter dans les bonnes conditions
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.VerifierSiTousIndividusSelectionnes">
+	<summary>
+ Pour chaque transaction, vérifier qu'un individu est sélectionné
+ </summary>
+	<returns>Vrai si tous sélectionnés, faux sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.MettreAJourAvantFermeture">
+	<summary>
+ Sauvegarder les modifications dans le fichier xml
+ </summary>
+	<returns>Le résultat de la sauvegarde si elle est tentée. Si elle n'est pas lancée retourne null</returns>
+	<remarks>N'affiche jamais de message d'erreurs.</remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.RemplirReponsesParDefaut(IAFG.IA.VI.AF.Changements.TrRemiseVigueurIndividu,IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure)">
+	<summary>
+ Remplir les réponses qui ne proviennent pas nécessairement de l'écran
+ </summary>
+	<param name="nouvelleTransaction">nouvelle transaction pour le remise en vigueur</param>
+	<param name="remiseVigueurPourIndividu">la remise en vigueur avec les réponses aux questions</param>
+	<remarks>La couche métier s'attend à ce que certaines réponses contiennent des valeures dans certains cas.  Ce sont des questions que 
+ l'on ne pose pas car on connait la réponse</remarks>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.CommandeAjouter">
+	<summary>
+ Commande à exécuter lors du clic du bouton 'ajouter'
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.CommandeAfficherProtections">
+	<summary>
+ Commande lancée lors d'un clique du bouton ok
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel.ListeCommande">
+	<summary>
+ Liste des boutons qui sera affiché au bas du pop-up, aligné sur la gauche
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel">
+	<summary>
+ Classe de ViewModel du contrôle de la remise en vigueur
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.ModifierNouvelIndividu">
+	<summary>
+ Classe qui fait le traitement pour les modes de modification de nouveaux individus
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.TypeModeIdentificationFactory.CreerInstance(IAFG.IA.LU.AP.Changement.ViewModel.Commun.EnumTypeModeIdentification)">
+	<summary>
+ Méthode qui permet de lancer un traitement en fonction d'un typeModeIdentification donné
+ </summary>
+	<param name="modeIdentification">Le mode d'identification pour lequel on eut faire un traitement</param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceGestionListeAssure.DateNaissanceOriginale">
+	<summary>
+ La date de naissance originale
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceGestionListeAssure.DateNaissanceCorrigee">
+	<summary>
+ La date de naissance Corrigée
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceGestionListeAssure.#ctor(IAFG.IA.LU.AP.Changement.ViewModel.Commun.IFournisseurChangement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement,IAFG.IA.VI.AF.Changements.ENUMs.TypeTransaction)">
+	<summary>
+ Constructeur de la liste des modification de date de naissances
+ </summary>
+	<param name="viewModelParent">Le viewmodel parent</param>
+	<param name="serviceFenetre">Le service de fenêtre</param>
+	<param name="typeTransaction">le type de transaction voulue</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceGestionListeAssure.InitialiserListeAssure">
+	<summary>
+ Fonction qui permet d'initialiser la liste des assurés
+ </summary>
+	<returns>la collection initialisé des assurés</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceGestionListeAssure.CreerInstanceNouvelAssure">
+	<summary>
+ Fonction qui permet de créer un nouvel assuré
+ </summary>
+	<returns>le nouvel assuré</returns>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceGestionListeAssure">
+	<summary>
+ Classe de gestion des liste d'assurés de la transaction de date de naissance
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.AssureBase`1.ListeDeroulanteIndividu">
+	<summary>
+ Obtient ou définit la liste d'assurés à afficher dans la combo de chaque élément
+ </summary>
+	<remarks>La gestion de la liste se fait depuis le parent pour pouvoir gérer les notifications plus globalement</remarks>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.AssureBase`1.IndividuSelectionne">
+	<summary>
+ Obtient ou définit l'individu sélectionné pour être l'assuré
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.AssureBase`1.GestionnaireParent">
+	<summary>
+ Obtient le gestionnaire de parent
+ </summary>
+	<value>le gestionnaire de parent</value>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.AssureBase`1.CommandeSupprimer">
+	<summary>
+ Obtient la commande de suppression
+ </summary>
+	<value>la commande de suppression</value>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.AssureBase`1.CommandeModifier">
+	<summary>
+ Obtient la commande de modification
+ </summary>
+	<value>la commande de modification</value>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.AssureBase`1.EstaActifModifier">
+	<summary>
+ Obtient l'état d'activité (enabled) du bouton modifier
+ </summary>
+	<value> l'état d'activité (enabled) du bouton modifier</value>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.AssureBase`1.EstaActifSupprimer">
+	<summary>
+ Obtient l'état d'activité (enabled) du bouton supprimer
+ </summary>
+	<value> l'état d'activité (enabled) du bouton supprimer</value>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.AssureBase`1.#ctor(IAFG.IA.LU.AP.Changement.ViewModel.Commun.IGestionListeAssure{`0})">
+	<summary>
+ Constructeur
+ </summary>
+	<param name="gestionnaireParent">le gestionnaire de liste propre à l'UT concernée</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.AssureBase`1.Modifier">
+	<summary>
+ Attache l'action de la commande à la fonction Modifier du gestionnaire associé
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.AssureBase`1.Supprimer">
+	<summary>
+ Attache l'action de la commande à la fonction Supprimer du gestionnaire associé
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.AssureBase`1.ActualiserSelectionIndividu">
+	<summary>
+ Dû à la structure objet, le binding ne fonctionne pas bien.  Il faut vider la sélection et
+ la refaire avec le nouvel objet même si la sélection demeure la même
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.AssureBase`1.NotifierModificationListe">
+	<summary>
+ Lance la notification de modification de la liste déroulante
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.AssureBase`1.SelectionnerIndividu(IAFG.IA.LU.AP.Changement.ViewModel.Commun.ItemIndividu)">
+	<summary>
+ Adapte la sélection d'individu aux circonstances d'utilisation
+ </summary>
+	<param name="individu">l'individu sélectionné dans la combo associée à l'élément assuré en cours</param>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Commun.AssureBase`1">
+	<summary>
+ Classe générique pour représenter un assuré
+ </summary>
+	<typeparam name="T">le type réel d'assuré fonction de l'UT de travail</typeparam>
+	<remarks>le type générique est attaché au type réel pour permettre d'utiliser la covariance</remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ListeIndividusFacade.#ctor(IAFG.IA.LU.AP.Changement.ViewModel.Commun.IFournisseurChangement@,IAFG.IA.VI.AF.Changements.ENUMs.TypeTransaction,System.Boolean)">
+	<summary>
+ Constructeur de la liste déroulante
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ListeIndividusFacade.ListeIndividus">
+	<summary>
+ Liste des contractants quand il n'y a pas de proposition
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ListeIndividusFacade.ViderListeIndividus">
+	<summary>
+ Vide la liste complètement
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ListeIndividusFacade.ActualiserListeIndividus">
+	<summary>
+  Remplir la liste des individus avec les contractants disponibles pour une proposition donnée
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ListeIndividusFacade">
+	<summary>
+ Gère le contenu et l'affichage de la liste déroulante des individus.
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionAssure.Protection">
+	<summary>
+ La protection de l'assuré
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionAssure.CapitalActuel">
+	<summary>
+ Le capital actuel de l'assuré
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionAssure.CapitalAResilier">
+	<summary>
+ Le capital à résilier de l'assuré en mode assisté
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1243.ResiliationProtectionAssure.ReponseCapitalResilier">
+	<summary>
+ Réponse au capital à résilier (oui ou non) en mode non assisté
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ParametreLangue.LangueSelectionnee">
+	<summary>
+ Obtient ou définit la langue retournée par la fenêtre de configuration associée
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ParametreLangue">
+	<summary>
+ Classe de transport des paramètres pour le choix de langue du changement en cours
+ </summary>
+</member><member name="E:IAFG.IA.LU.AP.Changement.ViewModel.Commun.GestionListeAssureBase`1.SurAjoutAssure">
+	<summary>
+ Lancé suite à l'ajout d'une ligne dans le tableau, pas dans une liste déroulante
+ </summary>
+</member><member name="E:IAFG.IA.LU.AP.Changement.ViewModel.Commun.GestionListeAssureBase`1.SurSuppressionAssure">
+	<summary>
+ Lancé suite à la suppression d'une ligne dans le tableau, pas dans une liste déroulante
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.GestionListeAssureBase`1.CommandeAjouter">
+	<summary>
+ Commande à exécuter lors du clic du bouton 'ajouter représentant'
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.GestionListeAssureBase`1.ServiceFenetre">
+	<summary>
+ Obtient l'instance du service d'appel aux fenêtres
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.GestionListeAssureBase`1.ListeAssure">
+	<summary>
+ Liste des assurés de la transaction courante
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.GestionListeAssureBase`1.NotifierChangementSurListe">
+	<summary>
+ Lance à l'écran une notification indiquant que le contenu des listes doit être rafraîchit
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.GestionListeAssureBase`1.NotifierActualiserListesDeroulantes">
+	<summary>
+ Actualiser le contenu des listes déroulantes des assurés
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.GestionListeAssureBase`1.RemplirListesDeroulantes">
+	<summary>
+ Actualiser le contenu des listes déroulantes des assurés
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.GestionListeAssureBase`1.RemplirListeDeroulanteAssure(IAFG.IA.LU.AP.Changement.ViewModel.Commun.AssureBase{`0})">
+	<summary>
+ Rempli le contenu d'une liste déroulante pour un assure
+ </summary>
+	<param name="assure">assure pour lequel on rempli la liste déroulante</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.GestionListeAssureBase`1.TraiterChangementSelection(System.String,System.String,IAFG.IA.LU.AP.Changement.ViewModel.Commun.AssureBase{`0})">
+	<summary>
+ Effectuer les traiements nécessaire lorsque la sélection d'un individu change
+ </summary>
+	<param name="ancienIdIndividu">id de l'ancien individu sélectionné</param>
+	<param name="nouvelIdIndividu">id du nouvel individu sélectionné</param>
+	<param name="assureBase">l'assuré avec la sélection modifié</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.GestionListeAssureBase`1.AjouterAssure">
+	<summary>
+ Ajout d'un assuré vide
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.GestionListeAssureBase`1.AjouterAssure(`0)">
+	<summary>
+ Ajout d'un assuré x dans la liste des assurés
+ </summary>
+	<param name="nouvelAssure"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.GestionListeAssureBase`1.ValiderSiOnPeutAjouter">
+	<summary>
+ Appelé avant d'effectuer l'ajout
+ </summary>
+	<returns>Vrai si on peut en ajouter un nouveau, faux sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.GestionListeAssureBase`1.CreerNouvelIndividu(`0)">
+	<summary>
+ Ouvrir le popup d'ajout d'un nouvel assuré
+ </summary>
+	<param name="nouvelAssure">Référence de l'individu qui sera créé</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.IViewModelFactoryChangement.ObtenirInstanceAvecParametres(System.String,System.Object)">
+	<summary>
+  Obtient l'instance d'un écran d'après sa clé et ses paramètres.
+ </summary>
+	<param name="cle">Clé identifiant un écran.</param>
+	<param name="parametre">paramètre nécessaire au constructeur</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieAssure.EstModeAssiste">
+	<summary>
+ Mode actuel de saisi, assisté ou non
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieAssure.EstNouvelIndividuChangement">
+	<summary>
+ Indique que l'individu est nouveau pour le changement courant
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieAssure.EstActifBoutonModifier">
+	<summary>
+ Retourne si le bouton modifier doit etre actif ou non
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieAssure.#ctor(IAFG.IA.LU.AP.Changement.ViewModel.Commun.IFournisseurChangement,IAFG.IA.LU.AP.Changement.ViewModel.Commun.IGestionListeAssure{IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieAssure})">
+	<summary>
+ Constructeur d'une transaction simplifie lorsqu'elle est null
+ </summary>
+	<param name="gestionnaireParent">gestionnaire de la liste</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieAssure.#ctor(IAFG.IA.LU.AP.Changement.ViewModel.Commun.IFournisseurChangement,IAFG.IA.LU.AP.Changement.ViewModel.Commun.IGestionListeAssure{IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieAssure},IAFG.IA.VI.AF.Changements.TrSimplifiee)">
+	<summary>
+ Constructeur d'une transaction simplifiée avec une transaction existante
+ </summary>
+	<param name="gestionnaireParent">gestionnaire de la liste</param>
+	<param name="transactionSimplifie">la transaction simplifiée existante</param>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelSectionPrincipalBase.ServiceChargement">
+	<summary>
+ Obtient l'instance du service de chargement
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelSectionPrincipalBase.ServiceFenetre">
+	<summary>
+ Obtient l'instance du service d'appel aux fenêtres
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelSectionPrincipalBase.ServiceConfiguration">
+	<summary>
+ Obtient l'instance du service de configuration
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelSectionPrincipalBase.Changement">
+	<summary>
+ Obtenir le changement s'il existe, sinon le créer
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelSectionPrincipalBase.#ctor">
+	<summary>
+ Constructeur de base
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelSectionPrincipalBase.#ctor(IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement)">
+	<summary>
+ Constructeur du View Model
+ </summary>
+	<param name="serviceFenetre">le service d'appel aux fenêtres</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelSectionPrincipalBase.#ctor(IAFG.IA.VI.AF.Changements.ChangementAssVie,IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.IServiceConfiguration)">
+	<summary>
+ Constructeur du View Model
+ </summary>
+	<param name="changement">l'objet de changement de travail</param>
+	<param name="serviceFenetre">le service d'appel aux fenêtres</param>
+	<param name="serviceConfiguration">le service de configuration</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelSectionPrincipalBase.#ctor(IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.IServiceConfiguration)">
+	<summary>
+ Constructeur du View Model
+ </summary>
+	<param name="serviceFenetre">le service d'appel aux fenêtres</param>
+	<param name="serviceConfiguration">le service de configuration</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelSectionPrincipalBase.#ctor(IAFG.IA.VI.AF.Changements.Services.Chargement.IServiceChargement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.IServiceConfiguration)">
+	<summary>
+ Constructeur du View Model
+ </summary>
+	<param name="serviceChargement">le service de création/chargement de changement</param>
+	<param name="serviceFenetre">le service d'appel aux fenêtres</param>
+	<param name="serviceConfiguration">le service de configuration</param>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ViewModelSectionPrincipalBase">
+	<summary>
+ Classe de base de tous les ViewModels
+ </summary>
+	<remarks>Regroupe les fonctionnalités communes à tous les ViewModels de l'application, qui doivent tous en dériver</remarks>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.AjoutContractantSimple">
+	<summary>
+ Classe qui fait le traitement pour les modes d'ajouts de contractants en mode simplifié
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.ClientID">
+	<summary>
+ No d'identification du client
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.Id">
+	<summary>
+ Guid d'identification de la remise en vigueur
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.NomPrenom">
+	<summary>
+ Nom et prénom concaténés de l'individu de la remise en vigueur
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.Prenom">
+	<summary>
+ Prénom de l'individu
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.Nom">
+	<summary>
+ Nom de l'individu
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.AbsenceAuTravail">
+	<summary>
+ Réponse à la question sur l'absence au travail de l'individu
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.MaladiesDiverses">
+	<summary>
+ Réponse à la question sur les maladies diverses de l'individu
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.MGPresent">
+	<summary>
+ Réponse à la question sur les maladies graves de l'individu
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.QuestionMG">
+	<summary>
+ Réponse à la question sur la deuxième question sur les maladies graves de l'individu
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.RAPresent">
+	<summary>
+ Réponse à la question si l'individu a une protection "Revenu d'appoint"
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.QuestionRA">
+	<summary>
+ Réponse à la sous-question à l'individu sur la protection "Revenu d'appoint"
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.SIDA">
+	<summary>
+ Réponse sur la question en lien avec le SIDA
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.VSPresent">
+	<summary>
+ Réponse à la sous-question à l'individu sur la protection "Vie et sérénité"
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.EstVisibleSousQuestionMaladieGrave">
+	<summary>
+ Visibilité ou non de la sous question sur les maladies graves
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.EstVisibleQuestionPrincipaleMaladieGrave">
+	<summary>
+ Visibilité ou non de la première question sur les maladies graves
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.EstVisibleSousQuestionRevenuAppoint">
+	<summary>
+ Visibilité ou non de la sous-question (e) du revenu d'appoint
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.EstActifBoutonModifier">
+	<summary>
+ Retourne si le bouton modifier doit etre actif ou non
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.EstVisibleQuestionPrincipaleRevenuAppoint">
+	<summary>
+ Visibilité ou non de la question du revenu d'appoint
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.EstVisibleQuestionPrincipaleVieSerenite">
+	<summary>
+ Visibilité ou non de la question principale sur la protection "Vie et sérénité"
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.EstNouvelIndividuChangement">
+	<summary>
+ Indique que l'individu est nouveau pour le changement courant
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.#ctor(IAFG.IA.LU.AP.Changement.ViewModel.Commun.IGestionListeAssure{IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure},IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurViewModel)">
+	<summary>
+ Initialiser l'objet avec des valeurs par défaut
+ </summary>
+	<param name="parent">Vue de la liste des remises en vigueur</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.GererAfficherSurChangementResileeDepuis">
+	<summary>
+ Notifier les propriétés d'affichage concernée par un changement à la
+ durée de la résiliation
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.TrouverProtectionMaladieGrave">
+	<summary>
+ Trouver une protection pour les maladies graves
+ </summary>
+	<returns>Vrai si la protection est trouvée faux sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.TrouverProtectionRevenuAppoint">
+	<summary>
+ Trouver une protection sur les revenus d'appoint
+ </summary>
+	<returns>Vrai si la protection est trouve faux sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1244.RemiseVigueurAssure.TrouverProtectionVieSerenite">
+	<summary>
+ Trouver une protection vie et sérénité pour l'individu
+ </summary>
+	<returns>Vrai si la protection est trouve faux sinon</returns>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceViewModel.EstActifModifier">
+	<summary>
+ Détermine si le bouton modifier est activé ou non
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceViewModel.EstModeAssiste">
+	<summary>
+ Mode actuel de saisi, assisté ou non
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceViewModel.CommandeAjouter">
+	<summary>
+ Expose la commande d'ajout du gestionnaire de liste pour binding
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceViewModel.ListeAssure">
+	<summary>
+ Obtient la liste d'assurés de la transaction courante
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceViewModel.ListIndividuCommune">
+	<summary>
+ Expose la liste d'individus du gestionnaire et commune au changement pour binding
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceViewModel.DateNaissanceOriginale">
+	<summary>
+ Expose la date de naissance originale pour binding
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceViewModel.DateNaissanceCorrigee">
+	<summary>
+ Expose la date de naissance corrigée pour binding
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceViewModel.#ctor(IAFG.IA.VI.AF.Changements.ChangementAssVie,IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.IServiceConfiguration)">
+	<summary>
+ Constructeur du ViewModel pour piloter l'écran du changement de date de naissance
+ </summary>
+	<param name="changement">Le changement initié sur la police d'assurance</param>
+	<param name="serviceFenetre">Le service qui permet de naviguer et appeler le vb6</param>
+	<param name="serviceConfiguration">Le service qui contient les données partagées dans l'application</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceViewModel.GestionChangementDate(System.String)">
+	<summary>
+ Permet de changer la date de naissance corrigé lors de la modification/création d'un nouvel assuré
+ </summary>
+	<param name="idIndividuModifie">L'ID du nouvel assuré</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceViewModel.ValiderSiOnPeutAjouter">
+	<summary>
+ Fonction qui vérifie si on peut ajouter une ligne à la liste des contractants
+ </summary>
+	<returns>Vrai si on peut en ajouter un nouveau, faux sinon</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceViewModel.TraiterChangementSelection(System.String,System.String,IAFG.IA.LU.AP.Changement.ViewModel.Commun.AssureBase{IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceAssure})">
+	<summary>
+ Effectuer les traitements nécessaires lorsque la sélection d'un individu change
+ </summary>
+	<param name="ancienIdIndividu">L'encien individu sélectionné</param>
+	<param name="nouvelIdIndividu">Le nouvel individu sélectionné</param>
+	<param name="assureBase">L'objet assuré base (permet d'accéder à la liste des individus)</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceViewModel.TrouverDateNaissanceCorrige(System.String)">
+	<summary>
+ Fonction qui permet de trouver la date de naissance corrigé
+ </summary>
+	<param name="idIndividu">L'identitifant de l'individu</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceViewModel.MettreAJourAvantFermeture">
+	<summary>
+ Effectue le triatement spécifique à l'UT avant d'autoriser la fermeture de la fenêtre
+ </summary>
+	<returns>la valeur d'énumération coresspondant au résultat du traitement</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceViewModel.SupprimerTransactionExistante">
+	<summary>
+ Méthode qui supprime toutes les transactions existantes. On ajoute les existantes à partir de la grille au lieu de les modifier
+ De plus, on supprime les anciens messages d'erreur
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceViewModel.EvaluerGraviteErreur(IAFG.IA.VI.AF.Changements.ENUMs.TypeExecuter,IAFG.IA.VI.AF.Changements.ENUMs.TypeExecuter)">
+	<summary>
+ Gestion des priorités d'erreur.  Si la dernière exécution de la transaction  
+ retourne une erreur supérieure aux précédentes, on doit alors la changer, 
+ sinon on ne fait rien, pour conserver l'erreur la plus importante
+ </summary>
+	<param name="nouvelleErreur">La nouvelle erreur a évaluer</param>
+	<param name="erreurLaPlusgrave">L'erreur la plus grave</param>
+	<returns>la nouvelle erreur la plus grave</returns>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceViewModel.VerifierRemplissageDerniereLigne">
+	<summary>
+ Fonction qui valide que la dernière ligne du tableau soit remplie
+ </summary>
+	<returns>Vrai si la dernière ligne est remplie, faux sinon</returns>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU124C.DateNaissanceViewModel">
+	<summary>
+ Classe de ViewModel de la transaction de date de naissance
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ItemIndividu.NomPrenomInitiale">
+	<summary>
+ Le nom et le prénom de l'individu suivi de son initiale
+ </summary>
+	<value>Le nom suivi de l'individu suivi de son prénom et de son initiale, une chaîne par défaut sinon.</value>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ItemIndividu.Id">
+	<summary>
+ L'id de l'individu
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ItemIndividu.Initiale">
+	<summary>
+ L'initiale de l'individu
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ItemIndividu.Nom">
+	<summary>
+ Le nom de l'individu
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ItemIndividu.Label">
+	<summary>
+ Le libellé
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ItemIndividu.Prenom">
+	<summary>
+ Le prénom de l'individu
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ItemIndividu.DateNaissance">
+	<summary>
+ La date de naissance de l'individu
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ItemIndividu.EstItemPourAjout">
+	<summary>
+ Indique si c'est le libellé qui ouvre la fenêtre d'ajout
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ItemIndividu.Compare(System.Object,System.Object)">
+	<summary>
+ Permet de vérifier l'égalité entre deux instances en ne comparant que 
+ l'id des deux objets.
+ </summary>
+	<param name="x">Premier item à comparer</param>
+	<param name="y">Deuxième item à comparer</param>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Commun.ItemIndividu">
+	<summary>
+ Représente un individu (ex : contractant)
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.My.Resources.Ressources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.My.Resources.Ressources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.My.Resources.Ressources.LIBELLE_NO_POLICE">
+	<summary>
+  Recherche une chaîne localisée semblable à Numéro de police.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.My.Resources.Ressources.LUU1244_NOUVEL_ASSURE_INDIVIDUEL">
+	<summary>
+  Recherche une chaîne localisée semblable à Nouvel assuré individuel.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.My.Resources.Ressources.LUU1244_PROTECTIONS_LABEL_BOUTON">
+	<summary>
+  Recherche une chaîne localisée semblable à _Voir Protections.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.My.Resources.Ressources.LUU12A0_IDENTIFIER_ASSURE">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez modifier les informations de l'assuré..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.My.Resources.Ressources.LUU12A0_IDENTIFIER_CONTRACTANT">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez modifier les informations du contractant..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.My.Resources.Ressources.LUU12A0_IDENTIFIER_NOUVEAU_CONTRACTANT">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez identifier le nouveau contractant..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.My.Resources.Ressources.LUU12A0_IDENTIFIER_NOUVEL_ASSURE">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez identifier l'assuré..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.My.Resources.Ressources.LUU12F0_FICHIER_INTROUVABLE">
+	<summary>
+  Recherche une chaîne localisée semblable à [nom de fichier introuvable].
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.My.Resources.Ressources.LUU12F0_NOUVEAU_PROPRIETAIRE">
+	<summary>
+  Recherche une chaîne localisée semblable à ENTRER LE NOM DU PROPRIÉTAIRE.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.My.Resources.Ressources.MODE_ASSISTE">
+	<summary>
+  Recherche une chaîne localisée semblable à Mode assisté.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.My.Resources.Ressources.MODE_NON_ASSISTE">
+	<summary>
+  Recherche une chaîne localisée semblable à Mode non-assisté.
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.My.Resources.Ressources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Commun.EnumTypeModeIdentification">
+	<summary>
+ Énumération du type d'appel à la fenêtre d'identification d'assuré/contractant, afin de configurer le traitement
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.AjoutContractant">
+	<summary>
+ Classe qui fait le traitement pour les modes d'ajouts de contractants
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.ModifierContractant">
+	<summary>
+ Classe qui fait le traitement pour les modes de modification des contractants
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.EnumValidationInformationsPolice">
+	<summary>
+ État de validation lors de la saisi des contractants
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Commun.EnumEtatNumeroPoliceSaisie">
+	<summary>
+ Énumération contenant l'état du numéro de police saisie
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Services.EnumNaviguation">
+	<summary>
+ Énumération des appels d'action sur agent
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ParametrePopupValidations">
+	<summary>
+ Classe de transport des paramètres pour l'appel spécifique à la fenêtre d'identification d'assuré/contractant
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ParametreIdentification.ModeIdentification">
+	<summary>
+ Obtient le mode d'identification pour configurer le traitement
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ParametreIdentification.TagIdOrigine">
+	<summary>
+ Obtient l'identifiant GUID de l'objet à modifier
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ParametreIdentification.Index">
+	<summary>
+ Obtient l'index de l'objet à modifier
+ </summary>
+	<remarks>à Supprimer si plus requis en .NET</remarks>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ParametreIdentification.TagIdRetour">
+	<summary>
+ Obtient ou définit l'identifiant retourné à la fin du traitement
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ParametreIdentification.#ctor(IAFG.IA.LU.AP.Changement.ViewModel.Commun.EnumTypeModeIdentification,System.String,System.Int32)">
+	<summary>
+ Constructeur
+ </summary>
+	<param name="mode">le mode d'appel au traitement d'identification</param>
+	<param name="tagId">l'identifiant de l'objet à mettre à jour</param>
+	<param name="index">l'index de l'objet à mettre à jour</param>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ParametreIdentification">
+	<summary>
+ Classe de transport des paramètres pour l'appel spécifique à la fenêtre d'identification d'assuré/contractant
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU12A0.TypeModeIdentificationBase">
+	<summary>
+ Classe qui définit toutes les opérations possibles pour un mode d'identification
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1280.InstructionSpecialeViewModel.CommandeSupprimer">
+	<summary>
+ Permet de faire le lien vers à fonction depuis le XAML 
+ </summary>
+	<returns>Adresse de la fonction cible</returns>
+	<remarks>Voir fonction <see cref="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1280.InstructionSpecialeViewModel.SupprimerInstructions"/></remarks>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1280.InstructionSpecialeViewModel.InstructionsSpeciales">
+	<summary>
+ Obtient ou définit les instructions spéciales pour un individu
+ </summary>
+	<remarks>Dépend de l'individu courant</remarks>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1280.InstructionSpecialeViewModel.TransactionInstructionSpecialeCourante">
+	<summary>
+ Obtient ou définit la transaction spéciale courante
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1280.InstructionSpecialeViewModel.#ctor(IAFG.IA.VI.AF.Changements.ChangementAssVie,IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.IServiceConfiguration)">
+	<summary>
+ Constructeur du ViewModel pour piloter l'écran des instructions spéciales
+ </summary>
+	<param name="changement">Le changement initié sur la police d'assurance</param>
+	<param name="serviceFenetre">Le service qui permet de naviguer et appeler le vb6</param>
+	<param name="serviceConfiguration">Le service qui contient les données partagées dans l'application</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1280.InstructionSpecialeViewModel.SupprimerInstructions">
+	<summary>
+ Supprime les instructions spéciales de l'individu courant
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1280.InstructionSpecialeViewModel.CanClose(System.Action{System.Boolean})">
+	<summary>
+ Regroupe les validations et autres opérations à exécuter avant d'autoriser la fermeture et la sortie de l'écran courant
+ </summary>
+	<param name="callback">l'action à laquelle retourner le résultat</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU1280.InstructionSpecialeViewModel.SauvegarderInstructionSpeciale">
+	<summary>
+ Sauvegarder les modifications dans le fichier xml
+ </summary>
+	<returns>Le résultat de la sauvegarde si elle est tentée. Si elle n'est pas lancée retourne null</returns>
+	<remarks>N'affiche jamais de message d'erreurs.</remarks>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU1280.InstructionSpecialeViewModel">
+	<summary>
+ Classe de ViewModel du contrôle d'instructions spéciales
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.ServiceConfiguration.NoCie">
+	<summary>
+ Obtient le numéro de compagnie issu de la base de registre
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.ServiceConfiguration.Banniere">
+	<summary>
+ Obtient ou définit la bannière
+ </summary>
+	<remarks>À l'état initial, la valeur dépend de la langue du registre, mais la valeur peut ensuite changer</remarks>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.ServiceConfiguration.CodeLangue">
+	<summary>
+ Obtient le code de langue issu de la base de registre
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.ServiceConfiguration.Distribution">
+	<summary>
+ Obtient la valeur de distribution de la base de registre
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.ServiceConfiguration.DateFinVersion">
+	<summary>
+ Obtient la date de fin de version de la base de registre
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.ServiceConfiguration.EAPVersion">
+	<summary>
+ Obtient la version de l'application proposition électronique.
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.ServiceConfiguration.Version">
+	<summary>
+ Obtient la version de l'application proposition électronique.
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.ServiceConfiguration.CheminFichiersHtmlTransactionSimplifies">
+	<summary>
+ Obtient la version de l'application proposition électronique.
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.ServiceConfiguration.FichierClientInstalle">
+	<summary>
+ Indique si le fichier client (application) est installé.
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.ServiceConfiguration.NoContrat">
+	<summary>
+ Obtient ou définit le numéro de contrat
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.ServiceConfiguration.CleContexte">
+	<summary>
+ Obtient ou définit la clé de contexte
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.ServiceConfiguration.#ctor">
+	<summary>
+ Constructeur
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.ServiceConfiguration.ConvertirLangueRegistre(System.String)">
+	<summary>
+ Traduit la langue issue de la base de registre dans le format supporté par l'application
+ </summary>
+	<param name="codeLangue"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.ServiceConfiguration.ModifierDistribution(IAFG.IA.VI.AF.Proposition.ENUMs.TypeSaisie)">
+	<summary>
+ Modifier la distribution
+ </summary>
+	<param name="distribution">Le type de la distribution</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.ServiceConfiguration.DefinirNumeroCompagnie(System.Int32)">
+	<summary>
+ Définir le numéro de compagnie réutilisé pour à travers toutes les instances
+ du service de configuration
+ </summary>
+	<param name="numeroCompagnie">le numéro de la compagnie</param>
+	<remarks>Cette méthode sert à définir la configuration depuis le vb6</remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.ServiceConfiguration.DefinirDistribution(IAFG.IA.VI.AF.Proposition.ENUMs.TypeSaisie)">
+	<summary>
+ Définir le type de distribution du logiciel
+ </summary>
+	<param name="distribution">type de saisie</param>
+	<remarks>Cette méthode sert à définir la configuration depuis le vb6</remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.ServiceConfiguration.DefinirBanniere(IAFG.IA.VI.ENUMs.Banniere)">
+	<summary>
+ Définir la bannière courante
+ </summary>
+	<param name="banniere">nouvelle bannière</param>
+	<remarks>Cette méthode sert à définir la configuration depuis le vb6</remarks>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.ServiceConfiguration">
+	<summary>
+ Classe de service pour obtenir les valeurs de configuration de l'application (clés de registre, paramétrage initial)
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.ParametreBarreSecondaire.Action">
+	<summary>
+ Obtient ou définit l'action en cours
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.ParametreBarreSecondaire.LangueDomaine">
+	<summary>
+ Obtient ou définit la langue courante
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.ParametreBarreSecondaire.Titre">
+	<summary>
+ Obtient ou définit le titre à afficher
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.ParametreBarreSecondaire.Detail">
+	<summary>
+ Obtient ou définit le détail à afficher
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.ParametreBarreSecondaire.Detail2">
+	<summary>
+ Obtient ou définit le complément de détail à afficher
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Services.ParametreBarreSecondaire">
+	<summary>
+ Classe de transport des paramètres à passer à la barre secondaire
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieViewModel.ListeAssure">
+	<summary>
+ Liste des assurés pour la transaction
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieViewModel.EstVisibleListeAssure">
+	<summary>
+ Affiche ou non le tableau des assurés
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieViewModel.TransactionSimplifieCourante">
+	<summary>
+ Obtient ou définit la transaction spéciale courante
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieViewModel.Compagnie">
+	<summary>
+ Numéro de companie
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieViewModel.Banniere">
+	<summary>
+ Bannière
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieViewModel.Langue">
+	<summary>
+ Langue actuelle de l'application
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieViewModel.DossierTravail">
+	<summary>
+ Le dossier contenant les fichiers html qui seront utilisés pour l'affichage
+ des transactions simplifiés
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieViewModel.FichierHTML">
+	<summary>
+ Le nom du formulaire pour la transaction simplifiée.  C'est un formulaire html présent dans 
+ le dossier de travail
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieViewModel.DataXml">
+	<summary>
+ Les données existantes sauvegardées sous xml dans la transaction simplifiées
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieViewModel.FormatDate">
+	<summary>
+ Le format de date qui servira à l'affichage des dates dans le formulaire HTML
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieViewModel.DataXmlReponses">
+	<summary>
+ Propriété qui contient les réponses au formulaire de transaction suite à
+ la notification via EstPretPourSauvegarde
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieViewModel.EstPretPourAffichage">
+	<summary>
+ Sert de déclencheur pour afficher la page html dans le navigateur
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieViewModel.EstPretPourSauvegarde">
+	<summary>
+ Sert de déclencheur pour obtenir le xml qui représente les données saisies dans le formulaire html
+ qui sera placé dans la propriété DataXmlReponses
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieViewModel.#ctor(IAFG.IA.VI.AF.Changements.ChangementAssVie,IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.IServiceFenetreChangement,IAFG.IA.LU.AP.Changement.ViewModel.Services.Configuration.IServiceConfiguration,IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ParametreTransactionSimplifie)">
+	<summary>
+ Constructeur du ViewModel pour piloter l'écran des instructions spéciales
+ </summary>
+	<param name="changement">Le changement initié sur la police d'assurance</param>
+	<param name="serviceFenetre">Le service qui permet de naviguer et appeler le vb6</param>
+	<param name="serviceConfiguration">Le service qui contient les données partagées dans l'application</param>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieViewModel.MettreAJourAvantFermeture">
+	<summary>
+ Appellé lors d'une sauvegarde qui cause la fermeture du popup
+ </summary>
+	<returns>
+ Le résultat de l'exécution
+ </returns>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.TransactionSimplifie.TransactionSimplifieViewModel">
+	<summary>
+ Classe de ViewModel du contrôle d'instructions spéciales
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.LUU1249.ClasseRisqueGestionListeAssure.ListeClasseDeRisque">
+	<summary>
+ La liste des valeurs de classes de risques de la combobox
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.LUU1249.ClasseRisqueGestionListeAssure">
+	<summary>
+ Classe de gestion des liste d'assurés de la transaction de classe de risque
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.LUU12F0.InfoPoliceGestionListeAssure.InitialiserListeAssure">
+	<summary>
+ Retourne la liste des assurés de la police
+ </summary>
+	<returns>Liste d'assurés</returns>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ParametreTransactionSimplifie.TypeTransaction">
+	<summary>
+ Obtient ou définit le type de transaction simplifié
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ParametreTransactionSimplifie">
+	<summary>
+ Classe de transport des paramètres pour les transactions simplifiées
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Commun.CleRegistre">
+	<summary>
+ Classe de constantes pour les clés de registre utilisées dans l'application
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.Changement.ViewModel.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.UnityViewModelFactory.#ctor(Microsoft.Practices.Unity.IUnityContainer)">
+	<summary>
+ Constructeur acceptant le conteneur d'inversion de contrôle.
+ </summary>
+	<param name="unityContainer">Conteneur à utiliser pour créer les écrans.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.UnityViewModelFactory.ObtenirInstance``1(System.String)">
+	<summary>
+ Obtient l'instance d'un écran d'après sa clé.
+ </summary>
+	<param name="cle">Clé identifiant un écran.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.Changement.ViewModel.Commun.UnityViewModelFactory.ObtenirInstanceAvecParametres(System.String,System.Object)">
+	<summary>
+  Obtient l'instance d'un écran d'après sa clé et ses paramètres.
+ </summary>
+	<param name="cle">Clé identifiant un écran.</param>
+	<param name="parametre">paramètre nécessaire au constructeur</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.LU.AP.Changement.ViewModel.Commun.UnityViewModelFactory">
+	<summary>
+ Fabrique d'écran pour l'application basé sur le IoC Container Unity.
+ </summary>
+</member>
+</members>
+</doc>

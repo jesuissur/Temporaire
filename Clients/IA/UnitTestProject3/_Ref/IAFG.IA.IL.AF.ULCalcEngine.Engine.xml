@@ -1,0 +1,1080 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.IL.AF.ULCalcEngine.Engine
+</name>
+</assembly>
+<members>
+<member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.NUnit.Utilitaires.InitialiserContexte">
+	<summary>
+ Initialise l'objet de contexte en début de traitement.
+ </summary>
+	<remarks>
+ L'initilisation doit être TOUJOURS faite dans le SetUp d'une classe!!!!
+ </remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.NUnit.Utilitaires.RelacherContexte">
+	<summary>
+ Destruction de l'objet de contexte en fin de traitement.
+ </summary>
+	<remarks>
+ La destruction doit être TOUJOURS faite dans le TearDown d'une classe!!!!
+ </remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.NUnit.CalcEngineTests.SetUp">
+	<summary>
+ Utilisé pour ajouter du code à exécuter AVANT chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.NUnit.CalcEngineTests.TearDown">
+	<summary>
+ Utilisé pour ajouter du code à exécuter APRÈS chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AF.ULCalcEngine.Engine.NUnit.CalcEngineTests">
+	<summary>
+ Batterie de tests unitaires.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AF.ULCalcEngine.Engine.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.IL.AF.ULCalcEngine.Engine.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:IAFG.IA.IL.AF.ULCalcEngine.Engine.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.Individuals.FindIndividual(System.String)">
+	<summary>
+ Permet de trouver un "Assure" à partir du Id d'un "Individu"
+ </summary>
+	<param name="idIndividu">Id de l'individu</param>
+	<returns>Assuré trouvé</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.getIllustrationPlan(System.String)">
+	<summary>
+ Function retrieving the illustration plan from the coverage code
+ </summary>
+	<param name="CoverageCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Debug(System.Boolean)">
+	<summary>
+ Enlable or disable or log output
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Aii_Param(System.Int16,System.Int16,System.Double,System.Double[]@,System.Double,System.Double[]@,System.DateTime[]@,System.Boolean)">
+	<summary>
+ Initialize all the parameter of the calc engine for TAI
+ </summary>
+	<param name="FundID">ID of the current fund, int from 1 to 10.</param>
+	<param name="FundType">Type of fund, 0 = guaranteed, 1 = indiciel.</param>
+	<param name="Allocation"> The allocation of this fund.</param>
+	<param name="InterestRates">Array of the interests rates for the duration of the policy. Index starting at 1.</param>
+	<param name="DDAAllocation">The allocation of DDA for this fund.</param>
+	<param name="CollateralAccount">Account to be selected as the IRIS Collateral account in function Set_Iris_Strategy.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.InitCalcEngine(System.Int16)">
+	<summary>
+ Initialize the calc engine
+ </summary>
+	<param name="application">The application for wich you want to calculate</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Pua_Param(System.Int16[],System.Double[],System.Double)">
+	<summary>
+ Initialize all the parameter of the calc engine for PUA purchase
+ </summary>
+	<param name="BonusPaymentOption"></param>
+	<param name="Allocation"></param>
+	<param name="MaximumFaceAmount"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Compute(System.Boolean,System.Boolean)">
+	<summary>
+ Does all the calculation for the policy
+ </summary>
+	<param name="computeIRRAndExtendedInsurance">Calc everything including extended insurance column and the IRR</param>
+	<param name="firstYearOnly">Calc only for first year</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Get_Engine_Error(System.String)">
+	<summary>
+ This function returns the error message of the engine.
+ </summary>
+	<param name="Lang">Language of the error message, "E" for English, "F" for french.</param>
+	<returns>The error message</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Base_Values(System.String,System.DateTime,System.Int16,System.Int16,System.Int16,System.Int16)">
+	<summary>
+ Initialize all the parameters of the calc engine regarding premium scenario
+ </summary>
+	<param name="Province">2 letters province code of the policy. Same as Canada Post</param>
+	<param name="CreationDate">Date of the policy creation.</param>
+	<param name="BonusType"> Bonus Type for this policy, 3 = VARIABLE, 2 = GUARANTEED, 4 = NoBonus</param>
+	<param name="Frequency">The premium frequency, 0 = yearly, 1 = monthly</param>
+	<param name="ShuttleAccount">Wether the transit account is showed before or after taxes, 0 = Transit account after tax, 1 = Transit account before tax</param>
+	<param name="Concept">The concept for this illustration, 0 for regular, 5 for IRIS</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Base_Values(System.String,System.DateTime,System.Int16,System.Double[],System.Int16,System.Int16,System.Int16)">
+	<summary>
+ Initialize all the parameters of the calc engine regarding premium scenario
+ </summary>
+	<param name="Province">2 letters province code of the policy. Same as Canada Post</param>
+	<param name="CreationDate">Date of the policy creation.</param>
+	<param name="BonusType"> Bonus Type for this policy, 3 = VARIABLE, 2 = GUARANTEED, 4 = NoBonus</param>
+	<param name="Frequency">The premium frequency, 0 = yearly, 1 = monthly</param>
+	<param name="ShuttleAccount">Wether the transit account is showed before or after taxes, 0 = Transit account after tax, 1 = Transit account before tax</param>
+	<param name="Concept">The concept for this illustration, 0 for regular, 5 for IRIS</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Individual(System.Int16,System.Int16,System.Int16,System.Int16,System.DateTime,System.Boolean,System.Int16,System.Boolean,System.Boolean)">
+	<summary>
+ Sets the information regarding an insured
+ </summary>
+	<param name="IndividualID">The Id of the insured</param>
+	<param name="IndividualSex">The sex of the insured, 1 for male, 2 for female</param>
+	<param name="IndividualSmoker">The smoker status of the insured</param>
+	<param name="IndividualAge">The age of the insured</param>
+	<param name="IndividualBirthDate">The birth date of the insured</param>
+	<param name="IndividualInsurable">Wether or not this insured is insurable</param>
+	<param name="IndividualInsuredID">The id of the insured on wich this individual is, from 1 to 9</param>
+	<param name="IndividualIsInsured">If this individual is insured or not.</param>
+	<param name="IndividualIsCorporation">If this is a corporation or not.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Aii_Param(System.Int16,System.Int16,System.Double,System.Double[]@,System.Double,System.Boolean)">
+	<summary>
+ Initialize all the parameter of the calc engine for TAI
+ </summary>
+	<param name="FundID">ID of the current fund, int from 1 to 10.</param>
+	<param name="FundType">Type of fund, 0 = guaranteed, 1 = indiciel.</param>
+	<param name="Allocation"> The allocation of this fund.</param>
+	<param name="InterestRates">Array of the interests rates for the duration of the policy. Index starting at 1.</param>
+	<param name="DDAAllocation">The allocation of DDA for this fund.</param>
+	<param name="CollateralAccount">Account to be selected as the IRIS Collateral account in function Set_Iris_Strategy.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Aii_Param(System.Int16,System.Int16,System.Double,System.Double[]@,System.Double,System.DateTime[]@,System.Boolean)">
+	<summary>
+ Initialize all the parameter of the calc engine for TAI
+ </summary>
+	<param name="FundID">ID of the current fund, int from 1 to 10.</param>
+	<param name="FundType">Type of fund, 0 = guaranteed, 1 = indiciel.</param>
+	<param name="Allocation"> The allocation of this fund.</param>
+	<param name="InterestRates">Array of the interests rates for the duration of the policy. Index starting at 1.</param>
+	<param name="DDAAllocation">The allocation of DDA for this fund.</param>
+	<param name="CollateralAccount">Account to be selected as the IRIS Collateral account in function Set_Iris_Strategy.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Aii_Param(System.Int16,System.Int16,System.Double,System.Double[]@,System.Double,System.Double[]@,System.Boolean)">
+	<summary>
+ Initialize all the parameter of the calc engine for TAI
+ </summary>
+	<param name="FundID">ID of the current fund, int from 1 to 10.</param>
+	<param name="FundType">Type of fund, 0 = guaranteed, 1 = indiciel.</param>
+	<param name="Allocation"> The allocation of this fund.</param>
+	<param name="InterestRates">Array of the interests rates for the duration of the policy. Index starting at 1.</param>
+	<param name="DDAAllocation">The allocation of DDA for this fund.</param>
+	<param name="CollateralAccount">Account to be selected as the IRIS Collateral account in function Set_Iris_Strategy.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Shuttle_Acct_Param(System.Int16,System.Int16,System.Double,System.Double[]@,System.Double)">
+	<summary>
+ Initialize all the parameter of the calc engine for the shuttle account
+ </summary>
+	<param name="FundID">ID of the current fund, int from 1 to 10.</param>
+	<param name="FundType">Type of fund, 0 = guaranteed, 1 = indiciel.</param>
+	<param name="Allocation">The allocation of this fund.</param>
+	<param name="InterestRates">Array of the interests rates for the duration of the policy. Index starting at 1.</param>
+	<param name="DDAAllocation">The allocation of DDA for this fund.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Shuttle_Acct_Param(System.Int16,System.Int16,System.Double,System.Double[]@,System.Double,System.Double[]@)">
+	<summary>
+ Initialize all the parameter of the calc engine for the shuttle account
+ </summary>
+	<param name="FundID">ID of the current fund, int from 1 to 10.</param>
+	<param name="FundType">Type of fund, 0 = guaranteed, 1 = indiciel.</param>
+	<param name="Allocation">The allocation of this fund.</param>
+	<param name="InterestRates">Array of the interests rates for the duration of the policy. Index starting at 1.</param>
+	<param name="DDAAllocation">The allocation of DDA for this fund.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Shuttle_Acct_Param(System.Int16,System.Int16,System.Double,System.Double[]@,System.Double,System.DateTime[]@)">
+	<summary>
+ Initialize all the parameter of the calc engine for the shuttle account
+ </summary>
+	<param name="FundID">ID of the current fund, int from 1 to 10.</param>
+	<param name="FundType">Type of fund, 0 = guaranteed, 1 = indiciel.</param>
+	<param name="Allocation">The allocation of this fund.</param>
+	<param name="InterestRates">Array of the interests rates for the duration of the policy. Index starting at 1.</param>
+	<param name="DDAAllocation">The allocation of DDA for this fund.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Shuttle_Acct_Param(System.Int16,System.Int16,System.Double,System.Double[]@,System.Double,System.Double[]@,System.DateTime[]@)">
+	<summary>
+ Initialize all the parameter of the calc engine for the shuttle account
+ </summary>
+	<param name="FundID">ID of the current fund, int from 1 to 10.</param>
+	<param name="FundType">Type of fund, 0 = guaranteed, 1 = indiciel.</param>
+	<param name="Allocation">The allocation of this fund.</param>
+	<param name="InterestRates">Array of the interests rates for the duration of the policy. Index starting at 1.</param>
+	<param name="DDAAllocation">The allocation of DDA for this fund.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Portfolio_Account(System.Double[]@)">
+	<summary>
+ Set the portfolio interest rate in the engine.
+ </summary>
+	<param name="InterestRates">Array of the interests rates for the duration of the policy. Index starting at 1.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Portfolio_Account_Shuttle(System.Double[]@)">
+	<summary>
+ Set the portfolio interest rate for the shuttle fund in the engine.
+ </summary>
+	<param name="InterestRates">Array of the interests rates for the duration of the policy. Index starting at 1.</param>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Portfolio_Account_Shuttle(System.Double[]@,System.Double[]@)">
+	<summary>
+ Set the portfolio interest rate for the shuttle fund in the engine.
+ </summary>
+	<param name="InterestRates">Array of the interests rates for the duration of the policy. Index starting at 1.</param>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Portfolio_Account_Shuttle(System.Double[]@,System.DateTime[]@)">
+	<summary>
+ Set the portfolio interest rate for the shuttle fund in the engine.
+ </summary>
+	<param name="InterestRates">Array of the interests rates for the duration of the policy. Index starting at 1.</param>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Portfolio_Account_Shuttle(System.Double[]@,System.Double[]@,System.DateTime[]@)">
+	<summary>
+ Set the portfolio interest rate for the shuttle fund in the engine.
+ </summary>
+	<param name="InterestRates">Array of the interests rates for the duration of the policy. Index starting at 1.</param>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Portfolio_Account_Accum(System.Double[]@)">
+	<summary>
+ Set the portfolio interest rate for the accumulation fund in the engine.
+ </summary>
+	<param name="InterestRates">Array of the interests rates for the duration of the policy. Index starting at 1.</param>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Portfolio_Account_Accum(System.Double[]@,System.Double[]@)">
+	<summary>
+ Set the portfolio interest rate for the accumulation fund in the engine.
+ </summary>
+	<param name="InterestRates">Array of the interests rates for the duration of the policy. Index starting at 1.</param>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Portfolio_Account_Accum(System.Double[]@,System.DateTime[]@)">
+	<summary>
+ Set the portfolio interest rate for the accumulation fund in the engine.
+ </summary>
+	<param name="InterestRates">Array of the interests rates for the duration of the policy. Index starting at 1.</param>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Portfolio_Account_Accum(System.Double[]@,System.Double[]@,System.DateTime[]@)">
+	<summary>
+ Set the portfolio interest rate for the accumulation fund in the engine.
+ </summary>
+	<param name="InterestRates">Array of the interests rates for the duration of the policy. Index starting at 1.</param>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Withdrawals(System.Int16,System.Double[]@,System.Boolean[]@)">
+	<summary>
+ Initialize all the parameter of the calc engine for withdraw
+ </summary>
+	<param name="WithdrawalType">0 =  before tax, 1 = after tax</param>
+	<param name="WithdrawalAmount">The amount to withdraw each year, first index is 0</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Deposits(System.Double[]@)">
+	<summary>
+ Initialize all the parameters of the calc engine for deposits
+ </summary>
+	<param name="DepositAmount">The amount to deposit each year, first index is 0</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Premium(System.Int16,System.Int16[]@,System.Double[]@)">
+	<summary>
+ Initialize all the parameter of the calc engine regarding premium scenario
+ </summary>
+	<param name="NbYearsPremiumPaid">The number of years a premium is paid</param>
+	<param name="PremiumType">Array of the premium type for every year there is a premium to pay. See Get_Premium_Code for values.</param>
+	<param name="PremiumAmount">Array of the premium paid for every year. Must be same length as PremiumType.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Taxation(System.Boolean,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@)">
+	<summary>
+ Set the taxation information for this contract.
+ </summary>
+	<param name="ApplicantIsCorporation">True is the applicant is a corporation, false if not.</param>
+	<param name="IndividualMarginalTaxRate"></param>
+	<param name="IndividualDividendTaxRate"></param>
+	<param name="CorporationMarginalTaxRate"></param>
+	<param name="CorporationDividendTaxRate"></param>
+	<param name="CorporationCapitalTaxRate"></param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Coverage(System.String,System.String,System.String,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16[]@,System.Int16,System.DateTime,System.Int16,System.Double,System.Int16,System.Double,System.Int16,System.Int16,System.Int32,System.Int16,System.Double[]@,System.Double[]@,System.Double[]@,System.Int16[]@,System.DateTime,System.Double,System.Double,System.Int16,System.Double)">
+	<summary>
+ Initialize all the values regarding a coverage in the engine
+ </summary>
+	<param name="CoverageID">The id of the coverage, from 1 to 20</param>
+	<param name="CoverageCode">The code of this coverage, ex: "T10".</param>
+	<param name="OptionCode">The code of the option if any. If no option leave empty.</param>
+	<param name="SmokerCode">0 = non smoker elite, 1 = non smoker prefered, 2 = non smoker, 3 = smoker elite, 4 = smoker prefered, 5 = smoker</param>
+	<param name="InsuredAge">Age of the insured for the policy</param>
+	<param name="InsuredSex">The sex of the insured for the policy, 1 = male, 2 = female</param>
+	<param name="CostType">Cost type for this coverage</param>
+	<param name="YearsBeforeLevel">In the case of a YRT to LVL the number of years it takes to level.</param>
+	<param name="ProtectionType">The type of protection, 0 = individual, 1 = JFTD, 2 = JLTD, 3 = JLTD PU 1st death</param>
+	<param name="Individual">Lists of the insured, by their insured IDs</param>
+	<param name="NumberIndividual">The number of insured on this coverage.</param>
+	<param name="CreationDate">Date of creation of this coverage</param>
+	<param name="AgeOfLevel">If YRT to Level, the age of level, else 0</param>
+	<param name="Volume">Volume of the coverage.</param>
+	<param name="CoverageDuration">Duration of the coverage. In case of UL coverage, 0.</param>
+	<param name="COIMultiplier">The rate of compensation the agent is getting</param>
+	<param name="RenewalType">0 = at emission, 1 = guaranteed, 2 = re-issue</param>
+	<param name="ReductionDuration">The duration of the face amount reduction in years. If 0 there is no reduction.</param>
+	<param name="ReductionVolume">The volume of the reduction</param>
+	<param name="DeathBenefitOption">1 = FACE, 2 = FACE+FUND, 3 = WMAX, 5 = WMAX_OPTION, 6 = ROP, 7 = ACB</param>
+	<param name="ExtraPremiumPercent">The Rate of extra premium in %. Index must fit with the approriate insured.</param>
+	<param name="ExtraPremiumFlat">The rate of extra premium in $ / thousand. Index must fit with the approriate insured.</param>
+	<param name="TempExtraPremiumFlat">The rate of a temporary extra premium in $ / thousand. Index must fit with the approriate insured.</param>
+	<param name="TempExtraPremiumDuration">The duration of the Extra Premium. Index must fit with the approriate insured.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Wmax_Param(System.Boolean,System.Boolean,System.Int16,System.Double,System.Boolean,System.Boolean)">
+	<summary>
+ Sets the parameters for the WMAX
+ Declare as protected because WMAX is not suppported in phase 1
+ </summary>
+	<param name="isAOFA">Wether or not the policy is AOFA</param>
+	<param name="IsWMAX">Wether or not the policy is WMAX or C+F+VMAX</param>
+	<param name="WmaxMinDuration">If WMAX, the duration of minimisation</param>
+	<param name="FloorAmount">If WMAX, the floor amount</param>
+	<param name="CalculateWMAX">Should the engine calculate the WMAX value or not. Optional, false by default.</param>
+	<param name="LevelDeposit">Should the engine level the deposit on the first 3 years. Optional, true by default.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Benefit(System.String,System.String,System.String,System.Int16[]@,System.Int16@,System.Double,System.DateTime,System.Int16,System.Int16)">
+	<summary>
+ Set all the information for the additionnal benefits
+ </summary>
+	<param name="BenefitID">ID of this benefit, from 1 to 20</param>
+	<param name="CoverageID">ID of the coverage for wich this benefit is added.</param>
+	<param name="BenefitCode">Code of this benefit:"AD","ADD","GI","AF","CM","CMP","CICR","CADI","CADE"</param>
+	<param name="Individual">The individuals this Benefit applies too. In case of CID, this is only the corporation.</param>
+	<param name="NbIndividual">Number of individuals on this benefit.</param>
+	<param name="FaceAmount">The face amount of this AB.</param>
+	<param name="CreationDate">Creation date of the benefit.</param>
+	<param name="CostType">The cost type, 0 = Minimum, 1 = 200%*Minimum, 2 = Specify</param>
+	<param name="ExtraPremium">If there is an extra premium, 0 = none, 1 = twice, 2 = 3 times</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Iris_Strategy(System.Double[]@,System.Boolean[]@,System.Int16,System.Double,System.Int16,System.Boolean,System.Double[]@,System.Double[]@,System.Int16,System.Int16,System.Int16,System.Boolean,System.Boolean,System.Double)">
+	<summary>
+ Initializes all the parameters of the calc engine for the IRIS concept
+ </summary>
+	<param name="DesiredLoan">Array of the desired loans.</param>
+	<param name="MaximumLoan">Array of the Maximum loans.</param>
+	<param name="NumberYear">The number of year the IRIS strategy is active.</param>
+	<param name="InterestDeductible">% of the interest that are deductible.</param>
+	<param name="SourceFundsMaintain">The source of the fund to maintain policy in-force, 1 = From additional premiums, 2 = Partial loan repayment, 3 = Loans reduction, 4 = external</param>
+	<param name="NCPIDeduction">Use NCPI deduction or not.</param>
+	<param name="RefinancingAccruedFund">Array of the refinancing of accrued fund value.</param>
+	<param name="CapitalLoanRepayment">Array of the amount of repayment.</param>
+	<param name="LoanRepaymentType">The type of repayment, -1 = Total, -2 = none, -3 = customized</param>
+	<param name="RepaymentContractYear">The year the repayment will happen.</param>
+	<param name="CapitalLoanRepaymentSource">1 =  from new money, 2 = from policy</param>
+	<param name="ForceInputLoan">This is mostly for PPI. Allows to take loan higher then the calculated max.</param>
+	<param name="IsFreezeLoan">If the payment of interest is based on a freeze loan or not. Optional.</param>
+	<param name="FreezeLoanBalance">If it is the freeze loan, the balance of the loan to reach. Optional.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Alternative_Investment(System.Int16,System.Double[]@,System.Double[]@,System.Double[]@,System.Double,System.Double,System.Double,System.Double,System.Double[]@,System.Int16)">
+	<summary>
+ initialize all the parameter of the calc engine regarding alternative investment
+ </summary>
+	<param name="ComparisonType">The type of comparison, 1 = alternative invest, 2 = alt invest + term plan</param>
+	<param name="InterestRate">The rate of interest.</param>
+	<param name="DividendRate">The rate of dividend.</param>
+	<param name="CapitalGainRate">The rate of capital gain.</param>
+	<param name="InterestAllocation">The interest allocation.</param>
+	<param name="DividendAllocation">The divident allocation.</param>
+	<param name="CapitalGainRealisation">The capital gain realisation rate.</param>
+	<param name="TermFaceAmount">The face amount of the term plan, 0 if no term plan.</param>
+	<param name="TermPremium">The premium of the term plan.</param>
+	<param name="TermPlanCode">The code of the term plan: 1=AXIS T100, 2=AXIS T10, 3=AXIS T20, 4=OTHER T100, 5=OTHER T10, 6=OTHER T20</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Get_APL_Rate">
+	<summary>
+ Returns the Automatic Premium Loan.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Compensation(System.Int16,System.Double,System.Double,System.Double)">
+	<summary>
+ Sets the information regarding the agent comission.
+ </summary>
+	<param name="CompensationType">The type of commision, 0 = MGA, 1 = NA, 2 = Agent, 3 = PPI</param>
+	<param name="BonusPCT">The compensation bonus.</param>
+	<param name="CompensationRate">The comission rate.</param>
+	<param name="ExtraPremiumCompensationRate">The commission rate on extra premium.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Get_Column(System.Int16,System.Double[]@)">
+	<summary>
+ Returns a column from the calc engine
+ </summary>
+	<param name="ID"> The ID of the column you want.</param>
+	<param name="ColumnValues">Byref, Array of the values of the column</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Get_Compensation_Value(System.Double@,System.Double@)">
+	<summary>
+ Returns the compensation values
+ </summary>
+	<param name="CompensationFirst10Years">Comepnsation for the first 10 years.</param>
+	<param name="CompensationAllYears">Compensation for all years.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Get_Premium_Duration(System.String,System.Int16@)">
+	<summary>
+ Return the duration of premium for a given protection
+ </summary>
+	<param name="ProtectionID">ID of the protection that you want the duration of premium</param>
+	<param name="Duration">BYREF, returns the duration of premium</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Get_Premium(System.String,System.Boolean,System.Double@)">
+	<summary>
+ Returns the premium for a protection
+ </summary>
+	<param name="ProtectionID">The ID of the protection you want to obtain the premium for.</param>
+	<param name="IsOption">If true, returns the premium of the option associated with the protection.</param>
+	<param name="Premium">Byref, the calculated premium of the protection.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Get_CAD_Duration(System.String,System.Int16@)">
+	<summary>
+ Returns the duration of CAD and CADE protections.
+ </summary>
+	<param name="ProtectionID">ID of the protection that you want the duration</param>
+	<param name="Duration">BYREF, returns the duration of the protection</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Get_Joint_Age(System.String,System.Int16@,System.Int16@,System.Int16@)">
+	<summary>
+ This function is used to obtain the joint age, smoker code and sex of a coverage.
+ </summary>
+	<param name="CoverageID">The Id of the coverage you want to retrieve the joint age from.</param>
+	<param name="JointAge">ByRef, The joint age of the coverage.</param>
+	<param name="JointSex">ByRef, The sex of the calculated joint age.</param>
+	<param name="JointSmoker">ByRef, The calculated joint smoker code for this coverage.  0 is ENS, 1 is PNS, 2 is NS, 3 is ES, 4 is PS, 5 is S.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Get_Renewal_Premium(System.String,System.Double[]@,System.Double[]@)">
+	<summary>
+ Return the renewal premiums for T10, T20, CI10, CI20
+ </summary>
+	<param name="CoverageID">The ID of the coverage for wich you want to receive the renewal premiums</param>
+	<param name="ActiveRenewal">ByRef, The renewal of the currently selected renewal method.</param>
+	<param name="OtherRenewal">ByRef, The renewal of the other method.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Get_Premium_Tax(System.String,System.DateTime,System.Double@)">
+	<summary>
+ Returns the premium tax rate used in your illustration.
+ </summary>
+	<param name="Province">The province you want the tax rate. Same as Canada Post 2 letters code. (NOT USED)</param>
+	<param name="IssueDate">The issue date you want for the tax rate. (NOT USED)</param>
+	<param name="TaxRate">BYREF: The tax rate returned.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks>This method used to be standalone.  Now it is dependent of your illustration.</remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Get_Value(System.Int16,System.Double@)">
+	<summary>
+ Get various values in the calculator engine.
+ </summary>
+	<param name="ValueID">The value you want to obtain. From 1-18, see engine doc for each value.</param>
+	<param name="ReturnValue">BYREF, The value returned by the engine.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Get_Min_Premium_Yrs(System.Double[]@)">
+	<summary>
+ Get an array of the minimum premium of the contract for each year.
+ </summary>
+	<param name="Premiums">BYREF, The value of the calculated minimum premium by the engine for each year.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Get_Max_Premium(System.Double@)">
+	<summary>
+ Returns the illustration maximum premium.
+ </summary>
+	<param name="MaxPremium">Byref, The value of the calculated maximum premium by the engine.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Get_Engine_Messages(System.String@)">
+	<summary>
+ This function returns the warning and informational messages from the engine.
+ It should always be used after calling the compute function.
+ </summary>
+	<param name="Messages">The messages returned by the calc engine.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Get_Min_Premium(System.Double@)">
+	<summary>
+ Returns the illustration minimum premium.
+ </summary>
+	<param name="MinPremium">Byref, The value of the calculated minimum premium by the engine.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Get_Product_Version(System.String@)">
+	<summary>
+ Returns the version of the used application.
+ </summary>
+	<param name="NoVersion">Byref, the version of the used application.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Get_Premium_Code(System.Int32)">
+	<summary>
+ Transform the type of premium in a format accepted by calc engine
+ </summary>
+	<param name="PremiumType">The type of premium to be transformed</param>
+	<returns>The type of premium Enum</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.SetErrorMessage">
+	<summary>
+ Get the error from the engine and initialize it
+ </summary>
+	<returns>The error code of the calc engine</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Insureds(IAFG.IA.IL.AF.ULCalcEngine.Engine.Individuals,System.String,IAFG.IA.IL.AF.ULCalcEngine.Engine.Coverage,IAFG.IA.IL.AF.Illustration.ENUMs.TypeMortaliteIllustration,System.DateTime,System.Int16,System.Double[],System.Double[],System.Double[],System.Int16[],System.Boolean)">
+	<summary>
+ Sets the values of the ppl associated with a individual coverage and the extra premium.
+ </summary>
+	<param name="Indivs">Lists of the insured, by their insured IDs</param>
+	<param name="ContractID">ID of the contract.</param>
+	<param name="Protection">The coverage on wich you want to add individuals</param>
+	<param name="CostType">Cost type for this coverage</param>
+	<param name="ExtraPremiumPercent">The extra premium % to pay</param>
+	<param name="ExtraPremiumFlat">The extra premium in $ / thousand</param>
+	<param name="TempExtraPremiumFlat">The temp premium in $ / thousand</param>
+	<param name="TempExtraPremiumDuration">The duration of the temp premium</param>
+	<param name="isOption">True if you are adding and insured on a Option</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Person_Individual_Cov(IAFG.IA.IL.AF.ULCalcEngine.Engine.Individual,System.String,IAFG.IA.IL.AF.ULCalcEngine.Engine.Coverage,IAFG.IA.IL.AF.Illustration.ENUMs.TypeMortaliteIllustration,System.DateTime,System.Int16)">
+	<summary>
+ Sets the values of the ppl associated with a joint coverage and the extra premium.
+ </summary>
+	<param name="Insured">The insured</param>
+	<param name="ContractID">ID of the contract.</param>
+	<param name="Protection">The coverage on wich you want to add individuals</param>
+	<param name="CostType">Cost type for this coverage</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Person_Joint_Cov(IAFG.IA.IL.AF.ULCalcEngine.Engine.Individual,System.String,IAFG.IA.IL.AF.ULCalcEngine.Engine.Coverage,IAFG.IA.IL.AF.Illustration.ENUMs.TypeMortaliteIllustration,System.DateTime,System.Int16)">
+	<summary>
+ Sets the values of the ppl associated with a coverage and the extra premium.
+ </summary>
+	<param name="Insured">The insured</param>
+	<param name="ContractID">ID of the contract.</param>
+	<param name="Protection">The coverage on wich you want to add individuals</param>
+	<param name="CostType">Cost type for this coverage</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Surprimes(IAFG.IA.IL.AF.ULCalcEngine.Engine.Individual,System.Int32,System.String,IAFG.IA.IL.AF.ULCalcEngine.Engine.Coverage,System.Double[],System.Double[],System.Double[],System.Int16[])">
+	<summary>
+ Sets the values of the ppl associated with a coverage and the extra premium.
+ </summary>
+	<param name="Insured">The insured</param>
+	<param name="ContractID">ID of the contract.</param>
+	<param name="Protection">The coverage on wich you want to add individuals</param>
+	<param name="ExtraPremiumPercent">The extra premium % to pay</param>
+	<param name="ExtraPremiumFlat">The extra premium in $ / thousand</param>
+	<param name="TempExtraPremiumFlat">The temp premium in $ / thousand</param>
+	<param name="TempExtraPremiumDuration">The duration of the temp premium</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.CreerNouvelIdentifiant">
+	<summary>
+ Creates a new Guid ID.
+ </summary>
+	<returns>A new Guid ID</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.ConvertirEnEtatProvince(System.String)">
+	<summary>
+ Converts a province string to a Enum type <see cref="T:IAFG.IA.VI.ENUMs.CodeEtatProvince">EtatProvince</see>.
+ </summary>
+	<param name="province">Two letter province code.</param>
+	<returns>Province code of Enum type EtatProvince.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.GetEnumValue``1(System.Object)">
+	<summary>
+ Recherche un membre d'énumération à partir de sa valeur.
+ </summary>
+	<typeparam name="T">
+ Le type de l'énumération que l'on cherche. 
+ .Net ne permet pas de contraindre un type générique à une Enumération, 
+ alors doit on accepter tous les types et vérifier s'il s'agit d'une 
+ énumération lors de l'éxécution.
+ </typeparam>
+	<param name="value">La valeur de l'énumération que l'on cherche.</param>
+	<returns>Le member de l'énumération trouvé, sinon une exception est levée.</returns>
+	<exception cref="T:System.ArgumentException">Le type T doit être une énumération.</exception>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.CreerComptePlacementExterne(System.String,System.String,IAFG.IA.ZA.MoteurVU.ENUMs.TypeGain,System.Double,System.Double[],System.Double,System.Collections.Generic.Dictionary{System.DateTime,System.Double})">
+	<summary>
+ Créer un compte de placement dans le contrat et le fonds spécifié.
+ Creates an acount for 
+ </summary>
+	<param name="ContractID">ID of the contract.</param>
+	<param name="FundID">ID of the fund.</param>
+	<param name="FundType">Type of fund, 0 = guaranteed, 1 = indiciel.</param>
+	<param name="tauxRealisation">Le taux de réalisation du compte.</param>
+	<param name="InterestRates">Array of the interests rates for the duration of the policy. Index starting at 1.</param>
+	<param name="Allocation">The allocation of DDA for this fund.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.SetComparaisonProtectionTemporaire(System.String,System.Double,System.Double[]@,System.Int16)">
+	<summary>
+ Initialise la protection temporaire employé pour fin de comparaison.
+ </summary>
+	<param name="ContractID">ID of the contract.</param>
+	<param name="TermFaceAmount">The face amount of the term plan, 0 if no term plan.</param>
+	<param name="TermPremium">The premium of the term plan.</param>
+	<param name="TermPlanCode">The code of the term plan: 1=AXIS T100, 2=AXIS T10, 3=AXIS T20, 4=OTHER T100, 5=OTHER T10, 6=OTHER T20</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.AjouterProtectionTemporaireTraditionnelle(System.String,System.String,System.Double,System.Int16)">
+	<summary>
+ Ajoute la protection temporaire, utilisée pour fin de comparaison, au contrat spécifié.
+ </summary>
+	<param name="ContractID">ID of the contract.</param>
+	<param name="CoverageID">The id of the coverage</param>
+	<param name="TermFaceAmount">The face amount of the term plan, 0 if no term plan.</param>
+	<param name="TermPlanCode">The code of the term plan: 1=AXIS T100, 2=AXIS T10, 3=AXIS T20, 4=OTHER T100, 5=OTHER T10, 6=OTHER T20</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.ObtenirCodePlanProtectionTraditionnelTemporaire(System.Int16)">
+	<summary>
+ Obtient le code de plan de la protection traditionnelle temporaire.
+ </summary>
+	<param name="TermPlanCode">Le type de plan alternatif</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Set_Taxation_Moteur(System.Boolean,System.String,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@)">
+	<summary>
+ Set the taxation information for this contract.
+ </summary>
+ ''' <param name="ContractID">ID of the contract.</param>
+	<param name="ApplicantIsCorporation">True is the applicant is a corporation, false if not.</param>
+	<param name="IndividualMarginalTaxRate"></param>
+	<param name="IndividualDividendTaxRate"></param>
+	<param name="CorporationMarginalTaxRate"></param>
+	<param name="CorporationDividendTaxRate"></param>
+	<param name="CorporationCapitalTaxRate"></param>
+	<param name="IndividualCapitalGainTaxRate"></param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.AddBaseCoverageInsured(IAFG.IA.IL.AF.ULCalcEngine.Engine.Coverage@)">
+	<summary>
+ Adds the insureds on a coverage
+ </summary>
+	<param name="cov">The coverage object you want to add the insured for.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.ObtenirVehiculeCompte(IAFG.IA.VI.AF.Proposition.ENUMs.TypeCompte,System.Int32,IAFG.IA.VI.AF.Proposition.ENUMs.TypeFonds,System.Boolean)">
+	<summary>
+ Finds a valid account name for accumulation or shuttle funds.
+ </summary>
+	<param name="typCompte">The type of account required.</param>
+	<returns>The 3 letter account acronym</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.rnd(System.Double,System.Int32)">
+	<summary>
+ Return a rounded value.
+ </summary>
+	<param name="val">The value to round</param>
+	<param name="prec">The recision in number of digit</param>
+	<returns>The rounded value.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Obtain_Plan_Code(System.DateTime,System.String,System.Int32,System.Boolean,System.String@)">
+	<summary>
+ Return the plan code associated with the coverage
+ </summary>
+	<param name="CreationDate">Date of creation of this coverage</param>
+	<param name="CoverageCode">The code of this coverage, ex: "T10".</param>
+	<param name="LevelDuration">The duration of the level cost</param>
+	<param name="FirstInsured">Indicates wether or not this is the first insured.</param>
+	<param name="CodePlan">REF Returns the plan code associate with this coverage</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Obtain_Plan_Code_Standard(System.DateTime,IAFG.IA.IL.AP.Illustration.ENUMs.PlanIllustration,IAFG.IA.IL.AF.Illustration.ENUMs.TypeConcept,System.String@)">
+	<summary>
+ Return the plan code associated with the Standard coverage
+ </summary>
+	<param name="CreationDate">Date of creation of this coverage</param>
+	<param name="planIllus">The illustration plancode</param>
+	<param name="CodePlan">REF Returns the plan code associate with this coverage</param>
+	<returns>T-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.Obtain_App_Plan_Code(System.DateTime,IAFG.IA.IL.AP.Illustration.ENUMs.PlanIllustration,IAFG.IA.IL.AF.Illustration.ENUMs.TypeConcept,System.Int32,System.Boolean,System.String@)">
+	<summary>
+ Return the plan code associated with the Genesis coverage
+ </summary>
+	<param name="CreationDate">Date of creation of this coverage</param>
+	<param name="planIllus">The illustration plancode</param>
+	<param name="ConceptCourant"></param>
+	<param name="LevelDuration">The duration of the level cost</param>
+	<param name="FirstInsured">Indicates wether or not this is the first insured.</param>
+	<param name="CodePlan">REF Returns the plan code associate with this coverage</param>
+	<returns>T-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.ValiderIrisPlusIrisExtra(IAFG.IA.IL.AF.Illustration.ENUMs.TypeConcept,IAFG.IA.VI.AF.Proposition.ENUMs.TypeProtectionInfoAdd,System.Boolean,System.Boolean)">
+	<summary>
+ Fonction qui retourne si le code de plan de la requête est valide selon les flags Iris Extra et Plus
+ </summary>
+	<param name="typeConcept"></param>
+	<param name="typeInfoProt"></param>
+	<param name="estIrisPlus"></param>
+	<param name="estIrisExtra"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.GetPlanMoteur(IAFG.IA.IL.AF.ULCalcEngine.Engine.Coverage)">
+	<summary>
+ Indique le type de garantie lorsque la "Protection" est une garantie.
+ </summary>
+	<remarks>
+ Ne s'applique pas à tous les types de protection.
+ </remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.GetCodePlanDuree(IAFG.IA.VI.AF.PDFs.Requetes.Plan,System.String,System.Single)">
+	<summary>
+ Function that convert the benefit plan code witht the correct sub-type for the duration
+ </summary>
+	<returns>The plan code</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.ObtenirDureeMaxPaiementCicCia(IAFG.IA.IL.AF.ULCalcEngine.Engine.Coverage)">
+	<summary>
+ Fonction qui retourne la plus grande durée de paimement de prime du contrat
+ en tenant compte du contractant passé en paramètre
+ </summary>
+	<returns></returns>
+	<remarks>SI ON RETOURNE 999 C'EST QUE C'EST À VIE !!!!! Utilisé par PlanMoteur</remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.ObtenirDureeMaxPaiementParContractantCDC(IAFG.IA.IL.AF.ULCalcEngine.Engine.Coverage,System.String)">
+	<summary>
+ Fonction qui retourne la plus grande durée de paimement de prime du contrat
+ en tenant compte du contractant passé en paramètre
+ </summary>
+	<param name="idCont">l'id du contractant à vérifier</param>
+	<returns></returns>
+	<remarks>SI ON RETOURNE 100 C'EST QUE C'EST À VIE !!!!! Utilisé par PlanMoteur</remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.ObtenirDureeMaxListeProtections(System.Collections.Generic.List{IAFG.IA.IL.AF.ULCalcEngine.Engine.Coverage})">
+	<summary>
+ Fonction qui retour la plus grande durée de paimement de prime de la liste de protections passée en paramètre
+ </summary>
+	<param name="listeProtections">la liste des protections à vérifier</param>
+	<returns></returns>
+	<remarks>SI ON RETOURNE 999 C'EST QUE C'EST À VIE !!!!! Utilisé par PlanMoteur</remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.SetProtectionChangementTypeAssurance(System.String,IAFG.IA.IL.AF.ULCalcEngine.Engine.Coverage)">
+	<summary>
+ Change le type d'assurance de la protection.
+ </summary>
+	<param name="idContrat">L'identifiant du contrat.</param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AF.ULCalcEngine.Engine.BaseCalcEngine.MoteurCalculAgeEquivalent">
+	<summary>
+ Retourne le moteur d'age equivalent !
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.GenCalcEngine.InitCalcEngine">
+	<summary>
+ Initialize the calc engine
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.GenCalcEngine.Set_Iris_Strategy(System.Double[]@,System.Boolean[]@,System.Int16,System.Double,System.Int16,System.Boolean,System.Double[]@,System.Double[]@,System.Int16,System.Int16,System.Int16,System.Boolean,System.Boolean,System.Double)">
+	<summary>
+ Initializes all the parameters of the calc engine for the IRIS concept
+ </summary>
+	<param name="DesiredLoan">Array of the desired loans.</param>
+	<param name="MaximumLoan">Array of the Maximum loans.</param>
+	<param name="NumberYear">The number of year the IRIS strategy is active.</param>
+	<param name="InterestDeductible">% of the interest that are deductible.</param>
+	<param name="SourceFundsMaintain">The source of the fund to maintain policy in-force, 1 = From additional premiums, 2 = Partial loan repayment, 3 = Loans reduction, 4 = external</param>
+	<param name="NCPIDeduction">Use NCPI deduction or not.</param>
+	<param name="RefinancingAccruedFund">Array of the refinancing of accrued fund value.</param>
+	<param name="CapitalLoanRepayment">Array of the amount of repayment.</param>
+	<param name="LoanRepaymentType">The type of repayment, -1 = Total, -2 = none, -3 = customized</param>
+	<param name="RepaymentContractYear">The year the repayment will happen.</param>
+	<param name="CapitalLoanRepaymentSource">1 =  from new money, 2 = from policy</param>
+	<param name="ForceInputLoan">This is mostly for PPI. Allows to take loan higher then the calculated max.</param>
+	<param name="IsFreezeLoan">If the payment of interest is based on a freeze loan or not. Optional.</param>
+	<param name="FreezeLoanBalance">If it is the freeze loan, the balance of the loan to reach. Optional.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.GenCalcEngine.Set_Aii_Param(System.Int16,System.Int16,System.Double,System.Double[]@,System.Double,System.Double[]@,System.DateTime[]@,System.Boolean)">
+	<summary>
+ Initialize all the parameter of the calc engine for TAI
+ </summary>
+	<param name="FundID">ID of the current fund, int from 1 to 10.</param>
+	<param name="FundType">Type of fund, 0 = guaranteed, 1 = indiciel.</param>
+	<param name="Allocation"> The allocation of this fund.</param>
+	<param name="InterestRates">Array of the interests rates for the duration of the policy. Index starting at 1.</param>
+	<param name="DDAAllocation">The allocation of DDA for this fund.</param>
+	<param name="CollateralAccount">Account to be selected as the IRIS Collateral account in function Set_Iris_Strategy.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.GenCalcEngine.getIllustrationPlan(System.String)">
+	<summary>
+ Function retrieving the illustration plan from the coverage code
+ </summary>
+	<param name="CoverageCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.GenCalcEngine.ObtenirVehiculeCompte(IAFG.IA.VI.AF.Proposition.ENUMs.TypeCompte,System.Int32,IAFG.IA.VI.AF.Proposition.ENUMs.TypeFonds,System.Boolean)">
+	<summary>
+ Finds a valid account name for accumulation or shuttle funds.
+ </summary>
+	<param name="typCompte">The type of account required.</param>
+	<returns>The 3 letter account acronym</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.GenCalcEngine.Obtain_App_Plan_Code(System.DateTime,IAFG.IA.IL.AP.Illustration.ENUMs.PlanIllustration,IAFG.IA.IL.AF.Illustration.ENUMs.TypeConcept,System.Int32,System.Boolean,System.String@)">
+	<summary>
+ Return the plan code associated with the Genesis coverage
+ </summary>
+	<param name="CreationDate">Date of creation of this coverage</param>
+	<param name="planIllus">The illustration plancode</param>
+	<param name="ConceptCourant"></param>
+	<param name="LevelDuration">The duration of the level cost</param>
+	<param name="FirstInsured">Indicates wether or not this is the first insured.</param>
+	<param name="CodePlan">REF Returns the plan code associate with this coverage</param>
+	<returns>T-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.GenCalcEngine.Set_Base_Values(System.String,System.DateTime,System.Int16,System.Double[],System.Int16,System.Int16,System.Int16)">
+	<summary>
+ Initialize all the parameters of the calc engine regarding premium scenario
+ </summary>
+	<param name="Province">2 letters province code of the policy. Same as Canada Post</param>
+	<param name="CreationDate">Date of the policy creation.</param>
+	<param name="BonusType"> Bonus Type for this policy, 3 = VARIABLE, 2 = GUARANTEED, 4 = NoBonus</param>
+	<param name="Frequency">The premium frequency, 0 = yearly, 1 = monthly</param>
+	<param name="ShuttleAccount">Wether the transit account is showed before or after taxes, 0 = Transit account after tax, 1 = Transit account before tax</param>
+	<param name="Concept">The concept for this illustration, 0 for regular, 5 for IRIS</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.GenCalcEngine.Set_Coverage(System.String,System.String,System.String,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16[]@,System.Int16,System.DateTime,System.Int16,System.Double,System.Int16,System.Double,System.Int16,System.Int16,System.Int32,System.Int16,System.Double[]@,System.Double[]@,System.Double[]@,System.Int16[]@,System.DateTime,System.Double,System.Double,System.Int16,System.Double)">
+	<summary>
+ Initialize all the values regarding a coverage in the engine
+ </summary>
+	<param name="CoverageID">The id of the coverage, from 1 to 20</param>
+	<param name="CoverageCode">The code of this coverage, ex: "T10".</param>
+	<param name="OptionCode">The code of the option if any. If no option leave empty.</param>
+	<param name="SmokerCode">0 = non smoker elite, 1 = non smoker prefered, 2 = non smoker, 3 = smoker elite, 4 = smoker prefered, 5 = smoker</param>
+	<param name="InsuredAge">Age of the insured for the policy</param>
+	<param name="InsuredSex">The sex of the insured for the policy, 1 = male, 2 = female</param>
+	<param name="CostType">Cost type for this coverage</param>
+	<param name="YearsBeforeLevel">In the case of a YRT to LVL the number of years it takes to level.</param>
+	<param name="ProtectionType">The type of protection, 0 = individual, 1 = JFTD, 2 = JLTD, 3 = JLTD PU 1st death</param>
+	<param name="Individual">Lists of the insured, by their insured IDs</param>
+	<param name="NumberIndividual">The number of insured on this coverage.</param>
+	<param name="CreationDate">Date of creation of this coverage</param>
+	<param name="AgeOfLevel">If YRT to Level, the age of level, else 0</param>
+	<param name="Volume">Volume of the coverage.</param>
+	<param name="CoverageDuration">Duration of the coverage. In case of UL coverage, 0.</param>
+	<param name="COIMultiplier">The rate of compensation the agent is getting</param>
+	<param name="RenewalType">0 = at emission, 1 = guaranteed, 2 = re-issue</param>
+	<param name="ReductionDuration">The duration of the face amount reduction in years. If 0 there is no reduction.</param>
+	<param name="ReductionVolume">The volume of the reduction</param>
+	<param name="DeathBenefitOption">1 = FACE, 2 = FACE+FUND, 3 = WMAX, 5 = WMAX_OPTION, 6 = ROP, 7 = ACB</param>
+	<param name="ExtraPremiumPercent">The Rate of extra premium in %. Index must fit with the approriate insured.</param>
+	<param name="ExtraPremiumFlat">The rate of extra premium in $ / thousand. Index must fit with the approriate insured.</param>
+	<param name="TempExtraPremiumFlat">The rate of a temporary extra premium in $ / thousand. Index must fit with the approriate insured.</param>
+	<param name="TempExtraPremiumDuration">The duration of the Extra Premium. Index must fit with the approriate insured.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.EquiCalcEngine.InitCalcEngine(System.Int16)">
+	<summary>
+ Initialize the calc engine
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.EquiCalcEngine.InitCalcEngine">
+	<summary>
+ Initialize the calc engine
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.EquiCalcEngine.Set_Base_Values(System.String,System.DateTime,System.Int16,System.Double[],System.Int16,System.Int16,System.Int16)">
+	<summary>
+ Initialize all the parameters of the calc engine regarding premium scenario
+ </summary>
+	<param name="Province">2 letters province code of the policy. Same as Canada Post</param>
+	<param name="CreationDate">Date of the policy creation.</param>
+	<param name="BonusType"> Bonus Type for this policy, 3 = VARIABLE, 2 = GUARANTEED, 4 = NoBonus</param>
+	<param name="Frequency">The premium frequency, 0 = yearly, 1 = monthly</param>
+	<param name="ShuttleAccount">Wether the transit account is showed before or after taxes, 0 = Transit account after tax, 1 = Transit account before tax</param>
+	<param name="Concept">The concept for this illustration, 0 for regular, 5 for IRIS</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.EquiCalcEngine.Set_Pua_Param(System.Int16[],System.Double[],System.Double)">
+	<summary>
+ Sets the parameters for the PUA purchase
+ </summary>
+	<param name="BonusPaymentOption"></param>
+	<param name="Allocation"></param>
+	<param name="MaximumFaceAmount"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.EquiCalcEngine.Set_Current_Concept">
+	<summary>
+ Sets the current concept for the current product
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.EquiCalcEngine.Set_Aii_Param(System.Int16,System.Int16,System.Double,System.Double[]@,System.Double,System.Double[]@,System.DateTime[]@,System.Boolean)">
+	<summary>
+ Initialize all the parameter of the calc engine for TAI
+ </summary>
+	<param name="FundID">ID of the current fund, int from 1 to 10.</param>
+	<param name="FundType">Type of fund, 0 = guaranteed, 1 = indiciel.</param>
+	<param name="Allocation"> The allocation of this fund.</param>
+	<param name="InterestRates">Array of the interests rates for the duration of the policy. Index starting at 1.</param>
+	<param name="DDAAllocation">The allocation of DDA for this fund.</param>
+	<param name="CollateralAccount">Account to be selected as the IRIS Collateral account in function Set_Iris_Strategy.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.EquiCalcEngine.Get_APL_Rate">
+	<summary>
+ Returns the APL Rate from the flat file
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.EquiCalcEngine.validateBonusPaymentOption(System.Int16[])">
+	<summary>
+ Validates if the BonusPaymentOption aray is valid. You can not switch from option 2 to option 1.
+ </summary>
+	<param name="BonusPaymentOption"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.EquiCalcEngine.FillRates30yearsObligation">
+	<summary>
+ Fills the 30 years obligation rate with the PDF values
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.EquiCalcEngine.GetPUABuyChoice(System.Int32,System.Double)">
+	<summary>
+ Returns the PUA Buy Choice based on the BonusPaymentOption and the annual Allocation
+ </summary>
+	<param name="BonusPaymentOption"></param>
+	<param name="Allocation"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.EquiCalcEngine.getIllustrationPlan(System.String)">
+	<summary>
+ Function retrieving the illustration plan from the coverage code
+ </summary>
+	<param name="CoverageCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.EquiCalcEngine.Get_APL_Rate_vector">
+	<summary>
+ Returns the APL Rate as a [OMEGA] years vector
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.EquiCalcEngine.GetMERRate">
+	<summary>
+ Returns the MER Rate from the PDF
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.EquiCalcEngine.arraySubstract(System.Double[],System.Double[],System.Boolean)">
+	<summary>
+ Substracts each amount of the second vector from the corresponding entry in the first one. v1(i) - v2(i)
+ </summary>
+	<param name="v1">Substract from vector</param>
+	<param name="v2">Substract amount vector</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.EquiCalcEngine.ObtenirVehiculeCompte(IAFG.IA.VI.AF.Proposition.ENUMs.TypeCompte,System.Int32,IAFG.IA.VI.AF.Proposition.ENUMs.TypeFonds,System.Boolean)">
+	<summary>
+ Finds a valid account name for accumulation or shuttle funds.
+ </summary>
+	<param name="typCompte">The type of account required.</param>
+	<returns>The 3 letter account acronym</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.EquiCalcEngine.Obtain_App_Plan_Code(System.DateTime,IAFG.IA.IL.AP.Illustration.ENUMs.PlanIllustration,IAFG.IA.IL.AF.Illustration.ENUMs.TypeConcept,System.Int32,System.Boolean,System.String@)">
+	<summary>
+ Return the plan code associated with the Genesis coverage
+ </summary>
+	<param name="CreationDate">Date of creation of this coverage</param>
+	<param name="planIllus">The illustration plancode</param>
+	<param name="ConceptCourant"></param>
+	<param name="LevelDuration">The duration of the level cost</param>
+	<param name="FirstInsured">Indicates wether or not this is the first insured.</param>
+	<param name="CodePlan">REF Returns the plan code associate with this coverage</param>
+	<returns>T-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.EquiCalcEngine.Set_Coverage(System.String,System.String,System.String,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16[]@,System.Int16,System.DateTime,System.Int16,System.Double,System.Int16,System.Double,System.Int16,System.Int16,System.Int32,System.Int16,System.Double[]@,System.Double[]@,System.Double[]@,System.Int16[]@,System.DateTime,System.Double,System.Double,System.Int16,System.Double)">
+	<summary>
+ Initialize all the values regarding a coverage in the engine
+ </summary>
+	<param name="CoverageID">The id of the coverage, from 1 to 20</param>
+	<param name="CoverageCode">The code of this coverage, ex: "T10".</param>
+	<param name="OptionCode">The code of the option if any. If no option leave empty.</param>
+	<param name="SmokerCode">0 = non smoker elite, 1 = non smoker prefered, 2 = non smoker, 3 = smoker elite, 4 = smoker prefered, 5 = smoker</param>
+	<param name="InsuredAge">Age of the insured for the policy</param>
+	<param name="InsuredSex">The sex of the insured for the policy, 1 = male, 2 = female</param>
+	<param name="CostType">Cost type for this coverage</param>
+	<param name="YearsBeforeLevel">In the case of a YRT to LVL the number of years it takes to level.</param>
+	<param name="ProtectionType">The type of protection, 0 = individual, 1 = JFTD, 2 = JLTD, 3 = JLTD PU 1st death</param>
+	<param name="Individual">Lists of the insured, by their insured IDs</param>
+	<param name="NumberIndividual">The number of insured on this coverage.</param>
+	<param name="CreationDate">Date of creation of this coverage</param>
+	<param name="AgeOfLevel">If YRT to Level, the age of level, else 0</param>
+	<param name="Volume">Volume of the coverage.</param>
+	<param name="CoverageDuration">Duration of the coverage. In case of UL coverage, 0.</param>
+	<param name="COIMultiplier">The rate of compensation the agent is getting</param>
+	<param name="RenewalType">0 = at emission, 1 = guaranteed, 2 = re-issue</param>
+	<param name="ReductionDuration">The duration of the face amount reduction in years. If 0 there is no reduction.</param>
+	<param name="ReductionVolume">The volume of the reduction</param>
+	<param name="DeathBenefitOption">1 = FACE, 2 = FACE+FUND, 3 = WMAX, 5 = WMAX_OPTION, 6 = ROP, 7 = ACB</param>
+	<param name="ExtraPremiumPercent">The Rate of extra premium in %. Index must fit with the approriate insured.</param>
+	<param name="ExtraPremiumFlat">The rate of extra premium in $ / thousand. Index must fit with the approriate insured.</param>
+	<param name="TempExtraPremiumFlat">The rate of a temporary extra premium in $ / thousand. Index must fit with the approriate insured.</param>
+	<param name="TempExtraPremiumDuration">The duration of the Extra Premium. Index must fit with the approriate insured.</param>
+	<returns>-1 if failed and 1 if succeeded</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AF.ULCalcEngine.Engine.Coverage.Age">
+	<summary>
+ Correspond à l'âge équivalent à l'émission
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.Coverage.GetMontantPreferentiel">
+	<summary>
+ Finds the minimum amount of insurance required to accept preferential rates on a coverage.
+ </summary>
+	<returns>The preferential amount</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.Coverage.CalculAgeEquiv(IAFG.IA.VI.AF.ICalculAgeEquivalent.ENUMs.TypeTarification)">
+	<summary>
+ Calculates the joint insured for the coverage.
+ </summary>
+	<param name="typeTarif"></param>
+	<returns>The joint insured object</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.Coverage.AddOption(IAFG.IA.IL.AF.ULCalcEngine.Engine.Coverage)">
+	<summary>
+ Adds an option on the coverage
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AF.ULCalcEngine.Engine.Coverage.ObtenirRegleCalculAgeEquivalent">
+	<summary>
+ Finds the equivalent age calculation method for a coverage.
+ </summary>
+	<returns>The equivalent age calculation method</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

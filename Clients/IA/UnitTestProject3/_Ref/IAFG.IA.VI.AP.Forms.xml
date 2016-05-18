@@ -1,0 +1,112 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.VI.AP.Forms
+</name>
+</assembly>
+<members>
+<member name="M:IAFG.IA.VI.AP.Forms.XmlTranslator.#ctor(System.String)">
+	<summary>
+ Passing a string of XML code to be translated creates a DOM of the Xml fragment.
+ </summary>
+	<param name="xmlText">XML code to be translated.</param>
+</member><member name="P:IAFG.IA.VI.AP.Forms.XmlTranslator.Errors">
+	<summary>
+ Any errors encountered during translation will be contained
+ in this ArrayList of strings.
+ </summary>
+</member><member name="M:IAFG.IA.VI.AP.Forms.XmlTranslator.TrimBody(System.String)">
+	<summary>
+ If there is a body element, then all XML code outside of it is removed.
+ </summary>
+	<param name="xmlText">XML code to be trimmed.</param>
+	<returns></returns>
+</member><member name="M:IAFG.IA.VI.AP.Forms.XmlTranslator.ToRtfDocument">
+	<summary>
+ Initiates translation from XML to RTF (Rich Text Format)
+ Returns an object representing a RTF document.
+ </summary>
+	<returns></returns>
+</member><member name="M:IAFG.IA.VI.AP.Forms.XmlTranslator.TranslateXmlNodeIntoRtfGroup(System.Xml.XmlNode,System.Int32)">
+	<summary>
+ The primary method responsible for translating XML into RTF code.
+ It recursively walks the XML DOM tree, building the RTF document
+ as it goes.
+ </summary>
+	<param name="node">The current node to be translated.</param>
+	<param name="baseFontSize">The XHTML font size (1-7) of the parent element.</param>
+</member><member name="M:IAFG.IA.VI.AP.Forms.XmlTranslator.TranslateXhtmlFontSizeIntoRtfFontSize(System.Int32)">
+	<summary>
+ Translates an XHTML font size (1-7) into an RTF font size in half-points.
+ Any errors result in a font size of 12 pts.
+ </summary>
+</member><member name="M:IAFG.IA.VI.AP.Forms.XmlTranslator.TranslateRtfFontSizeIntoXhtmlFontSize(System.Int32)">
+	<summary>
+ This inverts the previous method.
+ </summary>
+</member><member name="M:IAFG.IA.VI.AP.Forms.XmlTranslator.TranslateStyleFontSizeIntoRtfFontSize(System.String,System.Int32)">
+	<summary>
+ Translates a style sheet font size, which may have one of several different font
+ measurements, into an RTF font size in half-points. The baseFontSize is required
+ for measurements given in a form relative to the current font size. Any errors
+ result in a font size of 12 pts.
+ </summary>
+</member><member name="M:IAFG.IA.VI.AP.Forms.XmlTranslator.TranslateXhtmlColorIntoColorFromArgb(System.String)">
+	<summary>
+ Translates color arguments into Color object representations.
+ The argument may either be a hexidecimal number #RRGGBB,
+ one of sixteen predefined, case-sensitive names (these are 
+ used by the font element with the color attribute).
+ NOTE: Predefined color names for style sheets are NOT supported.
+ Style sheet colors must either be entered in as a hex number or
+ in the form of: rgb float float float, where each float is a value
+ between 0 and 1, representing relative amounts of red, green, and blue,
+ respectively. Any errors result in a default of black (0, 0, 0).
+ </summary>
+	<param name="xhtmlColor"></param>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.Forms.XmlTranslator">
+	<summary>
+ This class extends XmlDocument. It can hold a DOM of any XML document or fragment,
+ which can be used to translate the XML into other forms. Currently, this class
+ only supports translation from XML to RTF (Rich Text Format).
+ </summary>
+</member><member name="T:IAFG.IA.VI.AP.Forms.RtfDocument">
+	<summary>
+ Summary description for RtfDocument.
+ </summary>
+</member><member name="M:IAFG.IA.VI.AP.Forms.ToolTip.ToolTipEx_Popup(System.Object,System.Windows.Forms.PopupEventArgs)">
+	<summary>
+ Gère l'évènement Popup du ToolTip. Ce dernier se produit avant l'affichage initial d'une Info-bulle.
+ </summary>
+	<param name="sender">Source de l'événement.</param>
+	<param name="e"><see cref="T:System.EventArgs">EventArgs</see> qui ne contient aucune donnée d'événement.</param>
+</member><member name="M:IAFG.IA.VI.AP.Forms.ToolTip.AssociatedControl_MouseLeave(System.Object,System.EventArgs)">
+	<summary>
+ Gère l'événement MouseLeave du contrôle sur lequel le ToolTip est situé.
+ </summary>
+	<param name="sender">Source de l'événement.</param>
+	<param name="e"><see cref="T:System.EventArgs">EventArgs</see> qui ne contient aucune donnée d'événement.</param>
+</member><member name="P:IAFG.IA.VI.AP.Forms.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.Forms.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:IAFG.IA.VI.AP.Forms.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="M:IAFG.IA.VI.AP.Forms.Panel.ScrollWithKey(System.Windows.Forms.Keys)">
+	<summary>
+ Fonction qui permet de faire réagir la scrollBar avec les touches du clavier
+ </summary>
+	<param name="keyData">La clé appuyer qui fait réagir la position du scrollBar</param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

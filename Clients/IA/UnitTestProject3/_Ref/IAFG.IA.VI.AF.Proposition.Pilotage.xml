@@ -1,0 +1,1262 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.VI.AF.Proposition.Pilotage
+</name>
+</assembly>
+<members>
+<member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.InfoCompte.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="Vehicule">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.InfoCompte">
+	<summary>
+ Classe de requete pour la requête InfoCompte.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.InfoImmigrant.Executer(System.Byte,System.Byte,System.Int32)">
+	<summary>
+	</summary>
+	<param name="Duree">Ce paramètre est de type <code>Byte</code>.</param>
+	<param name="Age">Ce paramètre est de type <code>Byte</code>.</param>
+	<param name="Montant">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.InfoImmigrant">
+	<summary>
+ Classe de requete pour la requête InfoImmigrant.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.NomCompagnieEstGroupeIA.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="NomCie">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.NomCompagnieEstGroupeIA">
+	<summary>
+ Classe de requete pour la requête NomCompagnieEstGroupeIA.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ProvinceParCodeAlis.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ProvinceParCodeAlis)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ProvinceParCodeAlis à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetProvinceParCodeAlis.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ProvinceParCodeAlis">
+	<summary>
+Sert a trouver le EtatProvince en fonction du code ALIS.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ProvinceParCodeEtatProvince.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ProvinceParCodeEtatProvince)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ProvinceParCodeEtatProvince à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetProvinceParCodeEtatProvince.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ProvinceParCodeEtatProvince">
+	<summary>
+Sert a trouver le EtatProvince en fonction d'un EtatProvince.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.CompagnieAssuranceFromId.Executer(System.Int32)">
+	<summary>
+	</summary>
+	<param name="IdCompagnieAssurance">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.CompagnieAssuranceFromId">
+	<summary>
+ Classe de requete pour la requête CompagnieAssuranceFromId.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.GenreEntrepriseOccupationFromId.Executer(System.Int32)">
+	<summary>
+	</summary>
+	<param name="IdGenreEntreprise">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.GenreEntrepriseOccupationFromId">
+	<summary>
+ Classe de requete pour la requête GenreEntrepriseOccupationFromId.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.IllustSignee.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="CodePlan">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.IllustSignee">
+	<summary>
+ Classe de requete pour la requête IllustSignee.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ListeAgenceCD.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeAgenceCD)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ListeAgenceCD à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetListeAgenceCD.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.SQLGammeProduitExiste.Executer(System.Double)">
+	<summary>
+	</summary>
+	<param name="GammeProduit">Ce paramètre est de type <code>Double</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.SQLGammeProduitExiste">
+	<summary>
+ Classe de requete pour la requête SQLGammeProduitExiste.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.TailleETPoids.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.TailleETPoids)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.TailleETPoids à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetTailleETPoids.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.AccesPilotage.Schemas">
+	<summary>
+ enumeration contenant les differents schemas a charger
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Proposition.Pilotage.AccesPilotage.DescriptionTable.NomTable">
+	<summary>
+ Nom de la table
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Proposition.Pilotage.AccesPilotage.DescriptionTable.NomAttache">
+	<summary>
+ Nom de l'attache (Link Table)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.AccesPilotage.DescriptionTable.#ctor(System.String,System.String)">
+	<summary>
+ Constructeur de la structure
+ </summary>
+	<param name="nomTable">Nom de la table</param>
+	<param name="nomAttache">Nom de l'attache (Link Table)</param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Proposition.Pilotage.AccesPilotage.Langue">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Proposition.Pilotage.AccesPilotage.Banniere">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Proposition.Pilotage.AccesPilotage.ContexteApplicatif">
+	<summary>
+ Indique le context applicatif qui sera utilise lors de l'excution d'une requete sql.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.AccesPilotage.ObtenirListesChoix">
+	<summary>
+ Permet d'acceder les listes de choix autres que XML a travers le PDF via l'interface IListesChoix
+ </summary>
+	<returns>Interface des listes de choix</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.AccesPilotage">
+	<summary>
+ Classe servant a etablir les connexions aux bases de donnees necessaires au
+ fonctionnement d'une application
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.DictionnaireDonnees">
+	<summary>
+ Dictionnaire de donnees contenant des objets qui implements l'interface IPDFDataTable.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.PDFException.#ctor">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.PDFException.#ctor(System.String)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.PDFException.#ctor(System.String,System.Exception)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<param name="inner"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.PDFException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+	<summary>
+	</summary>
+	<param name="info"></param>
+	<param name="context"></param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.PDFException">
+	<summary>
+ Exception qui est levee par les objets du PDF.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.ListesChoix">
+	<summary>
+ Permet d'instancier les interfaces de listes de choix et sert de point d'entree pour avoir acces a une instance de IListesChoix 
+ </summary>
+	<remarks>Subterfuge pour pouvoir utiliser des listes de choix generees par le PDF a travers une interface</remarks>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.IPDFDataTable">
+	<summary>
+ Interface qui permet aux methodes de passer un instance qui implemente cette interface.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.IListesChoix">
+	<summary>
+ Interface qui permet aux methodes de passer un instance qui implemente cette interface.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRows">
+	<summary>
+ Represente une collection de lignes de donnees.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow">
+	<summary>
+ Represente une ligne de donnees
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Registre.RegistreRacine">
+	<summary>
+ enumeration des racines de la base de registre.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Registre.EstCeClefExiste(IAFG.IA.VI.AF.Proposition.Pilotage.Registre.RegistreRacine,System.String)">
+	<summary>
+ Valide l'existance de la clef passee en parametre.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit valider l'existance de la clef.</param>
+	<param name="clef">La clef dont on veut valider son existance.</param>
+	<returns>Retourne la valeur True si la clef existe. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Registre.CreerClef(IAFG.IA.VI.AF.Proposition.Pilotage.Registre.RegistreRacine,System.String)">
+	<summary>
+ Cree la clef dans la racine passee en parametre.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veut creer la clef.</param>
+	<param name="clef">La clef a creer.</param>
+	<returns>Retourne la valeur True si la clef a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Registre.SupprimerClef(IAFG.IA.VI.AF.Proposition.Pilotage.Registre.RegistreRacine,System.String)">
+	<summary>
+ Supprime la clef a partir de la racine passee en parametre
+ </summary>
+	<param name="registreRacine">La racine a partir de laquelle la clef sera supprimee.</param>
+	<param name="clef">La clef que l'on veut supprimer.</param>
+	<returns>Retourne la valeur True si la clef a ete supprimee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Registre.SupprimerClef(IAFG.IA.VI.AF.Proposition.Pilotage.Registre.RegistreRacine,System.String,System.Boolean)">
+	<summary>
+ Supprime la clef a partir de la racine passee en parametre.. Si la clef contient des sous-clefs, en fonction du parametre recursive, l'ensemble de l'arbre sera supprime.
+ </summary>
+	<param name="registreRacine">La racine a partir de lqeuelle la clef sera supprimee.</param>
+	<param name="clef">La clef que l'on veut supprimer.</param>
+	<param name="recursive">Indique s'il faut supprimer les sous-clefs de la clef.</param>
+	<returns>Retourne la valeur True si la clef a ete supprimee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Registre.ObtenirValeur(IAFG.IA.VI.AF.Proposition.Pilotage.Registre.RegistreRacine,System.String,System.String,System.String)">
+	<summary>
+ Obtenir la valeur de la clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit lire la valeur de la clef.</param>
+	<param name="clef">La clef d'ou l'on veut lire la valeur.</param>
+	<param name="nomValeur">le nom de la valeur.</param>
+	<param name="valeurDefaut">Si la valeur n'existe pas, cette valeur sera utilisee.</param>
+	<returns>La valeur de type String.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Registre.ObtenirValeur(IAFG.IA.VI.AF.Proposition.Pilotage.Registre.RegistreRacine,System.String,System.String,System.Byte[])">
+	<summary>
+ Obtenir la valeur de la clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit lire la valeur de la clef.</param>
+	<param name="clef">La clef d'ou l'on veut lire la valeur.</param>
+	<param name="nomValeur">le nom de la valeur.</param>
+	<param name="valeurDefaut">Si la valeur n'existe pas, cette valeur sera utilisee.</param>
+	<returns>La valeur de type Byte().</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Registre.ObtenirValeur(IAFG.IA.VI.AF.Proposition.Pilotage.Registre.RegistreRacine,System.String,System.String,System.Int32)">
+	<summary>
+ Obtenir la valeur de la clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit lire la valeur de la clef.</param>
+	<param name="clef">La clef d'ou l'on veut lire la valeur.</param>
+	<param name="nomValeur">le nom de la valeur.</param>
+	<param name="valeurDefaut">Si la valeur n'existe pas, cette valeur sera utilisee.</param>
+	<returns>La valeur de type Integer.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Registre.ObtenirValeurs(IAFG.IA.VI.AF.Proposition.Pilotage.Registre.RegistreRacine,System.String)">
+	<summary>
+	</summary>
+	<param name="registreRacine"></param>
+	<param name="clef"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Registre.CreerValeur(IAFG.IA.VI.AF.Proposition.Pilotage.Registre.RegistreRacine,System.String,System.String,System.String)">
+	<summary>
+ Creer une valeur pour une clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veyt creer une valeur.</param>
+	<param name="clef">La clef ou la valeur sera creee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<param name="valeur">La valeur a conserver.</param>
+	<returns>Retourne la valeur True si la valeur a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Registre.CreerValeur(IAFG.IA.VI.AF.Proposition.Pilotage.Registre.RegistreRacine,System.String,System.String,System.Byte[])">
+	<summary>
+ Creer une valeur pour une clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veyt creer une valeur.</param>
+	<param name="clef">La clef ou la valeur sera creee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<param name="valeur">La valeur a conserver.</param>
+	<returns>Retourne la valeur True si la valeur a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Registre.CreerValeur(IAFG.IA.VI.AF.Proposition.Pilotage.Registre.RegistreRacine,System.String,System.String,System.Int32)">
+	<summary>
+ Creer une valeur pour une clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veyt creer une valeur.</param>
+	<param name="clef">La clef ou la valeur sera creee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<param name="valeur">La valeur a conserver.</param>
+	<returns>Retourne la valeur True si la valeur a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Registre.SupprimerValeur(IAFG.IA.VI.AF.Proposition.Pilotage.Registre.RegistreRacine,System.String,System.String)">
+	<summary>
+ Supprimer une valeur a partir de la clef pour la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine d'ou l'on veut supprimer une valeur.</param>
+	<param name="clef">La clef d'ou la valeur sera supprimee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<returns>Retourne la valeur True si la valeur a ete supprimee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Registre.ObtenirClefRegistre(IAFG.IA.VI.AF.Proposition.Pilotage.Registre.RegistreRacine)">
+	<summary>
+ Permet d'obtenir un objet RegistryKey representant la racine demandee par le parametre registreRacine.
+ </summary>
+	<param name="registreRacine">La racine de la base de regsitre demandee.</param>
+	<returns>Une instance de RegistryKey</returns>
+	<remarks>Si la valeur de l'enumeration n'existe pas, la valeur nul (Nothing) est retournee.</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Registre.EffacerRegistryKey(Microsoft.Win32.RegistryKey@)">
+	<summary>
+ Effacer l'instance a l'objet RegistryKey.
+ </summary>
+	<param name="registryKey">L'instance de l'objet RegistryKey.</param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Registre">
+	<summary>
+ Cette classe est une classe de facade pour l'utilisation de la base de registre.
+ </summary>
+	<remarks>Cette classe est statique(Shared). Cette classe est non heritable(NotInheritable).</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ProvinceParCodeAlis.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="CodeAlis">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ProvinceParCodeAlis">
+	<summary>
+ Classe de requete pour la requête ProvinceParCodeAlis.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ProvinceParTexte.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ProvinceParTexte)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ProvinceParTexte à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetProvinceParTexte.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ProvinceParTexte">
+	<summary>
+Sert a trouver le EtatProvince en fonction d'une abbérviation de la province.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ConsommationAlcool.Executer(System.Int32)">
+	<summary>
+	</summary>
+	<param name="Frequence">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ConsommationAlcool">
+	<summary>
+ Classe de requete pour la requête ConsommationAlcool.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.SQLGammeProduitExiste.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.SQLGammeProduitExiste)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.SQLGammeProduitExiste à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetSQLGammeProduitExiste.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ValeurEnumExigence.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ValeurEnumExigence)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ValeurEnumExigence à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetValeurEnumExigence.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeOptionAdd.Executer">
+	<summary>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeOptionAdd">
+	<summary>
+ Classe de requete pour la requête ListeOptionAdd.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.RelationIdentification.Executer">
+	<summary>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.RelationIdentification">
+	<summary>
+ Classe de requete pour la requête RelationIdentification.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeCodeSexe.Executer(System.Boolean)">
+	<summary>
+	</summary>
+	<param name="EstPresentCodeInconnu">Ce paramètre est de type <code>Boolean</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeCodeSexe">
+	<summary>
+ Classe de requete pour la requête ListeCodeSexe.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ListeDescriptionExigence.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeDescriptionExigence)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ListeDescriptionExigence à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetListeDescriptionExigence.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ListeGenreEntreprise.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeGenreEntreprise)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ListeGenreEntreprise à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetListeGenreEntreprise.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ListeLieuNaissance.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeLieuNaissance)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ListeLieuNaissance à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetListeLieuNaissance.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ListeOccupation.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeOccupation)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ListeOccupation à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetListeOccupation.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.RelationIdentification.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.RelationIdentification)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.RelationIdentification à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetRelationIdentification.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ProvinceParEtatProvince.Executer(IAFG.IA.VI.ENUMs.EtatProvince)">
+	<summary>
+	</summary>
+	<param name="Province">Ce paramètre est de type <code>IAFG.IA.VI.ENUMs.EtatProvince</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ProvinceParEtatProvince">
+	<summary>
+ Classe de requete pour la requête ProvinceParEtatProvince.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.InfoCompte.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.InfoCompte)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.InfoCompte à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetInfoCompte.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.InfoCompte">
+	<summary>
+"Classe utilisée pour obtenir le type de compte à partir d'un nom de véhicule de placement."
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.EstInvaliditePermisPourOccupation.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="Occupation">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.EstInvaliditePermisPourOccupation">
+	<summary>
+ Classe de requete pour la requête EstInvaliditePermisPourOccupation.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ObtenirCodeStatutLegal.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="DescriptionStatut">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ObtenirCodeStatutLegal">
+	<summary>
+ Classe de requete pour la requête ObtenirCodeStatutLegal.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ListeCodeExt.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeCodeExt)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ListeCodeExt à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetListeCodeExt.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeCodeProvince.Executer">
+	<summary>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeCodeProvince">
+	<summary>
+ Classe de requete pour la requête ListeCodeProvince.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.InfoImmigrant.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.InfoImmigrant)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.InfoImmigrant à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetInfoImmigrant.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.NomVehiculeInvestissementFromCode.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="codeVehicule">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.NomVehiculeInvestissementFromCode">
+	<summary>
+ Classe de requete pour la requête NomVehiculeInvestissementFromCode.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ListeButAssurances.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeButAssurances)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ListeButAssurances à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetListeButAssurances.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ListePaye.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListePaye)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ListePaye à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetListePaye.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ObtenirCodeStatutLegal.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ObtenirCodeStatutLegal)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ObtenirCodeStatutLegal à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetObtenirCodeStatutLegal.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeDescriptionExigence.Executer">
+	<summary>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeDescriptionExigence">
+	<summary>
+ Classe de requete pour la requête ListeDescriptionExigence.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListePaye.Executer">
+	<summary>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListePaye">
+	<summary>
+ Classe de requete pour la requête ListePaye.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.NomCompagnieAssAutresCies.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.NomCompagnieAssAutresCies)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.NomCompagnieAssAutresCies à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetNomCompagnieAssAutresCies.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="P:IAFG.IA.VI.AF.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisee par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.VI.AF.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriete CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources � l'aide de cette classe de ressource fortement typee.
+</summary>
+</member><member name="T:IAFG.IA.VI.AF.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typee destinee, entre autres, a� la consultation des chaines localisees.
+</summary>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeCodeExt.Executer">
+	<summary>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeCodeExt">
+	<summary>
+ Classe de requete pour la requête ListeCodeExt.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ListeCodeProvince.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeCodeProvince)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ListeCodeProvince à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetListeCodeProvince.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.InfoProduit.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.InfoProduit)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.InfoProduit à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetInfoProduit.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.InfoProduit">
+	<summary>
+Classe utilisée par l'objet de Proposition pour charger les informations de l'objet Proposition.Produit.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeStatutLegal.Executer">
+	<summary>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeStatutLegal">
+	<summary>
+ Classe de requete pour la requête ListeStatutLegal.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ConsommationAlcool.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ConsommationAlcool)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ConsommationAlcool à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetConsommationAlcool.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ListeCodeSexe.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeCodeSexe)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ListeCodeSexe à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetListeCodeSexe.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.RechercheLienProposition.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.RechercheLienProposition)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.RechercheLienProposition à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetRechercheLienProposition.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.TypeOccupationFromId.Executer(System.Int32)">
+	<summary>
+	</summary>
+	<param name="IdOccupation">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.TypeOccupationFromId">
+	<summary>
+ Classe de requete pour la requête TypeOccupationFromId.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.RelationCompagnie.Executer">
+	<summary>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.RelationCompagnie">
+	<summary>
+ Classe de requete pour la requête RelationCompagnie.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.InfoProduit.Executer(System.Double)">
+	<summary>
+	</summary>
+	<param name="GammeId">Ce paramètre est de type <code>Double</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.InfoProduit">
+	<summary>
+ Classe de requete pour la requête InfoProduit.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.EstInvaliditePermisPourOccupation.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.EstInvaliditePermisPourOccupation)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.EstInvaliditePermisPourOccupation à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetEstInvaliditePermisPourOccupation.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.InfoAgenceFromCodeAgence.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.InfoAgenceFromCodeAgence)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.InfoAgenceFromCodeAgence à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetInfoAgenceFromCodeAgence.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ListeAgence.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeAgence)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ListeAgence à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetListeAgence.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeFournisseurDefaut.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="strNoAgence">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeFournisseurDefaut">
+	<summary>
+ Classe de requete pour la requête ListeFournisseurDefaut.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeNomOrganisme.Executer(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="TypeOrganisme">Ce paramètre est de type <code>String</code>.</param>
+	<param name="NoCie">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeNomOrganisme">
+	<summary>
+ Classe de requete pour la requête ListeNomOrganisme.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.NomVehiculeInvestissementFromCode.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.NomVehiculeInvestissementFromCode)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.NomVehiculeInvestissementFromCode à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetNomVehiculeInvestissementFromCode.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeOccupation.Executer">
+	<summary>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeOccupation">
+	<summary>
+ Classe de requete pour la requête ListeOccupation.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.DescriptionExigence.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.DescriptionExigence)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.DescriptionExigence à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetDescriptionExigence.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.InfoAgenceFromCodeAgence.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="CodeAgence">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.InfoAgenceFromCodeAgence">
+	<summary>
+ Classe de requete pour la requête InfoAgenceFromCodeAgence.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeAgence.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="mintCie">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeAgence">
+	<summary>
+ Classe de requete pour la requête ListeAgence.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeAgenceCD.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="mintCie">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeAgenceCD">
+	<summary>
+ Classe de requete pour la requête ListeAgenceCD.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ListeFournisseurDefaut.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeFournisseurDefaut)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ListeFournisseurDefaut à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetListeFournisseurDefaut.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.NomCompagnieEstGroupeIA.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.NomCompagnieEstGroupeIA)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.NomCompagnieEstGroupeIA à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetNomCompagnieEstGroupeIA.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.RechercheLienProposition.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="AddOptAutrePropo">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.RechercheLienProposition">
+	<summary>
+ Classe de requete pour la requête RechercheLienProposition.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.TailleETPoids.Executer(System.Int32,System.Int32)">
+	<summary>
+	</summary>
+	<param name="vSexe">Ce paramètre est de type <code>Int32</code>.</param>
+	<param name="vAge">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.TailleETPoids">
+	<summary>
+ Classe de requete pour la requête TailleETPoids.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ValeurEnumExigence.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="CodeExigence">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ValeurEnumExigence">
+	<summary>
+ Classe de requete pour la requête ValeurEnumExigence.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.RelationCompagnie.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.RelationCompagnie)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.RelationCompagnie à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetRelationCompagnie.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.KeyAccessor.ApplyCriteriaMatchEqualOrDefault(IAFG.IA.VI.AF.Base.KeyAccessor)">
+	<summary>
+  Subfunction use by ApplyCriteria that tries to match criteria value by equality or match the default value define for the criteria.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.KeyAccessor.ApplyCriteriaMatchGreatestValueLessOrEqual(IAFG.IA.VI.AF.Base.KeyAccessor)">
+	<summary>
+  Subfunction use by ApplyCriteria that trys to select the value whose key matches the greatest value less than or equal to the criterisValue parameter
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.KeyAccessor.ApplyCriteriaMatchEqual(IAFG.IA.VI.AF.Base.KeyAccessor)">
+	<summary>
+  Subfunction use by ApplyCriteria that tries to match criteria value by equality.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.PDFException.#ctor">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.PDFException.#ctor(System.String)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.PDFException.#ctor(System.String,System.Exception)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<param name="inner"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.PDFException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+	<summary>
+	</summary>
+	<param name="info"></param>
+	<param name="context"></param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Base.PDFException">
+	<summary>
+ Exception qui est levee par les objets du PDF.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.CodesExigences.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.CodesExigences)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.CodesExigences à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetCodesExigences.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.DescriptionExigence.Executer(System.Int32)">
+	<summary>
+	</summary>
+	<param name="CodeExigence">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.DescriptionExigence">
+	<summary>
+ Classe de requete pour la requête DescriptionExigence.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.GenreEntrepriseOccupationFromId.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.GenreEntrepriseOccupationFromId)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.GenreEntrepriseOccupationFromId à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetGenreEntrepriseOccupationFromId.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ListeNomOrganisme.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeNomOrganisme)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ListeNomOrganisme à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetListeNomOrganisme.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.PlanPourDureeEtPlan.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.PlanPourDureeEtPlan)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.PlanPourDureeEtPlan à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetPlanPourDureeEtPlan.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeLieuNaissance.Executer">
+	<summary>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeLieuNaissance">
+	<summary>
+ Classe de requete pour la requête ListeLieuNaissance.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ListeStatutLegal.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeStatutLegal)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ListeStatutLegal à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetListeStatutLegal.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ProvinceParTexte.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="Province">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ProvinceParTexte">
+	<summary>
+ Classe de requete pour la requête ProvinceParTexte.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.PlanPourDureeEtPlan.Executer(System.String,System.Single)">
+	<summary>
+	</summary>
+	<param name="Plan">Ce paramètre est de type <code>String</code>.</param>
+	<param name="Duree">Ce paramètre est de type <code>Single</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.PlanPourDureeEtPlan">
+	<summary>
+ Classe de requete pour la requête PlanPourDureeEtPlan.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.TypeOccupationFromId.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.TypeOccupationFromId)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.TypeOccupationFromId à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetTypeOccupationFromId.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.NomCompagnieAssAutresCies.Executer">
+	<summary>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.NomCompagnieAssAutresCies">
+	<summary>
+ Classe de requete pour la requête NomCompagnieAssAutresCies.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ProvinceParCodeEtatProvince.Executer(IAFG.IA.VI.ENUMs.CodeEtatProvince)">
+	<summary>
+	</summary>
+	<param name="Province">Ce paramètre est de type <code>IAFG.IA.VI.ENUMs.CodeEtatProvince</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ProvinceParCodeEtatProvince">
+	<summary>
+ Classe de requete pour la requête ProvinceParCodeEtatProvince.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.CodesExigences.Executer(System.String,System.String,System.Byte,System.Int32,System.String,IAFG.IA.VI.AF.Tarification.ENUMs.OrigineCommandeExigence)">
+	<summary>
+	</summary>
+	<param name="CodeAgeMontant">Ce paramètre est de type <code>String</code>.</param>
+	<param name="CodeFumeur">Ce paramètre est de type <code>String</code>.</param>
+	<param name="Age">Ce paramètre est de type <code>Byte</code>.</param>
+	<param name="MontantAssurance">Ce paramètre est de type <code>Int32</code>.</param>
+	<param name="Version">Ce paramètre est de type <code>String</code>.</param>
+	<param name="OrigineCommande">Ce paramètre est de type <code>IAFG.IA.VI.AF.Tarification.ENUMs.OrigineCommandeExigence</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.CodesExigences">
+	<summary>
+ Classe de requete pour la requête CodesExigences.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.CompagnieAssuranceFromId.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.CompagnieAssuranceFromId)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.CompagnieAssuranceFromId à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetCompagnieAssuranceFromId.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.IllustSignee.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.IllustSignee)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.IllustSignee à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetIllustSignee.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.RecherchePremierePropositionEstTransferer.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="AddOptAutrePropo">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.RecherchePremierePropositionEstTransferer">
+	<summary>
+ Classe de requete pour la requête RecherchePremierePropositionEstTransferer.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ListeBank.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeBank)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ListeBank à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetListeBank.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeButAssurances.Executer">
+	<summary>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeButAssurances">
+	<summary>
+ Classe de requete pour la requête ListeButAssurances.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeGenreEntreprise.Executer">
+	<summary>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeGenreEntreprise">
+	<summary>
+ Classe de requete pour la requête ListeGenreEntreprise.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ProvinceParEtatProvince.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ProvinceParEtatProvince)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ProvinceParEtatProvince à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetProvinceParEtatProvince.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ProvinceParEtatProvince">
+	<summary>
+Sert a trouver le EtatProvince en fonction d'un EtatProvince.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.RecherchePremierePropositionEstTransferer.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.RecherchePremierePropositionEstTransferer)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.RecherchePremierePropositionEstTransferer à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetRecherchePremierePropositionEstTransferer.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeBank.Executer">
+	<summary>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeBank">
+	<summary>
+ Classe de requete pour la requête ListeBank.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Pilotage.Donnees.ListeOptionAdd.#ctor(IAFG.IA.VI.AF.Proposition.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Proposition.Pilotage.Requetes.ListeOptionAdd)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ListeOptionAdd à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetListeOptionAdd.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member>
+</members>
+</doc>

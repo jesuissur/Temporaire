@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject3", "UnitTestProject3.csproj", "{7EFA3F69-4A78-43B6-80B6-9F3513706B09}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "IAFG.IA.VI.AF.Illustration", "..\..\..\..\..\..\IA_TFS\VI_SuiteInterface\Dev\Fisc1\VI\AF\Illustration\Illustration\IAFG.IA.VI.AF.Illustration.vbproj", "{71953769-490B-4B82-9814-5F1928BAF24F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newtonsoft.Json.Net35", "..\..\..\..\Newtonsoft.Json-8.0.3\Src\Newtonsoft.Json\Newtonsoft.Json.Net35.csproj", "{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newtonsoft.Json.Tests.Net35", "..\..\..\..\Newtonsoft.Json-8.0.3\Src\Newtonsoft.Json.Tests\Newtonsoft.Json.Tests.Net35.csproj", "{3E6E2335-B079-4B5B-A65A-9D586914BCBB}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 1
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://cv.websct.ia.iafg.net:8080/tfs/sopcv_ddv
+		SccProjectUniqueName0 = ..\\..\\..\\..\\IA_TFS\\VI_SuiteInterface\\Dev\\Fisc1\\VI\\AF\\Illustration\\Illustration\\IAFG.IA.VI.AF.Illustration.vbproj
+		SccProjectName0 = $/VI_SuiteInterface/Dev/Fisc1/VI/AF/Illustration/Illustration
+		SccAuxPath0 = http://cv.websct.ia.iafg.net:8080/tfs/sopcv_ddv
+		SccLocalPath0 = ..\\..\\..\\..\\IA_TFS\\VI_SuiteInterface\\Dev\\Fisc1\\VI\\AF\\Illustration\\Illustration
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EFA3F69-4A78-43B6-80B6-9F3513706B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EFA3F69-4A78-43B6-80B6-9F3513706B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EFA3F69-4A78-43B6-80B6-9F3513706B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EFA3F69-4A78-43B6-80B6-9F3513706B09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71953769-490B-4B82-9814-5F1928BAF24F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71953769-490B-4B82-9814-5F1928BAF24F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71953769-490B-4B82-9814-5F1928BAF24F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71953769-490B-4B82-9814-5F1928BAF24F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E6E2335-B079-4B5B-A65A-9D586914BCBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E6E2335-B079-4B5B-A65A-9D586914BCBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E6E2335-B079-4B5B-A65A-9D586914BCBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E6E2335-B079-4B5B-A65A-9D586914BCBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

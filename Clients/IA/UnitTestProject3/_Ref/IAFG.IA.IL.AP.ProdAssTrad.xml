@@ -1,0 +1,1112 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.IL.AP.ProdAssTrad
+</name>
+</assembly>
+<members>
+<member name="M:IAFG.IA.IL.AP.ProdAssTrad.Affaires.ReglesAffaireAssure.ValiderValeur(System.String,System.DateTime,System.Boolean)">
+	<summary>
+ Cette fonction permet de valider une valeur de type Date passée en paramètre pour
+ un item donc l'identifiant est également passé en paramètre
+ </summary>
+	<param name="idItem">Le nom de l'item pour lequel nous devons valider la date</param>
+	<param name="valeurItem">La valeur qui doit être validée</param>
+	<param name="isInForce">Indique si le traitement est fait pour une protection en vigueur</param>
+	<returns>Valeur de l'énumération Statut</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Affaires.ReglesAffaireAssure.ValiderValeur(System.String,System.Int32,System.Boolean)">
+	<summary>
+ Cette fonction permet de valider une valeur de type Integer passée en paramètre pour
+ un item donc l'identifiant est également passé en paramètre
+ </summary>
+	<param name="idItem">Le nom de l'item pour lequel nous devons valider la valeur</param>
+	<param name="valeurItem">La valeur qui doit être validée</param>
+	<param name="isInForce">Indique si le traitement est fait pour une protection en vigueur</param>
+	<returns>Valeur de l'énumération Statut</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Affaires.ReglesAffaireAssure.ItemVisible(System.String,System.Boolean)">
+	<summary>
+ Cette fonction permet d'obtenir le statut de visibilité d'un item (champ) pour
+ la règle d'affaire que représente cet objet
+ </summary>
+	<param name="idItem">Le nom de l'item (champ) pour lequel nous désirons obtenir le statut
+ de visilibité</param>
+	<param name="isInForce">Indique si le traitement est fait pour une protection en vigueur</param>
+	<returns>True si l'item est visible</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Affaires.ReglesAffaireAssure.IsStatutVisibleAjoutAssureRetourPropo(System.Int32)">
+	<summary>Cette fonction indique si la liste déroulante du statut 
+ doit être affichée lors de l'ajout d'un assuré, au retour 
+ de la Proposition électronique, selon son âge.</summary>
+	<isnew>2008-05-06</isnew>
+	<param name="ageAssure">L'âge de l'assuré.</param>
+	<returns>True si l'âge de l'assuré fait en sorte qu'on doit 
+ faire apparaître la liste de sélection du statut de 
+ tabagisme de l'assuré; False sinon.</returns>
+</member><member name="T:IAFG.IA.IL.AP.ProdAssTrad.Affaires.ReglesAffaireAssure">
+	<summary>
+ Classe gérant les règles d'affaires pour les assurés.</summary>
+	<isnew>2008-05-06</isnew>
+	<remarks></remarks>
+	<history>
+		<pre>
+ Auteur            Date         Description
+ ===========================================================================
+ Tremblay, Victor  2008-05-06   Ajout de la règle d'affaires 
+                                IsStatutVisibleAjoutAssureRetourPropo.
+ </pre>
+	</history>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.DataWindowPrincipale_Click(System.Object,IAFG.IA.VI.AP.Commun.CtrlIU.DataWindow.ItemClickEventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement Click de la DataWindowPrincipale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.DataWindowPrincipale_ItemChanged(System.Object,Sybase.DataWindow.ItemChangedEventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement ItemChanged de la DataWindowPrincipale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.DataWindowPrincipale_ItemError(System.Object,Sybase.DataWindow.ItemErrorEventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement ItemError de la DataWindowPrincipale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.DataWindowPrincipale_PostItemChanged(System.Object,Sybase.DataWindow.ItemChangedEventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement PostItemChanged de la DataWindowPrincipale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.DataWindowPrincipale_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement MouseMove de la DataWindowPrincipale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.DialogueConfigDefaut_Load(System.Object,System.EventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement Load du formulaire
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.BoutonReinitialiser_Click(System.Object,System.EventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement Click du bouton "Reinitialiser"
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.SaveSectionInfo">
+	<summary>
+ Cette méthode permet de sauvegarder les données de configuration en utilisant
+ l'objet de pilotage
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.SaveSectionAssure">
+	<summary>
+ Cette méthode permet de sauvegarder les données de configuration pour l'assuré en
+ utilisant l'objet de pilotage
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.SaveSectionProtection">
+	<summary>
+ Cette méthode permet de sauvegarder les données de configuration pour les protections en
+ utilisant l'objet de pilotage
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.SaveSectionResultat">
+	<summary>
+ Cette méthode permet de sauvegarder les données de configuration pour les résultats en
+ utilisant l'objet de pilotage
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.SaveSectionComp">
+	<summary>
+ Cette méthode permet de sauvegarder les données de configuration pour les commissions / compensations en
+ utilisant l'objet de pilotage
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.ChargerSectionInfo(System.Boolean)">
+	<summary>
+ Cette méthode permet de charger les données de configuration en utilisant l'objet
+ de pilotage
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.ChargerSectionProtection(System.Boolean)">
+	<summary>
+ Cette méthode permet de charger les données de configuration pour les protections en utilisant l'objet
+ de pilotage
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.ChargerSectionResultat(System.Boolean)">
+	<summary>
+ Cette méthode permet de charger les données de configuration pour les résultats en utilisant l'objet
+ de pilotage
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.ChargerSectionAssure(System.Boolean)">
+	<summary>
+ Cette méthode permet de charger les données de la section assuré en utilisant l'objet
+ de pilotage
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.Sauvegarde">
+	<summary>
+ Cette méthode sert à faire la sauvegarde
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.ChargerSectionAmortissement(System.Boolean)">
+	<summary>
+ Cette méthode charger les données de la section amortissement en utilisant
+ l'objet de pilotage
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.SaveSectionAmortissement">
+	<summary>
+ Cette méthode permet de sauvegarder les informations de la section amortissement
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.SaveTauxMarginal">
+	<summary>
+ Cette méthode permet de sauvegarder le taux marginal dans la base de registre. Indispensable si on change
+ la province par default parce que GENESIS viendra lire cette clé au démarrage
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.OuvrirGarantiesDefaut">
+	<summary>
+ Cette méthode permet d'ouvrir l'écran des garanties par défaut
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.InitValeurs(System.Boolean)">
+	<summary>
+ Initialise les valeurs de la fenêtre de config
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.ChargerSectionComp(System.Boolean)">
+	<summary>
+ Cette méthode charge les données de la section comissions / compensations grâce au service
+ de pilotage
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+	<summary>
+ Traite une touche de commande.
+ </summary>
+	<param name="msg">System.Windows.Forms.Message, passé par référence, qui représente le message de fenêtre à traiter.</param>
+	<param name="keyData">Une des valeurs System.Windows.Forms.Keys qui représente la touche à traiter. </param>
+	<returns>True si le caractère a été traité par cette méthode; sinon False.</returns>
+	<remarks>Cette méthode est nécessaire pour contourner un bogue de tabulation dans datawindow .Net 2.0</remarks>
+</member><member name="T:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueConfigDefaut">
+	<summary>
+ Classe contenant les méthodes et les évènements pour DialogueConfigDefaut
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GestionInfoProtection.#ctor(IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad)">
+	<summary>
+ Constructeur de cette classe. Elle reçoit l'instance de l'objet visuel auquel 
+ elle sera associé
+ </summary>
+	<param name="parent">Instance de l'objet visuel auquel cette classe est associé</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GestionInfoProtection.ObtenirListAvenantPossible(System.String)">
+	<summary>
+ Retourne la liste de PlanIllust possible contenue dans les listes des protections reliées à la protection de base
+ </summary>
+	<param name="idProtBase">L'id de la protection de Base</param>
+	<returns>La liste de PlanIllust</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GestionInfoProtection.ObtenirPremierItemListeProtection">
+	<summary>
+ Méthode pour obtenir le premier item de la liste de protections à ajouter
+ </summary>
+	<returns>1 IL.AP.IllusVie.Trad.Utils.ItemListeProtection</returns>
+	<remarks>Coder dans les descendant</remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GestionInfoProtection.AfficherComparatif(System.Int32)">
+	<summary> 
+ Méthode pour ouvrir le comparatif d'assurance vie
+ </summary>
+	<param name="rangee">La rangée de la protection pour laquelle ouvrir le comparatif</param>
+	<remarks>Codé dans les descendants</remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GestionInfoProtection.EffectuerVerificationTypeCapital(IAFG.IA.VI.AF.Proposition.ENUMs.TypeAssurance,System.Int32)">
+	<summary>
+ Méthode qui fait les vérifications additionnelles sur un changement d'âge pour Multiterme
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GestionInfoProtection.RafraichirMontantProtectionTotal">
+	<summary>
+ Cette fonction set le montant de prestation d'invalidité
+ totale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GestionInfoProtection.InitialiserResize">
+	<summary>
+ Initialisation du service de resize pour la datawindow des protections
+ </summary>
+	<remarks>Parent est la propriété qui contient la datawindow</remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GestionInfoProtection.GererAlignementEntete">
+	<summary>
+ Gerer l'alignement des champs dans la DataWindow2
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GestionInfoProtection.RefreshMontant(System.Int32,System.String)">
+	<summary>
+ Cette fonction permet gérer le montant pour les ass inv
+ </summary>
+	<param name="rangee">la row qui est été modifiée</param>
+	<param name="champs">le champs qui à été modifié</param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.ProdAssTrad.Utils.GestionInfoProtection">
+	<summary>
+ Classe qui contient la logigue d'affaire du contrôle visuel des protections de la
+ section "Illustration" représenté par la classe "InfoProtectionTrad" de couche
+ IllusVie.Trad
+ </summary>
+	<remarks>Cette classe sert à séparer la logique d'affaire de la classe visuelle 
+ auquel elle est associée. Elle hérite de la classe GestionInfoProtectionTrad qui
+ contient la logique de base de la gestion des protection. Cette classe est instancié
+ au niveau applicatif par la classe "FormulaireAssure".</remarks>
+	<history>
+		<pre>
+ Auteur               Date       Description
+ ==============================================================
+ Robert Bastien    2007-10-02    Création
+ </pre>
+	</history>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Donnees.UtilsDossier.ObtenirConceptApplication">
+	<summary>
+ Cette fonction permet de nous retourner le concept de l'application en cours.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Donnees.UtilsDossier.PresenceAssInvBaseIndividu(System.String,System.String)">
+	<summary>
+ Cette fonction retourne si l'individu passé en paramètre
+ a une assurance invalidité sur la protection de base passée en paramètre
+ </summary>
+	<param name="idProtBase">l'id de la protection de base</param>
+	<param name="idIndividu">L'id de l'individu</param>
+	<returns>true : l'individu a de l'ass inv sur la protection
+ false : l'individu n'a pas de l'ass inv sur la prot</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.InitialiseParamApplicatif(System.Collections.ObjectModel.ReadOnlyCollection{System.String})">
+	<summary>
+ Méthode qui est exécuter au tout début de l'exécution de l'application
+ </summary>
+	<param name="commandLineArgs">la ligne de commande passée en paramètre à App</param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.BarreApplicative">
+	<summary>
+ Pointeur sur la barre applicative de l'application.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.InitialisePilotage">
+	<summary>
+ Initialise les valeurs de pilotage à charger.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.InitialiseMessages">
+	<summary>
+ Charge le xml de message dans le gestionnaire de message.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.InitialiseListesChoix">
+	<summary>
+ Charge le xml de liste de choix dans le service de liste de choix.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.InitialiseColonnes">
+	<summary>
+ Charge le xml des colonnes dans le services des colonnes.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.InitialiseGraphiques">
+	<summary>
+ Cherge les fichiers de graphique dans le service des graphiques.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.InitialiseAideContextuelle">
+	<summary>
+ Charge le xml d'aide contextuel dans le service d'aide.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.InitialiseTaux">
+	<summary>
+ Initialise les taux.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.InitialiseTableaux">
+	<summary>
+ Charge le xml des tableaux dans le service des tableaux.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.InitialiseStyles">
+	<summary>
+ Charge le xml des styles dans le service des styles.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.InitialiseResources">
+	<summary>
+ Charge le fichier de ressource de la couche multierme.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.InitialiseBoni">
+	<summary>
+ Initialise les bonis.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.CreerGestionFormulaires">
+	<summary>
+ Cré le bon gestionnaire de formulaire pour l'application.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.CreerGestionnaireDossier">
+	<summary>
+ Cré le bon gestionnaire de dossier  pour l'application.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.CreerUtilsDossier">
+	<summary>
+ Cré le bon utils de dossier pour l'application.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.CreerGestionCalculs">
+	<summary>
+ Cré le bon gestionnaire de calculs pour l'application.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.CreerGestionRegleAffaires">
+	<summary>
+ Cré le bon gestionnaire de règle d'affaire pour l'application.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.CreateBarreApplicative">
+	<summary>
+ Cré la bonne barre applicativepour l'application.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.CreerGestionPilotage">
+	<summary>
+ Méthode qui fait l'instanciation de l'objet servant à la gestion des informations
+ de pilotage pour l'application 
+ </summary>
+	<returns>Pointeur à l'instance de l'objet de gestion du pilotage</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.Initialise(IAFG.IA.VI.AP.Commun.CtrlIU.WindowsFormBase,IAFG.IA.VI.AP.Commun.CtrlIU.MenuPrincipalBase,System.String,System.String)">
+	<summary>
+ Fait tout le traitement nécessaire à l'initialisation de l'application.
+ </summary>
+	<param name="mainForm">Pointeur vers la form principale de l'application.</param>
+	<param name="mainMenu">Pointeur vers le menu principal de l'application.</param>
+	<param name="GestionFormulairesPath">Path vers le fichier xml des formulaires.</param>
+	<param name="GestionMenuContextuelPath">Path vers le ficheir xml ds menus.</param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.LibraryList">
+	<summary>
+ Permet d'avoir le path des library power builder pour l'application courante.
+ </summary>
+	<returns>Le path des library power builder pour l'application courante.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.ConfigIllus(System.Object)">
+	<summary>
+ Affiche le menu des configurations par défaut.
+ </summary>
+	<param name="sender"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.RefreshMenu(System.Boolean)">
+	<summary>
+ Function qui gère les menus disponibles selon les conditions.
+ </summary>
+	<param name="reset">Si l'on vient de resetter le cas.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.DeleteReportFiles">
+	<summary>
+ Suprime les fichiers temporaires de rapport pour multiterme.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.Statistiques">
+	<summary>
+ Initialise différents compteurs Sous IA Stats pour fin de statistiques
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.GetConfigDefaut">
+	<summary>
+ Permet d'obtenir les clé qu'il faut conserver lorsque l'on transfère d'une version à l'autre.
+ </summary>
+	<returns>Retourne la liste des clés à prendre en sauvegarde.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.GererMsgPresave">
+	<summary>
+ Afficher le message demandant si l'on veut ajouter l'EPIC si elle est non présente.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.ShowSplashScreen">
+	<summary>
+ Méthode qui fait l'affichage de la fenêtre d'introduction (splashscreen)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application.ObtenirObjetRapport">
+	<summary>
+ Permet d'obtenir un objet de rapport avec le bon type pour l'application en cours.
+ </summary>
+	<returns>Retourne l'objet de rapport utilisé par l'application courante.</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.ProdAssTrad.Utils.Application">
+	<summary>
+ Gère les initialisatione et les traitements de l'application Produit Assurance Traditionnel.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Affaires.ReglesAffaireAffichage.SectionVisible(System.String,System.Boolean)">
+	<summary>
+ Cette fonction permet d'obtenir le statut de visibilité
+ d'une section pour la regle d'affaire que représente cet
+ objet
+ </summary>
+	<param name="idItem">Le nom de la section pour lequel nous désirons obtenir
+ le statut de visiblité</param>
+	<param name="isInForce">Indique si le traitement est fait pour une protection en 
+ vigueur</param>
+	<returns>Trus si l'item est visible</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.ProdAssTrad.Affaires.ReglesAffaireAffichage">
+	<summary>
+ Classe gérant les règles d'affaire pour l'affichage
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.AccesServices.#ctor">
+	<summary>
+ Uniquement déclarer pour faire en sorte que FXCop ne souligne l'erreur 
+ "Static holder types should not have constructors"
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAccueil.FormulaireAccueil_Load(System.Object,System.EventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement Load de FormulaireAccueil
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAccueil.FormulaireAccueil_switchLang(System.Object)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement switchLang du formulaire
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAccueil.cbx_deactivate_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement CheckedChanged de la case à cocher cbx_deactivate
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAccueil.UnloadData(System.Object)">
+	<summary>
+ Overrides de la fonction UnloadData de la classe de base
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAccueil.Init">
+	<summary>
+ Cette méthode est permet d'initialiser les données du formulaire
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAccueil">
+	<summary>
+ Classe contenant les méthodes et les évènements de FormulaireAccueil
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAssure.LogiqueFormulaire">
+	<summary>
+ Propriété qui donne accès à l'instance de l'objet qui contient la la logique
+ d'affaire de ce formulaire
+ </summary>
+	<value>L'instance de l'objet qui contient la logique d'affaire pour ce formulaire</value>
+	<returns>L'instance de l'objet qui contient la logique d'affaire pour ce formulaire</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAssure.#ctor">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAssure.Messages">
+	<summary>
+ Messages d'erreur
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAssure.NumeroAssure">
+	<summary>
+ Propriété de la valeur NumeroAssure
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAssure.InitialiserResize">
+	<summary>
+ Méthode qui initialiser le resize
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAssure.ObtenirProchainAssure(System.String,System.String)">
+	<summary>
+ Cette fonction permet de déterminer le prochain assure
+ qui peut avoir la protection de base passé en paramètre.
+ as_id_assure aura la valeur "0" si aucun assuré peut recevoir la protection
+ </summary>
+	<param name="idBase">L'id de la protection de base</param>
+	<param name="idProtection">L'id de la protection</param>
+	<returns>L'id du prochain assuré disponible</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAssure.CalculPrimesVersees">
+	<summary>
+ Calcul le résultat de la prime selon le type de prime choisie
+ et l'inscrit à l'écran dans le champs montant de la section des primes
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAssure.GererBoutonCedule">
+	<summary>
+ Gestion du bouton modifier ou ajouter de la cédule d'amortissement.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAssure.ValidationUnload">
+	<summary>
+ Cette fonction permet de valider s'il y a des primes à 0.
+ S'il y en a, on ne permet pas de changer d'onglet
+ </summary>
+	<returns>
+ True : Si la validation à réussie
+ </returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAssure.SetIiNumeroAssure(System.Int32)">
+	<summary>
+ Assigne le numéro d'assuré
+ </summary>
+	<param name="noAssure">le numéro de l'asssuré</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAssure.ChargerProtectionsPresave">
+	<summary>
+ Chargement des protections
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAssure.SetFocusLoad">
+	<summary>
+ Méthode pour faire le focus sur le premier champs du formulaire lors
+ du load de l'objet. Cette méthode est appelée dans le Gestionnaire de formulaire
+ </summary>
+	<remarks>Coder dans les descendants</remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAssure.DataWindow5_Click(System.Object,IAFG.IA.VI.AP.Commun.CtrlIU.DataWindow.ItemClickEventArgs)">
+	<summary>
+ Gestion de la cédule
+ </summary>
+	<param name="sender">Objet ayant levé l'événement</param>
+	<param name="e">Arguments de l'objet ayant levé l'événement</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAssure.LoadData(System.Object)">
+	<summary>
+ Chargement des données.</summary>
+	<isnew>2008-05-08</isnew>
+	<param name="sender">Objet ayant levé l'événement</param>
+	<returns>
+ TRUE : si le chagement est complété avec succès. 
+ </returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAssure.FormulaireAssure_Load(System.Object,System.EventArgs)">
+	<summary>
+ Chargement de la form
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAssure.FormulaireAssure_switchLang(System.Object)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement SwitchLang du formulaire
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAssure.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+	<summary>
+ Traite une touche de commande.
+ </summary>
+	<param name="msg">System.Windows.Forms.Message, passé par référence, qui représente le message de fenêtre à traiter.</param>
+	<param name="keyData">Une des valeurs System.Windows.Forms.Keys qui représente la touche à traiter. </param>
+	<returns>True si le caractère a été traité par cette méthode; sinon False.</returns>
+	<remarks>Cette méthode est nécessaire pour contourner un bogue de tabulation dans datawindow .Net 2.0</remarks>
+</member><member name="T:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAssure">
+	<summary>
+ Gestion du formulaire assuré
+ </summary>
+	<isnew>2008-05-08</isnew>
+	<remarks></remarks>
+	<history>
+		<pre>
+ Auteur            Date         Description
+ =====================================================================
+ Martel, Guy       2007-07-25   Programmation initiale
+ Tremblay, Victor  2008-05-08   Correction de l'anomalie DDV 
+                                INTERFACE 5.5.0 #25.
+ </pre>
+	</history>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Donnees.GestionDossier.EmpruntBancaireGet(System.String,System.Boolean@)">
+	<summary>
+ Permet d'aller chercher une valeur de la classe EmpruntBanquaire - String
+ </summary>
+	<param name="nomPropriete">Nom du champs</param>
+	<param name="valeurPropriete">La donnée à retourner</param>
+	<returns>1 - L'action s'est effectuée avec succès
+ -1 - Une erreur s'est produite durant le traitement
+ -2 - Le dataname n'est pas valide
+ -3 - Autre</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Donnees.GestionDossier.EmpruntBancaireGet(System.String,System.Decimal@)">
+	<summary>
+ Permet d'aller chercher une valeur de la classe EmpruntBanquaire - Decimal
+ </summary>
+	<param name="nomPropriete">Nom du champs</param>
+	<param name="valeurPropriete">La donnée à retourner</param>
+	<returns>1 - L'action s'est effectuée avec succès
+ -1 - Une erreur s'est produite durant le traitement
+ -2 - Le dataname n'est pas valide
+ -3 - Autre</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Donnees.GestionDossier.EmpruntBancaireGet(System.String,System.Int32@)">
+	<summary>
+ Permet d'aller chercher une valeur de la classe EmpruntBanquaire - Integer
+ </summary>
+	<param name="nomPropriete">Nom du champs</param>
+	<param name="valeurPropriete">La donnée à retourner</param>
+	<returns>1 - L'action s'est effectuée avec succès
+ -1 - Une erreur s'est produite durant le traitement
+ -2 - Le dataname n'est pas valide
+ -3 - Autre</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Donnees.GestionDossier.EmpruntBancaireSet(System.String,System.Decimal)">
+	<summary>
+ Permet d'initialiser un champ sur les emprunts banquaires - Decimal
+ </summary>
+	<param name="nomPropriete">Nom du champs à initialiser</param>
+	<param name="valeurPropriete">La donnée à setter</param>
+	<returns>1 - L'action s'est effectuée avec succès
+ -1 - Une erreur s'est produite durant le traitement
+ -2 - Le dataname n'est pas valide
+ -3 - Autre</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Donnees.GestionDossier.EmpruntBancaireSet(System.String,System.Int32)">
+	<summary>
+ Permet d'initialiser un champ sur les emprunts banquaires - Integer
+ </summary>
+	<param name="nomPropriete">Nom du champs à initialiser</param>
+	<param name="valeurPropriete">La donnée à setter</param>
+	<returns>1 - L'action s'est effectuée avec succès
+ -1 - Une erreur s'est produite durant le traitement
+ -2 - Le dataname n'est pas valide
+ -3 - Autre</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Donnees.GestionDossier.EmpruntBancaireSet(System.String,System.Boolean)">
+	<summary>
+ Permet d'initialiser un champ sur les emprunts banquaires - String
+ </summary>
+	<param name="nomPropriete">Nom du champs à initialiser</param>
+	<param name="valeurPropriete">La donnée à setter</param>
+	<returns>1 - L'action s'est effectuée avec succès
+ -1 - Une erreur s'est produite durant le traitement
+ -2 - Le dataname n'est pas valide
+ -3 - Autre</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Donnees.GestionDossier.EmpruntBancaireGetTab(System.String,System.Decimal[]@,System.Int32@)">
+	<summary>
+ Permet d'aller chercher un vecteur de valeurs sur l'emprunt bancaire
+ </summary>
+	<param name="nomPropriete">Nom du champs</param>
+	<param name="valeurPropriete">Vecteur de données</param>
+	<param name="nbrElement">Nombre d'items dans le vecteur</param>
+	<returns>1 - L'action s'est effectuée avec succès
+ -1 - Une erreur s'est produite durant le traitement
+ -2 - Le dataname n'est pas valide
+ -3 - Autre</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Donnees.GestionDossier.EmpruntBancaireSetTab(System.String,System.Decimal[],System.Int32)">
+	<summary>
+ Permet d'initialiser un champ sur la taxation
+ </summary>
+	<param name="nomPropriete">Nom du champs à initialiser</param>
+	<param name="valeurPropriete">Vecteur de données</param>
+	<param name="nbrElement">Nombre d'items dans le vecteur</param>
+	<returns>1 - L'action s'est effectuée avec succès
+ -1 - Une erreur s'est produite durant le traitement
+ -2 - Le dataname n'est pas valide
+ -3 - Autre</returns>
+	<remarks></remarks>
+</member><member name="F:IAFG.IA.IL.AP.ProdAssTrad.Donnees.TemplateTA._illus">
+	<summary>
+ Membre interne qui représente l'objet d'illustration
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ProdAssTrad.Donnees.TemplateTA.Proposition">
+	<summary>
+ Retourne la proposition
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ProdAssTrad.Donnees.TemplateTA.Illustration">
+	<summary>
+ Retourne l'illustration
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ProdAssTrad.Donnees.TemplateTA.Scenario">
+	<summary>
+ Retourne le scénario
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ProdAssTrad.Donnees.TemplateTA.TableauDecimal">
+	<summary>
+ Propriété qui retourne un tableau de décimal(99) vide
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Donnees.TemplateTA.InitialiserPilotage">
+	<summary>
+ On initialise les pilotages nécessaire à la création du template
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Donnees.TemplateTA.AjouterProtection(System.String)">
+	<summary>
+ Affecte l'information minimum pour une protection
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Donnees.TemplateTA.Primes">
+	<summary>
+ Affecte l'information minimum des Primes
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Donnees.TemplateTA.InformationsNecessaires">
+	<summary>
+ Affecte l'information minimum des InfosPU
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Donnees.TemplateTA.TerminerCreation(System.String)">
+	<summary>
+ Termine la création du template
+ </summary>
+	<param name="filename">le nom du template</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Donnees.TemplateTA.InitialiserVecteur">
+	<summary>
+ Méthode qui initialise les vecteurs de type Décimal, Integer et String (les 3 seuls possibles)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Donnees.TemplateTA.CreerTemplate(System.String)">
+	<summary>
+ Méthode qui crée un template de temps d'arrêt pour Genesis. 
+ On retourne le nom du template à utiliser
+ </summary>
+	<param name="extension">l'extension que le template doit avoir.</param>
+	<returns></returns>
+	<remarks>Est l'appel interne</remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Donnees.TemplateTA.CreerTemplateTempsArret(System.String,System.String,System.String)">
+	<summary>
+ Méthode qui crée un template de temps d'arrêt pour Genesis. 
+ On retourne le nom du template à utiliser
+ </summary>
+	<param name="extension">l'extension que le template doit avoir.</param>
+	<returns></returns>
+	<remarks>Est appelé par le constructeur</remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueComparatif.ObtenirHauteurFenetre">
+	<summary>
+ Fonction pour obtenir la hauteur du dialogue
+ </summary>
+	<returns>La hauteur que le dialogue doit avoir</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueCalculEmprunt.Messages">
+	<summary>
+ Énumération contenant le nom des messages
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueCalculEmprunt.DataWindowPrincipale_ItemChanged(System.Object,Sybase.DataWindow.ItemChangedEventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement ItemChanged de la DataWindowPrincipale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueCalculEmprunt.DataWindowPrincipale_PostItemChanged(System.Object,Sybase.DataWindow.ItemChangedEventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement PostItemChanged de la DataWindowPrincipale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueCalculEmprunt.DataWindowPrincipale_ItemError(System.Object,Sybase.DataWindow.ItemErrorEventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement ItemError de la DataWindowPrincipale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueCalculEmprunt.DataWindowPrincipale_Click(System.Object,IAFG.IA.VI.AP.Commun.CtrlIU.DataWindow.ItemClickEventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement Click de la DataWindowPrincipale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueCalculEmprunt.DataWindowPrincipale_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement MouseMove de la DataWindowPrincipale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueCalculEmprunt.DataWindow2_Click(System.Object,IAFG.IA.VI.AP.Commun.CtrlIU.DataWindow.ItemClickEventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement Click de la DataWindow2
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueCalculEmprunt.DataWindow2_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement KeyDown de la DataWindow2
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueCalculEmprunt.DialogueCalculEmprunt_Load(System.Object,System.EventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement Load du formulaire
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueCalculEmprunt.ButtonAnnuler_Click(System.Object,System.EventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement Load du formulaire
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueCalculEmprunt.#ctor">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueCalculEmprunt.UnloadData(System.Object)">
+	<summary>
+ Overrides de la méthode UnloadData de la classe de base
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueCalculEmprunt.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+	<summary>
+ Traite une touche de commande.
+ </summary>
+	<param name="msg">System.Windows.Forms.Message, passé par référence, qui représente le message de fenêtre à traiter.</param>
+	<param name="keyData">Une des valeurs System.Windows.Forms.Keys qui représente la touche à traiter. </param>
+	<returns>True si le caractère a été traité par cette méthode; sinon False.</returns>
+	<remarks>Cette méthode est nécessaire pour contourner un bogue de tabulation dans datawindow .Net 2.0</remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueCalculEmprunt.ProtectionsMultitermeAssure(System.Int32,System.String[]@,System.Int32@)">
+	<summary>
+ Fonction qui retourne la liste des protection multiterme pour un assuré donné
+ </summary>
+	<param name="noAssure">Le no de l'assuré</param>
+	<param name="idProtections">Liste des id des protections retournées</param>
+	<param name="nbrProtections">Nombre de protections retournées</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueCalculEmprunt.InitValeurs">
+	<summary>
+ Cette méthode initialise les valeurs par défaut de cette écran
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueCalculEmprunt.Calculer">
+	<summary>
+ Cette méthode fait les calculs et obtient les données
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.DialogueCalculEmprunt">
+	<summary>
+ Classe contenant les méthodes et les évènements de DialogueCalculEmprunt
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ProdAssTrad.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ProdAssTrad.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:IAFG.IA.IL.AP.ProdAssTrad.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ProdAssTrad.Utils.GestionFormulaireAssure.Parent">
+	<summary>
+ Propriété qui nous donne accès à l'instance de l'objet visuel auquel
+ cette classe-ci est associé
+ </summary>
+	<value>Instance de l'objet visuel auquel cette classe est associé</value>
+	<returns>Instance de l'objet visuel auquel cette classe est associé</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GestionFormulaireAssure.#ctor(IAFG.IA.IL.AP.ProdAssTrad.CtrlIU.FormulaireAssure)">
+	<summary>
+ Constructeur de cette classe. Elle reçoit l'instance de l'objet visuel auquel 
+ elle sera associé
+ </summary>
+	<param name="parent">Instance de l'objet visuel auquel cette classe est associé</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GestionFormulaireAssure.UpdateInfoAssureDemarrage">
+	<summary>
+ Méthode qui mets à jour les infos des assurés lorsque nécessaire. Par exemple, le duo vie et santé
+ d'Assurance Traditionnelle se prend jusqu'à 20 ans, donc on sette 20 si valeur par défaut trop grande
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.ProdAssTrad.Utils.GestionFormulaireAssure">
+	<summary>
+ Classe qui contient la logigue d'affaire du formulaire de la section "Illustration"
+ représenté par la classe "FormulaireAssure"
+ </summary>
+	<remarks>Cette classe sert à séparer la logique d'affaire de la classe visuelle 
+ auquel elle est associée.Cette classe est instancié au niveau applicatif par la
+ classe "FormulaireAssure".</remarks>
+	<history>
+		<pre>
+ Auteur               Date       Description
+ ==============================================================
+ Robert Bastien    2007-10-02    Création
+ </pre>
+	</history>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Affaires.GestionProduit.ValiderCommission(System.Decimal)">
+	<summary>
+ validation de la commission
+ </summary>
+	<param name="valeur">la valeur décimale à valider</param>
+	<returns>0 : valeur rejetée, 1 : valeur acceptée, 2 : valeur acceptée mais avertissement</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GenererRapport.SetPageTitre">
+	<summary>
+ Chargement de la page titre 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GenererRapport.ValiderPresenceAnnotation(System.Int32,System.String@)">
+	<summary>
+ Validation de la présence de l'annotation
+ </summary>
+	<param name="noCol">no de la colonne à vailder</param>
+	<param name="texteAnnotation">annotation à ajouter</param>
+	<returns>true - l'annotation est valide / false - elle est invalide</returns>
+	<remarks>demandé par éric st-pierre que ça soit fait à botch ( confirmé par nicolas morneau 2009-08-06) f.c.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GenererRapport.GenererRapport(System.Boolean)">
+	<summary>
+ Construit le rapport en format PDF
+ </summary>
+	<param name="ab_print">True - Impression, False - Aperçu</param>
+	<returns>Chaine vide si erreur dans le traitement, sinon Nom du rapport</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GenererRapport.ObtenirTauxImpot(System.String)">
+	<summary>
+ Obtient le taux d'imposition à afficher
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GenererRapport.InitialiserPtsSaillantsMg">
+	<summary>
+ Initilisation des points saillants pour Maladie Grave
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GenererRapport.GenererRapportStandard(System.String)">
+	<summary>
+ Générer la section à imprimer selon celle passé en paramètre 
+ </summary>
+	<param name="section">Nom de la section.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GenererRapport.InitCeduleAmortissement">
+	<summary>
+ Chargement de la cedule d'amortissement
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GenererRapport.SetCalculateurAmortissement(System.Boolean)">
+	<summary>
+ Chargement de la section du calculateur d'amortissement
+ </summary>
+	<param name="includeGraph">Dit si l'on inclus le graph ou non.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GenererRapport.FormaterCouvertureAssure(System.String[],System.String[],System.Int32,System.String,System.String)">
+	<summary>
+ Formater l'information pour la section couverture des assurés.
+ </summary>
+	<param name="idIndividu">Vecteur contenant les individus</param>
+	<param name="idProt">Vecteur contenant les couvertures</param>
+	<param name="nbProt">Nombre de protection dans le vecteur des couvertures</param>
+	<param name="format">Le format des champs numérique. ( Montant )</param>
+	<param name="descPrMin">Texte contenant le description des primes minimum</param>
+	<returns>Le importstring pour la datawindow.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GenererRapport.SetDetailsPrimesOptionsProtec">
+	<summary>
+ Chargement de la section du détails des primes
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GenererRapport.SetDetailsPrimes(System.Boolean)">
+	<summary>
+ Chargement de la section du détails des primes
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Utils.GenererRapport.ColonneCommissionEngine">
+	<summary>
+ Retourne le numéro de la colonne de commission actualisé.
+ </summary>
+	<returns>Le numéro de la colonne de commission actualisé.</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.ProdAssTrad.Utils.GenererRapport">
+	<summary>
+ Objet de gestion de la génération des rapports au niveau trad
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Affaires.ReglesAffaireEmprunt.ValiderDuree(System.Int32,System.Int32,System.Int32,System.Boolean)">
+	<summary>
+ Cette fonction permet de valider la durée saisie par l'usager
+ </summary>
+	<param name="noAssure">L'ordinal de l'assuré à qui la protection est assigné
+ pour lequel nous voulons valider la duree de
+ la protection saisie</param>
+	<param name="age">L'âge de l'assuré auquel la protection est associé</param>
+	<param name="duree">La durée à valider</param>
+	<param name="isInForce">Indique si le traitement est fait pour une protection en 
+ vigueur</param>
+	<returns>True si la valeur est valide</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Affaires.ReglesAffaireEmprunt.ValiderValeur(System.String,System.Decimal,System.Boolean)">
+	<summary>
+ Cette fonction permet de valider une valeur de type décimale
+ passé en paramêtre pour un item donc l'identifiant est
+ également passé en paramêtre
+ </summary>
+	<param name="idItem">Le nom de l'item pour lequel nous devons valider la 
+ valeur décimale</param>
+	<param name="valeurItem">La valeur décimale qui doit être valider</param>
+	<param name="isInForce">Indique si le traitement est fait pour une protection en 
+ vigueur</param>
+	<returns>Valeur de l'énumération Statut</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Affaires.ReglesAffaireEmprunt.ValiderValeur(System.String,System.Double,System.Boolean)">
+	<summary>
+ Cette fonction permet de valider une valeur de type Double
+ passé en paramêtre pour un item donc l'identifiant est
+ également passé en paramêtre
+ </summary>
+	<param name="idItem">Le nom de l'item pour lequel nous devons valider la 
+ valeur double</param>
+	<param name="valeurItem">La valeur double qui doit être valider</param>
+	<param name="isInForce">Indique si le traitement est fait pour une protection en 
+ vigueur</param>
+	<returns>Valeur de l'énumération Statut</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ProdAssTrad.Affaires.ReglesAffaireEmprunt.ValiderMontant(System.Int32,System.String,System.Int32,System.Decimal,System.Decimal,System.Decimal,System.String,System.Decimal,System.Decimal,System.Boolean,System.Decimal)">
+	<summary>
+ Cette fonction permet de valider le montant saisie par 
+ l'usager
+ </summary>
+	<param name="noAssure">L'ordinal de l'assuré</param>
+	<param name="typeProt">Le type de protection (individuelle ou conjoint) selectionné
+ par l'usager</param>
+	<param name="ageIllus">L'age de l'illustration</param>
+	<param name="capitalAssureVie">Le montant de capital assuré des protections "vie"
+ de disponible pour la protection</param>
+	<param name="primeMinGc">La prime minimale permise pour la garantie du contractant</param>
+	<param name="primeMaxGc">La prime maximale permise pour la garantie du contractant</param>
+	<param name="prestDeces">La prestation au décès</param>
+	<param name="montantCalc">Le montant de capital pour le VMAX</param>
+	<param name="montant">Le montant à valider</param>
+	<param name="isInForce">Indique si le traitement est fait pour une protection en 
+ vigueur</param>
+	<param name="totalProtection">Montant total de toutes les protections</param>
+	<returns>-1 : échec, 1 : succès, 2 : succès avec avertissement</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.ProdAssTrad.Affaires.ReglesAffaireEmprunt">
+	<summary>
+ Classe gérant les règles d'affaire pour les emprunts
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

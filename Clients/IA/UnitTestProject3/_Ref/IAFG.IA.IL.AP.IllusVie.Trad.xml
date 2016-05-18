@@ -1,0 +1,1965 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.IL.AP.IllusVie.Trad
+</name>
+</assembly>
+<members>
+<member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Affaires.ReglesAffaireCommissions.ValiderValeur(System.String,System.Decimal,System.Boolean)">
+	<summary>
+ Cette fonction permet de valider une valeur de type Decimal passée en paramètre pour
+ un item donc l'identifiant est également passé en paramètre
+ </summary>
+	<param name="idItem">Le nom de l'item pour lequel nous devons valider la valeur</param>
+	<param name="valeurItem">La valeur qui doit être validée</param>
+	<param name="isInForce">Indique si le traitement est fait pour une protection en vigueur</param>
+	<returns>Valeur de l'énumération Statut</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.IllusVie.Trad.Affaires.ReglesAffaireCommissions">
+	<summary>
+ Classe gérant toutes les information d'affaire lié aux commissions.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Donnees.UtilsDossier.GetDureeMinSurprime(System.String,System.Int32)">
+	<summary>
+ Fonction qui sert à obtenir la durée de la surprime la plus courte
+ </summary>
+	<param name="idProtection">id de la protection</param>
+	<param name="duree">duree qui sert de comparaison</param>
+	<returns>la durée de la plus courte surprime si elle 
+ est plus petite que la durée passée en paramètre</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Donnees.UtilsDossier.ProtectionsHos(System.String[]@,System.Int32@)">
+	<summary>
+ Permet d'obtenir les protections Hospitalisation
+ </summary>
+	<param name="idProtections">Id des protections</param>
+	<param name="nbrProtections">Le nombre de protections Hospitalisation</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Donnees.UtilsDossier.ProtectionsHosDom(System.String[]@,System.Int32@)">
+	<summary>
+ Permet d'obtenir les protections Hospitalisation et soins à domicile
+ </summary>
+	<param name="idProtections">Id des protections</param>
+	<param name="nbrProtections">Le nombre de protections Hospitalisation et soins à domicile</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Donnees.UtilsDossier.PresenceHos">
+	<summary>
+ Cette fonction Indique si une Hospitalisation est présente sur l'illustration
+ </summary>
+	<returns>Indique si une Hospitalisation est présente sur l'illustration</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Donnees.UtilsDossier.PresenceHosDom">
+	<summary>
+ Cette fonction Indique si une Hospitalisation et soins à domicile est présente sur l'illustration
+ </summary>
+	<returns>Indique si une Hospitalisation et soins à domicile est présente sur l'illustration</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Donnees.UtilsDossier.ProtectionsIndividuTrad(System.String,System.String[]@,System.Int32@)">
+	<summary>
+ Permet d'obtenir les protections d'un individu avec les nouveaux critères pour multiterme
+ </summary>
+	<param name="idIndividu">Id de l'individu ou "Conjoint"</param>
+	<param name="idProtections">Les IDs des protections</param>
+	<param name="nbrProtections">Le nombre de protections</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Affaires.GestionProduit.StatutAssureVisible(System.String,System.Int32,System.String,System.Int32,System.Boolean,System.Boolean)">
+	<summary>
+ ette fonction permet de déterminer si le champ 
+ "Statut" de l'assuré doit être visible ou non
+ </summary>
+	<param name="idRegles">L'identifiant de la regles d'affaire qui contient la 
+ logique de détermination de visibilité</param>
+	<param name="age">L'âge de l'assuré</param>
+	<param name="typeCout">Le type de cout de la protection</param>
+	<param name="dureeNiv">La durée du nivellement de la protection
+ de base</param>
+	<param name="avenRenouv">Indicateur qui indique si l'assure
+ à un avenant renouvelable</param>
+	<param name="isInForce">Indique si le traitement est fait pour un assuré en vigueur</param>
+	<returns>True si le champ doit être visible</returns>
+	<remarks>(Obsolete("Devra être éliminé par une fonction du PDF")) _</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Affaires.GestionProduit.ValiderMontant(System.String,System.Int32,System.String,System.Int32,System.Decimal,System.Decimal,System.Decimal,System.String,System.Decimal,System.Decimal,System.Boolean,System.Decimal)">
+	<summary>
+ Cette fonction permet de valider le montant saisie par l'usager
+ </summary>
+	<param name="idRegles">L'identifiant de la regles d'affaire qui contient la logique de détermination de validité</param>
+	<param name="noAssure">L'ordinal de l'assuré </param>
+	<param name="typeProt">Le type de protection (individuelle ou conjoint) selectionné par l'usager</param>
+	<param name="ageIllus">L'age de l'illustration</param>
+	<param name="capitalAssureVie">Le montant de capital assuré des protections "vie"</param>
+	<param name="primeMinGc">La prime minimale permise pour la garantie du contractant</param>
+	<param name="primeMaxGc">La prime maximale permise pour la garantie du contractant</param>
+	<param name="prestDeces">La prestation au décès</param>
+	<param name="montantCalc">Le montant de capital pour le VMAX</param>
+	<param name="montant">Le montant à valider</param>
+	<param name="isInForce">Indique si le traitement est fait pour une protection en vigeur</param>
+	<param name="totalProtection">Montant total de toutes les protections</param>
+	<returns>1 si le montant est valide</returns>
+	<remarks>(Obsolete("Devra être éliminé par une fonction du PDF")) _</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Affaires.GestionProduit.ValiderDuree(System.String,System.Int32,System.Int32,System.Int32,System.Boolean)">
+	<summary>
+ Cette fonction permet de valider la durée saisie par l'usager
+ </summary>
+	<param name="idRegles">L'identifiant de la regles d'affaire qui contient la 
+ logique du calcul de la durée de la protection</param>
+	<param name="noAssure">L'ordinal de l'assuré à qui la protection est assigné
+ pour lequel nous voulons valider la duree de la protection saisie
+ </param>
+	<param name="age">L'âge de l'assuré auquel la protection est associé</param>
+	<param name="duree">La durée à valider</param>
+	<param name="isInForce">Indique si le traitement est fait pour une protection en vigueur</param>
+	<returns>True si la valeur est valide</returns>
+	<remarks>(Obsolete("Devra être éliminé par une fonction du PDF")) _</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs.GetPrimesRenouv(System.Int32,System.String,System.Collections.Generic.List{System.Double}@,System.Collections.Generic.List{System.Double}@)">
+	<summary>
+ fonction qui retourne les primes de renouvellement de T10
+ </summary>
+	<param name="noScenario">Le scenrio sur lequel obtenir</param>
+	<param name="idProt">id de la protection</param>
+	<param name="primeCourant">retourne par ref. le renouvellement</param>
+	<param name="primeGarantie ">retourne par ref. le Garantie</param>
+	<returns>1 tout est ok, -1, erreur.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs.AffecterErreurDossier(System.String)">
+	<summary>
+ sette le message pour les erreurs de dossier.
+ </summary>
+	<param name="functionName">la fonction dans laquelle l'erreur a été appelée</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs.CreerScenario(System.Int32)">
+	<summary>
+ Création du scénario
+ </summary>
+	<param name="ai_scenario">Numéro du scénario à créer</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs.CalculPrime(System.Int32,System.Boolean,System.Boolean)">
+	<summary>
+ Permet de faire les calcul des prime d'un scenario
+ </summary>
+	<param name="scenario">Numéro de dossier</param>
+	<param name="updateDossier">indique si nous devons mettre à jour les info du dossier</param>
+	<param name="modif">True si on appel le calcul à la suite d'une modification,
+ False si on l'appèle dans un autre contexte (reload ou rafraichissement)</param>
+	<returns>1 - Le calcul sont fait. pas de problème</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs.Calcul(System.Int32,System.Boolean,System.Boolean)">
+	<summary>
+ Permet de faire les calcul d'un scenario
+ </summary>
+	<param name="scenario">Numéro de scénario&gt;</param>
+	<param name="updateDossier">indique si nous devons mettre à jour les info du dossier</param>
+	<param name="computeAll">indique si on doit tout calculer ou si on peut optimiser les calculs
+  en omettant de calculer certains résultats. ( False = Optimisé, true = on calcule tout)</param>
+	<returns>True si la fonction à réussi</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs.GetColonne(System.Int32,System.Int32,System.Collections.Generic.List{System.Double}@)">
+	<summary>
+ Permet d'obtenir une colonne du moteur.
+ </summary>
+	<param name="scenario">Le numéro de scénario</param>
+	<param name="colonne">La colonne désirée</param>
+	<param name="valeurColonne">liste qui contient les valeurs de la colonne</param>
+	<returns>-1 si erreur, 1 si ok, 2 si ne peut calculer colonne</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs.SetScenarioZero(System.Int32@)">
+	<summary>
+ set le scenario si on spécifie 0 comme no de scenario
+ </summary>
+	<param name="scenario">Le numero de scenario sur lequel on est</param>
+	<returns>Code de retour, -1 = erreur, 1 = ok, 2 = warning</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs.ObtenirPrimeTotContrat(System.Int32,System.Decimal@)">
+	<summary>
+ On va chercher la prime totale du contrat dans le moteur de calcul.
+ </summary>
+	<param name="scenario">Le numero de scenario sur lequel aller chercher la prime.</param>
+	<param name="primeTotal">Retourne la prime totale du contrat.</param>
+	<returns>Code de retour, -1 = erreur, 1 = ok, 2 = warning</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs.ObtenirPrimeTotAssure(System.Int32,System.Int32,System.Decimal@)">
+	<summary>
+ On va chercher la prime totale de l'assure dans le moteur de calcul.
+ </summary>
+	<param name="scenario">Le numero de scenario sur lequel aller chercher la prime.</param>
+	<param name="noAssure"></param>
+	<param name="primeTotal">Retourne la prime totale du contrat.</param>
+	<returns>Code de retour, -1 = erreur, 1 = ok, 2 = warning</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs.ObtenirPrimeMinimaleAssure(System.Int32,System.Int32,System.Int32,System.Decimal@)">
+	<summary>
+ On va chercher la prime totale de l'assure dans le moteur de calcul.
+ </summary>
+	<param name="scenario">Le numero de scenario.</param>
+	<param name="noAssure">Le numero de l'assure.</param>
+	<param name="frequence">La frequence de la prime.</param>
+	<param name="prime">Retourne en ref la valeur de la prime.</param>
+	<returns>Code de retour, -1 = erreur, 1 = ok, 2 = warning</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs.ObtenirPrimeMinimaleContrat(System.Int32,System.Int32,System.Decimal@)">
+	<summary>
+ On va chercher la prime totale du contrat dans le moteur de calcul.
+ </summary>
+	<param name="scenario">Le scenario pour lequel obtenir la prime</param>
+	<param name="frequence">La frequence de la prime</param>
+	<param name="prime">La prime retournée.</param>
+	<returns>Code de retour, -1 = erreur, 1 = ok, 2 = warning</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs.CalculEmprunt(System.Int32)">
+	<summary>
+ Fonction pour calculer l'emprunt bancaire
+ </summary>
+	<param name="scenario">Le numero de scenario pour lequel faire le calcul.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs.GetDureeFlex(System.Int32,System.Int32@)">
+	<summary>
+ Retourne la durée minimum des tempoflex
+ </summary>
+	<param name="noScenario">Le numero de scénario sur lequel calculer.</param>
+	<param name="dureeFlex">Retourne la durée de la flex.</param>
+	<returns>Code de retour, -1 = erreur, 1 = ok, 2 = warning</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs.AffecterErreurMoteur(System.String)">
+	<summary>
+ sette le message pour les erreurs de moteur.
+ </summary>
+	<param name="functionName">la fonction dans laquelle l'erreur a été appelée</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs.GetCalculsEmprunt(System.Int32,System.String,System.Collections.Generic.List{System.Double}@)">
+	<summary>
+ Fonction qui retourne les résultats du calcul de l'emprunt bancaire.
+ </summary>
+	<param name="scenario">Numero de scenario</param>
+	<param name="nomChamp">Le champs que l'on veut obtenir: "Interets", "SoldeInitial", "SoldeFinal", "InteretsPayes", "Paiement"</param>
+	<param name="valeurColonne">Les valeurs retournées du champ demandé</param>
+	<returns>Code de retour, -1 = erreur, 1 = ok, 2 = warning</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs.GetDureePrimes(System.Int32,System.String,System.Int32@)">
+	<summary>
+ Retourne la durée de paiement des primes d'une protection
+ </summary>
+	<param name="noScenario">Le numero de scenario</param>
+	<param name="idProt">L'ID unique de la protection.</param>
+	<param name="dureePrimes">Retourne la duree des primes.</param>
+	<returns>Code de retour, -1 = erreur, 1 = ok, 2 = warning</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs.GetDureePlan(System.String@)">
+	<summary>
+ fonction pour trouver la durée de la protection courante.
+ </summary>
+	<param name="loPlan">Le plan en parametre</param>
+	<returns>La duree demandé.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs.GetDureeProtection(System.Int32,System.String,System.Int32@)">
+	<summary>
+ Retourne la durée minimum des tempoflex
+ </summary>
+	<param name="noScenario">Le numero de scenario</param>
+	<param name="planId">L'ID unique de la protection.</param>
+	<param name="dureeFlex">Le retour de la durée min </param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs.ObtenirPrimeMinAssSansGc(System.Int32,System.Int32,System.Decimal@)">
+	<summary>
+ obtenir la prime minimale de l'assure sans les garanties complémentaires
+ </summary>
+	<param name="scenario">Numéro de scénario</param>
+	<param name="noAssure">Numéro de l'assuré</param>
+	<param name="prime">Retour de la prime minimale de l'assure sans les garanties complémentaires</param>
+	<returns>Code de retour, -1 = erreur, 1 = ok, 2 = warning</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs.GetAgeIllus(System.Int32)">
+	<summary>
+ Fonction qui retourne l'âge de l'illustration.
+ </summary>
+	<param name="noScenario">Le numéro du scénario</param>
+	<returns>L'âge de l'illustration.</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.IllusVie.Trad.Calculs.GestionCalculs">
+	<summary>
+ Objet de gestion des calcul pour pour les produits d'assurance traditionnel
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialoguePopupMenuTrad.ShowMenu(System.Collections.Generic.List{IAFG.IA.IL.AP.IllusVie.Trad.Services.GestionMenuContextuelTrad.InfoItemMenuContextuelTrad},System.Drawing.Point)">
+	<summary>
+ Permet d'afficher le menu contextuel préalablement enregistré dans le service.
+ </summary>
+	<param name="Menus">Liste de InfoItemMenuContextuelTrad à afficher dans le menu</param>
+	<param name="position">Le point ( x,y ) ou le menu doit être affiché</param>
+	<remarks>Utilise Datawindow</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialoguePopupMenuTrad.Evenement(System.Object,System.String)">
+	<summary>
+ Déclenche l'évenement prévu pour l'item de menu cliqué
+ </summary>
+	<param name="Sender">Le contrôle qui appelle</param>
+	<param name="itemid">Quel item de menu est cliqué ( correspond au ID dans le fichier XML )</param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.LogiqueProtections">
+	<summary>
+ Propriété qui donne accès à l'instance de l'objet qui contient la logique
+ d'affaire de cette classe
+ </summary>
+	<value>L'instance de l'objet qui contient la logique d'affaire pour cette classe</value>
+	<returns>L'instance de l'objet qui contient la logique d'affaire pour cette classe</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.InitialiserVecteurAgesIndividus(System.Int32[])">
+	<summary>
+ Cette fonction initialise le vecteur des ages des individus avec ceux passé en paramêtre
+ </summary>
+	<param name="vecteurAges">Vecteur contenant les ages de ou les individu(s)</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.InitialiserVecteurIdIndividu(System.String[])">
+	<summary>
+ Cette fonction initialise le vecteur des identifiants des individus avec ceux passé en paramêtre
+ </summary>
+	<param name="id">Vecteur contenant les identifiants des individus</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.InitialiserVecteurIndivAssurable(System.String[])">
+	<summary>
+ Cette fonction initialise le vecteur des indicateurs
+ d'assurabilité des individus
+ </summary>
+	<param name="assurable">Vecteur contenant les indicateurs de l'assurabilité des individus</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.InitialiserVecteurPrenomIndividu(System.String[])">
+	<summary>
+ Cette fonction initialise le vecteur du prenom des individus
+ avec ceux passé en paramêtre
+ </summary>
+	<param name="prenom">Vecteur contenant le prenom des individus</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.GererListeAppliquerA">
+	<summary>
+ Cette fonction peuple la liste de choix des individu à 
+ qui une protections peut être appliquer. Il y a trois groupes
+ de choix possible soit :
+  1 = Liste des individus plus le choix "Tous les assurés" pour
+      les protections qui peuvent être sur un base conjointe
+  2 = Liste des individus pour les protections pour qui il
+      n'est pas permis d'être sur une base conjointe.
+  3 = Liste des individus qui sont contractants pour les 
+      garantie additionnelle des contractants.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.GererErreurDuDossier">
+	<summary>
+ Gère les erreurs du dossier
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.GererErreurDesCalculs">
+	<summary>
+ Gère les erreurs des calculs
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.ChargerProtections">
+	<summary>
+ Cette fonction permet de charger toutes les couvertures
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.AffecterInfoProtection(System.Int32,System.String)">
+	<summary>
+ Cette fonction qui fait l'affectation des informations de
+ la protection provenant du dossier vers la datawindow
+ </summary>
+	<param name="rangee">La rangée de la datawindow ou les informations doivent être affecter</param>
+	<param name="idProt">L'identifiant de la protection pour laquel les informations doivent être affecter à la datawindow.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.IsFinGroupe(System.Int32,System.String)">
+	<summary>
+ Permet de vérifier si la protection est la derniere du groupe
+ </summary>
+	<param name="numeroAssure">numero ordinal de l'assuré</param>
+	<param name="idProtection">l'id de la protection</param>
+	<returns>True: La protection est la derniere du groupe
+ False: La protection n'est pas la derniere du groupe</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.GererChampsInfoCouv(System.Int32)">
+	<summary>
+ Cette fonction fait la gestion de la visibilité ou disponibilité
+ des champs de la datawindow des couvertures
+ </summary>
+	<param name="rangee">le numéro de la rangée à gérer</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.GererDisponibiliteAppliquerA(System.Int32)">
+	<summary>
+ Cette fonction fait la gestion de la disponibilité du champ "Appliquer à"
+ </summary>
+	<param name="rangee">la rangee pour laquelle on veut gérer le champs</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.GererHauteurDW">
+	<summary>
+ gestion de la hauteur de la datawindow
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.GetCapAssureIndividu(System.String,System.Decimal@,System.Decimal@)">
+	<summary>
+ Permet de retourné le capital assuré des protections vie et 
+ maladie grave de l'individu passé en paramêtre dans
+ l'argument as_individu_id
+ </summary>
+	<param name="idIndividu">Id de l'individu</param>
+	<param name="capitalVie">Contient le capital assuré des protections vie de l'individu passé en paramêtre</param>
+	<param name="capitalMG">Contient le capital assuré des protections maladie grave de l'individu passé en paramêtre</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.GererBoutonAjout">
+	<summary>
+ Cette fonction fait la gestion de la disponibilité du bouton d'ajout des couvertures
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.SupprimerProtections(System.String)">
+	<summary>
+ Cette fonction permet de supprimer tous les protections pour un assuré
+ </summary>
+	<param name="idInd"> L'identifiant de l'individu pour lequel nous devons supprimer les protections</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.DeleteProtAssocie(System.Int32)">
+	<summary>
+ Cette fonction delete tous les protections associées à la protection de base passée en paramètre
+ </summary>
+	<param name="row">la ligne de la protection de base</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.GererAffichageListe(System.Int32)">
+	<summary>
+ Cette fonction fait la gestion des groupes des liste de choix
+ de champs enregistrer dans le gestionnaire de liste dynamique
+ </summary>
+	<param name="row">La rangée de la datawindow</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.InitialiserDynamicDdlb">
+	<summary>
+ Méthode pour initialiser les services de liste dynamiques
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.RefreshDuree">
+	<summary>
+ Cette fonction permet gérer la duree pour les ass inv
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.InitialiserParent(System.Object)">
+	<summary>
+ initialise les variables
+ </summary>
+	<param name="parent"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.GererChangementFrequence(System.Int32)">
+	<summary>
+ Cette fonction fait le traitement nécessaire lors du
+ changement de la fréquence des primes
+ </summary>
+	<param name="freq">La fréquence de versement des primes</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.GotoInvalidLine(System.String,System.String)">
+	<summary>
+ Cette fonction qui fait le traitement nécessaire afin que
+ le curseur soit positionner sur la ligne et la colonne en erreur
+ </summary>
+	<param name="idProtection">L'identifiant de la protection qui est en erreur sur laquelle nous devons nous positionner</param>
+	<param name="colName">L'identifiant de la colonne sur laquelle nous devons nous positionner</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.RefreshAppliquerA(System.Int32,System.String[])">
+	<summary>
+ Cette fonction permet gérer le champs appliquer à pour les protections d'invalidité
+ </summary>
+	<param name="rangee">la row de la protection de base</param>
+	<param name="idAssures">le vecteur d'id des assurés</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.CompleterInfoAjoutProtection(IAFG.IA.VI.AF.Proposition.Protection)">
+	<summary>
+ Méthode pour affecter les différentes propriétés de la protection passée en paramètre
+ </summary>
+	<param name="oProtection">La protection que l'on veut initialiser</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.AjouterProtectionItemListe(IAFG.IA.IL.AP.Illustration.ENUMs.PlanIllustration)">
+	<summary>
+ Idem à AjouterProtection mais avec les modifications pour les catégories
+ </summary>
+	<param name="item">l'item à ajouter</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.AjouterProchaineProtectionDisponible">
+	<summary>
+ Méthode pour ajouter la prochaine protection disponible
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.AjouterProtectionAssocie(System.Int32,System.Collections.Generic.List{IAFG.IA.IL.AP.Illustration.ENUMs.PlanIllustration},System.String)">
+	<summary>
+ Cette fonction permet d'ajouter un ligne de couverture associée
+ à la couverture sur laquelle on a cliqué le bouton. Celle-ci 
+ s'insere à la suite du groupe de la protection pour laquelle
+ on a cliqué le bouton
+ </summary>
+	<param name="rangee">le numéro de la rangée où ajouter la protection</param>
+	<param name="listePlanIllus">le code de la protection à ajouter</param>
+	<param name="idProtBase">id de la protection de base si on ajoute une prot_associe</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.PresenceAssinvBase(System.String)">
+	<summary>
+ Cette fonction retourne en référence s'il y a au moins
+ une protection d'assurance invalidité sur le contrat
+	pour l'id de la protection passé en paramètre
+ </summary>
+	<param name="idProtection"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.GetCapAssureRa(System.String)">
+	<summary>
+ Permet de déterminé capital assuré des protections vie et 
+ maladie grave pour le traitement l'avenant Revenu d'appoint
+ pour l'individu passé en paramêtre dans l'argument as_individu_id
+ </summary>
+	<param name="idIndividu">Id de l'individu pour qui nous devons obtenir le
+ montant de capital assuré total pour l'avenant Revenu d'appoint</param>
+	<returns>le montant total de capital assuré pour l'avenant revenu d'appoint</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.IsIndividuSurprimee(System.String,System.Boolean,System.Boolean)">
+	<summary>
+ Permet de déterminer si un individu est surprimé
+ </summary>
+	<param name="idIndividu">Id de l'individu ou "Conjoint"</param>
+	<param name="inclusGarCont">Indique si nous devons inclure les garanties du contractant dans la vérification</param>
+	<param name="inclusBaseCj">Indique si nous devons inclure les protections sur base conjointe dans la vérification</param>
+	<returns>True - L'individu à une surprime, False - L'individu n'a pas de surprime</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.IsAvenantRenouvelablePresent">
+	<summary>
+ Cette fonction fait le traitement afin de vérifier si 
+ l'assuré détient un avenant renouvelable (T10, T20, MGT10)
+ </summary>
+	<returns>True - Il y a une avenant renouvelable de présent, False - Il n'y a pas d'avenant renouvelable présent</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.IsProtectionPresentInd(IAFG.IA.IL.AP.Illustration.ENUMs.PlanIllustration)">
+	<summary>
+ Cette fonction fait le traitement afin de vérifier si une 
+ garantie de type as_code est présente dans les protections
+ </summary>
+	<param name="planIllus">Le code de la protection que l'on cherche</param>
+	<returns>True - Il y a une protection présente
+ False - Il n'y a pas de protection présente</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.ObtenirDernierChampDisponible">
+	<summary>
+ Cette fonction détermine quel est la dernière colonne de la
+ dernière rangée qui est disponible. Cette fonction est surtout
+ utile pour déterminer ou nous plaçon le focus lors d'un shift-tab
+ </summary>
+	<returns>La dernière colonne de la dernière rangée qui est disponible</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.ObtenirPremierChampDisponible">
+	<summary>
+ Cette fonction détermine quel est la première colonne de la
+ première rangée qui est disponible. Cette fonction est surtout
+ utile pour déterminer ou nous plaçon le focus lors d'un Tab
+ </summary>
+	<returns>La première colonne de la première rangée qui est disponible</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.ObtenirProchainAssure(System.String,System.String)">
+	<summary>
+ Cette fonction permet de déterminer le prochain assure
+ qui peut avoir la protection de base passé en paramètre.
+ as_id_assure aura la valeur "0" si aucun assuré peut recevoir la protection
+ </summary>
+	<param name="idBase">L'id de la protection de base</param>
+	<param name="idProtection">L'id de la protection</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.ObtenirMontantAssInv(System.String,System.String,System.Boolean)">
+	<summary>
+ Cette fonction retourne le montant total d'assurance invalidité
+ dépendant si on exclus une protection ou non
+ </summary>
+	<param name="idBase">Le numéro de la rangée de la protection de base</param>
+	<param name="idProtection">le numéro de la protection a exclure</param>
+	<param name="exclus">Si on doit exlure as_id_prot ou non</param>
+	<returns>le montant total d'assurance invalidité</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.CalculPrestation(IAFG.IA.VI.AF.Proposition.Protection,System.Decimal,System.Decimal,System.String)">
+	<summary>
+ Cette fonction calcul le montant de la prestation
+ </summary>
+	<param name="protection">L'objet de la protection</param>
+	<param name="montantPret">le montant du prêt</param>
+	<param name="pourcentage">le pourcentage à prendre pour le calcul</param>
+	<returns>La valeur de la prestation</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.GererProtAssocie(System.Int32,System.String)">
+	<summary>
+	</summary>
+	<param name="rangee">le numéro de la row</param>
+	<param name="idInd">le nouvel id de l'individu</param>
+	<returns>le code du message d'erreur à afficher si il y a lieu</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.ObtenirNbrIndividus">
+	<summary>
+ fonction pour obtenir le nombre d'individus dans le vecteur IdIndividu
+ </summary>
+	<returns>le nombre d'individus dans le vecteur IdIndividu</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.DeleteProtection(System.Int32)">
+	<summary>
+ Cette méthode fait le traitement pour supprimer la protection de la rangée passée en paramètre
+ </summary>
+	<param name="rangee">le numéro de la rangée de la protection qu'il faut supprimer</param>
+	<remarks>L'équivalent de ue_delete en PB</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.AjouterProchaineProtDispoCategorie(IAFG.IA.VI.AF.Proposition.Protection,IAFG.IA.IL.AP.Illustration.ENUMs.PlanIllustration)">
+	<summary>
+ Méthode qui est appelé par AjouterProchaineProtectionDisponible qui ajout la prochaine protection
+ disponible pour la catégorie passée en paramètre
+ </summary>
+	<param name="codeCategorie">le code de catégorie pour la prochaine protection</param>
+	<param name="oProtection">La protection</param>
+	<returns>Succes = On a trouvé un code de plan, 
+ Echec = il a été impossible de trouver un code de plan valide</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.DeterminerCodePlanDefaut(IAFG.IA.IL.AP.Illustration.ENUMs.PlanIllustration)">
+	<summary>
+ Fonction qui retourne le code de plan de l'item passé en paramètre
+ </summary>
+	<param name="planIllus">Item de la liste des protections
+ avec les valeurs de la protection passée en paramètre(False)</param>
+	<returns>le code de plan de l'item passé en paramètre</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.ChangerPlan(System.Int32,System.String,System.Boolean,IAFG.IA.IL.AP.Illustration.ENUMs.PlanIllustration)">
+	<summary>
+ Permet de changer le plan d'une protection sur une ligne donnée.
+ </summary>
+	<param name="rowNumber">Le numéro de la ligne ou changer la protection</param>
+	<param name="nouveauCodePlan">Le nouveau code de plan à mettre</param>
+	<param name="planForce">Est-ce que nous forceons le nouveau plan ou est-ce que l'utilisateur vient de la choirsir dans la liste.</param>
+	<returns>L'enum représentant l'action a prendre pour l'évènement ItemChanged</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad">
+	<summary>
+ Gestion des protections.</summary>
+	<isnew>2008-05-08</isnew>
+	<remarks></remarks>
+	<history>
+		<pre>
+ Auteur            Date         Description
+ ===========================================================================
+ Tremblay, Victor  2008-05-08   Ajout d'une validation permettant de 
+                                s'assurer que la protection courante est une 
+                                invalidité avant d'effectuer la validation 
+                                et valider si la protection modifiée 
+                                s'applique aux conjoints ou à un individu.
+ </pre>
+	</history>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.AccesServices.#ctor">
+	<summary>
+ Uniquement déclarer pour faire en sorte que FXCop ne souligne l'erreur 
+ "Static holder types should not have constructors"
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionFormulaireIllustration.Parent">
+	<summary>
+ Propriété qui nous donne accès à l'instance de l'objet visuel auquel
+ cette classe-ci est associé
+ </summary>
+	<value>Instance de l'objet visuel auquel cette classe est associé</value>
+	<returns>Instance de l'objet visuel auquel cette classe est associé</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionFormulaireIllustration.#ctor(IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration)">
+	<summary>
+ Constructeur de cette classe. Elle reçoit l'instance de l'objet visuel auquel 
+ elle sera associé
+ </summary>
+	<param name="parent">Instance de l'objet visuel auquel cette classe est associé</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionFormulaireIllustration.AjustementParametreDemarrage">
+	<summary>
+ Méthode qui fait les derniers ajustement par rapport au paramètre de démarrage
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionFormulaireIllustration.GererProduit">
+	<summary>
+ Méthode qui fait la gestion lors d'un changement de produit
+ </summary>
+	<remarks>Fonction coder dans les descendants</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionFormulaireIllustration.AjouterProduit">
+	<summary>
+ Méthode qui fait l'ajout des informations Général sur le produit
+ </summary>
+	<remarks>Méthode coder dans les descendants</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionFormulaireIllustration.UpdateInfoAssureDemarrage">
+	<summary>
+ Méthode qui mets à jour les infos des assurés lorsque nécessaire. Par exemple, le duo vie et santé
+ d'Assurance Traditionnelle se prend jusqu'à 20 ans, donc on sette 20 si valeur par défaut trop grande
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionFormulaireIllustration">
+	<summary>
+ Classe qui contient la logigue d'affaire du formulaire de la section "Illustration"
+ représenté par la classe "FormulaireIllustration"
+ </summary>
+	<remarks>Cette classe sert à séparer la logique d'affaire de la classe visuelle 
+ auquel elle est associéeLe descendant de cette classe est instancié au niveau
+ applicatif par la classe "FormulaireAssure".</remarks>
+	<history>
+		<pre>
+ Auteur               Date       Description
+ ==============================================================
+ Robert Bastien    2007-10-02    Création
+ </pre>
+	</history>
+</member><member name="P:IAFG.IA.IL.AP.IllusVie.Trad.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.IllusVie.Trad.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:IAFG.IA.IL.AP.IllusVie.Trad.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.IllusVie.Trad.Services.GestionPilotage.ConfigSuffix">
+	<summary>
+ Propriété qui contient le suffix qui doit être concatené a l'identifiant
+ du niveau lorsque les méthodes de cette classe sont appeler pour le niveau
+ "Configuration"
+ </summary>
+	<value>Le suffix a concatené à la chaine du niveau</value>
+	<returns>Le suffixe ou une chaine vide si aucun suffixe n'est nécessaire</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Services.GestionPilotage.ObtenirInfoPilotage(System.String,System.String)">
+	<summary>
+ Cette fonction permet d'obtenir la valeur d'une clé de pilotage
+ </summary>
+	<param name="niveau">L'identifiant du niveau auquel appartiendra les valeurs
+ chargées dans le gestionnaire.</param>
+	<param name="cle">Le nom de la valeur (chaîne ou numérique) qui doit être chargé dans le
+ gestionnaire</param>
+	<returns>La valeur recherchée</returns>
+	<remarks>Si la propriété ConfigSuffix n'est pas vide et que le niveau pour lequel
+ nous voulons obtenir la clé est égale à "Configuration" alors les deux seront 
+ concatené avant de faire appel à la méthode de la classe de base</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Services.GestionPilotage.ObtenirInfoPilotage(System.String,System.String,System.String)">
+	<summary>
+ Cette fonction permet d'obtenir la valeur d'une clé de pilotage
+ </summary>
+	<param name="racine">La racine où chercher</param>
+	<param name="niveau">L'identifiant du niveau auquel appartiendra les valeurs
+ chargées dans le gestionnaire.</param>
+	<param name="cle">Le nom de la valeur (chaîne ou numérique) qui doit être chargé dans le
+ gestionnaire</param>
+	<returns>La valeur recherchée</returns>
+	<remarks>Cette fonction n'est utilisée que dans certains cas précis où il peut
+ y avoir plusieurs informations de pilotage semblables mais avec
+ des racines différentes. Si la propriété ConfigSuffix n'est pas vide et que le niveau pour lequel
+ nous voulons obtenir la clé est égale à "Configuration" alors les deux seront 
+ concatené avant de faire appel à la méthode de la classe de base</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Services.GestionPilotage.EcrireInfoPilotage(System.String,System.String,System.String)">
+	<summary>
+ Cette fonction fait l'écriture d'une chaîne
+ de caractères sous la clé de registre passé en paramêtre.
+ Elle ajoute cette même valeur dans la Datastore de la gestion
+ des informations de pilotage
+ </summary>
+	<param name="niveau">L'identifiant du niveau auquel appartiendra les valeurs
+ chargées dans le gestionnaire.</param>
+	<param name="cle">Le nom de la valeur qui doit être écrite</param>
+	<param name="valeur">La valeur qui doit être écrite</param>
+	<returns>True si l'écriture à réussi</returns>
+ ''' <remarks>Cette fonction n'est utilisée que dans certains cas précis où il peut
+ y avoir plusieurs informations de pilotage semblables mais avec
+ des racines différentes. Si la propriété ConfigSuffix n'est pas vide et que le niveau pour lequel
+ nous voulons obtenir la clé est égale à "Configuration" alors les deux seront 
+ concatené avant de faire appel à la méthode de la classe de base</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Services.GestionPilotage.EcrireInfoPilotage(System.String,System.String,System.Int32)">
+	<summary>
+ Cette fonction fait l'écriture d'une chaîne
+ de caractères sous la clé de registre passé en paramêtre.
+ Elle ajoute cette même valeur dans la Datastore de la gestion
+ des informations de pilotage
+ </summary>
+	<param name="niveau">L'identifiant du niveau auquel appartiendra les valeurs
+ chargées dans le gestionnaire.</param>
+	<param name="cle">Le nom de la valeur qui doit être écrite</param>
+	<param name="valeur">La valeur qui doit être écrite</param>
+	<returns>True si l'écriture à réussi</returns>
+ ''' <remarks>Cette fonction n'est utilisée que dans certains cas précis où il peut
+ y avoir plusieurs informations de pilotage semblables mais avec
+ des racines différentes. Si la propriété ConfigSuffix n'est pas vide et que le niveau pour lequel
+ nous voulons obtenir la clé est égale à "Configuration" alors les deux seront 
+ concatené avant de faire appel à la méthode de la classe de base</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Services.GestionPilotage.AppendConfigSuffix(System.String)">
+	<summary>
+ Méthode qui fait la concatenation du suffix lorsque la racine voulu est égale à
+ "Configuration".
+ </summary>
+	<param name="niveau">Le niveau pour lequel la méthode est appeler</param>
+	<returns></returns>
+	<remarks>Cette méthode est nécessaire pour le produit Transition car il est possible 
+ d'avoir plusieurs branches de clé de registres qui contiennent les valeurs par défaut
+ de différentes saveur de Transition</remarks>
+</member><member name="T:IAFG.IA.IL.AP.IllusVie.Trad.Services.GestionPilotage">
+	<summary>
+ Classe de gestion de pilotage qui hérite de la gestion de pilotage de base mais qui
+ ajoute des fonctionalités de gestion des configurations qui sont nécessaires pour
+ le produit Transition
+ </summary>
+	<remarks></remarks>
+	<history>
+		<pre>
+ Auteur               Date       Description
+ ==============================================================
+ Robert Bastien    2007-09-27    Création
+ </pre>
+	</history>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireResultats.ObtenirNombreAnneesIllustrees">
+	<summary>
+ Fonction qui retourne le nombre d'années à illustrer
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireResultats">
+	<summary>
+ Gestion des informations du contactant.
+ </summary>
+	<isnew>2007-06-28</isnew>
+	<remarks></remarks>
+	<history>
+		<pre>
+ Auteur            Date         Description
+ =====================================================================
+ Martel, Guy       2007-06-28   Création de la classe
+ </pre>
+	</history>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.InfoProtectionsTrad_Surprime(System.Int32)">
+	<summary>
+ Cette méthode est appelé lors d'un clique sur le bouton surprime et fait afficher
+ le dialogue de surprime correspondant à la protection
+ </summary>
+	<param name="rangee">La rangée de la protection pour laquelle on veut afficher
+ le dialogue de surprime</param>
+	<remarks>l'équivalent de ue_surprimes en PB</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.InfoProtectionsTrad_Add">
+	<summary>
+ Méthode pour ajouter une protection
+ </summary>
+	<remarks>L'équivalent de ue_add dans PB</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.InfoProtectionsTrad_AddChild(System.Int32)">
+	<summary>
+ Méthode pour ajouter une protection associée
+ </summary>
+	<param name="rangee">le numéro de la rangée de la protection mère</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.InfoProtectionsTrad_ItemChanged(System.Object,Sybase.DataWindow.ItemChangedEventArgs)">
+	<summary>
+	</summary>
+	<isnew>2008-05-08</isnew>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad.GererProtections(System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ Cette fonction fait le traitement de la vérification de
+ chacune des protection en ce qui a trait à sa disponibilité,
+ l'ajustement de la durée, l'ajustement du montant et le
+ calcul de la prime suite à la modification d'un élément 
+ qui à un incidence sur les protections (i.e. le type 
+ d'assurance, l'option de décès, l'âge et le sexe de
+ l'assuré, etc...). Lorsqu'une protection n'est plus 
+ disponible elle est supprimer du dossier. Ensuite la 
+ datawindow est rafraichi.
+ </summary>
+	<param name="changementAge">Indicateur spécifiant si cette fonction est appeler suite à un changement d'âge</param>
+	<param name="chgPrestDeces">Indicateur spécifiant si cette fonction est appeler suite à un changement de la prestation de décès</param>
+	<param name="chgTypeAssurance">Indicateur pour le changement de type d'assurance (ind, CJ 1er déc...) </param>
+	<param name="chgAgeEquiv">Indique que l'age équivalent vient de changer</param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.IllusVie.Trad.Services.GestionMenuContextuelTrad.InfoItemMenuContextuelTrad">
+	<summary>
+ Classe qui contient les informations nécessaires pour faire fonctionner le menu contextuel
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.ApplicationIllusVieTradBase.AjouterEPI">
+	<summary>
+ La procédure ajoute une protection de type prot à l'assuré passé en paramètre
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.ApplicationIllusVieTradBase.InitialiseEsperanceVie">
+	<summary>
+ Méthode qui effectue le traitement nécessaire au chargement du tableau des espérances de vie 
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.Parent">
+	<summary>
+ Propriété qui nous donne accès à l'instance de l'objet visuel auquel
+ cette classe-ci est associé
+ </summary>
+	<value>Instance de l'objet visuel auquel cette classe est associé</value>
+	<returns>Instance de l'objet visuel auquel cette classe est associé</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.#ctor(IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad)">
+	<summary>
+ Constructeur de cette classe. Elle reçoit l'instance de l'objet visuel auquel 
+ elle sera associé
+ </summary>
+	<param name="parent">Instance de l'objet visuel auquel cette classe est associé</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.ObtenirPremierItemListeProtection">
+	<summary>
+ Méthode pour obtenir le premier item de la liste de protections à ajouter
+ </summary>
+	<returns>1 IL.AP.IllusVie.Trad.Utils.ItemListeProtection</returns>
+	<remarks>Coder dans les descendant</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.IsBtnAjoutAssocieDispo(System.Int32)">
+	<summary>
+ Cette fonction permet de déterminer si le bouton ajouter
+ (celui qui permet d'ajouter une protection rattachée)
+ est disponible ou non
+ </summary>
+	<param name="rangee">Le numéro de la rangée de la protection à vérifier</param>
+	<returns>True = le bouton est disponible, False = le bouton n'est pas disponible</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.SetFrequenceDefaut">
+	<summary>
+ Méthode qui fait l'affectation de la fréquence par défaut
+ </summary>
+	<remarks>est overridé dans Transition</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.AjouterAvenantParDefaut">
+	<summary>
+ Méthode qui fait l'ajout des avenants par défaut
+ </summary>
+	<remarks>Coder dans les descendants (Transition)</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.AjouterGarantiesParDefaut">
+	<summary>
+ Méthode qui fait l'ajout des garanties par défaut
+ </summary>
+	<remarks>Coder dans les descendants (Transition)</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.ObtenirRetourPlanIllustration(IAFG.IA.IL.AP.Illustration.ENUMs.PlanIllustration,System.Boolean,IAFG.IA.VI.AF.Proposition.Protection,System.Boolean)">
+	<summary>
+ Fonction qui permet d'obtenir les informations de disponibilité du plan illus passé en paramètre
+ </summary>
+	<param name="planIllus"></param>
+	<param name="estCategorie"></param>
+	<param name="protectionBase"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.PeuplerListeProtections(System.Int32)">
+	<summary>
+ Méthode pour peupler la liste des protections
+ </summary>
+	<param name="rangeeListe">Le numéro de la rangée de la liste à peupler</param>
+	<remarks>Est overrides dans ProdAssTrad, car il faut loader la liste des termes également.
+ Par contre, l'overrides ne peuple pas la liste différemment, elle fait un appel à MyBase</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.PeuplerListeProtections">
+	<summary>
+ Méthode pour peupler la liste des protections
+ </summary>
+	<remarks>Est overrides dans ProdAssTrad, car il faut loader la liste des termes également.
+ Par contre, l'overrides ne peuple pas la liste différemment, elle fait un appel à MyBase</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.IsRAAjoutEPIC(System.String)">
+	<summary>
+ Méthode qui vérifie si on ajoute un RA pour ajouter automatiquement un EPIC
+ </summary>
+	<param name="idProtection">id de la protection que l'on ajoute</param>
+	<returns>true on ajout EPIC / FALSE on ajout pas EPIC</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.GererCodePlanProtAssociees">
+	<summary>
+ Méthode qui gère les code de plans des protections associées
+ </summary>
+	<remarks>Codé dans les descendants</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.EffectuerVerificationMontantProtectionTransition">
+	<summary>
+ Méthode qui fait les vérifications additionnelles sur un changement d'âge pour Transition
+ </summary>
+	<remarks>Codé dans Transition. On ne fait rien pour AssuranceTrad</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.EffectuerVerificationTypeCapital(IAFG.IA.VI.AF.Proposition.ENUMs.TypeAssurance,System.Int32)">
+	<summary>
+ Méthode qui fait les vérifications additionnelles sur un changement d'âge pour Multiterme
+ </summary>
+	<remarks>Codé dans les descendants</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.GererAlignementEntete">
+	<summary>
+ Gerer l'alignement des champs dans la DataWindow2
+ </summary>
+	<remarks>Codé dans les descendants</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.GererDerniereProtection">
+	<summary>
+ Méthode qui fait la gestion lors de la suppression de la 
+ dernière protection à l'écran
+ </summary>
+	<remarks>Codé dans les descendants</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.GetPlanCode(IAFG.IA.VI.AF.Proposition.Protection)">
+	<summary>
+ Cette fonction retourne le code de plan pour la protection passé en paramètre
+ </summary>
+	<param name="oProtection">la protection qui contient toutes les infos pour l'obtention du code de plan</param>
+	<returns>Le code de plan</returns>
+	<remarks>Il faut que toutes les valeurs qui influence le code de plan soit 
+ setter correctement dans la protection</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.RefreshMontant(System.Int32,System.String)">
+	<summary>
+ Cette fonction permet gérer le montant pour les ass inv
+ </summary>
+	<param name="rangee">la row qui est été modifiée</param>
+	<param name="champs">le champs qui à été modifié</param>
+	<remarks>Codé dans les descendants</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.AfficherComparatif(System.Int32)">
+	<summary>
+ Méthode pour ouvrir le comparatif d'assurance vie
+ </summary>
+	<param name="rangee">La rangée de la protection pour laquelle ouvrir le comparatif</param>
+	<remarks>Codé dans les descendants</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.RafraichirMontantProtectionTotal">
+	<summary>
+ Méthode qui fait la gestion de l'affichage des primes totales pour
+ les protections ayant des avenants
+ </summary>
+	<remarks>Coder dans les descendants</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.SetRenouvellementAvenant(System.String,System.String)">
+	<summary>
+ Méthode qui fait le set au dossier du renouvellement des avenants de la protections sur un item changed
+ </summary>
+	<remarks>Coder dans le descendant Transition</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.ValiderDeleteProtection(System.Int32)">
+	<summary>
+ Permet d'effectuer des validations avant la suppression d'une protection
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.ObtenirListAvenantPossible(System.String)">
+	<summary>
+ Retourne la liste de PlanIllust possible contenue dans les listes des protections reliées à la protection de base
+ </summary>
+	<param name="idProtBase">L'id de la protection de Base</param>
+	<returns>La liste de PlanIllust</returns>
+	<remarks>Overridé dans TradInsProd</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad.InitialiserResize">
+	<summary>
+ Initialisation du service de resize pour la datawindow des protections
+ </summary>
+	<remarks>Parent est la propriété qui contient la datawindow</remarks>
+</member><member name="T:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GestionInfoProtectionTrad">
+	<summary>
+ Classe qui contient la logigue d'affaire de base du contrôle visuel des protections
+ de la section "Illustration" représenté par la classe "InfoProtectionTrad"
+ </summary>
+	<remarks>Cette classe sert à séparer la logique d'affaire de la classe visuelle 
+ auquel elle est associée. Le descendant de cette classe est instancié au niveau
+ applicatif par la classe "FormulaireAssure".</remarks>
+	<history>
+		<pre>
+ Auteur               Date       Description
+ ==============================================================
+ Robert Bastien    2007-10-02    Création
+ </pre>
+	</history>
+</member><member name="P:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.NumeroAssure">
+	<summary>
+ Le numéro de l'assuré courant.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.ScenarioCourant">
+	<summary>
+ Le numéro de scénario courant.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.TypeAssurance">
+	<summary>
+ Le type d'assurance, 0 - individuelle, 1-3 conjoint.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.Frequence">
+	<summary>
+ La frequence de l'illustration.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.AgeEquivalent">
+	<summary>
+ L'age équivalent de l'illustration.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.IdIndividus">
+	<summary>
+ Liste d'ID des indivius sur cet assuré.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.AgesIndividus">
+	<summary>
+ L'age des individus sur cet assuré.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.IndividusAssurables">
+	<summary>
+ Liste indiquant si les individus sont assurables ou non.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.PrenomsIndividus">
+	<summary>
+ Liste de prénom des assurés.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.FormulaireIllustration">
+	<summary>
+ Pointeur vers le formulaire d'illustration lié à l'assuré.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.Redraw">
+	<summary>
+ Nous dit si l'on doit oui ou non rafraichir l'affichage du dialogue.
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.GestionOnglet">
+	<summary>
+ Pointeur vers le gestionnaire d'onglet.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.DialogueProtectionsTrad_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Trappe les touches pour les raccourcis d'ajouter une protection,
+ supprimer une protection et ouvrir la fenêtre des surprimes.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.DialogueProtectionsTrad_Load(System.Object,System.EventArgs)">
+	<summary>
+ Initialise toutes les informations nécessaire au bon fonctionnement du dialogue.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.PopulateMenuPourPopup">
+	<summary>
+ Méthode pour remplir la liste de tous les plans qui peuvent apparaître dans le popup
+ quand on clique sur une catégorie
+ </summary>
+	<remarks>La liste est remplie une seule fois et elle est filtrée au moment de faire
+ apparaître le popup</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.InitialiserResize">
+	<summary>
+ Initialisation du service de resize pour les datawindows de cette fenêtre
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.ObtenirNumeroItemVide">
+	<summary>
+ fonction qui retourne les positions dont les values sont à blanc
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.AjouterItemQuickListe(System.Int32,System.String,System.String,System.String,System.Int32)">
+	<summary>
+ Méthode qui ajout un item dans la DW de sélection rapide
+ </summary>
+	<param name="rangee"></param>
+	<param name="index"></param>
+	<param name="description"></param>
+	<param name="planIllus"></param>
+	<param name="group"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.PeuplerDatawindowPlansOfferts">
+	<summary>
+ Méthode qui rempli la section des protections dans le haut de la fenêtre
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.GererPositionnement">
+	<summary>
+ Cette fonction fait le positionnement selon le nombre de row dans la datawindowPrincipale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.GererDisposition">
+	<summary>
+ Cette fonction fait le traitement nécessaire pour la gestion
+ du positionnement ou la visibité des boutons servant à
+ la navigation
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.ObtenirListePlanCategorie(IAFG.IA.IL.AP.Illustration.ENUMs.PlanIllustration)">
+	<summary>
+ fonction qui retourne tous les planIllus d'une catégorie, passée en paramètre
+ </summary>
+	<param name="categorie"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.ObtenirPlanIllusRangeeIndex(System.Int32,System.Int32)">
+	<summary>
+ Fonction qui retourne le planIllus de la rangée et de l'index passé en paramètre
+ </summary>
+	<param name="row"></param>
+	<param name="index"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.RafraichirDisponibilite">
+	<summary>
+ Méthode qui met à jour la disponibilité de chaque protection de la datawindowPrincipale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.GererErreurDuDossier">
+	<summary>
+ Gère les erreurs du dossier
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.GererErreurDeUtilsDossier">
+	<summary>
+ Gère les erreurs de util dossier
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.GererErreurDesCalculs">
+	<summary>
+ Gère les erreurs du des calculs
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.GererChangementAssure(System.String)">
+	<summary>
+ Cette fonction fait le traitement nécessaire pour la gestion
+ du chargement des protections lorsque l'usager clique sur
+ le bouton "Assuré précédent" ou "Assuré suivant".
+ </summary>
+	<param name="direction">"SUIV" pour aller à l'assuré suivant, sinon assuré précédent.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.ResetHyperlinkColor">
+	<summary>
+ Cette fonction fait le traitement nécessaire pour déactivé
+ les liens hypertext rouge qui peuvent être resté dans la 
+ zone de sélection rapide.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.Valider">
+	<summary>
+ Permet de valider si les données sont acceptable.
+ </summary>
+	<returns>True -  les données sont correct, False - il y a un problème dans les données.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+	<summary>
+ Traite une touche de commande.
+ </summary>
+	<param name="msg">System.Windows.Forms.Message, passé par référence, qui représente le message de fenêtre à traiter.</param>
+	<param name="keyData">Une des valeurs System.Windows.Forms.Keys qui représente la touche à traiter. </param>
+	<returns>True si le caractère a été traité par cette méthode; sinon False.</returns>
+	<remarks>Cette méthode est nécessaire pour contourner un bogue de tabulation dans datawindow .Net 2.0</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.DataWindowPrincipale_Click(System.Object,IAFG.IA.VI.AP.Commun.CtrlIU.DataWindow.ItemClickEventArgs)">
+	<summary>
+ Gère la click de la datawindow.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.PopupMenuItemsFiltreur">
+	<summary>
+ Classe pour filtrer l'objet PopupMenuItems sur la catégorie
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.AjouterPlanFromPopupMenu(System.Object,System.String)">
+	<summary>
+ Fonction de retour pour le popup des plans catégorisés
+ </summary>
+	<param name="Sender"></param>
+	<param name="ItemID">Code de plan</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.AjouterPlan(System.String)">
+	<summary>
+ Fonction permettant d'ajouter un plan dans l'illustration
+ </summary>
+	<param name="planIllus">Code du plan à ajouter</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.DataWindowPrincipale_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ Affiche les liens d'aide en rouge lorsque l'on passe la souris dessus.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.DataWindowPrincipale_Leave(System.Object,System.EventArgs)">
+	<summary>
+ Lorsque l'on quitte un controle, rememttre la couleur par défaut.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.DialogueProtectionsTrad_Document(System.Int32,System.String)">
+	<summary>
+ Evenement qui permet d'ouvrir un fichier selon la protection
+ </summary>
+	<param name="rangee">la rangée</param>
+	<param name="noCol">l'objet qui a été cliqué</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.DialogueProtectionsTrad_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ Affiche les liens d'aide en rouge lorsque l'on passe la souris dessus.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.DialogueProtectionsTrad_Validating(System.Object,System.ComponentModel.CancelEventArgs)">
+	<summary>
+ Valide le formulaire, s'il n'est pas valide ne laisse pas quitter.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.imgAssurePrecedant_Click(System.Object,System.EventArgs)">
+	<summary>
+ Affiche l'assuré suivant.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.imgAssureSuivant_Click(System.Object,System.EventArgs)">
+	<summary>
+ Affiche l'assuré précédent.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.DataWindow2_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ Affiche les liens d'aide en rouge lorsque l'on passe la souris dessus.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.DataWindow2_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Transfère L'évènement keydown à son parent.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad.DataWindowPrincipale_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Transfère L'évènement keydown à son parent.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.DialogueProtectionsTrad">
+	<summary>
+ Dialogue qui permet de gérer l'ajout et la supression de
+ protections avec en plus une liste d'ajout rapide.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.GenererRapport(System.Boolean)">
+	<summary>
+ Construit le rapport en format PDF
+ </summary>
+	<param name="ab_print">True - Impression, False - Aperçu</param>
+	<returns>Chaine vide si erreur dans le traitement, sinon Nom du rapport</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.ObtenirTauxImpot(System.String)">
+	<summary>
+ Obtient le taux d'imposition à afficher
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.SetContractants(System.Boolean)">
+	<summary>
+ Chargement de la section des contractants
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.SetAssures">
+	<summary>
+ Chargement la section des assurés
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.SetTableauPersonnalise">
+	<summary>
+ Chargement des tableaux personnalisés.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.InitialiserExigenceMedicale">
+	<summary>
+ Initialisation des exigences medicales
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.GestionNotescouverture(System.String)">
+	<summary>
+ Vérifie si la note existe déjà dans le vecteur des notes,si oui retourne la position du vecteur sinon l'ajoute dans
+ le vecteur des notes de couverture.
+ </summary>
+	<param name="idNote">Ajouter le id de la note au vecteur de note.</param>
+	<returns>L'index représentant l'emplacement de notre note dans le vecteur en string.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.SetGraphiquePersonnalise">
+	<summary>
+ Chargement des graphiques personnalisés.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.FormaterCouvertureAssure(System.String[],System.String[],System.Int32,System.String,System.String)">
+	<summary>
+ Formater l'information pour la section couverture des assurés.
+ </summary>
+	<param name="idIndividu">Vecteur contenant les individus</param>
+	<param name="idProt">Vecteur contenant les couvertures</param>
+	<param name="nbProt">Nombre de protection dans le vecteur des couvertures</param>
+	<param name="format">Le format des champs numérique. ( Montant )</param>
+	<param name="descPrMin">Texte contenant le description des primes minimum</param>
+	<returns>Le importstring pour la datawindow.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.InitialiserRapportStandard">
+	<summary>
+ Générer les sections à imprimer du rapport standard
+ Cette fonction des être redefini dans ses descandants.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.InitialiserRapportProprietePartage">
+	<summary>
+ Générer les sections à imprimer du rapport propriété partagée
+ Cette fonction des être redefini dans ses descandants.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.GenererRapportStandard(System.String)">
+	<summary>
+ Générer la section à imprimer selon celle passé en paramètre 
+ Cette fonction des être redefini dans ses descandants.
+ </summary>
+	<param name="section">Nom de la section.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.GenererRapportProprietePartage(System.String)">
+	<summary>
+ Générer la section à imprimer selon celle passé en paramètre 
+ Cette fonction des être redefini dans ses descandants.
+ </summary>
+	<param name="section">Nom de la section.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.GetLongueDureeProtAssure(System.Int32)">
+	<summary>
+ Retourne la durée de la protection la plus longue pour cet assuré
+ </summary>
+	<param name="numeroAssure">No ordinal de l'assuré</param>
+	<returns>La durée de la protection la plus longue, 0 si aucune protection 
+ ou toutes les protections à durée nulle</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.InitialiserProtections">
+	<summary>
+ Initialisation les proctections
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.SetSignature(System.Boolean)">
+	<summary>
+ Création de la section signature du rapport.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.SetDetailsPrimes(System.Boolean)">
+	<summary>
+ Chargement de la section du détails des primes
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.InitialiserSurprime">
+	<summary>
+ Initialisation les surprimes
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.SetProduit">
+	<summary>
+ Initialisation de l'introduction
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.InitialiserPtsSaillants(System.Boolean,System.Boolean)">
+	<summary>
+ Initialisation des points saillants
+ </summary>
+	<param name="viewHeader">Si l'on affiche le header ou pas.</param>
+	<param name="hasTitreSection">S'il y a un titre de section ou pas.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.InitialiserPtsSaillants(System.Boolean,System.Boolean,System.String)">
+	<summary>
+ Initialisation des points saillants
+ </summary>
+	<param name="viewHeader">Si l'on affiche le header ou pas.</param>
+	<param name="hasTitreSection">S'il y a un titre de section ou pas.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.InitialiserPtsSaillants(System.String)">
+	<summary>
+ Initialisation des points saillants
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.SetPtsSaillantsSingle(System.String,System.String,System.String,System.String)">
+	<summary>
+ Chargement des points saillants sur 1 seul colone
+ </summary>
+	<param name="orientation">Orientation de la page ( 1-Portrait 2-Paysage )</param>
+	<param name="infoHeader">Information de l'entête des pts saillants</param>
+	<param name="importstring">String contenant les données des pts saillants</param>
+	<param name="titreSection">S'il y a un titre avant le texte des pts saillants</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.Utils.GenererRapport.InitialiserPtsSaillantsHos(System.Boolean,System.Boolean)">
+	<summary>
+ Initialisation des points saillants pour l'hospitalisation
+ </summary>
+	<param name="viewHeader">Si l'on affiche le header ou pas.</param>
+	<param name="hasTitreSection">S'il y a un titre de section ou pas.</param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.LogiqueFormulaire">
+	<summary>
+ Propriété qui donne accès à l'instance de l'objet qui contient la la logique
+ d'affaire de ce formulaire
+ </summary>
+	<value>L'instance de l'objet qui contient la logique d'affaire pour ce formulaire</value>
+	<returns>L'instance de l'objet qui contient la logique d'affaire pour ce formulaire</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.FormulaireIllustration_switchLang(System.Object)">
+	<summary>
+ Méthode déclanchée par le changement de langue
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.FormulaireIllustration_Load(System.Object,System.EventArgs)">
+	<summary>
+ Méthode pour le load du formulaire
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.ValidationUnload">
+	<summary>
+ Cette fonction permet de valider s'il y a des primes à 0.
+ S'il y en a, on ne permet pas de changer d'onglet
+ </summary>
+	<returns>True = Passe la validation, False = Ne passe pas la validation</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.DataWindow2_ItemChanged(System.Object,Sybase.DataWindow.ItemChangedEventArgs)">
+	<summary>
+ Événement qui est lancé lorsqu'un item du contrôle DataWindow2 est modifié.</summary>
+	<isnew>2008-03-26</isnew>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.DataWindow2_PostItemChanged(System.Object,Sybase.DataWindow.ItemChangedEventArgs)">
+	<summary>
+ Événement qui est lancé lorsqu'un item du contrôle DataWindow2 est modifié. 
+ Survient après l'événement DataWindow2_ItemChanged.</summary>
+	<isnew>2008-05-06</isnew>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.InserRowDW2(System.Int32)">
+	<summary>
+ Ajoute une rangée dans la datawindow2 et ajuste la hauteur de celle-ci
+ </summary>
+	<param name="rangee">le numéro de la rangée à ajouter</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.DataWindow4_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ Méthode appelé lors du mouse move
+ </summary>
+	<param name="sender">le sender</param>
+	<param name="e">les arguments</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.ObtenirListeIndividus(System.Int32)">
+	<summary>
+ Fonction qui retourne la liste des individus du formulaire en cours
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.ValiderAgeChgTypeAss(IAFG.IA.VI.AF.Proposition.ENUMs.TypeAssurance)">
+	<summary>
+ Méthode qui mets à jour l'âge de l'individu 1 s'il n'est pas valide
+ pour passer en conjointe ou pour revenir en individuel.
+ </summary>
+	<param name="typeAssurance">Le nouveau type d'assurance</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.ObtenirProchainAssure(System.String,System.String)">
+	<summary>
+ Cette fonction permet de déterminer le prochain assure
+ qui peut avoir la protection de base passé en paramètre.
+ as_id_assure aura la valeur "0" si aucun assuré peut recevoir la protection
+ </summary>
+	<param name="idBase">L'id de la protection de base</param>
+	<param name="idProtection">L'id de la protection</param>
+	<returns>L'id du prochain assuré disponible</returns>
+	<remarks>Coder dans les desendants</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.GetAgeIllus">
+	<summary>
+ Cette fonction petmet de retourné l'âge de l'assuré. Si nous
+  sommes en assurance conjointe et que le type de protection
+ est "Conjointe au premier décès" alors nous retournons l'âge du
+ plus vieux des assurés conjoint. Si le type de protection
+ est "Conjointe au dernier décès" alors nous retournons l'âge du
+ plus jeune des assurés conjoint
+ </summary>
+	<returns>l'âge de l'assuré</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.GetAgeProtection(System.String,System.String)">
+	<summary>
+ Donne l'âge de l'assuré pour la protection donnée.
+ S'il y a plus d'un assuré, donne l'âge du plus jeune ou du plus vieux selon le paramètre minOuMax.
+ </summary>
+	<param name="idprotection">id de la protection</param>
+	<param name="minOuMax">Min ou Max</param>
+	<returns>L'âge de l'assuré</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.IsLimitContractantsAtteinte">
+	<summary>
+ Fonction pour savoir si on a atteint la limite de contractants
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.IsApplicantPresent(System.String)">
+	<summary>
+ fonction pour savoir si un contractant est présent
+ </summary>
+	<param name="scope">as_scope: spécifie quel est le scope de notre vérification
+	"Assure": On vérifie seulement dans les assurés de cet onglet
+	"NonAssure": On vérifie seulement dans les contractants non_assure
+	"Tous": On vérifie le nombre de contractants dans le dossier au complet</param>
+	<returns>True si un contractant est présent, False si auncun contractant est présent</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.SupprimerAssureConjoint(System.Int32)">
+	<summary>
+ Cette fonction fait le traitement nécessaire pour supprimer  
+ du dossier et de la datawindow des assurés, les informations 
+ de l'assuré conjoint dont le numéro de la rangée est passé en paramètre
+ </summary>
+	<param name="row">Numero de la rangée de l'assuré que nous voulons supprimer</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.SupprimerAssureConjoint(System.Int32,System.Boolean)">
+	<summary>
+ Cette fonction fait le traitement nécessaire pour supprimer,  
+ du dossier et de la datawindows des assurés, les informations 
+ de l'assuré conjoint donc numéro de la rangée passé en paramêtre
+ </summary>
+	<param name="row">Numero de la rangée de l'assuré que nous voulons supprimer</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.GetGuidIndivOrigine(System.Int32)">
+	<summary>
+ Cette fonction permet d'obtenir l'identifiant de l'individu se trouvant
+ à la rangée 1 dans la datawindow des assurés.</summary>
+	<isnew>2008-05-06</isnew>
+	<param name="rangee">La rangée de l'assuré, dans la datawindow des assurées, 
+ pour lequel nous devrions obtenir l'identifiant.</param>
+	<returns>L'identifiant de l'individu.</returns>
+	<remarks>La première rangée d'un DataWindow est la rangée 1.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.ValidationHeadoffice">
+	<summary>
+ Cette fonction permet de valider les champs en mode IsHeadOfficeStaff "Y"
+ </summary>
+	<returns>True = passe la validation. False = ne passe pas la validation</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.Validate(System.Object)">
+	<summary>
+ Fonction qui permet de valider le contenu de ce formulaire
+ </summary>
+	<param name="sender"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+	<summary>
+ Traite une touche de commande.</summary>
+	<isnew>2008-05-09</isnew>
+	<param name="msg">System.Windows.Forms.Message, passé par référence, qui représente le message de fenêtre à traiter.</param>
+	<param name="keyData">Une des valeurs System.Windows.Forms.Keys qui représente la touche à traiter. </param>
+	<returns>True si le caractère a été traité par cette méthode; sinon False.</returns>
+	<remarks>Cette méthode est nécessaire pour contourner un bogue de tabulation dans datawindow .Net 2.0</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.PositionnerFocusTabShiftTab(System.String)">
+	<summary>
+ Méthode servant à mettre le focus sur le bon champ de la bonne datawindow
+ dependant la provenance du focus
+ </summary>
+	<param name="activeCtrlName">Non du contrôle d'ou provient le focus</param>
+	<remarks>Cette méthode est utiliser par la classe "FormulaireOnglets" afin de
+ positionner le focus correctement lorsque l'usager fait un Tab ou Shift-Tab
+ lorsque le focus est sur les bouton "Précédent" ou "Suivant" de cette classe</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.SupprimerSurprime2eDeces">
+	<summary>
+ Méthode qui fait le ménage des surprimes du taux du mille 
+ appeler lorsque nous sommes en 2e décès
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.ServiceKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Gestion KeyDown pour les raccourcis clavier de l'application. 
+ </summary>
+	<param name="sender">Objet ayant levé l'événement</param>
+	<param name="e">Arguments de l'objet ayant levé l'événement
+ La touche CTRL-"P"
+ La touche CTRL-"Z"
+ La Touche CTRL-"S" 
+ </param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.GererChangementProtection">
+	<summary>
+ Méthode déclancher lorsque l'on change la protection
+ </summary>
+	<remarks>Coder dans les descendants</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.AfficherComparatif(IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.InfoProtectionsTrad,System.Int32)">
+	<summary>
+ Méthode pour faire afficher le comparatif
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.ChargerListeProduit">
+	<summary>
+ Méthode qui rempli la liste du produit dans le section information génrale
+ </summary>
+	<remarks>Coder dans les ancêtres</remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.GererPositionCheckBox">
+	<summary>
+ Méthode qui gère la position du checkbox des protections
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.ChargerInfoGenerale">
+	<summary>
+ Cette fonction permet d'ajouter un ligne dans la datawindow
+ d'information générale et d'y affecter les informations par défaut.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.GererChampsInfoGen">
+	<summary>
+ Cette fonction fait la gestion de la visibilité ou disponibilité
+ des champ de la datawindow des info général du produit
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.ChargerInfoAssures">
+	<summary>
+ Cette fonction permet de charger les informations des assurés
+ contenu dans gestionnaire de dossier vers la datawindow des assurés
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.GererErreurDuDossier">
+	<summary>
+ Gère les erreurs du dossier
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.GererErreurDuUtilsDossier">
+	<summary>
+ Gère les erreurs du utils dossier
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.GererErreurDesCalculs">
+	<summary>
+ Gère les erreurs du des calculs
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.MajAgeEquivalent">
+	<summary>
+ Cette fonction permet de mettre à jour l'âge équivalent de l'illustration à l'écran
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.GererAffichageSectionPrimes">
+	<summary>
+ Cette fonction fait la gestion de la visibilité du champ
+ "renouvellement_tra" selon si une protection Multiterme est présente
+ ou non.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.GererVisibiliteStatutAssure">
+	<summary>
+ Cette fonction fait la gestion de la visibilité du champ
+ "statut" selon l'âge, le type de cout de la protection
+ de base et la présence d'avenant renouvelable
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.GererStatutAssure">
+	<summary>
+ Cette fonction fait la gestion de la valeur du champ "statut" donc la valeur est 
+ dépendent du type de cout de la protection de base lorsque nous illustrons le produit Genesis.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.GererChampsInfoAssure">
+	<summary>
+ Cette fonction fait la gestion de la visibilité ou disponibilité
+ des champ de la datawindow des info de l'assuré et des 
+ assurés conjoint
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.GererBoutonContractant">
+	<summary>
+ Cette méthode gère le bouton des contractants
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.GererNomsContractants">
+	<summary>
+ Cette fonction permet d'afficher le nom du ou des contractants
+ à côté du bouton "Modifier un contractant"
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.AjouterInfoGenerale">
+	<summary>
+ Cette fonction permet d'ajouter un ligne dans la datawindow
+ d'information générale et d'y affecter les informations par défaut
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.InialiserTaux">
+	<summary>
+ Méthode pour initialiser correctement les vecteurs de taux (après avoir setter l'âge)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.AjouterAssure(System.Int32,System.Boolean,System.Boolean,System.Int32)">
+	<summary>
+ Cette fonction permet d'ajouter un ligne d'assuré 
+ après la rangée passé en paramêtre.</summary>
+	<isnew>2008-04-24</isnew>
+	<param name="rangee">Numero de la rangée après laquel nous voulons ajouter une
+ ligne d'assuré. Lorsque l'on passe O alors la ligne sera
+ inserrer à la fin de la liste</param>
+	<param name="ajusterConjoint">Indique si on est en train d'ajuster le nombre 
+ d'assuré en fonction du type de protection conjoint</param>
+	<param name="estAssureUn">Indique si c'est un assuré #1 qu'on veut ajouter (conjoint ou pas)</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.AjouterContractant(System.String)">
+	<summary>
+ Méthode pour ajouter l'id d'individu reçu en paramètre à la collection de contractants
+ </summary>
+	<param name="idInd"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.GererAssureConjoint">
+	<summary>
+ Cette fonction permet d'ajouter ou de supprimer des assuré
+ conjoint selon le type de protection (individuelle ou
+ conjointe) et la valeur du champ "nombre de vie".
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.ChargerInfoPrimes(System.Boolean)">
+	<summary>
+ Cette fonction permet de charger les informations des primes
+ contenu dans gestionnaire de dossier vers la datawindow des primes
+ </summary>
+	<param name="reload"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.SetNumeroAssure(System.Int32)">
+	<summary>
+ Cette fonction assigne l'ordinal de l'assuré courant
+ à la variable d'instance servant à d'autre traitement dans cet objet
+ </summary>
+	<param name="numeroAss">L'ordinal de l'assuré courant</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.GererChangementFrequence(System.Int32)">
+	<summary>
+ Cette fonction fait le traitement nécessaire lors du 
+ changement de la fréquence des primes
+ </summary>
+	<param name="freq">La fréquence de versement des primes</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.SupprimerAssure(System.Int32)">
+	<summary>
+ Cette fonction permet de supprimer la ligne d'assuré donc le
+ numéro de la rangée passé en paramêtre
+ </summary>
+	<param name="rangee">Numero de la rangée de l'assuré que nous voulons supprimer</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.SupprimerIndividu">
+	<summary>
+ Cette fonction permet de supprimer les individus conjoint
+ qui ont été supprimés de la datawindow dans la fonction GererAssureConjoint
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.SetScenario(System.Int32)">
+	<summary>
+ Cette fonction assigne l'ordinal du scénario courant passé
+ en paramêtre à la variable d'instance servant à d'autre traitement dans cet objet
+ </summary>
+	<param name="scenario">l'ordinal du scénario courant</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.GererIndicAssurableAssure">
+	<summary>
+ Cette fonction fait le traitement nécessaire afin de
+ réinitialiser le champ "Assurable" à la valeur "Oui"
+ lorsque le type d'assurance n'est pas à Dernier décès
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.AjouterContractant">
+	<summary>
+ Cette fonction permet d'ajouter un ligne dans la datawindow
+ d'information générale et d'y affecter les informations par défaut
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.GererContractants">
+	<summary>
+ Cette fonction fait apparaître la fenêtre des contractants
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.ModifierAssure(System.Int32,System.String)">
+	<summary>
+ Méthode qui permet de modifier un assuré lorsqu'on revient de la proposition électronique
+ </summary>
+	<param name="rangee">la rangee de l'individu</param>
+	<param name="idindividu">l'id de l'individu</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.SetShowWindowFlag">
+	<summary>
+ Cette fonction fait le traitement nécessaire pour déterminer,
+ d'après le service de pilotage, si l'option "Voir toutes les
+ protections" sera sélectionner ou non
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.RemplacerAssureEcran(System.Int32,System.String@,System.Int32)">
+	<summary>
+ Cette fonction permet de remplacer un asssuré existant par
+ un individu existant ou par un nouvel individu
+ </summary>
+	<param name="rangee">Numero de la rangée après laquel nous voulons remplacer 
+ l'assuré. Lorsque l'on passe O alors la ligne sera
+ inserer à la fin de la liste</param>
+	<param name="idIndividu">Le ID du nouvel individu. Si on passe -1, c'est qu'on doit
+ créer un nouvel individu</param>
+	<param name="noAssure">L'ordinal de l'assuré.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.RemplacerAssure(System.Int32,System.String,System.Int32,System.String)">
+	<summary>
+ Remplace un assuré par un autre individu.</summary>
+	<isnew>2008-04-24</isnew>
+	<param name="rangee">rangee de l'individu qui doit être remplacé</param>
+	<param name="idIndividu">l'id du nouvel assuré</param>
+	<param name="noAssure">l'ordinal de l'assuré</param>
+	<param name="ancienIdIndividu">l'id de l'ancien individu, celui qu'il faut remplacé</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.InitialiserResize">
+	<summary>
+ Méthode qui initialiser le resize
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration.AfficherMessageChangementAge">
+	<summary>
+ Il faut boucler sur les protections pour afficher les avertissements liés au changement d'age
+ Présentement n'affiche que le message des maladies graves.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.IllusVie.Trad.CtrlIU.FormulaireIllustration">
+	<summary>
+ Gestion du formulaire de l'illustration.</summary>
+	<isnew>2008-05-09</isnew>
+	<remarks></remarks>
+	<history>
+		<pre>
+ Auteur            Date         Description
+ ===========================================================================
+ Tremblay, Victor  2008-03-26   Tronquer à l'unité la valeur de l'âge 
+                                reçue du champ "iga_age" du "DataWindow2" 
+                                afin d'éviter les problèmes de décimale, 
+                                qui sont causés par les nombres suivants 
+                                la virgule (ANO #225).
+ Tremblay, Victor  2008-04-24   Corrections apportées aux fonctions 
+                                AjouterAssure et RemplacerAssure suite 
+                                aux tests effectués sur le retour de 
+                                la proposition.
+ Tremblay, Victor  2008-05-06   Corrections apportées aux fonction 
+                                RemplacerAssure, RemplacerAssureEcran, 
+                                DataWindow2_PostItemChanged et 
+                                GetGuidIndivOrigine.
+ Tremblay, Victor  2008-05-09   Correction des problèmes de la tabulation 
+                                dans la DataWindow des protections.
+ </pre>
+	</history>
+</member>
+</members>
+</doc>

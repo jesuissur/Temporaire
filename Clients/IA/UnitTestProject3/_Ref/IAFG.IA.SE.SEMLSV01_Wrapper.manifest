@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<assembly xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1">
+  <assemblyIdentity name="IAFG.IA.SE.SEMLSV01_Wrapper" version="1.0.0.0" type="win32" processorArchitecture="x86" />
+  <clrClass clsid="{144e62dd-7071-4cd8-9d5a-b89e4b846446}" progid="IAFG.IA.SE.SEMLSV01_Wrapper.XmlSignature" threadingModel="Both" name="IAFG.IA.SE.SEMLSV01_Wrapper.XmlSignature" />
+  <clrClass clsid="{a6dcb967-9955-4c9f-9cb8-606381f7d0a1}" progid="IAFG.IA.SE.SEMLSV01_Wrapper.XmlSignature._XmlSignature" threadingModel="Both" name="IAFG.IA.SE.SEMLSV01_Wrapper.XmlSignature._XmlSignature" />
+</assembly>

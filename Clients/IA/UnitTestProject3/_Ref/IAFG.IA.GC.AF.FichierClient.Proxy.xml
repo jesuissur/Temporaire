@@ -1,0 +1,257 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.GC.AF.FichierClient.Proxy
+</name>
+</assembly>
+<members>
+<member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.#ctor">
+	<remarks/>
+</member><member name="E:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.RecupererUpdateClientCompleted">
+	<remarks/>
+</member><member name="E:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.RecupererUpdateClientAcknowledgeCompleted">
+	<remarks/>
+</member><member name="E:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.EnvoyerStatistiquesHorizonCompleted">
+	<remarks/>
+</member><member name="E:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.EnvoyerStatistiquesIACompleted">
+	<remarks/>
+</member><member name="E:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.TransfertFichiersMpsCompleted">
+	<remarks/>
+</member><member name="E:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.TransfertFichierValUnCompleted">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.RecupererUpdateClient(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteRecupererUpdateClient)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.BeginRecupererUpdateClient(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteRecupererUpdateClient,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.EndRecupererUpdateClient(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.RecupererUpdateClientAsync(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteRecupererUpdateClient)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.RecupererUpdateClientAsync(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteRecupererUpdateClient,System.Object)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.RecupererUpdateClientAcknowledge(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteRecupererUpdateClient)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.BeginRecupererUpdateClientAcknowledge(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteRecupererUpdateClient,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.EndRecupererUpdateClientAcknowledge(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.RecupererUpdateClientAcknowledgeAsync(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteRecupererUpdateClient)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.RecupererUpdateClientAcknowledgeAsync(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteRecupererUpdateClient,System.Object)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.EnvoyerStatistiquesHorizon(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteEnvoyerStatistiques)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.BeginEnvoyerStatistiquesHorizon(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteEnvoyerStatistiques,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.EndEnvoyerStatistiquesHorizon(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.EnvoyerStatistiquesHorizonAsync(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteEnvoyerStatistiques)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.EnvoyerStatistiquesHorizonAsync(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteEnvoyerStatistiques,System.Object)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.EnvoyerStatistiquesIA(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteEnvoyerStatistiques)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.BeginEnvoyerStatistiquesIA(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteEnvoyerStatistiques,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.EndEnvoyerStatistiquesIA(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.EnvoyerStatistiquesIAAsync(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteEnvoyerStatistiques)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.EnvoyerStatistiquesIAAsync(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteEnvoyerStatistiques,System.Object)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.TransfertFichiersMps(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteTransfertMAJ)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.BeginTransfertFichiersMps(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteTransfertMAJ,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.EndTransfertFichiersMps(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.TransfertFichiersMpsAsync(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteTransfertMAJ)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.TransfertFichiersMpsAsync(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteTransfertMAJ,System.Object)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.TransfertFichierValUn(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteTransfertMAJ)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.BeginTransfertFichierValUn(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteTransfertMAJ,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.EndTransfertFichierValUn(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.TransfertFichierValUnAsync(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteTransfertMAJ)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.TransfertFichierValUnAsync(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteTransfertMAJ,System.Object)">
+	<remarks/>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.gcmwpp04">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteRecupererUpdateClient.NoVersionFichierClient">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteRecupererUpdateClient.Compagnie">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteRecupererUpdateClient">
+	<remarks/>
+</member><member name="F:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.IdCompagnie.IA">
+	<remarks/>
+</member><member name="F:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.IdCompagnie.IAP">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.IdCompagnie">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoReponseTransfertMAJ.CodeRetour">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoReponseTransfertMAJ.Message">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoReponseTransfertMAJ.Status">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoReponseTransfertMAJ.FichierCompresse">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoReponseTransfertMAJ.FichierChecksumHash">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoReponseTransfertMAJ">
+	<remarks/>
+</member><member name="F:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.CodeStatus.Success">
+	<remarks/>
+</member><member name="F:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.CodeStatus.TechnicalError">
+	<remarks/>
+</member><member name="F:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.CodeStatus.FonctionnalError">
+	<remarks/>
+</member><member name="F:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.CodeStatus.Aborted">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.CodeStatus">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteTransfertMAJ.NoVersionFichierClient">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteTransfertMAJ.Compagnie">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteTransfertMAJ">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoReponseEnvoyerStatistiques.CodeRetour">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoReponseEnvoyerStatistiques.Message">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoReponseEnvoyerStatistiques.Status">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoReponseEnvoyerStatistiques">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.Compteur.Nom">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.Compteur.Valeur">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.Compteur">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.Statistique.Application">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.Statistique.Compteurs">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.Statistique">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteEnvoyerStatistiques.Statistiques">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteEnvoyerStatistiques.FichierCotationStat">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoRequeteEnvoyerStatistiques">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoReponseRecupererUpdateClient.CodeRetour">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoReponseRecupererUpdateClient.Message">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoReponseRecupererUpdateClient.Status">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoReponseRecupererUpdateClient.MajFicCliZipFileBytes">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoReponseRecupererUpdateClient.MajFicCliZipFileSize">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoReponseRecupererUpdateClient">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.RecupererUpdateClientCompletedEventHandler">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.RecupererUpdateClientCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.RecupererUpdateClientCompletedEventArgs">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.RecupererUpdateClientAcknowledgeCompletedEventHandler">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.RecupererUpdateClientAcknowledgeCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.RecupererUpdateClientAcknowledgeCompletedEventArgs">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.EnvoyerStatistiquesHorizonCompletedEventHandler">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.EnvoyerStatistiquesHorizonCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.EnvoyerStatistiquesHorizonCompletedEventArgs">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.EnvoyerStatistiquesIACompletedEventHandler">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.EnvoyerStatistiquesIACompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.EnvoyerStatistiquesIACompletedEventArgs">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.TransfertFichiersMpsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.TransfertFichiersMpsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.TransfertFichiersMpsCompletedEventArgs">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.TransfertFichierValUnCompletedEventHandler">
+	<remarks/>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.TransfertFichierValUnCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.TransfertFichierValUnCompletedEventArgs">
+	<remarks/>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.ServiceExtranetStatistiques">
+	<summary>
+ Wrap de la classe de service
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.ServiceExtranetFichierClient.RecupererUpdateClient(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.RecupererUpdateClientRequest)">
+	<summary>
+	</summary>
+	<param name="request"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.ServiceExtranetFichierClient.RecupererUpdateClientAcknowledge(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.RecupererUpdateClientRequest)">
+	<summary>
+	</summary>
+	<param name="request"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.ServiceExtranetFichierClient.TransfertFichiersMps(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.RecupererTransfertMAJRequest)">
+	<summary>
+ Overload pour appeler workobject Transfert MAJ
+ </summary>
+	<param name="request"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.ServiceExtranetFichierClient.TransfertFichierValUn(IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.RecupererTransfertMAJRequest)">
+	<summary>
+ Overload pour appeler workobject Transfert MAJ
+ </summary>
+	<param name="request"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.ServiceExtranetFichierClient">
+	<summary>
+ Wrap de la classe de service
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.GC.AF.FichierClient.Proxy.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="T:IAFG.IA.GC.AF.FichierClient.Proxy.ProxyWrap.DtoTypesExtension">
+	<summary>
+ Module de functions d'extentions pour les type wrapper Request/Reply
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

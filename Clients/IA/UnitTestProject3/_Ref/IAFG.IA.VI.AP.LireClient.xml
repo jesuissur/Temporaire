@@ -1,0 +1,262 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.VI.AP.LireClient
+</name>
+</assembly>
+<members>
+<member name="M:IAFG.IA.VI.AP.LireClient.Affaires.InitObjet.ComparerProtectionParDateEmission(IAFG.IA.VI.AF.Proposition.Protection,IAFG.IA.VI.AF.Proposition.Protection)">
+	<summary>
+ Compare la date d'émission de deux instances de Protection et 
+ retourne une indication de leurs valeurs relatives. 
+ </summary>
+	<param name="item1">Première Protection.</param>
+	<param name="item2">Deuxième Protection.</param>
+	<returns>
+ Nombre signé indiquant les valeurs relatives de t1 et de t2.
+ 
+ </returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Affaires.InitObjet.MettreAJourCodeProtection(System.Int32)">
+	<summary>
+ Méthode qui boucle sur toutes les protections et modifie le code protection
+ de la protection de base
+ </summary>
+	<param name="noAssure"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Affaires.InitObjet.Protection_SetSousSerie(IAFG.IA.VI.AF.Proposition.Protection,System.String)">
+	<summary>
+ Indique si la couverture du contrat IRIS est passé au nouveau concept. À blanc pour tous les autres contrats.
+ </summary>
+	<param name="ss"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Affaires.InitObjet.Protection_SetDateTransformationIndACjt(IAFG.IA.VI.AF.Proposition.Protection,System.DateTime)">
+	<summary>
+ Méthode qui initialise la date de transformation si nécessaire
+ </summary>
+	<param name="prot"></param>
+	<param name="dateTr"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Affaires.InitObjet.Protection_SetDateVersionProduit(IAFG.IA.VI.AF.Proposition.Protection,System.DateTime)">
+	<summary>
+ Méthode qui initialise la date de transformation si nécessaire
+ </summary>
+	<param name="prot"></param>
+	<param name="dateTr"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Affaires.InitObjet.Protection_SetInformationsTendance(IAFG.IA.VI.AF.Proposition.Protection,IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.Protections)">
+	<summary>
+ Méthode qui affecte les nouveaux champs tendance
+ </summary>
+	<param name="oProt"></param>
+	<param name="recordRow"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Affaires.InitObjet.Protection_SetEtatProtection(IAFG.IA.VI.AF.Proposition.Protection,System.String)">
+	<summary>
+ Méthode qui initialise l'état de la protection avec le usedCode
+ </summary>
+	<param name="prot"></param>
+	<param name="usedCode"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Affaires.InitObjet.TraiterRecord44(IAFG.IA.VI.AF.Proposition.Protection,System.Int32)">
+	<summary>
+ Méthode qui 
+  - affecte l'âge de la protection en fonction des assurés en place
+  - Enlève les assurés en place
+  - Remplace les assurés par des assurés bidons
+ </summary>
+	<param name="prot"></param>
+	<param name="nbrBidons"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Affaires.InitObjet.Prets_SetVehiculeGarantiPret(IAFG.IA.VI.AF.Proposition.Pret,System.String,System.String)">
+	<summary>
+ Méthode qui set le véhicule garanti prêt
+ </summary>
+	<param name="pret">le prêt</param>
+	<param name="vehicule">le champ dgp_sepacct de la table pret_existant</param>
+	<param name="terme">le champ dgp_portfolio de la table pret_existant</param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.TypeRecherche">
+	<summary>
+ Contient les différents type de recherche
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.TypeRechercheAffiche">
+	<summary>
+ Contient le type de recherche
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.ConnectionFile">
+	<summary>
+ Path du fichier contenant la connectionString de lireClient
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.DataWindowPrincipale_Click(System.Object,IAFG.IA.VI.AP.Commun.CtrlIU.DataWindow.ItemClickEventArgs)">
+	<summary>
+ Sur le click, on lance la recherche sur le nom et prénom
+ </summary>
+	<param name="sender">Objet ayant levé l'évènement</param>
+	<param name="e">Arguments</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.DataWindowPrincipale_DataWindowKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Sur le Enter, on lance la recherche sur le nom/prénom
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.dwRechercheNoPolice_Click(System.Object,IAFG.IA.VI.AP.Commun.CtrlIU.DataWindow.ItemClickEventArgs)">
+	<summary>
+ Sur le click, on lance la recherche sur le numéro de police
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.dwRechercheNoPolice_DataWindowKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Sur le Enter, on lance la recherche sur le numéro de police
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.linkPage_LinkClicked(System.Object,System.EventArgs)">
+	<summary>
+ Cet evenement est lancé lors du changement de page.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.dwResultats_Click(System.Object,IAFG.IA.VI.AP.Commun.CtrlIU.DataWindow.ItemClickEventArgs)">
+	<summary>
+ Méthode utilisée pour la gestion de l'évènement Click de la DataWindow de résultat.
+ </summary>
+	<param name="sender">Objet ayant envoyé l'évènement</param>
+	<param name="e">Arguments de l'évènement Click de la DataWindow. Ces arguments contiennent
+ des valeurs spécifiques au DataWindow</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.dwResultats_DoubleClick(System.Object,System.EventArgs)">
+	<summary>
+ Gere l'evenement DoubleClick de la datawindow qui contient les résultats de la recherche. Sur le double click, on load le contrat et on passe à l'écran d'illustration
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.dwResultats_DataWindowKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Sur le Enter, on lance la recherche sur le numéro de police
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.FormulaireAccueil_Load(System.Object,System.EventArgs)">
+	<summary>
+ Fait les initialisations nécessaires au traitement du formulaire.
+ </summary>
+	<param name="sender">Objet ayant levé l'évènement</param>
+	<param name="e">Arguments</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.#ctor">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+	<summary>
+ Traite une touche de commande.
+ </summary>
+	<param name="msg">System.Windows.Forms.Message, passé par référence, qui représente le message de fenêtre à traiter.</param>
+	<param name="keyData">Une des valeurs System.Windows.Forms.Keys qui représente la touche à traiter. </param>
+	<returns>True si le caractère a été traité par cette méthode; sinon False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.setfocuslast">
+	<summary>
+ Place le focus sur le dernier champ du formulaire
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.SetFocusFirst">
+	<summary>
+ Place le focus sur le premier champ du formulaire
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.ValiderPolice(System.String)">
+	<summary>
+ Valide le # de police entré par l'utilisateur
+ </summary>
+	<param name="police"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.RechercherPolice(System.String)">
+	<summary>
+ Lance la recherche des polices dans FichierClient et dans les fichiers XML. 
+ </summary>
+	<param name="typeRecherche"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.AfficherPageResultat">
+	<summary>
+ Affiche une page de résultats
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.SortClient(IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.Client,IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.Client)">
+	<summary>
+ Méthodes qui permet de completer le tri des liste génériques
+ </summary>
+	<param name="client1"></param>
+	<param name="client2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.AcceptTextDataWindow">
+	<summary>
+ Cette fonction permet de faire des AcceptText sur toutes les DataWindow
+ </summary>
+	<returns>True si tous les AcceptText se sont déroulés correctement</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil.Client">
+	<summary>
+ Classe privée qui sert a construire la liste de résultat provenant du XML et du Fichier Client.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.CtrlIU.FormulaireAccueil">
+	<summary>
+ Formaire représentant la page d'accueil de l'application Evia.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.LireClient.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.LireClient.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.LireClient.My.Resources.Resources.xRSV8HYFu2TFOnSFauKcnAxx">
+	<summary>
+  Recherche une chaîne localisée semblable à GWwuj7ggUJd5YTqUC/ebY6UVZx4WN8gNLFid6ktFKsbaclP5DgZvs0eIMTeFpJzA6u7NFL64p7rciTdQcEaGJw==.
+</summary>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Affaires.Recherche.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Affaires.InitObjet.InitialiserDIA(IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.TAIs)">
+	<summary>
+ Initialise les propriétés d'un DIA
+ </summary>
+	<param name="recordRow"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Affaires.InitObjet.InitialiserDDA(IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.TAIs)">
+	<summary>
+ Initialise les propriétés d'un DDA
+ </summary>
+	<param name="recordRow"></param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

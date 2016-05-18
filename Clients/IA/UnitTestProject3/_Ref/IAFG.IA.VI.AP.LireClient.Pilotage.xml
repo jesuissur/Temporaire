@@ -1,0 +1,1402 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.VI.AP.LireClient.Pilotage
+</name>
+</assembly>
+<members>
+<member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Donnees.Contrat_Vie_Banniere.#ctor(IAFG.IA.VI.AP.LireClient.AccesFichierClient.PDFDataRow,IAFG.IA.VI.AP.LireClient.AccesFichierClient.Requetes.Contrat_Vie_Banniere)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.Contrat_Vie_Banniere à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetContrat_Vie_Banniere.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.InfoVehicule.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="IDCtpVLn">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.InfoVehicule">
+	<summary>
+ Classe de requete pour la requête InfoVehicule.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.NomCompagnie.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="CodeCompagnie">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.NomCompagnie">
+	<summary>
+ Classe de requete pour la requête NomCompagnie.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.ContratFacturation.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.ContratFacturation)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ContratFacturation à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetContratFacturation.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.PTEs.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.PTEs)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.PTEs à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetPTEs.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.TAIs.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="NoPolice">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.TAIs">
+	<summary>
+ Classe de requete pour la requête TAIs.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.SelectionContratsVie.Executer">
+	<summary>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.SelectionContratsVie">
+	<summary>
+ Classe de requete pour la requête SelectionContratsVie.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Donnees.Plan.#ctor(IAFG.IA.VI.AP.LireClient.Pilotage.PDFDataRow,IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.Plan)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.Plan à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetPlan.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.Donnees.Plan">
+	<summary>
+"Permet d'obtenir de l'information sur une couverture à partir de son plan"
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Requetes.CouverturePlanBase.Executer">
+	<summary>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Requetes.CouverturePlanBase">
+	<summary>
+ Classe de requete pour la requête CouverturePlanBase.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.Base.KeyAccessor.ApplyCriteriaMatchEqualOrDefault(IAFG.IA.VI.AP.Base.KeyAccessor)">
+	<summary>
+  Subfunction use by ApplyCriteria that tries to match criteria value by equality or match the default value define for the criteria.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.Base.KeyAccessor.ApplyCriteriaMatchGreatestValueLessOrEqual(IAFG.IA.VI.AP.Base.KeyAccessor)">
+	<summary>
+  Subfunction use by ApplyCriteria that trys to select the value whose key matches the greatest value less than or equal to the criterisValue parameter
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.Base.KeyAccessor.ApplyCriteriaMatchEqual(IAFG.IA.VI.AP.Base.KeyAccessor)">
+	<summary>
+  Subfunction use by ApplyCriteria that tries to match criteria value by equality.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.Base.PDFException.#ctor">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.Base.PDFException.#ctor(System.String)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.Base.PDFException.#ctor(System.String,System.Exception)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<param name="inner"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.Base.PDFException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+	<summary>
+	</summary>
+	<param name="info"></param>
+	<param name="context"></param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.Base.PDFException">
+	<summary>
+ Exception qui est levee par les objets du PDF.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Requetes.ObtenirPlanBase.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="NoContrat">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Requetes.ObtenirPlanBase">
+	<summary>
+ Classe de requete pour la requête ObtenirPlanBase.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.IndividuTelephone.Executer(System.Int32)">
+	<summary>
+	</summary>
+	<param name="NoClient">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.IndividuTelephone">
+	<summary>
+ Classe de requete pour la requête IndividuTelephone.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.RechercheNoContrat.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="NoPolice">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.RechercheNoContrat">
+	<summary>
+ Classe de requete pour la requête RechercheNoContrat.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.SelectionContratVieUnique.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.SelectionContratVieUnique)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.SelectionContratVieUnique à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetSelectionContratVieUnique.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Donnees.EquivalenceTypePret.#ctor(IAFG.IA.VI.AP.LireClient.Pilotage.PDFDataRow,IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.EquivalenceTypePret)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.EquivalenceTypePret à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetEquivalenceTypePret.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Donnees.TraductionCodePlanGarantie.#ctor(IAFG.IA.VI.AP.LireClient.Pilotage.PDFDataRow,IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.TraductionCodePlanGarantie)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.TraductionCodePlanGarantie à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetTraductionCodePlanGarantie.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.Donnees.TraductionCodePlanGarantie">
+	<summary>
+Cette classe permet de traduire les anciens codes de garanties provenant du fichier client en codes de garanties connus par l'objet de "Proposition".
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.TraductionCodePlanGarantie.Executer(IAFG.IA.VI.AF.PDF.ENUMs.Produits,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="GammePlanBase">Ce paramètre est de type <code>IAFG.IA.VI.AF.PDF.ENUMs.Produits</code>.</param>
+	<param name="TypeAlis">Ce paramètre est de type <code>String</code>.</param>
+	<param name="SousTypeAlis">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.TraductionCodePlanGarantie">
+	<summary>
+ Classe de requete pour la requête TraductionCodePlanGarantie.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.EquivalenceEtatProvince.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="EtatProvinceVLn">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.EquivalenceEtatProvince">
+	<summary>
+ Classe de requete pour la requête EquivalenceEtatProvince.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Donnees.ObtenirPlanBase.#ctor(IAFG.IA.VI.AP.LireClient.AccesFichierClient.PDFDataRow,IAFG.IA.VI.AP.LireClient.AccesFichierClient.Requetes.ObtenirPlanBase)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ObtenirPlanBase à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetObtenirPlanBase.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.IndividuTelephone.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.IndividuTelephone)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.IndividuTelephone à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetIndividuTelephone.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Donnees.Contrat_Vie_Performance.#ctor(IAFG.IA.VI.AP.LireClient.AccesFichierClient.PDFDataRow,IAFG.IA.VI.AP.LireClient.AccesFichierClient.Requetes.Contrat_Vie_Performance)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.Contrat_Vie_Performance à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetContrat_Vie_Performance.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.ContratFacturation.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="NoPolice">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.ContratFacturation">
+	<summary>
+ Classe de requete pour la requête ContratFacturation.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Requetes.Contrat_Vie_Performance.Executer">
+	<summary>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Requetes.Contrat_Vie_Performance">
+	<summary>
+ Classe de requete pour la requête Contrat_Vie_Performance.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Donnees.CouverturePlanBase.#ctor(IAFG.IA.VI.AP.LireClient.AccesFichierClient.PDFDataRow,IAFG.IA.VI.AP.LireClient.AccesFichierClient.Requetes.CouverturePlanBase)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.CouverturePlanBase à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetCouverturePlanBase.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.EquivalenceOptionDeces.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="TypeOptionDecesVLn">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.EquivalenceOptionDeces">
+	<summary>
+ Classe de requete pour la requête EquivalenceOptionDeces.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.CodeDIAValide.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="CodeTAI">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.CodeDIAValide">
+	<summary>
+ Classe de requete pour la requête CodeDIAValide.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Adresse.Executer(System.Int32)">
+	<summary>
+	</summary>
+	<param name="NoIntervenant">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Adresse">
+	<summary>
+ Classe de requete pour la requête Adresse.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.RechercheEntreprise.Executer(System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="NOM">Ce paramètre est de type <code>String</code>.</param>
+	<param name="BANNIERE">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.RechercheEntreprise">
+	<summary>
+ Classe de requete pour la requête RechercheEntreprise.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Donnees.EquivalenceTypeBoni.#ctor(IAFG.IA.VI.AP.LireClient.Pilotage.PDFDataRow,IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.EquivalenceTypeBoni)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.EquivalenceTypeBoni à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetEquivalenceTypeBoni.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Donnees.ListeValeurSimpleDBOPermit.#ctor(IAFG.IA.VI.AP.LireClient.Pilotage.PDFDataRow,IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.ListeValeurSimpleDBOPermit)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ListeValeurSimpleDBOPermit à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetListeValeurSimpleDBOPermit.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.Donnees.ListeValeurSimpleDBOPermit">
+	<summary>
+Permet de convertir les codes de DIA en code de compte valide.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.ListeValeurSimpleDBOPermit.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="CodePlan">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.ListeValeurSimpleDBOPermit">
+	<summary>
+ Classe de requete pour la requête ListeValeurSimpleDBOPermit.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Indexations.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="NoPolice">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Indexations">
+	<summary>
+ Classe de requete pour la requête Indexations.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.RechercheEntreprise.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.RechercheEntreprise)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.RechercheEntreprise à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetRechercheEntreprise.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.SelectionContratsVie.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.SelectionContratsVie)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.SelectionContratsVie à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetSelectionContratsVie.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.ObtenirTousLesContrats.Executer">
+	<summary>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.ObtenirTousLesContrats">
+	<summary>
+ Classe de requete pour la requête ObtenirTousLesContrats.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.AccesPilotage.Schemas">
+	<summary>
+ enumeration contenant les differents schemas a charger
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.LireClient.Pilotage.AccesPilotage.DescriptionTable.NomTable">
+	<summary>
+ Nom de la table
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.LireClient.Pilotage.AccesPilotage.DescriptionTable.NomAttache">
+	<summary>
+ Nom de l'attache (Link Table)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.AccesPilotage.DescriptionTable.#ctor(System.String,System.String)">
+	<summary>
+ Constructeur de la structure
+ </summary>
+	<param name="nomTable">Nom de la table</param>
+	<param name="nomAttache">Nom de l'attache (Link Table)</param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.LireClient.Pilotage.AccesPilotage.Langue">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.LireClient.Pilotage.AccesPilotage.Banniere">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.LireClient.Pilotage.AccesPilotage.ContexteApplicatif">
+	<summary>
+ Indique le context applicatif qui sera utilise lors de l'excution d'une requete sql.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.AccesPilotage.ObtenirListesChoix">
+	<summary>
+ Permet d'acceder les listes de choix autres que XML a travers le PDF via l'interface IListesChoix
+ </summary>
+	<returns>Interface des listes de choix</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.AccesPilotage">
+	<summary>
+ Classe servant a etablir les connexions aux bases de donnees necessaires au
+ fonctionnement d'une application
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.DictionnaireDonnees">
+	<summary>
+ Dictionnaire de donnees contenant des objets qui implements l'interface IPDFDataTable.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.PDFException.#ctor">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.PDFException.#ctor(System.String)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.PDFException.#ctor(System.String,System.Exception)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<param name="inner"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.PDFException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+	<summary>
+	</summary>
+	<param name="info"></param>
+	<param name="context"></param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.PDFException">
+	<summary>
+ Exception qui est levee par les objets du PDF.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.ListesChoix">
+	<summary>
+ Permet d'instancier les interfaces de listes de choix et sert de point d'entree pour avoir acces a une instance de IListesChoix 
+ </summary>
+	<remarks>Subterfuge pour pouvoir utiliser des listes de choix generees par le PDF a travers une interface</remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.IPDFDataTable">
+	<summary>
+ Interface qui permet aux methodes de passer un instance qui implemente cette interface.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.IListesChoix">
+	<summary>
+ Interface qui permet aux methodes de passer un instance qui implemente cette interface.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.PDFDataRows">
+	<summary>
+ Represente une collection de lignes de donnees.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.PDFDataRow">
+	<summary>
+ Represente une ligne de donnees
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.Registre.RegistreRacine">
+	<summary>
+ enumeration des racines de la base de registre.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Registre.EstCeClefExiste(IAFG.IA.VI.AP.LireClient.Pilotage.Registre.RegistreRacine,System.String)">
+	<summary>
+ Valide l'existance de la clef passee en parametre.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit valider l'existance de la clef.</param>
+	<param name="clef">La clef dont on veut valider son existance.</param>
+	<returns>Retourne la valeur True si la clef existe. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Registre.CreerClef(IAFG.IA.VI.AP.LireClient.Pilotage.Registre.RegistreRacine,System.String)">
+	<summary>
+ Cree la clef dans la racine passee en parametre.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veut creer la clef.</param>
+	<param name="clef">La clef a creer.</param>
+	<returns>Retourne la valeur True si la clef a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Registre.SupprimerClef(IAFG.IA.VI.AP.LireClient.Pilotage.Registre.RegistreRacine,System.String)">
+	<summary>
+ Supprime la clef a partir de la racine passee en parametre
+ </summary>
+	<param name="registreRacine">La racine a partir de laquelle la clef sera supprimee.</param>
+	<param name="clef">La clef que l'on veut supprimer.</param>
+	<returns>Retourne la valeur True si la clef a ete supprimee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Registre.SupprimerClef(IAFG.IA.VI.AP.LireClient.Pilotage.Registre.RegistreRacine,System.String,System.Boolean)">
+	<summary>
+ Supprime la clef a partir de la racine passee en parametre.. Si la clef contient des sous-clefs, en fonction du parametre recursive, l'ensemble de l'arbre sera supprime.
+ </summary>
+	<param name="registreRacine">La racine a partir de lqeuelle la clef sera supprimee.</param>
+	<param name="clef">La clef que l'on veut supprimer.</param>
+	<param name="recursive">Indique s'il faut supprimer les sous-clefs de la clef.</param>
+	<returns>Retourne la valeur True si la clef a ete supprimee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Registre.ObtenirValeur(IAFG.IA.VI.AP.LireClient.Pilotage.Registre.RegistreRacine,System.String,System.String,System.String)">
+	<summary>
+ Obtenir la valeur de la clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit lire la valeur de la clef.</param>
+	<param name="clef">La clef d'ou l'on veut lire la valeur.</param>
+	<param name="nomValeur">le nom de la valeur.</param>
+	<param name="valeurDefaut">Si la valeur n'existe pas, cette valeur sera utilisee.</param>
+	<returns>La valeur de type String.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Registre.ObtenirValeur(IAFG.IA.VI.AP.LireClient.Pilotage.Registre.RegistreRacine,System.String,System.String,System.Byte[])">
+	<summary>
+ Obtenir la valeur de la clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit lire la valeur de la clef.</param>
+	<param name="clef">La clef d'ou l'on veut lire la valeur.</param>
+	<param name="nomValeur">le nom de la valeur.</param>
+	<param name="valeurDefaut">Si la valeur n'existe pas, cette valeur sera utilisee.</param>
+	<returns>La valeur de type Byte().</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Registre.ObtenirValeur(IAFG.IA.VI.AP.LireClient.Pilotage.Registre.RegistreRacine,System.String,System.String,System.Int32)">
+	<summary>
+ Obtenir la valeur de la clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit lire la valeur de la clef.</param>
+	<param name="clef">La clef d'ou l'on veut lire la valeur.</param>
+	<param name="nomValeur">le nom de la valeur.</param>
+	<param name="valeurDefaut">Si la valeur n'existe pas, cette valeur sera utilisee.</param>
+	<returns>La valeur de type Integer.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Registre.ObtenirValeurs(IAFG.IA.VI.AP.LireClient.Pilotage.Registre.RegistreRacine,System.String)">
+	<summary>
+	</summary>
+	<param name="registreRacine"></param>
+	<param name="clef"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Registre.CreerValeur(IAFG.IA.VI.AP.LireClient.Pilotage.Registre.RegistreRacine,System.String,System.String,System.String)">
+	<summary>
+ Creer une valeur pour une clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veyt creer une valeur.</param>
+	<param name="clef">La clef ou la valeur sera creee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<param name="valeur">La valeur a conserver.</param>
+	<returns>Retourne la valeur True si la valeur a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Registre.CreerValeur(IAFG.IA.VI.AP.LireClient.Pilotage.Registre.RegistreRacine,System.String,System.String,System.Byte[])">
+	<summary>
+ Creer une valeur pour une clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veyt creer une valeur.</param>
+	<param name="clef">La clef ou la valeur sera creee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<param name="valeur">La valeur a conserver.</param>
+	<returns>Retourne la valeur True si la valeur a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Registre.CreerValeur(IAFG.IA.VI.AP.LireClient.Pilotage.Registre.RegistreRacine,System.String,System.String,System.Int32)">
+	<summary>
+ Creer une valeur pour une clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veyt creer une valeur.</param>
+	<param name="clef">La clef ou la valeur sera creee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<param name="valeur">La valeur a conserver.</param>
+	<returns>Retourne la valeur True si la valeur a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Registre.SupprimerValeur(IAFG.IA.VI.AP.LireClient.Pilotage.Registre.RegistreRacine,System.String,System.String)">
+	<summary>
+ Supprimer une valeur a partir de la clef pour la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine d'ou l'on veut supprimer une valeur.</param>
+	<param name="clef">La clef d'ou la valeur sera supprimee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<returns>Retourne la valeur True si la valeur a ete supprimee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Registre.ObtenirClefRegistre(IAFG.IA.VI.AP.LireClient.Pilotage.Registre.RegistreRacine)">
+	<summary>
+ Permet d'obtenir un objet RegistryKey representant la racine demandee par le parametre registreRacine.
+ </summary>
+	<param name="registreRacine">La racine de la base de regsitre demandee.</param>
+	<returns>Une instance de RegistryKey</returns>
+	<remarks>Si la valeur de l'enumeration n'existe pas, la valeur nul (Nothing) est retournee.</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Registre.EffacerRegistryKey(Microsoft.Win32.RegistryKey@)">
+	<summary>
+ Effacer l'instance a l'objet RegistryKey.
+ </summary>
+	<param name="registryKey">L'instance de l'objet RegistryKey.</param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.Registre">
+	<summary>
+ Cette classe est une classe de facade pour l'utilisation de la base de registre.
+ </summary>
+	<remarks>Cette classe est statique(Shared). Cette classe est non heritable(NotInheritable).</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.CptInvestissement.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="NoPolice">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.CptInvestissement">
+	<summary>
+ Classe de requete pour la requête CptInvestissement.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.TAIs.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.TAIs)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.TAIs à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetTAIs.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Requetes.Contrat_Vie_Banniere.Executer(System.Int32)">
+	<summary>
+	</summary>
+	<param name="BANNIERE">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Requetes.Contrat_Vie_Banniere">
+	<summary>
+ Classe de requete pour la requête Contrat_Vie_Banniere.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.Plan.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="CodePlan">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.Plan">
+	<summary>
+ Classe de requete pour la requête Plan.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Donnees.CodeDIAValide.#ctor(IAFG.IA.VI.AP.LireClient.Pilotage.PDFDataRow,IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.CodeDIAValide)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.CodeDIAValide à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetCodeDIAValide.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.Donnees.CodeDIAValide">
+	<summary>
+Permet de convertir les codes de DIA en code de compte valide.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Donnees.ObtenirBanniereContrat.#ctor(IAFG.IA.VI.AP.LireClient.AccesFichierClient.PDFDataRow,IAFG.IA.VI.AP.LireClient.AccesFichierClient.Requetes.ObtenirBanniereContrat)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ObtenirBanniereContrat à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetObtenirBanniereContrat.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.NomIntervenant.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.NomIntervenant)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.NomIntervenant à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetNomIntervenant.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Protections.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="NoPolice">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Protections">
+	<summary>
+ Classe de requete pour la requête Protections.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.PTEs.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="NoPolice">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.PTEs">
+	<summary>
+ Classe de requete pour la requête PTEs.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.SelectionContrat.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.SelectionContrat)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.SelectionContrat à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetSelectionContrat.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.SelectionContrat.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="NoContrat">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.SelectionContrat">
+	<summary>
+ Classe de requete pour la requête SelectionContrat.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.AccesPilotage.Schemas">
+	<summary>
+ enumeration contenant les differents schemas a charger
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.LireClient.AccesFichierClient.AccesPilotage.DescriptionTable.NomTable">
+	<summary>
+ Nom de la table
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.LireClient.AccesFichierClient.AccesPilotage.DescriptionTable.NomAttache">
+	<summary>
+ Nom de l'attache (Link Table)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.AccesPilotage.DescriptionTable.#ctor(System.String,System.String)">
+	<summary>
+ Constructeur de la structure
+ </summary>
+	<param name="nomTable">Nom de la table</param>
+	<param name="nomAttache">Nom de l'attache (Link Table)</param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.LireClient.AccesFichierClient.AccesPilotage.Langue">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.LireClient.AccesFichierClient.AccesPilotage.Banniere">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.LireClient.AccesFichierClient.AccesPilotage.ContexteApplicatif">
+	<summary>
+ Indique le context applicatif qui sera utilise lors de l'excution d'une requete sql.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.AccesPilotage.ObtenirListesChoix">
+	<summary>
+ Permet d'acceder les listes de choix autres que XML a travers le PDF via l'interface IListesChoix
+ </summary>
+	<returns>Interface des listes de choix</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.AccesPilotage">
+	<summary>
+ Classe servant a etablir les connexions aux bases de donnees necessaires au
+ fonctionnement d'une application
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DictionnaireDonnees">
+	<summary>
+ Dictionnaire de donnees contenant des objets qui implements l'interface IPDFDataTable.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.PDFException.#ctor">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.PDFException.#ctor(System.String)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.PDFException.#ctor(System.String,System.Exception)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<param name="inner"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.PDFException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+	<summary>
+	</summary>
+	<param name="info"></param>
+	<param name="context"></param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.PDFException">
+	<summary>
+ Exception qui est levee par les objets du PDF.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.ListesChoix">
+	<summary>
+ Permet d'instancier les interfaces de listes de choix et sert de point d'entree pour avoir acces a une instance de IListesChoix 
+ </summary>
+	<remarks>Subterfuge pour pouvoir utiliser des listes de choix generees par le PDF a travers une interface</remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.IPDFDataTable">
+	<summary>
+ Interface qui permet aux methodes de passer un instance qui implemente cette interface.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.IListesChoix">
+	<summary>
+ Interface qui permet aux methodes de passer un instance qui implemente cette interface.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.PDFDataRows">
+	<summary>
+ Represente une collection de lignes de donnees.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.PDFDataRow">
+	<summary>
+ Represente une ligne de donnees
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.RegistreRacine">
+	<summary>
+ enumeration des racines de la base de registre.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.EstCeClefExiste(IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.RegistreRacine,System.String)">
+	<summary>
+ Valide l'existance de la clef passee en parametre.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit valider l'existance de la clef.</param>
+	<param name="clef">La clef dont on veut valider son existance.</param>
+	<returns>Retourne la valeur True si la clef existe. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.CreerClef(IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.RegistreRacine,System.String)">
+	<summary>
+ Cree la clef dans la racine passee en parametre.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veut creer la clef.</param>
+	<param name="clef">La clef a creer.</param>
+	<returns>Retourne la valeur True si la clef a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.SupprimerClef(IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.RegistreRacine,System.String)">
+	<summary>
+ Supprime la clef a partir de la racine passee en parametre
+ </summary>
+	<param name="registreRacine">La racine a partir de laquelle la clef sera supprimee.</param>
+	<param name="clef">La clef que l'on veut supprimer.</param>
+	<returns>Retourne la valeur True si la clef a ete supprimee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.SupprimerClef(IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.RegistreRacine,System.String,System.Boolean)">
+	<summary>
+ Supprime la clef a partir de la racine passee en parametre.. Si la clef contient des sous-clefs, en fonction du parametre recursive, l'ensemble de l'arbre sera supprime.
+ </summary>
+	<param name="registreRacine">La racine a partir de lqeuelle la clef sera supprimee.</param>
+	<param name="clef">La clef que l'on veut supprimer.</param>
+	<param name="recursive">Indique s'il faut supprimer les sous-clefs de la clef.</param>
+	<returns>Retourne la valeur True si la clef a ete supprimee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.ObtenirValeur(IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.RegistreRacine,System.String,System.String,System.String)">
+	<summary>
+ Obtenir la valeur de la clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit lire la valeur de la clef.</param>
+	<param name="clef">La clef d'ou l'on veut lire la valeur.</param>
+	<param name="nomValeur">le nom de la valeur.</param>
+	<param name="valeurDefaut">Si la valeur n'existe pas, cette valeur sera utilisee.</param>
+	<returns>La valeur de type String.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.ObtenirValeur(IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.RegistreRacine,System.String,System.String,System.Byte[])">
+	<summary>
+ Obtenir la valeur de la clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit lire la valeur de la clef.</param>
+	<param name="clef">La clef d'ou l'on veut lire la valeur.</param>
+	<param name="nomValeur">le nom de la valeur.</param>
+	<param name="valeurDefaut">Si la valeur n'existe pas, cette valeur sera utilisee.</param>
+	<returns>La valeur de type Byte().</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.ObtenirValeur(IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.RegistreRacine,System.String,System.String,System.Int32)">
+	<summary>
+ Obtenir la valeur de la clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit lire la valeur de la clef.</param>
+	<param name="clef">La clef d'ou l'on veut lire la valeur.</param>
+	<param name="nomValeur">le nom de la valeur.</param>
+	<param name="valeurDefaut">Si la valeur n'existe pas, cette valeur sera utilisee.</param>
+	<returns>La valeur de type Integer.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.ObtenirValeurs(IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.RegistreRacine,System.String)">
+	<summary>
+	</summary>
+	<param name="registreRacine"></param>
+	<param name="clef"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.CreerValeur(IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.RegistreRacine,System.String,System.String,System.String)">
+	<summary>
+ Creer une valeur pour une clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veyt creer une valeur.</param>
+	<param name="clef">La clef ou la valeur sera creee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<param name="valeur">La valeur a conserver.</param>
+	<returns>Retourne la valeur True si la valeur a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.CreerValeur(IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.RegistreRacine,System.String,System.String,System.Byte[])">
+	<summary>
+ Creer une valeur pour une clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veyt creer une valeur.</param>
+	<param name="clef">La clef ou la valeur sera creee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<param name="valeur">La valeur a conserver.</param>
+	<returns>Retourne la valeur True si la valeur a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.CreerValeur(IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.RegistreRacine,System.String,System.String,System.Int32)">
+	<summary>
+ Creer une valeur pour une clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veyt creer une valeur.</param>
+	<param name="clef">La clef ou la valeur sera creee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<param name="valeur">La valeur a conserver.</param>
+	<returns>Retourne la valeur True si la valeur a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.SupprimerValeur(IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.RegistreRacine,System.String,System.String)">
+	<summary>
+ Supprimer une valeur a partir de la clef pour la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine d'ou l'on veut supprimer une valeur.</param>
+	<param name="clef">La clef d'ou la valeur sera supprimee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<returns>Retourne la valeur True si la valeur a ete supprimee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.ObtenirClefRegistre(IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.RegistreRacine)">
+	<summary>
+ Permet d'obtenir un objet RegistryKey representant la racine demandee par le parametre registreRacine.
+ </summary>
+	<param name="registreRacine">La racine de la base de regsitre demandee.</param>
+	<returns>Une instance de RegistryKey</returns>
+	<remarks>Si la valeur de l'enumeration n'existe pas, la valeur nul (Nothing) est retournee.</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre.EffacerRegistryKey(Microsoft.Win32.RegistryKey@)">
+	<summary>
+ Effacer l'instance a l'objet RegistryKey.
+ </summary>
+	<param name="registryKey">L'instance de l'objet RegistryKey.</param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Registre">
+	<summary>
+ Cette classe est une classe de facade pour l'utilisation de la base de registre.
+ </summary>
+	<remarks>Cette classe est statique(Shared). Cette classe est non heritable(NotInheritable).</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Donnees.EquivalenceOptionDeces.#ctor(IAFG.IA.VI.AP.LireClient.Pilotage.PDFDataRow,IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.EquivalenceOptionDeces)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.EquivalenceOptionDeces à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetEquivalenceOptionDeces.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.CptInvestissement.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.CptInvestissement)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.CptInvestissement à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetCptInvestissement.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Prets.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="NoPolice">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Prets">
+	<summary>
+ Classe de requete pour la requête Prets.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.IndividuAdresse.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.IndividuAdresse)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.IndividuAdresse à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetIndividuAdresse.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.SelectionContratVieUnique.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="NoContrat">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.SelectionContratVieUnique">
+	<summary>
+ Classe de requete pour la requête SelectionContratVieUnique.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.ObtenirTousLesContrats.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.ObtenirTousLesContrats)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ObtenirTousLesContrats à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetObtenirTousLesContrats.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.EquivalenceTypePret.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="TypePretVLn">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.EquivalenceTypePret">
+	<summary>
+ Classe de requete pour la requête EquivalenceTypePret.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Donnees.EquivalenceEtatProvince.#ctor(IAFG.IA.VI.AP.LireClient.Pilotage.PDFDataRow,IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.EquivalenceEtatProvince)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.EquivalenceEtatProvince à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetEquivalenceEtatProvince.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.Indexations.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Indexations)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.Indexations à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetIndexations.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.Prets.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Prets)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.Prets à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetPrets.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.Intervenants.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Intervenants)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.Intervenants à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetIntervenants.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.IndividuAutresAssur.Executer(System.Int32)">
+	<summary>
+	</summary>
+	<param name="NoClient">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.IndividuAutresAssur">
+	<summary>
+ Classe de requete pour la requête IndividuAutresAssur.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.NomIntervenant.Executer(System.Int32)">
+	<summary>
+	</summary>
+	<param name="NoIntervenant">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.NomIntervenant">
+	<summary>
+ Classe de requete pour la requête NomIntervenant.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.Telephone.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Telephone)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.Telephone à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetTelephone.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.IndividuBase.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.IndividuBase)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.IndividuBase à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetIndividuBase.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.RecherchePersonne.Executer(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="NOM">Ce paramètre est de type <code>String</code>.</param>
+	<param name="PRENOM">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.RecherchePersonne">
+	<summary>
+ Classe de requete pour la requête RecherchePersonne.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Donnees.InfoVehicule.#ctor(IAFG.IA.VI.AP.LireClient.Pilotage.PDFDataRow,IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.InfoVehicule)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.InfoVehicule à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetInfoVehicule.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.Donnees.InfoVehicule">
+	<summary>
+"Class utilisée pour obtenir le vehicule d'un compte à partir du code de compte de VLn"
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Donnees.NomCompagnie.#ctor(IAFG.IA.VI.AP.LireClient.Pilotage.PDFDataRow,IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.NomCompagnie)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.NomCompagnie à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetNomCompagnie.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.Donnees.NomCompagnie">
+	<summary>
+"Nom de la compagnie par le code de celle-ci"
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Requetes.ObtenirBanniereContrat.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="NoContrat">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Requetes.ObtenirBanniereContrat">
+	<summary>
+ Classe de requete pour la requête ObtenirBanniereContrat.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Fonds.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="NoPolice">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Fonds">
+	<summary>
+ Classe de requete pour la requête Fonds.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Intervenants.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="NoPolice">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Intervenants">
+	<summary>
+ Classe de requete pour la requête Intervenants.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.Adresse.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Adresse)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.Adresse à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetAdresse.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.Protections.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Protections)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.Protections à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetProtections.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.IndividuAutresAssur.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.IndividuAutresAssur)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.IndividuAutresAssur à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetIndividuAutresAssur.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Requetes.ObtenirGroupeBanniereVenteParPlan.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="CodePlan">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Requetes.ObtenirGroupeBanniereVenteParPlan">
+	<summary>
+ Classe de requete pour la requête ObtenirGroupeBanniereVenteParPlan.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="P:IAFG.IA.VI.AP.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisee par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriete CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources � l'aide de cette classe de ressource fortement typee.
+</summary>
+</member><member name="T:IAFG.IA.VI.AP.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typee destinee, entre autres, a� la consultation des chaines localisees.
+</summary>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.Fonds.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Fonds)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.Fonds à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetFonds.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Telephone.Executer(System.Int32)">
+	<summary>
+	</summary>
+	<param name="NoIntervenant">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.Telephone">
+	<summary>
+ Classe de requete pour la requête Telephone.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.IndividuBase.Executer(System.Int32)">
+	<summary>
+	</summary>
+	<param name="NoClient">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.IndividuBase">
+	<summary>
+ Classe de requete pour la requête IndividuBase.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.IndividuAdresse.Executer(System.Int32)">
+	<summary>
+	</summary>
+	<param name="NoClient">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.IndividuAdresse">
+	<summary>
+ Classe de requete pour la requête IndividuAdresse.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.RechercheNoContrat.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.RechercheNoContrat)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.RechercheNoContrat à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetRechercheNoContrat.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.DonneesLecture.RecherchePersonne.#ctor(System.Data.OleDb.OleDbDataReader,IAFG.IA.VI.AP.LireClient.AccesFichierClient.RequetesLecture.RecherchePersonne)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.RecherchePersonne à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="reader">Contient les informations relatives à un objetRecherchePersonne.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.EquivalenceTypeBoni.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="TypeBoniVLn">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AP.LireClient.Pilotage.Requetes.EquivalenceTypeBoni">
+	<summary>
+ Classe de requete pour la requête EquivalenceTypeBoni.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AP.LireClient.AccesFichierClient.Donnees.ObtenirGroupeBanniereVenteParPlan.#ctor(IAFG.IA.VI.AP.LireClient.AccesFichierClient.PDFDataRow,IAFG.IA.VI.AP.LireClient.AccesFichierClient.Requetes.ObtenirGroupeBanniereVenteParPlan)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ObtenirGroupeBanniereVenteParPlan à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetObtenirGroupeBanniereVenteParPlan.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member>
+</members>
+</doc>
