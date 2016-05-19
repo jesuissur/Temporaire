@@ -1,0 +1,439 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.VI.AF.Changements.PilotageEcriture
+</name>
+</assembly>
+<members>
+<member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.PilotageAgent.Modifier(IAFG.IA.VI.AF.ObjetsPartages.Agent,System.Boolean)">
+	<summary>
+ Modifier un agent à la BD
+ </summary>
+	<param name="agentPourModification">agent pour modification</param>
+	<remarks>L'agent modifié sera celui avec le code d'agent passé en paramètre</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.PilotageAgent.Ajouter(IAFG.IA.VI.AF.ObjetsPartages.Agent,System.Boolean)">
+	<summary>
+ Ajouter un agent à la BD
+ </summary>
+	<param name="agentPourAjout">Agent à ajouter à la BD</param>
+	<param name="estAgentParDefaut">Cette propriété n'existe pas dans l'objet agent, elle doit donc être fournie</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.PilotageAgent.RemplirListeChampsPourAgent(IAFG.IA.VI.AF.ObjetsPartages.Agent,System.Boolean,IAFG.IA.VI.AF.Changements.PilotageEcriture.Commande)">
+	<summary>
+ Remplir les champs communs en ajout et en modification
+ </summary>
+	<param name="agent"></param>
+	<param name="commandeCourante"></param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.PilotageEcriture.Changement.NoPolice">
+	<summary>
+ No de contrat
+ </summary>
+</member><member name="P:IAFG.IA.VI.AF.Changements.PilotageEcriture.Changement.DateCreation">
+	<summary>
+ Date de création de la demande de changement
+ </summary>
+</member><member name="P:IAFG.IA.VI.AF.Changements.PilotageEcriture.Changement.Statut">
+	<summary>
+ Statut de la proposition électronique
+ </summary>
+</member><member name="P:IAFG.IA.VI.AF.Changements.PilotageEcriture.Changement.NomFichier">
+	<summary>
+ Nom du fichier créé lors du transfert au siège social
+ </summary>
+</member><member name="P:IAFG.IA.VI.AF.Changements.PilotageEcriture.Changement.VersionPourTransfert">
+	<summary>
+ Version pour le transfert
+ </summary>
+</member><member name="P:IAFG.IA.VI.AF.Changements.PilotageEcriture.Changement.DateExportationProposition">
+	<summary>
+ Date et heure de l'exportation de la proposition
+ </summary>
+</member><member name="P:IAFG.IA.VI.AF.Changements.PilotageEcriture.Changement.DateTransfertSiegeSocial">
+	<summary>
+ Date et heure du transfert au siège social
+ </summary>
+</member><member name="P:IAFG.IA.VI.AF.Changements.PilotageEcriture.Changement.VersionApplicationChangementElectronique">
+	<summary>
+ Version de l'application Changement électronique
+ </summary>
+</member><member name="P:IAFG.IA.VI.AF.Changements.PilotageEcriture.Changement.NomAssure">
+	<summary>
+ Nom du premier assuré
+ </summary>
+</member><member name="P:IAFG.IA.VI.AF.Changements.PilotageEcriture.Changement.PrenomAssure">
+	<summary>
+ Prénom du premier assuré
+ </summary>
+</member><member name="P:IAFG.IA.VI.AF.Changements.PilotageEcriture.Changement.NomCompletFichierTravail">
+	<summary>
+ Nom et emplacement du fichier du fichier de travail du changementl
+ </summary>
+</member><member name="P:IAFG.IA.VI.AF.Changements.PilotageEcriture.Changement.FichierCodesDePlan">
+	<summary>
+ Fichier PDF (Archive)
+ </summary>
+</member><member name="P:IAFG.IA.VI.AF.Changements.PilotageEcriture.Changement.NomPremierContractant">
+	<summary>
+ Nom du premier contractant
+ </summary>
+</member><member name="P:IAFG.IA.VI.AF.Changements.PilotageEcriture.Changement.PrenomPremierContractant">
+	<summary>
+ Prénom du premier contractant
+ </summary>
+</member><member name="P:IAFG.IA.VI.AF.Changements.PilotageEcriture.Changement.NumeroCompagnie">
+	<summary>
+ numéro de compagnie
+ </summary>
+	<remarks>selon access: ia=0, iap=1, md=12, gestionnaire=99</remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.PilotageEcriture.Changement">
+	<summary>
+ Objet changement qui sera persisté dans la BD
+ </summary>
+</member><member name="M:IAFG.IA.VI.AF.StringExtensions.ConserverAlphaNumeriqueSeulement(System.String)">
+	<summary>
+ Éliminer les caractères spéciaux d'une chaîne de caractère
+ </summary>
+	<param name="chaine">La chaîne de caractère</param>
+	<returns>La nouvelle chaîne de caractères épuré</returns>
+</member><member name="T:IAFG.IA.VI.AF.StringExtensions">
+	<summary>
+ Module d'exension pour faciliter la manipulation des chaînes de caractères
+ </summary>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.Commande.ExecuterUpdate">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisee par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.VI.AF.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriete CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources � l'aide de cette classe de ressource fortement typee.
+</summary>
+</member><member name="T:IAFG.IA.VI.AF.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typee destinee, entre autres, a� la consultation des chaines localisees.
+</summary>
+</member><member name="T:IAFG.IA.VI.AF.Changements.PilotageEcriture.AccesPilotage.Schemas">
+	<summary>
+ enumeration contenant les differents schemas a charger
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.PilotageEcriture.AccesPilotage.DescriptionTable.NomTable">
+	<summary>
+ Nom de la table
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.PilotageEcriture.AccesPilotage.DescriptionTable.NomAttache">
+	<summary>
+ Nom de l'attache (Link Table)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.AccesPilotage.DescriptionTable.#ctor(System.String,System.String)">
+	<summary>
+ Constructeur de la structure
+ </summary>
+	<param name="nomTable">Nom de la table</param>
+	<param name="nomAttache">Nom de l'attache (Link Table)</param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.PilotageEcriture.AccesPilotage.Langue">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.PilotageEcriture.AccesPilotage.Banniere">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.PilotageEcriture.AccesPilotage.ContexteApplicatif">
+	<summary>
+ Indique le context applicatif qui sera utilise lors de l'excution d'une requete sql.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.AccesPilotage.ObtenirListesChoix">
+	<summary>
+ Permet d'acceder les listes de choix autres que XML a travers le PDF via l'interface IListesChoix
+ </summary>
+	<returns>Interface des listes de choix</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.PilotageEcriture.AccesPilotage">
+	<summary>
+ Classe servant a etablir les connexions aux bases de donnees necessaires au
+ fonctionnement d'une application
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.PilotageEcriture.DictionnaireDonnees">
+	<summary>
+ Dictionnaire de donnees contenant des objets qui implements l'interface IPDFDataTable.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.PDFException.#ctor">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.PDFException.#ctor(System.String)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.PDFException.#ctor(System.String,System.Exception)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<param name="inner"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.PDFException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+	<summary>
+	</summary>
+	<param name="info"></param>
+	<param name="context"></param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.PilotageEcriture.PDFException">
+	<summary>
+ Exception qui est levee par les objets du PDF.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.PilotageEcriture.ListesChoix">
+	<summary>
+ Permet d'instancier les interfaces de listes de choix et sert de point d'entree pour avoir acces a une instance de IListesChoix 
+ </summary>
+	<remarks>Subterfuge pour pouvoir utiliser des listes de choix generees par le PDF a travers une interface</remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.PilotageEcriture.IPDFDataTable">
+	<summary>
+ Interface qui permet aux methodes de passer un instance qui implemente cette interface.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.PilotageEcriture.IListesChoix">
+	<summary>
+ Interface qui permet aux methodes de passer un instance qui implemente cette interface.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.PilotageEcriture.PDFDataRows">
+	<summary>
+ Represente une collection de lignes de donnees.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.PilotageEcriture.PDFDataRow">
+	<summary>
+ Represente une ligne de donnees
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.RegistreRacine">
+	<summary>
+ enumeration des racines de la base de registre.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.EstCeClefExiste(IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.RegistreRacine,System.String)">
+	<summary>
+ Valide l'existance de la clef passee en parametre.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit valider l'existance de la clef.</param>
+	<param name="clef">La clef dont on veut valider son existance.</param>
+	<returns>Retourne la valeur True si la clef existe. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.CreerClef(IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.RegistreRacine,System.String)">
+	<summary>
+ Cree la clef dans la racine passee en parametre.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veut creer la clef.</param>
+	<param name="clef">La clef a creer.</param>
+	<returns>Retourne la valeur True si la clef a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.SupprimerClef(IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.RegistreRacine,System.String)">
+	<summary>
+ Supprime la clef a partir de la racine passee en parametre
+ </summary>
+	<param name="registreRacine">La racine a partir de laquelle la clef sera supprimee.</param>
+	<param name="clef">La clef que l'on veut supprimer.</param>
+	<returns>Retourne la valeur True si la clef a ete supprimee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.SupprimerClef(IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.RegistreRacine,System.String,System.Boolean)">
+	<summary>
+ Supprime la clef a partir de la racine passee en parametre.. Si la clef contient des sous-clefs, en fonction du parametre recursive, l'ensemble de l'arbre sera supprime.
+ </summary>
+	<param name="registreRacine">La racine a partir de lqeuelle la clef sera supprimee.</param>
+	<param name="clef">La clef que l'on veut supprimer.</param>
+	<param name="recursive">Indique s'il faut supprimer les sous-clefs de la clef.</param>
+	<returns>Retourne la valeur True si la clef a ete supprimee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.ObtenirValeur(IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.RegistreRacine,System.String,System.String,System.String)">
+	<summary>
+ Obtenir la valeur de la clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit lire la valeur de la clef.</param>
+	<param name="clef">La clef d'ou l'on veut lire la valeur.</param>
+	<param name="nomValeur">le nom de la valeur.</param>
+	<param name="valeurDefaut">Si la valeur n'existe pas, cette valeur sera utilisee.</param>
+	<returns>La valeur de type String.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.ObtenirValeur(IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.RegistreRacine,System.String,System.String,System.Byte[])">
+	<summary>
+ Obtenir la valeur de la clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit lire la valeur de la clef.</param>
+	<param name="clef">La clef d'ou l'on veut lire la valeur.</param>
+	<param name="nomValeur">le nom de la valeur.</param>
+	<param name="valeurDefaut">Si la valeur n'existe pas, cette valeur sera utilisee.</param>
+	<returns>La valeur de type Byte().</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.ObtenirValeur(IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.RegistreRacine,System.String,System.String,System.Int32)">
+	<summary>
+ Obtenir la valeur de la clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit lire la valeur de la clef.</param>
+	<param name="clef">La clef d'ou l'on veut lire la valeur.</param>
+	<param name="nomValeur">le nom de la valeur.</param>
+	<param name="valeurDefaut">Si la valeur n'existe pas, cette valeur sera utilisee.</param>
+	<returns>La valeur de type Integer.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.ObtenirValeurs(IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.RegistreRacine,System.String)">
+	<summary>
+	</summary>
+	<param name="registreRacine"></param>
+	<param name="clef"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.CreerValeur(IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.RegistreRacine,System.String,System.String,System.String)">
+	<summary>
+ Creer une valeur pour une clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veyt creer une valeur.</param>
+	<param name="clef">La clef ou la valeur sera creee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<param name="valeur">La valeur a conserver.</param>
+	<returns>Retourne la valeur True si la valeur a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.CreerValeur(IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.RegistreRacine,System.String,System.String,System.Byte[])">
+	<summary>
+ Creer une valeur pour une clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veyt creer une valeur.</param>
+	<param name="clef">La clef ou la valeur sera creee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<param name="valeur">La valeur a conserver.</param>
+	<returns>Retourne la valeur True si la valeur a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.CreerValeur(IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.RegistreRacine,System.String,System.String,System.Int32)">
+	<summary>
+ Creer une valeur pour une clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veyt creer une valeur.</param>
+	<param name="clef">La clef ou la valeur sera creee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<param name="valeur">La valeur a conserver.</param>
+	<returns>Retourne la valeur True si la valeur a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.SupprimerValeur(IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.RegistreRacine,System.String,System.String)">
+	<summary>
+ Supprimer une valeur a partir de la clef pour la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine d'ou l'on veut supprimer une valeur.</param>
+	<param name="clef">La clef d'ou la valeur sera supprimee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<returns>Retourne la valeur True si la valeur a ete supprimee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.ObtenirClefRegistre(IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.RegistreRacine)">
+	<summary>
+ Permet d'obtenir un objet RegistryKey representant la racine demandee par le parametre registreRacine.
+ </summary>
+	<param name="registreRacine">La racine de la base de regsitre demandee.</param>
+	<returns>Une instance de RegistryKey</returns>
+	<remarks>Si la valeur de l'enumeration n'existe pas, la valeur nul (Nothing) est retournee.</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre.EffacerRegistryKey(Microsoft.Win32.RegistryKey@)">
+	<summary>
+ Effacer l'instance a l'objet RegistryKey.
+ </summary>
+	<param name="registryKey">L'instance de l'objet RegistryKey.</param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.PilotageEcriture.Registre">
+	<summary>
+ Cette classe est une classe de facade pour l'utilisation de la base de registre.
+ </summary>
+	<remarks>Cette classe est statique(Shared). Cette classe est non heritable(NotInheritable).</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.PilotageChangement.ModifierStatutChangement(System.String,System.DateTime,System.Int32)">
+	<summary>
+ Modifier le statut pour un changement
+ </summary>
+	<param name="noPolice">numéro de la police</param>
+	<param name="dateCreation">date de création de la police.  L'heure n'est pas considérée</param>
+	<param name="nouveauStatut">le nouveau statut de la police</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.PilotageChangement.Modifier(IAFG.IA.VI.AF.Changements.PilotageEcriture.Changement)">
+	<summary>
+ Modifier un changement
+ </summary>
+	<param name="changement">le changement modifié.  Le numéro de police et la date de création sont utilisés pour retrouver le changement</param>
+	<remarks>Pour les champs dates, l'heure n'est pas considérée</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.PilotageChangement.Ajouter(IAFG.IA.VI.AF.Changements.PilotageEcriture.Changement)">
+	<summary>
+ Ajouter un changement
+ </summary>
+	<param name="changement">Le nouveau changement.  Le numéro de police et la date de création sont utilisés pour retrouver le changement</param>
+	<remarks>Pour les champs dates, l'heure n'est pas considérée</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.PilotageChangement.Obtenir(System.String,System.DateTime)">
+	<summary>
+ Obtenir un changement
+ </summary>
+	<param name="noPolice"></param>
+	<param name="dateCreation"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.PilotageEcriture.PilotageChangement.RemplirListeChamps(IAFG.IA.VI.AF.Changements.PilotageEcriture.Changement,IAFG.IA.VI.AF.Changements.PilotageEcriture.Commande)">
+	<summary>
+ Remplir les champs communs en ajout et en modification
+ </summary>
+	<param name="changement"></param>
+	<param name="commandeCourante"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.KeyAccessor.ApplyCriteriaMatchEqualOrDefault(IAFG.IA.VI.AF.Base.KeyAccessor)">
+	<summary>
+  Subfunction use by ApplyCriteria that tries to match criteria value by equality or match the default value define for the criteria.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.KeyAccessor.ApplyCriteriaMatchGreatestValueLessOrEqual(IAFG.IA.VI.AF.Base.KeyAccessor)">
+	<summary>
+  Subfunction use by ApplyCriteria that trys to select the value whose key matches the greatest value less than or equal to the criterisValue parameter
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.KeyAccessor.ApplyCriteriaMatchEqual(IAFG.IA.VI.AF.Base.KeyAccessor)">
+	<summary>
+  Subfunction use by ApplyCriteria that tries to match criteria value by equality.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.PDFException.#ctor">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.PDFException.#ctor(System.String)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.PDFException.#ctor(System.String,System.Exception)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<param name="inner"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.PDFException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+	<summary>
+	</summary>
+	<param name="info"></param>
+	<param name="context"></param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Base.PDFException">
+	<summary>
+ Exception qui est levee par les objets du PDF.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

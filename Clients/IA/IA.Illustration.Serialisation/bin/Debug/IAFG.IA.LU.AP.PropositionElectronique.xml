@@ -1,0 +1,1330 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.LU.AP.PropositionElectronique
+</name>
+</assembly>
+<members>
+<member name="M:IAFG.IA.LU.AP.PropositionElectronique.Configuration.ConfigurationView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.Configuration.ConfigurationView">
+	<summary>
+ConfigurationView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU1370.FacturationView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU1370.FacturationView">
+	<summary>
+FacturationView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU1380.RepresentantView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU1380.RepresentantView">
+	<summary>
+RepresentantView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.MultipleChoiceListQuestionView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.MultipleChoiceListQuestionView">
+	<summary>
+MultipleChoiceListQuestionView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.PartyView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.PartyView">
+	<summary>
+PartyView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU1310.IdentificationView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU1310.IdentificationView">
+	<summary>
+IdentificationView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.Configuration.SaisieVilleView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.Configuration.SaisieVilleView">
+	<summary>
+SaisieVilleView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU1320.AutreAssuranceView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU1320.AutreAssuranceView">
+	<summary>
+AutreAssuranceView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU1350.ConfirmationIdentiteView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU1350.ConfirmationIdentiteView">
+	<summary>
+ConfirmationIdentiteView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU1330.ProtectionView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU1330.ProtectionView">
+	<summary>
+ProtectionView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU1390.InstructionSpecialeView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU1390.InstructionSpecialeView">
+	<summary>
+InstructionSpecialeView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU13J0.AccueilView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU13J0.AccueilView">
+	<summary>
+AccueilView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU13B0.ExigencesView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU13B0.ExigencesView">
+	<summary>
+ExigencesView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.Configuration.SaisieMedecinView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.Configuration.SaisieMedecinView">
+	<summary>
+SaisieMedecinView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.CaseView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.CaseView">
+	<summary>
+CaseView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.BoolQuestionView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.BoolQuestionView">
+	<summary>
+BoolQuestionView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.SectionView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.SectionView">
+	<summary>
+SectionView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.Configuration.ListesPersonnalisablesView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.Configuration.ListesPersonnalisablesView">
+	<summary>
+ListesPersonnalisablesView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.SingleChoiceListQuestionView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.SingleChoiceListQuestionView">
+	<summary>
+SingleChoiceListQuestionView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU13F0.EntentePACView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU13F0.EntentePACView">
+	<summary>
+EntentePACView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.Configuration.SaisieRepresentantView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.Configuration.SaisieRepresentantView">
+	<summary>
+SaisieRepresentantView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.DeclarationView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.DeclarationView">
+	<summary>
+DeclarationView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.DateQuestionView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.DateQuestionView">
+	<summary>
+DateQuestionView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.DoubleQuestionView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.DoubleQuestionView">
+	<summary>
+DoubleQuestionView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.IntegerQuestionView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.IntegerQuestionView">
+	<summary>
+IntegerQuestionView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.StringQuestionView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.StringQuestionView">
+	<summary>
+StringQuestionView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.App.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.App">
+	<summary>
+App
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU13A0.ClasseRisqueView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU13A0.ClasseRisqueView">
+	<summary>
+ClasseRisqueView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.FormView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.FormView">
+	<summary>
+FormView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.RepeatingSectionView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.RepeatingSectionView">
+	<summary>
+RepeatingSectionView
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.LookupQuestionView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.LUU13D0.LookupQuestionView">
+	<summary>
+LookupQuestionView
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_MED_CASE_POSTALE">
+	<summary>
+  Recherche une chaîne localisée semblable à Case postale.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_MED_CODE_POSTAL">
+	<summary>
+  Recherche une chaîne localisée semblable à Code postal.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_MED_EXT">
+	<summary>
+  Recherche une chaîne localisée semblable à Extension.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_MED_FAX">
+	<summary>
+  Recherche une chaîne localisée semblable à Fax.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_MED_HOPITAL">
+	<summary>
+  Recherche une chaîne localisée semblable à Clinique / Hôpital.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_MED_NO">
+	<summary>
+  Recherche une chaîne localisée semblable à No.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_MED_NOM">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_MED_POSTE">
+	<summary>
+  Recherche une chaîne localisée semblable à Poste.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_MED_PRENOM">
+	<summary>
+  Recherche une chaîne localisée semblable à Prénom.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_MED_PROV">
+	<summary>
+  Recherche une chaîne localisée semblable à Province.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_MED_RUE">
+	<summary>
+  Recherche une chaîne localisée semblable à Rue.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_MED_TELEPHONE">
+	<summary>
+  Recherche une chaîne localisée semblable à Téléphone.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_MED_VILLE">
+	<summary>
+  Recherche une chaîne localisée semblable à Ville.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_REP_CELL">
+	<summary>
+  Recherche une chaîne localisée semblable à No de cellulaire.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_REP_CODE">
+	<summary>
+  Recherche une chaîne localisée semblable à Code.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_REP_COURRIEL">
+	<summary>
+  Recherche une chaîne localisée semblable à Courriel.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_REP_DEFAUT">
+	<summary>
+  Recherche une chaîne localisée semblable à Représentant par défaut :.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_REP_NO_AGENCE">
+	<summary>
+  Recherche une chaîne localisée semblable à Code de l'agence.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_REP_NOM">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_REP_NOM_AGENCE">
+	<summary>
+  Recherche une chaîne localisée semblable à Agence.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_REP_POSTE">
+	<summary>
+  Recherche une chaîne localisée semblable à Poste.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_REP_POURCENTAGE">
+	<summary>
+  Recherche une chaîne localisée semblable à Entrer le pourcentage par défaut du représentant.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_REP_SAV">
+	<summary>
+  Recherche une chaîne localisée semblable à Représentant de service.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_REP_TELEPHONE">
+	<summary>
+  Recherche une chaîne localisée semblable à No de téléphone.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_AJOUT_VILLE_NOM">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_CARACTERE_CLE_CM">
+	<summary>
+  Recherche une chaîne localisée semblable à C.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_CARACTERE_CLE_KILO">
+	<summary>
+  Recherche une chaîne localisée semblable à K.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_CARACTERE_CLE_LIVRES">
+	<summary>
+  Recherche une chaîne localisée semblable à L.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_CARACTERE_CLE_PIEDS">
+	<summary>
+  Recherche une chaîne localisée semblable à P.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_CHANGEMENT_ONGLET">
+	<summary>
+  Recherche une chaîne localisée semblable à Revenir au menu «Identification» lors du changement de l'onglet d'assuré.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_ENTETE_CHANGEMENT_ONGLET">
+	<summary>
+  Recherche une chaîne localisée semblable à Changement de l'onglet d'assuré.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_ENTETE_IMPRESSION">
+	<summary>
+  Recherche une chaîne localisée semblable à Impression de la demande d'information.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_ENTETE_LISTE_MEDECINS">
+	<summary>
+  Recherche une chaîne localisée semblable à Liste des médecins.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_ENTETE_LISTE_REPRESENTANTS">
+	<summary>
+  Recherche une chaîne localisée semblable à Liste des représentants.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_ENTETE_LISTE_VILLES">
+	<summary>
+  Recherche une chaîne localisée semblable à Liste des villes.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_ENTETE_ONGLET">
+	<summary>
+  Recherche une chaîne localisée semblable à Onglet.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_ENTETE_UNITES_MESURE">
+	<summary>
+  Recherche une chaîne localisée semblable à Unités de mesure par défaut.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_ENTETE_VALIDATION_CHANGEMENT">
+	<summary>
+  Recherche une chaîne localisée semblable à Validation.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_IMPRESSION">
+	<summary>
+  Recherche une chaîne localisée semblable à Imprimer la demande d'information lorsqu'un cas est transféré ?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_INFO_POLICE_ONGLETS">
+	<summary>
+  Recherche une chaîne localisée semblable à - Facturation
+- Entente PAC
+- Représentant
+- Confirmation identité
+- Exigences.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_INFO_POLICE_TITRE">
+	<summary>
+  Recherche une chaîne localisée semblable à Afficher les «onglets par police» seulement pour le premier assuré.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_LISTE_AJOUT_MED">
+	<summary>
+  Recherche une chaîne localisée semblable à Ajouter un médecin.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_LISTE_AJOUT_REP">
+	<summary>
+  Recherche une chaîne localisée semblable à Ajouter un représentant.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_LISTE_AJOUT_VILLE">
+	<summary>
+  Recherche une chaîne localisée semblable à Ajouter une ville.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_LISTE_MED_NOM">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_LISTE_MED_PRENOM">
+	<summary>
+  Recherche une chaîne localisée semblable à Prénom.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_LISTE_MED_VIDE">
+	<summary>
+  Recherche une chaîne localisée semblable à Aucun médecin.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_LISTE_MED_VILLE">
+	<summary>
+  Recherche une chaîne localisée semblable à Ville.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_LISTE_REP_CELL">
+	<summary>
+  Recherche une chaîne localisée semblable à Cellulaire.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_LISTE_REP_CODE">
+	<summary>
+  Recherche une chaîne localisée semblable à Code.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_LISTE_REP_COURRIEL">
+	<summary>
+  Recherche une chaîne localisée semblable à Courriel.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_LISTE_REP_DEFAUT">
+	<summary>
+  Recherche une chaîne localisée semblable à Repr. Défaut.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_LISTE_REP_NOM">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_LISTE_REP_POSTE">
+	<summary>
+  Recherche une chaîne localisée semblable à Poste.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_LISTE_REP_TELEPHONE">
+	<summary>
+  Recherche une chaîne localisée semblable à Téléphone.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_LISTE_REP_VIDE">
+	<summary>
+  Recherche une chaîne localisée semblable à Aucun représentant.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_LISTE_VILLE_AJOUT_AUTO">
+	<summary>
+  Recherche une chaîne localisée semblable à Désirez-vous que les villes saisies dans les écrans de Proposition électronique soient automatiquement ajoutées à cette liste des villes ?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_LISTE_VILLE_VIDE">
+	<summary>
+  Recherche une chaîne localisée semblable à Aucune ville.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_TITRE_FENETRE">
+	<summary>
+  Recherche une chaîne localisée semblable à Configuration de l’application.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_UNITE_MESURE_LIVRES">
+	<summary>
+  Recherche une chaîne localisée semblable à lb.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_UNITE_MESURE_PIEDS">
+	<summary>
+  Recherche une chaîne localisée semblable à pi.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_UNITE_MESURE_POIDS">
+	<summary>
+  Recherche une chaîne localisée semblable à Saisir l'unité de mesure par défaut pour le poids.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_UNITE_MESURE_TAILLE">
+	<summary>
+  Recherche une chaîne localisée semblable à Saisir l'unité de mesure par défaut pour la taille.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.CONFIG_VALIDER_CHANGEMENT_ONGLET">
+	<summary>
+  Recherche une chaîne localisée semblable à Valider sur changement d'onglet.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.GENERAL_CARACTERE_CLE_NON">
+	<summary>
+  Recherche une chaîne localisée semblable à N.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.GENERAL_CARACTERE_CLE_OUI">
+	<summary>
+  Recherche une chaîne localisée semblable à O.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.GENERAL_MOIS">
+	<summary>
+  Recherche une chaîne localisée semblable à / Mois.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.GENERAL_NON">
+	<summary>
+  Recherche une chaîne localisée semblable à Non.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.GENERAL_OUI">
+	<summary>
+  Recherche une chaîne localisée semblable à Oui.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1310_IDENTIFICATION">
+	<summary>
+  Recherche une chaîne localisée semblable à Identification.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_AJOUTER_CONTRAT_VIGUEUR">
+	<summary>
+  Recherche une chaîne localisée semblable à Ajouter un contrat en vigueur.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_AJOUTER_PROPO">
+	<summary>
+  Recherche une chaîne localisée semblable à Ajouter une proposition.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_ASSUR_REFUS_MODIF_AJOURNE">
+	<summary>
+  Recherche une chaîne localisée semblable à Est-ce que la personne à assurer s'est fait refuser, modifier ou ajourner une proposition d'assurance?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_ASSURANCE_VIGUEUR">
+	<summary>
+  Recherche une chaîne localisée semblable à Est-ce que la personne à assurer possède de l'assurance en vigueur sur sa vie?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_AUTRE_COMPAGNIE">
+	<summary>
+  Recherche une chaîne localisée semblable à Avec une autre compagnie.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_MONTANT_TOTAL_PLACER">
+	<summary>
+  Recherche une chaîne localisée semblable à Montant total à placer:.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_NOTRE_COMPAGNIE">
+	<summary>
+  Recherche une chaîne localisée semblable à Avec notre compagnie.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_PROPO_EST_OPTIONNELLE">
+	<summary>
+  Recherche une chaîne localisée semblable à La présente proposition est optionnelle aux polices énumérées ci-haut..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_QUEST_ASSUR_REFUS">
+	<summary>
+  Recherche une chaîne localisée semblable à Est-ce que la personne à assurer s'est fait refuser, modifier ou ajourner une proposition d'assurance?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_QUEST_ASSUR_VIGUEUR">
+	<summary>
+  Recherche une chaîne localisée semblable à Est-ce que la personne à assurer possède de l'assurance en vigueur sur sa vie?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_QUEST_ASSURANCE_SUSPENS">
+	<summary>
+  Recherche une chaîne localisée semblable à Est-ce que la personne à assurer a une proposition d'assurance en suspens sur sa vie?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_SECTION_ASSUR_REFUS">
+	<summary>
+  Recherche une chaîne localisée semblable à Assurance refusée, modifiée ou ajournée.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_SECTION_ASSUR_VIGUEUR">
+	<summary>
+  Recherche une chaîne localisée semblable à Assurance en vigueur.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_SECTION_ASSURANCE_REFUSE">
+	<summary>
+  Recherche une chaîne localisée semblable à Assurance refusée, modifiée ou ajournée.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_SECTION_ASSURANCE_SUSPENS">
+	<summary>
+  Recherche une chaîne localisée semblable à Assurance en suspens.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_SECTION_ASSURANCE_VIGUEUR">
+	<summary>
+  Recherche une chaîne localisée semblable à Assurance en vigueur.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_ASSUR_REF_ENTETE1">
+	<summary>
+  Recherche une chaîne localisée semblable à Date.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_ASSUR_REF_ENTETE2">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom de la Compagnie.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_ASSUR_REF_ENTETE3">
+	<summary>
+  Recherche une chaîne localisée semblable à Type d'assurance.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_ASSUR_REF_ENTETE4">
+	<summary>
+  Recherche une chaîne localisée semblable à Raison.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_ASSUR_SUS_ENTETE1">
+	<summary>
+  Recherche une chaîne localisée semblable à Date.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_ASSUR_SUS_ENTETE2">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom de la Compagnie.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_ASSUR_SUS_ENTETE3">
+	<summary>
+  Recherche une chaîne localisée semblable à Type d'assurance.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_VIGUEUR_AUTRE_ENTETE1">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom de la compagnie.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_VIGUEUR_AUTRE_ENTETE2">
+	<summary>
+  Recherche une chaîne localisée semblable à Rachat.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_VIGUEUR_AUTRE_ENTETE3">
+	<summary>
+  Recherche une chaîne localisée semblable à Mnt ass. vie.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_VIGUEUR_AUTRE_ENTETE4">
+	<summary>
+  Recherche une chaîne localisée semblable à Mnt ass. maladie.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_VIGUEUR_AUTRE_ENTETE5">
+	<summary>
+  Recherche une chaîne localisée semblable à Rente Invalidité.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_VIGUEUR_AUTRE_ENTETE6">
+	<summary>
+  Recherche une chaîne localisée semblable à Année émis.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_VIGUEUR_AUTRE_ENTETE7">
+	<summary>
+  Recherche une chaîne localisée semblable à Relevé comparaison joint.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_VIGUEUR_NOTRE_ENTETE1">
+	<summary>
+  Recherche une chaîne localisée semblable à No Contrat.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_VIGUEUR_NOTRE_ENTETE2">
+	<summary>
+  Recherche une chaîne localisée semblable à Est-ce que l'assurance soumise entrainera le rachat total ou la résiliation partielle de cette police d'assurance ?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_VIGUEUR_NOTRE_ENTETE3">
+	<summary>
+  Recherche une chaîne localisée semblable à Mnt ass. vie.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_VIGUEUR_NOTRE_ENTETE4">
+	<summary>
+  Recherche une chaîne localisée semblable à Mnt ass. maladie.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_VIGUEUR_NOTRE_ENTETE5">
+	<summary>
+  Recherche une chaîne localisée semblable à Rente Invalidité.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_VIGUEUR_NOTRE_ENTETE6">
+	<summary>
+  Recherche une chaîne localisée semblable à Année émis.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1320_TAB_VIGUEUR_NOTRE_ENTETE7">
+	<summary>
+  Recherche une chaîne localisée semblable à Relevé comparaison joint.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_ALLOCATION_ASL_DESIREE">
+	<summary>
+  Recherche une chaîne localisée semblable à Allocation d'ASL désirée.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_AVEC_STABILISATEUR_DE_RENDEMENT">
+	<summary>
+  Recherche une chaîne localisée semblable à avec stabilisateur de rendement.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_CAPITAL_ASSURE_MAXIMUM">
+	<summary>
+  Recherche une chaîne localisée semblable à Capital assuré maximal d'ASL.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_CAPITAL_ASSURE_PLANCHER">
+	<summary>
+  Recherche une chaîne localisée semblable à Capital assuré plancher :.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_CARACTERE_CLE_AVEC_STABILISATEUR_DE_RENDEMENT">
+	<summary>
+  Recherche une chaîne localisée semblable à A.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_CARACTERE_CLE_SANS_STABILISATEUR_DE_RENDEMENT">
+	<summary>
+  Recherche une chaîne localisée semblable à S.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_COMPTES_INVESTISSEMENT_DDA">
+	<summary>
+  Recherche une chaîne localisée semblable à Directives de déduction automatique.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_COMPTES_INVESTISSEMENT_DIA">
+	<summary>
+  Recherche une chaîne localisée semblable à Directives d'investissement automatique.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_DIA_EGALE_DDA">
+	<summary>
+  Recherche une chaîne localisée semblable à Les directives automatiques de déduction sont et resteront identiques aux directives automatiques d'investissement à moins que des instructions différentes soient fournies dans le futur :.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_ENTETE_COMPTES">
+	<summary>
+  Recherche une chaîne localisée semblable à Comptes.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_ENTETE_MONTANT">
+	<summary>
+  Recherche une chaîne localisée semblable à Montant.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_ENTETE_NOM">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_ENTETE_PRIME">
+	<summary>
+  Recherche une chaîne localisée semblable à Prime.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_ENTETE_REPARTITION">
+	<summary>
+  Recherche une chaîne localisée semblable à Répartition.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_OPTION_VERSEMENT_BONI_VALEUR">
+	<summary>
+  Recherche une chaîne localisée semblable à Option de versement du Boni Valeur.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_OPTIONS_DE_BASE">
+	<summary>
+  Recherche une chaîne localisée semblable à Options de base :.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_PORTION_FONDS_CAPITALISATION">
+	<summary>
+  Recherche une chaîne localisée semblable à Portion du fonds de capitalisation payable d'office à chaque décès d'un assuré :.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_PRIME_TOTAL">
+	<summary>
+  Recherche une chaîne localisée semblable à Prime totale pour cet assuré:.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_QUESTION_OACA">
+	<summary>
+  Recherche une chaîne localisée semblable à Optimisation automatique du capital assuré (OACA) :.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_SANS_STABILISATEUR_DE_RENDEMENT">
+	<summary>
+  Recherche une chaîne localisée semblable à sans stabilisateur de rendement.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_SECTION_COMPTES_INVESTISSEMENT">
+	<summary>
+  Recherche une chaîne localisée semblable à Comptes d'investissement.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_SECTION_PROTECTION">
+	<summary>
+  Recherche une chaîne localisée semblable à Protection.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1330_VALEUR_MAXIMISEE_INACTIVE">
+	<summary>
+  Recherche une chaîne localisée semblable à L'option valeur maximisée n'a pas été activée.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_CARACTERE_CLE_ARGENT_CHEQUE_DEPOT_CHEQUE">
+	<summary>
+  Recherche une chaîne localisée semblable à C.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_CARACTERE_CLE_ARGENT_CHEQUE_DEPOT_PAC">
+	<summary>
+  Recherche une chaîne localisée semblable à P.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_CARACTERE_CLE_ARGENT_CHEQUE_PSL_PAC">
+	<summary>
+  Recherche une chaîne localisée semblable à L.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_CARACTERE_CLE_MODE_PAIEMENT_ANNUEL">
+	<summary>
+  Recherche une chaîne localisée semblable à A.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_CARACTERE_CLE_MODE_PAIEMENT_PAC">
+	<summary>
+  Recherche une chaîne localisée semblable à P.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_FINANCEMENT_PRIMES">
+	<summary>
+  Recherche une chaîne localisée semblable à Détermination de l’existence d’un tiers impliqué dans le financement de la police.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_MODE_PAIEMENT">
+	<summary>
+  Recherche une chaîne localisée semblable à Mode de paiement.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_MODE_PAIEMENT_ANNUEL">
+	<summary>
+  Recherche une chaîne localisée semblable à Annuel.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_MODE_PAIEMENT_PAC">
+	<summary>
+  Recherche une chaîne localisée semblable à PAC.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_PREMIERE_PRIME">
+	<summary>
+  Recherche une chaîne localisée semblable à Première prime.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_PREMIRE_PRIME_DEPOT_CHEQUE_1">
+	<summary>
+  Recherche une chaîne localisée semblable à Dépôt par chèque.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_PREMIRE_PRIME_DEPOT_CHEQUE_2">
+	<summary>
+  Recherche une chaîne localisée semblable à (Joindre un chèque à l’ordre de l’Industrielle Alliance).
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_PREMIRE_PRIME_DEPOT_PAC_1">
+	<summary>
+  Recherche une chaîne localisée semblable à Dépôt par PAC.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_PREMIRE_PRIME_DEPOT_PAC_2">
+	<summary>
+  Recherche une chaîne localisée semblable à (Un prélèvement bancaire sera effectué dans le compte bancaire du client au montant d’une prime minimale. Ne pas joindre un chèque.).
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_PREMIRE_PRIME_PSL_PAC_1">
+	<summary>
+  Recherche une chaîne localisée semblable à PSL/PAC.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_PREMIRE_PRIME_PSL_PAC_2">
+	<summary>
+  Recherche une chaîne localisée semblable à (Paiement sur livraison, amendement à faire signer).
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_PREMIRE_PRIME_PSL_PAC_3">
+	<summary>
+  Recherche une chaîne localisée semblable à Aucun dépôt ne sera effectué durant l’étude du dossier. La première prime sera prélevée sur livraison..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_PRIME">
+	<summary>
+  Recherche une chaîne localisée semblable à Prime.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_PRIME_CIBLE">
+	<summary>
+  Recherche une chaîne localisée semblable à Prime cible:.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_PRIME_CIBLE_EGALE_MESSAGE_1">
+	<summary>
+  Recherche une chaîne localisée semblable à La prime cible est égale à la prime courante.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_PRIME_CIBLE_EGALE_MESSAGE_2">
+	<summary>
+  Recherche une chaîne localisée semblable à La prime cible est égale à la prime minimum.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_PRIME_CIBLE_EGALE_PRIME_MINIMUM">
+	<summary>
+  Recherche une chaîne localisée semblable à La prime cible est égale à la prime minimum.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_PRIME_COURANTE">
+	<summary>
+  Recherche une chaîne localisée semblable à Prime courante:.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_QUEST_FINANCEMENT_PRIMES">
+	<summary>
+  Recherche une chaîne localisée semblable à Les primes de la police d’assurance seront-elles financées et/ou payées par un prêteur ou toute autre personne qui n’a aucun lien avec la personne à assurer?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_QUEST_MODE_PAIEMENT">
+	<summary>
+  Recherche une chaîne localisée semblable à Mode de paiement:.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1370_QUEST_NOM_PRETEUR">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom du prêteur ou de l’autre personne.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_AJOUTER_REPRESENTANT">
+	<summary>
+  Recherche une chaîne localisée semblable à Ajouter un représentant.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_CARACTERE_CLE_EMPLOYEE">
+	<summary>
+  Recherche une chaîne localisée semblable à E.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_CARACTERE_CLE_JOUR_PAC_CLIENT">
+	<summary>
+  Recherche une chaîne localisée semblable à C.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_CARACTERE_CLE_JOUR_PAC_EMISSION">
+	<summary>
+  Recherche une chaîne localisée semblable à E.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_CARACTERE_CLE_JOUR_PAC_MEME">
+	<summary>
+  Recherche une chaîne localisée semblable à M.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_CARACTERE_CLE_PAC_ENTREPRISE">
+	<summary>
+  Recherche une chaîne localisée semblable à E.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_CARACTERE_CLE_PAC_PERSONEL">
+	<summary>
+  Recherche une chaîne localisée semblable à P.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_CARACTERE_CLE_REPRESENTANT">
+	<summary>
+  Recherche une chaîne localisée semblable à R.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_CELLULAIRE">
+	<summary>
+  Recherche une chaîne localisée semblable à Cellulaire.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_CODE">
+	<summary>
+  Recherche une chaîne localisée semblable à Code.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_CODE_EMPLOYE">
+	<summary>
+  Recherche une chaîne localisée semblable à Code d'employé.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_CONFIGURER_INFORMATION">
+	<summary>
+  Recherche une chaîne localisée semblable à Vous pouvez configurer les informations par défaut à afficher dans cet écran en appuyant sur le bouton configurer.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_COURRIEL">
+	<summary>
+  Recherche une chaîne localisée semblable à Courriel.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_EMPLOYE">
+	<summary>
+  Recherche une chaîne localisée semblable à Employé.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_LISTE_PAYE">
+	<summary>
+  Recherche une chaîne localisée semblable à Liste de paye.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_NO_AGENCE">
+	<summary>
+  Recherche une chaîne localisée semblable à No.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_NOM">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_NOM_AGENCE">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom agence.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_NOTES_PREMIER_REPRESENTANT">
+	<summary>
+  Recherche une chaîne localisée semblable à À noter que le premier représentant indiqué recevra la police éligible.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_POSTE">
+	<summary>
+  Recherche une chaîne localisée semblable à Poste.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_QUEST_ASSURER_AGENT">
+	<summary>
+  Recherche une chaîne localisée semblable à Est-ce pour assurer un agent/employé ou membre de sa famille ?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_REPRESENTANT">
+	<summary>
+  Recherche une chaîne localisée semblable à Représentant.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_SERVICE_APRES_VENTE">
+	<summary>
+  Recherche une chaîne localisée semblable à Service après-vente.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_TELEPHONE">
+	<summary>
+  Recherche une chaîne localisée semblable à Téléphone.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_TITRE_INFORMATION">
+	<summary>
+  Recherche une chaîne localisée semblable à Information sur le représentant.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1380_UNITE_SERVICE">
+	<summary>
+  Recherche une chaîne localisée semblable à Unité de service.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1390_AVERTISSEMENT_6_MOIS">
+	<summary>
+  Recherche une chaîne localisée semblable à Le système détecte automatiquement les demandes d'un même client dans les 12 derniers mois. Veuillez ne pas l'inscrire dans les instructions spéciales..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU1390_RAPPEL_SAISIR_INFO">
+	<summary>
+  Recherche une chaîne localisée semblable à Aucune information médicale ou en lien avec la pratique de sports dangereux ne devrait être inscrite dans cette section.  Référez vous à la déclaration d'assurabilité..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13A0_CLASSE_RISQUE">
+	<summary>
+  Recherche une chaîne localisée semblable à Classe de risque - Pour les contrats ou avenants de 200 000 $ d'assurance vie et plus.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13A0_QUEST_MOINS_15ANS">
+	<summary>
+  Recherche une chaîne localisée semblable à Pour tous les assurés de moins de 15 ans, la classe de risque est préétablie par la compagnie. Vous n'avez donc pas à répondre à cette question..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13A0_QUEST_TARIF_PREFER">
+	<summary>
+  Recherche une chaîne localisée semblable à Dans le cas où une tarification préférentielle peut être attribuée.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13A0_QUEST_USAGE_TABAC_1">
+	<summary>
+  Recherche une chaîne localisée semblable à Au cours des 12 derniers mois avez-vous fait usage de tabac sous quelque forme que ce soit, incluant les produits de tabac ou de nicotine (gomme, timbre(patches), etc.) ?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13A0_QUEST_USAGE_TABAC_2">
+	<summary>
+  Recherche une chaîne localisée semblable à Avez-vous déjà fait usage de tabac ?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13A0_QUEST_USAGE_TABAC_3">
+	<summary>
+  Recherche une chaîne localisée semblable à Si oui, depuis quand avez-vous cessé ?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13A0_TARIF_PREFER_AUCUNE_DIRECTIVE">
+	<summary>
+  Recherche une chaîne localisée semblable à Si aucune directive n'est spécifiée, la prime sera diminuée..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13A0_TARIF_PREFER_AUGMENTER_CAPITAL">
+	<summary>
+  Recherche une chaîne localisée semblable à Augmenter le capital (Il est possible que des exigences supplémentaires soient demandées).
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13A0_TARIF_PREFER_DIMINUER_PRIME">
+	<summary>
+  Recherche une chaîne localisée semblable à Diminuer la prime.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13A0_USAGE_TABAC">
+	<summary>
+  Recherche une chaîne localisée semblable à Usage du tabac.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13B0_AUTRE_COMPAGNIE">
+	<summary>
+  Recherche une chaîne localisée semblable à Exigences de moins de 12 mois à obtenir d'une autre compagnie. (S'applique aux assurés agés de 0 à 69 ans uniquement. Pour les clients âgés de 70 ans ou plus, les exigences sont valides pour 6 mois.).
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13B0_DECLARATION_ASSURABILITE">
+	<summary>
+  Recherche une chaîne localisée semblable à DÉCLARATION D'ASSURABILITÉ.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13B0_ENTETE_EXIGENCE">
+	<summary>
+  Recherche une chaîne localisée semblable à Exigences.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13B0_ENTETE_NOM">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13B0_ENTETE_TEL">
+	<summary>
+  Recherche une chaîne localisée semblable à Téléphone.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13B0_ENTREVUE_TELEPHONIQUE">
+	<summary>
+  Recherche une chaîne localisée semblable à L'entrevue téléphonique et les signes vitaux sont demandés automatiquement par le siège social..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13B0_EXIGENCES_MEDICALES">
+	<summary>
+  Recherche une chaîne localisée semblable à Exigences médicales.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13B0_NE_PAS_COMMANDER">
+	<summary>
+  Recherche une chaîne localisée semblable à - Ne pas commander ces exigences..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13B0_NO_AUTORISATION">
+	<summary>
+  Recherche une chaîne localisée semblable à No d'autorisation.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13B0_NOM_ORGANISME_MEDICAL">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom de l'organisme pour le médical/paramédical.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13B0_NOM_ORGANISME_RAPPORTS">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom de l'organisme pour les rapports d'enquête.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13B0_NOTE_DEMANDEUR">
+	<summary>
+  Recherche une chaîne localisée semblable à Notes du demandeur et langue d’usage du client.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13B0_NOTES_ENQUETE">
+	<summary>
+  Recherche une chaîne localisée semblable à *Ces notes seront transmises directement à l’organisme pour l’enquête.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13B0_NOTES_LANGUE_USAGE1">
+	<summary>
+  Recherche une chaîne localisée semblable à Notes du demandeur et .
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13B0_NOTES_LANGUE_USAGE2">
+	<summary>
+  Recherche une chaîne localisée semblable à langue d'usage du client.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13B0_NOTES_MEDICALES">
+	<summary>
+  Recherche une chaîne localisée semblable à *Ces notes seront transmises directement à l’organisme pour le médical/paramédical.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13B0_QUEST_EXIGENCES_COMMANDE_AGENCE">
+	<summary>
+  Recherche une chaîne localisée semblable à Les exigences médicales/paramédicales seront-elles commandées par vous (ou votre agence) ?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13B0_QUEST_RAPPORT_COMMANDE_AGENCE">
+	<summary>
+  Recherche une chaîne localisée semblable à Le rapport d’enquête sera-t-il commandé par vous ou votre agence?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13B0_RAPPORT_ENQUETE">
+	<summary>
+  Recherche une chaîne localisée semblable à Rapports d'enquête.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13B0_SUBMIT_ANSWERS">
+	<summary>
+  Recherche une chaîne localisée semblable à Soumettre ces réponses.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13D0_AJOUTER">
+	<summary>
+  Recherche une chaîne localisée semblable à Ajouter.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13D0_RECHERCHE_COURS">
+	<summary>
+  Recherche une chaîne localisée semblable à Recherche en cours ....
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13D0_TITRE_DECLARATION_ASSURABILITE">
+	<summary>
+  Recherche une chaîne localisée semblable à Déclaration d'assurabilité.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_CATEGORIE_PAC_ENTREPRISE">
+	<summary>
+  Recherche une chaîne localisée semblable à Entreprise *.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_CATEGORIE_PAC_NOTE">
+	<summary>
+  Recherche une chaîne localisée semblable à * Un PAC d’entreprise signifie un PAC pour le paiement de biens ou de services liés à une activité d’entreprise ou commerciale du payeur..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_CATEGORIE_PAC_PERSONEL">
+	<summary>
+  Recherche une chaîne localisée semblable à Personnel.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_CHEQUE_NO">
+	<summary>
+  Recherche une chaîne localisée semblable à No du Chèque.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_CHEQUE_NO_BANQUE">
+	<summary>
+  Recherche une chaîne localisée semblable à No banque   (3 chiffres).
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_CHEQUE_NO_COMPTE">
+	<summary>
+  Recherche une chaîne localisée semblable à No compte (Longueur variable) Entrez tous les chiffres.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_CHEQUE_NO_SUCC">
+	<summary>
+  Recherche une chaîne localisée semblable à No succ. (5 chiffres).
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_ENTENTE_PRELEVEMENT">
+	<summary>
+  Recherche une chaîne localisée semblable à Entente de prélèvement.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_INFORMATION_COMPTE">
+	<summary>
+  Recherche une chaîne localisée semblable à Information sur le compte.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_JOUR_PAC_CLIENT">
+	<summary>
+  Recherche une chaîne localisée semblable à Jour choisi par le client.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_JOUR_PAC_EMISSION">
+	<summary>
+  Recherche une chaîne localisée semblable à Jour de l’émission.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_JOUR_PAC_MEME">
+	<summary>
+  Recherche une chaîne localisée semblable à Même que celui du PAC existant.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_MESSAGE_MODE_AUTRE_PAC">
+	<summary>
+  Recherche une chaîne localisée semblable à Vous n'avez pas à compléter cette section pour les modes de paiement autre que PAC..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_NO_JOUR_PAC">
+	<summary>
+  Recherche une chaîne localisée semblable à Jour :.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_NOM_INSTITUTION_FINANCIERE">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom de l’institution financière :.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_NOM_TITULAIRE_COMPTE">
+	<summary>
+  Recherche une chaîne localisée semblable à Nom du ou des titulaires du compte :.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_PRIMES_PERCUES_1">
+	<summary>
+  Recherche une chaîne localisée semblable à Les primes doivent être perçues dans le même compte bancaire .
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_PRIMES_PERCUES_2">
+	<summary>
+  Recherche une chaîne localisée semblable à que celui utilisé pour la police suivante :.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_QUEST_CATEGORIE_PAC">
+	<summary>
+  Recherche une chaîne localisée semblable à Catégorie de PAC :.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_QUEST_JOUR_PAC">
+	<summary>
+  Recherche une chaîne localisée semblable à Jour du prélèvement (ce paramètre sera utilisé à l’émission de la police seulement) :.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_QUEST_PAC">
+	<summary>
+  Recherche une chaîne localisée semblable à Participez-vous déjà au mode de paiement Prélèvement Autorisé par Chèque ?.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13F0_RENSEIGNEMENTS_BANCAIRES">
+	<summary>
+  Recherche une chaîne localisée semblable à Renseignements bancaires.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13J0_NE_PLUS_AFFICHER">
+	<summary>
+  Recherche une chaîne localisée semblable à Ne plus afficher cette fenêtre au démarrage.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13J0_ROW1">
+	<summary>
+  Recherche une chaîne localisée semblable à Nouveautés dans cette version.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13J0_ROW10">
+	<summary>
+  Recherche une chaîne localisée semblable à .
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13J0_ROW11">
+	<summary>
+  Recherche une chaîne localisée semblable à .
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13J0_ROW12">
+	<summary>
+  Recherche une chaîne localisée semblable à .
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13J0_ROW13">
+	<summary>
+  Recherche une chaîne localisée semblable à .
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13J0_ROW14">
+	<summary>
+  Recherche une chaîne localisée semblable à .
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13J0_ROW2">
+	<summary>
+  Recherche une chaîne localisée semblable à Nouveau produit d’assurance vie à émission simplifiée: Accès Vie..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13J0_ROW3">
+	<summary>
+  Recherche une chaîne localisée semblable à Ajout de la Protection Intégrée à l’assurance vie universelle Capital Valeur..
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13J0_ROW4">
+	<summary>
+  Recherche une chaîne localisée semblable à .
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13J0_ROW5">
+	<summary>
+  Recherche une chaîne localisée semblable à .
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13J0_ROW6">
+	<summary>
+  Recherche une chaîne localisée semblable à .
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13J0_ROW7">
+	<summary>
+  Recherche une chaîne localisée semblable à .
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13J0_ROW8">
+	<summary>
+  Recherche une chaîne localisée semblable à .
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.LUU13J0_ROW9">
+	<summary>
+  Recherche une chaîne localisée semblable à .
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.MASQUE_ANNEE">
+	<summary>
+  Recherche une chaîne localisée semblable à AAAA.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.MASQUE_JOUR">
+	<summary>
+  Recherche une chaîne localisée semblable à JJ.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources.MASQUE_MOIS">
+	<summary>
+  Recherche une chaîne localisée semblable à MMM.
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Ressources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.App.#ctor">
+	<summary>
+ Constructeur par défaut.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.Constante">
+	<summary>
+ Constantes communes au composant
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.Commun.CodeAideContextuelle">
+	<summary>
+ Regroupe les codes d'aide contextuelle utiles pour afficher les messages dans la barre de statut sur le focus dans les contrôles
+ </summary>
+</member>
+</members>
+</doc>

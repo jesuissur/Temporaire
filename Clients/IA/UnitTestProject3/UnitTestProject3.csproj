@@ -35,11 +35,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FluentAssertions">
-      <HintPath>packages\FluentAssertions.4.5.0\lib\net45\FluentAssertions.dll</HintPath>
+    <Reference Include="FluentAssertions, Version=4.6.1.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\FluentAssertions.4.6.1\lib\net45\FluentAssertions.dll</HintPath>
     </Reference>
-    <Reference Include="FluentAssertions.Core">
-      <HintPath>packages\FluentAssertions.4.5.0\lib\net45\FluentAssertions.Core.dll</HintPath>
+    <Reference Include="FluentAssertions.Core, Version=4.6.1.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\FluentAssertions.4.6.1\lib\net45\FluentAssertions.Core.dll</HintPath>
     </Reference>
     <Reference Include="IAFG.IA.VI.AF.Base">
       <HintPath>..\..\..\..\IA_TFS\VI_SuiteInterface\Dev\Fisc1\References\Interne\IAFG.IA.VI.AF.Base.dll</HintPath>
@@ -75,9 +77,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\..\..\..\..\IA_TFS\VI_SuiteInterface\Dev\Fisc1\VI\AF\Illustration\Illustration\IAFG.IA.VI.AF.Illustration.vbproj">
       <Project>{71953769-490b-4b82-9814-5f1928baf24f}</Project>
       <Name>IAFG.IA.VI.AF.Illustration</Name>
@@ -86,6 +85,9 @@
       <Project>{a9ae40ff-1a21-414a-9fe7-3be13644cc6d}</Project>
       <Name>Newtonsoft.Json.Net35</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.VI.AP.ReglesAppBase
+</name>
+</assembly>
+<members>
+<member name="P:IAFG.IA.VI.AP.ReglesAppBase.Trouvable`1.Valeur">
+	<summary>
+ L'information trouvée dans les données
+ </summary>
+	<value>La nouvelle valeur.</value>
+	<returns>La valeur trouvée dans les données.</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.ReglesAppBase.Trouvable`1.Trouve">
+	<summary>
+ Nous indique si l'information est initialisé ou non
+ </summary>
+	<value>true si l'information est trouvé, false sinon</value>
+	<returns>true si l'information est trouvé, false sinon</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.ReglesAppBase.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.ReglesAppBase.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:IAFG.IA.VI.AP.ReglesAppBase.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.ReglesAppBase.InfoReglesApplicatives.ChampListe">
+	<summary>
+ Le numéro du bloc de la liste à afficher, si -1 aucun bloc.
+ </summary>
+	<value>Le bloc à afficher.</value>
+	<returns>Le bloc à afficher.</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.ReglesAppBase.InfoReglesApplicatives.Disponibilite">
+	<summary>
+ La disponibilité de notre champ.
+ </summary>
+	<value>La disponibilité du champ.</value>
+	<returns>La disponibilité du champ.</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.ReglesAppBase.InfoReglesApplicatives.Type">
+	<summary>
+ Le type de notre champ sous forme d'ENUM.
+ </summary>
+	<value>Le type du champ.</value>
+	<returns>Le type du champ.</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.ReglesAppBase.InfoReglesApplicatives.ValeurDefaut">
+	<summary>
+ La valeur par défaut qui va dans notre champ.
+ </summary>
+	<value>La valeur par défaut.</value>
+	<returns>La valeur par défaut.</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.ReglesAppBase.InfoReglesApplicatives.Visibilite">
+	<summary>
+ La visibilité de notre champ.
+ </summary>
+	<value>La visibilité du champ.</value>
+	<returns>La visibilité du champ.</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

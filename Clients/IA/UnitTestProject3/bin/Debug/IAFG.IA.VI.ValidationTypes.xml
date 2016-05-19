@@ -1,0 +1,62 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.VI.ValidationTypes
+</name>
+</assembly>
+<members>
+<member name="P:IAFG.IA.VI.ValidationTypes.MessageValidation.IdObjet">
+	<summary>
+ Id de l'objet qui a provoqué l'erreur
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.ValidationTypes.MessageValidation.Parametres">
+	<summary>
+ Les parametres du message d'erreur.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.ValidationTypes.MessageValidation.IdMessage">
+	<summary>
+ Id du message d'erreur
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.ValidationTypes.MessageValidation.Champ">
+	<summary>
+ Propriété qui a causé l'erreur
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.ValidationTypes.MessageValidation">
+	<summary>
+ Classe qui contient le un message d'erreur
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.ValidationTypes.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.VI.ValidationTypes.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:IAFG.IA.VI.ValidationTypes.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="T:IAFG.IA.VI.ValidationTypes.IValidateur">
+	<summary>
+ Interface qui décrit le validateur, nécéssaire pour éviter les références circulaires.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

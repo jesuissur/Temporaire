@@ -1,0 +1,186 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.LU.AP.ControleInteropWPF.Wrapper
+</name>
+</assembly>
+<members>
+<member name="P:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertConfiguration.NumeroContrat">
+	<summary>
+ Numéro de contrat
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertConfiguration.NumeroCompagnie">
+	<summary>
+ Numéro de compagnie
+ </summary>
+	<value></value>
+</member><member name="P:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertConfiguration.Distribution">
+	<summary>
+ Type de saisie, mode agent, etc..
+ </summary>
+	<value></value>
+</member><member name="P:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertConfiguration.Banniere">
+	<summary>
+ Bannière de l'application
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertConfiguration">
+	<summary>
+ Cette objet permet d'accèder aux variables globales de l'application vb6
+ L'application rempli ces valeurs à l'ouverture d'un formulaire .net
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertOuvertureChangement.NomFichier">
+	<summary>
+ Le nom du fichier contenant le changement serializé
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertOuvertureChangement.EstCieLogiciel">
+	<summary>
+ Indique si c'est une compagnie logiciel
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertOuvertureChangement.EstFichierOuvertAvecSucces">
+	<summary>
+ Indique si le fichier avec le NomFichier est ouvert succès
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertOuvertureChangement.#ctor(IAFG.IA.VI.AF.Changements.Services.Chargement.ParametreOuvertureChangement)">
+	<summary>
+ Constructeur
+ </summary>
+	<param name="parametre">l'élément de liste dont on attend le code retour</param>
+</member><member name="T:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertOuvertureChangement">
+	<summary>
+ Classe de communication pour un ouverture d'un changement via le vb6
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertTransactionSimple.TypeTransaction">
+	<summary>
+ Le type de transaction
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertTransactionSimple.TransactionId">
+	<summary>
+ L'id de la transaction dans le cas d'une modification
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertTransactionSimple">
+	<summary>
+ Classe de transfert d'une transaction simple
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertChangement.#ctor(IAFG.IA.VI.AF.Changements.Services.Chargement.ParametreChangementAssuranceVie)">
+	<summary>
+ Constructeur
+ </summary>
+	<param name="parametre">l'élément de liste dont on attend le code retour</param>
+</member><member name="T:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertChangement">
+	<summary>
+ Classe de transfert d'un changement
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertCreationContrat.#ctor(IAFG.IA.VI.AF.Changements.Services.Chargement.ParametreCreationContrat)">
+	<summary>
+ Constructeur
+ </summary>
+	<param name="parametre">l'élément de liste dont on attend le code retour</param>
+</member><member name="T:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertCreationContrat">
+	<summary>
+ Classe de communication pour la création d'un contrat dans Vb6
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertPopListe.#ctor(IAFG.IA.LU.AP.BaseWPF.Services.Fenetre.ElementListe)">
+	<summary>
+ Constructeur
+ </summary>
+	<param name="element">l'élément de liste dont on attend le code retour</param>
+</member><member name="P:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertMessage.CodeMessage">
+	<summary>
+ Obtient le code de message à passer
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertMessage.PartieVariable">
+	<summary>
+ Obtient la partie variable du message
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertMessage.Resultat">
+	<summary>
+ Obtient ou définit le résultat du message affiché à l'utilisateur
+ </summary>
+	<remarks>Le résultat est obtenu en chaîne et on affecte le résultat de type enum à l'objet de message wrappé pour le traiter dans le ViewModel appelant</remarks>
+</member><member name="M:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertMessage.#ctor(IAFG.IA.LU.AP.BaseWPF.Services.Fenetre.MessageAffiche)">
+	<summary>
+ Constructeur
+ </summary>
+	<param name="message">le message à afficher et dont on attend le code retour</param>
+</member><member name="T:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertMessage">
+	<summary>
+ Classe de mapping du message à afficher du contrôle Interop vers VB6
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertPopupValidations.#ctor(IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ParametrePopupValidations)">
+	<summary>
+ Constructeur
+ </summary>
+	<param name="parametre">l'élément de liste dont on attend le code retour</param>
+</member><member name="M:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.ControleInteropWPF.GererBoutonNouveau">
+	<summary>
+ Appelé du vb6 lors du clique sur le bouton nouveau de la barre secondaire
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.ControleInteropWPF.Initialiser(System.String,System.String,IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertConfiguration)">
+	<summary>
+ Initialise les fonctionnalités de base du contrôle Interop
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.ControleInteropWPF.SurAfficherProtections(System.Object,IAFG.IA.LU.AP.BaseWPF.Services.Fenetre.ParametreProtections)">
+	<summary>
+ Lancer l'événement qui ouvrira le popup d'affichage des protections
+ </summary>
+	<remarks>Inutile de passer des paramètres car on ouvre le popup des protections du changement courant</remarks>
+</member><member name="M:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.ControleInteropWPF.SurFermerPopup(System.Object,IAFG.IA.LU.AP.BaseWPF.Services.Fenetre.ParametreFermeturePopup)">
+	<summary>
+ Lancer l'événement qui fermera le popup
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.ControleInteropWPF.SurAnnulerPopup(System.Object,IAFG.IA.LU.AP.BaseWPF.Services.Fenetre.ParametreAnnulerPopup)">
+	<summary>
+ Lancer l'événement qui annulera le popup
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.ControleInteropWPF.HandleAgregateur(IAFG.IA.LU.AP.BaseWPF.Evenement.ParametreAideContextuelle)">
+	<summary>
+ Gère les événements envoyés par l'agrégateur avec un type Integer (i.e. pour les messages d'aide contextuelle)
+ </summary>
+	<param name="message">le paramètre d'aide contextuelle</param>
+</member><member name="M:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertRechercheContrat.#ctor(IAFG.IA.VI.AF.Changements.Services.Chargement.ParametreRechercheContrat)">
+	<summary>
+ Constructeur
+ </summary>
+	<param name="parametre">l'élément de liste dont on attend le code retour</param>
+</member><member name="T:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertRechercheContrat">
+	<summary>
+ Classe de communication pour un ouverture d'un changement via le vb6
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertIdentification.ModeIdentification">
+	<summary>
+ Type d'ouverture du popup
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertIdentification.TagIdOrigine">
+	<summary>
+ Id de l'individu à modifier
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertIdentification.Index">
+	<summary>
+ Index dans la collection des individus
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertIdentification.#ctor(IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ParametreIdentification)">
+	<summary>
+ Constructeur
+ </summary>
+	<param name="parametre">le paramètre d'identification passé et dont on attend le code retour</param>
+</member><member name="T:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertIdentification">
+	<summary>
+ Classe de transport entre le .net et VB6.  Permet d'envoyer des paramètres
+ à au popup de modification des individus et de capter le retour.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.ControleInteropWPF.Wrapper.TransfertQuestionLangue.#ctor(IAFG.IA.LU.AP.Changement.ViewModel.Services.Fenetre.ParametreLangue)">
+	<summary>
+ Constructeur
+ </summary>
+	<param name="parametre">l'élément de liste dont on attend le code retour</param>
+</member>
+</members>
+</doc>

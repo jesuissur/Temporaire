@@ -1,0 +1,213 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.VI.AP.AuthentificationExtranet
+</name>
+</assembly>
+<members>
+<member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.ButtonAnnuler_En">
+	<summary>
+  Recherche une chaîne localisée semblable à Cancel.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.ButtonAnnuler_Fr">
+	<summary>
+  Recherche une chaîne localisée semblable à Annuler.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.ButtonOk_En">
+	<summary>
+  Recherche une chaîne localisée semblable à Ok.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.ButtonOk_Fr">
+	<summary>
+  Recherche une chaîne localisée semblable à Ok.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.identificationExtranetLabel_En">
+	<summary>
+  Recherche une chaîne localisée semblable à Please log in to Extranet.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.identificationExtranetLabel_Fr">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez vous identifier à l'Extranet.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.lblHeader_En">
+	<summary>
+  Recherche une chaîne localisée semblable à Authentification.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.lblHeader_Fr">
+	<summary>
+  Recherche une chaîne localisée semblable à Authentification.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.LogoIA">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.messageInvalidCredential_En">
+	<summary>
+  Recherche une chaîne localisée semblable à The connection to the Extranet could not be established. After three unsuccessful attempts, your access will be blocked; you will then have to contact the Help Desk..
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.messageInvalidCredential_Fr">
+	<summary>
+  Recherche une chaîne localisée semblable à La connexion à l’Extranet n’a pas pu être établie. Après trois tentatives infructueuses, vos accès seront bloqués; vous devrez communiquer avec le centre d’aide..
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.needSecuredAccessLinkLabel_En">
+	<summary>
+  Recherche une chaîne localisée semblable à Need a secure access?.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.needSecuredAccessLinkLabel_Fr">
+	<summary>
+  Recherche une chaîne localisée semblable à Besoin d'un accès sécurisé ?.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.messageNoConnection_Fr">
+	<summary>
+  Recherche une chaîne localisée semblable à .
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.passwordLabel_En">
+	<summary>
+ Recherche une chaîne localisée semblable à Password : .
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.passwordLabel_Fr">
+	<summary>
+  Recherche une chaîne localisée semblable à Mot de passe : .
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.passwordLinkLabel_En">
+	<summary>
+  Recherche une chaîne localisée semblable à Forgotten password?.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.passwordLinkLabel_Fr">
+	<summary>
+  Recherche une chaîne localisée semblable à Mot de passe oublié ?.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.rememberUsernameCheckBox_En">
+	<summary>
+  Recherche une chaîne localisée semblable à Remember my Access Code.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.rememberUsernameCheckBox_Fr">
+	<summary>
+  Recherche une chaîne localisée semblable à Mémoriser mon code d'accès.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.Tooltip">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.tryConnLabel_En">
+	<summary>
+  Recherche une chaîne localisée semblable à Connection attempt #.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.tryConnLabel_Fr">
+	<summary>
+  Recherche une chaîne localisée semblable à Tentative de connexion #.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.usernameLabel_En">
+	<summary>
+  Recherche une chaîne localisée semblable à Access Code : .
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.usernameLabel_Fr">
+	<summary>
+  Recherche une chaîne localisée semblable à Code d'accès : .
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.usernameLinkLabel_En">
+	<summary>
+  Recherche une chaîne localisée semblable à Forgotten Access Code?.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.usernameLinkLabel_Fr">
+	<summary>
+  Recherche une chaîne localisée semblable à Code d'accès oublié ?.
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.usernameTooltip_En">
+	<summary>
+  Recherche une chaîne localisée semblable à The access code is your email address and/or a 10-digit code..
+</summary>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources.usernameTooltip_Fr">
+	<summary>
+  Recherche une chaîne localisée semblable à Le code d'accès est votre adresse courriel et/ou un code à 10 caractères..
+</summary>
+</member><member name="T:IAFG.IA.VI.AP.AuthentificationExtranet.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="M:IAFG.IA.VI.AP.AuthentificationExtranet.DefaultAuthenticationExtranetStub.GetAuthenticateFromPopUp(System.String,System.String,System.Boolean,IAFG.IA.VI.ENUMs.Langue)">
+	<summary>
+ Obtient la collection de cookies d'authentification.
+ </summary>
+	<param name="urlTargetSSOLogin">Url où on veut ête authentifié</param>
+	<param name="domainName">Nom de domaine</param>
+	<returns>Une collection de cookies</returns>
+	<remarks>Si la collection de cookies est vide. Demander une authentification via un formulaire d'authentification</remarks>
+</member><member name="T:IAFG.IA.VI.AP.AuthentificationExtranet.DefaultAuthenticationExtranetStub">
+	<summary>
+ Classe d'implémentation d'authentification extranet par défaut fourni avec le composant.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.AuthentificationExtranet.Interfaces.IAuthenticationSetter">
+	<summary>
+ Interface a Implémenter par une composante utilisant l'Authentification Extranet(composante courante)
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.DialogLogin.LoginResult">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.AuthentificationExtranet.DialogLogin.DomainName">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.AuthentificationExtranet.DialogLogin.OnLoad(System.EventArgs)">
+	<summary>
+ Gestion du chargement du formulaire
+ </summary>
+	<param name="e">Argument</param>
+	<remarks>* Overrides pour écraser le comportement de la classe de base qui bug avec la gestion des styles inutile dans cette Dialog</remarks>
+</member><member name="M:IAFG.IA.VI.AP.AuthentificationExtranet.DialogLogin.OnFormClosed(System.Windows.Forms.FormClosedEventArgs)">
+	<summary>
+ Gestion de la fermeture du formulaire
+ </summary>
+	<param name="e">Argument</param>
+	<remarks>* Overrides pour écraser le comportement de la classe de base qui bug avec la gestion des styles inutile dans cette Dialog</remarks>
+</member><member name="M:IAFG.IA.VI.AP.AuthentificationExtranet.DialogLogin.ValidateChildren">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.AuthentificationExtranet.DialogLogin.LoadData(System.Object)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.AuthentificationExtranet.DialogLogin.UnloadData(System.Object)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.AuthentificationExtranet.DialogLogin.ShowPopUp(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="urlTargetSSOLogin"></param>
+	<param name="domainName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AP.AuthentificationExtranet.DialogLogin.ShowPopUp(System.String,System.String,IAFG.IA.VI.ENUMs.Langue)">
+	<summary>
+	</summary>
+	<param name="urlTargetSSOLogin"></param>
+	<param name="domainName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

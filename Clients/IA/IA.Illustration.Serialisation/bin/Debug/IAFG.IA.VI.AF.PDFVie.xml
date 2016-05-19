@@ -1,0 +1,106 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.VI.AF.PDFVie
+</name>
+</assembly>
+<members>
+<member name="P:IAFG.IA.VI.AF.PDFVie.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.VI.AF.PDFVie.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:IAFG.IA.VI.AF.PDFVie.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="M:IAFG.IA.VI.AF.PDFVie.IPDFVie.Extensions.Maturite.CalculerAgeAtteint(System.DateTime)">
+	<summary>
+ Calculer l'age de référence atteint à une date donnée en référence à l'âge de référence de maturité
+ </summary>
+	<param name="dateReference">Date à laquel nous voulons effectuté le calcul</param>
+	<returns>Age de référence atteint à la date de référence.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.PDFVie.IPDFVie.Extensions.Maturite.CalculerAgeRefEmission(IAFG.IA.VI.AF.IPDFVie.PDF.Plan.ENUMs.AgeRefConjoint)">
+	<summary>
+ Calculer l'age de référence utiliser pour déterminer la maturité d'une protection
+ </summary>
+	<returns>Age de référence</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.PDFVie.IPDFVie.Extensions.Maturite.CalculerAgeRefEmission">
+	<summary>
+ Calculer l'age de référence utiliser pour déterminer la maturité d'une protection
+ </summary>
+	<returns>Age de référence</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.PDFVie.IPDFVie.Extensions.Liberation.GetAttainedAge(System.Double)">
+	<summary>
+ Calculer l'âge de libération en additionnant la durée et l'âge de référence
+ </summary>
+	<returns>Âge de libération</returns>
+	<remarks>
+ Le calcule de l'âge de libération dépend directement de la méthode
+ de calcule de la durée de la libération.
+ </remarks>
+</member><member name="M:IAFG.IA.VI.AF.PDFVie.IPDFVie.Extensions.Liberation.CalculerAgeRefEmission(IAFG.IA.VI.AF.IPDFVie.PDF.Plan.ENUMs.AgeRefConjoint)">
+	<summary>
+ Calculer l'age de référence pour une libération de protection
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.PDFVie.IPDFVie.Extensions.Liberation.CalculerAgeRefEmission">
+	<summary>
+ Calculer l'age de référence pour une libération de protection
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.PDFVie.IPDFVie.Coverage.GetReviewablePremiumsList">
+	<summary>
+ Permet d'initialiser la variable _changementsProtection en Lazy loading.
+ </summary>
+	<remarks>Le dernière item de la liste correspond à la maturité.</remarks>
+</member><member name="M:IAFG.IA.VI.AF.PDFVie.Fonctions.DifferenceDateAnnee(System.DateTime,System.DateTime)">
+	<summary>
+ Calculer la différence en année entre deux dates.
+ </summary>
+	<param name="date1">Date1</param>
+	<param name="date2">Date2</param>
+	<returns>Différence en année</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.PDFVie.Fonctions.JourJulien(System.DateTime)">
+	<summary>
+ Récuperer le jour julien sur une base de 365 jours.
+ </summary>
+	<param name="dateRef">date de référence</param>
+	<returns>jour julien</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.PDFVie.Fonctions.ObtenirAgeDuPlusVieux(IAFG.IA.VI.AF.IPDFVie.Contrat.IAssures,System.Boolean)">
+	<summary>
+ Obtenir l'âge du viel jeune assuré du contrat
+ </summary>
+	<param name="iAssures">Collection assurés reliés à une protection</param>
+	<returns>Age</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.PDFVie.Fonctions.ObtenirAgeDuPlusJeune(IAFG.IA.VI.AF.IPDFVie.Contrat.IAssures,System.Boolean)">
+	<summary>
+ Obtenir l'âge du plus jeune assuré du contrat
+ </summary>
+	<param name="iAssures">Collection assurés reliés à une protection</param>
+	<returns>Age</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.PDFVie.Fonctions.AjouterDureeDate(System.DateTime,System.Double)">
+	<summary>
+ Ajouter une durée en année à une date
+ </summary>
+	<param name="date1">Date auquel la durée sera ajouté</param>
+	<param name="duree">Durée en année à ajouter</param>
+	<returns>Date avec la durée</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

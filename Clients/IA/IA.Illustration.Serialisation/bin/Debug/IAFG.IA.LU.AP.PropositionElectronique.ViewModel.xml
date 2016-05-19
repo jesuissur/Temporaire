@@ -1,0 +1,1072 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.LU.AP.PropositionElectronique.ViewModel
+</name>
+</assembly>
+<members>
+<member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Commun.ViewModelSectionPrincipalBase.Proposition">
+	<summary>
+ Obtient l'individu courant sélectionné dans la liste des individus de la proposition
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Commun.ViewModelSectionPrincipalBase.IndividuCourant">
+	<summary>
+ Obtient l'individu courant sélectionné dans la liste des individus de la proposition
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Commun.ViewModelSectionPrincipalBase">
+	<summary>
+ Classe de base de tous les ViewModels
+ </summary>
+	<remarks>Regroupe les fonctionnalités communes à tous les ViewModels de l'application, qui doivent tous en dériver</remarks>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.DetailExigence.ContexteMenu">
+	<summary>
+ Obtient le contexte d'affichage spécifique à l'individu concerné par le ou les exigences.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.DetailExigence.ExigencesEnCours">
+	<summary>
+ Obtient la liste des exigences pour l'individu courant et le type d'exigences attendu
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.DetailExigence.NomComplet">
+	<summary>
+ Obtient le nom complet (nom + prénom) à afficher dans le tableau
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.DetailExigence.Telephone">
+	<summary>
+ Obtient le numéro de téléphone (maison) à afficher
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.DetailExigence.DescriptionComplete">
+	<summary>
+ Obtient la concaténation des libellés d'exigences à afficher
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.DetailExigence.NoAutorisation">
+	<summary>
+ Obtient ou définit le numéro d'autorisation associé aux exigences en cours
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.DetailExigence.EstExigenceAutreCompagnie">
+	<summary>
+ Obtient ou définit l'indicateur d'exigence venant d'une autre compagnie
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.DetailExigence.NomCompagnieExigenceAutre">
+	<summary>
+ Obtient ou définit le nom de la compagnie autre pour les exigences
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.DetailExigence.EstVisibleNoAutorisationExigence">
+	<summary>
+ Obtient l'indicateur de visibilité du numéro d'autorisation pour la ligne d'exigence en cours
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.DetailExigence.#ctor(IAFG.IA.VI.AF.Proposition.Individu,IAFG.IA.VI.AF.Tarification.ENUMs.TypeExigence,IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel,IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ContexteMenuExigences)">
+	<summary>
+ Constructeur
+ </summary>
+	<param name="individu">l'individu assuré concerné par les détails d'exigences</param>
+	<param name="typeFamilleExigence">le type d'exigence attendu (paramédical/rapport d'enquête)</param>
+	<param name="parent">le ViewModel parent, afin d'accéder aux propriétés utiles</param>
+	<param name="contexteMenuExigence">Contexte d'affichage à utiliser pour l'affichage des contrôles.</param>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.DetailExigence">
+	<summary>
+ Classe de présentation des détails d'exigences médicales à afficher dans la grille associée
+ </summary>
+	<remarks>Cette classe de ViewModel permet de formater et d'effectuer la logique liée à un élément d'exigences pour un individu</remarks>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Commun.UnityViewModelFactory.#ctor(Microsoft.Practices.Unity.IUnityContainer)">
+	<summary>
+ Constructeur acceptant le conteneur d'inversion de contrôle.
+ </summary>
+	<param name="unityContainer">Conteneur à utiliser pour créer les écrans.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Commun.UnityViewModelFactory.ObtenirInstance``1(System.String)">
+	<summary>
+ Obtient l'instance d'un écran d'après sa clé.
+ </summary>
+	<param name="cle">Clé identifiant un écran.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Commun.UnityViewModelFactory">
+	<summary>
+ Fabrique d'écran pour l'application basé sur le IoC Container Unity.
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1320.AutreAssuranceViewModel.#ctor(IAFG.IA.VI.AF.Proposition.Proposition,System.String,IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Services.Fenetre.IServiceFenetreProposition)">
+	<summary>
+ Constructeur du ViewModel pour piloter l'écran d'autre assurance
+ </summary>
+	<param name="proposition">La proposition courante</param>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ContexteMenuExigences.EstVisibleQuestionPara">
+	<summary>
+ Obtient l'indicateur de visibilité de la question paramédicale
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ContexteMenuExigences.EstVisibleOrganismePara">
+	<summary>
+ Obtient l'indicateur de visibilité du bloc de l'organisme paramédical
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ContexteMenuExigences.EstVisibleNomOrganismePara">
+	<summary>
+ Obtient l'indicateur de visibilité du nom de l'organisme paramédical
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ContexteMenuExigences.EstVisibleEntrevueTelephonique">
+	<summary>
+ Obtient l'indicateur de visibilité du bloc d'entrevue téléphonique
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ContexteMenuExigences.EstVisibleExigenceAutreCiePara">
+	<summary>
+ Obtient l'indicateur de visibilité du bloc d'exigence autre compagnie pour le volet paramédical
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ContexteMenuExigences.EstVisibleRapportEnquete">
+	<summary>
+ Obtient l'indicateur de visibilité du bloc de rapport d'enquête
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ContexteMenuExigences.#ctor(IAFG.IA.VI.AF.Proposition.Individu,IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.IndicateurAffichage)">
+	<summary>
+ Surcharge du constructeur par défaut
+ </summary>
+	<param name="individuCourant">l'individu courant</param>
+	<param name="indicateurAffichage">l'objet des indicateurs d'affichage liés aux exigences</param>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ContexteMenuExigences">
+	<summary>
+ Complément à la classe de contexte d'affichage de l'écran d'exigences médicales
+ </summary>
+	<remarks>Ce fichier complète les gestions d'affichage qui ont été générées automatiquement à partir du gabarit et des classes VB6.</remarks>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.IndicateurAffichage">
+	<summary>
+ Classe de regroupement des indicateurs d'affichage des différentes parties liées aux exigneces médicales
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.EnumAgentEmploye">
+	<summary>
+ Énumération regroupant les différentes valeurs possibles de représentant
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.ListeRepresentant">
+	<summary>
+ Obtient la liste des représentants d'une proposition
+ </summary>
+	<returns>Une collection d'instances de 'DetailRepresentant'</returns>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.ListeAgence">
+	<summary>
+ Obtient la liste d'agences. 
+ </summary>
+	<returns></returns>
+	<remarks>Utilisée par la classe DetailRepresentant</remarks>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.ListePaye">
+	<summary>
+ Obtient la liste de paye
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.NoEmploye">
+	<summary>
+ Obtient ou définit le numéro de l'employé
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.NomEmploye">
+	<summary>
+ Obtient ou définit le nom de l'employé
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.CodeGroupe">
+	<summary>
+ Obtient ou définit le code de groupe
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.EstEmployeAgenceOuClient">
+	<summary>
+ Obtient ou définit si la propositon est pour un employé/agent ou un client
+ </summary>
+	<returns>Une des valeurs de la liste d'énumérations TypeReponse</returns>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.TypePropoAgentEmploye">
+	<summary>
+ Obtient ou définit la propriété PropoAgentEmploye
+ </summary>
+	<returns>Une des valeurs de la liste d'énumérations TypePropoAgentEmploye</returns>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.EstVisibleRepresentant">
+	<summary>
+ Obtient un booléen qui détermine qui la section Représentant doit être visible ou non.
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.AjouterRepresentantPermis">
+	<summary>
+ Obtient un booléen qui détermine si l"ajout d'un représentant (via le bouton) est permis (enabled).
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.EstVisibleAgentEmploye">
+	<summary>
+ Obtient un booléen qui détermine qui la section Agent / Employé doit être visible ou non.
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.EstVisibleEmploye">
+	<summary>
+ Obtient un booléen qui détermine qui la section Employé doit être visible ou non.
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.#ctor(IAFG.IA.VI.AF.Proposition.Proposition,System.String,IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Services.Fenetre.IServiceFenetreProposition)">
+	<summary>
+ Constructeur du ViewModel pour piloter l'écran des représentants
+ </summary>
+	<param name="proposition">La proposition courante</param>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.MettreAJourServiceApresVente(IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant)">
+	<summary>
+ Méthode utilisé par la classe 'enfant' (DetailRepresentant) servant à mettre à jour la propriété 'ServiceApresVente' du ou des représentants.
+ </summary>
+	<param name="representant">Une instance d'unobjet de type 'DetailRepresentant'</param>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.PersisterAvantFermeture">
+	<summary>
+ Effectue un traitement avant la fermeture de la fenêtre.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.AjouterRepresentant(IAFG.IA.VI.AF.ObjetsPartages.Agent)">
+	<summary>
+ Ajoute une instance existante de l'objet 'DetailRepresentant' à la liste des représentants
+ </summary>
+	<param name="representant">Instance existante de l'objet 'Agent'</param>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.AjouterRepresentant">
+	<summary>
+ Ajoute une nouvelle instance de l'objet 'DetailRepresentant' à la liste des représentants
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.AjouterNouveauRepresentant">
+	<summary>
+ Permet à l'utilisateur d'ajouter une nouvelle instance de l'objet 'DetailRepresentant' à la liste des représentants
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.SupprimerRepresentant(System.Object)">
+	<summary>
+ Permet à l'utilisateur de supprimer une instance de l'objet 'DetailRepresentant' de la liste des représentants
+ </summary>
+	<param name="representant">L'instance de type 'DetailRepresentant' à supprimer</param>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.SupprimerRepresentantDirect(System.Object)">
+	<summary>
+ Permet à l'utilisateur de supprimer une instance de l'objet 'DetailRepresentant' de la liste des représentants sans message de confirmation
+ </summary>
+	<param name="representant">L'instance de type 'DetailRepresentant' à supprimer</param>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.ModifierRepresentant(System.Object)">
+	<summary>
+ Méthode déléguée de modification d'un représentant
+ </summary>
+	<param name="representant">le représentant à mettre à jour</param>
+	<remarks>Cette méthode est attachée à la commande de la classe DetailRepresentant, pour modifier l'occurrence effectivement sélectionnée</remarks>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.CalculPourcentage">
+	<summary>
+ Détermine le pourcentage du nouveau représentant (ajouté) en fonction des autres
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.ReinitialiserListeRepresentants">
+	<summary>
+ Réinitialise la liste des représentants
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.ReinitialiserInfoEmploye">
+	<summary>
+ Réinitialise les informations d'employé
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.AppelerConfigurer">
+	<summary>
+ Méthode d'appel à la popup de configuration pour ajouter un représentant
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.EstAgentCarriereOuInconnu">
+	<summary>
+ Détermine si la proposition possède un agent carrière ou si le type d'agent est inconnu.
+ </summary>
+	<returns>Retourne un booléen indiquant si un agent inconnu ou un agent carrière est définit pour la proposition.</returns>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.CommandeAjouterRepresentant">
+	<summary>
+ Commande à exécuter lors du clic du bouton 'ajouter représentant'
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel.CommandeConfigurer">
+	<summary>
+ Commande pour appeler la popup de configuration
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel">
+	<summary>
+ Classe de ViewModel du contrôle de représentant
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Constante">
+	<summary>
+ Constantes communes au composant
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.ContexteMenuFacturation.IndicateurAffichage">
+	<summary>
+ Obtient une instance de l'object 'indicateur d'affichage'
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.ContexteMenuFacturation.EstVisiblePSL_PAC">
+	<summary>
+ Obtient l'indicateur de visibilité de la propriété 'PSL / PAC'
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.ContexteMenuFacturation">
+	<summary>
+ Complément à la classe de contexte d'affichage de l'écran de facturation.
+ </summary>
+	<remarks>Ce fichier complète les gestions d'affichage qui ont été générées automatiquement à partir du gabarit et des classes VB6.</remarks>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant.Nom">
+	<summary>
+ Obtient ou définit la propriété NomAgent
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant.CodeAgent">
+	<summary>
+ Obtient ou définit la propriété CodeAgent
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant.UniteService">
+	<summary>
+ Obtient ou définit la propriété UniteService
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant.Pourcentage">
+	<summary>
+ Obtient ou définit la propriété Pourcentage
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant.NoAgence">
+	<summary>
+ Obtient ou définit la propriété NoAgence
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant.ServiceApresVente">
+	<summary>
+ Obtient ou définit la propriété ServiceApresVente
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant.TelephoneBureau">
+	<summary>
+ Obtient le numéro de téléphone (bureau) à afficher
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant.TelephoneBureauPoste">
+	<summary>
+ Obtient le poste du numéro de téléphone (bureau) à afficher
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant.TelephoneCellulaire">
+	<summary>
+ Obtient le numéro de téléphone (cellulaire) à afficher
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant.AdresseCourriel">
+	<summary>
+ Obtient l'adresse de courriel à afficher
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant.ListeAgence">
+	<summary>
+ Obtient la liste des agences (ListeAgenceCD)
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant.Agent">
+	<summary>
+ Obtient l'instance de l'objet Représentant
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant.NomRepresentantFocus">
+	<summary>
+ Obtient ou définit la propriété NomRepresentantFocus. Détermine si le focus est donné au nom du représentant.
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant.#ctor(IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.RepresentantViewModel,IAFG.IA.VI.AF.ObjetsPartages.Agent,IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Services.Fenetre.IServiceFenetreProposition)">
+	<summary>
+ Constructeur du ViewModel pour piloter les instances d'objets de type DetailRepresentant
+ </summary>
+	<param name="parent">Instance de l'objet parent de type RepresentantViewModel</param>
+	<param name="representant">Instance de l'objet de type Agent</param>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant.GererTelephone(System.String@,IAFG.IA.VI.AF.ObjetsPartages.ENUMs.TypeNoTelephone,System.Boolean)">
+	<summary>
+ Gère la remontée dans l'objet métier du numéro de téléphone entré dans le champ avec masque
+ </summary>
+	<param name="valeur">la valeur chaîne passée par le contrôle UI</param>
+	<param name="typeTelephone">le type de numéro de téléphone</param>
+	<param name="valider">l'indicateur de besoin de validation (cas d'un numéro de poste vs no de téléphone)</param>
+	<returns>l'indicateur d'existence du numéro de téléphone pour procéder à la suite du traitement</returns>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant.AjouterTelephoneSiAbsent(IAFG.IA.VI.AF.ObjetsPartages.ENUMs.TypeNoTelephone)">
+	<summary>
+ Ajoute le numéro de téléphone si absent de la liste du représentant
+ </summary>
+	<param name="typeTelephone">le type de no de téléphone</param>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant.SupprimerTelephoneSiAbsent(IAFG.IA.VI.AF.ObjetsPartages.ENUMs.TypeNoTelephone)">
+	<summary>
+ Ajoute le numéro de téléphone si absent de la liste du représentant
+ </summary>
+	<param name="typeTelephone">le type de no de téléphone</param>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant.ExtraireNombresDeChaine(System.String)">
+	<summary>
+ Extrait tous les chiffres d'une chaîne de caractères
+ </summary>
+	<param name="valeur">la chaîne à traiter</param>
+	<returns>la chaîne ne contenant que les chiffres après traitement</returns>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant.ValiderTelephone(System.String)">
+	<summary>
+ Vérifie que la chaîne passée en paramètre est un numéro de téléphone complet
+ </summary>
+	<param name="valeur">la chaîne à valider</param>
+	<returns>l'indicateur de validité du numéro de téléphone</returns>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1380.DetailRepresentant">
+	<summary>
+ Classe de ViewModel associée au contrôle de représentant
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13A0.ClasseRisqueViewModel.ContexteMenu">
+	<summary>
+ Obtient le contexte d'affichage lié à l'écran de classe de risque
+ </summary>
+	<remarks>Le contexte est généré à partir du gabarit d'affichage et des fonctions d'activation de l'ancienne version</remarks>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13A0.ClasseRisqueViewModel.#ctor(IAFG.IA.VI.AF.Proposition.Proposition,System.String,IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Services.Fenetre.IServiceFenetreProposition)">
+	<summary>
+ Constructeur du ViewModel pour piloter l'écran de classe de risque
+ </summary>
+	<param name="proposition">La proposition courante</param>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Services.Fenetre.ServiceFenetreProposition">
+	<summary>
+ Classe d'appel aux fenêtres popup spécifique à Proposition Électronique
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Commun.IViewModelFactoryProposition.ObtenirInstanceAvecParametres(System.String,System.Object)">
+	<summary>
+  Obtient l'instance d'un écran d'après sa clé et ses paramètres.
+ </summary>
+	<param name="cle">Clé identifiant un écran.</param>
+	<param name="parametre">paramètre nécessaire au constructeur</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1310.IdentificationViewModel.#ctor(IAFG.IA.VI.AF.Proposition.Proposition,System.String,IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Services.Fenetre.IServiceFenetreProposition)">
+	<summary>
+ Constructeur du ViewModel pour piloter l'écran d'identification
+ </summary>
+	<param name="proposition">La proposition courante</param>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1310.IdentificationViewModel">
+	<summary>
+ Classe de ViewModel du contrôle d'identification
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.TypeDepotFacturationFocus">
+	<summary>
+ Obtient ou définit la propriété TypeDepotFacturation_Focus. Détermine si le focus est donné au type de dépot
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.PrimeModale">
+	<summary>
+ Obtient ou définit la prime modale
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.PrimeCible">
+	<summary>
+ Obtient la prime cible.
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.ModePaiement">
+	<summary>
+ Obtient ou définit la mode de paiement.
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.FinancementTiers">
+	<summary>
+ Obtient ou définit la propriété 'FinancementTiers'
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.NomTiercePersonne">
+	<summary>
+ Obtient ou définit la propriété 'NomTiercePersonne
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.ArgentCheque">
+	<summary>
+ Obtient ou définit la propriété 'argent chèque'.
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.SommeVerseeCheque">
+	<summary>
+ Obtient ou définit la propriété 'somme versée' (chèque)
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.SommeVerseePAC">
+	<summary>
+ Obtient ou définit la propriété 'somme versée' (PAC)
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.EstEditablePrimeModale">
+	<summary>
+ Détermine si la prime modale est modifiable (via l'interface graphique)
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.EstEditablePrimeCible">
+	<summary>
+ Détermine si la prime cible est modifiable (via l'interface graphique)
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.EstEditableModePaiement">
+	<summary>
+ Détermine si le mode de paiement est modifiable (via l'interface graphique)
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.EstEditableDepotCheque">
+	<summary>
+ Détermine si la propriété 'dépôt chèque' est modifiable (via l'interface graphique)
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.EstEditableDepotPAC">
+	<summary>
+ Détermine si la propriété 'dépôt PAC' est modifiable (via l'interface graphique)
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.EstEditablePSL_PAC">
+	<summary>
+ Détermine si la propriété 'PSL / PAC' est modifiable (via l'interface graphique)
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.EstEditableSommeVerseeCheque">
+	<summary>
+ Détermine si la propriété 'somme versée chèque' est modifiable (via l'interface graphique)
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.EstEditableSommeVerseePAC">
+	<summary>
+ Détermine si la propriété 'somme versée PAC' est modifiable (via l'interface graphique)
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.EstActifPremierePrime">
+	<summary>
+ Détermine si la section 'première prime' est accessible à la saisie
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.EstVisibleDepotPAC">
+	<summary>
+ Détermine si la propriété 'dépôt PAC' est visible
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.EstVisibleNomTiercePersonne">
+	<summary>
+ Détermine si la propriété 'nom de la tierce personne' est visible
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.EstVisiblePrimeMinimum">
+	<summary>
+ Détermine si la propriété 'prime minimum' est visible
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.EstVisiblePSLPAC">
+	<summary>
+ Détermine si la propriété 'dépôt PAC' est visible
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.EstVisibleLibellePrimeCourante">
+	<summary>
+ Détermine si le libelé de message de prime courante est visible.
+ </summary>
+	<remarks>Un des deux libellés au même endroit (même index de Row and Column) et dont la visibilité (si pertinent) est en alternance</remarks>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.EstVisibleLibellePrimeMinimum">
+	<summary>
+ Détermine si le libelé de message de prime minimum est visible.
+ </summary>
+	<remarks>Un des deux libellés au même endroit (même index de Row and Column) et dont la visibilité (si pertinent) est en alternance</remarks>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.ContexteMenu">
+	<summary>
+ Obtient le contexte d'affichage lié à l'écran d'exigences
+ </summary>
+	<remarks>Le contexte est généré à partir du gabarit d'affichage et des fonctions d'activation de l'ancienne version</remarks>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.#ctor(IAFG.IA.VI.AF.Proposition.Proposition,System.String)">
+	<summary>
+ Constructeur du ViewModel pour piloter l'écran de Fzcturations
+ </summary>
+	<param name="proposition">La proposition courante</param>
+	<param name="idIndividuCourant">l'identifiant de l'individu courant</param>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.InitialiserContexteMenu">
+	<summary>
+ Initialise la ou les valeurs pertinents à l'objet 'contexte menu'
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel.SetFocusModePaiement">
+	<summary>
+ Mettre le focus sur le mode de paiement
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.FacturationViewModel">
+	<summary>
+ Classe de ViewModel du contrôle de facturation
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.PrelevAuto">
+	<summary>
+ Obtient ou définit la propriété Prélèvement Automatique
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.PoliceReference">
+	<summary>
+ Obtient ou définit le numéro de référence de la police
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.TypeDateCheque">
+	<summary>
+ Otient ou définit la propriété 'Type Date Chèque'
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.Jour">
+	<summary>
+ Obtient ou définit le jour du PAC
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.TypeCompteBancaire">
+	<summary>
+ Obtient ou définit le type de compte bancaire
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.NoBanque">
+	<summary>
+ Obtient ou définit le numéro de la banque
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.NoCompte">
+	<summary>
+ Obtient ou définit le numéro du compte
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.NoSuccursale">
+	<summary>
+ Obtient ou définit le numéro de succursale
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.Nom">
+	<summary>
+ Obtient ou définit le nom
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.JourMemeExistantPermis">
+	<summary>
+ Retourne un booléen indiquant si l'option 'Même que celui du PAC existant' est disponivle (enabled)
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.ListeParticipant">
+	<summary>
+ Obtient la liste des participants d'une proposition
+ </summary>
+	<returns>Une collection de noms des individus obtenus.</returns>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.ListeBanque">
+	<summary>
+ Obtient la liste des banques
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.ListeJour">
+	<summary>
+ Obtient la liste des jours
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.EstVisibleCompteBancaire">
+	<summary>
+ Obtient un booléen qui détermine qui la section Compte Bancaire doit être visible ou non.
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.EstVisibleInfoFinanciere">
+	<summary>
+ Obtient un booléen qui détermine qui la section Info Financiere doit être visible ou non.
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.EstVisibleJourChoisi">
+	<summary>
+ Obtient un booléen qui détermine qui la liste déroulante des jours doit être visible ou non.
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.EstVisibleModePaiementNonPac">
+	<summary>
+ Obtient un booléen qui détermine qui la totalité des contrôles doivent être visibles ou non.
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.EstVisibleModePaiementPac">
+	<summary>
+ Obtient un booléen qui détermine qui la totalité des contrôles doivent être visibles ou non.
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.#ctor(IAFG.IA.VI.AF.Proposition.Proposition)">
+	<summary>
+ Constructeur du ViewModel pour piloter l'écran des Ententes PAC
+ </summary>
+	<param name="proposition">La proposition courante</param>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.ReinitialiserCompteBancaire">
+	<summary>
+ Réinitialise les données relatives au compte bancaire
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.ReinitialiserInfoFinanciere">
+	<summary>
+ Réinitialise les données relatives aux informations financières
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.ReinitialiserJourChoisi">
+	<summary>
+ Réiniitialise le jour choisi
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel.ReinitialiserDateCheque">
+	<summary>
+ Réiniitialise l'option de la date du chèque.
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13F0.EntentePACViewModel">
+	<summary>
+ Classe de ViewModel du contrôle d'entente PAC
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1350.ConfirmationIdentiteViewModel.#ctor(IAFG.IA.VI.AF.Proposition.Proposition,System.String,IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Services.Fenetre.IServiceFenetreProposition)">
+	<summary>
+ Constructeur du ViewModel pour piloter l'écran d'autre assurance
+ </summary>
+	<param name="proposition">La proposition courante</param>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1390.InstructionSpecialeViewModel.InstructionsSpeciales">
+	<summary>
+ Obtient ou définit les instructions spéciales pour un individu
+ </summary>
+	<remarks>Dépend de l'individu courant</remarks>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1390.InstructionSpecialeViewModel.#ctor(IAFG.IA.VI.AF.Proposition.Proposition,System.String,IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Services.Fenetre.IServiceFenetreProposition)">
+	<summary>
+ Constructeur du ViewModel pour piloter l'écran des instructions spéciales
+ </summary>
+	<param name="proposition">La proposition courante</param>
+	<param name="idIndividuCourant">ID de l'individu courant</param>
+	<param name="serviceFenetre">Interface de ServiceFenetre</param>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1390.InstructionSpecialeViewModel.SupprimerInstructions">
+	<summary>
+ Supprime les instructions spéciales de l'individu courant
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1390.InstructionSpecialeViewModel.CommandeSupprimer">
+	<summary>
+ Permet de faire le lien vers à fonction depuis le XAML 
+ </summary>
+	<returns>Adresse de la fonction cible</returns>
+	<remarks>Voir fonction <see cref="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1390.InstructionSpecialeViewModel.SupprimerInstructions"/></remarks>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1390.InstructionSpecialeViewModel">
+	<summary>
+ Classe de ViewModel du contrôle d'instructions spéciales
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Commun.ViewModelModalBase.ViewModelFocus">
+	<summary>
+ Obtient ou définit la propriété _viewModelFocus. Détermine si le focus est donné au viewModel
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Commun.ViewModelModalBase.ServiceFenetre">
+	<summary>
+ Obtient l'instance du service d'appel aux fenêtres
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Commun.ViewModelModalBase.#ctor">
+	<summary>
+ Constructeur de base
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Commun.ViewModelModalBase.#ctor(IAFG.IA.LU.AP.BaseWPF.Services.Fenetre.IServiceFenetre)">
+	<summary>
+ Constructeur du View Model
+ </summary>
+	<param name="serviceFenetre">le service d'appel aux fenêtres</param>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Commun.ViewModelModalBase">
+	<summary>
+ Classe de base de tous les ViewModels contenu dans une fenêtre modale.
+ </summary>
+	<remarks>Regroupe les fonctionnalités communes à tous les ViewModels de l'application, qui doivent tous en dériver</remarks>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.IndicateurAffichage">
+	<summary>
+ Classe de regroupement des indicateurs d'affichage des différentes parties liées à la facturation
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Commun.MessageUtilisateur">
+	<summary>
+ Classe de regroupement des codes de messages à l'utilisateur correspondant aux codes dans la BD LutRess.mdb
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU1370.EnumPremierePrime">
+	<summary>
+ Énumération regroupant les différentes valeurs possibles pour une première prime
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.CONFIG_TITRE_AJOUT_MED">
+	<summary>
+  Recherche une chaîne localisée semblable à Ajout d'un médecin.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.CONFIG_TITRE_AJOUT_REP">
+	<summary>
+  Recherche une chaîne localisée semblable à Ajout d'un représentant.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.CONFIG_TITRE_AJOUT_VILLE">
+	<summary>
+  Recherche une chaîne localisée semblable à Ajout d'une ville.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.CONFIG_TITRE_MODIF_MED">
+	<summary>
+  Recherche une chaîne localisée semblable à Modification d'un médecin.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.CONFIG_TITRE_MODIF_REP">
+	<summary>
+  Recherche une chaîne localisée semblable à Modification d'un représentant.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.CONFIG_TITRE_MODIF_VILLE">
+	<summary>
+  Recherche une chaîne localisée semblable à Modification d'une ville.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.GENERAL_ANS">
+	<summary>
+  Recherche une chaîne localisée semblable à ans.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.GENERAL_NON">
+	<summary>
+  Recherche une chaîne localisée semblable à Non.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.GENERAL_OUI">
+	<summary>
+  Recherche une chaîne localisée semblable à Oui.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_AUCUN_REDUCTION_AVANT">
+	<summary>
+  Recherche une chaîne localisée semblable à Aucune réduction avant.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_BONI_FRAIS_MINIMUM">
+	<summary>
+  Recherche une chaîne localisée semblable à Option frais minimums.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_BONI_INTERET_GARANTI">
+	<summary>
+  Recherche une chaîne localisée semblable à Boni d'intérêt garanti.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_BONI_INVESTISSEMENT">
+	<summary>
+  Recherche une chaîne localisée semblable à Boni d'investissement.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_BONI_RENDEMENT">
+	<summary>
+  Recherche une chaîne localisée semblable à Boni de rendement.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_OPT_DEC_ASSURANCE_IND">
+	<summary>
+  Recherche une chaîne localisée semblable à Assurance individuelle.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_OPT_DEC_CAPITAL">
+	<summary>
+  Recherche une chaîne localisée semblable à Capital.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_OPT_DEC_CAPITAL_PLUS_FONDS">
+	<summary>
+  Recherche une chaîne localisée semblable à Capital plus fonds.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_OPT_DEC_CAPITAL_PLUS_FONDS_PLUS_CBR">
+	<summary>
+  Recherche une chaîne localisée semblable à Capital plus fonds plus CBR.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_OPT_DEC_CAPITAL_PLUS_FONDS_VALEUR_MAXIMISEE">
+	<summary>
+  Recherche une chaîne localisée semblable à Capital + fonds avec option Valeur maximisée.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_OPT_DEC_CAPITAL_PLUS_REMBOURSEMENT_PRIMES">
+	<summary>
+  Recherche une chaîne localisée semblable à Capital plus remboursement garanti des primes.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_OPT_DEC_CONJ_DERNIER_DEC">
+	<summary>
+  Recherche une chaîne localisée semblable à Conjointe au dernier décès.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_OPT_DEC_CONJ_DERNIER_DEC_LIB">
+	<summary>
+  Recherche une chaîne localisée semblable à Conjointe au dernier décès, libérée au 1er décès.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_OPT_DEC_CONJ_PREMIER_DEC">
+	<summary>
+  Recherche une chaîne localisée semblable à Conjointe au 1er décès.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_OPT_DEC_VALEUR_MAXIMISEE">
+	<summary>
+  Recherche une chaîne localisée semblable à Valeur maximisée.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_OPTION_VERSEMENT_ACHAT_ASL">
+	<summary>
+  Recherche une chaîne localisée semblable à Achat d'ASL.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_OPTION_VERSEMENT_FONDS_CAPITALISATION">
+	<summary>
+  Recherche une chaîne localisée semblable à Fonds de capitalisation.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_PRIME_PROTECTION_INCLUS">
+	<summary>
+  Recherche une chaîne localisée semblable à Incluse.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_PRIME_PROTECTION_NA">
+	<summary>
+  Recherche une chaîne localisée semblable à N/A.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_PRODUIT_ABRITATION">
+	<summary>
+  Recherche une chaîne localisée semblable à ABRITATION.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_PRODUIT_ALTERNATIVE">
+	<summary>
+  Recherche une chaîne localisée semblable à ALTERNATIVE.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_PRODUIT_ASS_TRAD">
+	<summary>
+  Recherche une chaîne localisée semblable à ASS TRADITIONNELLE.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_PRODUIT_AXIS">
+	<summary>
+  Recherche une chaîne localisée semblable à AXIS.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_PRODUIT_CAPITAL_VALEUR">
+	<summary>
+  Recherche une chaîne localisée semblable à CAPITAL VALEUR.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_PRODUIT_DIPLOMA">
+	<summary>
+  Recherche une chaîne localisée semblable à DIPLOMA.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_PRODUIT_ECOFLEX">
+	<summary>
+  Recherche une chaîne localisée semblable à ECOFLEX.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_PRODUIT_GENESIS">
+	<summary>
+  Recherche une chaîne localisée semblable à GENESIS.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_PRODUIT_GENESIS_AVANTAGE">
+	<summary>
+  Recherche une chaîne localisée semblable à GENESIS AVANTAGE.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_PRODUIT_MOMENTUM">
+	<summary>
+  Recherche une chaîne localisée semblable à MOMENTUM.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_PRODUIT_MULTITERME">
+	<summary>
+  Recherche une chaîne localisée semblable à MULTITERME.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_PRODUIT_PERSPECTIVE">
+	<summary>
+  Recherche une chaîne localisée semblable à PERSPECTIVE.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_PRODUIT_REGIME_VIE">
+	<summary>
+  Recherche une chaîne localisée semblable à MD LIFE PLAN 11.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_PRODUIT_TENDANCE">
+	<summary>
+  Recherche une chaîne localisée semblable à TENDANCE.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_PRODUIT_TRANSITION">
+	<summary>
+  Recherche une chaîne localisée semblable à TRANSITION.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_PRODUIT_TRANSITION_EVOLUTION">
+	<summary>
+  Recherche une chaîne localisée semblable à TRANSITION EVOLUTION.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_PRODUIT_TRANSTION_SIMPLIFIE">
+	<summary>
+  Recherche une chaîne localisée semblable à TRANSITION SIMPLIFIE.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_PRODUIT_VIE_ENTIERE">
+	<summary>
+  Recherche une chaîne localisée semblable à VIE ENTIERE.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_TYPE_PROTECTION_CONJOINT">
+	<summary>
+  Recherche une chaîne localisée semblable à Conj.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.LUU1330_TYPE_PROTECTION_INDIVIDUELLE">
+	<summary>
+  Recherche une chaîne localisée semblable à Indiv.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.MASQUE_CODE_POSTAL">
+	<summary>
+  Recherche une chaîne localisée semblable à A2A 2A2.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.MASQUE_NAS">
+	<summary>
+  Recherche une chaîne localisée semblable à 123 456 789.
+</summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources.MASQUE_TELEPHONE">
+	<summary>
+  Recherche une chaîne localisée semblable à 555 555-5555.
+</summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.My.Resources.Ressources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Commun.Utilitaire.ContexteApplicatifEapOuIllus">
+	<summary>
+ Obtient le contexte courant de l'application
+ </summary>
+	<returns>Indicateur de bonne résolution de l'appel</returns>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Commun.Utilitaire.FormaterTelephone(System.String)">
+	<summary>
+ Formate un numéro de téléphone brut en une chaîne avec les séparateurs ad hoc
+ </summary>
+	<param name="noTelephone">le no de téléphone brut</param>
+	<returns>la chaîne résultante</returns>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Commun.Utilitaire.FormaterNomComplet(System.String,System.String,System.String,System.String)">
+	<summary>
+ Fonction de mise en forme d'un nom d'individu pour affichage à l'écran
+ </summary>
+	<param name="nom">le nom de famille</param>
+	<param name="prenom">le prénom</param>
+	<param name="initiale">l'initiale</param>
+	<param name="rang">le rang dans l'ordre familial</param>
+	<returns>le nom complet mis en forme</returns>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Commun.Utilitaire.ObtenirParticipants(IAFG.IA.VI.AF.Proposition.Proposition)">
+	<summary>
+ Obtient une liste de participants (individus)
+ </summary>
+	<param name="proposition">La proposition courante</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Commun.Utilitaire">
+	<summary>
+ Classe de fonctions partagées
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.ContexteMenu">
+	<summary>
+ Obtient le contexte d'affichage lié à l'écran d'exigences
+ </summary>
+	<remarks>Le contexte est généré à partir du gabarit d'affichage et des fonctions d'activation de l'ancienne version</remarks>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.EstExigenceCommandeAgence">
+	<summary>
+ Obtient ou définit la réponse à la question des exigences paramédicales commandées en agence
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.EstVisibleTableauExigence">
+	<summary>
+ Obtient l'indicateur de visibilité du tableau des exigences
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.EstVisibleNoteParamedical">
+	<summary>
+ Obtient l'indicateur de visibilité des notes paramédicales
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.EstVisibleOrganismePara">
+	<summary>
+ Obtient l'indicateur de visibilité des informations complémentaires aux exigences
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.EstVisibleMessageEntrevue">
+	<summary>
+ Obtient l'indicateur de visibilité des informations complémentaires aux exigences
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.ListeExigence">
+	<summary>
+ Obtient la liste des détails d'exigence à présenter dans la grille de la vue
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.IdOrganismePara">
+	<summary>
+ Obtient ou définit l'id de l'organisme associé aux exigences médicales
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.NoteParamedical">
+	<summary>
+ Obtient ou définit les notes liées aux exigences
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.EstRapportCommandeAgence">
+	<summary>
+ Obtient ou définit la réponse à la question du rapport d'enquête commandé en agence
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.EstVisibleNoAutorisationRapport">
+	<summary>
+ Obtient l'indicateur de visibilité des numéros d'autorisation dans le tableau des exigences
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.EstVisibleNoteRapport">
+	<summary>
+ Obtient l'indicateur de visibilité des notes de rapport d'enquête
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.EstVisibleTableauRapport">
+	<summary>
+ Obtient l'indicateur de visibilité du tableau des rapports d'enquête
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.ListeRapportEnquete">
+	<summary>
+ Obtient la liste des détails de rapports d'enquête à présenter dans la grille de la vue
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.IdOrganismeRapportEnquete">
+	<summary>
+ Obtient ou définit l'id de l'organisme associé aux rapports d'enquête
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.NoteRapportEnquete">
+	<summary>
+ Obtient ou définit les notes liées aux rapports d'enquête
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.ListeOrganismePara">
+	<summary>
+ Obtient la liste des organismes possibles pour les exigences paramédicales
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.ListeOrganismeRapport">
+	<summary>
+ Obtient la liste des organismes possibles pour les rapports d'enquête
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.ListeExigenceAutreCie">
+	<summary>
+ Obtient la liste des autres compagnies pour les exigences
+ </summary>
+</member><member name="P:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.ListeDescriptionExigence">
+	<summary>
+ Obtient la liste des descriptions d'exigences
+ </summary>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.#ctor(IAFG.IA.VI.AF.Proposition.Proposition,System.String)">
+	<summary>
+ Constructeur du ViewModel pour piloter l'écran des exigences médicales
+ </summary>
+	<param name="proposition">La proposition courante</param>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.ConstruireListeExigenceRapportEnquete">
+	<summary>
+ Construit les liste des exigences et des rapports d'enquêtes.
+ </summary>
+	<remarks>Appelée lors de l'instanciation et aussi lorsque des exigences changent.</remarks>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.NettoyerExigences(IAFG.IA.VI.ENUMs.TypeReponse)">
+	<summary>
+ Réinitialise les informations des exigences médicales, en fonction de la réponse à la question relative à leur commande
+ </summary>
+	<param name="valeurTypeReponse">la valeur de la réponse initiale</param>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.NettoyerRapports(IAFG.IA.VI.ENUMs.TypeReponse)">
+	<summary>
+ Réinitialise les informations des rapports d'enquête, en fonction de la réponse à la question relative à leur commande
+ </summary>
+	<param name="valeurTypeReponse">la valeur de la réponse initiale</param>
+</member><member name="M:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel.ObtenirFournisseurDefaut">
+	<summary>
+ Obtient le fournisseur par défaut pour le(s) organisme(s) vides
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.LUU13B0.ExigencesViewModel">
+	<summary>
+ Classe de ViewModel du contrôle d'exigences médicales
+ </summary>
+</member><member name="T:IAFG.IA.LU.AP.PropositionElectronique.ViewModel.Services.Fenetre.IServiceFenetreProposition">
+	<summary>
+ Interface de service spécifique à Changements pour les appels aux fenêtres popup
+ </summary>
+</member>
+</members>
+</doc>

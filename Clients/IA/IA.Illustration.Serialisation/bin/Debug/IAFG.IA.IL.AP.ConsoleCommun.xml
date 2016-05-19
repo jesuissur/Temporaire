@@ -1,0 +1,826 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.IL.AP.ConsoleCommun
+</name>
+</assembly>
+<members>
+<member name="M:IAFG.IA.IL.AP.ConsoleCommun.Generator.#ctor(System.String)">
+	<summary>
+ Constructeur de la class
+ </summary>
+	<param name="assemblyPath"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.Generator.Initialise(System.String)">
+	<summary>
+ Obtenir par réflection une class qui implémente l'interface IGenerate dans la DLL initialisé par le constructeur
+ </summary>
+	<param name="DivId"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.Generator.Generate(System.String,System.Collections.Generic.List{System.String})">
+	<summary>
+ Obtenir le code HTML à injecter dans les HTML Fixe
+ </summary>
+	<param name="DivId">Nom de la class qui implémente l'interface IGenerate dans la DLL initialisé par le constructeur</param>
+	<param name="param">paramètre optionel de la class</param>
+	<returns>Code HTML</returns>
+	<remarks>
+ En debug, le code est regénéré à chaque appel.
+ En release, le code est gardé en mémoire.
+ </remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.Generator.CreateXML(System.String,System.String)">
+	<summary>
+ Création d'un XML qui contient les données utilisé pour générer le code HTML.
+ </summary>
+	<param name="DivId"></param>
+	<param name="path"></param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.ConsoleCommun.Generator">
+	<summary>
+ Porte d'entrée et porte de sortie de la génération des pages HTML dynamiquement !
+ Permet à l'application de générer et injecter le code HTML à l'intérieur des pages HTML fixe.
+ Permet la sauvegarde des XML de donnée de l'utilitaire ConsoleWebGenerator.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.GenerateStructBase.#ctor">
+	<summary>
+ Constructeur de la class
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.GenerateStructBase.EmplacementDocument">
+	<summary>
+ Propriété qui stock si le document est dans C:\Program File ou C:\Documents and settings
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.GenerateStructBase.AfficherAgencyStaff">
+	<summary>
+ TypeReponse.Oui: affiche la donnée seulement pour le mode agence
+ TypeReponse.Non: affiche la donnée si on est pas en mode agence
+ TypeReponse.Aucun: Aucune validation
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.GenerateStructBase.AfficherRBC">
+	<summary>
+ True: Afficher la donnée si pour la bannière RBC
+ False: Aucune validation
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.GenerateStructBase.AfficherWFG">
+	<summary>
+ True: Afficher la donnée si pour WFG
+ False: Aucune validation
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.GenerateStructBase.CheckInstalledAppID">
+	<summary>
+ Valide que le ID de l'application existe
+ String.Empty: Aucune validation
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.GenerateStructBase.AfficherCarriere">
+	<summary>
+ True: Afficher la donnée si on est en mode carrière
+ False: Aucune validation
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.GenerateStructBase.AfficherComptesNationaux">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.ConsoleCommun.GenerateStructBase">
+	<summary>
+ Structure de donnée de base utilisé par l'ensemble du processus de génération du code HTML
+ Elle permet une validation contextuel générique de chaques données !
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.AeEzpUSgDxV6AN86Rw8pJAxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E667F8DA9D84EA3A4FD4EAC1EB85118D01BFA3B7205D3B92929BFFB85C0C97F4002.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.Alkl3vla3Pci2ZMqPJfU3wxx">
+	<summary>
+  Looks up a localized string similar to EE9FF7CFEDDFF66F027181B85C242E12072D3CE0F82566C6517C0EECAC9CB11B3D65AEA2082EE5505CAA16AD323316F1.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.bEWu7U4IByCL6ipIordnJgxx">
+	<summary>
+  Looks up a localized string similar to FC847E425C51AE28640BB205A297D1CB7F14E12B2054B111BFD31DBFCC1EF9BCA8B73CE22CF4A4E0DCD97496E60B1B21.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.BFQGpBTnwNlwz0rw3ZNBWwxx">
+	<summary>
+  Looks up a localized string similar to CEA667D3882844144A8E25C7E1BA705D37F67B25BE8547070381A89D69640C4DA2D193255B7F17733F98A0AF999CC941.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.BNBTDHuVvZudB1zoa9xFfQxx">
+	<summary>
+  Looks up a localized string similar to 5EB9AFDC29F21479E68273C11EE80FF4E08764D39E4D85A5D0A30A1526D63E8D3CDFA9D063BBDA9AD1472D0B7F3C5AAA.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.bQ9zBOG2ymuNXtxp98YkBAxx">
+	<summary>
+  Looks up a localized string similar to CEDA67EDA9F7D47B8C79C63C2D219790F8068769D115CDABF8F678075A91C22C9CD334B78A0E02AE29D6D060E48254BA.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.C7NcQfpGjhPPHH0VRhZ8oQxx">
+	<summary>
+  Looks up a localized string similar to 05D4026AD1006980304218217ED3BFE96E4691031022EB77D36F0A74E25C74DD5E7AABC68F782FE208D845CB38D5A347.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.c8V8uq7sK2f7WoBQ4K4vhQxx">
+	<summary>
+  Looks up a localized string similar to 5A902DC8266E13B76A8DB5C67EC9BFE4FFD738C8CF572154F1D58A5506FFF07A60353A8076F560E0E9BBBFC7EF384211.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.CdyrefU9pXk95zuuCcyzJQxx">
+	<summary>
+  Looks up a localized string similar to 349A1A4DED49F7A49153C9A9F699FBCCBF6258ABE8A2BB824471C4423DC088CC5BA7E36AA288B5C41511D3F6AB595A04.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.clq8gVnYeibRxJVTQmNVEQxx">
+	<summary>
+  Looks up a localized string similar to 4AD025E84894244A126389B12E8217C1504D9EF3DD14B9826ADF34E15A3FAA57E2E248987F65DB93B8FB09465B00B828.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.DMs93pjong8S2vAU76nmeQxx">
+	<summary>
+  Looks up a localized string similar to C089E0446109B184CAB665DB8CA7C653E70FCD7E337F5A9E5382215835665B3F1A559793F64B90240A0165C83144478D.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.eaeVxiuBaH5IqPUQXd7joQxx">
+	<summary>
+  Looks up a localized string similar to CEA667D3882844144A8E25C7E1BA705D8F33C9B260015F9D965C30A54DA64D5BA456EF38D670F9AC7B8AE9C050BC38AC.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.EguAeEyIoo01j8fZbMCaYwxx">
+	<summary>
+  Looks up a localized string similar to 5EB9AFDC29F21479E68273C11EE80FF419DB14E5C41E6F015D1946B8256082D684296C507780433C4EBAB5C4364E8C50.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.EqxTwWGxYJa8NB50uGuAsgxx">
+	<summary>
+  Looks up a localized string similar to 5EB9AFDC29F21479E68273C11EE80FF440E0A043B5D85751F0FD217A6B68C79D79D31E6F6E2397CBEA915235AC47DB8E.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.exXWWxJmxpYD53NnxJniFAxx">
+	<summary>
+  Looks up a localized string similar to C1FA607D78703C38953FCB9F240E120737B53E075885063E317683B005F8BF51FFC353530961F2AF38EEB1859555CD94.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.Ft9BI8X6kNxPACplywXRxwxx">
+	<summary>
+  Looks up a localized string similar to FC847E425C51AE28640BB205A297D1CB70646EF5916E027B61EEE871852C6E901E146C555F3849E822D5A560AA2D33A4.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.gfeKOJsQZiXBf0wkK5j73gxx">
+	<summary>
+  Looks up a localized string similar to CEDA67EDA9F7D47B8C79C63C2D219790645A1903B6B93F72FD64C8B0213AE851ABBDD92B06B4F1F3458410567047EC17.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.gxG3LhaLFppxnC36DzYLkAxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E6634AF02BCBE96C8DC643AD17ECB50863E712002924BB42CC2652E0A9D50205E42.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.h3c3NeZjCjthWxz3DTuwxwxx">
+	<summary>
+  Looks up a localized string similar to 65C1B260345A1A2DAE83D7C14D0FA7874C02846D2A4D31BC2F2100CD163D39C7CDFCF1145AC08C6766B05DADEA2AD9C1.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.HaKHv3UIeQXx5gxO3Y81Uwxx">
+	<summary>
+  Looks up a localized string similar to FC847E425C51AE28640BB205A297D1CBD1A23423AE6E8D52AEAC7FFB6B3FE0BF0E2BCED878AF056A7BDC69BBBC982DF5.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.HhEdAFhxBiMY52qdxLj1RQxx">
+	<summary>
+  Looks up a localized string similar to 98084C04FC13FE099A9BCDCD2D1D978E05B199744FFBB45BCD5FAF02565DA0787E4C5ED58F7B722558C33CD5B8BA6F0F.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.hxTZDCqdJJPW9M3UTAsJIQxx">
+	<summary>
+  Looks up a localized string similar to C089E0446109B184CAB665DB8CA7C653216AFFA2C9A512C6D6A85FC7775C9CC48C8BEEFAA3D011BD05AAD2F44FC51322.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.IEjREC2vgWPtw96BvGxe5Qxx">
+	<summary>
+  Looks up a localized string similar to 5EB9AFDC29F21479E68273C11EE80FF4E0689D0A1A8DF37ACF6D39D9B80F973CFCFFD3A840759252D2FBBD5323EBDACC.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.iJFCXRY0XR5Ue2aFBwLAwwxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E6698FE9AC8AEF1BD691946F6179A2DB211C5C164933CC86E277D831F39F8EF7731.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.IndexKey">
+	<summary>
+  Looks up a localized string similar to 9C944E4A302D981685C4426214400A20229D1D8019D65FBC61BBF1DB8E92B99A857FBF3A0D1DC7E86EFFE922C519ADE8.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.IUNnUHJxJ6NQ274eK5yewwxx">
+	<summary>
+  Looks up a localized string similar to 0523839182FC41FE449E224F01B6005B210ACB1515561CE59C77A33D1F0CE40187A0E01D3A5934587A683D6B1DEA6BFC.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.IuVtlgYyn7S1q63BUMmZZwxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E6665A938D79F62A28618F5526B14953395D9F2BFE52E204C0A18C3BF046D437A26.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.ix5IZrhDxFRzRbA9JHr8fgxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E66B1521E2F6431047ABDD1FBFFBA96AABCC2122D05050A5312E1CC1764B1843C4D.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.jJUUyexwTUxxZWHlEWxv4Qxx">
+	<summary>
+  Looks up a localized string similar to FC847E425C51AE28640BB205A297D1CB86A6E8CF13E6379DC304ADFE3AFD92D06CB064C6C2C490A106E63C42DB6B9660.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.JSATFETA42MZpq8uxJtKGQxx">
+	<summary>
+  Looks up a localized string similar to 385B9C2D8EE247F12439921C5C13AE09053CA63365D4AE1621FC45D844C2AE75398CE0A3104D680D8105C1FB1F1BAD8C.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.jUxvDNkrQjhlExq6xvQEBAxx">
+	<summary>
+  Looks up a localized string similar to CEDA67EDA9F7D47B8C79C63C2D219790645A1903B6B93F72FD64C8B0213AE851A6F23450C1876A540205D57070F73E31.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.Jx28YxJfKkX6VHtoe15CBwxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E66A7A401FB0B10F0D27372E4480B74966FBEE0432270E8AB74E9A98AB80A092400.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.jY0Aoe7ZmdDduLCoWACF1Qxx">
+	<summary>
+  Looks up a localized string similar to C089E0446109B184CAB665DB8CA7C6530B47D046A554A8B953A6E1EEFBE19744131DF1F29E4F0B2497F755102247C7D5.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.kgTvg9XClYfRB897I6whYgxx">
+	<summary>
+  Looks up a localized string similar to C089E0446109B184CAB665DB8CA7C6530A34CE82A22239FFE62BBB40AA40123DC80E41DDC5161272BC31281426BA501D.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.kuaaIM6lq3uSsuTI91BgqAxx">
+	<summary>
+  Looks up a localized string similar to 243E121F3C8E1E47E0A5F052F035F81A21E59CB8C0250B6EDE84C632786B340A3FE5E4EBDB07DC2D6E03FA092D252A5D.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.LJBfgK1Rb8nxG5anJJApswxx">
+	<summary>
+  Looks up a localized string similar to C088604476DC3BEEF899FC4C4C83A641BF54D0A4B14CEF6B7186F3582A6B82CA2699556043E8F7D163E44A5EF0C0F6DD.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.LOnF7syhMuHPqEWWmXVxwAxx">
+	<summary>
+  Looks up a localized string similar to C088604476DC3BEEF899FC4C4C83A64121A9657689ACF6D1C04D718A5181A9133296892032F94873BFA353D5C395B85C.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.Ls4o119DWcuMBgXVZsWwrQxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E66FE96B9454E1A69461565850AC6A7275353DE1178E2AC9AC4D7B89F9EBE0FA48F.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.LUMEG6q5ugBSY3r5A79KqAxx">
+	<summary>
+  Looks up a localized string similar to B28BD9C58DD5C66A726839B416AC0BD6FEB83E4C38DDF8B4F4BA3F7CF134D0BF634E42F155F492243F7424A0363B11E1.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.m0AWmVgHcJyhYUSt5vCSXgxx">
+	<summary>
+  Looks up a localized string similar to CEDA67EDA9F7D47B8C79C63C2D2197902F41380D66B572BD8A85DEAE0C01B173B4518CE3917168F15FFE0628AE270CEC.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.mGc29G8WD0qDr8On1dEJ8Axx">
+	<summary>
+  Looks up a localized string similar to FC847E425C51AE28640BB205A297D1CB9CE152176DF98F246EBA38704B5BAA8D0E3CCFFCA756B03CC971074430C02849.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.mhfVXC2di3wjnuPFtfji6wxx">
+	<summary>
+  Looks up a localized string similar to C089E0446109B184CAB665DB8CA7C6531775181AFCAC1EF9DCEF0D1441472EC8DB94E375C7BDAF16D38572D303D0A5BB.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.mjDkwWlmEMlFjsBAQW0aHQxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E669949EC1A063923498DB584A617D57B8C078BC6EA0BBCD8360953F385A3C93CF3.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.MwRCFSBVyJ5QisISw0RiZgxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E66EBA14B81B3B59F1B34E8C484BBCFA6ADB416E775F3649774C2082382F6D7D212.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.n3OM6EVxKRsY7kfmZelrqgxx">
+	<summary>
+  Looks up a localized string similar to t8HMZVu1+4aaOhJ3LWs5PHn0aeFxxfwSh/UeBjum/ptv4NJlKA8SMjBdMTyT9i3nDU+QNfBGd6F4IfECBai5kg==.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.NxbjBJDTtKN0rXtvvqD75gxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E668F8ABD6EC94FCF9A510E7F100DCF184EF3A4012A6BFA62C8F59ABC0F4028D521.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.NxtRQeDUinQJNKbXBqNRhQxx">
+	<summary>
+  Looks up a localized string similar to 34579A2B6DB9B65C7A7A3DBDF489FA44B2237D2547041385BF391192DFF8B6E3FE24BED9F46C4D76070919AF0DB4E78C.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.oAiph1xmSpSfwRHG9H8lhgxx">
+	<summary>
+  Looks up a localized string similar to OTRnh3fOdbuNZ7PRSrwRtylJqC42pDGQkXm2Cav/dNUK5J5vGNW/xo04+qJPtuOYgaJ9pnnPKU838GOug20kbw==.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.od8SjfrNP0YMu2G7QIe7kgxx">
+	<summary>
+  Looks up a localized string similar to 8C4046208A7245B9BD365F9B82C9C1E4EDC03E2D8E5A7D396BD4BB2448E394819AAB1F0E40119BB6DA9B35C67EBE8481.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.oqMpxf6xdSC0exyyXKuF8gxx">
+	<summary>
+  Looks up a localized string similar to 3D541FAA2097904B1A738DB9F6BA7BDD9F2A0C601905A7AF98511CB90135B5BF0A62E10996E789AEB90A580C6D4D790A.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.ozFQJZP6mEhV4UBRTqWeLgxx">
+	<summary>
+  Looks up a localized string similar to 65C1B260345A1A2DAE83D7C14D0FA787CC6B0078725DE717995FBCB6C7F90B7B591053025749C857DAA838B51A546136.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.PV6la4ybjOneL9oTDyKX7Qxx">
+	<summary>
+  Looks up a localized string similar to 28801440A6C1D3E08D5247A986C1C3E0CF7747AF549F36583A74497D8B5507836D76F0378DD6B3929B7A9EB44BF68219.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.PxXOb8ymzVUbC8MxSnwxlwxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E66D29EA2E18EA73B1E36778E5170A30393B0F33D4F9A4B61D8D7B0FDA45C92AC8D.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.Q6qazzEoYufaoejg08pAvQxx">
+	<summary>
+  Looks up a localized string similar to 3C5E1E2F5541ABA0105F882F886DC43608D7F6772B8C63329577AC36B676C40258380F1515F38BA05EDC8B8D249115BD.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.Q8JpkrqXvwPTdmMo4p0SWgxx">
+	<summary>
+  Looks up a localized string similar to CEDA67EDA9F7D47B8C79C63C2D2197901B8F42F4B4F6FE3B39786707C55A1C7B798BC8F443B37C3CDA18CA0C2061CA9E.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.RlYUaqTlpO95gGxqL1IzrAxx">
+	<summary>
+  Looks up a localized string similar to 89BDC45E4497A24B38579C2B98964C4B058136478A24A41FD758B0FA2EA290F167CAE3D383532BB0B8D438B0776C884E.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.rnHyxJdd5YtlwLKWXAjDWAxx">
+	<summary>
+  Looks up a localized string similar to FC847E425C51AE28640BB205A297D1CB9B7F417F235E1DD58BA91D5EE79403A9396730DF1EBD99656E86AD059C4E3733.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.rRfvNfhc6M3OIMclzQ5P8wxx">
+	<summary>
+  Looks up a localized string similar to FC847E425C51AE28640BB205A297D1CBFBC11B9F3F4AE5910554CB3C456F47E34451B005963D7B5CCFC242CDDFD18A8A.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.rXEkXDLa37CWqrq6Yl9G2gxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E66B7617E4EEBE5EAF88494DA01B6F8B54DC0F1BC91D2E590F79BC46B37AFCDFEE1.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.ry7XdJ3Ff25x3V20hs17JQxx">
+	<summary>
+  Looks up a localized string similar to 4DE1A670F5E5FA7234579A2BA084504240790974CB786D718CAC66D62723C17DBA6BA1924625811E066D14C4EC36D159.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.sBFHW2cBxCYw21Bu2SjArQxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E669EB207D90A77BFE1E0CD6A15A33D6274F5AFA1F639F5191251B33C4FE5208CD0.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.SEwZBqgbGXp3Sc1Hq0uYzgxx">
+	<summary>
+  Looks up a localized string similar to CEDA67EDA9F7D47B8C79C63C2D21979069211978AA7ADF3813FF64FF0527D8689B063638A553890645B357C1195F1430.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.SgNDxZ4gMfdm3rzrg3Cjxwxx">
+	<summary>
+  Looks up a localized string similar to 65C1B260345A1A2DAE83D7C14D0FA78728B2B96BBCB37C2F2A839E744B26DD258BC3B370DDEA3EDD39FFF5397585B0B0.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.Sp44FeynN1fHxUiLHPnLTwxx">
+	<summary>
+  Looks up a localized string similar to FC847E425C51AE28640BB205A297D1CBE5D847D7050B36E13F1654C3EE29DC8B09AB6080334D10F60FEDCA4CD30D8106.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.T0kJReT1txSy3xAYBVfCggxx">
+	<summary>
+  Looks up a localized string similar to D5FDEA7EA8405420E48A7245C81FE40FAA5B015ABF784B213C62665F556CCC1713B3C7FFA0045886876BACD31A73F2D7.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.TfoQu6Tnd7UvPYOzkFkVLgxx">
+	<summary>
+  Looks up a localized string similar to C089E0446109B184CAB665DB8CA7C6538166DEFFEB0E70C0F828B105707D10DBD6B8BA332EB2C0D724A7AF5C40C5507F.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.tt1ZVxUYGCpAcBXfQiJihgxx">
+	<summary>
+  Looks up a localized string similar to 65C1B260345A1A2DAE83D7C14D0FA787DA95B26B95AC7FDF65EB04D5196E30DB8A94C8F27A7618EE2F1A88E693C82845.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.TUdFL408UKjYLL0xkvxM5wxx">
+	<summary>
+  Looks up a localized string similar to B4685A349ADC4DEE36D99BEC42A7A1D34E48030247130350D3BDC34FEC2DDCDDB4CE6540F43B3696550143B7DBB61DD6.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.tW8P2LmUy62jp4i4nr0EsQxx">
+	<summary>
+  Looks up a localized string similar to 65C1B260345A1A2DAE83D7C14D0FA787B0B861AB868FD362553198BA2E9579038E23B8D0E5345B7FFA968B0F6996EC2B.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.u57nrO4waluDgfs6HTBwCgxx">
+	<summary>
+  Looks up a localized string similar to 5EB9AFDC29F21479E68273C11EE80FF419FD2F1EF3F009237C9DBC14A5C854CAD124E39770058E5BB810C7E871394330.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.UuepxWUl6VbVCxsJx4iiPAxx">
+	<summary>
+  Looks up a localized string similar to 5EB9AFDC29F21479E68273C11EE80FF4D6AF28762EE76B1EF56F2428A26EF1D0201D4C02AC182A88FB72901C8ABAB938.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.uuxfkxBQN5eCqBQ01gsylgxx">
+	<summary>
+  Looks up a localized string similar to CEDA67EDA9F7D47B8C79C63C2D219790630DE0C56F41D2BC5AD1DCEE69568125F0029AD227EBDDC672FCDE6E3C497EF3.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.uwgjZ7T0psvbSSsLg28oCgxx">
+	<summary>
+  Looks up a localized string similar to 46A7A3D3302218119463CA31CED9E7EC0966E6351ACE1CE229B060D502703B9B3E88CAC0A799053F2D921E2979FA70D2.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.v5L73Lhf912PFIK0tNtT6gxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E66C24F1C613276CD1FD4B86A6E8079347B2BCEF6125CC06F92AE2F18EC40BEE7E5.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.vaVd7W2sxKdByPFY27gRHAxx">
+	<summary>
+  Looks up a localized string similar to 6A8835C422B611DB6067B0333A5E1DAF179AF54E9421D13308D8D9A4B433F4590FAF64C147A0114C47D0CF3CCFE9D336.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.VgyvPqobSEwEz210irKXFgxx">
+	<summary>
+  Looks up a localized string similar to A805D402CC4A6625F86C7C36694835A420D14C40C54F73DD4B2AC2FB09DC3370EA15E9D485DB0BF54C06B209C66B135D.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.VP7yvUnWL2Nn8ULHRUpAhgxx">
+	<summary>
+  Looks up a localized string similar to 5EB9AFDC29F21479E68273C11EE80FF4CB9B83D85AD83533F3164657CFABBE113C655E8867C7E9F5056CA36D05B8D379.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.VTZIymThYOwLKxcts7qQzQxx">
+	<summary>
+  Looks up a localized string similar to 16EF8BF7DAC9EDE4E6DBF3ED745DBA2E50ADED332A9FE602D438EB81C3929039F0E8C31936F36EADD9AA697B4E6EDC9F.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.VWeSNPH2ZaqIxwLtI4gzsAxx">
+	<summary>
+  Looks up a localized string similar to D1ADE85618420C217089B84494764A3BC662BC62E77CBDD75222C9499A9501E61DDE0335F9FDE81AB88A8C5499FFDF29.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.vwmUsIQQGVUgeOnBXsFvNAxx">
+	<summary>
+  Looks up a localized string similar to CEDA67EDA9F7D47B8C79C63C2D219790C18CC548F807B90B891A548F361015A984552143EC898C4439EE64F400F9B7A6.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.WaHZD6JajnPO4YxaCOSomgxx">
+	<summary>
+  Looks up a localized string similar to 6847B423ADDC566EB65BDBADDA91EDC852C8FAE333C316DFE0F6A55EFDF809769619338E731C774DF95F6C23C8BC10BE.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.wKqe92TYMrgEKNdWpzGpQgxx">
+	<summary>
+  Looks up a localized string similar to wL3FyPo03Nx+bWnwEdQSg9aM+YV1iXc9qnCSM/G3VjYYYv/Hjlec9p0mSg2u1DJWEE1ps5a/lvrdhmKeHAxBlw==.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.wLwKfbrxrJYPloPuNudVzAxx">
+	<summary>
+  Looks up a localized string similar to C089E0446109B184CAB665DB8CA7C65346DFC7466A0F1A76889037204D691C3FB650C529CFF665A28D6277A7F468C54E.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.WMkwk2x2WZZ2cfxAKdlnRAxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E66EFA1CD941C9F7E0DFB8226550E2F4059A201F5BAA78411F9DB22149113E385A7.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.wNTKXxuxycmNnvx4eh9MuQxx">
+	<summary>
+  Looks up a localized string similar to FC847E425C51AE28640BB205A297D1CB8ED119CD0F970F04F52FB98C3734A2AEE4C54693B41EF60F41A5A3336DF011A6.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.wpeWSs7jYvfy26SVL4uvxAxx">
+	<summary>
+  Looks up a localized string similar to CEA667D3882844144A8E25C7E1BA705DC2367E411524F88283D28737081CE065BFB48256900F5CDD875A55CFEACC19AD.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.WyYhXQHmYgQWFT5bbjt9zwxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E66BD5BCBD04BB16C944CFB82DAD4FD53724098D723A7739518878187E771DDB42A.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.X0oAFLhuYdrdcBxHjs4cGQxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E66AA6428D0342D2A0F9BB42216AF011A33B57C3F53C00970906D81AECA3BE622C9.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.x3BQWgohop0rBFxtJN6y0gxx">
+	<summary>
+  Looks up a localized string similar to 05220391F1EFF877842BC2158D2C479636C76080114D763FBB0833054EF03A22890BBAC30E0B69D50315A69BE2CB0F7B.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.x3nDwdaOoz2Y2i3pq2PvDwxx">
+	<summary>
+  Looks up a localized string similar to E125F192D1046982C9EDE4764DBC265E1B9409958D9B7E0F08137E5C9B89E762B940A63C9EB6950492B83B3F08FCCB1E.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.X3wbnSnhraufHib5rQoJ8Qxx">
+	<summary>
+  Looks up a localized string similar to 65C1B260345A1A2DAE83D7C14D0FA7878829CE1E666270480BE0535D60031126CA04017B751C965AC1202357D13E7E91.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.x6GohPMgrYCpQ231WhPU6Qxx">
+	<summary>
+  Looks up a localized string similar to 76AE3BD746D7A3EBB5ADDA569A63CDB1F53549A723A4C0AD18043B99E8E273E8D14EDAE0EFBDDF810E76AD463C56E028.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xaWqIEZp2ntw8U6CWlt4pAxx">
+	<summary>
+  Looks up a localized string similar to 5EB9AFDC29F21479E68273C11EE80FF4A31332C4558DEC902EFFBFB720530EFC11855672E0F6DA04F7DAA09B69C875F8.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.XeXyhifuCqdfSIaXejxkUwxx">
+	<summary>
+  Looks up a localized string similar to C089E0446109B184CAB665DB8CA7C653E315F6BA11D4E3ED7C7F92CC48D8C330C6B76AAB3FCCDB1F5FB5A69DF8D7CBDF.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.XFcUEKcIgijwxCSjallEIQxx">
+	<summary>
+  Looks up a localized string similar to FC847E425C51AE28640BB205A297D1CBB115CF0B2E05C422410F0EDA981A4508E80C2F246E1408B76BF2841E837D0C18.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xhii1xLXMzYv5hJ2q603Dgxx">
+	<summary>
+  Looks up a localized string similar to 5EB9AFDC29F21479E68273C11EE80FF4D18ED66D296FCA5C3C473E01298FC792E877D2D9BB29C67ED93E535B88D75E4E.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xI1cXPykPQgQG7zmI4GhVwxx">
+	<summary>
+  Looks up a localized string similar to C089E0446109B184CAB665DB8CA7C653F33321D5DFCFD15426EF7514B2ED5EF2EC90E27A08373E8EC55D3428C15CDEB6.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xIdQZuxuaEoDxsIr16lwNwxx">
+	<summary>
+  Looks up a localized string similar to CEDA67EDA9F7D47B8C79C63C2D21979067647448563461A11CFDCCE2A0337A0E5292591A3410CE10154A6F13A3AB5AB3.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xJJYsNmuqalsrcOFY7luwwxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E66F0B534B1FBB5C9BC4E90FA986EECACCB74CD4308B7182ED79DF678DD4BE29D5D.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xjWKB9CDBemWVNHLDYiJqwxx">
+	<summary>
+  Looks up a localized string similar to CDD2666944002200A1F3D07902C601E38588C2C54491719164780BF87052C2CD3C62D7F560D76D628B7B42C98E2C7A85.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xk0yztGRWsy9mUKvXMGpHQxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E6690FCCDF6CDC971F755643F1A7261B843421CB7AC1FB30E04E956EE5A6DDFDC54.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xKAwW2p9tkZOMD7uxXmzbAxx">
+	<summary>
+  Looks up a localized string similar to 65C1B260345A1A2DAE83D7C14D0FA7874E00DF2AF015E8253C1D7EF2D09D9DCC4E0F5640680931F884591D9CB73D6263.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xKxgoJE8xK2SHCtxTo5Fawxx">
+	<summary>
+  Looks up a localized string similar to 65C1B260345A1A2DAE83D7C14D0FA7872C7ECA49F1463DB98A10D731F5968A16F799282ADAD95E66EB112FAEF88C8CB7.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xLtfgk3bxrUxGA0v160meAxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E668AADF1FC6D2871F3F1452BC6BEB6292BEA011AAEC238836B180C6244C37E07FD.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xof2R8xXCMiwuT5WubyBngxx">
+	<summary>
+  Looks up a localized string similar to 65C1B260345A1A2DAE83D7C14D0FA7875093BD9C202A1D7B7CF8AA034C6EEEAF9B368724114113F48B02CBF82BF16FB0.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xOwQflwElf1DHilearkxMAxx">
+	<summary>
+  Looks up a localized string similar to 65C1B260345A1A2DAE83D7C14D0FA787E1118455EC523DCC3487BF48B841FA5B1F3971B4F9BD2FAFB008571F0D509375.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xpPoSwnbkfJCGF6nxXiGqgxx">
+	<summary>
+  Looks up a localized string similar to 5931AD98ADC3D661C41C620EE9BE745F203A790F5D1DE72F350B938936ADAA3E3B5C5ED230FFE07A239BEAE0C18B0A39.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xrec7YzBY2vVJCdYwlTJ7gxx">
+	<summary>
+  Looks up a localized string similar to C089E0446109B184CAB665DB8CA7C65399C747B9B08EE3930CF4B93FF6C2BA7E36A5231CCE3BD8B25B2EACD36B36361A.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xRQPGbRpGHSMdH1sznY3Kwxx">
+	<summary>
+  Looks up a localized string similar to 65C1B260345A1A2DAE83D7C14D0FA787CC1FE7F80110E57EDFFFAE2DF1EE3E5B692F76354312FC0A76757230BAC3A601.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xRSV8HYFu2TFOnSFauKcnAxx">
+	<summary>
+  Looks up a localized string similar to 850E43877D3DBF9E5EB1AFD8265993AC15D7722A357ADA2BCCE0E500B87784D52B3599EC1FE6957B526C985D08C334C5.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xsv7q9hSPpxoXQ7X0fQ3Dgxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E66860D1A5D408A52570EB5503D34EF167C8BD2CD8EFC0DDEE7D5087BE0A1657F37.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xu4tbxCp6ucpI2HgJT0moQxx">
+	<summary>
+  Looks up a localized string similar to FC847E425C51AE28640BB205A297D1CB018FD019D3580C894D54680BBC2CCF705CC676ECB45C95CD1583583F1C97BAEF.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xuk6XUR5tPPXpecSHjyJzAxx">
+	<summary>
+  Looks up a localized string similar to 0DED8676BE6FDFB78E8E47C73DCD9E667E91ED4649314729E0AE0C416713808197EBD520CED952E05ED796B3CCFD7DA1.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xVxdZPe53PXyf0yK4fwwLQxx">
+	<summary>
+  Looks up a localized string similar to AC83D6417E83BFC1E1227191FE9DFFCEF1AD77FF88FF8EE389D4CAD755FD3A06C9E4BF0A3B82E190CB8F63AC4FF4197E.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xxXf0Ta80f9ejAeiSxCZMAxx">
+	<summary>
+  Looks up a localized string similar to 16EF8BF7DAC9EDE4E6DBF3ED745DBA2E315A19E27BF2745382FC69802C9BCBF75C9857B8263E616B47C15C093FBC50FB.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xZ03eGylJxKBjE13Dx4STAxx">
+	<summary>
+  Looks up a localized string similar to 385B9C2D8EE247F12439921C5C13AE09053CA63365D4AE1621FC45D844C2AE75398CE0A3104D680D8105C1FB1F1BAD8C.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.xzyCpvxgLQOmbkWnqpouvwxx">
+	<summary>
+  Looks up a localized string similar to kyoX6CP7i9udkqs2OuqYPL9GjHMamj9oMIe+yRBNHsdYNqxSIoTkaPWSa3DClLoUTH5GVChAGjx4FITlPd5acQ==.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.Y0DI3v9QxX8MGaoHqlFGiwxx">
+	<summary>
+  Looks up a localized string similar to C089E0446109B184CAB665DB8CA7C653B2CF427CEC8B6CDCCCCE0F75C4FEDEC342CF2DAFF98FBEA6C556A59204F77173.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.Y8mmjG8KRY0pAUbOP5itaAxx">
+	<summary>
+  Looks up a localized string similar to 445C222E76D3BBE9F67BFBBD0935859A3A1A58D610CCD55ED60FAEA16B2AA85B1CD0D4125CF7C84DD7FD8556E5F8B559.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.YffBEbGxLU1QnfHjiPiGrQxx">
+	<summary>
+  Looks up a localized string similar to CEDA67EDA9F7D47B8C79C63C2D2197907626409255ED3DAE3A35A3971AA1E29B0F76CCC337D17C5801E7EDD54F8E7309.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.yMJmbB2x1wKjvoJt6q1AKQxx">
+	<summary>
+  Looks up a localized string similar to 5EB9AFDC29F21479E68273C11EE80FF436DD693D31DC629B9AA4D510DB0837A2288113862E3E6D683D9E917AB6174D9B.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.Za7kN0P5l0Z6zJw1GiE99gxx">
+	<summary>
+  Looks up a localized string similar to 243E121F3C8E1E47E0A5F052F035F81A2CA9FDE95649F4095F71A6240CDF80811C46CF978C0DEDA5BC98B36C2B25F313.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.zcrRP5CuTuuNOsxKbgxiRQxx">
+	<summary>
+  Looks up a localized string similar to 5EB9AFDC29F21479E68273C11EE80FF46FEF2E1B21E7E2AD5A35F57FD5EB340559633FDBBAB60CC5EE96F550493E9E2C.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources.zLbbMRfznEZM9KnlPRMNCgxx">
+	<summary>
+  Looks up a localized string similar to 247E123F9C424E2166EA33F54D07A78346B265FC8594BEEE9ACD396C1FCD17A86884809FC2F6FD3D5861490D8B59EE24.
+</summary>
+</member><member name="T:IAFG.IA.IL.AP.ConsoleCommun.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.IGenerate.Generate(System.Collections.Generic.List{System.String})">
+	<summary>
+ Retourne le code HTML à injecter dans les HTML fixe
+ </summary>
+	<param name="param"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.IGenerate.SaveListes(System.String)">
+	<summary>
+ Sauvegarde des données dans le répertoire passé en paramètre
+ </summary>
+	<param name="path"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.IGenerate.LoadListes">
+	<summary>
+ Chargement des données à l'intérieur même de class ou dans le fichier sauvegardé par la fonction SaveListes
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.IGenerate.cache">
+	<summary>
+ Add Comment
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.SerializableDictionary`2.GetSchema">
+	<summary>
+ Aucun schema n'est suporté par cette class
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.SerializableDictionary`2.ReadXML(System.Xml.XmlReader)">
+	<summary>
+ Lecture d'un fichier XML
+ </summary>
+	<param name="reader"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.SerializableDictionary`2.WriteXML(System.Xml.XmlWriter)">
+	<summary>
+ Écriture d'un fichier XML
+ </summary>
+	<param name="writer"></param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.ConsoleCommun.SerializableDictionary`2">
+	<summary>
+ Le Dictionnaire du framework .net ne suporte pas la sérialisation.
+ J'ai donc créé cette class pour y ajouter la fonctionalisé !
+ </summary>
+	<typeparam name="TKey"></typeparam>
+	<typeparam name="TValue"></typeparam>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.AccesServices.GetInfoIntermediaire">
+	<summary>
+ Retourne une string contenant les infomations de l'intermédaire dans le registre
+ </summary>
+	<returns></returns>
+	<remarks>Chaque élément est séparé par un vbtab</remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.AccesServices.SetInfoIntermediaire(System.String)">
+	<summary>
+ Sauvagarde la chaîne de caractères dans le registre
+ </summary>
+	<param name="info">le contenu des infos, séparés par des vbtab</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.AccesServices.GetInfoDemarrage">
+	<summary>
+ Retourne une string contenant les paramètres de démarrage dans le registre
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.AccesServices.SetInfoDemarrage(System.String)">
+	<summary>
+ Sauvagarde la chaîne de caractères dans le registre
+ </summary>
+	<param name="info">le contenu des paramètres de démarrage</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.AccesServices.IsConnectionAvailable">
+	<summary>
+ Vérification de l'accès à internet par le DNS
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.AccesServices.downloadFile(System.String,System.String)">
+	<summary>
+ Download d'un fichier web dans un dossier local
+ </summary>
+	<param name="link"></param>
+	<param name="saveAs"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.ChargementDynamique.InitialiseListLienMenu">
+	<summary>
+ Cette liste est utilisé au niveau du ValidateTab!
+ </summary>
+	<remarks>Elle est initialisé par GenerateMenuSection</remarks>
+</member><member name="T:IAFG.IA.IL.AP.ConsoleCommun.RegistryUtils.RegistryNotifyFilter">
+	<summary>
+ Filtre du type de notification lever par le handle sur les clé de registre 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.RegistryUtils.RegistryMonitor.RegNotifyChangeKeyValue(System.IntPtr,System.Int32,System.Int32,System.IntPtr,System.Int32)">
+	<summary>
+ Permet d'ajouter un handler sur une modification au registre définit par le pointeur hKey
+ </summary>
+	<returns>Erreur Win32</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.RegistryUtils.RegistryMonitor.RegOpenKeyEx(System.Int32,System.String,System.Int32,System.Int32,System.IntPtr@)">
+	<summary>
+ Permet d'ouvrir et d'obtenir un pointeur sur un registre
+ </summary>
+	<returns>Erreur Win32</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.RegistryUtils.RegistryMonitor.RegCloseKey(System.IntPtr)">
+	<summary>
+ Permet de fermer une clé ouverte par la fonction RegOpenKeyEx à l'aide du pointeur
+ </summary>
+	<param name="hKey"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="E:IAFG.IA.IL.AP.ConsoleCommun.RegistryUtils.RegistryMonitor.RegistryChange">
+	<summary>
+ Évenement lever lors d'un changement au registre
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.RegistryUtils.RegistryMonitor.OnRegistryChange">
+	<summary>
+ Lève l'évenement ChangementRegistre
+ </summary>
+	<remarks></remarks>
+</member><member name="E:IAFG.IA.IL.AP.ConsoleCommun.RegistryUtils.RegistryMonitor.Exception">
+	<summary>
+ Évenement lever lors d'un erreur
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.RegistryUtils.RegistryMonitor.OnException(System.Exception)">
+	<summary>
+ Lève l'évenement Erreur
+ </summary>
+	<param name="erreur"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.RegistryUtils.RegistryMonitor.#ctor(Microsoft.Win32.RegistryHive,System.String)">
+	<summary>
+ Constructeur de la class
+ </summary>
+	<param name="registryHive"></param>
+	<param name="subKey"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.RegistryUtils.RegistryMonitor.#ctor(Microsoft.Win32.RegistryHive,System.String,System.Boolean)">
+	<summary>
+ Constructeur de la class
+ </summary>
+	<param name="registryHive"></param>
+	<param name="subKey"></param>
+	<param name="watchSubKey">Monitorer les sous clé du SubKey</param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.RegistryUtils.RegistryMonitor.NotificationFilter">
+	<summary>
+ Retourne ou définit le filtre de notification des modifications au registre
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.RegistryUtils.RegistryMonitor.WatchSubKey">
+	<summary>
+ Monitorer les sous clé du SubKey
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.ConsoleCommun.RegistryUtils.RegistryMonitor.IsMonitoring">
+	<summary>
+ Statut du traitement principal
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.RegistryUtils.RegistryMonitor.InitRegistryKey(Microsoft.Win32.RegistryHive,System.String)">
+	<summary>
+ Initialisation de base de la clé à monitorer
+ </summary>
+	<param name="hive"></param>
+	<param name="name"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.RegistryUtils.RegistryMonitor.Start">
+	<summary>
+ Crée et execute le thread du traitement principal
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.RegistryUtils.RegistryMonitor.Close">
+	<summary>
+ Termine et ferme le thread du traitement principal
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.RegistryUtils.RegistryMonitor.MonitorThread">
+	<summary>
+ Porte d'entrée et Gestion d'erreur du traitement principal
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.ConsoleCommun.RegistryUtils.RegistryMonitor.ThreadLoop">
+	<summary>
+ Traitement principal des appelles à l'API.
+ Ajoute un handle sur la clé définit par _registryHive et _registrySubName
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.VI.AF.Illustration.Wrapper
+</name>
+</assembly>
+<members>
+<member name="P:My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Wrapper.COM_Illustration.#ctor(System.String)">
+	<summary>
+ Constructeur utilisé par le wrapper de Base pour instancier un objet Illustration à l'aide de paramètres
+ </summary>
+	<param name="Xml">String XML contenant un objet Illustration sérialisé.</param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Illustration.Wrapper.COM_Illustration">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

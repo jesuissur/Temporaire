@@ -1,0 +1,770 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.IL.AP.Trend
+</name>
+</assembly>
+<members>
+<member name="M:IAFG.IA.IL.AP.Trend.Utils.GestionInfoProtection.#ctor(IAFG.IA.IL.AP.IllusVie.NonTrad.CtrlIU.InfoProtections)">
+	<summary>
+ Constructeur de cette classe. Elle reçoit l'instance de l'objet visuel auquel 
+ elle sera associé
+ </summary>
+	<param name="parent">Instance de l'objet visuel auquel cette classe est associé</param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Trend.Utils.GestionInfoProtection">
+	<summary>
+ Classe qui contient la logigue d'affaire du contrôle visuel des protections de la
+ section "Illustration" représenté par la classe "InfoProtectionTrad" de couche
+ IllusVie.Trad
+ </summary>
+	<remarks>Cette classe sert à séparer la logique d'affaire de la classe visuelle 
+ auquel elle est associée. Elle hérite de la classe GestionInfoProtectionTrad qui
+ contient la logique de base de la gestion des protection. Cette classe est instancié
+ au niveau applicatif par la classe "FormulaireAssure".</remarks>
+	<history>
+		<pre>
+ Auteur               Date       Description
+ ==============================================================
+ Robert Bastien    2007-10-02    Création
+ </pre>
+	</history>
+</member><member name="M:IAFG.IA.IL.AP.Trend.CtrlIU.FormulaireAssure.AjusterInfoPrestDeces(System.Int32,System.String)">
+	<summary>
+ Cette fonction permet d'ajuster les informations pour la prestation de décès dans l'entête du formulaire.
+ Pour Trend, la prestation de décès sera toujours "Capital + fonds"
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.CtrlIU.FormulaireAssure.AjusterBoniInteret(System.String)">
+	<summary>
+ Sert à déterminer la valeur par défaut de boni interet
+ Pour Trend, le boni d'interet sera toujours "Option frais minimums"
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.CtrlIU.FormulaireAssure.ObtenirTypePrimeDemarrageApplication">
+	<summary>
+ Sert à déterminer la valeur par défaut de type de primes versées au démarrage de Trend
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.AccesServices.#ctor">
+	<summary>
+ Uniquement déclarer pour faire en sorte que FXCop ne souligne l'erreur 
+ "Static holder types should not have constructors"
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionDetailsPrimes.ObtenirCoutTotal">
+	<summary>
+ Fonction qui permet d'obtenir la valeur à mettre dans le champ coutTotal de la
+ DW du rapports des primes
+ </summary>
+	<returns></returns>
+	<remarks>Est overrider dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionDetailsPrimes.ObtenirPrimeMax">
+	<summary>
+ Fonction qui permet d'obtenir la valeur à mettre dans le champ prime_max de la
+ DW du rapports des primes
+ </summary>
+	<returns></returns>
+	<remarks>Est overrider dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionDetailsPrimesOptionsProtec.ObtenirCoutTotal">
+	<summary>
+ Fonction qui permet d'obtenir la valeur à mettre dans le champ coutTotal de la
+ DW du rapports des primes
+ </summary>
+	<returns></returns>
+	<remarks>Est overrider dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionDetailsPrimesOptionsProtec.ObtenirPrimeMax">
+	<summary>
+ Fonction qui permet d'obtenir la valeur à mettre dans le champ prime_max de la
+ DW du rapports des primes
+ </summary>
+	<returns></returns>
+	<remarks>Est overrider dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionProtections.FormaterCouvertureAssure(IAFG.IA.VI.AF.Proposition.Protection)">
+	<summary>
+ Formater l''information pour la section couverture des assurés.
+ </summary>
+	<param name="objprotection">Protection a formater</param>
+	<returns>Le importstring pour la datawindow.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionProtections.AjouterLigneDetailsProtection(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Formate les paramètres pour s'adapter à la DW
+ </summary>
+	<param name="info_protection">Le champs de la DW</param>
+	<param name="info_prime_min">Le champs de la DW</param>
+	<param name="desc_total">Le champs de la DW</param>
+	<param name="montant_total">Le champs de la DW</param>
+	<param name="prest_deces">Le champs de la DW</param>
+	<param name="date_emission">Le champs de la DW</param>
+	<returns></returns>
+	<remarks>Désolé pour le nom des variables, elle représente les champs de la datawindow</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionProtections.AssureNonAssurablePresent(System.String[])">
+	<summary>
+ Cette fonction determine si un des individus est contractant et non-assurable.
+ </summary>
+	<param name="idIndividus">Les id des individus pour lesquels nous voulons les informations</param>
+	<returns>1 - Le traitement s'est déroulé sans problème
+ -1 - Une erreur est survenue durant le traitement</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionProtections.AjouterAnnotationMaladieGrave4(IAFG.IA.VI.AF.Proposition.Protection)">
+	<summary>
+ On valide dans cette méthode si on doit ajouter l'annotation pour les maladies grave 4
+ </summary>
+	<param name="oProt">la protection</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionProtections.ObtenirDureePaiement(IAFG.IA.VI.AF.Proposition.Protection)">
+	<summary>
+ Renvoit la durée de paiement de la prime.
+ </summary>
+	<param name="prot">Référence un <see cref="T:IAFG.IA.VI.AF.Proposition.Protection">Protection</see> contenant les informations de la protection.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionProtections.GetDureeProt(System.String)">
+	<summary>
+ Donne la durée de protection d'une protection.
+ </summary>
+	<param name="idProtection">l'ID de la protection</param>
+	<returns> la durée 
+</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionProtections.ObtenirInfoDateEmissionExpiration(IAFG.IA.VI.AF.Proposition.Protection)">
+	<summary>
+ Méthode qui obtient les informations de la date d'émission et d'expiration de la 
+ protection passée en paramètre
+ </summary>
+	<param name="objProtection"></param>
+	<returns></returns>
+	<remarks>Ne retourne rien en contexte émission</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionProtections.ObtenirInfoTauxProtection(IAFG.IA.VI.AF.Proposition.Protection)">
+	<summary>
+ Méthode qui obtient les informations du taux de la protection
+ </summary>
+	<param name="objProtection">la protection</param>
+	<returns></returns>
+	<remarks>Ne retourne rien en contexte émission. Voir dans EVIA pour le code</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionProtections.GestionNotescouverture(System.String)">
+	<summary>
+ Vérifie si la note existe déjà dans le vecteur des notes,si oui retourne la position du vecteur sinon l'ajoute dans
+ le vecteur des notes de couverture.
+ </summary>
+	<param name="idNote">Ajouter le id de la note au vecteur de note.</param>
+	<returns>L'index représentant l'emplacement de notre note dans le vecteur en string.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypothesesInvestissementOptionsProtec.SetHypotheseInvest">
+	<summary>
+ Chargement des hypothèses d'investissement.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypothesesInvestissementOptionsProtec.PeuplerSectionComptes(Sybase.DataWindow.DataWindowChild)">
+	<summary>
+ Méthode qui peuple la section des comptes/TAIs
+ </summary>
+	<param name="section"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypothesesInvestissementOptionsProtec.ObtenirListeDIA">
+	<summary>
+ Permet d'obtenir les DIA selon le statut passé en paramètre
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypothesesInvestissementOptionsProtec.PrepareListeDIA(System.String)">
+	<summary>Retourne une string contenant la liste des TAI
+ </summary>
+	<param name="nom"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypothesesInvestissementOptionsProtec.AffecterVisibiliteSoldeSectionComptes(Sybase.DataWindow.DataWindowChild)">
+	<summary>
+ Méthode qui fait la gestion de la visibilité du champ solde de la section des comptes
+ </summary>
+	<param name="section"></param>
+	<remarks>Est overridé dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypothesesInvestissementOptionsProtec.AffecterVisibiliteSoldeSectionComptes(Sybase.DataWindow.DataWindowChild,System.Boolean)">
+	<summary>
+ Méthode qui fait la gestion de la visibilité du champ solde de la section des comptes
+ </summary>
+	<param name="section">La section du rapport</param>
+	<param name="visible">Si les champs du solde sont visibles</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypothesesInvestissementOptionsProtec.AjouterLigneHypotheseInvestissement(Sybase.DataWindow.DataWindowChild,System.String,System.Double,System.Double,System.Boolean)">
+	<summary>
+ Méthode qui ajoute une ligne dans la DW Hypothèses d'Investissements
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypothesesInvestissementOptionsProtec.PeuplerSectionComptesPreDIA(Sybase.DataWindow.DataWindowChild,IAFG.IA.VI.AF.Proposition.Fonds)">
+	<summary>
+ TODO EVIA
+ Méthode qui ajoute le CPF avant les DIA
+ </summary>
+	<param name="section">La section</param>
+	<remarks>Ne fait rien dans NONTRAD est overridé dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypothesesInvestissementOptionsProtec.ObtenirSoldeDIA(IAFG.IA.VI.AF.Proposition.Fonds,System.String)">
+	<summary>
+ TODO EVIA
+ Méthode qui obtient le solde du DIA passé en paramètre
+ </summary>
+	<param name="DIA">le DIA</param>
+	<returns>0 pour le mode à l'émission</returns>
+	<remarks>est overridé dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypothesesInvestissementOptionsProtec.PeuplerSectionComptesAutres(Sybase.DataWindow.DataWindowChild)">
+	<summary>
+ TODO EVIA
+ Méthode qui ajoute les autres comptes qui ne sont pas dans les DIA
+ </summary>
+	<param name="section">La section</param>
+	<remarks>Ne fait rien dans NONTRAD est overridé dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.InitialiseParamApplicatif(System.Collections.ObjectModel.ReadOnlyCollection{System.String})">
+	<summary>
+ Méthode qui est exécuter au tout début de l'exécution de l'application
+ </summary>
+	<param name="commandLineArgs">la ligne de commande passée en paramètre à App</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.InitialisePilotage">
+	<summary>
+ Initialise le service de pilotage pour l'application.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.InitialiseMessages">
+	<summary>
+ Charge le xml de message dans le service.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.InitialiseListesChoix">
+	<summary>
+ Charge le xml des listes de choix dans le service.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.InitialiseColonnes">
+	<summary>
+ Charge le xml des colonnes dans le service.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.InitialiseGraphiques">
+	<summary>
+ Charge les fichiers de graphique dans le service.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.InitialiseAideContextuelle">
+	<summary>
+ Charge le fichier d'aide contextuelle dans le service.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.InitialiseTableaux">
+	<summary>
+ Charge les ficheirs de tableau dans le service.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.InitialiseStyles">
+	<summary>
+ Charge le xml de style dans le service.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.InitialiseResources">
+	<summary>
+ Charge le fichier de ressource de l'application.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.InitialiseBoni">
+	<summary>
+ Initialise les bonis.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.CreerGestionFormulaires">
+	<summary>
+ Creer un nouveau gestionnaire de formulaire pour l'application Trend.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.CreerGestionnaireDossier">
+	<summary>
+ Creer un nouveau gestionnaire de dossier pour l'application Trend.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.CreerUtilsDossier">
+	<summary>
+ Creer un nouveau utils de dossier pour l'application Trend.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.CreerGestionCalculs">
+	<summary>
+ Creer un nouveau gestionnaire de calcul pour l'application Trend.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.CreerGestionRegleAffaires">
+	<summary>
+ Creer l'objet de regle d'affaire pour Trend selon la banniere.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.CreateBarreApplicative">
+	<summary>
+ Creer une nouvelle barre applicative pour l'application Trend.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.CreerGestionPilotage">
+	<summary>
+ Méthode qui fait l'instanciation de l'objet servant à la gestion des informations
+ de pilotage pour l'application 
+ </summary>
+	<returns>Pointeur à l'instance de l'objet de gestion du pilotage</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.InitialisePerfoPdf">
+	<summary>
+ Overrides pour modifier la cache de certain plans.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.Initialise(IAFG.IA.VI.AP.Commun.CtrlIU.WindowsFormBase,IAFG.IA.VI.AP.Commun.CtrlIU.MenuPrincipalBase,System.String,System.String)">
+	<summary>
+ Fait tout le traitement nécessaire à l'initialisation de l'application.
+ </summary>
+	<param name="mainForm">Pointeur vers la form principale de l'application.</param>
+	<param name="mainMenu">Pointeur vers le menu principal de l'application.</param>
+	<param name="GestionFormulairesPath">Path vers le fichier xml des formulaires.</param>
+	<param name="GestionMenuContextuelPath">Path vers le ficheir xml ds menus.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.ConfigIllus(System.Object)">
+	<summary>
+ Affiche la fenêtre des configurations par défaut.
+ </summary>
+	<param name="sender"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.RefreshMenu(System.Boolean)">
+	<summary>
+ Function qui gère les menus disponibles selon les conditions.
+ </summary>
+	<param name="reset">Si l'on vient de resetter le cas.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.IsConceptPreInitialisedOnly">
+	<summary>
+ Permet de savoir s'il y a un concept non initialisé de sélectionné.
+ </summary>
+	<returns>Vrai -  Il y a un concept non initialisé, Faux - Il n'y a pass de concept non initialisé</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.DeleteReportFiles">
+	<summary>
+ Suprime les fichiers temporaires de rapport pour Trend.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.Statistiques">
+	<summary>
+ Initialise différents compteurs Sous IA Stats pour fin de statistiques.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.GetConfigDefaut">
+	<summary>
+ Permet d'obtenir les clé qu'il faut conserver lorsque l'on transfère d'une version à l'autre.
+ </summary>
+	<returns>Retourne la liste des clés à prendre en sauvegarde.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.CopieCleConfigDefaut(System.String,System.String,System.Int32)">
+	<summary>
+ Valider si la clé doit être copier ou non pour les configues par défaut.
+ À noter que en PB le "\" était inclus dans le nom des clés, ce n'est plus le cas en .NET.
+ </summary>
+	<param name="branche">Le nom de la brache dans le regsitre</param>
+	<param name="cle">Le nom de la clé dans le regsitre</param>
+	<param name="produitVersion">Le no version de l'application courant</param>
+	<returns>True si l'on doit copier la clé, false sinon.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.GererMsgPresave">
+	<summary>
+ Afficher le message demandant si l'on veut ajouter le cic si il est non présent.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.ValidationPropos">
+	<summary>
+ Fait les validations avant de passer à la propo.
+ </summary>
+	<returns>True - on peut aller à la propo, false - il y a un problème.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.ShowSplashScreen">
+	<summary>
+ Méthode qui fait l'affichage de la fenêtre d'introduction (splashscreen)
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Trend.Utils.Application.LibraryList">
+	<summary>
+ Permet d'avoir le path des library power builder pour l'application courante.
+ </summary>
+	<returns>Le path des library power builder pour l'application courante.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Application.ObtenirObjetRapport">
+	<summary>
+ Permet d'obtenir un objet de rapport avec le bon type pour l'application en cours.
+ </summary>
+	<returns>Retourne l'objet de rapport utilisé par l'application courante.</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Trend.Utils.Application">
+	<summary>
+  Gère les initialisatione et les traitements de l'application Trend.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypothesesInvestissement.SetHypotheseInvest">
+	<summary>
+ Chargement des hypothèses d'investissement.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypothesesInvestissement.PeuplerSectionComptes(Sybase.DataWindow.DataWindowChild)">
+	<summary>
+ Méthode qui peuple la section des comptes/TAIs
+ </summary>
+	<param name="section"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypothesesInvestissement.ObtenirListeDIA">
+	<summary>
+ Permet d'obtenir les DIA selon le statut passé en paramètre
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypothesesInvestissement.PrepareListeDIA(System.String)">
+	<summary>Retourne une string contenant la liste des TAI
+ </summary>
+	<param name="nom"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypothesesInvestissement.AffecterVisibiliteSoldeSectionComptes(Sybase.DataWindow.DataWindowChild)">
+	<summary>
+ Méthode qui fait la gestion de la visibilité du champ solde de la section des comptes
+ </summary>
+	<param name="section"></param>
+	<remarks>Est overridé dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypothesesInvestissement.AffecterVisibiliteSoldeSectionComptes(Sybase.DataWindow.DataWindowChild,System.Boolean)">
+	<summary>
+ Méthode qui fait la gestion de la visibilité du champ solde de la section des comptes
+ </summary>
+	<param name="section">La section du rapport</param>
+	<param name="visible">Si les champs du solde sont visibles</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypothesesInvestissement.AjouterLigneHypotheseInvestissement(Sybase.DataWindow.DataWindowChild,System.String,System.Double,System.Double,System.Boolean,System.Double,System.Int32,System.Int32,System.Double,System.Double,System.Boolean)">
+	<summary>
+ Méthode qui ajoute une ligne dans la DW Hypothèses d'Investissements
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypothesesInvestissement.PeuplerSectionComptesPreDIA(Sybase.DataWindow.DataWindowChild,IAFG.IA.VI.AF.Proposition.Fonds)">
+	<summary>
+ TODO EVIA
+ Méthode qui ajoute le CPF avant les DIA
+ </summary>
+	<param name="section">La section</param>
+	<remarks>Ne fait rien dans NONTRAD est overridé dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypothesesInvestissement.ObtenirSoldeDIA(IAFG.IA.VI.AF.Proposition.Fonds,System.String)">
+	<summary>
+ TODO EVIA
+ Méthode qui obtient le solde du DIA passé en paramètre
+ </summary>
+	<param name="DIA">le DIA</param>
+	<returns>0 pour le mode à l'émission</returns>
+	<remarks>est overridé dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypothesesInvestissement.PeuplerSectionComptesAutres(Sybase.DataWindow.DataWindowChild)">
+	<summary>
+ TODO EVIA
+ Méthode qui ajoute les autres comptes qui ne sont pas dans les DIA
+ </summary>
+	<param name="section">La section</param>
+	<remarks>Ne fait rien dans NONTRAD est overridé dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.CtrlIU.FormulaireInvestissements.InitialiserControles_AVM">
+	<summary>
+ Initialise la disponibilite de AVM
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.GenererRapport.GenererRapportStandard(System.String)">
+	<summary>
+ Générer la section à imprimer selon celle passé en paramètre 
+ </summary>
+	<param name="section">Nom de la section.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypotheseCompteTransitoireOptionsProtec.SetHypotheseCompteTransitoire">
+	<summary>
+ Chargement des hypothèses du compte transitoire
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypotheseCompteTransitoireOptionsProtec.AffecterFormatSectionHypotheseFondsTransitoire(Sybase.DataWindow.DataWindowChild)">
+	<summary>
+ Méthode qui affecte les formats appropriés aux champs nécessaires
+ </summary>
+	<param name="section">la dw du rapport</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypotheseCompteTransitoireOptionsProtec.ObtenirSoldeComptesFondsTransitoire">
+	<summary>
+ fonction qui retourne le solde des comptes du fonds transitoire
+ </summary>
+	<returns>retourne 0</returns>
+	<remarks>est overridé dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypotheseCompteTransitoireOptionsProtec.AffecterLibelleSectionHypotheseFondsTransitoire(Sybase.DataWindow.DataWindowChild)">
+	<summary>
+ Méthode qui affecte les libellés de la section Hypothèse du fonds transitoire
+ </summary>
+	<remarks>Est overrider dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypotheseCompteTransitoireOptionsProtec.AffecterVisibiliteSoldeHypotheseCompteTransitoire(Sybase.DataWindow.DataWindowChild)">
+	<summary>
+ Méthode qui affiche ou cache la colonne solde de la section hypothese compte transitoire
+ </summary>
+	<param name="section">la section du rapport</param>
+	<remarks>Cache la colonne pour le nontrad, est overridé dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypotheseCompteTransitoireOptionsProtec.AffecterVisibiliteSoldeHypotheseCompteTransitoire(Sybase.DataWindow.DataWindowChild,System.Boolean)">
+	<summary>
+ Méthode qui affiche ou cache la colonne solde de la section hypothese compte transitoire
+ </summary>
+	<param name="section">la section du rapport</param>
+	<param name="visible">visible ou non</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Affaires.GestionProduit.Initialiser">
+	<summary>
+ Cette fonction permet d'initialiser les différents objets de règles d'affaire
+ utilisé par l'application standard Trend.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:IAFG.IA.IL.AP.Trend.Donnees.TemplateTA._illus">
+	<summary>
+ Membre interne qui représente l'objet d'illustration
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Trend.Donnees.TemplateTA.Proposition">
+	<summary>
+ Retourne la proposition
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Trend.Donnees.TemplateTA.Illustration">
+	<summary>
+ Retourne l'illustration
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Trend.Donnees.TemplateTA.Scenario">
+	<summary>
+ Retourne le scénario
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Trend.Donnees.TemplateTA.TableauDecimal">
+	<summary>
+ Propriété qui retourne un tableau de décimal(99) vide
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Trend.Donnees.TemplateTA.TableauDecimalTxCPF">
+	<summary>
+ Propriété qui retourne un tableau de décimal(99) vide
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Trend.Donnees.TemplateTA.TableauDecimalInvestissement">
+	<summary>
+ Propriété qui retourne un tableau de décimal(99) vide
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Donnees.TemplateTA.InitialiserPilotage">
+	<summary>
+ On initialise les pilotages nécessaire à la création du template
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Donnees.TemplateTA.AjouterProtection(System.String)">
+	<summary>
+ Affecte l'information minimum pour une protection
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Donnees.TemplateTA.ComptesCapitalisation">
+	<summary>
+ Affecte l'information minimum des comptes du fonds de capitalisation
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Donnees.TemplateTA.ComptesTransitoire">
+	<summary>
+ Affecte l'information minimum des comptes du fonds transitoire
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Donnees.TemplateTA.Primes">
+	<summary>
+ Affecte l'information minimum des Primes
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Donnees.TemplateTA.InformationsNecessaires">
+	<summary>
+ Affecte l'information minimum des InfosPU
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Donnees.TemplateTA.TerminerCreation(System.String)">
+	<summary>
+ Termine la création du template
+ </summary>
+	<param name="filename">le nom du template</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Donnees.TemplateTA.InitialiserVecteur">
+	<summary>
+ Méthode qui initialise les vecteurs de type Décimal, Integer et String (les 3 seuls possibles)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Donnees.TemplateTA.CreerTemplate(System.String)">
+	<summary>
+ Méthode qui crée un template de temps d'arrêt pour Genesis. 
+ On retourne le nom du template à utiliser
+ </summary>
+	<param name="extension">l'extension que le template doit avoir.</param>
+	<returns></returns>
+	<remarks>Est l'appel interne</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Donnees.TemplateTA.CreerTemplateTempsArret(System.String,System.String,System.String)">
+	<summary>
+ Méthode qui crée un template de temps d'arrêt pour Genesis. 
+ On retourne le nom du template à utiliser
+ </summary>
+	<param name="extension">l'extension que le template doit avoir.</param>
+	<returns></returns>
+	<remarks>Est appelé par le constructeur</remarks>
+</member><member name="P:IAFG.IA.IL.AP.Trend.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.Trend.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:IAFG.IA.IL.AP.Trend.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionGlossaireProtection.PresenceInfoPointsSaillants(System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean)">
+	<summary>
+ Méthode qui permet d'obtenir la présence des types de protections nécessaire
+ pour l'impression des points saillants.
+ </summary>
+	<param name="RA">Si on a des revenus d'appoint</param>
+	<param name="MG">Si on a des Maladies Grave</param>
+	<param name="HOS">Si on des des Hospitalisation</param>
+	<param name="HSD">Si on des des Hospitalisation Soins à Domicile</param>
+	<param name="verifStatutActif">Est-ce que l'on vérifie si le statut est actif</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionGlossaireProtection.PresenceMoins15AnsTraNonfumeur">
+	<summary>
+ Cette fonction Indique si des coûts TRA sont présents pour un enfant non-fumeur de moins de 15 ans
+ </summary>
+	<returns>Si des coûts TRA sont présents pour un enfant non-fumeur de moins de 15 ans</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionGlossaireProtection.PresenceMoins15AnsTraFumeur">
+	<summary>
+ Cette fonction Indique si des coûts TRA sont présents pour un enfant fumeur de moins de 15 ans
+ </summary>
+	<returns>Si des coûts TRA sont présents pour un enfant fumeur de moins de 15 ans</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionGlossaireProtection.AssureNonAssurablePresent(System.String[])">
+	<summary>
+ Cette fonction determine si un des individus est contractant et non-assurable.
+ </summary>
+	<param name="idIndividus">Les id des individus pour lesquels nous voulons les informations</param>
+	<returns>1 - Le traitement s'est déroulé sans problème
+ -1 - Une erreur est survenue durant le traitement</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Donnees.UtilsDossier.ObtenirRapportId(System.Int32@,System.String@,System.String@)">
+	<summary>
+ Permet d'obtenir le type de rapport à produire.
+ </summary>
+	<param name="numeroConcept">Type de concept choisit</param>
+	<param name="idRapport">Le type de rapport à produire</param>
+	<param name="codeRapport">Code du rapport</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.GestionFormulaireAssure.#ctor(IAFG.IA.IL.AP.IllusVie.NonTrad.CtrlIU.FormulaireAssure)">
+	<summary>
+ Constructeur de cette classe. Elle reçoit l'instance de l'objet visuel auquel 
+ elle sera associé
+ </summary>
+	<param name="parent">Instance de l'objet visuel auquel cette classe est associé</param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Trend.Utils.GestionFormulaireAssure">
+	<summary>
+ Classe qui contient la logigue d'affaire du formulaire de la section "Illustration"
+ représenté par la classe "FormulaireAssure"
+ </summary>
+	<remarks>Cette classe sert à séparer la logique d'affaire de la classe visuelle 
+ auquel elle est associée.Cette classe est instancié au niveau applicatif par la
+ classe "FormulaireAssure".</remarks>
+	<history>
+		<pre>
+ Auteur               Date       Description
+ ==============================================================
+ Robert Bastien    2007-10-02    Création
+ </pre>
+	</history>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypotheseCompteTransitoire.SetHypotheseCompteTransitoire">
+	<summary>
+ Chargement des hypothèses du compte transitoire
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypotheseCompteTransitoire.AffecterFormatSectionHypotheseFondsTransitoire(Sybase.DataWindow.DataWindowChild)">
+	<summary>
+ Méthode qui affecte les formats appropriés aux champs nécessaires
+ </summary>
+	<param name="section">la dw du rapport</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypotheseCompteTransitoire.ObtenirSoldeComptesFondsTransitoire">
+	<summary>
+ fonction qui retourne le solde des comptes du fonds transitoire
+ </summary>
+	<returns>retourne 0</returns>
+	<remarks>est overridé dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypotheseCompteTransitoire.AffecterLibelleSectionHypotheseFondsTransitoire(Sybase.DataWindow.DataWindowChild)">
+	<summary>
+ Méthode qui affecte les libellés de la section Hypothèse du fonds transitoire
+ </summary>
+	<remarks>Est overrider dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypotheseCompteTransitoire.AffecterVisibiliteSoldeHypotheseCompteTransitoire(Sybase.DataWindow.DataWindowChild)">
+	<summary>
+ Méthode qui affiche ou cache la colonne solde de la section hypothese compte transitoire
+ </summary>
+	<param name="section">la section du rapport</param>
+	<remarks>Cache la colonne pour le nontrad, est overridé dans EVIA</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionHypotheseCompteTransitoire.AffecterVisibiliteSoldeHypotheseCompteTransitoire(Sybase.DataWindow.DataWindowChild,System.Boolean)">
+	<summary>
+ Méthode qui affiche ou cache la colonne solde de la section hypothese compte transitoire
+ </summary>
+	<param name="section">la section du rapport</param>
+	<param name="visible">visible ou non</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionSensibiliteFondCap.SetTestSensibilite">
+	<summary>
+ Chargement du test de sensibilité pour rapport standard.
+ </summary>
+	<returns>-1 - Un problème est survenu, 1 - Traitement effectué avec succès</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionSensibiliteFondCap.GetLastYear(System.Collections.Generic.List{System.Double})">
+	<summary>
+ Retourne l'année lorsque le vecteur = 0
+ </summary>
+	<param name="tableau">un vecteur de donnée</param>
+	<returns>La dernière année du vecteur</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionSensibiliteFondCap.ObtenirListeAge(System.Int32,System.Int32)">
+	<summary>
+ Retourne la liste des âges pour certains rappports selon l'âge passé en paramètre.
+ </summary>
+	<param name="age">Age passé en paramètre</param>
+	<param name="ageEspVie">L'âge de l'espérence de vie s'il y a lieu</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionUsageDuConseiller.IsCasSurprime">
+	<summary>
+ Indique s'il y a au moins une surprime sur le contrat
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Trend.Utils.Rapport.SectionUsageDuConseiller.ObtenirSurprimes">
+	<summary>
+ Retourne la liste des surprimes par individu
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

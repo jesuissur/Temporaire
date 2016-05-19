@@ -1,0 +1,1505 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.IL.AP.Evia.Robot
+</name>
+</assembly>
+<members>
+<member name="P:IAFG.IA.IL.AP.Evia.Robot.Ctrl.CtrlInfo.RegistreRobotApplicatif">
+	<summary>
+ Emplacement des clé de registre pour le robot applicatif
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Ctrl.CtrlInfo.#ctor">
+	<summary>
+ Constructeur de la classe.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Ctrl.CtrlInfo.ObtenirInfoControle">
+	<summary>
+ Obtenir les informations pour lancer l'application Genesis
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Ctrl.CtrlInfo.ChargerControle">
+	<summary>
+ Charge les valeurs dans les contrôles de l'écran.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Ctrl.CtrlInfo">
+	<summary>
+ Contrôle pour l'application EVIA.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.FinBE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Actions.FinBE">
+	<summary>
+ Cette action permet d'indiquer la fin d'un cas robot. Elle déclanche une série d'action dans le robot.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.OptionBE.NoCouverture">
+	<summary>
+ No de couverture sur lequel l'option sera ajouté
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.OptionBE.TypeCouts">
+	<summary>
+ Type de mortalité de la protection
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Valeur texte de IAFG.IA.VI.AF.Proposition.Protection.TypeMortalite</remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.OptionBE.TypeCouverture">
+	<summary>
+ Type de couverture de la protection.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+ Valeur texte de IAFG.IA.IL.AP.Illustration.ENUMs.PlanIllustration
+ </remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.OptionBE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Actions.OptionBE">
+	<summary>
+ Cette action permet l'ajout d'option sur une protection
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.AssureDefautBE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Actions.AssureDefautBE">
+	<summary>
+ Cette action permet l'ajout d'un assuré avec les valeurs par défaut de l'application.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.SelectionneAssureBE.NoAssure">
+	<summary>
+ No de l'assuré
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.SelectionneAssureBE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Actions.SelectionneAssureBE">
+	<summary>
+ Cette action permet de sélectionner un onglet assuré
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.Surprime_EviaBE.NoProtection">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.Surprime_EviaBE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.DepotRetraitAE.Valeur">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.DepotRetraitAE.De">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.DepotRetraitAE.A">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.DepotRetraitAE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.OuvrirBE.NoPolice">
+	<summary>
+ No de police
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.OuvrirBE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Actions.OuvrirBE">
+	<summary>
+ Cette action permet d'ouvrir un cas ayant déjà été enregistré par l'application.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.GlobBE.Protection">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.GlobBE.NombreVies">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.GlobBE.Prestation">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.GlobBE.OACA">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.GlobBE.Province">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.GlobBE.Frequence">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.GlobBE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Ctrl.InfoControle.dwTabAss">
+	<summary>
+ DataWindow qui contient les Tab des Assurés
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerTypeBoni(System.String)">
+	<summary>
+ Transforme la chaîne TypeBoni en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, une chaîne vide (String.Empty) est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerCompteTrans(System.String)">
+	<summary>
+ Transforme la chaîne CompteTrans en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, "2" est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerInvAltPlan(System.String)">
+	<summary>
+ Transforme la chaîne InvAltPlan en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, une chaîne vide (String.Empty) est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerTypeGarContractant(System.String)">
+	<summary>
+ Transforme la chaîne TypeGarContractant en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, une chaîne vide (String.Empty) est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerSexe(System.String)">
+	<summary>
+ Transforme la chaîne Sexe en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, une chaîne vide (String.Empty) est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerTypePrime(System.String)">
+	<summary>
+ Transforme la chaîne TypePrime en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, une chaîne vide (String.Empty) est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerPrimeCopieType(System.String)">
+	<summary>
+ Transforme la chaîne PrimeCopieType en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, une chaîne vide (String.Empty) est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerRetraitsType(System.String)">
+	<summary>
+ Transforme la chaîne RetraitsType en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, une chaîne vide (String.Empty) est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerRevenuRetraite(System.String)">
+	<summary>
+ Transforme la chaîne RevenuRetraite en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, &lt; concaténé de data est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerDiffOuTaux(System.String)">
+	<summary>
+ Transforme la chaîne DiffOuTaux en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, "1" est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerCSAValeurSuccCible(System.String)">
+	<summary>
+ Transforme la chaîne CSAValeurSuccCible en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, &lt; concaténé de data est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerCSAFrequencePaiement(System.String)">
+	<summary>
+ Transforme la chaîne CSAFrequencePaiement en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, une chaîne vide (String.Empty) est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerCSATransfAuto(System.String)">
+	<summary>
+ Transforme la chaîne CSATransfAuto en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, une chaîne vide (String.Empty) est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerIRISDureeDe(System.String)">
+	<summary>
+ Transforme la chaîne IRISDureeDe en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, une chaîne vide (String.Empty) est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerIRISRemboursement(System.String)">
+	<summary>
+ Transforme la chaîne IRISRemboursement en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, une chaîne vide (String.Empty) est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerIRISRembProvenance(System.String)">
+	<summary>
+ Transforme la chaîne IRISRembProvenance en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, une chaîne vide (String.Empty) est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerPrestDeces(System.String)">
+	<summary>
+ Transforme la chaîne PrestDeces en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, une chaîne vide (String.Empty) est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerTypeMini(System.String)">
+	<summary>
+ Transforme la chaîne type de minimisation en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, une chaîne vide (String.Empty) est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerIGPTypeCout(System.String)">
+	<summary>
+ Transforme la chaîne IGPTypeCout en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, "999" est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerSuprime(System.String)">
+	<summary>
+ Transforme la chaîne Suprime en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, "0" est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerAmortFrequence(System.String)">
+	<summary>
+ Transforme la chaîne Fréquence Amortissement en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, une chaîne vide (String.Empty) est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerParmPaiement(System.String)">
+	<summary>
+ Transforme la chaîne Parametre Paiement en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, "2" est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Transformations.TransformerAmortTypePret(System.String)">
+	<summary>
+ Transforme la chaîne Type de Prêt Amortissement en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, "2" est retourné.</remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Validation.Enumeration.Script">
+	<summary>
+ Liste des scripts
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Validation.Enumeration.App">
+	<summary>
+ Liste des applications que le robot peut gérer.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Validation.Enumeration.GetEnumDescription(System.Enum)">
+	<summary>
+ Donne la valeur de l'attribut Description d'un élément d'une énumération.
+ </summary>
+	<param name="value"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Validation.Enumeration">
+	<summary>
+ Cette classe contient l'ensemble des énumérations du robot. Certaines énumérations donnent la position d'éléments
+ dans un fichier alors que d'autres représentent une liste de valeurs à afficher dans un contrôle.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.TemplateBE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Actions.TemplateBE">
+	<summary>
+ Modèle à suivre pour la création d'action robot
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Fonctions.ObtenirPremiereAnneeIllustree(IAFG.IA.VI.AF.Proposition.Proposition)">
+	<summary>
+ Obtient la première de projection du contrat en fonction de la date 
+ d'émission de ce dernier et la date de projection.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.Surprime_GenesisBE.Couverture">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.Surprime_GenesisBE.AppliqueA">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.Surprime_GenesisBE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.ContractantBE.NoContractant">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.ContractantBE.TypeContractant">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.ContractantBE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.SuppressionAssureBE.NoAssure">
+	<summary>
+ No d'assuré à supprimer
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.SuppressionAssureBE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Actions.SuppressionAssureBE">
+	<summary>
+ Cette action permet d'effectuer un suppression d'un assuré.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.InvestissementBE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Actions.InvestissementBE">
+	<summary>
+ Cette action permet au robot de sélectionner l'onglet de gauche investissement
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.CouvertureBE.NoCouverture">
+	<summary>
+ No de la couverture
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.CouvertureBE.TypeCouverture">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.CouvertureBE.AppliqueA">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.CouvertureBE.TypeCouts">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.CouvertureBE.Montant">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.CouvertureBE.Duree">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.CouvertureBE.SurprimeFen">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.CouvertureBE.SurprimeChamps">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.CouvertureBE.NombreEnfants">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.CouvertureBE.Nivellement">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.CouvertureBE.Prime">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.CouvertureBE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Actions.CouvertureBE">
+	<summary>
+ Cette action permet l'ajout d'une couverture.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.AssureBE.NoAssure">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Cette propriété est définit comme étant une string car pour l'instant dans les CSV existant il peut arrivé que cette propriété contienne "#" permettant de séparé le noAssuré et le noIndividu.</remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.AssureBE.NoAssureNumerique">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.AssureBE.NoIndivudu">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Lorsque cette propriété est inialiser à partir d'un fichier CSV, celle-ci est initialisé via la propriété NoAssure</remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.AssureBE.Contractant">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.AssureBE.Assurable">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.AssureBE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Actions.AssureBE">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.IndividuAE.Nom">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.IndividuAE.Prenom">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.IndividuAE.Initiale">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.IndividuAE.Sexe">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.IndividuAE.DateNaissance">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.IndividuAE.DateNaissanceString">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.IndividuAE.Age">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.IndividuAE.CodeTabac">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.IndividuAE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.CouvertureDefautBE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Actions.CouvertureDefautBE">
+	<summary>
+ Cette action permet l'ajout d'une couverture avec les valeurs par défaut de l'application
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Pattern.Investissements.GetPattern(System.Enum,IAFG.IA.VI.AF.Illustration.Illustration)">
+	<summary>
+ Pattern d'investissement
+ </summary>
+	<param name="type"></param>
+	<param name="illus"></param>
+	<returns></returns>
+	<remarks>taux d'intérêt = -1 veut dire qu'il n'y en a pas
+ Le compte SRA sera toujours en premier dans la liste</remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.SurprimeAE.NoConjoint">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.SurprimeAE.SPTaux">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.SurprimeAE.SPMontant">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.SurprimeAE.STDuree">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.SurprimeAE.STMontant">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.SurprimeAE.NoAssure">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.SurprimeAE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Actions.AvecEntenteBE">
+	<summary>
+ Cette action permet l'avance sur police
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.RechercheBE.NoPolice">
+	<summary>
+ No de police
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.RechercheBE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Actions.RechercheBE">
+	<summary>
+ Cette action permet d'ouvrir un cas a partir d'une recherche par no de police.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.ResiliationProtectionBE.CodePlan">
+	<summary>
+ Code de plan à supprimer
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Plan Illustration</remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.ResiliationProtectionBE.AppliqueA">
+	<summary>
+ Indique à quelle assuré conjoint appliqué la résilliation
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.ResiliationProtectionBE.DateEmission">
+	<summary>
+ Date d'émission de la protection.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+ La date d'émission permet de déterminer la bonne protection à résillier dans le cas ou il y aurait plus d'une protection du même type.
+ </remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.ResiliationProtectionBE.Montant">
+	<summary>
+ Nouveau montant de la protection
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+ Lorsque le montant est zéro cela implique la suppression de la protection.
+ - Ce montant = montant actuelle - montant à résilier.
+ </remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.ResiliationProtectionBE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Actions.ResiliationProtectionBE">
+	<summary>
+ Cette action permet d'effectuer une résiliation total ou partielle d'une protection.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.InfoGeneral.Banniere">
+	<summary>
+ Bannière sous lequel le contrat à été émis
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.InfoGeneral.Compagnie">
+	<summary>
+ No de compagnie sous lequel le cotnrat à été émis.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.InfoGeneral.NoContrat">
+	<summary>
+ No de contrat
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.InfoGeneral.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Actions.InfoGeneral">
+	<summary>
+ Cette action n'est pas réellement un action. Nous utilisons cette action plutôt comme un endroit ou nous pouvons mettre des informations général sur un contrat.
+ </summary>
+	<remarks>
+ Par exemple nous utilisons cette section dans le Robot Watcher afin de démarer l'application dans la bonne bannière.
+ </remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.ConvertionEnum.TransformerIGPTypeCout(System.String)">
+	<summary>
+ Transforme la chaîne IGPTypeCout en sont équivalent numérique.
+ </summary>
+	<param name="typeCout">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.ConvertionEnum.TransformerTypePrime(System.String)">
+	<summary>
+ Transforme la chaîne TypePrime en sont équivalent numérique.
+ </summary>
+	<param name="typePrime">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.ActionsRobot.TypeAction">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Actions.AjoutDepotsBE">
+	<summary>
+ Cette action permet l'ajout des dépôts
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.InfoControle">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.ActionsRobot">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.DB_LUQA">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.PilotageFonction">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.#ctor(IAFG.IA.VI.Robot.Commun.Validation.Enumeration.App,IAFG.IA.IL.AP.Evia.Robot.Ctrl.InfoControle)">
+	<summary>
+	</summary>
+	<param name="application"></param>
+	<param name="infoControle"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.TestScript">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.GetPremiumScript">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RetItem(System.String,System.Int32,System.Char)">
+	<summary>
+ Fonction qui retourne l'item NoB de la chaine valeur. Les items
+ Sont séparés par des 'car'
+ </summary>
+	<param name="valeur"></param>
+	<param name="NoB"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RemplirInfoClient(IAFG.IA.IL.AP.Evia.Robot.Actions.AssureBE)">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RemplirInfoGlob">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RemplirProtection(System.IntPtr)">
+	<summary>
+	</summary>
+	<param name="dw1_hWnd"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.SetProtection(System.String,System.IntPtr)">
+	<summary>
+	</summary>
+	<param name="protection"></param>
+	<param name="dw1_hWnd"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RemplirCouverture(IAFG.IA.VI.Robot.Commun.Actions.ActionBase)">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RemplirBoni">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RemplirSectionVersement">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RemplirDepotForfetaire">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RemplirRetraits">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RemplirSurprime(System.IntPtr)">
+	<summary>
+	</summary>
+	<param name="SurpWin"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RemplirVMax">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RemplirCGAR(System.IntPtr,IAFG.IA.IL.AP.Evia.Robot.Actions.CouvertureBE)">
+	<summary>
+	</summary>
+	<param name="dw3_hWnd"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RemplirGAR(System.IntPtr,IAFG.IA.IL.AP.Evia.Robot.Actions.CouvertureBE)">
+	<summary>
+	</summary>
+	<param name="dw3_hWnd"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RemplirRA(System.IntPtr,IAFG.IA.IL.AP.Evia.Robot.Actions.CouvertureBE)">
+	<summary>
+	</summary>
+	<param name="dwProt_hWnd"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RemplirAVEN(System.IntPtr,IAFG.IA.IL.AP.Evia.Robot.Actions.CouvertureBE)">
+	<summary>
+	</summary>
+	<param name="dwProt_hWnd"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RempirChampsPerso(System.IntPtr,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="dw1_hWnd"></param>
+	<param name="NomChamps"></param>
+	<param name="Value"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RemplirProtPat">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RemplirChampsPersoTx(System.IntPtr,System.String,System.Int32,System.String)">
+	<summary>
+	</summary>
+	<param name="dw2_hWnd"></param>
+	<param name="NomChamps"></param>
+	<param name="Param"></param>
+	<param name="Value"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RemplirAppliqueA(System.IntPtr,System.Int32,System.String)">
+	<summary>
+	</summary>
+	<param name="dw3_hWnd"></param>
+	<param name="Param"></param>
+	<param name="value"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RemplirPersPrimeVersee(System.String)">
+	<summary>
+	</summary>
+	<param name="Chaine"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RempirChampsPerso(System.IntPtr,System.String,System.Int32,System.String)">
+	<summary>
+	</summary>
+	<param name="dw1_hWnd"></param>
+	<param name="NomChamps"></param>
+	<param name="row"></param>
+	<param name="Value"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RemplirHOSP(System.IntPtr,IAFG.IA.IL.AP.Evia.Robot.Actions.CouvertureBE)">
+	<summary>
+	</summary>
+	<param name="dw3_hWnd"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.Remplir_Investor_Profil">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.Enregistrer(System.String)">
+	<summary>
+	</summary>
+	<param name="suffix"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.MessageCouverture">
+	<summary>
+ Traitement des messages d'avertissement - Couvr011x
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.AjouterContractant">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RetournerGroupeCouv(System.String)">
+	<summary>
+	</summary>
+	<param name="planIllustration"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RetournerGroupeTraitementCodePlan(System.String)">
+	<summary>
+	</summary>
+	<param name="codePlan">Code de plan</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.ChoisirConcept">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.PersoHypoInv">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.PersoPlacAlt(System.String)">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.PersoTxImposition(System.IntPtr,System.String,System.Int32,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="hWnd"></param>
+	<param name="NomChamps"></param>
+	<param name="Row"></param>
+	<param name="Value"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.SupprimerContractantTemp">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.GetItem(System.String)">
+	<summary>
+	</summary>
+	<param name="valeur"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.Suivant">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.ObtenirDescriptionProtection(System.String)">
+	<summary>
+	</summary>
+	<param name="typeCouverture"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.ObtenirDescriptionProtectionAbregee(System.String)">
+	<summary>
+	</summary>
+	<param name="typeCouverture"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.GetPersonnalise(System.String,System.String@,System.String@,System.String@,System.String@)">
+	<summary>
+	</summary>
+	<param name="Chaine"></param>
+	<param name="Bouton"></param>
+	<param name="Valeur"></param>
+	<param name="Debut"></param>
+	<param name="Fin"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.GetPersoTxImposition(System.String,System.String@,System.String@,System.String@,System.String@)">
+	<summary>
+	</summary>
+	<param name="Chaine"></param>
+	<param name="Champs"></param>
+	<param name="Valeur"></param>
+	<param name="Debut"></param>
+	<param name="Fin"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.GetAppliqueA(System.String)">
+	<summary>
+	</summary>
+	<param name="Code"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RechercheBDCommune(IAFG.IA.VI.Robot.Commun.RobotsApplicatifs.DBLUQA,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="db"></param>
+	<param name="Table"></param>
+	<param name="Cle"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RetournerStatut(System.String)">
+	<summary>
+	</summary>
+	<param name="code"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.RemplirProvince(System.IntPtr)">
+	<summary>
+	</summary>
+	<param name="dw1_hWnd"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.TransformerConcept(System.String)">
+	<summary>
+ Transforme la chaîne Concept en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, une chaîne vide (String.Empty) est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotGenesis.TranformerTypeCapital(System.String)">
+	<summary>
+ Transforme la chaîne Type de Capital en sont équivalent numérique.
+ </summary>
+	<param name="data">Valeur à comparer.</param>
+	<returns></returns>
+	<remarks>Si la comparaison ne donne rien, une chaîne vide (String.Empty) est retourné.</remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.#ctor(IAFG.IA.VI.Robot.Commun.Validation.Enumeration.App,IAFG.IA.IL.AP.Evia.Robot.Ctrl.InfoControle)">
+	<summary>
+	</summary>
+	<param name="application"></param>
+	<param name="infoControle"></param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ActionsRobot">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.InfoControle">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.TestScript">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.GetPremiumScript">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ExecuterLigneDataPool">
+	<summary>
+ Traitement des actions du robot.
+ </summary>
+	<remarks>
+ Nous avons gardé le nom de la méthode "ExecuterLigneDataPool" afin de garder une uniformité avec les autres robots.
+ Dans Evia nous ne lisons pas des lignes dans un fichier "CSV" mais nous lisons un objet de donné.
+ </remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ExecuterActionRecherche(IAFG.IA.VI.Robot.Commun.Actions.ActionBase,IAFG.IA.VI.Robot.Commun.Actions.ActionBase)">
+	<summary>
+ Action permettant d'ouvrir un cas Evia par la recherche d'un no de contrat
+ </summary>
+	<param name="actionBase">Actions.RechercheBE</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ExecuterActionOuvrir(IAFG.IA.VI.Robot.Commun.Actions.ActionBase)">
+	<summary>
+ Action permettant d'ouvrir un cas Evia déjà enregistrer
+ </summary>
+	<param name="actionBase">Actions.OuvrirBE</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ExecuterActionSelectionneAssure(IAFG.IA.VI.Robot.Commun.Actions.ActionBase)">
+	<summary>
+ Action permettant de sélectionner un assuré
+ </summary>
+	<param name="actionBase">Actions.SelectionneAssureBE</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ExecuterActionAjoutAssure(IAFG.IA.VI.Robot.Commun.Actions.ActionBase)">
+	<summary>
+ Action permettant d'ajouter un assuré
+ </summary>
+	<param name="actionBase">Actions.AssureBE</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ExecuterActionAjoutCouverture(IAFG.IA.VI.Robot.Commun.Actions.ActionBase)">
+	<summary>
+ Action permettant d'ajouter un couverture
+ </summary>
+	<param name="actionBase">Actions.CouvertureBE</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ExecuterActionAjoutCouvertureDefaut(IAFG.IA.VI.Robot.Commun.Actions.ActionBase)">
+	<summary>
+ Action permettant d'ajouter un couverture avec les valeurs par défaut
+ </summary>
+	<param name="actionBase">Actions.CouvertureDefautBE</param>
+	<remarks>
+ Nous utilisons la touche de raccourcis de l'application CTLR + P
+ </remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ExecuterActionAjoutAssureDefaut(IAFG.IA.VI.Robot.Commun.Actions.ActionBase)">
+	<summary>
+ Action permettant d'ajouter un assuré avec les valeurs par défaut
+ </summary>
+	<param name="actionBase">Actions.AssureDefautBE</param>
+	<remarks>
+ Nous utilisons la touche de raccourcis de l'application CTLR + A
+ </remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ExecuterActionOption(IAFG.IA.VI.Robot.Commun.Actions.ActionBase)">
+	<summary>
+ Action permettant la modification d'une option
+ </summary>
+	<param name="actionBase">Actions.OptionBE</param>
+	<remarks>
+ Un changement de type de coût est effectuer ainsi que la modifcation de l'option
+ </remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ExecuterActionChangementTypeCout(IAFG.IA.VI.Robot.Commun.Actions.ActionBase)">
+	<summary>
+ Action permettant le changement de type de coût
+ </summary>
+	<param name="actionBase">Actions.TypeCoutBE</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ExecuterActionSuppressionAssure(IAFG.IA.VI.Robot.Commun.Actions.ActionBase)">
+	<summary>
+ Action permettant la suppression d'un assuré
+ </summary>
+	<param name="actionBase">Actions.SuppressionAssureBE</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ExecuterActionResiliationProtection(IAFG.IA.VI.Robot.Commun.Actions.ActionBase)">
+	<summary>
+ Action permettant la résillliation Total ou Partielle d'une protection
+ </summary>
+	<param name="actionBase">Actions.ResiliationProtectionBE</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ExecuterActionVersementPrime(IAFG.IA.IL.AP.Evia.Robot.Actions.VersementPrimeBE)">
+	<summary>
+ Action permettant le versement de prime
+ </summary>
+	<param name="versement">Actions.VersementPrimeBE</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ExecuterActionAjoutDepot(IAFG.IA.IL.AP.Evia.Robot.Actions.AjoutDepotsBE)">
+	<summary>
+ Action permettant de sélectionner le menu d'ajout de dépôts
+ </summary>
+	<param name="actionBase"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ExecuterActionAvecAvance(IAFG.IA.IL.AP.Evia.Robot.Actions.AvecAvanceBE)">
+	<summary>
+ Action permettant de choisir un prêt avec avance sur police
+ </summary>
+	<param name="actionBase"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ExecuterActionAvecEntente(IAFG.IA.IL.AP.Evia.Robot.Actions.AvecEntenteBE)">
+	<summary>
+ Action permettant de choisir une entente de prêt en collatéral
+ </summary>
+	<param name="actionBase"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.modifierParamsVecteurAnnees(System.Collections.Generic.List{IAFG.IA.IL.AP.Evia.Robot.Donnees.vecteurAnnees},System.String,System.String,System.String,System.String)">
+	<summary>
+ Fonction qui remplit les champs de la fenêtre popup de vecteur d'années
+ </summary>
+	<param name="listeAvance"></param>
+	<param name="nomDialogue"></param>
+	<param name="champMontant"></param>
+	<param name="champAnneeDebut"></param>
+	<param name="champDuree"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ExecuterFinAction">
+	<summary>
+ Action permettant l'arret du robot pour le cas en cours.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.OuvrirContratEvia(IAFG.IA.IL.AP.Evia.Robot.Actions.OuvrirBE)">
+	<summary>
+ Ouvrir un contrat enregistré sur le poste.
+ </summary>
+	<param name="actionOuvrir">Actions.OuvrirBE</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.RechercheContratEvia(IAFG.IA.IL.AP.Evia.Robot.Actions.RechercheBE)">
+	<summary>
+ Effectuer une recherche dans la base de donnée FicCli
+ </summary>
+	<param name="actionRecherche">Actions.RechercheBE</param>
+	<remarks>
+ Il y a une vérification de message d'avertissements / questions qui
+ s'effectue tant que la page d'illustration n'est pas encore ouverte.
+ </remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ModifierMontant(System.Int32,System.Double)">
+	<summary>
+ Modification du montant de la protection.
+ </summary>
+	<param name="noRow">Ligne de la protection à modifier</param>
+	<param name="montant">Montant à écrire</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.AjouterSurprime">
+	<summary>
+ Ajoute une surprime sur une protection
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.OuvertureFenetreAjoutDepot">
+	<summary>
+ Fonction qui ouvre la fenêtre d'ajout de dépôts 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ModifierInvestissement(IAFG.IA.IL.AP.Evia.Robot.Actions.InvestissementBE)">
+	<summary>
+ Fonction qui modifie les proportion et le taux d'intérêt des investissement pour la conversion
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.RemplirTauxInteret">
+	<summary>
+ Fonction qui sert à remplir les taux d'intérêt pour la conversion
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.RemplirTauxInvestissement">
+	<summary>
+ Fonction qui remplit les taux pour l'investissement lorsque l'on fait la conversion
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ApercuImpression">
+	<summary>
+ Fonction qui enregistre l'illustration en format PDF
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.TraitementMessageAvertissement">
+	<summary>
+ Traitement des messages d'avertissement lors de l'ouverture d'un cas Evia
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.MessageFiltre001">
+	<summary>
+ Vérifier si message de filtre et intialiser registre afin d'indiquer au robot watcher d'effectuer un traitement spécial.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.MessageFiltre002">
+	<summary>
+ Traitement des messages d'avertissement - Filtre002
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.MessageFiltre003">
+	<summary>
+ Traitement des messages d'avertissement - Filtre003
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.MessageConversionIRIS">
+	<summary>
+ Vérifier si message de filtre et intialiser registre afin d'indiquer au robot watcher d'effectuer un traitement spécial.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ObtenirNbProtection">
+	<summary>
+ Obtient le nombre de protection de l'assuré
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.InitVal">
+	<summary>
+ initialise certaine variable a partir des champs de l'illustration
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ChoisirAssure(System.Int32)">
+	<summary>
+ Sélectionner un assuré
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.SupprimerAssure">
+	<summary>
+ Suppression de l'assuré en cours.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.TrouverProtection(System.String,System.String)">
+	<summary>
+ Rechercher la rangé dans le DataWindow qui contient la protection demandé, on commencant pas le plus récent.
+ </summary>
+	<returns>L'index de la rangé ou -1 si la protection n'est pas trouvé</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.TrouverProtection(System.String,System.String,System.DateTime)">
+	<summary>
+ Rechercher la rangé dans le DataWindow qui contient la protection demandé, on commencant pas le plus récent.
+ </summary>
+	<returns>L'index de la rangé ou -1 si la protection n'est pas trouvé</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.SupprimerProtection(System.Int32)">
+	<summary>
+ Suppression de la protection
+ </summary>
+	<param name="Row">Ligne de la protection à supprimer</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.Resultats">
+	<summary>
+ Affichage de la fenêtre des résultats
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ChangementTypeCout(IAFG.IA.IL.AP.Evia.Robot.Actions.TypeCoutBE)">
+	<summary>
+ Effectuer un changement de type de cout.
+ </summary>
+	<param name="actionChgTypeCout">Actions.TypeCoutBE</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.VersementPrime(IAFG.IA.IL.AP.Evia.Robot.Actions.VersementPrimeBE)">
+	<summary>
+ Versement de prime
+ </summary>
+	<param name="actionVersementPrime">Actions.VersementPrimeBE</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ChangementLangue">
+	<summary>
+ Fonction qui change la langue de l'application
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.SetDefaultLanguage">
+	<summary>
+ Remet la langue en Français
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia.ExecuterActionInvestissement(IAFG.IA.IL.AP.Evia.Robot.Actions.InvestissementBE)">
+	<summary>
+ Effectuer le traitement du sous-menu Investissements du menu 1. Illustration
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.RobotsApplicatifs.RobotEvia">
+	<summary>
+ Classe contant le traitement nécessaire pour le robot de l'appication Evia.
+ Puisque l'application Evia est pratiquement identique à Genesis, nous avons hérité de la classe RobotGenesis.
+ La classe RobotGenesis à été copié de la dll contenant le robot Genesis. Elle n'est donc pas nécessairement
+ identique à celle du robot Genesis.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Actions.ApercuImpressionBE">
+	<summary>
+ Cette action permet d'enregistrer l'illustration dans un fichier PDF.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.VersementPrimeBE.TypePrime">
+	<summary>
+ Type de prime
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+ Valeur texte de IAFG.IA.IL.AF.Illustration.ENUMs.TypeDePrimeEcranPrincipal
+ </remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.VersementPrimeBE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Actions.VersementPrimeBE">
+	<summary>
+ Cette action permet d'effectuer un changement de type de prime
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Pilotage.InitialiserPilotage(System.Collections.ObjectModel.ReadOnlyCollection{System.String})">
+	<summary>
+ Initialiser le pilotage du Robot
+ </summary>
+	<param name="param"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Pilotage.InitialiserPilotage(System.String)">
+	<summary>
+ Initialiser un objet de pilotage avec les derniers parametres du Robot.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Pilotage.ObtenirPilotage">
+	<summary>
+ Obtenir l'objet de pilotage ayant déjà été initialisé.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Utilitaires.Pilotage.ObtenirRobotFonctions">
+	<summary>
+ Obtenir l'objet de pilotage ayant déjà été initialisé.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Actions.AvecAvanceBE">
+	<summary>
+ Cette action permet le concept avec entente de prêt en collatéral
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.TypeCoutBE.NoCouverture">
+	<summary>
+ No de la couverture sur lequel le changement sera effectué.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.IL.AP.Evia.Robot.Actions.TypeCoutBE.TypeCouts">
+	<summary>
+ Type de coût.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+ Valeur texte de IAFG.IA.IL.AF.Illustration.ENUMs.TypeMortaliteIllustration
+ </remarks>
+</member><member name="M:IAFG.IA.IL.AP.Evia.Robot.Actions.TypeCoutBE.#ctor">
+	<summary>
+ Constructeur de classe
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.IL.AP.Evia.Robot.Actions.TypeCoutBE">
+	<summary>
+ Cette action permet d'effectuer un changement de type de coût.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

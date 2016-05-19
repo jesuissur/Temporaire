@@ -1,0 +1,102 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.VI.AF.Illustration.Validation
+</name>
+</assembly>
+<members>
+<member name="P:IAFG.IA.VI.AF.Illustration.Validation.ValideConceptIRIS2IllusReguliere.ObjetAValider">
+	<summary>
+ Lien vers l'objet à valider
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+	</remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.Validation.ValideConceptIRISIllusReguliere.ObjetAValider">
+	<summary>
+ Lien vers l'objet à valider
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+	</remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.Validation.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.Validation.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:IAFG.IA.VI.AF.Illustration.Validation.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.Validation.ValideConcept.ObjetAValider">
+	<summary>
+ Lien vers l'objet à valider
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+	</remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.Validation.ValideConceptInvestorPlus2.ObjetAValider">
+	<summary>
+ Lien vers l'objet à valider
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+	</remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.Validation.ValideConceptZerocashflow.ObjetAValider">
+	<summary>
+ Lien vers l'objet à valider
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+	</remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.Validation.ValidePrimes.ObjetAValider">
+	<summary>
+ Lien vers l'objet à valider
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Illustration.Validation.ValideDonneesCalculeesProtection.ValiderDeductionMensuelle">
+	<summary>
+ Méthode qui valide que la déduction Mensuelle soit plus grande ou égale à 0
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.Validation.ValideConceptIRIS2.ObjetAValider">
+	<summary>
+ Lien vers l'objet à valider
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+	</remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.Validation.ValideConceptIRIS.ObjetAValider">
+	<summary>
+ Lien vers l'objet à valider
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+	</remarks>
+</member><member name="P:IAFG.IA.VI.AF.Illustration.Validation.ValideConceptInvestorPlus.ObjetAValider">
+	<summary>
+ Lien vers l'objet à valider
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+	</remarks>
+</member>
+</members>
+</doc>

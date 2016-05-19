@@ -1,0 +1,74 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.VI.AF.AuthentificationExtranet
+</name>
+</assembly>
+<members>
+<member name="P:IAFG.IA.VI.AF.AuthentificationExtranet.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.VI.AF.AuthentificationExtranet.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:IAFG.IA.VI.AF.AuthentificationExtranet.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="P:IAFG.IA.VI.AF.AuthentificationExtranet.Authentification.InstanceCourante">
+	<summary>
+ La seule instance d'autentification dans le process (Singleton)
+ </summary>
+	<returns>L'instance d'authentification</returns>
+</member><member name="P:IAFG.IA.VI.AF.AuthentificationExtranet.Authentification.DomainName">
+	<summary>
+ Nom du domaine à utiliser
+ </summary>
+	<returns>Le nom du domaine</returns>
+	<remarks>Si le nom de domain n'est pas affecté, on va le chercher dans le registre</remarks>
+</member><member name="P:IAFG.IA.VI.AF.AuthentificationExtranet.Authentification.UrlAuthenticationPortal">
+	<summary>
+ URL du portail d'authentification
+ </summary>
+	<returns>L'URL du portail d'authentification </returns>
+	<remarks>Si l'URL n'est pas affecté, on va le chercher dans le registre</remarks>
+</member><member name="M:IAFG.IA.VI.AF.AuthentificationExtranet.Authentification.EffectuerAuthentification(System.String,System.String,System.String)">
+	<summary>
+ Effectue l'authentification.
+ </summary>
+	<param name="userName">Nom du user</param>
+	<param name="password">Password</param>
+	<param name="url">Url Target sso Login</param>
+	<returns>Authentification réussi = True, Authentification réussi = False</returns>
+	<remarks>
+  - Utilise l'authentification Siteminder
+  - Si l'authentification réussi; les propriétés Token et UserName sont renseignés. 
+  - Le password est toujours mit en majuscule ???
+ </remarks>
+</member><member name="P:IAFG.IA.VI.AF.AuthentificationExtranet.Authentification.UserName">
+	<summary>
+ Le nom de l'usager authentifié courant.
+ </summary>
+	<returns>Le nom de l'usager authentifié, Null si non authentifié</returns>
+</member><member name="P:IAFG.IA.VI.AF.AuthentificationExtranet.Authentification.Token">
+	<summary>
+ Le jeton d'authentification
+ </summary>
+	<returns>Le jeton d'authentification, Null si non authentifié</returns>
+</member><member name="M:IAFG.IA.VI.AF.AuthentificationExtranet.Authentification.GetSiteminderCookie(System.String,System.String,System.String,System.String)">
+	<summary>
+ Get the Siteminder cookie using the following param
+ </summary>
+	<param name="username">The username of the user how attempt</param>
+	<param name="password">The password of the user how attempt</param>
+	<param name="urlPortalSiteminder">The url of the Siteminder portal </param>
+	<param name="urlTargetSSOLogin">The url of the SSO login page</param>
+	<returns>A Cookie container if the Siteminder Cookie is present elsewhere, return Nothing</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

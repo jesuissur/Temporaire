@@ -1,0 +1,206 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.VI.AF.Proposition.Validation
+</name>
+</assembly>
+<members>
+<member name="P:IAFG.IA.VI.AF.Proposition.Validation.ValideInfosPU.ObjetAValider">
+	<summary>
+ Lien vers l'objet à valider
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+	</remarks>
+</member><member name="P:IAFG.IA.VI.AF.Proposition.Validation.ValideSurprime.ObjetAValider">
+	<summary>
+ Lien vers l'objet à valider
+ </summary>
+	<value></value>
+	<returns></returns>
+</member><member name="P:IAFG.IA.VI.AF.Proposition.Validation.ValideProtectionIllustration.ObjetAValider">
+	<summary>
+ Lien vers l'objet à valider
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Validation.ValideProtectionIllustration.GererChangementNivEpargne">
+	<summary> 
+ Cette fonction fait le traitement nécessaire lors du changement du type de cout à nivele épargne.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Proposition.Validation.ValideAssure.ObjetAValider">
+	<summary>
+ Lien vers l'objet à valider
+ </summary>
+	<value></value>
+	<returns></returns>
+</member><member name="P:IAFG.IA.VI.AF.Proposition.Validation.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.VI.AF.Proposition.Validation.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:IAFG.IA.VI.AF.Proposition.Validation.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="P:IAFG.IA.VI.AF.Proposition.Validation.ValideSurprimes.ObjetAValider">
+	<summary>
+ Lien vers l'objet à valider
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+ Sera overloadé dans les classes descendates et typé selon le besoin.
+ </remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Validation.ValideSurprimes.ValiderAdd(System.String)">
+	<summary>
+ Permet de valider si l'on peut ajouter une surprime.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Proposition.Validation.ValideAssures.ObjetAValider">
+	<summary>
+ Lien vers l'objet à valider
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+	</remarks>
+</member><member name="P:IAFG.IA.VI.AF.Proposition.Validation.ValideProtection.ObjetAValider">
+	<summary>
+ Lien vers l'objet à valider
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Validation.ValideProtection.AffecterAssuresProtection(System.String,IAFG.IA.VI.ValidationTypes.MessageValidation@)">
+	<summary>
+ Cette fonction retourne si l'affectation du prochain assuré disponible a réussie ou échouée
+ </summary>
+	<param name="idIndividu">l'id de l'individu</param>
+	<returns>le prochain assuré disponible, ou le meme si pas d'assuré disponible</returns>
+	<remarks>Anciennement ObtenirAssureForce dans InfoProtection</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Validation.ValideProtection.AjouterCjtGarDeces(IAFG.IA.VI.AF.Proposition.Assures)">
+	<summary>
+ Fonction qui permet de savoir s'il faut que l'on ajout le code de conjoint pour
+ la garantie de décès passer en paramètre (Voir ObtenirAssureForce)
+ </summary>
+	<param name="oAssures">la collection d'assuré de la protection</param>
+	<returns>True = On ajoute le "0" à la liste, False = on n'ajoute pas le code conjoint</returns>
+	<remarks>Anciennement dans InfoProtection</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Validation.ValideProtection.ValiderChangementProtection(System.String,System.String,IAFG.IA.VI.ValidationTypes.MessageValidation@)">
+	<summary>
+ Valide le changement de protection. Anciennement dans UtilsDossierBase
+ </summary>
+	<param name="planOld">l'ancien plan</param>
+	<param name="appliquerA">???</param>
+	<param name="MessageErreur">Le code du message d'erreur à afficher</param>
+	<returns>Succes ou Échec</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Validation.ValideProtection.ValiderMontantTotalAssInvInd">
+	<summary>
+ Méthode qui valide le montant total d'assurance invalidité par individu
+ </summary>
+	<returns>Succes ou Échec</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Validation.ValideProtection.ValiderChangementAssures">
+	<summary>
+ Fonction qui valide si le changement d'assurés (ItemChanged est valide)
+ </summary>
+	<returns>Succes ou Échec</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Validation.ValideProtection.ValiderConceptProprietePartageeTransition">
+	<summary>
+ Validation particuliaire pour le concept ProprietePartagee du produit Transition
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Validation.ValideProtection.ObtenirMontantTotalTransition">
+	<summary>
+ Fonction qui retourne le montant total de couverture Transition, incluant l'avenant de prestation majorée
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Validation.ValideProtection.ValiderMontantTotalRegle9Transition">
+	<summary>
+ Méthode qui fait la validation de la règle de montant Regle9_Transition
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Validation.ValideProtection.ValiderMontantTotal(System.Double)">
+	<summary>
+ Méthode de validation du montantTotal avant InitialiserValider
+ </summary>
+	<param name="montantTotal"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Validation.ValideProtection.ValiderLienProtectionBase">
+	<summary>
+ Cette validation doit absolument être fait dans les premières. il se peut qu'une protection
+ n'aie plus sa protection de base. Donc si LienProtectionBase est nothing et que c'est
+ une protection de type "avenant" il faut la supprimer
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Validation.ValideProtection.ContientAgeInvalide(System.Collections.Generic.List{System.Int32},System.Int32,System.Int32)">
+	<summary>
+ Vérifie si tous les éléments de la liste sont valide selon le min et max passé en paramètre
+ </summary>
+	<param name="listeAge">la liste contenant tous les âge à vérifier</param>
+	<param name="min">le minimum</param>
+	<param name="max">le maximum</param>
+	<returns>true = tous les éléments sont bons, false = au moins un élément n'est pas bon</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Proposition.Validation.ValideIndividu.ObjetAValider">
+	<summary>
+ Lien vers l'objet à valider
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+ Sera overloadé dans les classes descendates et typé selon le besoin.
+ </remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Validation.ValideIndividu.RefreshDureeMultiterme">
+	<summary>
+ Cette fonction permet gérer la duree pour les ass inv
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Validation.ValideIndividu.ValiderAge(System.String)">
+	<summary>
+ Valide l'âge d'un contractant dans la fenetre DialogueContractant
+ </summary>
+	<param name="fenetre">nom de la fenetre</param>
+	<returns>résultat du test</returns>
+	<remarks>NE PAS CONFONDRE avec ValiderAge sans paramètres qui valide l'âge d'un individu tout court.</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Validation.ValideIndividu.ValiderTypeIndividuParam(IAFG.IA.VI.AF.Proposition.ENUMs.TypeIndividu)">
+	<summary>
+ Fonction qui permet de valider si le changement de type d'individu du contractant est valide
+ </summary>
+	<param name="typeInd">le type d'individu à valider</param>
+	<returns>VI.ENUMs.ResultatValidation</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Validation.ValideIndividu.ValiderAddContractant(System.Int32,System.String)">
+	<summary>
+ Permet de valider si l'on peut ajouter un contractant.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Proposition.Validation.ValideIndividu.ValiderAgeContractant(System.Int32)">
+	<summary>
+ Permet de valider l'âge d'un contractant.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

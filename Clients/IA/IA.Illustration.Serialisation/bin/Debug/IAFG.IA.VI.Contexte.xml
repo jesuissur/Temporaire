@@ -1,0 +1,107 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.VI.Contexte
+</name>
+</assembly>
+<members>
+<member name="P:IAFG.IA.VI.Contexte.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.VI.Contexte.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:IAFG.IA.VI.Contexte.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="M:IAFG.IA.VI.Contexte.Contexte.Initialiser(IAFG.IA.VI.Contexte.ENUMs.Banniere,IAFG.IA.VI.Contexte.ENUMs.ModeExecution,IAFG.IA.VI.Contexte.ENUMs.Langue,IAFG.IA.VI.Contexte.ENUMs.ContexteApplicatif,System.String)">
+	<summary>
+ Initialise le contexte applicatif pour l'ensemble du processus courant.
+ L'initilisation du contexte doit être pris en charge uniquement par l'application et ce, au début de son chargement avant tout autre initialisation!
+ L'initialisation du contexte retourne une clé unique à l'application ayant commit l'action. Seule cette application est en mesure de 
+ </summary>
+	<param name="banniere">La bannière dans laquelle l'application doit fonctionner.</param>
+	<param name="modeExecution">Le mode d'exécution dans lequel l'application doit fonctionner.</param>
+	<param name="langue">La langue avec laquelle l'application doit fonctionner.</param>
+	<param name="contexteApplicatif">Le type de l'application pour laquelle le contexte est initialisé.</param>
+	<param name="cleInitialisation">
+ La clé unique générée par la première initialisation.
+ La clé est vide lorsqu'il s'agit de la première initialisation. 
+ Pour réinitialiser l'objet de contexte dans un même processus, il est impératif de fournir la clé générée lors de la première initialisation.
+ </param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.Contexte.Contexte.Relacher(System.String)">
+	<summary>
+ Relâche le contexte initialisé à priori dans le processus courant.
+ Il fait partie des bonnes pratiques de faire en sorte que l'application qui ait initialisé le Contexte relâche ce dernier à la fermeture.
+ </summary>
+	<param name="cleInitialisation">
+ La clé unique générée par la première initialisation.
+ Pour relâcher l'objet de contexte dans un même processus, il est impératif de fournir la clé générée lors de la première initialisation.
+ </param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.Contexte.Contexte.EstInitialise">
+	<summary>
+ Indique si le Contexte est initialisé ou non dans le processus courant.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.Contexte.Contexte.Banniere">
+	<summary>
+ Valeur de la bannière avec laquelle l'application fonctionne actuellement.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.Contexte.Contexte.Langue">
+	<summary>
+ Valeur de la langue avec laquelle l'application fonctionne actuellement.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.Contexte.Contexte.ModeExecution">
+	<summary>
+ Valeur du mode d'exécution dans lequel l'application fonctionne actuellement.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.Contexte.Contexte.ContexteApplicatif">
+	<summary>
+ Le type de l'application actif actuellement.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.Contexte.Contexte.Compagnie">
+	<summary>
+ Valeur de la compagnie avec lequel l'application fonctionne actuellement.
+ La valeur de la compagnie est déduite à partir de la valeur de la bannière.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.Contexte.Contexte.TransformerTexteHash(System.String)">
+	<summary>
+	</summary>
+	<param name="chaine"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.Contexte.Contexte">
+	<summary>
+ Contient les informations de base définissant le contexte dans lequel l'application fonctionne actuellement.
+ Il n'existe qu'un seul objet Contexte par processus.
+ Le Contexte doit normalement être défini au tout début de l'exécution d'une application et celle-ci doit en demeurer propriétaire tout au long de l'existance du processus courant.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

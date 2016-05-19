@@ -1,0 +1,849 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAFG.IA.VI.AF.TempsArret.Pilotage
+</name>
+</assembly>
+<members>
+<member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.Biens.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.Biens)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.Biens à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetBiens.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.Biens.Executer(System.String,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="NO_DISTRICT">Ce paramètre est de type <code>String</code>.</param>
+	<param name="US">Ce paramètre est de type <code>String</code>.</param>
+	<param name="NO_SEQ_INT_LOCAL">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.Biens">
+	<summary>
+ Classe de requete pour la requête Biens.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.IDCompagnieAssurance.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IDCompagnieAssurance)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.IDCompagnieAssurance à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetIDCompagnieAssurance.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.RenseignementsLegauxNotes.Executer(System.String,System.String,System.Int32,System.String)">
+	<summary>
+	</summary>
+	<param name="NO_DISTRICT">Ce paramètre est de type <code>String</code>.</param>
+	<param name="US">Ce paramètre est de type <code>String</code>.</param>
+	<param name="NO_SEQ_INT_LOCAL">Ce paramètre est de type <code>Int32</code>.</param>
+	<param name="REFERENCE_NOTE">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.RenseignementsLegauxNotes">
+	<summary>
+ Classe de requete pour la requête RenseignementsLegauxNotes.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceVieFonds.Executer(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="NO_DISTRICT">Ce paramètre est de type <code>String</code>.</param>
+	<param name="US">Ce paramètre est de type <code>String</code>.</param>
+	<param name="NO_CONTRAT">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceVieFonds">
+	<summary>
+ Classe de requete pour la requête AssuranceVieFonds.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceBeneficiaire.Executer(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="NO_DISTRICT">Ce paramètre est de type <code>String</code>.</param>
+	<param name="US">Ce paramètre est de type <code>String</code>.</param>
+	<param name="NO_CONTRAT">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceBeneficiaire">
+	<summary>
+ Classe de requete pour la requête AssuranceBeneficiaire.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.InfoCompagnie.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.InfoCompagnie)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.InfoCompagnie à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetInfoCompagnie.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.Individu.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.Individu)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.Individu à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetIndividu.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.AssuranceVieCouvertures.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceVieCouvertures)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.AssuranceVieCouvertures à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetAssuranceVieCouvertures.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.AssuranceVieInfoCodePlan.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceVieInfoCodePlan)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.AssuranceVieInfoCodePlan à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetAssuranceVieInfoCodePlan.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceVieInfoCodePlan.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="CodePlan">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceVieInfoCodePlan">
+	<summary>
+ Classe de requete pour la requête AssuranceVieInfoCodePlan.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceGeneral.Executer(System.String,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="NO_DISTRICT">Ce paramètre est de type <code>String</code>.</param>
+	<param name="US">Ce paramètre est de type <code>String</code>.</param>
+	<param name="NO_SEQ_INT_LOCAL">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceGeneral">
+	<summary>
+ Classe de requete pour la requête AssuranceGeneral.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.IDLieuNaissance.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IDLieuNaissance)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.IDLieuNaissance à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetIDLieuNaissance.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.RenseignementsLegaux.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.RenseignementsLegaux)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.RenseignementsLegaux à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetRenseignementsLegaux.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.PersonnesRessources.Executer(System.String,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="NO_DISTRICT">Ce paramètre est de type <code>String</code>.</param>
+	<param name="US">Ce paramètre est de type <code>String</code>.</param>
+	<param name="NO_SEQ_INT_LOCAL">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.PersonnesRessources">
+	<summary>
+ Classe de requete pour la requête PersonnesRessources.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.BilanSommaire.Executer(System.String,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="NO_DISTRICT">Ce paramètre est de type <code>String</code>.</param>
+	<param name="US">Ce paramètre est de type <code>String</code>.</param>
+	<param name="NO_SEQ_INT_LOCAL">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.BilanSommaire">
+	<summary>
+ Classe de requete pour la requête BilanSommaire.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IDCompagnieAssurance.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="NOMCOMPAGNIE">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IDCompagnieAssurance">
+	<summary>
+ Classe de requete pour la requête IDCompagnieAssurance.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IDLieuNaissance.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="DESC_LIEU_NAISSANCE">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IDLieuNaissance">
+	<summary>
+ Classe de requete pour la requête IDLieuNaissance.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IndividuAdresses.Executer(System.String,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="NO_DISTRICT">Ce paramètre est de type <code>String</code>.</param>
+	<param name="US">Ce paramètre est de type <code>String</code>.</param>
+	<param name="NO_SEQ_INT_LOCAL">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IndividuAdresses">
+	<summary>
+ Classe de requete pour la requête IndividuAdresses.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.IndividuTelephones.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IndividuTelephones)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.IndividuTelephones à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetIndividuTelephones.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.AssuranceBeneficiaire.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceBeneficiaire)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.AssuranceBeneficiaire à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetAssuranceBeneficiaire.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.Base.KeyAccessor.ApplyCriteriaMatchEqualOrDefault(IAFG.IA.VI.Base.KeyAccessor)">
+	<summary>
+  Subfunction use by ApplyCriteria that tries to match criteria value by equality or match the default value define for the criteria.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.Base.KeyAccessor.ApplyCriteriaMatchGreatestValueLessOrEqual(IAFG.IA.VI.Base.KeyAccessor)">
+	<summary>
+  Subfunction use by ApplyCriteria that trys to select the value whose key matches the greatest value less than or equal to the criterisValue parameter
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.Base.KeyAccessor.ApplyCriteriaMatchEqual(IAFG.IA.VI.Base.KeyAccessor)">
+	<summary>
+  Subfunction use by ApplyCriteria that tries to match criteria value by equality.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.Base.PDFException.#ctor">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.Base.PDFException.#ctor(System.String)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.Base.PDFException.#ctor(System.String,System.Exception)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<param name="inner"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.Base.PDFException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+	<summary>
+	</summary>
+	<param name="info"></param>
+	<param name="context"></param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.Base.PDFException">
+	<summary>
+ Exception qui est levee par les objets du PDF.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.IndividuObtenirRole.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IndividuObtenirRole)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.IndividuObtenirRole à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetIndividuObtenirRole.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.AssuranceVie.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceVie)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.AssuranceVie à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetAssuranceVie.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceVie.Executer(System.String,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="NO_DISTRICT">Ce paramètre est de type <code>String</code>.</param>
+	<param name="US">Ce paramètre est de type <code>String</code>.</param>
+	<param name="NO_SEQ_INT_LOCAL">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceVie">
+	<summary>
+ Classe de requete pour la requête AssuranceVie.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.Objectifs.Executer(System.String,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="NO_DISTRICT">Ce paramètre est de type <code>String</code>.</param>
+	<param name="US">Ce paramètre est de type <code>String</code>.</param>
+	<param name="NO_SEQ_INT_LOCAL">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.Objectifs">
+	<summary>
+ Classe de requete pour la requête Objectifs.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.EpargneDetail.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.EpargneDetail)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.EpargneDetail à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetEpargneDetail.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.Individu.Executer(System.String,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="NO_DISTRICT">Ce paramètre est de type <code>String</code>.</param>
+	<param name="US">Ce paramètre est de type <code>String</code>.</param>
+	<param name="NO_SEQ_INT_LOCAL">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.Individu">
+	<summary>
+ Classe de requete pour la requête Individu.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.RenseignementsLegaux.Executer(System.String,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="NO_DISTRICT">Ce paramètre est de type <code>String</code>.</param>
+	<param name="US">Ce paramètre est de type <code>String</code>.</param>
+	<param name="NO_SEQ_INT_LOCAL">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.RenseignementsLegaux">
+	<summary>
+ Classe de requete pour la requête RenseignementsLegaux.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.AssuranceInvalidite.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceInvalidite)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.AssuranceInvalidite à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetAssuranceInvalidite.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.IndividuLangue.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IndividuLangue)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.IndividuLangue à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetIndividuLangue.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IndividuLangue.Executer(System.String,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="NO_DISTRICT">Ce paramètre est de type <code>String</code>.</param>
+	<param name="US">Ce paramètre est de type <code>String</code>.</param>
+	<param name="NO_SEQ_INT_LOCAL">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IndividuLangue">
+	<summary>
+ Classe de requete pour la requête IndividuLangue.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IndividuTelephones.Executer(System.String,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="NO_DISTRICT">Ce paramètre est de type <code>String</code>.</param>
+	<param name="US">Ce paramètre est de type <code>String</code>.</param>
+	<param name="NO_SEQ_INT_LOCAL">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IndividuTelephones">
+	<summary>
+ Classe de requete pour la requête IndividuTelephones.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceVieCouvertures.Executer(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="NO_DISTRICT">Ce paramètre est de type <code>String</code>.</param>
+	<param name="US">Ce paramètre est de type <code>String</code>.</param>
+	<param name="NO_CONTRAT">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceVieCouvertures">
+	<summary>
+ Classe de requete pour la requête AssuranceVieCouvertures.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.InfoCompagnie.Executer(System.Int32)">
+	<summary>
+	</summary>
+	<param name="NO_COMPAGNIE">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.InfoCompagnie">
+	<summary>
+ Classe de requete pour la requête InfoCompagnie.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.RenseignementsLegauxNotes.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.RenseignementsLegauxNotes)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.RenseignementsLegauxNotes à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetRenseignementsLegauxNotes.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.AccesPilotage.Schemas">
+	<summary>
+ enumeration contenant les differents schemas a charger
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.TempsArret.LireClient.AccesPilotage.DescriptionTable.NomTable">
+	<summary>
+ Nom de la table
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.TempsArret.LireClient.AccesPilotage.DescriptionTable.NomAttache">
+	<summary>
+ Nom de l'attache (Link Table)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.AccesPilotage.DescriptionTable.#ctor(System.String,System.String)">
+	<summary>
+ Constructeur de la structure
+ </summary>
+	<param name="nomTable">Nom de la table</param>
+	<param name="nomAttache">Nom de l'attache (Link Table)</param>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.TempsArret.LireClient.AccesPilotage.Langue">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.TempsArret.LireClient.AccesPilotage.Banniere">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.TempsArret.LireClient.AccesPilotage.ContexteApplicatif">
+	<summary>
+ Indique le context applicatif qui sera utilise lors de l'excution d'une requete sql.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.AccesPilotage.ObtenirListesChoix">
+	<summary>
+ Permet d'acceder les listes de choix autres que XML a travers le PDF via l'interface IListesChoix
+ </summary>
+	<returns>Interface des listes de choix</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.AccesPilotage">
+	<summary>
+ Classe servant a etablir les connexions aux bases de donnees necessaires au
+ fonctionnement d'une application
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.DictionnaireDonnees">
+	<summary>
+ Dictionnaire de donnees contenant des objets qui implements l'interface IPDFDataTable.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.PDFException.#ctor">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.PDFException.#ctor(System.String)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.PDFException.#ctor(System.String,System.Exception)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<param name="inner"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.PDFException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+	<summary>
+	</summary>
+	<param name="info"></param>
+	<param name="context"></param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.PDFException">
+	<summary>
+ Exception qui est levee par les objets du PDF.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.ListesChoix">
+	<summary>
+ Permet d'instancier les interfaces de listes de choix et sert de point d'entree pour avoir acces a une instance de IListesChoix 
+ </summary>
+	<remarks>Subterfuge pour pouvoir utiliser des listes de choix generees par le PDF a travers une interface</remarks>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.IPDFDataTable">
+	<summary>
+ Interface qui permet aux methodes de passer un instance qui implemente cette interface.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.IListesChoix">
+	<summary>
+ Interface qui permet aux methodes de passer un instance qui implemente cette interface.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRows">
+	<summary>
+ Represente une collection de lignes de donnees.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow">
+	<summary>
+ Represente une ligne de donnees
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Registre.RegistreRacine">
+	<summary>
+ enumeration des racines de la base de registre.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Registre.EstCeClefExiste(IAFG.IA.VI.AF.TempsArret.LireClient.Registre.RegistreRacine,System.String)">
+	<summary>
+ Valide l'existance de la clef passee en parametre.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit valider l'existance de la clef.</param>
+	<param name="clef">La clef dont on veut valider son existance.</param>
+	<returns>Retourne la valeur True si la clef existe. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Registre.CreerClef(IAFG.IA.VI.AF.TempsArret.LireClient.Registre.RegistreRacine,System.String)">
+	<summary>
+ Cree la clef dans la racine passee en parametre.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veut creer la clef.</param>
+	<param name="clef">La clef a creer.</param>
+	<returns>Retourne la valeur True si la clef a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Registre.SupprimerClef(IAFG.IA.VI.AF.TempsArret.LireClient.Registre.RegistreRacine,System.String)">
+	<summary>
+ Supprime la clef a partir de la racine passee en parametre
+ </summary>
+	<param name="registreRacine">La racine a partir de laquelle la clef sera supprimee.</param>
+	<param name="clef">La clef que l'on veut supprimer.</param>
+	<returns>Retourne la valeur True si la clef a ete supprimee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Registre.SupprimerClef(IAFG.IA.VI.AF.TempsArret.LireClient.Registre.RegistreRacine,System.String,System.Boolean)">
+	<summary>
+ Supprime la clef a partir de la racine passee en parametre.. Si la clef contient des sous-clefs, en fonction du parametre recursive, l'ensemble de l'arbre sera supprime.
+ </summary>
+	<param name="registreRacine">La racine a partir de lqeuelle la clef sera supprimee.</param>
+	<param name="clef">La clef que l'on veut supprimer.</param>
+	<param name="recursive">Indique s'il faut supprimer les sous-clefs de la clef.</param>
+	<returns>Retourne la valeur True si la clef a ete supprimee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Registre.ObtenirValeur(IAFG.IA.VI.AF.TempsArret.LireClient.Registre.RegistreRacine,System.String,System.String,System.String)">
+	<summary>
+ Obtenir la valeur de la clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit lire la valeur de la clef.</param>
+	<param name="clef">La clef d'ou l'on veut lire la valeur.</param>
+	<param name="nomValeur">le nom de la valeur.</param>
+	<param name="valeurDefaut">Si la valeur n'existe pas, cette valeur sera utilisee.</param>
+	<returns>La valeur de type String.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Registre.ObtenirValeur(IAFG.IA.VI.AF.TempsArret.LireClient.Registre.RegistreRacine,System.String,System.String,System.Byte[])">
+	<summary>
+ Obtenir la valeur de la clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit lire la valeur de la clef.</param>
+	<param name="clef">La clef d'ou l'on veut lire la valeur.</param>
+	<param name="nomValeur">le nom de la valeur.</param>
+	<param name="valeurDefaut">Si la valeur n'existe pas, cette valeur sera utilisee.</param>
+	<returns>La valeur de type Byte().</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Registre.ObtenirValeur(IAFG.IA.VI.AF.TempsArret.LireClient.Registre.RegistreRacine,System.String,System.String,System.Int32)">
+	<summary>
+ Obtenir la valeur de la clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on doit lire la valeur de la clef.</param>
+	<param name="clef">La clef d'ou l'on veut lire la valeur.</param>
+	<param name="nomValeur">le nom de la valeur.</param>
+	<param name="valeurDefaut">Si la valeur n'existe pas, cette valeur sera utilisee.</param>
+	<returns>La valeur de type Integer.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Registre.ObtenirValeurs(IAFG.IA.VI.AF.TempsArret.LireClient.Registre.RegistreRacine,System.String)">
+	<summary>
+	</summary>
+	<param name="registreRacine"></param>
+	<param name="clef"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Registre.CreerValeur(IAFG.IA.VI.AF.TempsArret.LireClient.Registre.RegistreRacine,System.String,System.String,System.String)">
+	<summary>
+ Creer une valeur pour une clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veyt creer une valeur.</param>
+	<param name="clef">La clef ou la valeur sera creee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<param name="valeur">La valeur a conserver.</param>
+	<returns>Retourne la valeur True si la valeur a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Registre.CreerValeur(IAFG.IA.VI.AF.TempsArret.LireClient.Registre.RegistreRacine,System.String,System.String,System.Byte[])">
+	<summary>
+ Creer une valeur pour une clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veyt creer une valeur.</param>
+	<param name="clef">La clef ou la valeur sera creee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<param name="valeur">La valeur a conserver.</param>
+	<returns>Retourne la valeur True si la valeur a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Registre.CreerValeur(IAFG.IA.VI.AF.TempsArret.LireClient.Registre.RegistreRacine,System.String,System.String,System.Int32)">
+	<summary>
+ Creer une valeur pour une clef a partir de la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine ou l'on veyt creer une valeur.</param>
+	<param name="clef">La clef ou la valeur sera creee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<param name="valeur">La valeur a conserver.</param>
+	<returns>Retourne la valeur True si la valeur a ete creee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Registre.SupprimerValeur(IAFG.IA.VI.AF.TempsArret.LireClient.Registre.RegistreRacine,System.String,System.String)">
+	<summary>
+ Supprimer une valeur a partir de la clef pour la racine demandee.
+ </summary>
+	<param name="registreRacine">La racine d'ou l'on veut supprimer une valeur.</param>
+	<param name="clef">La clef d'ou la valeur sera supprimee.</param>
+	<param name="nomValeur">Le nom de la valeur.</param>
+	<returns>Retourne la valeur True si la valeur a ete supprimee avec succes. Dans le cas contraire, la valeur retournee est False.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Registre.ObtenirClefRegistre(IAFG.IA.VI.AF.TempsArret.LireClient.Registre.RegistreRacine)">
+	<summary>
+ Permet d'obtenir un objet RegistryKey representant la racine demandee par le parametre registreRacine.
+ </summary>
+	<param name="registreRacine">La racine de la base de regsitre demandee.</param>
+	<returns>Une instance de RegistryKey</returns>
+	<remarks>Si la valeur de l'enumeration n'existe pas, la valeur nul (Nothing) est retournee.</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Registre.EffacerRegistryKey(Microsoft.Win32.RegistryKey@)">
+	<summary>
+ Effacer l'instance a l'objet RegistryKey.
+ </summary>
+	<param name="registryKey">L'instance de l'objet RegistryKey.</param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Registre">
+	<summary>
+ Cette classe est une classe de facade pour l'utilisation de la base de registre.
+ </summary>
+	<remarks>Cette classe est statique(Shared). Cette classe est non heritable(NotInheritable).</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IDOccupation.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="DESCOCCUPATION">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IDOccupation">
+	<summary>
+ Classe de requete pour la requête IDOccupation.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="P:IAFG.IA.VI.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisee par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.VI.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriete CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources � l'aide de cette classe de ressource fortement typee.
+</summary>
+</member><member name="T:IAFG.IA.VI.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typee destinee, entre autres, a� la consultation des chaines localisees.
+</summary>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.Epargne.Executer(System.String,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="NO_DISTRICT">Ce paramètre est de type <code>String</code>.</param>
+	<param name="US">Ce paramètre est de type <code>String</code>.</param>
+	<param name="NO_SEQ_INT_LOCAL">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.Epargne">
+	<summary>
+ Classe de requete pour la requête Epargne.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.IDOccupation.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IDOccupation)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.IDOccupation à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetIDOccupation.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IndividuObtenirRole.Executer(System.String,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="NO_DISTRICT">Ce paramètre est de type <code>String</code>.</param>
+	<param name="US">Ce paramètre est de type <code>String</code>.</param>
+	<param name="NO_SEQ_INT_LOCAL">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IndividuObtenirRole">
+	<summary>
+ Classe de requete pour la requête IndividuObtenirRole.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.BilanSommaire.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.BilanSommaire)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.BilanSommaire à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetBilanSommaire.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.AssuranceVieFonds.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceVieFonds)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.AssuranceVieFonds à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetAssuranceVieFonds.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.AssuranceGeneral.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceGeneral)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.AssuranceGeneral à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetAssuranceGeneral.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.PersonnesRessources.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.PersonnesRessources)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.PersonnesRessources à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetPersonnesRessources.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.Epargne.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.Epargne)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.Epargne à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetEpargne.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.IndividuAdresses.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.IndividuAdresses)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.IndividuAdresses à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetIndividuAdresses.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Donnees.Objectifs.#ctor(IAFG.IA.VI.AF.TempsArret.LireClient.PDFDataRow,IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.Objectifs)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.Objectifs à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetObjectifs.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.EpargneDetail.Executer(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="NO_DISTRICT">Ce paramètre est de type <code>String</code>.</param>
+	<param name="US">Ce paramètre est de type <code>String</code>.</param>
+	<param name="NO_CONTRAT">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.EpargneDetail">
+	<summary>
+ Classe de requete pour la requête EpargneDetail.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceInvalidite.Executer(System.String,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="NO_DISTRICT">Ce paramètre est de type <code>String</code>.</param>
+	<param name="US">Ce paramètre est de type <code>String</code>.</param>
+	<param name="NO_SEQ_INT_LOCAL">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.TempsArret.LireClient.Requetes.AssuranceInvalidite">
+	<summary>
+ Classe de requete pour la requête AssuranceInvalidite.
+ </summary>
+	<remarks>
+	</remarks>
+</member>
+</members>
+</doc>
