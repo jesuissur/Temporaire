@@ -54,11 +54,27 @@
     <Reference Include="IAFG.IA.VI.AF.Base.Interface">
       <HintPath>..\..\..\..\..\..\IA_TFS\VI_SuiteInterface\Dev\Fisc1\References\Interne\IAFG.IA.VI.AF.Base.Interface.dll</HintPath>
     </Reference>
+    <Reference Include="IAFG.IA.VI.AF.Changements, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\IA_TFS\VI_SuiteInterface\Dev\Fisc1\References\Interne\IAFG.IA.VI.AF.Changements.dll</HintPath>
+    </Reference>
+    <Reference Include="IAFG.IA.VI.AF.Changements.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\IA_TFS\VI_SuiteInterface\Dev\Fisc1\References\Interne\IAFG.IA.VI.AF.Changements.Interface.dll</HintPath>
+    </Reference>
     <Reference Include="IAFG.IA.VI.AF.IBase">
       <HintPath>..\..\..\..\..\..\IA_TFS\VI_SuiteInterface\Dev\Fisc1\References\Interne\IAFG.IA.VI.AF.IBase.dll</HintPath>
     </Reference>
     <Reference Include="IAFG.IA.VI.AF.Illustration.Interface">
       <HintPath>..\..\..\..\..\..\IA_TFS\VI_SuiteInterface\Dev\Fisc1\References\Interne\IAFG.IA.VI.AF.Illustration.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="IAFG.IA.VI.AF.ObjetsPartages, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\IA_TFS\VI_SuiteInterface\Dev\Fisc1\References\Interne\IAFG.IA.VI.AF.ObjetsPartages.dll</HintPath>
+    </Reference>
+    <Reference Include="IAFG.IA.VI.AF.ObjetsPartages.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\IA_TFS\VI_SuiteInterface\Dev\Fisc1\References\Interne\IAFG.IA.VI.AF.ObjetsPartages.Interface.dll</HintPath>
     </Reference>
     <Reference Include="IAFG.IA.VI.AF.PDFVie, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
