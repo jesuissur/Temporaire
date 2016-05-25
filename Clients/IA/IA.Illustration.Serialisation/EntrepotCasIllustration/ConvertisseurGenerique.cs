@@ -5,6 +5,7 @@ using System.Linq;
 using AutoMapper;
 using IAFG.IA.VI.AF.Illustration;
 using IAFG.IA.VI.AF.ObjetsPartages;
+using IAFG.IA.VI.AF.Proposition;
 
 namespace IA_T.Illustration.Serialisation.Test.EntrepotCasIllustration
 {
@@ -31,7 +32,18 @@ namespace IA_T.Illustration.Serialisation.Test.EntrepotCasIllustration
             {
                 var config = new MapperConfiguration(cfg =>
                 {
-                    cfg.CreateMap(typeof(Vecteur<Decimal>), typeof(List<Decimal>)).ConvertUsing(typeof(ConversionGeneriqueVecteur<Decimal>));
+                    cfg.AddGlobalIgnore("Parent");
+                    cfg.AddGlobalIgnore("EstVerouille");
+                    cfg.AddGlobalIgnore("NomFichierSauvegarde");
+                    cfg.AddGlobalIgnore("EstAppelleDuValidateur");
+                    cfg.AddGlobalIgnore("EstEnChargement");
+                    cfg.AddGlobalIgnore("EstEnSauvegarde");
+                    cfg.AddGlobalIgnore("Id");
+                    cfg.AddGlobalIgnore("TypeTransactionChg");
+                    cfg.AddGlobalIgnore("CalculFait");
+
+                    ConfigurerConvertisseursPourVecteurs(cfg);
+
                     cfg.CreateMap<IAFG.IA.VI.AF.Illustration.Illustration, CasIllustration>().
                         ForMember(x => x.DejaAlle, o => o.MapFrom(s => s.PropoInfoGenerale.DejaAlle)).
                         ForMember(x => x.F1, o => o.MapFrom(s => s.PropoInfoGenerale.F1)).
@@ -39,13 +51,64 @@ namespace IA_T.Illustration.Serialisation.Test.EntrepotCasIllustration
                         ForMember(x => x.Q4, o => o.MapFrom(s => s.PropoInfoGenerale.Q4)).
                         ForMember(x => x.Q6, o => o.MapFrom(s => s.PropoInfoGenerale.Q6)).
                         ForMember(x => x.TypeProposition, o => o.MapFrom(s => s.PropoInfoGenerale.TypeProposition));
-                    cfg.CreateMap<ConceptAssuranceRetraite, CasConceptAssuranceRetraite>();
-                    cfg.CreateMap<ConceptIRIS2, CasConceptIris2>();
+                    cfg.CreateMap<CasIllustration, IAFG.IA.VI.AF.Illustration.Illustration>().AfterMap((s, d) =>
+                        {
+                            d.PropoInfoGenerale.DejaAlle = s.DejaAlle;
+                            d.PropoInfoGenerale.F1 = s.F1;
+                            d.PropoInfoGenerale.LangueCorrespondance = s.LangueCorrespondance;
+                            d.PropoInfoGenerale.Q4 = s.Q4;
+                            d.PropoInfoGenerale.Q6 = s.Q6;
+                            d.PropoInfoGenerale.TypeProposition = s.TypeProposition;
+                            s.Scenarios.ForEach(cas =>
+                            {
+                                var scenario = d.Scenarios.Add();
+                                Instance.Map(cas, scenario);
+                            });
+                        }).
+                        ForMember(x => x.PropoInfoGenerale, o => o.Ignore());
+
+                    cfg.CreateMap<ConceptAssuranceRetraite, CasConceptAssuranceRetraite>().ReverseMap();
+                    cfg.CreateMap<ConceptIRIS2, CasConceptIris2>().ReverseMap();
+
+                    cfg.CreateMap<EmpruntBancaire, CasEmpruntBancaire>().ReverseMap();
+                    cfg.CreateMap<Taxation, CasTaxation>().ReverseMap();
+                    cfg.CreateMap<Proposition, CasProposition>();
+                    cfg.CreateMap<Adresse, CasAdresse>();
+                    cfg.CreateMap<Agent, CasAgent>();
+                    cfg.CreateMap<Prestation, CasPrestation>();
+                    cfg.CreateMap<Primes, CasPrimes>().
+                        ForMember(x => x.FlagPrimeMinimum, o => o.Ignore());
+
+                    cfg.CreateMap<CasScenario, Concept>().
+                        ForMember(x => x.TypeDeConcept, o => o.MapFrom(s => s.TypeConcept)).
+                        ForMember(x => x.IRIS2, o => o.MapFrom(s => s.ConceptIris2)).
+                        ForMember(x => x.AssuranceRetraite, o => o.MapFrom(s => s.ConceptAssuranceRetraite));
+
+
                     cfg.CreateMap<Scenario, CasScenario>().
-                        ForMember(x => x.TypeConcept, o => o.MapFrom(s => s.Concept.TypeDeConcept));
+                        ForMember(x => x.TypeConcept, o => o.MapFrom(s => s.Concept.TypeDeConcept)).
+                        ForMember(x => x.EmpruntBancaire, o => o.MapFrom(s => s.InfoTrad.EmpruntBancaire));
+                    cfg.CreateMap<CasScenario, Scenario>().AfterMap((s, d) =>
+                        {
+                            Instance.Map(s, d.Concept);
+                        }).
+                        ForMember(x => x.TabPerso, o => o.Ignore()).
+                        ForMember(x => x.GraPerso, o => o.Ignore());
                 });
                 return config;
             }
+        }
+
+        private static void ConfigurerConvertisseursPourVecteurs(IMapperConfiguration cfg)
+        {
+            ConfigurerConvertisseursPourTypeVecteur<Decimal>(cfg);
+            ConfigurerConvertisseursPourTypeVecteur<int>(cfg);
+        }
+
+        private static void ConfigurerConvertisseursPourTypeVecteur<T>(IMapperConfiguration cfg)
+        {
+            cfg.CreateMap(typeof(Vecteur<T>), typeof(List<T>)).ConvertUsing(typeof(ConversionGeneriqueVecteur<T>));
+            cfg.CreateMap(typeof(List<T>), typeof(Vecteur<T>)).ConvertUsing(typeof(ConversionGeneriqueListeEnVecteur<T>));
         }
     }
 
@@ -56,6 +119,20 @@ namespace IA_T.Illustration.Serialisation.Test.EntrepotCasIllustration
             return (context.SourceValue == null
                 ? new List<T>()
                 : ((Vecteur<T>) context.SourceValue).ToArray().ToList());
+        }
+    }
+
+    public class ConversionGeneriqueListeEnVecteur<T> : ITypeConverter<List<T>, Vecteur<T>>
+    {
+        public Vecteur<T> Convert(ResolutionContext context)
+        {
+            Vecteur<T> vecteur = null;
+            if (context.SourceValue != null)
+            {
+                vecteur = (Vecteur<T>) context.DestinationValue;
+                // TODO Phil. T.
+            }
+            return vecteur;
         }
     }
 }

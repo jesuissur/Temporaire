@@ -76,9 +76,21 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\IA_TFS\VI_SuiteInterface\Dev\Fisc1\References\Interne\IAFG.IA.VI.AF.ObjetsPartages.Interface.dll</HintPath>
     </Reference>
+    <Reference Include="IAFG.IA.VI.AF.PDFsVie, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\IA_TFS\VI_SuiteInterface\Dev\Fisc1\References\Interne\IAFG.IA.VI.AF.PDFsVie.dll</HintPath>
+    </Reference>
     <Reference Include="IAFG.IA.VI.AF.PDFVie, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\IA_TFS\VI_SuiteInterface\Dev\Fisc1\References\Interne\IAFG.IA.VI.AF.PDFVie.dll</HintPath>
+    </Reference>
+    <Reference Include="IAFG.IA.VI.AF.Proposition, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\IA_TFS\VI_SuiteInterface\Dev\Fisc1\References\Interne\IAFG.IA.VI.AF.Proposition.dll</HintPath>
+    </Reference>
+    <Reference Include="IAFG.IA.VI.AF.Proposition.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\IA_TFS\VI_SuiteInterface\Dev\Fisc1\References\Interne\IAFG.IA.VI.AF.Proposition.Interface.dll</HintPath>
     </Reference>
     <Reference Include="IAFG.IA.VI.Contexte, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -97,6 +109,10 @@
       <HintPath>..\..\..\..\..\..\IA_TFS\VI_SuiteInterface\Dev\Fisc1\References\Interne\IAFG.IA.VI.ENUMsVie.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NCrunch.Framework, Version=2.23.0.2, Culture=neutral, PublicKeyToken=01d101bf6f3e0aea, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnitTestProject3\packages\NCrunch.Framework.2.23.0.2\lib\portable-windows8+net45\NCrunch.Framework.dll</HintPath>
+    </Reference>
     <Reference Include="Ploeh.AutoFixture">
       <HintPath>..\UnitTestProject3\packages\AutoFixture.3.46.0\lib\net40\Ploeh.AutoFixture.dll</HintPath>
     </Reference>
@@ -134,6 +150,14 @@
       <Project>{71953769-490b-4b82-9814-5f1928baf24f}</Project>
       <Name>IAFG.IA.VI.AF.Illustration</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EntrepotCasIllustration\ContenuIllustration\Genesis_AssuranceRetraite.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EntrepotCasIllustration\ContenuIllustration\Evia_Iris2.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

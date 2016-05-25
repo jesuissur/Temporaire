@@ -1,17 +1,17 @@
 ﻿using System;
 using System.IO;
 using System.Reflection;
-using AutoMapper;
 using FluentAssertions;
 using IAFG.IA.IL.AF.Illustration.ENUMs;
 using IAFG.IA.IL.AP.IllusVie.PDF;
+using IAFG.IA.VI.AF.Base;
 using IAFG.IA.VI.AF.Illustration;
 using IAFG.IA.VI.AF.ObjetsPartages;
-using IAFG.IA.VI.Contexte;
 using IAFG.IA.VI.Contexte.ENUMs;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using IA_T.Illustration.Serialisation.Test.EntrepotCasIllustration;
 using Ploeh.AutoFixture;
+using AccesServices = IAFG.IA.VI.Contexte.AccesServices;
 
 
 namespace IA_T.Illustration.Serialisation.Test
@@ -19,7 +19,6 @@ namespace IA_T.Illustration.Serialisation.Test
     [TestClass]
     public class ConversionCasIllustrationTest
     {
-
         private static Fixture _auto = new Fixture();
 
         [TestInitialize]
@@ -39,12 +38,13 @@ namespace IA_T.Illustration.Serialisation.Test
         public void Devrait_ConvertirIllustrationEnCas_PourEvia_Iris2()
         {
             var cle = Guid.NewGuid().ToString();
-            var illustration = new IAFG.IA.VI.AF.Illustration.Illustration();
             try
             {
+                IAFG.IA.VI.AF.Illustration.Illustration illustration;
+
                 cle = AccesServices.Contexte.Initialiser(Banniere.IAP, ModeExecution.Developpement, Langue.Francais, ContexteApplicatif.EVIA, cle);
                 AccesPilotage.Initialiser();
-                illustration.Load(@"D:\MyDocs\Dev\Temporaire_Phil\Clients\IA\_SavedFiles\MKEVI999_9512675805_ConversionIRIS_Ent5-I1-P1-D1.evia_IAP");
+                illustration = ObtenirIllustrationDuContenuXml("Evia_Iris2.xml");
 
                 PreparerEtVerifierIllustration(illustration, PreparerEtVerifierConceptIris2);
 
@@ -60,15 +60,54 @@ namespace IA_T.Illustration.Serialisation.Test
         }
 
         [TestMethod]
+        public void Devrait_ConvertirCasEnIllustration_PourEvia_Iris2()
+        {
+            var cle = Guid.NewGuid().ToString();
+            try
+            {
+                IAFG.IA.VI.AF.Illustration.Illustration illustration;
+
+                cle = AccesServices.Contexte.Initialiser(Banniere.IAP, ModeExecution.Developpement, Langue.Francais, ContexteApplicatif.EVIA, cle);
+                AccesPilotage.Initialiser();
+                illustration = ObtenirIllustrationDuContenuXml("Evia_Iris2.xml");
+
+                PreparerEtVerifierIllustration(illustration, PreparerEtVerifierConceptIris2);
+
+                var sujet = new ConversionCasIllustration();
+                var casIllustration = sujet.Convertir(illustration);
+                var illustrationApresConversion = sujet.Convertir(casIllustration);
+                illustrationApresConversion.Should().NotBeNull();
+
+                JournaliserXmlPourUneIllustration(illustrationApresConversion);
+
+                illustrationApresConversion.DateCreation.Should().Be(illustration.DateCreation);
+                illustrationApresConversion.DateModification.Should().Be(illustration.DateModification);
+                //VerifierCasIllustration(casIllustration, illustration, VerifierCasConceptIris2);
+            }
+            finally
+            {
+                AccesServices.Contexte.Relacher(cle);
+            }
+        }
+
+        private static void JournaliserXmlPourUneIllustration(IAFG.IA.VI.AF.Illustration.Illustration illustration)
+        {
+            var m = typeof(Base).GetMethod("XML", BindingFlags.Instance | BindingFlags.NonPublic);
+            var contenuXml = m.Invoke(illustration, new object[] {});
+            Console.WriteLine(contenuXml);
+        }
+
+        [TestMethod]
         public void Devrait_ConvertirIllustrationEnCas_PourGenesis_AssuranceRetraire()
         {
             var cle = Guid.NewGuid().ToString();
-            var illustration = new IAFG.IA.VI.AF.Illustration.Illustration();
             try
             {
+                IAFG.IA.VI.AF.Illustration.Illustration illustration;
+
                 cle = AccesServices.Contexte.Initialiser(Banniere.IA, ModeExecution.Developpement, Langue.Francais, ContexteApplicatif.Genesis, cle);
                 AccesPilotage.Initialiser();
-                illustration.Load(@"D:\MyDocs\Dev\Temporaire_Phil\Clients\IA\_SavedFiles\Assurance-Retraite.gen69_IA");
+                illustration = ObtenirIllustrationDuContenuXml("Genesis_AssuranceRetraite.xml");
 
                 PreparerEtVerifierIllustration(illustration, PreparerEtVerifierConceptAssuranceRetraite);
 
@@ -81,6 +120,45 @@ namespace IA_T.Illustration.Serialisation.Test
             {
                 AccesServices.Contexte.Relacher(cle);
             }
+        }
+
+        private IAFG.IA.VI.AF.Illustration.Illustration ObtenirIllustrationDuContenuXml(string nomRessource)
+        {
+            var assemblyCourante = this.GetType().Assembly;
+            var nomCompletRessource = string.Format("IA_T.Illustration.Serialisation.Test.EntrepotCasIllustration.ContenuIllustration.{0}", nomRessource);
+            string contenuXml;
+
+            using (var s = assemblyCourante.GetManifestResourceStream(nomCompletRessource))
+                contenuXml = s.ReadToEnd();
+            var illustration = new IAFG.IA.VI.AF.Illustration.Illustration();
+            try
+            {
+                illustration.Load(contenuXml.Replace("[[ID_OBJET_TETE]]", Guid.NewGuid().ToString()));
+            }
+            catch (IAErreurDonneesException e)
+            {
+                // On essaie une seconde fois pour voir si ca regle un probleme intermittant
+                Console.WriteLine("Erreur au chargement, on essaie une seconde fois.  Erreur: {0}", e);
+                illustration.Load(contenuXml.Replace("[[ID_OBJET_TETE]]", Guid.NewGuid().ToString()));
+            }
+            return illustration;
+        }
+
+        /// <summary>
+        /// Permet de journaliser dans la console le contenu décrypter d'un savedFile.  On se sert
+        /// de cette méthode la première fois qu'on obtient un savedFile pour les tests unitaires.  Par la suite,
+        /// on créer un fichier xml embeddé dans l'assembly de test
+        /// </summary>
+        private void JournaliserContenuXml(string nomFichier)
+        {
+            Console.WriteLine(ExtraireContenuXml(nomFichier));
+        }
+
+        private string ExtraireContenuXml(string nomFichier)
+        {
+            var illustration = new IAFG.IA.VI.AF.Illustration.Illustration();
+            var t = typeof(ObjetTete).GetMethod("GetXMLFromFile", BindingFlags.NonPublic | BindingFlags.Instance);
+            return (string)t.Invoke(illustration, new object[] { nomFichier });
         }
 
         private void VerifierCasConceptAssuranceRetraite(CasScenario casScenario, Scenario scenario)
@@ -113,7 +191,7 @@ namespace IA_T.Illustration.Serialisation.Test
             
         }
 
-        private static void VerifierCasIllustration(CasIllustration casIllustration, IAFG.IA.VI.AF.Illustration.Illustration illustration, Action<CasScenario, Scenario> verifierCasPourConcept)
+        private static void VerifierCasIllustration(CasIllustration casIllustration, IAFG.IA.VI.AF.Illustration.Illustration illustration, Action<CasScenario, Scenario> VerifierCasPourConcept)
         {
             casIllustration.Should().NotBeNull();
             casIllustration.DateCreation.Should().Be(illustration.DateCreation);
@@ -136,8 +214,76 @@ namespace IA_T.Illustration.Serialisation.Test
                 casScenario.VMaxACalculer.Should().Be(scenario.VMaxACalculer);
                 casScenario.NbVie.Should().Be(scenario.NbVie);
                 casScenario.TypeConcept.Should().Be(scenario.Concept.TypeDeConcept);
-                verifierCasPourConcept(casScenario, scenario);
+                VerifierCasPourConcept(casScenario, scenario);
+                VerifierCasPourEmpruntBancaire(casScenario, scenario);
+                VerifierCasPourTaxation(casScenario, scenario);
+                VerifierCasPourPrestation(casScenario, scenario);
+                VerifierCasPourPrimes(casScenario, scenario);
+                casScenario.Proposition.Should().NotBeNull();
+                casScenario.Proposition.AddOptAutreContrat.Should().Be(scenario.Proposition.AddOptAutreContrat);
+                casScenario.Proposition.AddOptAutreMontant.Should().Be(scenario.Proposition.AddOptAutreMontant);
+                casScenario.Proposition.AddOptAutrePropo.Should().Be(scenario.Proposition.AddOptAutrePropo);
+                casScenario.Proposition.Adresses.ShouldAllBeEquivalentTo(scenario.Proposition.Adresses);
+                casScenario.Proposition.Agents.ShouldAllBeEquivalentTo(scenario.Proposition.Agents);
             }
+        }
+
+        private static void VerifierCasPourPrimes(CasScenario casScenario, Scenario scenario)
+        {
+            casScenario.Primes.Should().NotBeNull();
+            casScenario.Primes.AgeFondCibleRetourPrime.Should().Be(scenario.Primes.AgeFondCibleRetourPrime);
+            casScenario.Primes.AnneeFondCibleRetourPrime.Should().Be(scenario.Primes.AnneeFondCibleRetourPrime);
+            casScenario.Primes.CalculRenouvellement.Should().Be(scenario.Primes.CalculRenouvellement);
+            casScenario.Primes.Duree.Should().Be(scenario.Primes.Duree);
+            casScenario.Primes.FondCible.Should().Be(scenario.Primes.FondCible);
+            casScenario.Primes.HitTarget.Should().Be(scenario.Primes.HitTarget);
+            casScenario.Primes.Jusqua.Should().Be(scenario.Primes.Jusqua);
+            casScenario.Primes.MontantPrime.Should().ContainInOrder(scenario.Primes.MontantPrime.ToArray());
+            casScenario.Primes.PourcentageRetourPrime.Should().Be(scenario.Primes.PourcentageRetourPrime);
+            casScenario.Primes.PrimeModale.Should().Be(scenario.Primes.PrimeModale);
+            casScenario.Primes.TypePrime.Should().ContainInOrder(scenario.Primes.TypePrime.ToArray());
+            casScenario.Primes.TypePrimeEcranPrincipal.Should().Be(scenario.Primes.TypePrimeEcranPrincipal);
+            casScenario.Primes.ValeurACalculer.Should().Be(scenario.Primes.ValeurACalculer);
+        }
+
+        private static void VerifierCasPourPrestation(CasScenario casScenario, Scenario scenario)
+        {
+            casScenario.Prestation.Should().NotBeNull();
+            casScenario.Prestation.Annee_Deces.Should().ContainInOrder(scenario.Prestation.Annee_Deces.ToArray());
+            casScenario.Prestation.Annee_Invalidite.Should().ContainInOrder(scenario.Prestation.Annee_Invalidite.ToArray());
+            casScenario.Prestation.Montant_Deces.Should().ContainInOrder(scenario.Prestation.Montant_Deces.ToArray());
+            casScenario.Prestation.Montant_Invalidite.Should().ContainInOrder(scenario.Prestation.Montant_Invalidite.ToArray());
+            casScenario.Prestation.TypePrestationDeces.Should().Be(scenario.Prestation.TypePrestationDeces);
+            casScenario.Prestation.TypePrestationInvalidite.Should().Be(scenario.Prestation.TypePrestationInvalidite);
+        }
+
+        private static void VerifierCasPourTaxation(CasScenario casScenario, Scenario scenario)
+        {
+            casScenario.Taxation.Should().NotBeNull();
+            casScenario.Taxation.TauxMarginalCorp.Should().ContainInOrder(scenario.Taxation.TauxMarginalCorp.ToArray());
+            casScenario.Taxation.TauxMarginalInd.Should().ContainInOrder(scenario.Taxation.TauxMarginalInd.ToArray());
+            casScenario.Taxation.TauxRembCorpDividende.Should().Be(scenario.Taxation.TauxRembCorpDividende);
+            casScenario.Taxation.TauxTOHCorp.Should().Be(scenario.Taxation.TauxTOHCorp);
+            casScenario.Taxation.TaxeDividendeCorp.Should().ContainInOrder(scenario.Taxation.TaxeDividendeCorp.ToArray());
+            casScenario.Taxation.TaxeDividendeInd.Should().ContainInOrder(scenario.Taxation.TaxeDividendeInd.ToArray());
+            casScenario.Taxation.TaxeGainCapitalCorp.Should().ContainInOrder(scenario.Taxation.TaxeGainCapitalCorp.ToArray());
+            casScenario.Taxation.TaxeGainCapitalInd.Should().ContainInOrder(scenario.Taxation.TaxeGainCapitalInd.ToArray());
+            casScenario.Taxation.TaxeSurCapitalCorp.Should().ContainInOrder(scenario.Taxation.TaxeSurCapitalCorp.ToArray());
+        }
+
+        private static void VerifierCasPourEmpruntBancaire(CasScenario casScenario, Scenario scenario)
+        {
+            var casEmpruntBancaire = casScenario.EmpruntBancaire;
+            var empruntBancaire = scenario.InfoTrad.EmpruntBancaire;
+
+            casEmpruntBancaire.Should().NotBeNull();
+            casEmpruntBancaire.Amortissement.Should().Be(empruntBancaire.Amortissement);
+            casEmpruntBancaire.Frequence.Should().Be(empruntBancaire.Frequence);
+            casEmpruntBancaire.IsEmpruntInitialised.Should().Be(empruntBancaire.IsEmpruntInitialised);
+            casEmpruntBancaire.ParametrePaiment.Should().Be(empruntBancaire.ParametrePaiment);
+            casEmpruntBancaire.Solde.Should().Be(empruntBancaire.Solde);
+            casEmpruntBancaire.TauxInteret.Should().ContainInOrder(empruntBancaire.TauxInteret.ToArray());
+            casEmpruntBancaire.TypePret.Should().Be(empruntBancaire.TypePret);
         }
 
         private static void VerifierCasConceptIris2(CasScenario casScenario, Scenario scenario)
@@ -175,6 +321,7 @@ namespace IA_T.Illustration.Serialisation.Test
                 scenario.NoScenario.IsDefault().Should().BeFalse();
                 scenario.VMaxACalculer = true; // Autre chose que la valeur par défaut
                 scenario.NbVie.IsDefault().Should().BeFalse();
+                PreparerEtVerifierEmpruntBancaire(scenario);
                 // TODO Phil T.: À VALIDER
                 //scenario.ChangementAssVie.Should().NotBeNull();
                 scenario.Concept.Should().NotBeNull();
@@ -182,6 +329,15 @@ namespace IA_T.Illustration.Serialisation.Test
                 Console.WriteLine("CONCEPT:{0}", scenario.Concept.TypeDeConcept);
                 preparerEtVerifierConcept(scenario);
             }
+        }
+
+        private static void PreparerEtVerifierEmpruntBancaire(Scenario scenario)
+        {
+            var empruntBancaire = scenario.InfoTrad.EmpruntBancaire;
+            empruntBancaire.Should().NotBeNull();
+            AssignerValeurAleatoireSiAbsente(empruntBancaire.Amortissement, x => empruntBancaire.Amortissement = x);
+            AssignerValeurAleatoireSiAbsente(empruntBancaire.Solde, x => empruntBancaire.Solde = x);
+            AssignerValeursAuVecteurSiVide(empruntBancaire.TauxInteret);
         }
 
         private static void PreparerEtVerifierConceptAssuranceRetraite(Scenario scenario)
@@ -289,6 +445,11 @@ namespace IA_T.Illustration.Serialisation.Test
         }
 
         private static void AssignerValeurAleatoireSiAbsente(decimal valeurChamp, Action<decimal> assignerValeur)
+        {
+            AssignerValeurAleatoireSiAbsente(valeurChamp, assignerValeur, x => x.IsDefault());
+        }
+
+        private static void AssignerValeurAleatoireSiAbsente(double valeurChamp, Action<double> assignerValeur)
         {
             AssignerValeurAleatoireSiAbsente(valeurChamp, assignerValeur, x => x.IsDefault());
         }

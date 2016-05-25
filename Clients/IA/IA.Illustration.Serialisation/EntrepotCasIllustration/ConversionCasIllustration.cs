@@ -4,8 +4,12 @@ namespace IA_T.Illustration.Serialisation.Test.EntrepotCasIllustration
     {
         public CasIllustration Convertir(IAFG.IA.VI.AF.Illustration.Illustration illustration)
         {
-            var mapper = ConvertisseurGenerique.Instance;
-            return mapper.Map<CasIllustration>(illustration);
+            return ConvertisseurGenerique.Instance.Map<CasIllustration>(illustration);
+        }
+
+        public IAFG.IA.VI.AF.Illustration.Illustration Convertir(CasIllustration casIllustration)
+        {
+            return ConvertisseurGenerique.Instance.Map<IAFG.IA.VI.AF.Illustration.Illustration>(casIllustration);
         }
     }
 }
