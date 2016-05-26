@@ -68,13 +68,17 @@ namespace IA_T.Illustration.Serialisation.Test.EntrepotCasIllustration
                         ForMember(x => x.PropoInfoGenerale, o => o.Ignore());
 
                     cfg.CreateMap<ConceptAssuranceRetraite, CasConceptAssuranceRetraite>().ReverseMap();
-                    cfg.CreateMap<ConceptIRIS2, CasConceptIris2>().ReverseMap();
+                    cfg.CreateMap<ConceptIRIS2, CasConceptIris2>().
+                        ForMember(x => x.VehiculeCompte, o=> o.MapFrom(s => s.VehiculeCompteCollateral));
+                    cfg.CreateMap<CasConceptIris2, ConceptIRIS2>().
+                        ForMember(x => x.VehiculeCompteCollateral, o => o.MapFrom(s => s.VehiculeCompte)).
+                        ForMember(x => x.IsInitialised, o => o.Ignore());
+                    cfg.CreateMap<ConceptIRIS, CasConceptIris>().ReverseMap();
 
+                    cfg.CreateMap<Produit, CasProduit>();
+                    cfg.CreateMap<CasProduit, Produit>();
                     cfg.CreateMap<EmpruntBancaire, CasEmpruntBancaire>().ReverseMap();
                     cfg.CreateMap<Taxation, CasTaxation>().ReverseMap();
-                    cfg.CreateMap<Proposition, CasProposition>();
-                    cfg.CreateMap<Adresse, CasAdresse>();
-                    cfg.CreateMap<Agent, CasAgent>();
                     cfg.CreateMap<Prestation, CasPrestation>();
                     cfg.CreateMap<Primes, CasPrimes>().
                         ForMember(x => x.FlagPrimeMinimum, o => o.Ignore());
@@ -87,11 +91,14 @@ namespace IA_T.Illustration.Serialisation.Test.EntrepotCasIllustration
 
                     cfg.CreateMap<Scenario, CasScenario>().
                         ForMember(x => x.TypeConcept, o => o.MapFrom(s => s.Concept.TypeDeConcept)).
-                        ForMember(x => x.EmpruntBancaire, o => o.MapFrom(s => s.InfoTrad.EmpruntBancaire));
+                        ForMember(x => x.EmpruntBancaire, o => o.MapFrom(s => s.InfoTrad.EmpruntBancaire)).
+                        ForMember(x => x.Produit, o => o.MapFrom(s => s.Proposition.Produit));
                     cfg.CreateMap<CasScenario, Scenario>().AfterMap((s, d) =>
                         {
                             Instance.Map(s, d.Concept);
+                            Instance.Map(s.Produit, d.Proposition.Produit);
                         }).
+                        ForMember(x => x.Proposition, o => o.Ignore()).
                         ForMember(x => x.TabPerso, o => o.Ignore()).
                         ForMember(x => x.GraPerso, o => o.Ignore());
                 });
@@ -130,7 +137,13 @@ namespace IA_T.Illustration.Serialisation.Test.EntrepotCasIllustration
             if (context.SourceValue != null)
             {
                 vecteur = (Vecteur<T>) context.DestinationValue;
-                // TODO Phil. T.
+                var liste = (List<T>)context.SourceValue;
+
+                foreach (T element in liste)
+                {
+                    var elementParReference = element;
+                    vecteur.Add(ref elementParReference);
+                }
             }
             return vecteur;
         }

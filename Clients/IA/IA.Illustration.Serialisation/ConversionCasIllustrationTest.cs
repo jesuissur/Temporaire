@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using FluentAssertions;
+using FluentAssertions.Equivalency;
 using IAFG.IA.IL.AF.Illustration.ENUMs;
 using IAFG.IA.IL.AP.IllusVie.PDF;
 using IAFG.IA.VI.AF.Base;
@@ -26,6 +28,7 @@ namespace IA_T.Illustration.Serialisation.Test
         {
             PatchExternalReferencesWithEverythingOnEarth();
             new DirectoryInfo(@"D:\MyDocs\Dev\Temporaire_Phil\Clients\IA\_SavedFiles").DeleteFilesWhere(x => x.Name.EndsWith(".lck"));
+            new DirectoryInfo(@"D:\IA_TFS\_Temp\_SavedFiles").DeleteFilesWhere(x => x.Name.EndsWith(".lck"));
         }
 
         [TestMethod]
@@ -37,7 +40,7 @@ namespace IA_T.Illustration.Serialisation.Test
         [TestMethod]
         public void Devrait_ConvertirIllustrationEnCas_PourEvia_Iris2()
         {
-            var cle = Guid.NewGuid().ToString();
+            string cle = "";
             try
             {
                 IAFG.IA.VI.AF.Illustration.Illustration illustration;
@@ -60,24 +63,46 @@ namespace IA_T.Illustration.Serialisation.Test
         }
 
         [TestMethod]
-        public void Devrait_ConvertirCasEnIllustration_PourEvia_Iris2()
+        public void Devrait_ConvertirIllustrationEnCas_PourGenesis_Iris()
         {
-            var cle = Guid.NewGuid().ToString();
+            string cle = "";
             try
             {
                 IAFG.IA.VI.AF.Illustration.Illustration illustration;
 
-                cle = AccesServices.Contexte.Initialiser(Banniere.IAP, ModeExecution.Developpement, Langue.Francais, ContexteApplicatif.EVIA, cle);
+                cle = AccesServices.Contexte.Initialiser(Banniere.IAP, ModeExecution.Developpement, Langue.Francais, ContexteApplicatif.Genesis, cle);
                 AccesPilotage.Initialiser();
-                illustration = ObtenirIllustrationDuContenuXml("Evia_Iris2.xml");
+                illustration = ObtenirIllustrationDuContenuXml("Genesis_Iris.xml");
 
-                PreparerEtVerifierIllustration(illustration, PreparerEtVerifierConceptIris2);
+                PreparerEtVerifierIllustration(illustration, PreparerEtVerifierConceptIris);
+
+                var sujet = new ConversionCasIllustration();
+                var casIllustration = sujet.Convertir(illustration);
+
+                VerifierCasIllustration(casIllustration, illustration, VerifierCasConceptIris);
+            }
+            finally
+            {
+                AccesServices.Contexte.Relacher(cle);
+            }
+        }
+
+        [TestMethod]
+        public void Devrait_ConvertirCasEnIllustration_PourEvia_Iris2()
+        {
+            string cle = "";
+            try
+            {
+                IAFG.IA.VI.AF.Illustration.Illustration illustration;
+
+                cle = AccesServices.Contexte.Initialiser(Banniere.IA, ModeExecution.Developpement, Langue.Francais, ContexteApplicatif.EVIA, cle);
+                AccesPilotage.Initialiser();
+                illustration = ObtenirIllustrationDuContenuXml("Evia_Iris2_IA.xml");
 
                 var sujet = new ConversionCasIllustration();
                 var casIllustration = sujet.Convertir(illustration);
                 var illustrationApresConversion = sujet.Convertir(casIllustration);
                 illustrationApresConversion.Should().NotBeNull();
-
                 JournaliserXmlPourUneIllustration(illustrationApresConversion);
 
                 illustrationApresConversion.DateCreation.Should().Be(illustration.DateCreation);
@@ -90,17 +115,10 @@ namespace IA_T.Illustration.Serialisation.Test
             }
         }
 
-        private static void JournaliserXmlPourUneIllustration(IAFG.IA.VI.AF.Illustration.Illustration illustration)
-        {
-            var m = typeof(Base).GetMethod("XML", BindingFlags.Instance | BindingFlags.NonPublic);
-            var contenuXml = m.Invoke(illustration, new object[] {});
-            Console.WriteLine(contenuXml);
-        }
-
         [TestMethod]
-        public void Devrait_ConvertirIllustrationEnCas_PourGenesis_AssuranceRetraire()
+        public void Devrait_ConvertirIllustrationEnCas_PourGenesis_AssuranceRetraite()
         {
-            var cle = Guid.NewGuid().ToString();
+            string cle = "";
             try
             {
                 IAFG.IA.VI.AF.Illustration.Illustration illustration;
@@ -120,6 +138,140 @@ namespace IA_T.Illustration.Serialisation.Test
             {
                 AccesServices.Contexte.Relacher(cle);
             }
+        }
+
+        [TestMethod]
+        public void Devrait_ConvertirCasEnIllustration_PourGenesis_AssuranceRetraite()
+        {
+            string cle = "";
+            try
+            {
+                IAFG.IA.VI.AF.Illustration.Illustration illustration;
+
+                cle = AccesServices.Contexte.Initialiser(Banniere.IA, ModeExecution.Developpement, Langue.Francais, ContexteApplicatif.Genesis, cle);
+                AccesPilotage.Initialiser();
+                illustration = ObtenirIllustrationDuContenuXml("Genesis_AssuranceRetraite.xml");
+
+                var sujet = new ConversionCasIllustration();
+                var casIllustration = sujet.Convertir(illustration);
+                var illustrationApresConversion = sujet.Convertir(casIllustration);
+                illustrationApresConversion.Should().NotBeNull();
+                //JournaliserXmlPourUneIllustration(illustrationApresConversion);
+
+                illustrationApresConversion.DateCreation.Should().Be(illustration.DateCreation);
+                illustrationApresConversion.DateModification.Should().Be(illustration.DateModification);
+                illustrationApresConversion.NoVersion.Should().Be(illustration.NoVersion);
+                illustrationApresConversion.PropoInfoGenerale.ShouldBeEquivalentTo(illustration.PropoInfoGenerale, o => o.SansProprietesObjetBase());
+                illustrationApresConversion.Scenarios.Should().HaveSameCount(illustration.Scenarios);
+                for (int i = 0; i < illustrationApresConversion.Scenarios.Count; i++)
+                {
+                    var scenarioApresConversion = illustrationApresConversion.Scenarios[i];
+                    var scenario = illustration.Scenarios[i];
+
+                    scenarioApresConversion.NbVie.Should().Be(scenario.NbVie);
+                    scenarioApresConversion.NoScenario.Should().Be(scenario.NoScenario);
+                    scenarioApresConversion.VMaxACalculer.Should().Be(scenario.VMaxACalculer);
+                    scenarioApresConversion.Concept.TypeDeConcept.Should().Be(scenario.Concept.TypeDeConcept);
+                    scenarioApresConversion.Concept.AssuranceRetraite.ShouldBeEquivalentTo(scenario.Concept.AssuranceRetraite, o => o.SansProprietesObjetBase());
+                    scenarioApresConversion.Concept.IRIS.ShouldBeEquivalentTo(scenario.Concept.IRIS, o => o.SansProprietesObjetBase());
+                    scenarioApresConversion.Concept.IRIS2.ShouldBeEquivalentTo(scenario.Concept.IRIS2, o => o.SansProprietesObjetBase());
+                    scenarioApresConversion.Concept.InvestorPlus.ShouldBeEquivalentTo(scenario.Concept.InvestorPlus, o => o.SansProprietesObjetBase());
+                    scenarioApresConversion.Concept.InvestorPlus2.ShouldBeEquivalentTo(scenario.Concept.InvestorPlus2, o => o.SansProprietesObjetBase());
+                    scenarioApresConversion.Concept.Iris2IllustrationReguliere.ShouldBeEquivalentTo(scenario.Concept.Iris2IllustrationReguliere, o => o.SansProprietesObjetBase());
+                    scenarioApresConversion.Concept.IrisIllustrationReguliere.ShouldBeEquivalentTo(scenario.Concept.IrisIllustrationReguliere, o => o.SansProprietesObjetBase());
+                    scenarioApresConversion.Concept.ProprietePartagee.ShouldBeEquivalentTo(scenario.Concept.ProprietePartagee, o => o.SansProprietesObjetBase());
+                    scenarioApresConversion.Concept.ProtectionPatrimoine.ShouldBeEquivalentTo(scenario.Concept.ProtectionPatrimoine, o => o.SansProprietesObjetBase());
+                    scenarioApresConversion.Concept.TransfertPatrimoine.ShouldBeEquivalentTo(scenario.Concept.TransfertPatrimoine, o => o.SansProprietesObjetBase());
+                    scenarioApresConversion.Concept.TransfertPatrimoineV2.ShouldBeEquivalentTo(scenario.Concept.TransfertPatrimoineV2, o => o.SansProprietesObjetBase());
+                    scenarioApresConversion.Concept.Zerocashflow.ShouldBeEquivalentTo(scenario.Concept.Zerocashflow, o => o.SansProprietesObjetBase());
+                }
+            }
+            finally
+            {
+                AccesServices.Contexte.Relacher(cle);
+            }
+        }
+
+        [TestMethod]
+        [Ignore()]
+        public void DecouvrirSavedFiles()
+        {
+            var rep = new DirectoryInfo(@"D:\IA_TFS\_Temp\_SavedFiles");
+
+            var extensions = new List<string>();
+            foreach (var fichier in rep.GetFilesWhere("*.*", SearchOption.AllDirectories, x => x.Name.ToUpper().Contains("_")))
+                extensions.AddIfNotContains(fichier.Extension);
+            extensions.ForEach(x => Console.WriteLine(x));
+            //foreach (var fichier in rep.GetFilesWhere("*.*", SearchOption.AllDirectories, x => x.Name.ToUpper().EndsWith("TRA70_IA")))
+            //{
+            //    string cle = "";
+            //    cle = AccesServices.Contexte.Initialiser(Banniere.IA, ModeExecution.Developpement, Langue.Francais, ContexteApplicatif.Transition, cle);
+            //    try
+            //    {
+            //        AccesPilotage.Initialiser();
+            //        var illustration = new IAFG.IA.VI.AF.Illustration.Illustration(fichier.FullName);
+            //        Console.WriteLine("Illustration du fichier:{0}", fichier.Name);
+            //        Console.WriteLine(" --> Nb de scenario:{0}", illustration.Scenarios.Count);
+            //        foreach (Scenario scenario in illustration.Scenarios)
+            //        {
+            //            Console.WriteLine("     --> Scenario pour concept:{0}", scenario.Concept.TypeDeConcept);
+            //        }
+            //    }
+            //    finally
+            //    {
+            //        AccesServices.Contexte.Relacher(cle);
+            //    }
+            //}
+        }
+
+        [TestMethod]
+        [Ignore]
+        public void EcrireContenuFichier()
+        {
+            string cle = "";
+            try
+            {
+                IAFG.IA.VI.AF.Illustration.Illustration illustration;
+
+                cle = AccesServices.Contexte.Initialiser(Banniere.IA, ModeExecution.Developpement, Langue.Francais, ContexteApplicatif.Genesis, cle);
+                AccesPilotage.Initialiser();
+                illustration = ObtenirIllustrationDuContenuXml("Genesis_AssuranceRetraite.xml");
+
+                var sujet = new ConversionCasIllustration();
+                var casIllustration = sujet.Convertir(illustration);
+                var illustrationApresConversion = sujet.Convertir(casIllustration);
+                illustrationApresConversion.Should().NotBeNull();
+                illustrationApresConversion.Save(@"D:\IA_TFS\_Temp\_SavedFiles\Genesis_AssuranceRetraite.gen69_IA");
+            }
+            finally
+            {
+                AccesServices.Contexte.Relacher(cle);
+            }
+        }
+
+        [TestMethod]
+        [Ignore()]
+        public void ObtenirContenuFichier()
+        {
+            string cle = "";
+            try
+            {
+                var fichier = @"D:\MyDocs\Dev\Temporaire_Phil\Clients\IA\_SavedFiles\MKEVI999_0447632861_Tra-Niv3_Ent7-I3-P3-D3.evia_IA";
+                cle = AccesServices.Contexte.Initialiser(Banniere.IA, ModeExecution.Developpement, Langue.Francais, ContexteApplicatif.EVIA, cle);
+                AccesPilotage.Initialiser();
+                JournaliserContenuXml(fichier);
+            }
+            finally
+            {
+                AccesServices.Contexte.Relacher(cle);
+            }
+        }
+
+        private static void JournaliserXmlPourUneIllustration(IAFG.IA.VI.AF.Illustration.Illustration illustration)
+        {
+            var m = typeof(Base).GetMethod("XML", BindingFlags.Instance | BindingFlags.NonPublic);
+            var contenuXml = m.Invoke(illustration, new object[] { });
+            Console.WriteLine(contenuXml);
         }
 
         private IAFG.IA.VI.AF.Illustration.Illustration ObtenirIllustrationDuContenuXml(string nomRessource)
@@ -219,13 +371,20 @@ namespace IA_T.Illustration.Serialisation.Test
                 VerifierCasPourTaxation(casScenario, scenario);
                 VerifierCasPourPrestation(casScenario, scenario);
                 VerifierCasPourPrimes(casScenario, scenario);
-                casScenario.Proposition.Should().NotBeNull();
-                casScenario.Proposition.AddOptAutreContrat.Should().Be(scenario.Proposition.AddOptAutreContrat);
-                casScenario.Proposition.AddOptAutreMontant.Should().Be(scenario.Proposition.AddOptAutreMontant);
-                casScenario.Proposition.AddOptAutrePropo.Should().Be(scenario.Proposition.AddOptAutrePropo);
-                casScenario.Proposition.Adresses.ShouldAllBeEquivalentTo(scenario.Proposition.Adresses);
-                casScenario.Proposition.Agents.ShouldAllBeEquivalentTo(scenario.Proposition.Agents);
+                VerifierCasPourProduit(casScenario, scenario);
             }
+        }
+
+        private static void VerifierCasPourProduit(CasScenario casScenario, Scenario scenario)
+        {
+            casScenario.Produit.Should().NotBeNull();
+            casScenario.Produit.CodeProduitLus.Should().Be(scenario.Proposition.Produit.CodeProduitLus);
+            casScenario.Produit.EstPU.Should().Be(scenario.Proposition.Produit.EstPU);
+            casScenario.Produit.GammeProduit.Should().Be(scenario.Proposition.Produit.GammeProduit);
+            casScenario.Produit.TypeProduit.Should().Be(scenario.Proposition.Produit.TypeProduit);
+            casScenario.Produit.Version.Should().Be(scenario.Proposition.Produit.Version);
+            casScenario.Produit.VersionMajeure.Should().Be(scenario.Proposition.Produit.VersionMajeure);
+            casScenario.Produit.VersionMineure.Should().Be(scenario.Proposition.Produit.VersionMineure);
         }
 
         private static void VerifierCasPourPrimes(CasScenario casScenario, Scenario scenario)
@@ -289,28 +448,45 @@ namespace IA_T.Illustration.Serialisation.Test
         private static void VerifierCasConceptIris2(CasScenario casScenario, Scenario scenario)
         {
             casScenario.ConceptIris2.Should().NotBeNull();
-            casScenario.ConceptIris2.CalculPrimeAdd.Should().Be(scenario.Concept.IRIS2.CalculPrimeAdd);
-            casScenario.ConceptIris2.RembCapDuree.Should().Be(scenario.Concept.IRIS2.RembCapDuree);
-            casScenario.ConceptIris2.RembIntDuree.Should().Be(scenario.Concept.IRIS2.RembIntDuree);
-            casScenario.ConceptIris2.DeductibleImpot.Should().Be(scenario.Concept.IRIS2.DeductibleImpot);
-            casScenario.ConceptIris2.RembBalance.Should().Be(scenario.Concept.IRIS2.RembBalance);
-            casScenario.ConceptIris2.DeductionCnap.Should().Be(scenario.Concept.IRIS2.DeductionCnap);
-            casScenario.ConceptIris2.DesiredLoanDesactivated.Should().Be(scenario.Concept.IRIS2.DesiredLoanDesactivated);
+            VerifierCasConceptIrisCommun(casScenario.ConceptIris2, scenario);
             casScenario.ConceptIris2.FigerSoldePret.Should().Be(scenario.Concept.IRIS2.FigerSoldePret);
-            casScenario.ConceptIris2.IrisExtra.Should().Be(scenario.Concept.IRIS2.IrisExtra);
-            casScenario.ConceptIris2.TaxePrimeExcedentaire.Should().Be(scenario.Concept.IRIS2.TaxePrimeExcedentaire);
-            casScenario.ConceptIris2.DesiredLoan.Should().ContainInOrder(scenario.Concept.IRIS2.DesiredLoan.ToArray());
             casScenario.ConceptIris2.ReinvestRendement.Should().ContainInOrder(scenario.Concept.IRIS2.ReinvestRendement.ToArray());
-            casScenario.ConceptIris2.RembCapMontant.Should().ContainInOrder(scenario.Concept.IRIS2.RembCapMontant.ToArray());
-            casScenario.ConceptIris2.FraisGarantie.Should().Be(scenario.Concept.IRIS2.FraisGarantie);
-            casScenario.ConceptIris2.ProvenanceRembCap.Should().Be(scenario.Concept.IRIS2.ProvenanceRembCap);
-            casScenario.ConceptIris2.ProvenanceRembInt.Should().Be(scenario.Concept.IRIS2.ProvenanceRembInt);
-            casScenario.ConceptIris2.RembCapChoix.Should().Be(scenario.Concept.IRIS2.RembCapChoix);
-            casScenario.ConceptIris2.RembCapTypeDuree.Should().Be(scenario.Concept.IRIS2.RembCapTypeDuree);
-            casScenario.ConceptIris2.RembIntTypeDuree.Should().Be(scenario.Concept.IRIS2.RembIntTypeDuree);
-            casScenario.ConceptIris2.SoldeAAtteindre.Should().Be(scenario.Concept.IRIS2.SoldeAAtteindre);
-            casScenario.ConceptIris2.TypeEmprunteur.Should().Be(scenario.Concept.IRIS2.TypeEmprunteur);
-            casScenario.ConceptIris2.VehiculeCompteCollateral.Should().Be(scenario.Concept.IRIS2.VehiculeCompteCollateral);
+        }
+
+        private static void VerifierCasConceptIris(CasScenario casScenario, Scenario scenario)
+        {
+            casScenario.ConceptIris.Should().NotBeNull();
+            VerifierCasConceptIrisCommun(casScenario.ConceptIris, scenario);
+            casScenario.ConceptIris.IrisAccountRate.Should().ContainInOrder(scenario.Concept.IRIS.IrisAccountRate.ToArray());
+            casScenario.ConceptIris.IrisBankLoanRate.Should().ContainInOrder(scenario.Concept.IRIS.IrisBankLoanRate.ToArray());
+            casScenario.ConceptIris.LoanIntRate.Should().Be(scenario.Concept.IRIS.LoanIntRate);
+            casScenario.ConceptIris.OptionInterets.Should().Be(scenario.Concept.IRIS.OptionInterets);
+            casScenario.ConceptIris.RembIntTaux.Should().ContainInOrder(scenario.Concept.IRIS.RembIntTaux.ToArray());
+        }
+
+        private static void VerifierCasConceptIrisCommun(CasConceptIrisBase conceptIris, Scenario scenario)
+        {
+            conceptIris.Should().NotBeNull();
+            conceptIris.CalculPrimeAdd.Should().Be(scenario.Concept.IRIS2.CalculPrimeAdd);
+            conceptIris.RembCapDuree.Should().Be(scenario.Concept.IRIS2.RembCapDuree);
+            conceptIris.RembIntDuree.Should().Be(scenario.Concept.IRIS2.RembIntDuree);
+            conceptIris.DeductibleImpot.Should().Be(scenario.Concept.IRIS2.DeductibleImpot);
+            conceptIris.RembBalance.Should().Be(scenario.Concept.IRIS2.RembBalance);
+            conceptIris.DeductionCnap.Should().Be(scenario.Concept.IRIS2.DeductionCnap);
+            conceptIris.DesiredLoanDesactivated.Should().Be(scenario.Concept.IRIS2.DesiredLoanDesactivated);
+            conceptIris.IrisExtra.Should().Be(scenario.Concept.IRIS2.IrisExtra);
+            conceptIris.TaxePrimeExcedentaire.Should().Be(scenario.Concept.IRIS2.TaxePrimeExcedentaire);
+            conceptIris.DesiredLoan.Should().ContainInOrder(scenario.Concept.IRIS2.DesiredLoan.ToArray());
+            conceptIris.RembCapMontant.Should().ContainInOrder(scenario.Concept.IRIS2.RembCapMontant.ToArray());
+            conceptIris.FraisGarantie.Should().Be(scenario.Concept.IRIS2.FraisGarantie);
+            conceptIris.ProvenanceRembCap.Should().Be(scenario.Concept.IRIS2.ProvenanceRembCap);
+            conceptIris.ProvenanceRembInt.Should().Be(scenario.Concept.IRIS2.ProvenanceRembInt);
+            conceptIris.RembCapChoix.Should().Be(scenario.Concept.IRIS2.RembCapChoix);
+            conceptIris.RembCapTypeDuree.Should().Be(scenario.Concept.IRIS2.RembCapTypeDuree);
+            conceptIris.RembIntTypeDuree.Should().Be(scenario.Concept.IRIS2.RembIntTypeDuree);
+            conceptIris.SoldeAAtteindre.Should().Be(scenario.Concept.IRIS2.SoldeAAtteindre);
+            conceptIris.TypeEmprunteur.Should().Be(scenario.Concept.IRIS2.TypeEmprunteur);
+            conceptIris.VehiculeCompte.Should().Be(scenario.Concept.IRIS2.VehiculeCompteCollateral);
         }
 
         private static void PreparerEtVerifierScenario(IAFG.IA.VI.AF.Illustration.Illustration illustration, Action<Scenario> preparerEtVerifierConcept)
@@ -397,6 +573,50 @@ namespace IA_T.Illustration.Serialisation.Test
             concept.TypeEmprunteur = TypeEmprunteur.Corporation;
         }
 
+        private static void PreparerEtVerifierConceptIris2IllustrationReguliere(Scenario scenario)
+        {
+            var concept = scenario.Concept.Iris2IllustrationReguliere;
+
+            //scenario.Concept.TypeDeConcept.Should().Be(TypeConcept.Iris2IllustrationReguliere);
+            //concept.Should().NotBeNull();
+            //AssignerValeurAleatoireSiAbsente(concept.VehiculeCompte, x => concept.VehiculeCompte = x);
+            //AssignerValeurAleatoireSiAbsente(concept.CalculPrimeAdd, x => concept.CalculPrimeAdd = x);
+            //AssignerValeurAleatoireSiAbsente(concept.RembCapDuree, x => concept.RembCapDuree = x);
+            //AssignerValeurAleatoireSiAbsente(concept.RembIntDuree, x => concept.RembIntDuree = x);
+            //AssignerValeurAleatoireSiAbsente(concept.DeductibleImpot, x => concept.DeductibleImpot = x);
+            //AssignerValeurAleatoireSiAbsente(concept.RembBalance, x => concept.RembBalance = x);
+            //AssignerValeursAuVecteurSiVide(concept.DesiredLoan);
+            //AssignerValeursAuVecteurSiVide(concept.RembCapMontant);
+            //concept.ProvenanceRembCap = TypeRemb.RetraitPolice; // Autre chose que la valeur par défaut
+            //concept.ProvenanceRembInt = TypeRemb.DepotsAdditionnels; // Autre chose que la valeur par défaut
+            //concept.RembCapChoix = TypeRembChoix.Maximum; // Autre chose que la valeur par défaut
+            //concept.RembCapTypeDuree = TypeDuree.Age;
+            //concept.RembIntTypeDuree = TypeDuree.Annee;
+            //concept.TypeEmprunteur = TypeEmprunteur.Corporation;
+        }
+
+        private static void PreparerEtVerifierConceptIris(Scenario scenario)
+        {
+            var concept = scenario.Concept.IRIS;
+
+            scenario.Concept.TypeDeConcept.Should().Be(TypeConcept.IRIS);
+            concept.Should().NotBeNull();
+            AssignerValeurAleatoireSiAbsente(concept.VehiculeCompte, x => concept.VehiculeCompte = x);
+            AssignerValeurAleatoireSiAbsente(concept.CalculPrimeAdd, x => concept.CalculPrimeAdd = x);
+            AssignerValeurAleatoireSiAbsente(concept.RembCapDuree, x => concept.RembCapDuree = x);
+            AssignerValeurAleatoireSiAbsente(concept.RembIntDuree, x => concept.RembIntDuree = x);
+            AssignerValeurAleatoireSiAbsente(concept.DeductibleImpot, x => concept.DeductibleImpot = x);
+            AssignerValeurAleatoireSiAbsente(concept.RembBalance, x => concept.RembBalance = x);
+            AssignerValeursAuVecteurSiVide(concept.DesiredLoan);
+            AssignerValeursAuVecteurSiVide(concept.RembCapMontant);
+            concept.ProvenanceRembCap = TypeRemb.RetraitPolice; // Autre chose que la valeur par défaut
+            concept.ProvenanceRembInt = TypeRemb.DepotsAdditionnels; // Autre chose que la valeur par défaut
+            concept.RembCapChoix = TypeRembChoix.Maximum; // Autre chose que la valeur par défaut
+            concept.RembCapTypeDuree = TypeDuree.Age;
+            concept.RembIntTypeDuree = TypeDuree.Annee;
+            concept.TypeEmprunteur = TypeEmprunteur.Corporation;
+        }
+
         private static void PreparerEtVerifierIllustration(IAFG.IA.VI.AF.Illustration.Illustration illustration, Action<Scenario> preparerEtVerifierConcept)
         {
             illustration.Should().NotBeNull();
@@ -470,6 +690,21 @@ namespace IA_T.Illustration.Serialisation.Test
                 if (!File.Exists(nouveauNomFichier))
                     File.Copy(nomFichier, nouveauNomFichier);
             }
+        }
+    }
+
+    internal static class ExtensionsFluentAssertions
+    {
+        public static EquivalencyAssertionOptions<T> SansProprietesObjetBase<T>(this EquivalencyAssertionOptions<T> options) where T:Base
+        {
+            return options.ExcludingFields().
+                           Excluding(x => x.Id).
+                           Excluding(x => x.Parent).
+                           Excluding(x => x.EstEnChargement).
+                           Excluding(x => x.SelectedMemberInfo.Name == "Tete" || 
+                                          x.SelectedMemberInfo.Name == "Scenario" ||
+                                          x.SelectedMemberInfo.Name == "Illustration" ||
+                                          x.SelectedMemberInfo.Name == "IsInitialised");
         }
     }
 }

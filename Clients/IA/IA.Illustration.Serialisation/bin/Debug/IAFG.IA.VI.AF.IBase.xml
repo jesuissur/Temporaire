@@ -6,50 +6,7 @@ IAFG.IA.VI.AF.IBase
 </name>
 </assembly>
 <members>
-<member name="P:IAFG.IA.VI.AF.IBase.My.Resources.Resources.ResourceManager">
-	<summary>
-  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
-</summary>
-</member><member name="P:IAFG.IA.VI.AF.IBase.My.Resources.Resources.Culture">
-	<summary>
-  Remplace la propriété CurrentUICulture du thread actuel pour toutes
-  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
-</summary>
-</member><member name="T:IAFG.IA.VI.AF.IBase.My.Resources.Resources">
-	<summary>
-  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
-</summary>
-</member><member name="T:IAFG.IA.VI.AF.IBase.IObjetTete">
-	<summary>
- Classe à la base de tous les objets de tête
- </summary>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.IBase.IIndexedDictionary`2.Item(System.Int32)">
-	<summary>
- Gets or sets the value associated with the specified index.
- </summary>
-	<param name="index">The index of the value to get or set.</param>
-	<value></value>
-	<returns>The value associated with the specified index. If the specified index is not found, a get operation throws a System.Collections.Generic.KeyNotFoundException.</returns>
-</member><member name="M:IAFG.IA.VI.AF.IBase.IIndexedDictionary`2.Remove(System.Int32)">
-	<summary>
- Removes the item at the specified index.
- </summary>
-	<param name="index">The index.</param>
-	<returns></returns>
-</member><member name="T:IAFG.IA.VI.AF.IBase.IIndexedDictionary`2">
-	<summary>
- Represents a generic collection of key/value pairs. Implements all functionality of a standard <see cref="T:System.Collections.Generic.Dictionary`2">System.Collections.Generic.Dictionary</see> and additionaly allows retrieving a value based on it's index.
- </summary>
-	<typeparam name="TKey"></typeparam>
-	<typeparam name="TValue"></typeparam>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.IBase.IEchange">
-	<summary>
- Cette interface permet les communications spéciales entres les classes qui ne se conaissent pas ou peu.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.IBase.ICollection.Add">
+<member name="M:IAFG.IA.VI.AF.IBase.ICollection.Add">
 	<summary>
  Ajoute un item du type courant à la collection.
  </summary>
@@ -121,6 +78,54 @@ IAFG.IA.VI.AF.IBase
  Cependant, le rechargement de ce type de collection se fait en fonction de la tablette que l'on retrouve dans l'assembly de Base.
  Les "fausses" collections (celle qui n'héritent pas de Collection(Of T)) doivent elles-mêmes prendre en charge la création/ajout d'un item en fonction d'un type précis.
  </remarks>
+</member><member name="T:IAFG.IA.VI.AF.IBase.IEchange">
+	<summary>
+ Cette interface permet les communications spéciales entres les classes qui ne se conaissent pas ou peu.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.IBase.IObjetTete">
+	<summary>
+ Classe à la base de tous les objets de tête
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.IBase.IIndexedDictionary`2.Item(System.Int32)">
+	<summary>
+ Gets or sets the value associated with the specified index.
+ </summary>
+	<param name="index">The index of the value to get or set.</param>
+	<value></value>
+	<returns>The value associated with the specified index. If the specified index is not found, a get operation throws a System.Collections.Generic.KeyNotFoundException.</returns>
+</member><member name="M:IAFG.IA.VI.AF.IBase.IIndexedDictionary`2.Remove(System.Int32)">
+	<summary>
+ Removes the item at the specified index.
+ </summary>
+	<param name="index">The index.</param>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.IBase.IIndexedDictionary`2">
+	<summary>
+ Represents a generic collection of key/value pairs. Implements all functionality of a standard <see cref="T:System.Collections.Generic.Dictionary`2">System.Collections.Generic.Dictionary</see> and additionaly allows retrieving a value based on it's index.
+ </summary>
+	<typeparam name="TKey"></typeparam>
+	<typeparam name="TValue"></typeparam>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.IBase.EnumCategorieValidationMessage">
+	<summary>
+ Représente la catégorisation des informations diffusées dans la section sommaire des validations
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.IBase.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.VI.AF.IBase.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:IAFG.IA.VI.AF.IBase.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
 </member><member name="T:IAFG.IA.VI.AF.IBase.IBase">
 	<summary>
  Interface possédant des propriétées/fonctions communes à tous les objets de niveau supérieur.
@@ -128,11 +133,6 @@ IAFG.IA.VI.AF.IBase
 	<remarks> La création de cette interface a pour but de faire un pont entre TA
            et ces propriétées/fonctions sans créer de relation de dépendance avec
            les autres entitées (du genre proposition etc.)</remarks>
-</member><member name="T:IAFG.IA.VI.AF.IBase.EnumCategorieValidationMessage">
-	<summary>
- Représente la catégorisation des informations diffusées dans la section sommaire des validations
- </summary>
-	<remarks></remarks>
 </member>
 </members>
 </doc>

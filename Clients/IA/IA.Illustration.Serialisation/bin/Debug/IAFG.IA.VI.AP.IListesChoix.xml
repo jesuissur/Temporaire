@@ -6,7 +6,18 @@ IAFG.IA.VI.AP.IListesChoix
 </name>
 </assembly>
 <members>
-<member name="P:IAFG.IA.VI.AP.IListesChoix.My.Resources.Resources.ResourceManager">
+<member name="M:IAFG.IA.VI.AP.IListesChoix.IListesChoix.GetListesChoix">
+	<summary>
+ Obtient l'ensemble des listes de choix disponibles dans l'objet qui implémente l'interface.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AP.IListesChoix.IListesChoix">
+	<summary>
+ Point d'entrée pour la récupération des listes de choix contenues dans l'objet qui implémente l'interface.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AP.IListesChoix.My.Resources.Resources.ResourceManager">
 	<summary>
   Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
 </summary>
@@ -19,17 +30,6 @@ IAFG.IA.VI.AP.IListesChoix
 	<summary>
   Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
 </summary>
-</member><member name="M:IAFG.IA.VI.AP.IListesChoix.IListesChoix.GetListesChoix">
-	<summary>
- Obtient l'ensemble des listes de choix disponibles dans l'objet qui implémente l'interface.
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AP.IListesChoix.IListesChoix">
-	<summary>
- Point d'entrée pour la récupération des listes de choix contenues dans l'objet qui implémente l'interface.
- </summary>
-	<remarks></remarks>
 </member><member name="P:IAFG.IA.VI.AP.IListesChoix.IListeChoix.Id">
 	<summary>
  Identifiant unique de la liste de choix.

@@ -6,19 +6,19 @@ IAFG.IA.VI.AF.ObjetsPartages.Pilotage
 </name>
 </assembly>
 <members>
-<member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Requetes.SCDAgent.Executer(System.String)">
+<member name="P:IAFG.IA.VI.AF.My.Resources.Resources.ResourceManager">
 	<summary>
-	</summary>
-	<param name="PremiereLettreCodeAgent">Ce paramètre est de type <code>String</code>.</param>
-	<remarks>
-	</remarks>
-	<returns></returns>
-</member><member name="T:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Requetes.SCDAgent">
+  Retourne l'instance ResourceManager mise en cache utilisee par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.VI.AF.My.Resources.Resources.Culture">
 	<summary>
- Classe de requete pour la requête SCDAgent.
- </summary>
-	<remarks>
-	</remarks>
+  Remplace la propriete CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources � l'aide de cette classe de ressource fortement typee.
+</summary>
+</member><member name="T:IAFG.IA.VI.AF.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typee destinee, entre autres, a� la consultation des chaines localisees.
+</summary>
 </member><member name="M:IAFG.IA.VI.AF.Base.KeyAccessor.ApplyCriteriaMatchEqualOrDefault(IAFG.IA.VI.AF.Base.KeyAccessor)">
 	<summary>
   Subfunction use by ApplyCriteria that tries to match criteria value by equality or match the default value define for the criteria.
@@ -60,27 +60,6 @@ IAFG.IA.VI.AF.ObjetsPartages.Pilotage
  Exception qui est levee par les objets du PDF.
  </summary>
 	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Requetes.InfoAgenceFromCodeAgence.Executer(System.String)">
-	<summary>
-	</summary>
-	<param name="CodeAgence">Ce paramètre est de type <code>String</code>.</param>
-	<remarks>
-	</remarks>
-	<returns></returns>
-</member><member name="T:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Requetes.InfoAgenceFromCodeAgence">
-	<summary>
- Classe de requete pour la requête InfoAgenceFromCodeAgence.
- </summary>
-	<remarks>
-	</remarks>
-</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Donnees.SCDAgent.#ctor(IAFG.IA.VI.AF.ObjetsPartages.Pilotage.PDFDataRow,IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Requetes.SCDAgent)">
-	<summary>
- Initialise une nouvelle instance de la classe Donnees.SCDAgent à l'aide des paramètres dataRow et accesPilotage.
- </summary>
-	<param name="dataRow">Contient les informations relatives à un objetSCDAgent.</param>
-	<param name="parent">Représente l'objet requête</param>
-	<remarks>
-	</remarks>
 </member><member name="T:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.AccesPilotage.Schemas">
 	<summary>
  enumeration contenant les differents schemas a charger
@@ -322,19 +301,40 @@ IAFG.IA.VI.AF.ObjetsPartages.Pilotage
  Cette classe est une classe de facade pour l'utilisation de la base de registre.
  </summary>
 	<remarks>Cette classe est statique(Shared). Cette classe est non heritable(NotInheritable).</remarks>
-</member><member name="P:IAFG.IA.VI.AF.My.Resources.Resources.ResourceManager">
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Requetes.SCDAgent.Executer(System.String)">
 	<summary>
-  Retourne l'instance ResourceManager mise en cache utilisee par cette classe.
-</summary>
-</member><member name="P:IAFG.IA.VI.AF.My.Resources.Resources.Culture">
+	</summary>
+	<param name="PremiereLettreCodeAgent">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Requetes.SCDAgent">
 	<summary>
-  Remplace la propriete CurrentUICulture du thread actuel pour toutes
-  les recherches de ressources � l'aide de cette classe de ressource fortement typee.
-</summary>
-</member><member name="T:IAFG.IA.VI.AF.My.Resources.Resources">
+ Classe de requete pour la requête SCDAgent.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Donnees.SCDAgent.#ctor(IAFG.IA.VI.AF.ObjetsPartages.Pilotage.PDFDataRow,IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Requetes.SCDAgent)">
 	<summary>
-  Une classe de ressource fortement typee destinee, entre autres, a� la consultation des chaines localisees.
-</summary>
+ Initialise une nouvelle instance de la classe Donnees.SCDAgent à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetSCDAgent.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Requetes.InfoAgenceFromCodeAgence.Executer(System.String)">
+	<summary>
+	</summary>
+	<param name="CodeAgence">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Requetes.InfoAgenceFromCodeAgence">
+	<summary>
+ Classe de requete pour la requête InfoAgenceFromCodeAgence.
+ </summary>
+	<remarks>
+	</remarks>
 </member><member name="M:IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Donnees.InfoAgenceFromCodeAgence.#ctor(IAFG.IA.VI.AF.ObjetsPartages.Pilotage.PDFDataRow,IAFG.IA.VI.AF.ObjetsPartages.Pilotage.Requetes.InfoAgenceFromCodeAgence)">
 	<summary>
  Initialise une nouvelle instance de la classe Donnees.InfoAgenceFromCodeAgence à l'aide des paramètres dataRow et accesPilotage.

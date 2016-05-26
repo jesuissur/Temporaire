@@ -6,86 +6,60 @@ IAFG.IA.VI.AF.Changements.Pilotage
 </name>
 </assembly>
 <members>
-<member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.GetMessagesImportantsTrSimplifiee.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetMessagesImportantsTrSimplifiee)">
+<member name="P:IAFG.IA.VI.AF.My.Resources.Resources.ResourceManager">
 	<summary>
- Initialise une nouvelle instance de la classe Donnees.GetMessagesImportantsTrSimplifiee à l'aide des paramètres dataRow et accesPilotage.
- </summary>
-	<param name="dataRow">Contient les informations relatives à un objetGetMessagesImportantsTrSimplifiee.</param>
-	<param name="parent">Représente l'objet requête</param>
-	<remarks>
-	</remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.ListeMessage.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.ListeMessage)">
+  Retourne l'instance ResourceManager mise en cache utilisee par cette classe.
+</summary>
+</member><member name="P:IAFG.IA.VI.AF.My.Resources.Resources.Culture">
 	<summary>
- Initialise une nouvelle instance de la classe Donnees.ListeMessage à l'aide des paramètres dataRow et accesPilotage.
- </summary>
-	<param name="dataRow">Contient les informations relatives à un objetListeMessage.</param>
-	<param name="parent">Représente l'objet requête</param>
-	<remarks>
-	</remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.ListeChangements.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.ListeChangements)">
+  Remplace la propriete CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources � l'aide de cette classe de ressource fortement typee.
+</summary>
+</member><member name="T:IAFG.IA.VI.AF.My.Resources.Resources">
 	<summary>
- Initialise une nouvelle instance de la classe Donnees.ListeChangements à l'aide des paramètres dataRow et accesPilotage.
- </summary>
-	<param name="dataRow">Contient les informations relatives à un objetListeChangements.</param>
-	<param name="parent">Représente l'objet requête</param>
-	<remarks>
-	</remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.GetInfoTrSimplifiee.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetInfoTrSimplifiee)">
+  Une classe de ressource fortement typee destinee, entre autres, a� la consultation des chaines localisees.
+</summary>
+</member><member name="M:IAFG.IA.VI.AF.Base.KeyAccessor.ApplyCriteriaMatchEqualOrDefault(IAFG.IA.VI.AF.Base.KeyAccessor)">
 	<summary>
- Initialise une nouvelle instance de la classe Donnees.GetInfoTrSimplifiee à l'aide des paramètres dataRow et accesPilotage.
+  Subfunction use by ApplyCriteria that tries to match criteria value by equality or match the default value define for the criteria.
  </summary>
-	<param name="dataRow">Contient les informations relatives à un objetGetInfoTrSimplifiee.</param>
-	<param name="parent">Représente l'objet requête</param>
-	<remarks>
-	</remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetInfoTrSimplifiee.Executer(System.Int32)">
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.KeyAccessor.ApplyCriteriaMatchGreatestValueLessOrEqual(IAFG.IA.VI.AF.Base.KeyAccessor)">
+	<summary>
+  Subfunction use by ApplyCriteria that trys to select the value whose key matches the greatest value less than or equal to the criterisValue parameter
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.KeyAccessor.ApplyCriteriaMatchEqual(IAFG.IA.VI.AF.Base.KeyAccessor)">
+	<summary>
+  Subfunction use by ApplyCriteria that tries to match criteria value by equality.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.PDFException.#ctor">
 	<summary>
 	</summary>
-	<param name="IdTransactionSimplifiee">Ce paramètre est de type <code>Int32</code>.</param>
-	<remarks>
-	</remarks>
-	<returns></returns>
-</member><member name="T:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetInfoTrSimplifiee">
-	<summary>
- Classe de requete pour la requête GetInfoTrSimplifiee.
- </summary>
-	<remarks>
-	</remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.ListeNoPol.Executer(System.String,System.String)">
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.PDFException.#ctor(System.String)">
 	<summary>
 	</summary>
-	<param name="mDebutNoPolice">Ce paramètre est de type <code>String</code>.</param>
-	<param name="mNoCie">Ce paramètre est de type <code>String</code>.</param>
-	<remarks>
-	</remarks>
-	<returns></returns>
-</member><member name="T:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.ListeNoPol">
-	<summary>
- Classe de requete pour la requête ListeNoPol.
- </summary>
-	<remarks>
-	</remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetMessagesImportantsTrSimplifiee.Executer(System.Int32)">
+	<param name="message"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.PDFException.#ctor(System.String,System.Exception)">
 	<summary>
 	</summary>
-	<param name="IdTransactionSimplifiee">Ce paramètre est de type <code>Int32</code>.</param>
-	<remarks>
-	</remarks>
-	<returns></returns>
-</member><member name="T:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetMessagesImportantsTrSimplifiee">
+	<param name="message"></param>
+	<param name="inner"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Base.PDFException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
 	<summary>
- Classe de requete pour la requête GetMessagesImportantsTrSimplifiee.
- </summary>
-	<remarks>
-	</remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.EquivalenceTypeAssurancePermis.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.EquivalenceTypeAssurancePermis)">
+	</summary>
+	<param name="info"></param>
+	<param name="context"></param>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Base.PDFException">
 	<summary>
- Initialise une nouvelle instance de la classe Donnees.EquivalenceTypeAssurancePermis à l'aide des paramètres dataRow et accesPilotage.
+ Exception qui est levee par les objets du PDF.
  </summary>
-	<param name="dataRow">Contient les informations relatives à un objetEquivalenceTypeAssurancePermis.</param>
-	<param name="parent">Représente l'objet requête</param>
-	<remarks>
-	</remarks>
+	<remarks></remarks>
 </member><member name="T:IAFG.IA.VI.AF.Changements.Pilotage.AccesPilotage.Schemas">
 	<summary>
  enumeration contenant les differents schemas a charger
@@ -327,19 +301,6 @@ IAFG.IA.VI.AF.Changements.Pilotage
  Cette classe est une classe de facade pour l'utilisation de la base de registre.
  </summary>
 	<remarks>Cette classe est statique(Shared). Cette classe est non heritable(NotInheritable).</remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.EquivalenceTypeAssurancePermis.Executer(System.Int32)">
-	<summary>
-	</summary>
-	<param name="TypeAssuranceProposition">Ce paramètre est de type <code>Int32</code>.</param>
-	<remarks>
-	</remarks>
-	<returns></returns>
-</member><member name="T:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.EquivalenceTypeAssurancePermis">
-	<summary>
- Classe de requete pour la requête EquivalenceTypeAssurancePermis.
- </summary>
-	<remarks>
-	</remarks>
 </member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.ListeAgentsAgence.Executer">
 	<summary>
 	</summary>
@@ -352,14 +313,6 @@ IAFG.IA.VI.AF.Changements.Pilotage
  </summary>
 	<remarks>
 	</remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.GetSignaturesRequisesTrSimplifiee.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetSignaturesRequisesTrSimplifiee)">
-	<summary>
- Initialise une nouvelle instance de la classe Donnees.GetSignaturesRequisesTrSimplifiee à l'aide des paramètres dataRow et accesPilotage.
- </summary>
-	<param name="dataRow">Contient les informations relatives à un objetGetSignaturesRequisesTrSimplifiee.</param>
-	<param name="parent">Représente l'objet requête</param>
-	<remarks>
-	</remarks>
 </member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.ListeAgentsAgence.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.ListeAgentsAgence)">
 	<summary>
  Initialise une nouvelle instance de la classe Donnees.ListeAgentsAgence à l'aide des paramètres dataRow et accesPilotage.
@@ -368,11 +321,47 @@ IAFG.IA.VI.AF.Changements.Pilotage
 	<param name="parent">Représente l'objet requête</param>
 	<remarks>
 	</remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.ListeClasseDeRisque.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.ListeClasseDeRisque)">
+</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.ListeNoPol.Executer(System.String,System.String)">
 	<summary>
- Initialise une nouvelle instance de la classe Donnees.ListeClasseDeRisque à l'aide des paramètres dataRow et accesPilotage.
+	</summary>
+	<param name="mDebutNoPolice">Ce paramètre est de type <code>String</code>.</param>
+	<param name="mNoCie">Ce paramètre est de type <code>String</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.ListeNoPol">
+	<summary>
+ Classe de requete pour la requête ListeNoPol.
  </summary>
-	<param name="dataRow">Contient les informations relatives à un objetListeClasseDeRisque.</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.ListeNoPol.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.ListeNoPol)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ListeNoPol à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetListeNoPol.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.ListeMessage.Executer(System.Int32,System.Byte)">
+	<summary>
+	</summary>
+	<param name="codeApplication">Ce paramètre est de type <code>Int32</code>.</param>
+	<param name="distribution">Ce paramètre est de type <code>Byte</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.ListeMessage">
+	<summary>
+ Classe de requete pour la requête ListeMessage.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.ListeMessage.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.ListeMessage)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ListeMessage à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetListeMessage.</param>
 	<param name="parent">Représente l'objet requête</param>
 	<remarks>
 	</remarks>
@@ -389,6 +378,14 @@ IAFG.IA.VI.AF.Changements.Pilotage
  </summary>
 	<remarks>
 	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.ListeClasseDeRisque.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.ListeClasseDeRisque)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.ListeClasseDeRisque à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetListeClasseDeRisque.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
 </member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.ListeChangements.Executer(System.Int32)">
 	<summary>
 	</summary>
@@ -402,55 +399,56 @@ IAFG.IA.VI.AF.Changements.Pilotage
  </summary>
 	<remarks>
 	</remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.ListeNoPol.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.ListeNoPol)">
+</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.ListeChangements.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.ListeChangements)">
 	<summary>
- Initialise une nouvelle instance de la classe Donnees.ListeNoPol à l'aide des paramètres dataRow et accesPilotage.
+ Initialise une nouvelle instance de la classe Donnees.ListeChangements à l'aide des paramètres dataRow et accesPilotage.
  </summary>
-	<param name="dataRow">Contient les informations relatives à un objetListeNoPol.</param>
+	<param name="dataRow">Contient les informations relatives à un objetListeChangements.</param>
 	<param name="parent">Représente l'objet requête</param>
 	<remarks>
 	</remarks>
-</member><member name="M:IAFG.IA.VI.AF.Base.KeyAccessor.ApplyCriteriaMatchEqualOrDefault(IAFG.IA.VI.AF.Base.KeyAccessor)">
-	<summary>
-  Subfunction use by ApplyCriteria that tries to match criteria value by equality or match the default value define for the criteria.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Base.KeyAccessor.ApplyCriteriaMatchGreatestValueLessOrEqual(IAFG.IA.VI.AF.Base.KeyAccessor)">
-	<summary>
-  Subfunction use by ApplyCriteria that trys to select the value whose key matches the greatest value less than or equal to the criterisValue parameter
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Base.KeyAccessor.ApplyCriteriaMatchEqual(IAFG.IA.VI.AF.Base.KeyAccessor)">
-	<summary>
-  Subfunction use by ApplyCriteria that tries to match criteria value by equality.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Base.PDFException.#ctor">
+</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetInfoTrSimplifiee.Executer(System.Int32)">
 	<summary>
 	</summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Base.PDFException.#ctor(System.String)">
+	<param name="IdTransactionSimplifiee">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetInfoTrSimplifiee">
 	<summary>
-	</summary>
-	<param name="message"></param>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Base.PDFException.#ctor(System.String,System.Exception)">
-	<summary>
-	</summary>
-	<param name="message"></param>
-	<param name="inner"></param>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Base.PDFException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
-	<summary>
-	</summary>
-	<param name="info"></param>
-	<param name="context"></param>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Base.PDFException">
-	<summary>
- Exception qui est levee par les objets du PDF.
+ Classe de requete pour la requête GetInfoTrSimplifiee.
  </summary>
-	<remarks></remarks>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.GetInfoTrSimplifiee.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetInfoTrSimplifiee)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.GetInfoTrSimplifiee à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetGetInfoTrSimplifiee.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.EquivalenceTypeAssurancePermis.Executer(System.Int32)">
+	<summary>
+	</summary>
+	<param name="TypeAssuranceProposition">Ce paramètre est de type <code>Int32</code>.</param>
+	<remarks>
+	</remarks>
+	<returns></returns>
+</member><member name="T:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.EquivalenceTypeAssurancePermis">
+	<summary>
+ Classe de requete pour la requête EquivalenceTypeAssurancePermis.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.EquivalenceTypeAssurancePermis.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.EquivalenceTypeAssurancePermis)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.EquivalenceTypeAssurancePermis à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetEquivalenceTypeAssurancePermis.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
 </member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetSignaturesRequisesTrSimplifiee.Executer(System.Int32)">
 	<summary>
 	</summary>
@@ -464,45 +462,32 @@ IAFG.IA.VI.AF.Changements.Pilotage
  </summary>
 	<remarks>
 	</remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.GetFraisTransaction.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetFraisTransaction)">
+</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.GetSignaturesRequisesTrSimplifiee.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetSignaturesRequisesTrSimplifiee)">
 	<summary>
- Initialise une nouvelle instance de la classe Donnees.GetFraisTransaction à l'aide des paramètres dataRow et accesPilotage.
+ Initialise une nouvelle instance de la classe Donnees.GetSignaturesRequisesTrSimplifiee à l'aide des paramètres dataRow et accesPilotage.
  </summary>
-	<param name="dataRow">Contient les informations relatives à un objetGetFraisTransaction.</param>
+	<param name="dataRow">Contient les informations relatives à un objetGetSignaturesRequisesTrSimplifiee.</param>
 	<param name="parent">Représente l'objet requête</param>
 	<remarks>
 	</remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetFraisTransaction.Executer(System.Int32)">
+</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetMessagesImportantsTrSimplifiee.Executer(System.Int32)">
 	<summary>
 	</summary>
-	<param name="IdTypeProduit">Ce paramètre est de type <code>Int32</code>.</param>
+	<param name="IdTransactionSimplifiee">Ce paramètre est de type <code>Int32</code>.</param>
 	<remarks>
 	</remarks>
 	<returns></returns>
-</member><member name="T:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetFraisTransaction">
+</member><member name="T:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetMessagesImportantsTrSimplifiee">
 	<summary>
- Classe de requete pour la requête GetFraisTransaction.
+ Classe de requete pour la requête GetMessagesImportantsTrSimplifiee.
  </summary>
 	<remarks>
 	</remarks>
-</member><member name="P:IAFG.IA.VI.AF.My.Resources.Resources.ResourceManager">
+</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.GetMessagesImportantsTrSimplifiee.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetMessagesImportantsTrSimplifiee)">
 	<summary>
-  Retourne l'instance ResourceManager mise en cache utilisee par cette classe.
-</summary>
-</member><member name="P:IAFG.IA.VI.AF.My.Resources.Resources.Culture">
-	<summary>
-  Remplace la propriete CurrentUICulture du thread actuel pour toutes
-  les recherches de ressources � l'aide de cette classe de ressource fortement typee.
-</summary>
-</member><member name="T:IAFG.IA.VI.AF.My.Resources.Resources">
-	<summary>
-  Une classe de ressource fortement typee destinee, entre autres, a� la consultation des chaines localisees.
-</summary>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.GetDocumentsRequisTrSimplifiee.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetDocumentsRequisTrSimplifiee)">
-	<summary>
- Initialise une nouvelle instance de la classe Donnees.GetDocumentsRequisTrSimplifiee à l'aide des paramètres dataRow et accesPilotage.
+ Initialise une nouvelle instance de la classe Donnees.GetMessagesImportantsTrSimplifiee à l'aide des paramètres dataRow et accesPilotage.
  </summary>
-	<param name="dataRow">Contient les informations relatives à un objetGetDocumentsRequisTrSimplifiee.</param>
+	<param name="dataRow">Contient les informations relatives à un objetGetMessagesImportantsTrSimplifiee.</param>
 	<param name="parent">Représente l'objet requête</param>
 	<remarks>
 	</remarks>
@@ -519,18 +504,33 @@ IAFG.IA.VI.AF.Changements.Pilotage
  </summary>
 	<remarks>
 	</remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.ListeMessage.Executer(System.Int32,System.Byte)">
+</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.GetDocumentsRequisTrSimplifiee.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetDocumentsRequisTrSimplifiee)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.GetDocumentsRequisTrSimplifiee à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetGetDocumentsRequisTrSimplifiee.</param>
+	<param name="parent">Représente l'objet requête</param>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetFraisTransaction.Executer(System.Int32)">
 	<summary>
 	</summary>
-	<param name="codeApplication">Ce paramètre est de type <code>Int32</code>.</param>
-	<param name="distribution">Ce paramètre est de type <code>Byte</code>.</param>
+	<param name="IdTypeProduit">Ce paramètre est de type <code>Int32</code>.</param>
 	<remarks>
 	</remarks>
 	<returns></returns>
-</member><member name="T:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.ListeMessage">
+</member><member name="T:IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetFraisTransaction">
 	<summary>
- Classe de requete pour la requête ListeMessage.
+ Classe de requete pour la requête GetFraisTransaction.
  </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Pilotage.Donnees.GetFraisTransaction.#ctor(IAFG.IA.VI.AF.Changements.Pilotage.PDFDataRow,IAFG.IA.VI.AF.Changements.Pilotage.Requetes.GetFraisTransaction)">
+	<summary>
+ Initialise une nouvelle instance de la classe Donnees.GetFraisTransaction à l'aide des paramètres dataRow et accesPilotage.
+ </summary>
+	<param name="dataRow">Contient les informations relatives à un objetGetFraisTransaction.</param>
+	<param name="parent">Représente l'objet requête</param>
 	<remarks>
 	</remarks>
 </member>

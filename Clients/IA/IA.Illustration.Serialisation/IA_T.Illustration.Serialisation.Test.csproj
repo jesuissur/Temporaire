@@ -34,6 +34,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>interface.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="AutoMapper">
       <HintPath>..\UnitTestProject3\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
@@ -143,6 +149,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="interface.snk" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -156,6 +163,14 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="EntrepotCasIllustration\ContenuIllustration\Evia_Iris2.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EntrepotCasIllustration\ContenuIllustration\Genesis_Iris.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EntrepotCasIllustration\ContenuIllustration\Evia_Iris2_IA.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

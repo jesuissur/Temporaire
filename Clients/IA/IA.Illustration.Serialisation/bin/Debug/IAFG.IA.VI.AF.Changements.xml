@@ -6,10 +6,1578 @@ IAFG.IA.VI.AF.Changements
 </name>
 </assembly>
 <members>
-<member name="T:IAFG.IA.VI.AF.Changements.Services.Chargement.ParametreCreationContrat">
+<member name="M:IAFG.IA.VI.AF.Changements.TrSommairePolice.#ctor(IAFG.IA.VI.AF.Base.Base)">
 	<summary>
- Paramètre qui sera passé au vb6 pour qu'il lance l'ouverture d'un changement
+ Crée les informations de base.
  </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrSommairePolice.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrSommairePolice
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrSommairePolice</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrSimplifiees.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrSimplifiees
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrSimplifiees</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrSimplifiees.GetTrSimplifieeParType(IAFG.IA.VI.AF.Changements.ENUMs.TypeTrSimplifiee)">
+	<summary>
+ Permet d'obtenir une liste d'item "TrSimplifiee" du même type, défini par "TypeTransacSimplifiee"
+ </summary>
+	<param name="TypeTransacSimplifiee">le type de transaction simplifiee pour laquelle on veut obtenir toutes les transactions</param>
+	<returns>La liste de toutes les transactions simplifiées du type "TypeTransacSimplifiee"</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrSimplifiee.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrSimplifiee.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrSimplifiee
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrSimplifiee</returns>
+	<remarks></remarks>
+</member><member name="F:IAFG.IA.VI.AF.Changements.TrSimplifiee._Reponses">
+	<summary>
+ Contient une structure XML dans laquelle on retrouve les réponses aux questions. Les réponses aux questions sont formatées par le contrôle IAFG.IA.VI.AP.TransactionsSimplifiees.dll
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrSimplifiee.RequetesInfoTrSimplifiee">
+	<summary>
+ Pointeur sur l'objet "Requetes.GetInfoTrSimplifiee" disponible à l'interne
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+ Le membre interne est initialisé lors du premier accès.
+ Il est important d'utiliser cette propriété et non le membre privé!
+ </remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrSimplifiee.TypeTrSimplifiee">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrSimplifiee.Reponses">
+	<summary>
+ Contient une structure XML dans laquelle on retrouve les réponses aux questions. Les réponses aux questions sont formatées par le contrôle IAFG.IA.VI.AP.TransactionsSimplifiees.dll
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrSimplifiee.IndividuAssocie">
+	<summary>
+ La propriété initialise/obtient l'unique individu de la collection
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrSimplifiee.Individus">
+	<summary>
+La propriété obtient la collection "Individus" et l'initialise si ce n'est pas déjà fait
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrSimplifiee.F1ENecessaire">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrSimplifiee.IndividuNecessaire">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrSimplifiee.MessagesImportants">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrSimplifiee.SignaturesRequises">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrSimplifiee.DocumentsRequis">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrSimplifiee.Executer(System.Boolean)">
+	<summary>
+ on ajoute le flag ENUMs.TypeChgProposition.ChangementSimplifie à la propriété ChangementsExecutes
+ </summary>
+	<param name="EnReexecution"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrSimplifiee.GetDescription">
+	<summary>
+ Obtient la description à utiliser lors de l’affichage dans l’application
+ </summary>
+	<returns>la description à utiliser</returns>
+	<remarks>Utilise le pilotage de changement</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrSimplifiee.GetNomFormulaire">
+	<summary>
+ Obtient le nom du formulaire HTML à utiliser pour la saisie d’informations
+ </summary>
+	<returns>le nom du formulaire HTML</returns>
+	<remarks>Utilise le pilotage de changement</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrSimplifiee.GetNbPages">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrSimplifiee.InitialiserPropriete(System.String,System.Object)">
+	<summary>
+ Surcharge de la méthode InitialiserPropriete de la classe de base
+ </summary>
+	<param name="nomPropriete">Nom de la propriété</param>
+	<param name="valeur">Valeur</param>
+	<returns>True si la propriété a été initialisée</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrResiliationOptions.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrResiliationOptions.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrAjoutOptions
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrAjoutOptions</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrResiliationOption.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrResiliationOption.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrAjoutOption
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrAjoutOption</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrInfoBancaires.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrReviserSurprimes
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrReviserSurprimes</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrInfoBancaire.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrInfoBancaire.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrInfoBancaire
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrInfoBancaire</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.PrimeCiblePriseEffet">
+	<summary>
+ détermine la date de prise effet de la demande
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.PrimeCibleDate">
+	<summary>
+ détermine la date précise de prise effet de la demande si l'option date spécifique est sélectionnée
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.PrimeCibleMnt">
+	<summary>
+ permet de déterminer le montant de la nouvelle prime cible lorsque l'option TypeNouvellePrimeCible_Specifier est choisie
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.RembPretMnt">
+	<summary>
+ sert a ... RIEN ?????
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.DateCheque">
+	<summary>
+ sert a determiner la date des paiement du pac  JourEmission ou JourChoisi
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.TypeTrInfoBancaire">
+	<summary>
+ 'sert a spécifier le type de changement bancaire
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.NouvellePrimeCible">
+	<summary>
+ permet de déterminer le type de la nouvelle prime cible
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.RegrouperPolice">
+	<summary>
+ permet de determiner si l'on doit regrouper les polices lors d'une demande de transactions concernant plusieurs polices/no d'autorisation
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.RegrouperPACSous">
+	<summary>
+ permet de détermnier sous quelle forme les groupement de pac seront grouper
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.TypeRegroupement">
+	<summary>
+ sert a déterminer si le changement bancaire s'applique a une ou plusieurs police/no d'auto
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.RetarderPAC">
+	<summary>
+ sert a spcifier la date de paiement lors d'une demande de retard de paiment
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.RaisonsRetardPAC">
+	<summary>
+ sert a spécifier la raisons de la demande de retard de paiment
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.RetarderPACDate">
+	<summary>
+ sert a spcifier la date de paiement lors d'une demande de retard de paiment lorsque l'option date spécifique est choisie
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.CongePrime">
+	<summary>
+ permet de déterminer quand les paiements de prime recommenceront
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.CongePrimeDate">
+	<summary>
+ sert a spcifier la date de reprise des paiement lorsque l'option date spécifique est choisie
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.ChangerPaiementPAC">
+	<summary>
+ permet de determiner si l'on change le mode de facturation pour PAC lors d'un remboursement d'avance 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.ListePolices">
+	<summary>
+ sert a spécifier la liste des polices/no d'autorisation auxquelle(s) s'applique le changement bancaire. utilisé seulement lorsque TypeRegroupement est différent de IAFG_IA_VI_AF_Changements_ENUMs_TypeRegroupement_PoliceSeulement
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.ListePoliceChgJourPAC">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.TrSimplifiees">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.TrInfoBancaires">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.TrInfoBancaire">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.ChgProposition">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrsEnfants`1.Recharger(System.String)">
+	<summary>
+ Recharge la chaîne de caractères représentant la sérialisation de l'objet à utiliser pour la sauvegarde.
+ </summary>
+	<param name="chaineDeSauvegarde"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrsEnfants`1.GetChaineDeSauvegarde">
+	<summary>
+ Obtient une chaîne de caractères représentant la sérialisation de l'objet à utiliser pour la sauvegarde.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrDesactivationOACA.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrDesactivationOACA.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrDuplicataPolice
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrDuplicataPolice</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrDesactivationOACA.Executer(System.Boolean)">
+	<summary>
+ Execute la transaction
+ </summary>
+	<param name="EnReexecution">EnReexecution ne sert a rien pour cette transaction</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrDesactivationOACA.Valider">
+	<summary>
+ On valide si L'OACA est actif, s'il ne l'est pas, on ne permet pas d'exécuter la transaction
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrChgOptionAuDeces.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrChgOptionAuDeces.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrChgOptionAuDeces
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrChgOptionAuDeces</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrChgOptionAuDeces.Valider">
+	<summary>
+ TODO
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.Utilitaires.InitialiserNomFichierSauvegarde">
+	<summary>
+ Méthode qui initialise le GUID du nom de fichier à sauvegarder
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.Utilitaires.DetruireFichiersSauvegarde">
+	<summary>
+ Méthode qui détruit les fichiers de sauvegarde
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.Utilitaires.GetDDNFromAge(System.Int32)">
+	<summary>
+ Fonction qui retourne une date qui correspond à l'âge demandée
+ </summary>
+	<param name="age"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.Utilitaires.InitialiserContexte">
+	<summary>
+ Initialise l'objet de contexte en début de traitement.
+ </summary>
+	<remarks>
+ L'initilisation doit être TOUJOURS faite dans le SetUp d'une classe!!!!
+ </remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.Utilitaires.RelacherContexte">
+	<summary>
+ Destruction de l'objet de contexte en fin de traitement.
+ </summary>
+	<remarks>
+ La destruction doit être TOUJOURS faite dans le TearDown d'une classe!!!!
+ </remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.Utilitaires.SauvegarderEtRecharger(IAFG.IA.VI.AF.Changements.ChangementAssVie)">
+	<summary>
+ Applique deux sauvegardes/rechargements consécutif et s'assure que la structure XML du fichier de sauvegarde n'a pas changé durant le traitement.
+ </summary>
+	<param name="changementAssVie">L'objet sur lequel on doit appliquer le test.</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.Utilitaires.SupprimerNoeudXML(System.String,System.String[])">
+	<summary>
+ Supprime une liste de noeuds dans une chaîne XML et retourne la nouvelle chaîne XML.
+ </summary>
+	<param name="chaineXML">Chaîne XML à modifier.</param>
+	<param name="noeudsASupprimer">Liste des noms de noeuds à supprimer.</param>
+	<returns>La nouvelle chaîne avec les modifications appliquées.</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.SetUp">
+	<summary>
+ Utilisé pour ajouter du code à exécuter AVANT chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TearDown">
+	<summary>
+ Utilisé pour ajouter du code à exécuter APRÈS chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionSimpleIndNonAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionSimpleIndAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionSimple1STNonAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionSimple1STAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionSimple2NDNonAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionSimple2NDAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionSimple2L1NonAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionSimple2L1Assiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTotaleIndNonAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection Totale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTotaleIndAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection Totale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTotale1STNonAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection Totale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTotale1STAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection Totale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTotale2NDNonAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection Totale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTotale2NDAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection Totale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTotale2L1NonAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection Totale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTotale2L1Assiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection Totale
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOptionIndNonAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOptionIndAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOption1STNonAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOption1STAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOption2NDNonAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOption2NDAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOption2L1NonAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOption2L1Assiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOptionTotaleIndNonAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOptionTotaleIndAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOptionTotale1STNonAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOptionTotale1STAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOptionTotale2NDNonAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOptionTotale2NDAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOptionTotale2L1NonAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOptionTotale2L1Assiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTropGrandIndNonAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTropGrandIndAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTropGrand1STNonAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTropGrand1STAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTropGrand2NDNonAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTropGrand2NDAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTropGrand2L1NonAssiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTropGrand2L1Assiste">
+	<summary>
+ Teste l'ajout d'une résiliation d'une protection et d'une option
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.SetUp">
+	<summary>
+ Utilisé pour ajouter du code à exécuter AVANT chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TearDown">
+	<summary>
+ Utilisé pour ajouter du code à exécuter APRÈS chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutSimpleIndNonAssiste">
+	<summary>
+ Teste l'ajout d'un nivellement de cout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutSimpleIndAssiste">
+	<summary>
+ Teste l'ajout d'un nivellement de cout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutSimple1STNonAssiste">
+	<summary>
+ Teste l'ajout d'un nivellement de cout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutSimple1STAssiste">
+	<summary>
+ Teste l'ajout d'un nivellement de cout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutSimple2NDNonAssiste">
+	<summary>
+ Teste l'ajout d'un nivellement de cout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutSimple2NDAssiste">
+	<summary>
+ Teste l'ajout d'un nivellement de cout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutSimple2L1NonAssiste">
+	<summary>
+ Teste l'ajout d'un nivellement de cout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutSimple2L1Assiste">
+	<summary>
+ Teste l'ajout d'un nivellement de cout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutDejaNiveleIndNonAssiste">
+	<summary>
+ Teste l'ajout d'un nivellement de cout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutDejaNiveleIndAssiste">
+	<summary>
+ Teste l'ajout d'un nivellement de cout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutDejaNivele1STNonAssiste">
+	<summary>
+ Teste l'ajout d'un nivellement de cout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutDejaNivele1STAssiste">
+	<summary>
+ Teste l'ajout d'un nivellement de cout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutDejaNivele2NDNonAssiste">
+	<summary>
+ Teste l'ajout d'un nivellement de cout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutDejaNivele2NDAssiste">
+	<summary>
+ Teste l'ajout d'un nivellement de cout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutDejaNivele2L1NonAssiste">
+	<summary>
+ Teste l'ajout d'un nivellement de cout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutDejaNivele2L1Assiste">
+	<summary>
+ Teste l'ajout d'un nivellement de cout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.SetUp">
+	<summary>
+ Utilisé pour ajouter du code à exécuter AVANT chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TearDown">
+	<summary>
+ Utilisé pour ajouter du code à exécuter APRÈS chaque test.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionSimpleIndAssiste">
+	<summary>
+ Teste l'ajout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionSimpleIndNonAssiste">
+	<summary>
+ Teste l'ajout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionSimple1STAssiste">
+	<summary>
+ Teste l'ajout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionSimple1STNonAssiste">
+	<summary>
+ Teste l'ajout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionSimple2NDAssiste">
+	<summary>
+ Teste l'ajout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionSimple2NDNonAssiste">
+	<summary>
+ Teste l'ajout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionSimple2L1Assiste">
+	<summary>
+ Teste l'ajout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionSimple2L1NonAssiste">
+	<summary>
+ Teste l'ajout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionOptionIndAssiste">
+	<summary>
+ Teste l'ajout d'une protection avenant paiement accéléré
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionOptionIndNonAssiste">
+	<summary>
+ Teste l'ajout d'une protection simple
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionPP100Opt10">
+	<summary>
+ Teste l'ajout d'une protection pp100 avec opt10
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionOption1STAssiste">
+	<summary>
+ Teste l'ajout d'une protection avenant paiement accéléré
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionOption1STNonAssiste">
+	<summary>
+ Teste l'ajout d'une protection avenant paiement accéléré
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionOption2NDAssiste">
+	<summary>
+ Teste l'ajout d'une protection avenant paiement accéléré
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionOption2NDNonAssiste">
+	<summary>
+ Teste l'ajout d'une protection avenant paiement accéléré
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionOption2L1Assiste">
+	<summary>
+ Teste l'ajout d'une protection avenant paiement accéléré
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionOption2L1NonAssiste">
+	<summary>
+ Teste l'ajout d'une protection avenant paiement accéléré
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TRAjoutProtectionGarantie">
+	<summary>
+ Teste l'ajout d'une protection
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.DependanceTr.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur de la classe
+ </summary>
+	<param name="parent">Parent</param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.DependanceTr.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe courante</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrReviserSurprimes.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrReviserSurprimes
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrReviserSurprimes</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrReviserSurprime.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrReviserSurprime.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrReviserSurprime
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrReviserSurprime</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrResiliationProtections.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary> 
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrResiliationProtections.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrResiliationProtections
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrResiliationProtections</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrResiliationProtection.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrResiliationProtection.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrResiliationProtection
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrResiliationProtection</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrResiliationProtection.SetProtectionResiliee(IAFG.IA.VI.AF.Changements.ENUMs.TypeResiliation)">
+	<summary>
+ Permet de modifier le type de résiliation de la protection
+ </summary>
+	<param name="Value"></param>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrRemiseVigueurIndividus.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrRemiseVigueurIndividus
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrRemiseVigueurIndividus</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrRemiseVigueurIndividu.QRemiseVigueur">
+	<summary>
+ Questionnaire contenant les réponses aux questions médicales pour l'"Individu" de la transaction courante.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrRemiseVigueurIndividu.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrRemiseVigueurIndividu.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrRemiseVigueurIndividu
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrRemiseVigueurIndividu</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrRemiseVigueur.QRemiseVigueur">
+	<summary>
+ Questionnaire contenant les réponses aux questions médicales pour l'ensemble des "Individu" à remettre en vigueur.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrRemiseVigueur.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrRemiseVigueur.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrRemiseVigueur
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrRemiseVigueur</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrNivelerCouts.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrNivelerCouts
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrNivelerCouts</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrNivelerCout.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrNivelerCout.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrNivelerCout
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrNivelerCout</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrNivelerCout.DureeNivellement">
+	<summary>
+ Duree en année avant que le nivellement prévu soit possible
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+ On ne permet de modifier cette valeur que si l'on est en contexte
+ de TRA nivelé
+ </remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrNivelerCout.Description">
+	<summary>
+En mode non assisté ou quand protection n'est pas initialisé, on retourne la valeur de la description de la transaction de nivelerCout
+afin d'empêcher d'affecter une valeur à PDFProtection.Description
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrNivelerCout.DateEffective">
+	<summary>
+ Date de traitement prévu de la transaction
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+ On ne permet de modifier cette valeur que si l'on est en contexte
+ de TRA nivelé
+ </remarks>
+ TODO: SET PUBLIC SUR TRBASE ?
+
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrInstructionsSpeciales.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrInstructionsSpeciales.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrInstructionsSpeciales
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrInstructionsSpeciales</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrDuplicataPolice.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrDuplicataPolice.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrDuplicataPolice
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrDuplicataPolice</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrChgDateNaissances.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrChgDateNaissances
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrChgDateNaissances</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrChgDateNaissance.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrChgDateNaissance.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrChgDateNaissance
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrChgDateNaissance</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrChgClasseRisques.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrChgClasseRisques
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrChgClasseRisques</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrChgClasseRisque.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrChgClasseRisque.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrChgClasseRisque
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrChgClasseRisque</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrChgClasseRisque.ChgIndividu">
+	<summary>
+ "ChgIndividu" résultant de l'exécution de la transaction lorsque celle-ci est appliquée sur un "Individu".
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrChgClasseRisque.ChgAssure">
+	<summary>
+ "ChgAssure" résultant de l'exécution de la transaction lorsque celle-ci est appliquée sur un "Assure".
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrChgClasseRisque.ChgProtection">
+	<summary>
+ "ChgProtection" résultant de l'exécution de la transaction lorsque celle-ci est appliquée sur un "Assure".
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrBase.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrBase.DependanceTr">
+	<summary>
+ Propriété qui indique quelle est la transaction mère de cette transaction.
+ En d'autres mots, on garde un pointeur sur la transaction qui vient de créer cette instance-ci.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.TrBase.DateEffective">
+	<summary>
+ Date effective de la transaction i.e. la date à laquelle la transaction prend effet.
+ On retourne toujours "Proposition.CalculerDateProchainAnniversaire" si aucune date n'a pas été spécifiée.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+ Par défaut, la date effective est initialisée à MinValue. Lors du Get, on retourne Now() si la date n'a pas été changée pour autre chose que MinValue.
+ </remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrBase.CreerPropriete(System.String)">
+	<summary>
+ Surcharge de la méthode CreerPropriete de la classe de base
+ </summary>
+	<param name="nomPropriete">Nom de la propriété</param>
+	<returns>Valeur de la propriété</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Transactions.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Transactions.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe Transactions
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe Transactions</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Transactions.RemoveAll">
+	<summary>
+ Fait la suppression de toutes les transactions dans le modèle
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrAjoutProtections.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrAjoutProtections.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrAjoutProtections
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrAjoutProtections</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrAjoutProtection.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrAjoutProtection.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrAjoutProtection
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrAjoutProtection</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrAjoutProtection.ValideTypeAssurancePermis">
+	<summary>
+ Vérifie si le plan est disponible selon le type d'Assurance et vérifie si le plan est disponible en mode conjoint ou en mode individuel
+ exemple: pour le plan 602AT0 (Avenant crédit invalidité 2 ans) est permis sur tous les type d'assurance (individuel ou peut importe le type de conjoint) mais
+ doit etre ajouté sur un individu (ne peut etre ajouter a des conjoints)
+ pour le plan C2VA05 (T20) permis sur une police individuel ou conjoint 1er décès et peut etre ajouter tant individuel que conjoint
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrAjoutOptions.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrAjoutOptions.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrAjoutOptions
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrAjoutOptions</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrAjoutOption.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrAjoutOption.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe TrAjoutOption
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe TrAjoutOption</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.RequisSignatures.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.RequisSignatures.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe RequisSignatures
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe RequisSignatures</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.RequisSignature.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.RequisSignature.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe RequisSignature
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe RequisSignature</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.RequisDocuments.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.RequisDocuments.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe RequisDocuments
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe RequisDocuments</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.RequisDocument.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.RequisDocument.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe RequisDocument
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe RequisDocument</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.QResiliation.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.QResiliation.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe QResiliation
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe QResiliation</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.QRemiseVigueur.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.QRemiseVigueur.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe QRemiseVigueur
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe QRemiseVigueur</returns>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.TrReviserSurprimes">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.TrResiliationProtections">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.TrRemiseVigueurIndividus">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.TrNivelerCouts">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.TrChgDateNaissances">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.TrChgClasseRisques">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.Transactions">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.TrAjoutProtections">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.TrAjoutOptions">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.RequisSignatures">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.RequisDocuments">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.NouveauxIndividus">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.NouveauxConjoints">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.MessageImportants">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.IndividusAssures">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.Enfants">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.Conjoints">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.ChgProtections">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.ChgIndividus">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.ChgAssures">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:IAFG.IA.VI.AF.Changements.ChangementAssVie">
+	<summary>
+ Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.ObjetSeulChangement.ChangementAssVie">
+	<summary>
+ Remonte à l'objet "ChangementAssVie" de tête à partir de n'importe quel objet du modèle.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.ObjetSeulChangement.ChgProposition">
+	<summary>
+ Remonte à l'objet "ChgProposition" de tête à partir de n'importe quel objet du modèle.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NouveauxIndividus.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NouveauxIndividus.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe NouveauxIndividus
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe NouveauxIndividus</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NouveauxIndividus.Existe(System.String)">
+	<summary>
+ Détermine si un Id en particulier fait partie de la collection.
+ </summary>
+	<param name="Id">Id de l'item à chercher</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NouveauxConjoints.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.NouveauxConjoints.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe NouveauxConjoints
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe NouveauxConjoints</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.MessageImportants.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.MessageImportants.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe MessageImportants
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe MessageImportants</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.MessageImportant.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.MessageImportant.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe MessageImportant
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe MessageImportant</returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.MessageImportant.Agents">
+	<summary>
+ La propriété obtient la collection "Individus" et l'initialise si ce n'est pas déjà fait
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.ListeCombo.#ctor">
+	<summary>
+ Crée les informations de base.
+ </summary>
+</member><member name="M:IAFG.IA.VI.AF.Changements.ItemChangement.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="P:IAFG.IA.VI.AF.Changements.ItemChangement.ChangementAssVie">
+	<summary>
+ Remonte à l'objet "ChangementAssVie" de tête à partir de n'importe quel objet du modèle.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.ItemChangement.ChgProposition">
+	<summary>
+ Remonte à l'objet "ChgProposition" de tête à partir de n'importe quel objet du modèle.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.InformationGeneral.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.InformationGeneral.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe InformationGeneral
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe InformationGeneral</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.IndividusAssures.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.IndividusAssures.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe IndividusAssures
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe IndividusAssures</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.IndividuAssure.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.IndividuAssure.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe IndividuAssure
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe IndividuAssure</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Enfants.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Enfants.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe Enfants
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe Enfants</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Enfants.Existe(System.String)">
+	<summary>
+ Détermine si un Id en particulier fait partie de la collection.
+ </summary>
+	<param name="Id">Id de l'item à chercher</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrConversion10_8Iris.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.TrConversion10_8Iris.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Conjoints.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Conjoints.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe Conjoints
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe Conjoints</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Conjoints.Existe(System.String)">
+	<summary>
+ Détermine si un Id en particulier fait partie de la collection.
+ </summary>
+	<param name="Id">Id de l'item à chercher</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.CollectionChangement`1.ChangementAssVie">
+	<summary>
+ Remonte à l'objet "ChangementAssVie" de tête à partir de n'importe quel objet du modèle.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:IAFG.IA.VI.AF.Changements.CollectionChangement`1.ChgProposition">
+	<summary>
+ Remonte à l'objet "ChgProposition" de tête à partir de n'importe quel objet du modèle.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.CollectionChangement`1.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.ChgProtections.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe ChgProtections
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe ChgProtections</returns>
+	<remarks></remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.ChgProtection.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Crée les informations de base.
+ </summary>
+	<param name="Parent">L'objet à qui j'appartiendrai</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.ChgProtection.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<summary>
+ Constructeur spécialisé de la classe ChgProtection
+ </summary>
+	<param name="Parent">parent</param>
+	<returns>Instance de la classe ChgProtection</returns>
 	<remarks></remarks>
 </member><member name="M:IAFG.IA.VI.AF.Changements.ChgProposition.#ctor(IAFG.IA.VI.AF.Base.Base)">
 	<summary>
@@ -353,294 +1921,17 @@ IAFG.IA.VI.AF.Changements
  </summary>
 	<returns>une liste de transactions qui sont créées dans le traitement</returns>
 	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.InformationGeneral.#ctor(IAFG.IA.VI.AF.Base.Base)">
+</member><member name="M:IAFG.IA.VI.AF.Changements.ChgIndividus.#ctor(IAFG.IA.VI.AF.Base.Base)">
 	<summary>
  Crée les informations de base.
  </summary>
 	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.InformationGeneral.IANew(IAFG.IA.VI.AF.Base.Base)">
+</member><member name="M:IAFG.IA.VI.AF.Changements.ChgIndividus.IANew(IAFG.IA.VI.AF.Base.Base)">
 	<summary>
- Constructeur spécialisé de la classe InformationGeneral
+ Constructeur spécialisé de la classe ChgIndividus
  </summary>
 	<param name="Parent">parent</param>
-	<returns>Instance de la classe InformationGeneral</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.QResiliation.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.QResiliation.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe QResiliation
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe QResiliation</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrBase.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrBase.DependanceTr">
-	<summary>
- Propriété qui indique quelle est la transaction mère de cette transaction.
- En d'autres mots, on garde un pointeur sur la transaction qui vient de créer cette instance-ci.
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrBase.DateEffective">
-	<summary>
- Date effective de la transaction i.e. la date à laquelle la transaction prend effet.
- On retourne toujours "Proposition.CalculerDateProchainAnniversaire" si aucune date n'a pas été spécifiée.
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks>
- Par défaut, la date effective est initialisée à MinValue. Lors du Get, on retourne Now() si la date n'a pas été changée pour autre chose que MinValue.
- </remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrBase.CreerPropriete(System.String)">
-	<summary>
- Surcharge de la méthode CreerPropriete de la classe de base
- </summary>
-	<param name="nomPropriete">Nom de la propriété</param>
-	<returns>Valeur de la propriété</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.SetUp">
-	<summary>
- Utilisé pour ajouter du code à exécuter AVANT chaque test.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TearDown">
-	<summary>
- Utilisé pour ajouter du code à exécuter APRÈS chaque test.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionSimpleIndNonAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionSimpleIndAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionSimple1STNonAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionSimple1STAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionSimple2NDNonAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionSimple2NDAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionSimple2L1NonAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionSimple2L1Assiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTotaleIndNonAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection Totale
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTotaleIndAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection Totale
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTotale1STNonAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection Totale
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTotale1STAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection Totale
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTotale2NDNonAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection Totale
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTotale2NDAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection Totale
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTotale2L1NonAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection Totale
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTotale2L1Assiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection Totale
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOptionIndNonAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOptionIndAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOption1STNonAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOption1STAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOption2NDNonAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOption2NDAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOption2L1NonAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOption2L1Assiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOptionTotaleIndNonAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOptionTotaleIndAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOptionTotale1STNonAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOptionTotale1STAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOptionTotale2NDNonAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOptionTotale2NDAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOptionTotale2L1NonAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionOptionTotale2L1Assiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTropGrandIndNonAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTropGrandIndAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTropGrand1STNonAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTropGrand1STAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTropGrand2NDNonAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTropGrand2NDAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTropGrand2L1NonAssiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRResiliationProtectionTest.TesterTRResiliationProtectionTropGrand2L1Assiste">
-	<summary>
- Teste l'ajout d'une résiliation d'une protection et d'une option
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrDesactivationOACA.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrDesactivationOACA.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrDuplicataPolice
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrDuplicataPolice</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrDesactivationOACA.Executer(System.Boolean)">
-	<summary>
- Execute la transaction
- </summary>
-	<param name="EnReexecution">EnReexecution ne sert a rien pour cette transaction</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrDesactivationOACA.Valider">
-	<summary>
- On valide si L'OACA est actif, s'il ne l'est pas, on ne permet pas d'exécuter la transaction
- </summary>
-	<returns></returns>
+	<returns>Instance de la classe ChgIndividus</returns>
 	<remarks></remarks>
 </member><member name="M:IAFG.IA.VI.AF.Changements.ChgIndividu.#ctor(IAFG.IA.VI.AF.Base.Base)">
 	<summary>
@@ -654,70 +1945,12 @@ IAFG.IA.VI.AF.Changements
 	<param name="Parent">parent</param>
 	<returns>Instance de la classe ChgIndividu</returns>
 	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.MessageImportants.#ctor(IAFG.IA.VI.AF.Base.Base)">
+</member><member name="M:IAFG.IA.VI.AF.Changements.ChgAssures.IANew(IAFG.IA.VI.AF.Base.Base)">
 	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.MessageImportants.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe MessageImportants
+ Constructeur spécialisé de la classe ChgAssures
  </summary>
 	<param name="Parent">parent</param>
-	<returns>Instance de la classe MessageImportants</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Transactions.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Transactions.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe Transactions
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe Transactions</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Transactions.RemoveAll">
-	<summary>
- Fait la suppression de toutes les transactions dans le modèle
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrNivelerCouts.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrNivelerCouts
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrNivelerCouts</returns>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.ChgProposition">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.TrSimplifiees">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrResiliationOption.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrResiliationOption.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrAjoutOption
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrAjoutOption</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Changements.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe Changements
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe Changements</returns>
+	<returns>Instance de la classe ChgAssures</returns>
 	<remarks></remarks>
 </member><member name="M:IAFG.IA.VI.AF.Changements.ChgAssure.#ctor(IAFG.IA.VI.AF.Base.Base)">
 	<summary>
@@ -731,321 +1964,12 @@ IAFG.IA.VI.AF.Changements
 	<param name="Parent">parent</param>
 	<returns>Instance de la classe ChgAssure</returns>
 	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Enfants.#ctor(IAFG.IA.VI.AF.Base.Base)">
+</member><member name="M:IAFG.IA.VI.AF.Changements.Changements.IANew(IAFG.IA.VI.AF.Base.Base)">
 	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Enfants.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe Enfants
+ Constructeur spécialisé de la classe Changements
  </summary>
 	<param name="Parent">parent</param>
-	<returns>Instance de la classe Enfants</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Enfants.Existe(System.String)">
-	<summary>
- Détermine si un Id en particulier fait partie de la collection.
- </summary>
-	<param name="Id">Id de l'item à chercher</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.TrAjoutOptions">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrRemiseVigueurIndividus.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrRemiseVigueurIndividus
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrRemiseVigueurIndividus</returns>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.TrInfoBancaires">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrInfoBancaire.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrInfoBancaire.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrInfoBancaire
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrInfoBancaire</returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.PrimeCiblePriseEffet">
-	<summary>
- détermine la date de prise effet de la demande
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.PrimeCibleDate">
-	<summary>
- détermine la date précise de prise effet de la demande si l'option date spécifique est sélectionnée
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.PrimeCibleMnt">
-	<summary>
- permet de déterminer le montant de la nouvelle prime cible lorsque l'option TypeNouvellePrimeCible_Specifier est choisie
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.RembPretMnt">
-	<summary>
- sert a ... RIEN ?????
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.DateCheque">
-	<summary>
- sert a determiner la date des paiement du pac  JourEmission ou JourChoisi
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.TypeTrInfoBancaire">
-	<summary>
- 'sert a spécifier le type de changement bancaire
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.NouvellePrimeCible">
-	<summary>
- permet de déterminer le type de la nouvelle prime cible
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.RegrouperPolice">
-	<summary>
- permet de determiner si l'on doit regrouper les polices lors d'une demande de transactions concernant plusieurs polices/no d'autorisation
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.RegrouperPACSous">
-	<summary>
- permet de détermnier sous quelle forme les groupement de pac seront grouper
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.TypeRegroupement">
-	<summary>
- sert a déterminer si le changement bancaire s'applique a une ou plusieurs police/no d'auto
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.RetarderPAC">
-	<summary>
- sert a spcifier la date de paiement lors d'une demande de retard de paiment
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.RaisonsRetardPAC">
-	<summary>
- sert a spécifier la raisons de la demande de retard de paiment
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.RetarderPACDate">
-	<summary>
- sert a spcifier la date de paiement lors d'une demande de retard de paiment lorsque l'option date spécifique est choisie
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.CongePrime">
-	<summary>
- permet de déterminer quand les paiements de prime recommenceront
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.CongePrimeDate">
-	<summary>
- sert a spcifier la date de reprise des paiement lorsque l'option date spécifique est choisie
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.ChangerPaiementPAC">
-	<summary>
- permet de determiner si l'on change le mode de facturation pour PAC lors d'un remboursement d'avance 
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.ListePolices">
-	<summary>
- sert a spécifier la liste des polices/no d'autorisation auxquelle(s) s'applique le changement bancaire. utilisé seulement lorsque TypeRegroupement est différent de IAFG_IA_VI_AF_Changements_ENUMs_TypeRegroupement_PoliceSeulement
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrInfoBancaire.ListePoliceChgJourPAC">
-	<summary>
-	</summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.Services.Chargement.ParametreRechercheContrat">
-	<summary>
- Paramètre qui sera passé au vb6 pour qu'il lance l'ouverture d'un changement
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.ChgProtections.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe ChgProtections
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe ChgProtections</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.ItemChangement.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="P:IAFG.IA.VI.AF.Changements.ItemChangement.ChangementAssVie">
-	<summary>
- Remonte à l'objet "ChangementAssVie" de tête à partir de n'importe quel objet du modèle.
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.ItemChangement.ChgProposition">
-	<summary>
- Remonte à l'objet "ChgProposition" de tête à partir de n'importe quel objet du modèle.
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.NouveauxConjoints">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.RequisSignatures.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.RequisSignatures.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe RequisSignatures
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe RequisSignatures</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrsEnfants`1.Recharger(System.String)">
-	<summary>
- Recharge la chaîne de caractères représentant la sérialisation de l'objet à utiliser pour la sauvegarde.
- </summary>
-	<param name="chaineDeSauvegarde"></param>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrsEnfants`1.GetChaineDeSauvegarde">
-	<summary>
- Obtient une chaîne de caractères représentant la sérialisation de l'objet à utiliser pour la sauvegarde.
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="E:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.EvenementCreationInstanceChangementAssuranceVieComplete">
-	<summary>
- Événement lancé lorsque l'instance de changement est créée
- </summary>
-</member><member name="E:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.EvenementChangementVide">
-	<summary>
- Événement lancé lorsque le changement est vidé de la mémoir
- </summary>
-</member><member name="E:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.EvenementOuvertureChangementComplete">
-	<summary>
- Événement lancé lorsque l'ouverture du changement est complétée
- </summary>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.CreerInstanceChangementAssuranceVie">
-	<summary>
- Créer un instance de changement d'assurance vie
- </summary>
-	<returns>Le changement</returns>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.OuvrirChangement(System.String,System.Boolean)">
-	<summary>
- Lancer un événement d'ouverture d'un changement
- </summary>
-	<param name="nomFichier">nom du fichier complet</param>
-	<param name="estCieLogiciel">est une compagnie logiciel</param>
-	<returns>Vrai si le changement est ouvert avec succès, faux sinon</returns>
-	<remarks>Destiné à faire l'appel vb6</remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.ObtenirChangementDejaOuvert">
-	<summary>
- TODO Compléter
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.DefinirChangementOuvert(IAFG.IA.VI.AF.Changements.ChangementAssVie)">
-	<summary>
- Permet de définir le changement en cours de travail
- </summary>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.DefinirChangement(IAFG.IA.VI.AF.Changements.ChangementAssVie)">
-	<summary>
- Cette méthode ne sert qu'à l'initialisation du changement depuis le service de configuration
- </summary>
-	<remarks>
- Nous ne pouvons modifier DefinirChangementOuvert en lui ajoutant shared car c'est une implémentation d'interface
- </remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.DefinirNumeroContratPourOuverture(System.String)">
-	<summary>
- Appelé du vb6 lorsque le programme est appelé en ligne de commande
- </summary>
-	<param name="numeroContrat">le numéro de contrat envoyé du vb6</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.ViderNumeroContratPourOuverture">
-	<summary>
- Indique à l'application que le numéro de contrat reçu par ligne de commande est traité
- est que nous ne devons plus le traiter
- </summary>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.ObtenirNumeroContratPourOuverture">
-	<summary>
- Indique à l'application que le numéro de contrat reçu par ligne de commande est traité
- est que nous ne devons plus le traiter
- </summary>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.ViderChangementEnCours">
-	<summary>
- Vider la mémoire du changement courant.
- </summary>
-</member><member name="T:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement">
-	<summary>
- Service de communication avec les changements
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.ChgIndividus.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.ChgIndividus.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe ChgIndividus
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe ChgIndividus</returns>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.Transactions">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
+	<returns>Instance de la classe Changements</returns>
 	<remarks></remarks>
 </member><member name="P:IAFG.IA.VI.AF.Changements.ChangementAssVie.ChgProposition">
 	<summary>
@@ -1170,337 +2094,84 @@ IAFG.IA.VI.AF.Changements
  Méthode appeler pour initialiser le pilotage de changement
  </summary>
 	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Conjoints.#ctor(IAFG.IA.VI.AF.Base.Base)">
+</member><member name="M:IAFG.IA.VI.AF.Changements.ChgBase.GetTransaction(IAFG.IA.VI.AF.Changements.ENUMs.TypeTransaction)">
 	<summary>
- Crée les informations de base.
+ Obtient une transaction d'un type précis associée à l'objet de changement courant
  </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Conjoints.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe Conjoints
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe Conjoints</returns>
+	<param name="typeTransactionRecherche">Le type de transaction à chercher.</param>
+	<returns>L'objet de transaction du type demandé s'il existe.</returns>
 	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.Conjoints.Existe(System.String)">
+</member><member name="M:IAFG.IA.VI.AF.Changements.ChgBase.GetTransactions">
 	<summary>
- Détermine si un Id en particulier fait partie de la collection.
+ Obtient une transaction d'un type précis associée à l'objet de changement courant
  </summary>
-	<param name="Id">Id de l'item à chercher</param>
-	<returns></returns>
+	<returns>L'objet de transaction du type demandé s'il existe.</returns>
 	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrConversion10_8Iris.#ctor(IAFG.IA.VI.AF.Base.Base)">
+</member><member name="E:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.EvenementCreationInstanceChangementAssuranceVieComplete">
 	<summary>
- Crée les informations de base.
+ Événement lancé lorsque l'instance de changement est créée
  </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrConversion10_8Iris.IANew(IAFG.IA.VI.AF.Base.Base)">
+</member><member name="E:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.EvenementChangementVide">
 	<summary>
- Constructeur spécialisé de la classe
+ Événement lancé lorsque le changement est vidé de la mémoir
  </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe</returns>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.TrRemiseVigueurIndividus">
+</member><member name="E:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.EvenementOuvertureChangementComplete">
 	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ Événement lancé lorsque l'ouverture du changement est complétée
  </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.RequisDocuments.#ctor(IAFG.IA.VI.AF.Base.Base)">
+</member><member name="M:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.CreerInstanceChangementAssuranceVie">
 	<summary>
- Crée les informations de base.
+ Créer un instance de changement d'assurance vie
  </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.RequisDocuments.IANew(IAFG.IA.VI.AF.Base.Base)">
+	<returns>Le changement</returns>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.OuvrirChangement(System.String,System.Boolean)">
 	<summary>
- Constructeur spécialisé de la classe RequisDocuments
+ Lancer un événement d'ouverture d'un changement
  </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe RequisDocuments</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrAjoutOption.#ctor(IAFG.IA.VI.AF.Base.Base)">
+	<param name="nomFichier">nom du fichier complet</param>
+	<param name="estCieLogiciel">est une compagnie logiciel</param>
+	<returns>Vrai si le changement est ouvert avec succès, faux sinon</returns>
+	<remarks>Destiné à faire l'appel vb6</remarks>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.ObtenirChangementDejaOuvert">
 	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrAjoutOption.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrAjoutOption
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrAjoutOption</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrAjoutProtection.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrAjoutProtection.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrAjoutProtection
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrAjoutProtection</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrAjoutProtection.ValideTypeAssurancePermis">
-	<summary>
- Vérifie si le plan est disponible selon le type d'Assurance et vérifie si le plan est disponible en mode conjoint ou en mode individuel
- exemple: pour le plan 602AT0 (Avenant crédit invalidité 2 ans) est permis sur tous les type d'assurance (individuel ou peut importe le type de conjoint) mais
- doit etre ajouté sur un individu (ne peut etre ajouter a des conjoints)
- pour le plan C2VA05 (T20) permis sur une police individuel ou conjoint 1er décès et peut etre ajouter tant individuel que conjoint
+ TODO Compléter
  </summary>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrRemiseVigueur.QRemiseVigueur">
+</member><member name="M:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.DefinirChangementOuvert(IAFG.IA.VI.AF.Changements.ChangementAssVie)">
 	<summary>
- Questionnaire contenant les réponses aux questions médicales pour l'ensemble des "Individu" à remettre en vigueur.
+ Permet de définir le changement en cours de travail
  </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrRemiseVigueur.#ctor(IAFG.IA.VI.AF.Base.Base)">
+</member><member name="M:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.DefinirChangement(IAFG.IA.VI.AF.Changements.ChangementAssVie)">
 	<summary>
- Crée les informations de base.
+ Cette méthode ne sert qu'à l'initialisation du changement depuis le service de configuration
  </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrRemiseVigueur.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrRemiseVigueur
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrRemiseVigueur</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.IndividusAssures.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.IndividusAssures.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe IndividusAssures
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe IndividusAssures</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NouveauxConjoints.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NouveauxConjoints.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe NouveauxConjoints
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe NouveauxConjoints</returns>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.RequisDocuments">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.TrChgDateNaissances">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.RequisDocument.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.RequisDocument.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe RequisDocument
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe RequisDocument</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrChgClasseRisques.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrChgClasseRisques
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrChgClasseRisques</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrChgDateNaissances.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrChgDateNaissances
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrChgDateNaissances</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrChgOptionAuDeces.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrChgOptionAuDeces.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrChgOptionAuDeces
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrChgOptionAuDeces</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrChgOptionAuDeces.Valider">
-	<summary>
- TODO
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrInfoBancaires.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrReviserSurprimes
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrReviserSurprimes</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrSimplifiee.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrSimplifiee.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrSimplifiee
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrSimplifiee</returns>
-	<remarks></remarks>
-</member><member name="F:IAFG.IA.VI.AF.Changements.TrSimplifiee._Reponses">
-	<summary>
- Contient une structure XML dans laquelle on retrouve les réponses aux questions. Les réponses aux questions sont formatées par le contrôle IAFG.IA.VI.AP.TransactionsSimplifiees.dll
- </summary>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrSimplifiee.RequetesInfoTrSimplifiee">
-	<summary>
- Pointeur sur l'objet "Requetes.GetInfoTrSimplifiee" disponible à l'interne
- </summary>
-	<value></value>
-	<returns></returns>
 	<remarks>
- Le membre interne est initialisé lors du premier accès.
- Il est important d'utiliser cette propriété et non le membre privé!
+ Nous ne pouvons modifier DefinirChangementOuvert en lui ajoutant shared car c'est une implémentation d'interface
  </remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrSimplifiee.TypeTrSimplifiee">
+</member><member name="M:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.DefinirNumeroContratPourOuverture(System.String)">
 	<summary>
-	</summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrSimplifiee.Reponses">
-	<summary>
- Contient une structure XML dans laquelle on retrouve les réponses aux questions. Les réponses aux questions sont formatées par le contrôle IAFG.IA.VI.AP.TransactionsSimplifiees.dll
+ Appelé du vb6 lorsque le programme est appelé en ligne de commande
  </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrSimplifiee.IndividuAssocie">
+	<param name="numeroContrat">le numéro de contrat envoyé du vb6</param>
+</member><member name="M:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.ViderNumeroContratPourOuverture">
 	<summary>
- La propriété initialise/obtient l'unique individu de la collection
+ Indique à l'application que le numéro de contrat reçu par ligne de commande est traité
+ est que nous ne devons plus le traiter
  </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrSimplifiee.Individus">
+</member><member name="M:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.ObtenirNumeroContratPourOuverture">
 	<summary>
-La propriété obtient la collection "Individus" et l'initialise si ce n'est pas déjà fait
+ Indique à l'application que le numéro de contrat reçu par ligne de commande est traité
+ est que nous ne devons plus le traiter
  </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrSimplifiee.F1ENecessaire">
+</member><member name="M:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement.ViderChangementEnCours">
 	<summary>
-	</summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrSimplifiee.IndividuNecessaire">
-	<summary>
-	</summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrSimplifiee.MessagesImportants">
-	<summary>
-	</summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrSimplifiee.SignaturesRequises">
-	<summary>
-	</summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrSimplifiee.DocumentsRequis">
-	<summary>
-	</summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrSimplifiee.Executer(System.Boolean)">
-	<summary>
- on ajoute le flag ENUMs.TypeChgProposition.ChangementSimplifie à la propriété ChangementsExecutes
+ Vider la mémoire du changement courant.
  </summary>
-	<param name="EnReexecution"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrSimplifiee.GetDescription">
+</member><member name="T:IAFG.IA.VI.AF.Changements.Services.Chargement.ServiceChargement">
 	<summary>
- Obtient la description à utiliser lors de l’affichage dans l’application
+ Service de communication avec les changements
  </summary>
-	<returns>la description à utiliser</returns>
-	<remarks>Utilise le pilotage de changement</remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrSimplifiee.GetNomFormulaire">
-	<summary>
- Obtient le nom du formulaire HTML à utiliser pour la saisie d’informations
- </summary>
-	<returns>le nom du formulaire HTML</returns>
-	<remarks>Utilise le pilotage de changement</remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrSimplifiee.GetNbPages">
-	<summary>
-	</summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrSimplifiee.InitialiserPropriete(System.String,System.Object)">
-	<summary>
- Surcharge de la méthode InitialiserPropriete de la classe de base
- </summary>
-	<param name="nomPropriete">Nom de la propriété</param>
-	<param name="valeur">Valeur</param>
-	<returns>True si la propriété a été initialisée</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.ListeCombo.#ctor">
-	<summary>
- Crée les informations de base.
- </summary>
-</member><member name="T:IAFG.IA.VI.AF.Changements.ChgIndividus">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.IndividusAssures">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.RequisSignatures">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrSommairePolice.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrSommairePolice.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrSommairePolice
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrSommairePolice</returns>
 	<remarks></remarks>
 </member><member name="P:IAFG.IA.VI.AF.Changements.Services.Chargement.ParametreOuvertureChangement.NomFichier">
 	<summary>
@@ -1519,114 +2190,6 @@ La propriété obtient la collection "Individus" et l'initialise si ce n'est pas
  Paramètre qui sera passé au vb6 pour qu'il lance l'ouverture d'un changement
  </summary>
 	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.ChgProtections">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.NouveauxIndividus">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.ChangementAssVie">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrReviserSurprime.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrReviserSurprime.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrReviserSurprime
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrReviserSurprime</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.DependanceTr.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur de la classe
- </summary>
-	<param name="parent">Parent</param>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.DependanceTr.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe courante</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.ChgBase.GetTransaction(IAFG.IA.VI.AF.Changements.ENUMs.TypeTransaction)">
-	<summary>
- Obtient une transaction d'un type précis associée à l'objet de changement courant
- </summary>
-	<param name="typeTransactionRecherche">Le type de transaction à chercher.</param>
-	<returns>L'objet de transaction du type demandé s'il existe.</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.ChgBase.GetTransactions">
-	<summary>
- Obtient une transaction d'un type précis associée à l'objet de changement courant
- </summary>
-	<returns>L'objet de transaction du type demandé s'il existe.</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.ChgAssures.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe ChgAssures
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe ChgAssures</returns>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.ChgAssures">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.TrChgClasseRisques">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrResiliationProtections.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary> 
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrResiliationProtections.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrResiliationProtections
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrResiliationProtections</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrResiliationOptions.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrResiliationOptions.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrAjoutOptions
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrAjoutOptions</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrSimplifiees.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrSimplifiees
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrSimplifiees</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrSimplifiees.GetTrSimplifieeParType(IAFG.IA.VI.AF.Changements.ENUMs.TypeTrSimplifiee)">
-	<summary>
- Permet d'obtenir une liste d'item "TrSimplifiee" du même type, défini par "TypeTransacSimplifiee"
- </summary>
-	<param name="TypeTransacSimplifiee">le type de transaction simplifiee pour laquelle on veut obtenir toutes les transactions</param>
-	<returns>La liste de toutes les transactions simplifiées du type "TypeTransacSimplifiee"</returns>
-	<remarks></remarks>
 </member><member name="P:IAFG.IA.VI.AF.Changements.Services.Chargement.ParametreChangementAssuranceVie.Changement">
 	<summary>
  Le changement
@@ -1636,581 +2199,18 @@ La propriété obtient la collection "Individus" et l'initialise si ce n'est pas
  Paramètre qui sera passé au vb6 pour qu'il puisse interagir avec le changement
  </summary>
 	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.IndividuAssure.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.IndividuAssure.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe IndividuAssure
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe IndividuAssure</returns>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.TrReviserSurprimes">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrChgDateNaissance.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrChgDateNaissance.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrChgDateNaissance
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrChgDateNaissance</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrInstructionsSpeciales.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrInstructionsSpeciales.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrInstructionsSpeciales
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrInstructionsSpeciales</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrNivelerCout.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrNivelerCout.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrNivelerCout
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrNivelerCout</returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrNivelerCout.DureeNivellement">
-	<summary>
- Duree en année avant que le nivellement prévu soit possible
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks>
- On ne permet de modifier cette valeur que si l'on est en contexte
- de TRA nivelé
- </remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrNivelerCout.Description">
-	<summary>
-En mode non assisté ou quand protection n'est pas initialisé, on retourne la valeur de la description de la transaction de nivelerCout
-afin d'empêcher d'affecter une valeur à PDFProtection.Description
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrNivelerCout.DateEffective">
-	<summary>
- Date de traitement prévu de la transaction
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks>
- On ne permet de modifier cette valeur que si l'on est en contexte
- de TRA nivelé
- </remarks>
- TODO: SET PUBLIC SUR TRBASE ?
-
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrResiliationProtection.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrResiliationProtection.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrResiliationProtection
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrResiliationProtection</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrResiliationProtection.SetProtectionResiliee(IAFG.IA.VI.AF.Changements.ENUMs.TypeResiliation)">
-	<summary>
- Permet de modifier le type de résiliation de la protection
- </summary>
-	<param name="Value"></param>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.ChgProtection.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.ChgProtection.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe ChgProtection
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe ChgProtection</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.MessageImportant.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.MessageImportant.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe MessageImportant
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe MessageImportant</returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.MessageImportant.Agents">
-	<summary>
- La propriété obtient la collection "Individus" et l'initialise si ce n'est pas déjà fait
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrAjoutOptions.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrAjoutOptions.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrAjoutOptions
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrAjoutOptions</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrAjoutProtections.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrAjoutProtections.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrAjoutProtections
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrAjoutProtections</returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrRemiseVigueurIndividu.QRemiseVigueur">
-	<summary>
- Questionnaire contenant les réponses aux questions médicales pour l'"Individu" de la transaction courante.
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrRemiseVigueurIndividu.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrRemiseVigueurIndividu.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrRemiseVigueurIndividu
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrRemiseVigueurIndividu</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrReviserSurprimes.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrReviserSurprimes
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrReviserSurprimes</returns>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.Conjoints">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrDuplicataPolice.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrDuplicataPolice.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrDuplicataPolice
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrDuplicataPolice</returns>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.TrInfoBancaire">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
 </member><member name="T:IAFG.IA.VI.AF.Changements.Services.Chargement.IServiceChargement">
 	<summary>
  Interface de service pour les changements
  </summary>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NouveauxIndividus.#ctor(IAFG.IA.VI.AF.Base.Base)">
+</member><member name="T:IAFG.IA.VI.AF.Changements.Services.Chargement.ParametreRechercheContrat">
 	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NouveauxIndividus.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe NouveauxIndividus
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe NouveauxIndividus</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NouveauxIndividus.Existe(System.String)">
-	<summary>
- Détermine si un Id en particulier fait partie de la collection.
- </summary>
-	<param name="Id">Id de l'item à chercher</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.ObjetSeulChangement.ChangementAssVie">
-	<summary>
- Remonte à l'objet "ChangementAssVie" de tête à partir de n'importe quel objet du modèle.
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.ObjetSeulChangement.ChgProposition">
-	<summary>
- Remonte à l'objet "ChgProposition" de tête à partir de n'importe quel objet du modèle.
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.Enfants">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
+ Paramètre qui sera passé au vb6 pour qu'il lance l'ouverture d'un changement
  </summary>
 	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.MessageImportants">
+</member><member name="T:IAFG.IA.VI.AF.Changements.Services.Chargement.ParametreCreationContrat">
 	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.TrAjoutProtections">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="T:IAFG.IA.VI.AF.Changements.TrNivelerCouts">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.QRemiseVigueur.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.QRemiseVigueur.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe QRemiseVigueur
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe QRemiseVigueur</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.RequisSignature.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.RequisSignature.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe RequisSignature
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe RequisSignature</returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrChgClasseRisque.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="M:IAFG.IA.VI.AF.Changements.TrChgClasseRisque.IANew(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Constructeur spécialisé de la classe TrChgClasseRisque
- </summary>
-	<param name="Parent">parent</param>
-	<returns>Instance de la classe TrChgClasseRisque</returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrChgClasseRisque.ChgIndividu">
-	<summary>
- "ChgIndividu" résultant de l'exécution de la transaction lorsque celle-ci est appliquée sur un "Individu".
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrChgClasseRisque.ChgAssure">
-	<summary>
- "ChgAssure" résultant de l'exécution de la transaction lorsque celle-ci est appliquée sur un "Assure".
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.TrChgClasseRisque.ChgProtection">
-	<summary>
- "ChgProtection" résultant de l'exécution de la transaction lorsque celle-ci est appliquée sur un "Assure".
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.SetUp">
-	<summary>
- Utilisé pour ajouter du code à exécuter AVANT chaque test.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TearDown">
-	<summary>
- Utilisé pour ajouter du code à exécuter APRÈS chaque test.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutSimpleIndNonAssiste">
-	<summary>
- Teste l'ajout d'un nivellement de cout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutSimpleIndAssiste">
-	<summary>
- Teste l'ajout d'un nivellement de cout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutSimple1STNonAssiste">
-	<summary>
- Teste l'ajout d'un nivellement de cout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutSimple1STAssiste">
-	<summary>
- Teste l'ajout d'un nivellement de cout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutSimple2NDNonAssiste">
-	<summary>
- Teste l'ajout d'un nivellement de cout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutSimple2NDAssiste">
-	<summary>
- Teste l'ajout d'un nivellement de cout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutSimple2L1NonAssiste">
-	<summary>
- Teste l'ajout d'un nivellement de cout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutSimple2L1Assiste">
-	<summary>
- Teste l'ajout d'un nivellement de cout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutDejaNiveleIndNonAssiste">
-	<summary>
- Teste l'ajout d'un nivellement de cout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutDejaNiveleIndAssiste">
-	<summary>
- Teste l'ajout d'un nivellement de cout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutDejaNivele1STNonAssiste">
-	<summary>
- Teste l'ajout d'un nivellement de cout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutDejaNivele1STAssiste">
-	<summary>
- Teste l'ajout d'un nivellement de cout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutDejaNivele2NDNonAssiste">
-	<summary>
- Teste l'ajout d'un nivellement de cout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutDejaNivele2NDAssiste">
-	<summary>
- Teste l'ajout d'un nivellement de cout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutDejaNivele2L1NonAssiste">
-	<summary>
- Teste l'ajout d'un nivellement de cout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRNivelerCoutTest.TesterTRNivelerCoutDejaNivele2L1Assiste">
-	<summary>
- Teste l'ajout d'un nivellement de cout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.Utilitaires.InitialiserNomFichierSauvegarde">
-	<summary>
- Méthode qui initialise le GUID du nom de fichier à sauvegarder
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.Utilitaires.DetruireFichiersSauvegarde">
-	<summary>
- Méthode qui détruit les fichiers de sauvegarde
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.Utilitaires.GetDDNFromAge(System.Int32)">
-	<summary>
- Fonction qui retourne une date qui correspond à l'âge demandée
- </summary>
-	<param name="age"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.Utilitaires.InitialiserContexte">
-	<summary>
- Initialise l'objet de contexte en début de traitement.
- </summary>
-	<remarks>
- L'initilisation doit être TOUJOURS faite dans le SetUp d'une classe!!!!
- </remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.Utilitaires.RelacherContexte">
-	<summary>
- Destruction de l'objet de contexte en fin de traitement.
- </summary>
-	<remarks>
- La destruction doit être TOUJOURS faite dans le TearDown d'une classe!!!!
- </remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.Utilitaires.SauvegarderEtRecharger(IAFG.IA.VI.AF.Changements.ChangementAssVie)">
-	<summary>
- Applique deux sauvegardes/rechargements consécutif et s'assure que la structure XML du fichier de sauvegarde n'a pas changé durant le traitement.
- </summary>
-	<param name="changementAssVie">L'objet sur lequel on doit appliquer le test.</param>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.Utilitaires.SupprimerNoeudXML(System.String,System.String[])">
-	<summary>
- Supprime une liste de noeuds dans une chaîne XML et retourne la nouvelle chaîne XML.
- </summary>
-	<param name="chaineXML">Chaîne XML à modifier.</param>
-	<param name="noeudsASupprimer">Liste des noms de noeuds à supprimer.</param>
-	<returns>La nouvelle chaîne avec les modifications appliquées.</returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.CollectionChangement`1.ChangementAssVie">
-	<summary>
- Remonte à l'objet "ChangementAssVie" de tête à partir de n'importe quel objet du modèle.
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:IAFG.IA.VI.AF.Changements.CollectionChangement`1.ChgProposition">
-	<summary>
- Remonte à l'objet "ChgProposition" de tête à partir de n'importe quel objet du modèle.
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.CollectionChangement`1.#ctor(IAFG.IA.VI.AF.Base.Base)">
-	<summary>
- Crée les informations de base.
- </summary>
-	<param name="Parent">L'objet à qui j'appartiendrai</param>
-</member><member name="T:IAFG.IA.VI.AF.Changements.TrResiliationProtections">
-	<summary>
- Cette classe partielle implémente des fonctions/propriétés visibles COM qui ne sont pas générées automatiquement par le générateur de wrappers.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.SetUp">
-	<summary>
- Utilisé pour ajouter du code à exécuter AVANT chaque test.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TearDown">
-	<summary>
- Utilisé pour ajouter du code à exécuter APRÈS chaque test.
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionSimpleIndAssiste">
-	<summary>
- Teste l'ajout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionSimpleIndNonAssiste">
-	<summary>
- Teste l'ajout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionSimple1STAssiste">
-	<summary>
- Teste l'ajout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionSimple1STNonAssiste">
-	<summary>
- Teste l'ajout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionSimple2NDAssiste">
-	<summary>
- Teste l'ajout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionSimple2NDNonAssiste">
-	<summary>
- Teste l'ajout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionSimple2L1Assiste">
-	<summary>
- Teste l'ajout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionSimple2L1NonAssiste">
-	<summary>
- Teste l'ajout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionOptionIndAssiste">
-	<summary>
- Teste l'ajout d'une protection avenant paiement accéléré
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionOptionIndNonAssiste">
-	<summary>
- Teste l'ajout d'une protection simple
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionPP100Opt10">
-	<summary>
- Teste l'ajout d'une protection pp100 avec opt10
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionOption1STAssiste">
-	<summary>
- Teste l'ajout d'une protection avenant paiement accéléré
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionOption1STNonAssiste">
-	<summary>
- Teste l'ajout d'une protection avenant paiement accéléré
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionOption2NDAssiste">
-	<summary>
- Teste l'ajout d'une protection avenant paiement accéléré
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionOption2NDNonAssiste">
-	<summary>
- Teste l'ajout d'une protection avenant paiement accéléré
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionOption2L1Assiste">
-	<summary>
- Teste l'ajout d'une protection avenant paiement accéléré
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TesterTRAjoutProtectionOption2L1NonAssiste">
-	<summary>
- Teste l'ajout d'une protection avenant paiement accéléré
- </summary>
-	<remarks></remarks>
-</member><member name="M:IAFG.IA.VI.AF.Changements.NUnit.TRAjoutProtectionTest.TRAjoutProtectionGarantie">
-	<summary>
- Teste l'ajout d'une protection
+ Paramètre qui sera passé au vb6 pour qu'il lance l'ouverture d'un changement
  </summary>
 	<remarks></remarks>
 </member>
