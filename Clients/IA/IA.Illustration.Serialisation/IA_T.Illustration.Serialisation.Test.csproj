@@ -142,11 +142,16 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="ConversionCasIllustrationTest_Manuel.cs" />
     <Compile Include="ConversionCasIllustrationTest.cs" />
     <Compile Include="EntrepotCasIllustration\CasIllustration.cs" />
     <Compile Include="EntrepotCasIllustration\ConversionCasIllustration.cs" />
     <Compile Include="EntrepotCasIllustration\ConvertisseurGenerique.cs" />
+    <Compile Include="ExtensionsFluentAssertions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilitaires\Conversion\UtilitairePourConversion.cs" />
+    <Compile Include="Utilitaires\Conversion\VerificationApresConversion.cs" />
+    <Compile Include="Utilitaires\Conversion\VerificationCasIllustration.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="interface.snk" />
@@ -159,18 +164,18 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="EntrepotCasIllustration\ContenuIllustration\Genesis_AssuranceRetraite.xml" />
+    <EmbeddedResource Include="ContenuIllustrationPourTest\Genesis_AssuranceRetraite.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="EntrepotCasIllustration\ContenuIllustration\Evia_Iris2.xml">
+    <EmbeddedResource Include="ContenuIllustrationPourTest\Evia_Iris2.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="EntrepotCasIllustration\ContenuIllustration\Genesis_Iris.xml" />
+    <EmbeddedResource Include="ContenuIllustrationPourTest\Genesis_Iris.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="EntrepotCasIllustration\ContenuIllustration\Evia_Iris2_IA.xml">
+    <EmbeddedResource Include="ContenuIllustrationPourTest\Evia_Iris2_IA.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using IAFG.IA.IL.AF.Illustration.ENUMs;
 using IAFG.IA.VI.AF.PDF.ENUMs;
+using IAFG.IA.VI.AF.Proposition;
 using IAFG.IA.VI.AF.Proposition.ENUMs;
 using IAFG.IA.VI.ENUMs;
 using TypeDuree = IAFG.IA.IL.AF.Illustration.ENUMs.TypeDuree;
@@ -19,6 +20,7 @@ namespace IA_T.Illustration.Serialisation.Test.EntrepotCasIllustration
         public int Duree { get; set; }
         public FrequencePaiement FrequencePaiement { get; set; }
         public decimal IntGuarantit { get; set; }
+        public bool IsInitialised { get; set; }
         public decimal PretBancaireCumulatif { get; set; }
         public RespectRatioPretVsValeurRachat RespectRatioPretVsValeurRachat { get; set; }
         public int RespectRatioPretVsValeurRachatPerso { get; set; }
@@ -42,6 +44,7 @@ namespace IA_T.Illustration.Serialisation.Test.EntrepotCasIllustration
         public bool DesiredLoanDesactivated { get; set; }
         public double FraisGarantie { get; set; }
         public bool IrisExtra { get; set; }
+        public bool IsInitialised { get; set; }
         public TypeRemb ProvenanceRembCap { get; set; }
         public TypeRemb ProvenanceRembInt { get; set; }
         public decimal RembBalance { get; set; }
@@ -114,7 +117,6 @@ namespace IA_T.Illustration.Serialisation.Test.EntrepotCasIllustration
         public int AnneeFondCibleRetourPrime { get; set; }
         public TypeReponse CalculRenouvellement { get; set; }
         public int Duree { get; set; }
-        public bool FlagPrimeMinimum { get; set; }
         public decimal FondCible { get; set; }
         public bool HitTarget { get; set; }
         public int Jusqua { get; set; }
@@ -144,17 +146,61 @@ namespace IA_T.Illustration.Serialisation.Test.EntrepotCasIllustration
 
     public class CasProduit
     {
-        public bool EstPU;
-        public string CodeProduitLus { get; set; }
+        public CasProduit()
+        {
+            Universel = new CasPoliceUniversel();
+        }
+
         public Produits GammeProduit { get; set; }
-        public ProduitLUS TypeProduit { get; set; }
-        public string Version { get; set; }
-        public int VersionMajeure { get; set; }
-        public int VersionMineure { get; set; }
+        public CasPoliceUniversel Universel { get; set; }
+    }
+
+    public class CasPoliceUniversel
+    {
+        public CasBoni Boni { get; set; }
+        public double CBR { get; set; }
+        public double CapitalOptimalValMax { get; set; }
+        public CasComparaisonPlacement ComparaisonPlacementAlternatif { get; set; }
+    }
+
+    public class CasComparaisonPlacement
+    {
+        public TypeComparaison TypeComparaison { get; set; }
+        public double MontantTemporaire { get; set; }
+        public int PlanTemporaire { get; set; }
+        public List<decimal> PrimeTemporaire { get; set; }
+        public bool IsInitialised { get; set; }
+        public CasPlacementAlternatif TauxAlternatifs { get; set; }
+    }
+
+    public class CasPlacementAlternatif
+    {
+        public double InteretProportion { get; set; }
+        public List<decimal> InteretTaux { get; set; }
+        public double DividendeProportion { get; set; }
+        public List<decimal> DividendeTaux { get; set; }
+        public double GainCapProportion { get; set; }
+        public List<decimal> GainCapTaux { get; set; }
+        public double GainCapTauxRealisation { get; set; }
+    }
+
+    public class CasBoni
+    {
+        public OptionVersementBoni OptionVersementBoni { get; set; }
+        public Double FacteurHAMA { get; set; }
+        public Double FacteurGIA { get; set; }
+        public Double FacteurMIA { get; set; }
+        public Double PrimeReference { get; set; }
+        public TypeBoni TypeBoni { get; set; }
+        public double TauxRendementMoyen1An { get; set; }
+        public double TauxRendementMoyen2Ans { get; set; }
+        public double TauxRendementMoyen3Ans { get; set; }
+        public double TauxRendementMoyen4Ans { get; set; }
     }
 
     public class CasTaxation
     {
+        public bool IsInitialised { get; set; }
         public List<decimal> TauxMarginalCorp { get; set; }
         public List<decimal> TauxMarginalInd { get; set; }
         public decimal TauxRembCorpDividende { get; set; }
