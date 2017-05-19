@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <!-- Configuration section-handler declaration area. -->
-  <configSections>
-    <section name="PropoConfigurationData" type="IAFG.IA.VI.AF.Proposition.PropoConfigurationData, IAFG.IA.VI.AF.Proposition, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cdc4a836847c2931" />
-  </configSections>
-  <!-- Configuration section settings area. -->
-  <PropoConfigurationData AssemblyName="IAFG.IA.ZA.AgeEquivalent" ClassName="IAFG.IA.ZA.AgeEquivalent.OutilCalcul" NomFichierTaux="AgeEquivdeffile.bin" NomFichierXml="DefinitionsMethodes.xml" />
-</configuration>
